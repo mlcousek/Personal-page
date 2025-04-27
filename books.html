@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Read Books - Jiří Mlčoušek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: #f3f4f6;
+        font-size: 0.9rem;
+        font-family: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+      }
+      .books {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+        gap: 1.2rem;
+        margin: 2rem auto;
+        max-width: 75em;
+        padding: 0 1rem;
+      }
+      .book {
+        background: #fff;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 320px;
+        transition: transform 0.15s;
+      }
+      .book:hover {
+        transform: translateY(-4px) scale(1.02);
+      }
+      .book__img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-bottom: 1px solid #eee;
+      }
+      .book__title {
+        margin: 1em 0 0 0;
+        font-size: 1rem;
+        font-weight: 700;
+      }
+      .book__author {
+        font-size: 0.95em;
+        color: #555;
+        margin-bottom: 0.5em;
+      }
+      .book-content {
+        padding: 1rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+      .book time {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.4em 0.9em;
+        font-size: 0.7rem;
+        border-radius: 1em;
+        color: #222;
+        background: #e0e7ef;
+        font-weight: 700;
+      }
+      [datetime="2024"] {background-color: #7dd3fc;}
+      [datetime="2025"] {background-color: #fef08a;}
+      [datetime="0"] {background-color: #c026d3; color: white;}
+      .footer {
+        text-align: center;
+        padding: 2em 0 1em 0;
+        background: none;
+        color: #888;
+        font-size: 0.95em;
+      }
+      @media (max-width: 600px) {
+        .books { grid-template-columns: 1fr 1fr; }
+        .book__img { height: 130px; }
+      }
+      @media (max-width: 400px) {
+        .books { grid-template-columns: 1fr; }
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Jiří Mlčoušek</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="books.html" class="active">Read Books</a></li>
+        </ul>
+    </nav>
+    <main class="books">
+        <!-- Example books, replace/add your own as needed -->
+        <div class="book">
+            <img class="book__img" src="https://www.cbdb.cz/books/447576.jpg" alt="Znát a učit elementární matematiku">
+            <div class="book-content">
+                <h2 class="book__title">Znát a učit elementární matematiku</h2>
+                <p class="book__author">Liping Ma</p>
+                <time datetime="0">Rozečteno</time>
+            </div>
+        </div>
+        <div class="book">
+            <img class="book__img" src="https://img-cloud.megaknihy.cz/4682382-large/9d2d89e3970aeb8bee1d4f29dc73db7d/the-anxious-generation.jpg" alt="The Anxious Generation">
+            <div class="book-content">
+                <h2 class="book__title">The Anxious Generation</h2>
+                <p class="book__author">Jonathan Haidt</p>
+                <time datetime="0">Rozečteno</time>
+            </div>
+        </div>
+        <!-- Add more books here, following the same structure -->
+    </main>
+    <footer class="footer">
+        &copy; 2025 Jiří Mlčoušek. All rights reserved.<br>
+        <small>Design inspired by <a href="https://www.cbdb.cz/profil-48682-marketatrneckova" target="_blank" rel="noopener">Markéta Trnečková's book page</a>.</small>
+    </footer>
+</body>
+</html>
