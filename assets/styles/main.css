@@ -7,5 +7,5 @@ body {
 
 #navbar-placeholder + main,
 main.books {
-    margin-top: 88px; /* Adjust if your navbar height changes */
+    margin-top: 120px; /* Increase to match navbar height */
 }
