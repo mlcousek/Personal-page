@@ -35,5 +35,12 @@
         <small>Design inspired by <a href="https://www.cbdb.cz/profil-48682-marketatrneckova" target="_blank" rel="noopener">Markéta Trnečková's book page</a>.</small>
     </footer>
     <script src="scripts/main.js"></script>
+    <script>
+        fetch('./components/navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+          });
+    </script>
 </body>
 </html>
