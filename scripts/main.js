@@ -21,4 +21,90 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.toggle('active');
         });
     }
+
+    // Language toggle logic
+    const translations = {
+        en: {
+            'nav-logo': 'Jiří Mlčoušek',
+            'nav-about': 'About',
+            'nav-books': 'Read Books',
+            'hero-name': 'Jiří Mlčoušek',
+            'hero-slogan': 'Consistency is key. Next stop the top ⬆️⬆️⬆️',
+            'contact-email-label': 'Email:',
+            'contact-phone-label': 'Phone:',
+            'about-title': 'About Me',
+            'about-text': 'Consistency is key. Next stop the top',
+            'footer': '© 2025 Jiří Mlčoušek. All rights reserved.',
+            'books-title': 'Read Books'
+        },
+        cs: {
+            'nav-logo': 'Jiří Mlčoušek',
+            'nav-about': 'O mně',
+            'nav-books': 'Přečtené knihy',
+            'hero-name': 'Jiří Mlčoušek',
+            'hero-slogan': 'Konzistence je klíč. Další zastávka vrchol ⬆️⬆️⬆️',
+            'contact-email-label': 'E-mail:',
+            'contact-phone-label': 'Telefon:',
+            'about-title': 'O mně',
+            'about-text': 'Konzistence je klíč. Další zastávka vrchol',
+            'footer': '© 2025 Jiří Mlčoušek. Všechna práva vyhrazena.',
+            'books-title': 'Přečtené knihy'
+        }
+    };
+
+    function setLanguage(lang) {
+        localStorage.setItem('lang', lang);
+        const dict = translations[lang] || translations['en'];
+        Object.keys(dict).forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                if (id === 'footer') {
+                    el.innerHTML = dict[id];
+                } else if (id === 'contact-email-label') {
+                    // Only replace the label, keep the link
+                    const link = el.querySelector('a');
+                    if (link) {
+                        el.innerHTML = dict[id] + ' ';
+                        el.appendChild(link);
+                    } else {
+                        el.textContent = dict[id];
+                    }
+                } else if (id === 'contact-phone-label') {
+                    // Only replace the label, keep the link
+                    const link = el.querySelector('a');
+                    if (link) {
+                        el.innerHTML = dict[id] + ' ';
+                        el.appendChild(link);
+                    } else {
+                        el.textContent = dict[id];
+                    }
+                } else {
+                    el.textContent = dict[id];
+                }
+            }
+        });
+    }
+
+    function setupLanguageSwitcher() {
+        // Listen for language button clicks
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('#lang-en')) {
+                setLanguage('en');
+            } else if (e.target.closest('#lang-cs')) {
+                setLanguage('cs');
+            }
+        });
+        // Set initial language
+        const savedLang = localStorage.getItem('lang') || 'en';
+        setLanguage(savedLang);
+    }
+
+    // Call setupLanguageSwitcher on DOMContentLoaded
+    setupLanguageSwitcher();
+
+    // If navbar is loaded dynamically, re-apply language after fetch
+    window.applyLanguageAfterNavbar = function() {
+        const savedLang = localStorage.getItem('lang') || 'en';
+        setLanguage(savedLang);
+    };
 });

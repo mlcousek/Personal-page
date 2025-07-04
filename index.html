@@ -13,8 +13,8 @@
     <section class="split-hero">
         <div class="split-hero-left"></div>
         <div class="split-hero-right">
-            <h1>Jiří Mlčoušek</h1>
-            <p class="hero-slogan">Consistency is key. Next stop the top ⬆️⬆️⬆️</p>
+            <h1 id="hero-name">Jiří Mlčoušek</h1>
+            <p class="hero-slogan" id="hero-slogan">Consistency is key. Next stop the top ⬆️⬆️⬆️</p>
             <div class="social-buttons">
                 <a href="https://github.com/mlcousek" class="social-btn github" target="_blank" rel="noopener" aria-label="GitHub"><span>GitHub</span></a>
                 <a href="https://linkedin.com/in/jiří-mlčoušek" class="social-btn linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><span>LinkedIn</span></a>
@@ -22,20 +22,20 @@
                 <a href="https://facebook.com/jirka.mlcousek" class="social-btn facebook" target="_blank" rel="noopener" aria-label="Facebook"><span>Facebook</span></a>
             </div>
             <div class="contact-info" style="margin-top:24px; text-align:center;">
-                <p>Email: <a href="mailto:jirka.mlcousek@seznam.cz">jirka.mlcousek@seznam.cz</a></p>
-                <p>Phone: <a href="tel:+420731280205">+420 731 280 205</a></p>
+                <p id="contact-email-label">Email: <a href="mailto:jirka.mlcousek@seznam.cz" id="contact-email">jirka.mlcousek@seznam.cz</a></p>
+                <p id="contact-phone-label">Phone: <a href="tel:+420731280205" id="contact-phone">+420 731 280 205</a></p>
             </div>
         </div>
     </section>
 
     <main>
         <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>Consistency is key. Next stop the top</p>
+            <h2 id="about-title">About Me</h2>
+            <p id="about-text">Consistency is key. Next stop the top</p>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         &copy; 2025 Jiří Mlčoušek. All rights reserved.
     </footer>
     <script src="scripts/main.js"></script>
@@ -44,6 +44,7 @@
           .then(response => response.text())
           .then(data => {
             document.getElementById('navbar-placeholder').innerHTML = data;
+            if (window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();
           });
     </script>
 </body>

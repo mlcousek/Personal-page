@@ -68,6 +68,7 @@
     <div id="navbar-placeholder"></div>
     <main class="books">
         <!-- Current Reading -->
+        <h1 id="books-title" style="grid-column: 1 / -1; text-align:center;">Read Books</h1>
         <div class="book">
             <img class="book__img" src="https://image.alza.cz/products/AK1F598/AK1F598.jpg?width=600&height=600" alt="Nikdy sa nezastvím">
             <div class="book-content">
@@ -248,6 +249,7 @@
           .then(response => response.text())
           .then(data => {
             document.getElementById('navbar-placeholder').innerHTML = data;
+            if (window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();
           });
     </script>
 </body>
