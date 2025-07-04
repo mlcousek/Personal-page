@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Read Books - Jiří Mlčoušek</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/styles/main.css">
-    <!-- <link rel="stylesheet" href="assets/styles/books.css"> -->
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <!-- <link rel="stylesheet" href="../assets/styles/books.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
@@ -60,7 +60,7 @@
         [datetime="2022"] {background-color: #ad3611;}
         [datetime="2023"] {background-color: #fef08a;}
         [datetime="2024"] {background-color: #f779be;}
-        [datetime="2025"] {background-color: #3cf704;}
+        [datetime="2025"] {background-color: #28a104;}
         [datetime="0"] {background-color: #c026d3; color: white;}
       </style>
 </head>
@@ -69,18 +69,6 @@
     <main class="books">
         <!-- Current Reading -->
         <h1 id="books-title" style="grid-column: 1 / -1; text-align:center;">Read Books</h1>
-        <div class="book">
-            <img class="book__img" src="https://image.alza.cz/products/AK1F598/AK1F598.jpg?width=600&height=600" alt="Nikdy sa nezastvím">
-            <div class="book-content">
-                <h2 class="book__title">
-                    <a href="https://www.databazeknih.cz/knihy/nikdy-sa-nezastavim-544426" target="_blank" rel="noopener">
-                        Nikdy sa nezastavím
-                    </a>
-                </h2>
-                <p class="book__author">David Goggins</p>
-                <time datetime="0">Rozečteno</time>
-            </div>
-        </div>
         <div class="book">
             <img class="book__img" src="https://www.databazeknih.cz/img/books/24_/248533/bmid_velky-pruvodce-infrastrukturou-pki-248533.jpg?v=1539034301" alt="Velký průvodce infrastrukturou PKI a technologií elektronického podpisu">
             <div class="book-content">
@@ -94,6 +82,19 @@
             </div>
         </div>
         <!-- Read -->
+        <div class="book">
+            <img class="book__img" src="https://image.alza.cz/products/AK1F598/AK1F598.jpg?width=600&height=600" alt="Nikdy sa nezastvím">
+            <div class="book-content">
+                <h2 class="book__title">
+                    <a href="https://www.databazeknih.cz/knihy/nikdy-sa-nezastavim-544426" target="_blank" rel="noopener">
+                        Nikdy sa nezastavím
+                    </a>
+                </h2>
+                <p class="book__author">David Goggins</p>
+                <time datetime="2025">6/2025</time>
+            </div>
+        </div>
+
          <div class="book">
             <img class="book__img" src="https://www.databazeknih.cz/img/books/49_/497705/big_umeni-odolnosti-LFw-497705.jpg?v=1655711079" alt="Umění odolnosti">
             <div class="book-content">
@@ -243,9 +244,9 @@
         &copy; 2025 Jiří Mlčoušek. All rights reserved.<br>
         <small>Design inspired by <a href="https://marketa-trneckova.cz/knihy.html" target="_blank" rel="noopener">Markéta Trnečková's book page</a>.</small>
     </footer>
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
     <script>
-        fetch('./components/navbar.html')
+        fetch('../components/navbar.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('navbar-placeholder').innerHTML = data;

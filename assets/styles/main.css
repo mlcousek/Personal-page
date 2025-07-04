@@ -166,11 +166,12 @@ body {
 /* Split Hero Section */
 .split-hero {
     display: flex;
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100vw;
-    margin-top: 100px; /* adjust for navbar */
+    margin-top: 50px;
 }
 .split-hero-left {
+    margin-top: 100px; /* Adjusted for navbar */
     flex: 1;
     background: url('../../images/IMG_6169.jpg') center center/cover no-repeat;
     min-height: 400px;

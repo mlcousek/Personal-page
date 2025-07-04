@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jiří Mlčoušek</title>
-    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -29,18 +29,15 @@
     </section>
 
     <main>
-        <section id="about" class="section">
-            <h2 id="about-title">About Me</h2>
-            <p id="about-text">Consistency is key. Next stop the top</p>
-        </section>
+        <!-- About section removed, now in about.html -->
     </main>
 
     <footer class="footer" id="footer">
         &copy; 2025 Jiří Mlčoušek. All rights reserved.
     </footer>
-    <script src="scripts/main.js"></script>
+    <script src="../scripts/main.js"></script>
     <script>
-        fetch('./components/navbar.html')
+        fetch('../components/navbar.html')
           .then(response => response.text())
           .then(data => {
             document.getElementById('navbar-placeholder').innerHTML = data;
