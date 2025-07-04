@@ -307,5 +307,6 @@ body {
 }
 
 .lang-btn:focus {
-    outline: 2px solid #0078ff;
+    outline: 2px solid #000000;
+    opacity: 0.5;
 }
