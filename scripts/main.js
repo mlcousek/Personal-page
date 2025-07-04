@@ -49,6 +49,32 @@ document.addEventListener('DOMContentLoaded', () => {
             'about-text': 'Konzistence je klíč. Další zastávka vrchol',
             'footer': '© 2025 Jiří Mlčoušek. Všechna práva vyhrazena.',
             'books-title': 'Přečtené knihy'
+        },
+        es: {
+            'nav-logo': 'Jiří Mlčoušek',
+            'nav-about': 'Sobre mí',
+            'nav-books': 'Libros leídos',
+            'hero-name': 'Jiří Mlčoušek',
+            'hero-slogan': 'La constancia es la clave. Próxima parada la cima ⬆️⬆️⬆️',
+            'contact-email-label': 'Correo:',
+            'contact-phone-label': 'Teléfono:',
+            'about-title': 'Sobre mí',
+            'about-text': 'La constancia es la clave. Próxima parada la cima',
+            'footer': '© 2025 Jiří Mlčoušek. Todos los derechos reservados.',
+            'books-title': 'Libros leídos'
+        },
+        fr: {
+            'nav-logo': 'Jiří Mlčoušek',
+            'nav-about': 'À propos',
+            'nav-books': 'Livres lus',
+            'hero-name': 'Jiří Mlčoušek',
+            'hero-slogan': 'La constance est la clé. Prochaine étape le sommet ⬆️⬆️⬆️',
+            'contact-email-label': 'E-mail :',
+            'contact-phone-label': 'Téléphone :',
+            'about-title': 'À propos de moi',
+            'about-text': 'La constance est la clé. Prochaine étape le sommet',
+            'footer': '© 2025 Jiří Mlčoušek. Tous droits réservés.',
+            'books-title': 'Livres lus'
         }
     };
 
@@ -92,6 +118,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 setLanguage('en');
             } else if (e.target.closest('#lang-cs')) {
                 setLanguage('cs');
+            } else if (e.target.closest('#lang-es')) {
+                setLanguage('es');
+            } else if (e.target.closest('#lang-fr')) {
+                setLanguage('fr');
             }
         });
         // Set initial language
