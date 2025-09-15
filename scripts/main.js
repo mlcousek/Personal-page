@@ -62,19 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
             'about-text': 'La constancia es la clave. Próxima parada la cima',
             'footer': '© 2025 Jiří Mlčoušek. Todos los derechos reservados.',
             'books-title': 'Libros leídos'
-        },
-        fr: {
-            'nav-logo': 'Jiří Mlčoušek',
-            'nav-about': 'À propos',
-            'nav-books': 'Livres lus',
-            'hero-name': 'Jiří Mlčoušek',
-            'hero-slogan': 'La constance est la clé. Prochaine étape le sommet ⬆️⬆️⬆️',
-            'contact-email-label': 'E-mail :',
-            'contact-phone-label': 'Téléphone :',
-            'about-title': 'À propos de moi',
-            'about-text': 'La constance est la clé. Prochaine étape le sommet',
-            'footer': '© 2025 Jiří Mlčoušek. Tous droits réservés.',
-            'books-title': 'Livres lus'
         }
     };
 
@@ -120,12 +107,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 setLanguage('cs');
             } else if (e.target.closest('#lang-es')) {
                 setLanguage('es');
-            } else if (e.target.closest('#lang-fr')) {
-                setLanguage('fr');
             }
         });
         // Set initial language
-        const savedLang = localStorage.getItem('lang') || 'en';
+        let savedLang = localStorage.getItem('lang') || 'en';
+        if (!['en','cs','es'].includes(savedLang)) {
+            savedLang = 'en';
+            localStorage.setItem('lang','en');
+        }
         setLanguage(savedLang);
     }
 
@@ -134,7 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // If navbar is loaded dynamically, re-apply language after fetch
     window.applyLanguageAfterNavbar = function() {
-        const savedLang = localStorage.getItem('lang') || 'en';
+        let savedLang = localStorage.getItem('lang') || 'en';
+        if (!['en','cs','es'].includes(savedLang)) {
+            savedLang = 'en';
+            localStorage.setItem('lang','en');
+        }
         setLanguage(savedLang);
     };
 });
