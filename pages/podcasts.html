@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Podcasts - Jiří Mlčoušek</title>
+  <link rel="stylesheet" href="../assets/styles/main.css" />
+  <link rel="stylesheet" href="../assets/styles/podcasts.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+  <main class="podcasts" aria-label="List of podcasts">
+    <article class="podcast" data-platform="spotify">
+      <img class="podcast__img" src="https://via.placeholder.com/300x180.png?text=Podcast+1" alt="Podcast 1 cover" />
+      <div class="podcast-content">
+        <h2 class="podcast__title"><a href="https://open.spotify.com/" target="_blank" rel="noopener">Podcast Episode Title 1</a></h2>
+        <p class="podcast__host">Host Name</p>
+        <span class="podcast__tag tag-new">NEW</span>
+      </div>
+    </article>
+    <article class="podcast" data-platform="youtube">
+      <img class="podcast__img" src="https://via.placeholder.com/300x180.png?text=Podcast+2" alt="Podcast 2 cover" />
+      <div class="podcast-content">
+        <h2 class="podcast__title"><a href="https://youtube.com/" target="_blank" rel="noopener">Podcast Episode Title 2</a></h2>
+        <p class="podcast__host">Another Host</p>
+        <span class="podcast__tag tag-fav">FAV</span>
+      </div>
+    </article>
+    <article class="podcast" data-platform="apple">
+      <img class="podcast__img" src="https://via.placeholder.com/300x180.png?text=Podcast+3" alt="Podcast 3 cover" />
+      <div class="podcast-content">
+        <h2 class="podcast__title"><a href="https://podcasts.apple.com/" target="_blank" rel="noopener">Podcast Episode Title 3</a></h2>
+        <p class="podcast__host">Guest & Host</p>
+        <span class="podcast__tag tag-listened">2025</span>
+      </div>
+    </article>
+  </main>
+  <footer class="footer alt">
+    &copy; 2025 Jiří Mlčoušek. Podcasts list. <br />
+    <small>Style aligned with Books page with slight visual tweaks.</small>
+  </footer>
+  <script>
+    // Load shared navbar (relative path one level up)
+    fetch('../components/navbar.html')
+      .then(r=>r.text())
+      .then(html=>{
+        document.getElementById('navbar-placeholder').innerHTML = html;
+        // Mark podcasts link active if present
+        const podcastsLink = document.getElementById('nav-podcasts');
+        if(podcastsLink){ podcastsLink.classList.add('active'); }
+        // Fix links because navbar is included at different nesting levels
+        const fixMap = [
+          {id:'nav-logo', href:'../index.html'},
+          {id:'nav-about', href:'about.html'},
+          {id:'nav-books', href:'../books.html'},
+          {id:'nav-podcasts', href:'podcasts.html'}
+        ];
+        fixMap.forEach(item=>{
+          const el = document.getElementById(item.id);
+            if(el){
+              // If link already contains '../' leave it, else set appropriately
+              el.setAttribute('href', item.href);
+            }
+        });
+      });
+  </script>
+</body>
+</html>
