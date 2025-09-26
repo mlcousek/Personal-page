@@ -6,26 +6,77 @@
     <title>About - Jiří Mlčoušek</title>
     <link rel="stylesheet" href="../assets/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        .about-wrapper{max-width:1000px;margin:140px auto 60px auto;padding:0 24px;}
+        .about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:start;}
+        .about-card{background:#fff;border-radius:16px;padding:28px 26px;box-shadow:0 4px 18px -4px rgba(0,0,0,.08),0 2px 6px -2px rgba(0,0,0,.06);}        
+        .about-card h3{margin:0 0 14px 0;font-size:1.25rem;}
+        .tag-cloud{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
+        .tag{background:#eef3f8;color:#10324d;padding:6px 14px;font-size:.75rem;font-weight:600;border-radius:40px;letter-spacing:.5px;}
+        .timeline{position:relative;padding-left:18px;margin:0;list-style:none;}
+        .timeline:before{content:"";position:absolute;left:4px;top:0;bottom:0;width:2px;background:linear-gradient(#0078ff,#00b4d8);}        
+        .timeline li{margin:0 0 26px 0;position:relative;}
+        .timeline li:last-child{margin-bottom:0;}
+        .timeline li:before{content:"";position:absolute;left:-2px;top:6px;width:10px;height:10px;background:#0078ff;border-radius:50%;box-shadow:0 0 0 4px #e6f3ff;}
+        .role-title{font-weight:700;margin:0;font-size:.95rem;}
+        .role-company{margin:2px 0 4px 0;font-size:.8rem;color:#555;font-weight:600;}
+        .role-period{font-size:.7rem;font-weight:600;letter-spacing:1px;color:#0078ff;margin-bottom:6px;}
+        .role-desc{margin:0;font-size:.78rem;line-height:1.35;color:#333;}
+        .lang-note{font-size:.65rem;color:#666;margin-top:12px;}
+        @media (max-width:640px){.about-card{padding:22px 20px;} .role-desc{font-size:.75rem;} }
+    </style>
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-    <main>
-        <section id="about" class="section">
-            <h2 id="about-title">About Me</h2>
-            <p id="about-text">Consistency is key. Next stop the top</p>
-        </section>
+    <main class="about-wrapper">
+        <header style="text-align:center;margin-bottom:40px;">
+            <h1 id="about-title">About Me</h1>
+            <p id="about-summary-1" style="font-size:1.05rem;max-width:760px;margin:12px auto 6px auto;">Loading...</p>
+            <p id="about-summary-2" style="font-size:.95rem;max-width:760px;margin:4px auto 0 auto;color:#444;">Loading...</p>
+        </header>
+        <div class="about-grid">
+            <section class="about-card" aria-labelledby="skills-heading">
+                <h3 id="skills-heading">Key Skills</h3>
+                <div class="tag-cloud" id="skills-tags">
+                    <span class="tag" data-i18n="skill-learning">Lifelong Learning</span>
+                    <span class="tag" data-i18n="skill-motivation">Motivation</span>
+                    <span class="tag" data-i18n="skill-security">Security Basics</span>
+                    <span class="tag" data-i18n="skill-crypto">Cryptography Interest</span>
+                    <span class="tag" data-i18n="skill-consistency">Consistency</span>
+                    <span class="tag" data-i18n="skill-growth">Growth Mindset</span>
+                </div>
+            </section>
+            <section class="about-card" aria-labelledby="experience-heading">
+                <h3 id="experience-heading">Experience</h3>
+                <ul class="timeline">
+                    <li>
+                        <p class="role-title" id="exp-role-1-title">Role Title (Update)</p>
+                        <p class="role-company" id="exp-role-1-company">Company / Organization</p>
+                        <p class="role-period" id="exp-role-1-period">YEAR – Present</p>
+                        <p class="role-desc" id="exp-role-1-desc">Add a short description of your current responsibilities and impact.</p>
+                    </li>
+                    <li>
+                        <p class="role-title" id="exp-role-2-title">Previous Role Title</p>
+                        <p class="role-company" id="exp-role-2-company">Previous Company</p>
+                        <p class="role-period" id="exp-role-2-period">YEAR – YEAR</p>
+                        <p class="role-desc" id="exp-role-2-desc">Brief description of achievements, technologies, improvements or learning.</p>
+                    </li>
+                </ul>
+                <p class="lang-note" id="exp-note">(Replace the placeholders above with real experience details.)</p>
+            </section>
+            <section class="about-card" aria-labelledby="focus-heading">
+                <h3 id="focus-heading">Focus & Interests</h3>
+                <p id="focus-text-1">Motivated by disciplined progress, I explore technology, security concepts, and performance optimization.</p>
+                <p id="focus-text-2">I aim to combine structured learning with practical experimentation to build durable knowledge.</p>
+            </section>
+        </div>
     </main>
-    <footer class="footer" id="footer">
-        &copy; 2025 Jiří Mlčoušek. All rights reserved.
-    </footer>
+    <footer class="footer" id="footer">© 2025 Jiří Mlčoušek. All rights reserved.</footer>
     <script src="../scripts/main.js"></script>
     <script>
         fetch('../components/navbar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-            if (window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();
-          });
+          .then(r=>r.text())
+          .then(html=>{document.getElementById('navbar-placeholder').innerHTML=html; if(window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();});
     </script>
 </body>
 </html>
