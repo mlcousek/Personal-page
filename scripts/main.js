@@ -71,6 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'career-p-1': 'I played competitive football for 15 years, developing tactical awareness, speed endurance and team resilience.',
             'career-p-2': 'My highest competition level reached the Czech fourth tier, an environment that demanded structure, discipline and consistency.',
             'career-p-3': 'Those foundations now translate into structured training blocks for running, strength and hybrid endurance challenges.'
+            , 'long-bio-heading': 'A Longer Story'
+            , 'long-bio-p1': 'I like building momentum through small, well-defined daily actions. Whether it was years of competitive football, structured reading, or disciplined training for endurance events, I’ve learned that consistency isn’t glamorous—but it wins. I apply that mindset to learning technology, understanding systems, and improving my personal performance.'
+            , 'long-bio-p2': 'Books gave me frameworks: how to think clearly, how to train deliberately, and how to analyze problems instead of reacting to them. I’m especially interested in the intersection of security fundamentals and cryptography—how trust, identity, and verification shape the modern digital landscape. I approach those topics the same way I approach training: break complexity into repeatable, progressive cycles.'
+            , 'long-bio-p3': 'Sport taught me resilience. Long runs, strength sessions, and tactical football years built discipline under fatigue. That directly translates to focused study sessions and long-term projects where progress can feel invisible day to day. I like turning vague goals into trackable inputs—mornings studied, pages read, kilometers run, repetitions logged.'
+            , 'long-bio-p4': 'Right now I’m refining a system that blends physical training, technical learning, and reflective review. Each week I evaluate what compounded, what stalled, and what needs iteration. I don’t chase intensity spikes—I engineer sustainable acceleration. That approach keeps me improving without burning out.'
+            , 'long-bio-p5': 'Looking ahead, I want to deepen my expertise in applied security concepts while continuing to test endurance boundaries. I believe that combining mental rigor with physical durability creates a competitive advantage both professionally and personally. This page documents that ongoing build process—one disciplined block at a time.'
         },
         cs: {
             'nav-logo': 'Jiří Mlčoušek',
@@ -119,6 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'career-p-1': 'Hrál jsem soutěžní fotbal 15 let a rozvíjel tak taktické vnímání, rychlostní vytrvalost a týmovou odolnost.',
             'career-p-2': 'Dosáhl jsem české čtvrté ligy, prostředí vyžadující strukturu, disciplínu a konzistenci.',
             'career-p-3': 'Tyto základy nyní převádím do strukturovaných tréninkových bloků pro běh, sílu a hybridní výzvy.',
+            'long-bio-heading': 'Delší příběh',
+            'long-bio-p1': 'Rád buduji tempo pomocí malých, jasně definovaných denních kroků. Ať už šlo o roky soutěžního fotbalu, strukturované čtení nebo disciplinovanou přípravu na vytrvalostní závody, naučil jsem se, že konzistence není okázalá – ale vítězí. Stejný přístup aplikuji na učení technologií, pochopení systémů a zlepšování osobního výkonu.',
+            'long-bio-p2': 'Knihy mi daly rámce: jak přemýšlet jasně, jak trénovat záměrně a jak analyzovat problémy místo impulsivních reakcí. Zajímá mě zejména průnik základů bezpečnosti a kryptografie – jak důvěra, identita a ověřování formují moderní digitální prostředí. Přistupuji k těmto tématům jako k tréninku: rozdělit složitost do opakovatelných, postupných cyklů.',
+            'long-bio-p3': 'Sport mě naučil odolnosti. Dlouhé běhy, silové bloky a taktické fotbalové roky vybudovaly disciplínu i při únavě. To se přímo promítá do soustředěných studijních bloků a dlouhodobých projektů, kde je pokrok den ode dne neviditelný. Baví mě převádět vágní cíle do měřitelných vstupů – rána studia, přečtené stránky, uběhnuté kilometry, odcvičené opakování.',
+            'long-bio-p4': 'Momentálně ladím systém, který kombinuje fyzický trénink, technické učení a reflexi. Každý týden hodnotím, co se násobilo, co stagnovalo a co potřebuje iteraci. Nehoním se za špičkami intenzity – navrhuji udržitelnou akceleraci. Díky tomu zlepšuji bez vyhoření.',
+            'long-bio-p5': 'Do budoucna chci prohloubit odbornost v aplikovaných bezpečnostních konceptech a zároveň dál testovat hranice vytrvalosti. Věřím, že spojení mentální preciznosti s fyzickou odolností vytváří konkurenční výhodu profesně i osobně. Tato stránka dokumentuje proces budování – krok za krokem.',
         },
         es: {
             'nav-logo': 'Jiří Mlčoušek',
@@ -167,6 +179,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'career-p-1': 'Jugué fútbol competitivo durante 15 años desarrollando percepción táctica, resistencia de velocidad y resiliencia en equipo.',
             'career-p-2': 'Mi nivel más alto fue la cuarta división checa, un entorno que exigía estructura, disciplina y constancia.',
             'career-p-3': 'Ahora esa base se traduce en bloques de entrenamiento estructurados para correr, fuerza y desafíos híbridos.',
+            'long-bio-heading': 'Historia más extensa',
+            'long-bio-p1': 'Me gusta construir impulso mediante acciones diarias pequeñas y bien definidas. Ya fueran años de fútbol competitivo, lectura estructurada o entrenamiento disciplinado para eventos de resistencia, aprendí que la constancia no es glamorosa—pero gana. Aplico esa mentalidad al aprendizaje tecnológico, a comprender sistemas y a mejorar mi rendimiento personal.',
+            'long-bio-p2': 'Los libros me dieron marcos: cómo pensar con claridad, cómo entrenar deliberadamente y cómo analizar problemas en lugar de reaccionar. Me interesa especialmente la intersección entre fundamentos de seguridad y criptografía: cómo la confianza, la identidad y la verificación moldean el panorama digital moderno. Abordo esos temas igual que el entrenamiento: descomponer la complejidad en ciclos repetibles y progresivos.',
+            'long-bio-p3': 'El deporte me enseñó resiliencia. Las carreras largas, las sesiones de fuerza y los años de fútbol táctico construyeron disciplina bajo fatiga. Eso se traduce directamente en sesiones de estudio enfocadas y proyectos a largo plazo donde el progreso parece invisible día a día. Me gusta convertir metas vagas en insumos medibles: mañanas estudiadas, páginas leídas, kilómetros corridos, repeticiones registradas.',
+            'long-bio-p4': 'Ahora estoy refinando un sistema que combina entrenamiento físico, aprendizaje técnico y revisión reflexiva. Cada semana evalúo lo que se compuso, lo que se estancó y qué necesita iteración. No persigo picos de intensidad: diseño aceleración sostenible. Ese enfoque me mantiene mejorando sin quemarme.',
+            'long-bio-p5': 'De cara al futuro quiero profundizar mi especialización en conceptos de seguridad aplicada mientras sigo probando los límites de la resistencia. Creo que combinar rigor mental con durabilidad física crea una ventaja competitiva tanto profesional como personalmente. Esta página documenta ese proceso continuo de construcción—bloque disciplinado a la vez.',
         }
     };
 
