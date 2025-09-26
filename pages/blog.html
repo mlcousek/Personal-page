@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blog - Jiří Mlčoušek</title>
+  <link rel="stylesheet" href="../assets/styles/main.css" />
+  <style>
+    .blog-wrapper{max-width:960px;margin:130px auto 60px auto;padding:0 24px;}
+    .blog-header{text-align:center;margin-bottom:40px;}
+    .posts-grid{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
+    .post-card{background:#fff;border-radius:16px;padding:22px 22px 24px 22px;box-shadow:0 4px 14px -4px rgba(0,0,0,.08),0 2px 6px -2px rgba(0,0,0,.05);display:flex;flex-direction:column;position:relative;overflow:hidden;}
+    .post-card:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,120,255,.08),rgba(0,180,216,.08));opacity:0;transition:.35s;}
+    .post-card:hover:before{opacity:1;}
+    .post-title{margin:0 0 8px 0;font-size:1.05rem;font-weight:700;line-height:1.25;}
+    .post-meta{font-size:.65rem;letter-spacing:1px;font-weight:600;color:#0078ff;margin-bottom:10px;text-transform:uppercase;}
+    .post-excerpt{font-size:.8rem;line-height:1.4;color:#333;margin:0 0 14px 0;flex:1;}
+    .read-more{align-self:flex-start;font-size:.7rem;font-weight:600;letter-spacing:.5px;text-decoration:none;padding:6px 14px;border-radius:30px;background:#0078ff;color:#fff;transition:.25s;box-shadow:0 2px 6px rgba(0,0,0,.15);} 
+    .read-more:hover{background:#005fcc;}
+    .all-posts-list{margin:34px 0 0 0;padding:0;list-style:none;}
+    .all-posts-list li{margin:0 0 12px 0;}
+    .all-posts-list a{text-decoration:none;color:#0d3b66;font-weight:600;}
+    .all-posts-list a:hover{text-decoration:underline;}
+    .divider{height:1px;background:linear-gradient(90deg,#e2e8f0,#ffffff);margin:54px 0 34px 0;}
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+  <main class="blog-wrapper">
+    <header class="blog-header">
+      <h1 id="blog-title">Blog</h1>
+      <p id="blog-intro">Short updates, thoughts and progress notes. The newest appear first.</p>
+    </header>
+    <section aria-labelledby="latest-heading">
+      <h2 id="latest-heading" style="font-size:1.3rem;margin:0 0 18px 0;">Latest Posts</h2>
+      <div class="posts-grid" id="latest-posts"></div>
+    </section>
+    <div class="divider"></div>
+    <section aria-labelledby="archive-heading">
+      <h2 id="archive-heading" style="font-size:1.1rem;margin:0 0 16px 0;">All Posts</h2>
+      <ul class="all-posts-list" id="all-posts"></ul>
+    </section>
+  </main>
+  <footer class="footer" id="footer">© 2025 Jiří Mlčoušek. All rights reserved.</footer>
+  <script src="../scripts/main.js"></script>
+  <script src="../scripts/posts.js"></script>
+  <script>
+    fetch('../components/navbar.html')
+      .then(r=>r.text())
+      .then(html=>{document.getElementById('navbar-placeholder').innerHTML=html;const link=document.getElementById('nav-blog');if(link)link.classList.add('active'); if(window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();});
+  </script>
+</body>
+</html>

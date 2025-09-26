@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sports - Jiří Mlčoušek</title>
+  <link rel="stylesheet" href="../assets/styles/main.css" />
+  <style>
+    .sports-wrapper{max-width:1100px;margin:130px auto 70px auto;padding:0 28px;}
+    .sports-header{text-align:center;margin-bottom:48px;}
+    .sports-header h1{margin:0;font-size:2.4rem;letter-spacing:1px;}
+    .sports-header p{margin:14px auto 0 auto;max-width:720px;font-size:1.02rem;color:#333;}
+    .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin:0 0 60px 0;}
+    .stat-card{background:#fff;border-radius:18px;padding:26px 24px;box-shadow:0 6px 20px -6px rgba(0,0,0,.12),0 3px 8px -3px rgba(0,0,0,.07);position:relative;overflow:hidden;}
+    .stat-card:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,120,255,.08),rgba(0,180,216,.1));opacity:0;transition:.4s;}
+    .stat-card:hover:before{opacity:1;}
+    .stat-label{font-size:.75rem;letter-spacing:1px;font-weight:600;color:#0078ff;text-transform:uppercase;margin:0 0 6px 0;}
+    .stat-value{font-size:1.9rem;font-weight:700;margin:0;}
+    .race-section h2{font-size:1.5rem;margin:0 0 24px 0;}
+    .races-table{width:100%;border-collapse:collapse;font-size:.85rem;background:#fff;box-shadow:0 4px 16px -4px rgba(0,0,0,.08);overflow:hidden;border-radius:14px;}
+    .races-table thead{background:linear-gradient(90deg,#0078ff,#00b4d8);color:#fff;font-size:.7rem;letter-spacing:1px;text-transform:uppercase;}
+    .races-table th,.races-table td{padding:14px 18px;text-align:left;}
+    .races-table tbody tr{border-top:1px solid #eef2f6;transition:.25s;}
+    .races-table tbody tr:hover{background:#f5f9ff;}
+    .badge{display:inline-block;padding:4px 10px;font-size:.6rem;font-weight:600;letter-spacing:.5px;border-radius:30px;background:#eef3f8;color:#0d3b66;margin-left:6px;}
+    .highlight{background:#fffbe6;}
+    .career-block{margin:70px 0 0 0;background:#fff;padding:38px 34px;border-radius:20px;box-shadow:0 6px 22px -6px rgba(0,0,0,.12),0 3px 10px -4px rgba(0,0,0,.08);}    
+    .career-block h2{margin:0 0 18px 0;font-size:1.4rem;}
+    .career-block p{margin:0 0 14px 0;font-size:.9rem;line-height:1.5;color:#222;}
+    @media (max-width:640px){.stat-value{font-size:1.5rem;} .sports-header h1{font-size:2rem;} .races-table th,.races-table td{padding:10px 12px;}}
+  </style>
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+  <main class="sports-wrapper">
+    <header class="sports-header">
+      <h1 id="sports-title">Sports Journey</h1>
+      <p id="sports-lead" class="lead">A foundation of 15 years in football built endurance, discipline and competitive focus—now powering progress in endurance racing.</p>
+    </header>
+
+    <section class="stats-grid" aria-label="Key sports stats">
+      <div class="stat-card"><p class="stat-label" id="stat-years-label">Years in Football</p><p class="stat-value" id="stat-years">15</p></div>
+      <div class="stat-card"><p class="stat-label" id="stat-best-league-label">Highest Level</p><p class="stat-value" id="stat-best-league">4. CZ</p></div>
+      <div class="stat-card"><p class="stat-label" id="stat-marathons-label">Marathons</p><p class="stat-value" id="stat-marathons">2</p></div>
+      <div class="stat-card"><p class="stat-label" id="stat-ultra-label">Ultra Events</p><p class="stat-value" id="stat-ultra">1</p></div>
+    </section>
+
+    <section class="race-section" aria-labelledby="race-heading">
+      <h2 id="race-heading">Races</h2>
+      <table class="races-table" aria-describedby="race-heading">
+        <thead>
+          <tr>
+            <th id="th-event">Event</th>
+            <th id="th-date">Date</th>
+            <th id="th-time">Time</th>
+            <th id="th-notes">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Prague Marathon 2025 <span class="badge">42.2K</span></td>
+            <td>2025-05-04</td>
+            <td>3:32</td>
+            <td>Solid debut benchmark</td>
+          </tr>
+          <tr class="highlight">
+            <td>Olomouc Marathon 2025 <span class="badge">42.2K</span></td>
+            <td>2025-06-??</td>
+            <td>3:25</td>
+            <td>Improved pacing & endurance</td>
+          </tr>
+          <tr>
+            <td>Beskydská Sedmička (B7) <span class="badge">Ultra</span></td>
+            <td>2025-09-??</td>
+            <td>14:52</td>
+            <td>Elevation & resilience focus</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="career-block" aria-labelledby="career-heading">
+      <h2 id="career-heading">Football Background</h2>
+      <p id="career-p-1">I played competitive football for 15 years, developing tactical awareness, speed endurance and team resilience.</p>
+      <p id="career-p-2">My highest competition level reached the Czech fourth tier, an environment that demanded structure, discipline and consistency.</p>
+      <p id="career-p-3">Those foundations now translate into structured training blocks for running, strength and hybrid endurance challenges.</p>
+    </section>
+  </main>
+  <footer class="footer" id="footer">© 2025 Jiří Mlčoušek. All rights reserved.</footer>
+  <script src="../scripts/main.js"></script>
+  <script>
+    fetch('../components/navbar.html')
+      .then(r=>r.text())
+      .then(html=>{document.getElementById('navbar-placeholder').innerHTML=html;const link=document.getElementById('nav-sports');if(link)link.classList.add('active'); if(window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();});
+  </script>
+</body>
+</html>
