@@ -41,28 +41,13 @@
     <small>Style aligned with Books page with slight visual tweaks.</small>
   </footer>
   <script>
-    // Load shared navbar (relative path one level up)
     fetch('../components/navbar.html')
       .then(r=>r.text())
       .then(html=>{
         document.getElementById('navbar-placeholder').innerHTML = html;
-        // Mark podcasts link active if present
-        const podcastsLink = document.getElementById('nav-podcasts');
-        if(podcastsLink){ podcastsLink.classList.add('active'); }
-        // Fix links because navbar is included at different nesting levels
-        const fixMap = [
-          {id:'nav-logo', href:'../index.html'},
-          {id:'nav-about', href:'about.html'},
-          {id:'nav-books', href:'../books.html'},
-          {id:'nav-podcasts', href:'podcasts.html'}
-        ];
-        fixMap.forEach(item=>{
-          const el = document.getElementById(item.id);
-            if(el){
-              // If link already contains '../' leave it, else set appropriately
-              el.setAttribute('href', item.href);
-            }
-        });
+        const link = document.getElementById('nav-podcasts');
+        if (link) link.classList.add('active');
+        if (window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();
       });
   </script>
 </body>
