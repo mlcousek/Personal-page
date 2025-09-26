@@ -32,7 +32,7 @@
 </head>
 <body>
   <div id="navbar-placeholder"></div>
-  <main class="sports-wrapper">
+  <main class="sports-wrapper page-shell">
     <header class="sports-header">
       <h1 id="sports-title">Sports Journey</h1>
       <p id="sports-lead" class="lead">A foundation of 15 years in football built endurance, discipline and competitive focus—now powering progress in endurance racing.</p>
@@ -91,7 +91,7 @@
   <script>
     fetch('../components/navbar.html')
       .then(r=>r.text())
-      .then(html=>{document.getElementById('navbar-placeholder').innerHTML=html;const link=document.getElementById('nav-sports');if(link)link.classList.add('active'); if(window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();});
+      .then(html=>{document.getElementById('navbar-placeholder').innerHTML=html; if(window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();});
   </script>
 </body>
 </html>

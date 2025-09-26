@@ -10,7 +10,7 @@
 </head>
 <body>
   <div id="navbar-placeholder"></div>
-  <main class="podcasts" aria-label="List of podcasts">
+  <main class="podcasts page-shell" aria-label="List of podcasts">
     <article class="podcast" data-platform="spotify">
       <img class="podcast__img" src="https://via.placeholder.com/300x180.png?text=Podcast+1" alt="Podcast 1 cover" />
       <div class="podcast-content">
@@ -43,12 +43,7 @@
   <script>
     fetch('../components/navbar.html')
       .then(r=>r.text())
-      .then(html=>{
-        document.getElementById('navbar-placeholder').innerHTML = html;
-        const link = document.getElementById('nav-podcasts');
-        if (link) link.classList.add('active');
-        if (window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();
-      });
+      .then(html=>{document.getElementById('navbar-placeholder').innerHTML=html; if(window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();});
   </script>
 </body>
 </html>

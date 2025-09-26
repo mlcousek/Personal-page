@@ -15,14 +15,14 @@
           font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
   
-        .books {
+                .books {
           display: grid;
           grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
           grid-template-rows: auto auto;
           column-gap: 1rem;  
           margin: 1rem auto;
           max-width: 75em;
-          margin-top: 10rem;
+                    margin-top: 2rem; /* reduced; page-shell will add consistent top spacing */
         }
   
         .book {
@@ -66,7 +66,7 @@
 </head>
 <body>
     <div id="navbar-placeholder"></div>
-    <main class="books">
+    <main class="books page-shell">
         <!-- Current Reading -->
          <h1 id="books-title" style="grid-column: 1 / -1; text-align:center;">Read Books</h1>
          <div class="book">

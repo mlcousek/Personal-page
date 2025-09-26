@@ -252,5 +252,22 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('lang','en');
         }
         setLanguage(savedLang);
+        // Auto-detect active nav link based on current path
+        const path = window.location.pathname;
+        const map = [
+            { id: 'nav-about', key: 'about.html' },
+            { id: 'nav-books', key: 'books.html' },
+            { id: 'nav-podcasts', key: 'podcasts.html' },
+            { id: 'nav-blog', key: 'blog.html' },
+            { id: 'nav-sports', key: 'sports.html' },
+            { id: 'nav-logo', key: 'index.html' }
+        ];
+        map.forEach(item => {
+            const el = document.getElementById(item.id);
+            if (el) {
+                if (path.endsWith(item.key)) el.classList.add('active');
+                else el.classList.remove('active');
+            }
+        });
     };
 });
