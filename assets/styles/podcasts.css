@@ -7,10 +7,9 @@ body{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(13rem,1fr));
   gap:1.4rem;
-  margin:2rem auto;
+  margin:0 auto 3rem auto;
   max-width:78em;
-  padding:0 1.2rem;
-  margin-top:10rem;
+  padding:0 1.2rem 0 1.2rem;
 }
 .podcast{
   background:#fff;
@@ -36,14 +35,41 @@ body{
 .tag-new{background:#bbf7d0;} 
 .tag-fav{background:#fde68a;} 
 .tag-listened{background:#93c5fd;} 
+.tag-finished{background:#cbd5e1;}
+.tag-progress{background:#fde68a;}
 [data-platform="spotify"] .podcast__img{box-shadow:inset 0 0 0 1000px rgba(29,185,84,.08);} 
 [data-platform="youtube"] .podcast__img{box-shadow:inset 0 0 0 1000px rgba(255,0,0,.08);} 
 [data-platform="apple"] .podcast__img{box-shadow:inset 0 0 0 1000px rgba(142,142,147,.08);} 
 .footer.alt{color:#666;background:none;} 
 @media (max-width:650px){
-  .podcasts{grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));margin-top:9rem;}
+  .podcasts{grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));}
   .podcast__img{height:140px;}
 }
 @media (max-width:420px){
   .podcasts{grid-template-columns:1fr;}
 }
+
+/* Filters */
+.filter-chip{
+  background:#eef3f7;
+  border:1px solid #d7e2eb;
+  padding:.55rem 1.1rem;
+  border-radius:2rem;
+  font-size:.7rem;
+  font-weight:600;
+  letter-spacing:.5px;
+  cursor:pointer;
+  transition:.2s;
+}
+.filter-chip:hover{background:#e2edf5;}
+.filter-chip.active{background:#0078ff;color:#fff;border-color:#0078ff;}
+
+/* Progress Bar */
+.progress{height:6px;background:#f1f5f9;border-radius:4px;overflow:hidden;margin-top:auto;position:relative;}
+.progress-bar{height:100%;background:linear-gradient(90deg,#00b4d8,#0078ff);width:0;transition:width .4s ease;}
+.progress-bar.done{background:linear-gradient(90deg,#22c55e,#16a34a);}
+
+/* Date group */
+.date-group{margin-bottom:2.2rem;}
+.date-heading{margin:0 0 1rem 0;font-size:.9rem;font-weight:700;letter-spacing:.5px;color:#334155;position:relative;padding-left:10px;}
+.date-heading:before{content:"";position:absolute;left:0;top:50%;width:4px;height:14px;background:linear-gradient(#0078ff,#00b4d8);transform:translateY(-50%);border-radius:2px;}
