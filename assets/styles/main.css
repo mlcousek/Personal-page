@@ -141,6 +141,7 @@ body {
 .social-btn.linkedin { background: #0077b5; }
 .social-btn.instagram { background: linear-gradient(45deg,#f9ce34,#ee2a7b,#6228d7); }
 .social-btn.facebook { background: #1877f3; }
+.social-btn.strava { background: #fc4c02; }
 .social-btn:hover {
     transform: translateY(-2px) scale(1.05);
     filter: brightness(1.1);
