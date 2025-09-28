@@ -1,0 +1,29 @@
+{
+    "inputs": [
+    {
+      "type": "promptString",
+      "id": "apiKey",
+      "description": "YouTube API Key",
+      "password": true
+    }
+  ],
+  "servers": {
+    "spotify": {
+      "command": "node",
+      "args": ["E:/Programming/mcp servers/spotify-mcp-server/build/index.js"]
+    },
+    "zubeid-youtube-mcp-server": {
+      "command": "zubeid-youtube-mcp-server",
+      "env": {
+        "YOUTUBE_API_KEY": "AIzaSyDkEDgQYESLE-FMMUBsozJEJl2OAQEDuxU"
+      }
+    },
+    "youtube": {
+      "command": "npx",
+      "args": ["-y", "zubeid-youtube-mcp-server"],
+      "env": {
+        "YOUTUBE_API_KEY": "AIzaSyDkEDgQYESLE-FMMUBsozJEJl2OAQEDuxU"
+      }
+    }
+  }
+}

@@ -99,18 +99,39 @@ function renderEpisodes(filter){
 }
 
 function renderCard(ep){
-  const progress = ep.status==='finished' ? 100 : Math.max(0, Math.min(100, 100 - Math.round((ep.minutesLeft/ (ep.totalMinutes||ep.minutesLeft||1))*100)));
+  // progress: when minutesLeft is present, compute percent listened
+  const total = ep.totalMinutes || (ep.minutesLeft || 0);
+  const progress = ep.status==='finished' ? 100 : Math.max(0, Math.min(100, 100 - Math.round(((ep.minutesLeft||0) / (total||1)) * 100)));
   const progressBar = `<div class="progress"><div class="progress-bar${ep.status==='finished'?' done':''}" style="width:${progress}%;"></div></div>`;
-  const statusTag = ep.status==='finished' ? '<span class="podcast__tag tag-finished">FINISHED</span>' : `<span class="podcast__tag tag-progress">${ep.minutesLeft} min left</span>`;
+  const statusTag = ep.status==='finished' ? '<span class="podcast__tag tag-finished">FINISHED</span>' : `<span class="podcast__tag tag-progress">${ep.minutesLeft || 0} min left</span>`;
+
+  // image fallback: if the image fails to load, replace with a placeholder service
+  const imgSrc = ep.cover || 'https://via.placeholder.com/300x300?text=No+Cover';
+  const imgFallback = 'https://via.placeholder.com/300x300?text=No+Cover';
+
+  const descriptionHtml = ep.description ? `<p class="podcast__desc">${ep.description}</p>` : '';
+
   return `<article class="podcast" data-platform="generic">
-    <img class="podcast__img" src="${ep.cover}" alt="Cover of ${ep.title}">
+    <img loading="lazy" class="podcast__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';">
     ${statusTag}
     <div class="podcast-content">
-      <h2 class="podcast__title"><a href="${ep.link}" target="_blank" rel="noopener">${ep.title}</a></h2>
-      <p class="podcast__host">${ep.show}</p>
+      <h2 class="podcast__title"><a href="${ep.link || '#'}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h2>
+      <p class="podcast__host">${escapeHtml(ep.show)}</p>
+      ${descriptionHtml}
       ${progressBar}
     </div>
   </article>`;
+}
+
+// small utility for safe text interpolation into attributes/text nodes
+function escapeHtml(str){
+  if(!str && str!==0) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 function updateCount(n){
