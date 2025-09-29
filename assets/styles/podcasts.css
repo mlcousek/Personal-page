@@ -64,6 +64,12 @@ body{
 .filter-chip:hover{background:#e2edf5;}
 .filter-chip.active{background:#0078ff;color:#fff;border-color:#0078ff;}
 
+/* Controls container (sort/tag/clear) */
+#podcast-controls{align-items:center;}
+#podcast-controls label{flex:0 0 auto;}
+#podcast-controls select{flex:0 0 auto;}
+#podcast-controls #podcast-clear{flex:0 0 auto;cursor:pointer}
+
 /* Progress Bar */
 .progress{height:6px;background:#f1f5f9;border-radius:4px;overflow:hidden;margin-top:auto;position:relative;}
 .progress-bar{height:100%;background:linear-gradient(90deg,#00b4d8,#0078ff);width:0;transition:width .4s ease;}

@@ -4,18 +4,19 @@
  */
 
 const PODCAST_EPISODES = [
+  // 28 Sep 2025
+  { id:'2025-09-28-1', date:'2025-09-28', title:"koupil jsem si kurz za 125 000 KČ a tohle je moje upřímná zkušenost... HRA ŽIVOTA #28", show:'The Nick Bare Podcast', totalMinutes: 10, cover:'https://yt3.googleusercontent.com/tyMHvqC5Qh7lBayZhnYMW5SwTFkmDtRT3qpYfLTsju5Jp2oa0bg96jQLKcRClpIPKyHZJymtGw=s160-c-k-c0x00ffffff-no-rj', platform:'spotify', link:'https://open.spotify.com/episode/2As8PrKmTMUkz339vRiKzf?si=78cf9b016c784d9b', tags:['Czech', 'Self improvement'] },
+  { id:'2025-09-28-2', date:'2025-09-28', title:'EMBRACE THE SUCK', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:5, cover:'https://i.scdn.co/image/ab67656300005f1ff366d13999e833769d2a1f1c', link:'https://open.spotify.com/episode/5eofnTkrQtmQfaeiLwxD0Q?si=3ixYp76zRAemc1-ufe1gDw', platform:'spotify', tags:['English', 'Motivation'] },
   // 18 Sep 2025
-  { id:'2025-09-18-1', date:'2025-09-18', title:"138: 5 Traits You'll Find in Excep…", show:'The Nick Bare Podcast', status:'in-progress', minutesLeft:55, totalMinutes: /* placeholder */ 90, cover:'https://i.imgur.com/nickbare-cover.png', link:'#', tags:['english'] },
-  // 18 Sep (finished episodes from Kilometry)
-  { id:'2025-09-18-2', date:'2025-09-18', title:'Děti musíme v začátcích nadch…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:60, cover:'https://i.imgur.com/kilometry-cover.png', link:'#', tags:['cz'] },
-  { id:'2025-09-18-3', date:'2025-09-18', title:'Do Keni jezdíme běhat do krás…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:60, cover:'https://i.imgur.com/kilometry-cover.png', link:'#', tags:['cz'] },
+  { id:'2025-09-18-1', date:'2025-09-18', title:'Děti musíme v začátcích nadchnout pro cyklistiku formou hry. Výsledky přijdou časem, říká Spěšný', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab6765630000f68d65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/2TnKRDEYjpZKDej240iDRl?si=353463f649a948fe', tags:['Czech', 'Cycling', 'Chill'] },
+  { id:'2025-09-18-2', date:'2025-09-18', title:'Do Keni jezdíme běhat do krásné přírody a zvolníme od zrychleného světa, shodují se Vebr a Sasynová', show:'Kilometry Jiřího Ježka',  totalMinutes:49, cover:'https://i.scdn.co/image/ab6765630000f68d65bfd0524d2e54f9cf14232c', platform:'spotify',link:'https://open.spotify.com/episode/2XQTRE3qPvZ6uBS2PFQd2i?si=6TJSttPoQT-VDgs4E47Dgg', tags:['Czech', 'Running', 'Chill', 'Cycling'] },
 
-  // 30 Aug 2025
+ /* // 30 Aug 2025
   { id:'2025-08-30-1', date:'2025-08-30', title:'Paďour: Chci zůstat v kondici a…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:55, cover:'https://i.imgur.com/kilometry-cover.png', link:'#', tags:['cz'] },
   { id:'2025-08-30-2', date:'2025-08-30', title:'Proč Jsem Zaplatil 124 997 Kč z…', show:'HRA ŽIVOTA s Martinem H.', status:'in-progress', minutesLeft:18, totalMinutes:70, cover:'https://i.imgur.com/hrazivota-cover.png', link:'#', tags:['cz'] },
 
   // 21 Aug 2025
-  { id:'2025-08-21-1', date:'2025-08-21', title:'6# Môj prvý maratón (3:43) km…', show:'(Unknown show - update)', status:'in-progress', minutesLeft:/* placeholder */ 40, totalMinutes:80, cover:'https://via.placeholder.com/300x300?text=Cover', link:'#', tags:['sk'] },
+  { id:'2025-08-21-1', date:'2025-08-21', title:'6# Môj prvý maratón (3:43) km…', show:'(Unknown show - update)', status:'in-progress', minutesLeft: placeholder  40, totalMinutes:80, cover:'https://via.placeholder.com/300x300?text=Cover', link:'#', tags:['sk'] },
 
   // 20 Aug 2025
   { id:'2025-08-20-1', date:'2025-08-20', title:'Psychika a krize na B7 (a jiných…', show:'naHoru.tv', status:'finished', minutesLeft:0, totalMinutes:65, cover:'https://i.imgur.com/nahoru-cover.png', link:'#', tags:['cz'] },
@@ -67,10 +68,10 @@ const PODCAST_EPISODES = [
   // 5 Aug earlier cluster already captured above
 
   // 1 Jul 2025
-  { id:'2025-07-01-1', date:'2025-07-01', title:'Umění čelit výzvě (Tatjana Kiel…', show:'Audiolibrix – Audioknihy pro…', status:'in-progress', minutesLeft:18, totalMinutes:/* placeholder */ 70, cover:'https://via.placeholder.com/300x300?text=AUDIO', link:'#', tags:['cz','audiobook'] },
+  { id:'2025-07-01-1', date:'2025-07-01', title:'Umění čelit výzvě (Tatjana Kiel…', show:'Audiolibrix – Audioknihy pro…', status:'in-progress', minutesLeft:18, totalMinutes: placeholder  70, cover:'https://via.placeholder.com/300x300?text=AUDIO', link:'#', tags:['cz','audiobook'] },
   { id:'2025-07-01-2', date:'2025-07-01', title:'Nejlepší rok vašeho života (Mic…', show:'Audiolibrix – Audioknihy pro…', status:'in-progress', minutesLeft:55, totalMinutes:85, cover:'https://via.placeholder.com/300x300?text=AUDIO', link:'#', tags:['cz','audiobook'] },
-  { id:'2025-07-01-3', date:'2025-07-01', title:'Odvaha volá (Ryan Holiday)', show:'Audiolibrix – Audioknihy pro…', status:'in-progress', minutesLeft:49, totalMinutes:/* placeholder */ 150, cover:'https://via.placeholder.com/300x300?text=AUDIO', link:'#', tags:['cz','audiobook'] },
-];
+  { id:'2025-07-01-3', date:'2025-07-01', title:'Odvaha volá (Ryan Holiday)', show:'Audiolibrix – Audioknihy pro…', status:'in-progress', minutesLeft:49, totalMinutes:/* placeholder  150, cover:'https://via.placeholder.com/300x300?text=AUDIO', link:'#', tags:['cz','audiobook'] },
+*/];
 
 /** Utility: group episodes by date descending */
 function groupByDateDescending(list){
@@ -79,17 +80,54 @@ function groupByDateDescending(list){
   return Array.from(map.entries()).sort((a,b)=> b[0].localeCompare(a[0]));
 }
 
-function renderEpisodes(filter){
-  const container = document.getElementById('podcast-grid');
-  if(!container) return;
+function collectAllTags(list){
+  const s = new Set();
+  list.forEach(e=>{ if(Array.isArray(e.tags)) e.tags.forEach(t=>s.add(t)); });
+  return Array.from(s).sort((a,b)=>a.localeCompare(b));
+}
+
+function applyFiltersAndSort({filter='all', tag='all', sort='date-desc'} = {}){
   let list = [...PODCAST_EPISODES];
+  // apply quick filters
   switch(filter){
     case 'in-progress': list = list.filter(e=>e.status==='in-progress'); break;
     case 'finished': list = list.filter(e=>e.status==='finished'); break;
     case 'favorites': list = list.filter(e=>e.tags && e.tags.includes('favorite')); break;
-    case '2025': list = list.filter(e=>e.date.startsWith('2025-')); break;
+    case '2025': list = list.filter(e=>e.date && e.date.startsWith('2025-')); break;
     default: break;
   }
+  // tag filter
+  if(tag && tag!=='all') list = list.filter(e=>Array.isArray(e.tags) && e.tags.includes(tag));
+
+  // sort
+  switch(sort){
+    case 'show-asc': list.sort((a,b)=> (a.show||'').localeCompare(b.show||'', undefined, {sensitivity:'base'})); break;
+    case 'tag-asc': list.sort((a,b)=> {
+      const ta = (a.tags && a.tags[0]) || '';
+      const tb = (b.tags && b.tags[0]) || '';
+      return ta.localeCompare(tb, undefined, {sensitivity:'base'}) || (a.date||'').localeCompare(b.date||'');
+    }); break;
+    case 'date-desc':
+    default:
+      list.sort((a,b)=> (b.date||'').localeCompare(a.date||''));
+  }
+
+  return list;
+}
+
+function renderEpisodes(opts){
+  const container = document.getElementById('podcast-grid');
+  if(!container) return;
+  const filterBar = document.getElementById('podcast-filters');
+  const tagSelect = document.getElementById('podcast-tag');
+  const sortSelect = document.getElementById('podcast-sort');
+  const filter = (opts && opts.filter) || (filterBar && filterBar.querySelector('button.active') && filterBar.querySelector('button.active').getAttribute('data-filter')) || 'all';
+  const tag = (opts && opts.tag) || (tagSelect && tagSelect.value) || 'all';
+  const sort = (opts && opts.sort) || (sortSelect && sortSelect.value) || 'date-desc';
+
+  const list = applyFiltersAndSort({filter, tag, sort});
+
+  // grouped by date
   const grouped = groupByDateDescending(list);
   container.innerHTML = grouped.map(([date, eps])=>{
     const dateDisplay = new Date(date).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'});
@@ -141,17 +179,56 @@ function updateCount(n){
 
 function setupFilters(){
   const bar = document.getElementById('podcast-filters');
+  const tagSelect = document.getElementById('podcast-tag');
+  const sortSelect = document.getElementById('podcast-sort');
+  const clearBtn = document.getElementById('podcast-clear');
   if(!bar) return;
+
+  // populate tag select from data
+  if(tagSelect){
+    const tags = collectAllTags(PODCAST_EPISODES);
+    // keep existing 'all' option then append
+    tags.forEach(t=>{
+      const opt = document.createElement('option'); opt.value = t; opt.textContent = t; tagSelect.appendChild(opt);
+    });
+    tagSelect.addEventListener('change', ()=> renderEpisodes({}));
+  }
+
+  if(sortSelect){
+    sortSelect.addEventListener('change', ()=> renderEpisodes({}));
+  }
+
+  // clear filters button
+  if(clearBtn){
+    clearBtn.addEventListener('click', ()=>{
+      // reset filter buttons to 'all'
+      bar.querySelectorAll('button[data-filter]').forEach(b=>b.classList.remove('active'));
+      const allBtn = bar.querySelector('button[data-filter="all"]');
+      if(allBtn) allBtn.classList.add('active');
+      // reset selects
+      if(tagSelect) tagSelect.value = 'all';
+      if(sortSelect) sortSelect.value = 'date-desc';
+      renderEpisodes({});
+    });
+  }
+
   bar.addEventListener('click', e=>{
     const btn = e.target.closest('button[data-filter]');
     if(!btn) return;
     bar.querySelectorAll('button').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
-    renderEpisodes(btn.getAttribute('data-filter'));
+    renderEpisodes({});
   });
 }
 
 document.addEventListener('DOMContentLoaded', ()=>{
   setupFilters();
-  renderEpisodes('all');
+  // set last-updated text
+  const last = document.getElementById('podcast-last-updated');
+  if(last){
+    // try to infer newest date
+    const dates = PODCAST_EPISODES.map(e=>e.date).filter(Boolean).sort().reverse();
+    if(dates.length) last.textContent = 'Last updated: ' + new Date(dates[0]).toLocaleDateString('cs-CZ');
+  }
+  renderEpisodes({});
 });
