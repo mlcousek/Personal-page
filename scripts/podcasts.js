@@ -5,40 +5,34 @@
 
 const PODCAST_EPISODES = [
   // 28 Sep 2025
-  { id:'2025-09-28-1', date:'2025-09-28', title:"koupil jsem si kurz za 125 000 KČ a tohle je moje upřímná zkušenost... HRA ŽIVOTA #28", show:'The Nick Bare Podcast', totalMinutes: 10, cover:'https://yt3.googleusercontent.com/tyMHvqC5Qh7lBayZhnYMW5SwTFkmDtRT3qpYfLTsju5Jp2oa0bg96jQLKcRClpIPKyHZJymtGw=s160-c-k-c0x00ffffff-no-rj', platform:'spotify', link:'https://open.spotify.com/episode/2As8PrKmTMUkz339vRiKzf?si=78cf9b016c784d9b', tags:['Czech', 'Self improvement'] },
+  { id:'2025-09-28-1', date:'2025-09-28', title:"koupil jsem si kurz za 125 000 KČ a tohle je moje upřímná zkušenost... HRA ŽIVOTA #28", show:'HRA ŽIVOTA s Martinem Hrabinou', totalMinutes: 10, cover:'https://yt3.googleusercontent.com/tyMHvqC5Qh7lBayZhnYMW5SwTFkmDtRT3qpYfLTsju5Jp2oa0bg96jQLKcRClpIPKyHZJymtGw=s160-c-k-c0x00ffffff-no-rj', platform:'spotify', link:'https://open.spotify.com/episode/2As8PrKmTMUkz339vRiKzf?si=78cf9b016c784d9b', tags:['Czech', 'Self improvement'] },
   { id:'2025-09-28-2', date:'2025-09-28', title:'EMBRACE THE SUCK', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:5, cover:'https://i.scdn.co/image/ab67656300005f1ff366d13999e833769d2a1f1c', link:'https://open.spotify.com/episode/5eofnTkrQtmQfaeiLwxD0Q?si=3ixYp76zRAemc1-ufe1gDw', platform:'spotify', tags:['English', 'Motivation'] },
   // 18 Sep 2025
-  { id:'2025-09-18-1', date:'2025-09-18', title:'Děti musíme v začátcích nadchnout pro cyklistiku formou hry. Výsledky přijdou časem, říká Spěšný', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0cgjEAwlLLoVATagobPaLwvpHzZxARJlijw&s', tags:['Czech', 'Cycling', 'Chill'] },
-  { id:'2025-09-18-2', date:'2025-09-18', title:'Do Keni jezdíme běhat do krásné přírody a zvolníme od zrychleného světa, shodují se Vebr a Sasynová', show:'Kilometry Jiřího Ježka',  totalMinutes:49, cover:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0cgjEAwlLLoVATagobPaLwvpHzZxARJlijw&s', platform:'spotify',link:'https://open.spotify.com/episode/2XQTRE3qPvZ6uBS2PFQd2i?si=6TJSttPoQT-VDgs4E47Dgg', tags:['Czech', 'Running', 'Chill', 'Cycling'] },
+  { id:'2025-09-18-1', date:'2025-09-18', title:'Děti musíme v začátcích nadchnout pro cyklistiku formou hry. Výsledky přijdou časem, říká Spěšný', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:  'images/KJJ.jpg', platform:'spotify', link:'https://open.spotify.com/episode/2TnKRDEYjpZKDej240iDRl?si=dc87bfa947664046', tags:['Czech', 'Cycling', 'Chill'] },
+  { id:'2025-09-18-2', date:'2025-09-18', title:'Do Keni jezdíme běhat do krásné přírody a zvolníme od zrychleného světa, shodují se Vebr a Sasynová', show:'Kilometry Jiřího Ježka',  totalMinutes:49, cover:'images/KJJ.jpg', platform:'spotify', link: 'https://open.spotify.com/episode/2XQTRE3qPvZ6uBS2PFQd2i?si=51ca6cf37b0a4bbe', tags:['Czech', 'Running', 'Chill', 'Cycling'] },
 
- /* // 30 Aug 2025
-  { id:'2025-08-30-1', date:'2025-08-30', title:'Paďour: Chci zůstat v kondici a…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:55, cover:'https://i.imgur.com/kilometry-cover.png', link:'#', tags:['cz'] },
-  { id:'2025-08-30-2', date:'2025-08-30', title:'Proč Jsem Zaplatil 124 997 Kč z…', show:'HRA ŽIVOTA s Martinem H.', status:'in-progress', minutesLeft:18, totalMinutes:70, cover:'https://i.imgur.com/hrazivota-cover.png', link:'#', tags:['cz'] },
-
-  // 21 Aug 2025
-  { id:'2025-08-21-1', date:'2025-08-21', title:'6# Môj prvý maratón (3:43) km…', show:'(Unknown show - update)', status:'in-progress', minutesLeft: placeholder  40, totalMinutes:80, cover:'https://via.placeholder.com/300x300?text=Cover', link:'#', tags:['sk'] },
+// 30 Aug 2025
+  { id:'2025-08-30-1', date:'2025-08-30', title:'Paďour: Chci zůstat v kondici a koučem, který dost času tráví na kole. Stravu so držím jak profík', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'images/KJJ.jpg', platform:'spotify', link:'https://open.spotify.com/episode/6lAoKExABjDn8TDZdraJfp?si=b3b93dc4b0bb4524', tags:['Czech', 'Cycling', 'Chill'] },
+  
 
   // 20 Aug 2025
-  { id:'2025-08-20-1', date:'2025-08-20', title:'Psychika a krize na B7 (a jiných…', show:'naHoru.tv', status:'finished', minutesLeft:0, totalMinutes:65, cover:'https://i.imgur.com/nahoru-cover.png', link:'#', tags:['cz'] },
+  { id:'2025-08-20-1', date:'2025-08-20', title:'Psychika a krize na B7 (a jiných závodech)', show:'naHoru.tv|Rozhovory & motivace', totalMinutes:24, cover:'https://static.wixstatic.com/media/3b6e39_c28ea616ea3042bf953d65e196ba37cc~mv2.png/v1/fit/w_2500,h_1330,al_c/3b6e39_c28ea616ea3042bf953d65e196ba37cc~mv2.png', platform:'spotify', link:'https://open.spotify.com/episode/6WqF4wX8lmxtafuuunG1JG?si=8899e07aab604e0c', tags:['Czech', 'Ultra', 'Running', 'Self improvement', 'B7'] },
 
   // 17 Aug 2025
-  { id:'2025-08-17-1', date:'2025-08-17', title:'#37 Arctic Circle Trail – dvakrát…', show:'Život na treku', status:'in-progress', minutesLeft:46, totalMinutes:80, cover:'https://i.imgur.com/zivotnat-reku-cover.png', link:'#', tags:['cz'] },
-  { id:'2025-08-17-2', date:'2025-08-17', title:'Chtěla jsem pokračovat, ale roz…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:55, cover:'https://i.imgur.com/kilometry-cover.png', link:'#', tags:['cz'] },
+  { id:'2025-08-17-1', date:'2025-08-17', title:'Chtěla jsem pokračovat, ale rozum rozhodl, že bude lepší to utnout, říká o odstoupení z Tour Burlová', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'images/KJJ.jpg', platform:'spotify', link:'https://open.spotify.com/episode/77A8C8OuXoTaSQothMXpgt?si=ef96b9625ff1474c', tags:['Czech', 'Cycling', 'Chill', 'Tour de France'] },
 
   // 14 Aug 2025
-  { id:'2025-08-14-1', date:'2025-08-14', title:'Jak na Beskydskou sedmičku?…', show:'edgarpower podcast', status:'in-progress', minutesLeft:1, totalMinutes:60, cover:'https://i.imgur.com/edgarpower-cover.png', link:'#', tags:['cz','b7'] },
+  { id:'2025-08-14-1', date:'2025-08-14', title:'Jak na Beskydskou sedmičku? S Matějem a Barčou Urbaczkovými o tréninku, výbavě i hlavě', show:'edgarpower podcast', totalMinutes:37, cover:'https://edgarpower.s17.cdn-upgates.com/e/e68891d99ba7e7-matej-s-bara-b7-podcast.jpg', platform:'spotify', link:'#', tags:['Czech','B7', 'Running', 'Ultra'] },
 
-  // 10 Aug 2025
-  { id:'2025-08-10-1', date:'2025-08-10', title:'Jak na Beskydskou sedmičku?…', show:'edgarpower podcast', status:'in-progress', minutesLeft:1, totalMinutes:60, cover:'https://i.imgur.com/edgarpower-cover.png', link:'#', tags:['duplicate','b7'] },
-  { id:'2025-08-10-2', date:'2025-08-10', title:'Ježek: Z přestupu Evenepoela j…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:55, cover:'https://i.imgur.com/kilometry-cover.png', link:'#', tags:['cz'] },
+  // 9 Aug 2025
+  { id:'2025-08-09-1', date:'2025-08-09', title:'Ježek: Z přestupu Evenepoela jsem rozpačitý. Je to divné rozhodnutí i v podání týmových manažerů', show:'Kilometry Jiřího Ježka', totalMinutes:49, cover:'images/KJJ.jpg', platform:'spotify', link:'https://open.spotify.com/episode/3QqFaJRMCdT43HqecBO5xB?si=c4bbe87aa9d3499b', tags:['Czech', 'Cycling', 'Chill'] },
 
   // 5 Aug 2025
-  { id:'2025-08-05-1', date:'2025-08-05', title:'Pogačar se cyklistikou baví a v k…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:55, cover:'https://i.imgur.com/kilometry-cover.png', link:'#', tags:['cz'] },
+  { id:'2025-08-05-1', date:'2025-08-05', title:'Pogačar se cyklistikou baví a v každé etapě chtěl diváky něčím překvapit, vrací se Ježek k Tour', show:'Kilometry Jiřího Ježka', totalMinutes:38, cover:'images/KJJ.jpg', platform:'spotify', link:'https://open.spotify.com/episode/7AiwwrwfKbODqxCtTc8JYg?si=275f13e239724959', tags:['Czech', 'Cycling', 'Chill', 'Tour de France'] },
 
   // 4 Aug 2025
-  { id:'2025-08-04-1', date:'2025-08-04', title:'#42 Jak tě změní 21 000 km na…', show:'Život na treku', status:'in-progress', minutesLeft:46, totalMinutes:85, cover:'https://i.imgur.com/zivotnat-reku-cover.png', link:'#', tags:['cz'] },
-  { id:'2025-08-04-2', date:'2025-08-04', title:'7 LEKCÍ, Které Mě Udělaly Milio…', show:'HRA ŽIVOTA s Martinem H.', status:'finished', minutesLeft:0, totalMinutes:70, cover:'https://i.imgur.com/hrazivota-cover.png', link:'#', tags:['cz'] },
-
+  { id:'2025-08-04-1', date:'2025-08-04', title:'7 LEKCÍ, Které Mě Udělaly Milionářem v 19 Hra / Života #26', show:'HRA ŽIVOTA s Martinem Hrabinou', totalMinutes:30, cover:'https://yt3.googleusercontent.com/tyMHvqC5Qh7lBayZhnYMW5SwTFkmDtRT3qpYfLTsju5Jp2oa0bg96jQLKcRClpIPKyHZJymtGw=s160-c-k-c0x00ffffff-no-rj', link:'https://open.spotify.com/episode/0DRYeBxmcJO8qWe8M3a3Aw?si=8f39ad1abc814ae8', tags:['Czech', 'Self improvement'] },
+/*
   // 30 Jul 2025
   { id:'2025-07-30-1', date:'2025-07-30', title:'#41 Psychika na trailu: jak zvlád…', show:'Život na treku', status:'in-progress', minutesLeft:3, totalMinutes:75, cover:'https://i.imgur.com/zivotnat-reku-cover.png', link:'#', tags:['cz'] },
   { id:'2025-07-30-2', date:'2025-07-30', title:'Makej vole! Podcast #87 – Tom…', show:'Makej vole! Podcast', status:'in-progress', minutesLeft:42, totalMinutes:90, cover:'https://i.imgur.com/makejvole-cover.png', link:'#', tags:['cz'] },
