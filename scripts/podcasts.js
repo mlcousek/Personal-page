@@ -125,17 +125,49 @@ function renderEpisodes(opts){
   const grouped = groupByDateDescending(list);
   container.innerHTML = grouped.map(([date, eps])=>{
     const dateDisplay = new Date(date).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'});
-    return `<div class="date-group"><h3 class="date-heading">${dateDisplay}</h3>${eps.map(renderCard).join('')}</div>`;
+    const podcastCards = eps.map(renderCard).join('');
+    const gridClass = eps.length > 1 ? 'podcasts-for-date' : '';
+    return `<div class="date-group">
+      <h3 class="date-heading">${dateDisplay}</h3>
+      <div class="${gridClass}">${podcastCards}</div>
+    </div>`;
   }).join('');
   updateCount(list.length);
+  
+  // Apply uniform height after rendering
+  setTimeout(() => {
+    applyUniformHeight();
+  }, 100);
 }
 
 function renderCard(ep){
-  // progress: when minutesLeft is present, compute percent listened
-  const total = ep.totalMinutes || (ep.minutesLeft || 0);
-  const progress = ep.status==='finished' ? 100 : Math.max(0, Math.min(100, 100 - Math.round(((ep.minutesLeft||0) / (total||1)) * 100)));
-  const progressBar = `<div class="progress"><div class="progress-bar${ep.status==='finished'?' done':''}" style="width:${progress}%;"></div></div>`;
-  const statusTag = ep.status==='finished' ? '<span class="podcast__tag tag-finished">FINISHED</span>' : `<span class="podcast__tag tag-progress">${ep.minutesLeft || 0} min left</span>`;
+  // Determine platform
+  const platform = ep.platform || 'generic';
+  
+  // Create platform icon
+  const platformIcon = platform === 'spotify' ? '<div class="platform-icon spotify" title="Spotify"></div>' :
+                       platform === 'youtube' ? '<div class="platform-icon youtube" title="YouTube"></div>' :
+                       '';
+  
+  // Handle status and progress
+  const total = ep.totalMinutes || 0;
+  let statusTag, progressBar;
+  
+  if (ep.status === 'finished') {
+    statusTag = '<span class="podcast__tag tag-finished">FINISHED</span>';
+    progressBar = '<div class="progress"><div class="progress-bar done" style="width:100%;"></div></div>';
+  } else if (ep.status === 'in-progress' && ep.minutesLeft) {
+    const progress = Math.max(0, Math.min(100, 100 - Math.round((ep.minutesLeft / (total || 1)) * 100)));
+    statusTag = `<span class="podcast__tag tag-progress">${ep.minutesLeft} min left</span>`;
+    progressBar = `<div class="progress"><div class="progress-bar" style="width:${progress}%;"></div></div>`;
+  } else {
+    // No status property or status is something else - show episode length
+    statusTag = total > 0 ? `<span class="podcast__tag">${total} min</span>` : '';
+    progressBar = '<div class="progress"><div class="progress-bar" style="width:0%;"></div></div>';
+  }
+
+  // Duration display
+  const durationDisplay = total > 0 ? `<div class="episode-duration">${total} minutes</div>` : '';
 
   // image fallback: if the image fails to load, replace with a placeholder service
   const imgSrc = ep.cover || 'https://via.placeholder.com/300x300?text=No+Cover';
@@ -143,16 +175,44 @@ function renderCard(ep){
 
   const descriptionHtml = ep.description ? `<p class="podcast__desc">${ep.description}</p>` : '';
 
-  return `<article class="podcast" data-platform="generic">
-    <img loading="lazy" class="podcast__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';">
+  return `<article class="podcast" data-platform="${platform}">
+    <img loading="lazy" class="podcast__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';" onload="setTimeout(() => applyUniformHeight(), 50);">
     ${statusTag}
+    ${platformIcon}
     <div class="podcast-content">
       <h2 class="podcast__title"><a href="${ep.link || '#'}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h2>
       <p class="podcast__host">${escapeHtml(ep.show)}</p>
       ${descriptionHtml}
+      ${durationDisplay}
       ${progressBar}
     </div>
   </article>`;
+}
+
+// Function to apply uniform height to all podcast cards
+function applyUniformHeight() {
+  const allPodcasts = document.querySelectorAll('.podcast');
+  if (allPodcasts.length === 0) return;
+  
+  // Reset heights to auto to get natural heights
+  allPodcasts.forEach(card => {
+    card.style.height = 'auto';
+  });
+  
+  // Find the tallest card
+  let maxHeight = 0;
+  allPodcasts.forEach(card => {
+    const height = card.offsetHeight;
+    if (height > maxHeight) {
+      maxHeight = height;
+    }
+  });
+  
+  // Apply the max height to all containers
+  const containers = document.querySelectorAll('.podcasts, .podcasts-for-date');
+  containers.forEach(container => {
+    container.style.setProperty('--uniform-height', maxHeight + 'px');
+  });
 }
 
 // small utility for safe text interpolation into attributes/text nodes
@@ -225,4 +285,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if(dates.length) last.textContent = 'Last updated: ' + new Date(dates[0]).toLocaleDateString('cs-CZ');
   }
   renderEpisodes({});
+  
+  // Apply uniform height when window is resized
+  window.addEventListener('resize', () => {
+    setTimeout(() => {
+      applyUniformHeight();
+    }, 100);
+  });
 });
