@@ -238,6 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('lang','en');
         }
         setLanguage(savedLang);
+        normalizeNavbarLinks();
         // Auto-detect active nav link based on current path
         const path = window.location.pathname;
         const map = [
@@ -312,6 +313,41 @@ function getSiteRootPrefix() {
     }
 
     return '.';
+}
+
+function combinePath(base, append) {
+    if (!base) return append || '';
+    const trimmedBase = base.endsWith('/') ? base.slice(0, -1) : base;
+    if (!append) return trimmedBase;
+    const trimmedAppend = append.startsWith('/') ? append.slice(1) : append;
+    if (!trimmedAppend) return trimmedBase;
+    return `${trimmedBase}/${trimmedAppend}`;
+}
+
+function normalizeNavbarLinks() {
+    const nav = document.querySelector('.navbar');
+    if (!nav) return;
+
+    const prefixRaw = getSiteRootPrefix();
+    const cleanPrefix = (!prefixRaw || prefixRaw === '.') ? '.' : (prefixRaw.endsWith('/') ? prefixRaw.slice(0, -1) : prefixRaw);
+    const pagesRoot = combinePath(cleanPrefix, 'pages');
+
+    const linkConfig = [
+        { selector: '#nav-logo', file: 'index.html' },
+        { selector: '#nav-about', file: 'about.html' },
+        { selector: '#nav-books', file: 'books.html' },
+        { selector: '#nav-podcasts', file: 'podcasts.html' },
+        { selector: '#nav-videos', file: 'videos.html' },
+        { selector: '#nav-blog', file: 'blog.html' },
+        { selector: '#nav-sports', file: 'sports.html' }
+    ];
+
+    linkConfig.forEach(({ selector, file }) => {
+        const link = nav.querySelector(selector);
+        if (link && link.tagName === 'A') {
+            link.setAttribute('href', combinePath(pagesRoot, file));
+        }
+    });
 }
 
 async function loadNavbar() {

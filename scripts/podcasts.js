@@ -178,6 +178,9 @@ function renderCard(ep){
   const imgFallback = 'https://via.placeholder.com/300x300?text=No+Cover';
 
   const descriptionHtml = ep.description ? `<p class="podcast__desc">${ep.description}</p>` : '';
+  const tagsHtml = Array.isArray(ep.tags) && ep.tags.length
+    ? `<ul class="podcast-tags">${ep.tags.map(tag => `<li>${escapeHtml(tag)}</li>`).join('')}</ul>`
+    : '';
 
   return `<article class="podcast" data-platform="${platform}">
     <img loading="lazy" class="podcast__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';" onload="setTimeout(() => applyUniformHeight(), 50);">
@@ -188,6 +191,7 @@ function renderCard(ep){
       <p class="podcast__host">${escapeHtml(ep.show)}</p>
       ${descriptionHtml}
       ${durationDisplay}
+      ${tagsHtml}
       ${progressBar}
     </div>
   </article>`;

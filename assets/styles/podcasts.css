@@ -47,6 +47,8 @@
 [data-platform="youtube"] .podcast__img{box-shadow:inset 0 0 0 1000px rgba(255,0,0,.08);} 
 [data-platform="apple"] .podcast__img{box-shadow:inset 0 0 0 1000px rgba(142,142,147,.08);} 
 .podcasts-page .footer.alt{color:#666;background:none;}
+.podcast-tags{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none;}
+.podcast-tags li{font-size:.66rem;font-weight:600;letter-spacing:.3px;background:#e0f2fe;color:#0c4a6e;padding:.32rem .6rem;border-radius:999px;}
 @media (max-width:650px){
   .podcasts{grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));}
   .podcast__img{height:140px;}
