@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="home-page" data-root="..">
     <div id="navbar-placeholder"></div>
 
     <section class="split-hero page-shell">
@@ -38,17 +38,9 @@
         </section>
     </main>
 
-    <footer class="footer" id="footer">
+        <footer class="footer" id="footer">
         &copy; 2025 Jiří Mlčoušek. All rights reserved.
     </footer>
     <script src="../scripts/main.js"></script>
-    <script>
-        fetch('../components/navbar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-            if (window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();
-          });
-    </script>
 </body>
 </html>

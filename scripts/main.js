@@ -2,26 +2,6 @@
 // It may include functionality for interactive elements, event listeners, and any dynamic content.
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Example: Smooth scrolling for navigation links
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            targetElement.scrollIntoView({ behavior: 'smooth' });
-        });
-    });
-
-    // Example: Toggle mobile navigation menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    }
-
     // Language toggle logic
     const translations = {
         en: {
@@ -250,10 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setLanguage(savedLang);
     }
 
-    // Call setupLanguageSwitcher on DOMContentLoaded
-    setupLanguageSwitcher();
-
-    // If navbar is loaded dynamically, re-apply language after fetch
+    // Re-apply language and nav state after navbar is injected
     window.applyLanguageAfterNavbar = function() {
         let savedLang = localStorage.getItem('lang') || 'en';
         if (!['en','cs','es'].includes(savedLang)) {
@@ -293,7 +270,75 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setupMediaDropdown();
     };
+
+    // Call setupLanguageSwitcher on DOMContentLoaded
+    setupLanguageSwitcher();
+
+    // Ensure the shared navbar is injected
+    loadNavbar();
+
+    // Example: Smooth scrolling for navigation links
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Example: Toggle mobile navigation menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    }
 });
+
+function getSiteRootPrefix() {
+    const datasetRoot = document.body && document.body.dataset && document.body.dataset.root;
+    if (datasetRoot) {
+        return datasetRoot.endsWith('/') ? datasetRoot.slice(0, -1) : datasetRoot;
+    }
+
+    const path = window.location.pathname;
+    if (path.includes('/pages/')) {
+        return '..';
+    }
+
+    return '.';
+}
+
+function loadNavbar() {
+    const placeholder = document.getElementById('navbar-placeholder');
+    if (!placeholder || placeholder.dataset.navLoaded === 'true') return;
+
+    const prefix = getSiteRootPrefix();
+    const navPath = `${prefix}/components/navbar.html`;
+
+    fetch(navPath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to fetch navbar: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(html => {
+            placeholder.innerHTML = html;
+            placeholder.dataset.navLoaded = 'true';
+            if (typeof window.applyLanguageAfterNavbar === 'function') {
+                window.applyLanguageAfterNavbar();
+            }
+        })
+        .catch(error => {
+            console.error('Navbar load error:', error);
+        });
+}
 
 function closeAllDropdowns() {
     document.querySelectorAll('.navbar .dropdown').forEach(dropdown => {

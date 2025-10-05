@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../assets/styles/podcasts.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="podcasts-page" data-root="..">
   <div id="navbar-placeholder"></div>
   <section class="page-shell" style="max-width:78em;margin:0 auto;padding:0 1.2rem;">
     <header style="margin:20px 0 10px 0;display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
@@ -45,11 +45,7 @@
     &copy; 2025 Jiří Mlčoušek. Podcasts list. <br />
     <small>Style aligned with Books page with slight visual tweaks.</small>
   </footer>
-  <script>
-    fetch('../components/navbar.html')
-      .then(r=>r.text())
-      .then(html=>{document.getElementById('navbar-placeholder').innerHTML=html; if(window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();});
-  </script>
+  <script src="../scripts/main.js"></script>
   <script src="../scripts/podcasts.js"></script>
 </body>
 </html>

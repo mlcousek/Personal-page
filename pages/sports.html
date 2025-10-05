@@ -30,7 +30,7 @@
     @media (max-width:640px){.stat-value{font-size:1.5rem;} .sports-header h1{font-size:2rem;} .races-table th,.races-table td{padding:10px 12px;}}
   </style>
 </head>
-<body>
+<body class="sports-page" data-root="..">
   <div id="navbar-placeholder"></div>
   <main class="sports-wrapper page-shell">
     <header class="sports-header">
@@ -88,10 +88,5 @@
   </main>
   <footer class="footer" id="footer">© 2025 Jiří Mlčoušek. All rights reserved.</footer>
   <script src="../scripts/main.js"></script>
-  <script>
-    fetch('../components/navbar.html')
-      .then(r=>r.text())
-      .then(html=>{document.getElementById('navbar-placeholder').innerHTML=html; if(window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();});
-  </script>
 </body>
 </html>

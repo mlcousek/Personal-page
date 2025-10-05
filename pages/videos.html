@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="../assets/styles/videos.css" />
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="videos-page" data-root="..">
   <div id="navbar-placeholder"></div>
   <section class="page-shell video-shell" aria-labelledby="video-page-title">
     <header class="video-header">
@@ -41,15 +41,7 @@
     &copy; 2025 Jiří Mlčoušek. Video log.<br />
     <small>Collection focuses on endurance mindset, performance, and long-term thinking.</small>
   </footer>
-
-  <script>
-    fetch('../components/navbar.html')
-      .then(response => response.text())
-      .then(html => {
-        document.getElementById('navbar-placeholder').innerHTML = html;
-        if (window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();
-      });
-  </script>
+  <script src="../scripts/main.js"></script>
   <script src="../scripts/videos.js"></script>
 </body>
 </html>

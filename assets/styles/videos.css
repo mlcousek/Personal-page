@@ -1,8 +1,14 @@
-body{
+.videos-page{
   background:#f3f4f6;
+  color:#1f2933;
+}
+.videos-page .video-shell,
+.videos-page .video-header,
+.videos-page #video-controls,
+.videos-page #video-grid,
+.videos-page footer{
   font-family:'Quicksand',ui-sans-serif,system-ui,sans-serif;
   font-size:.95rem;
-  color:#1f2933;
 }
 .video-shell{
   max-width:80rem;
@@ -218,7 +224,7 @@ body{
   display:block;
   margin-bottom:28px;
 }
-.footer.alt{
+.videos-page .footer.alt{
   background:none;
   color:#475569;
 }

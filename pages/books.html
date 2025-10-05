@@ -4,71 +4,15 @@
     <meta charset="UTF-8">
     <title>Read Books - Jiří Mlčoušek</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/styles/main.css">
-    <!-- <link rel="stylesheet" href="../assets/styles/books.css"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-          background-color: #f3f4f6;
-          font-size: 0.8rem;
-          font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        }
-  
-                .books {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-          grid-template-rows: auto auto;
-          column-gap: 1rem;  
-          margin: 1rem auto;
-          max-width: 75em;
-                    margin-top: 2rem; /* reduced; page-shell will add consistent top spacing */
-        }
-  
-        .book {
-          width: 100%;  
-          padding: 1rem;
-          box-sizing: border-box;
-          background-color: white;  
-          box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-          display: grid;
-          grid-template-rows: subgrid;
-          grid-row: span 2;
-          margin-bottom: 1rem;
-          position: relative;
-          align-items: center;
-        }
-  
-        .book__title {
-          margin: 1em 0 0 0;
-          font-size: 0.8rem;
-          text-transform: none;
-        }
-  
-        .book__img {width: 100%;}
-  
-        .book p {margin: 0;}
-  
-        .book time {
-          position: absolute;
-          top: 1rem;
-          right: 1rem;
-          padding: 0.5em 1em;
-          font-size: 0.5rem;
-        }
-        [datetime="2021"] {background-color: #7dd3fc;}
-        [datetime="2022"] {background-color: #ad3611;}
-        [datetime="2023"] {background-color: #fef08a;}
-        [datetime="2024"] {background-color: #f779be;}
-        [datetime="2025"] {background-color: #28a104;}
-        [datetime="0"] {background-color: #c026d3; color: white;}
-      </style>
+        <link rel="stylesheet" href="../assets/styles/main.css">
+        <link rel="stylesheet" href="../assets/styles/books.css">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="books-page" data-root="..">
     <div id="navbar-placeholder"></div>
     <main class="books page-shell">
         <!-- Current Reading -->
-         <h1 id="books-title" style="grid-column: 1 / -1; text-align:center;">Read Books</h1>
+         <h1 id="books-title" class="books-heading">Read Books</h1>
          <div class="book">
             <img class="book__img" src="https://www.databazeknih.cz/img/books/37_/375250/mid_hajny-vitezslav-a-fort-borivoj-wXh-375250.png?v=1523986439" alt="Hajný Vítězslav a fořt Bořivoj">
             <div class="book-content">
@@ -116,7 +60,8 @@
                 <p class="book__author">Daniel J. Bernstein, Johannes Buchmann, Erik Dahmen</p>
                 <time datetime="0">Rozečteno</time>
             </div>
-        </div>        
+        </div>
+        <!-- Read -->        
         <div class="book">
             <img class="book__img" src="https://www.databazeknih.cz/img/books/49_/494823/bmid_ctyri-tisice-tydnu-Zyb-494823.jpg?v=1651337177" alt="Čtyři tisíce týdnů">
             <div class="book-content">
@@ -126,10 +71,9 @@
                     </a>
                 </h2>
                 <p class="book__author">Oliver Burkeman</p>
-                <time datetime="0">Rozečteno</time>
+                <time datetime="2025">10/2025</time>
             </div>
         </div>
-        <!-- Read -->
         <div class="book">
             <img class="book__img" src="https://www.databazeknih.cz/img/books/53_/531128/bmid_mistrovstvi-65ba17ced48cb.jpg?v=1706694607" alt="Mistrovství">
             <div class="book-content">
@@ -260,7 +204,7 @@
                     </a>
                 </h2>
                 <p class="book__author">Matthew Walker</p>
-                <time datetime="2025">12/2024</time>
+                <time datetime="2024">12/2024</time>
             </div>
         </div>
         <div class="book">
@@ -312,18 +256,10 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+        <footer class="footer">
         &copy; 2025 Jiří Mlčoušek. All rights reserved.<br>
         <small>Design inspired by <a href="https://marketa-trneckova.cz/knihy.html" target="_blank" rel="noopener">Markéta Trnečková's book page</a>.</small>
     </footer>
     <script src="../scripts/main.js"></script>
-    <script>
-        fetch('../components/navbar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-            if (window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();
-          });
-    </script>
 </body>
 </html>
