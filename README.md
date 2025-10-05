@@ -1,27 +1,66 @@
 # Personal Webpage – Jiří Mlčoušek
 
-Welcome to the personal website of **Jiří Mlčoušek** – a passionate lifelong learner, motivator, and technology enthusiast. This site is designed to showcase my journey, achievements, and interests, and to inspire others to pursue their goals with consistency and determination.
+This repository contains the source code for my personal website: a hub for sharing projects, reading highlights, inspirations, and ways to connect. The site is intentionally lightweight and built with plain HTML, CSS, and JavaScript so it can be hosted anywhere that serves static files.
 
-## About the Page
-This is my digital portfolio and personal hub. Here, you can find:
-- A visually engaging homepage with a motivational message and direct links to my social profiles.
-- Easy access to contact information for professional or personal inquiries.
+## ✨ Features
 
-## Books Site
-The **Read Books** section is a curated and regularly updated list of books and study materials I have read. Each entry includes details such as the title, author, and completion date. This section reflects my commitment to continuous learning and personal growth, and may inspire visitors to explore new knowledge themselves.
+- **Landing page:** Motivational hero content, social links, and quick navigation to the rest of the site.
+- **Books log:** A curated list of books, papers, and study resources with completion dates, kept in `pages/books.html` and showcased with custom styling.
+- **Additional sections:** Dedicated pages for about, blog, podcasts, sports, and videos—each ready to be expanded with new content.
+- **Shared navigation:** A reusable navbar component (`components/navbar.html`) that is dynamically injected for consistency across pages.
 
-## Future Plans
-This website is a living project. In the near future, I plan to add more sections, including:
-- Sports competitions and results
-- Project showcases
-- Blog posts and articles
-- And much more!
+## 🗂️ Project structure
 
-Stay tuned for updates as I continue to expand and improve this site.
+```
+.
+├── index.html               # Root landing page
+├── pages/                   # Standalone sub-pages (about, blog, books, podcasts, sports, videos)
+├── components/              # Shared HTML snippets (e.g., navbar)
+├── assets/styles/           # Page-specific and global stylesheets
+├── scripts/                 # Vanilla JS for navigation, redirects, posts, media listings
+├── images/                  # Local images used across the site
+└── package.json             # Dev tooling (Live Server) metadata
+```
+
+## 🚀 Getting started
+
+You can browse the site by double-clicking `index.html`, but using a local web server ensures relative paths and dynamic includes behave correctly.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) v18+ (for running the Live Server dev dependency)
+
+### Install dependencies
+
+```powershell
+npm install
+```
+
+### Run a local dev server
+
+```powershell
+npx live-server . --open=index.html
+```
+
+> Tip: If you prefer, the VS Code “Live Server” extension works great—just open the workspace and click **Go Live**.
+
+## 🛠️ Updating content
+
+- **Books:** Edit `pages/books.html` and update images or metadata. Related styles live in `assets/styles/books.css`.
+- **Navbar:** Adjust links in `components/navbar.html`; the client-side loader lives in `scripts/main.js`.
+- **New sections:** Create additional HTML files under `pages/`, add matching CSS/JS as needed, and link them from the navbar.
+
+Remember to keep asset paths relative to the page location (`data-root` attributes in `<body>` help the scripts locate shared resources).
+
+## 📦 Deployment
+
+Because everything is static, you can deploy to any static host (GitHub Pages, Netlify, Vercel, Azure Static Web Apps, etc.). Build steps aren’t required—just upload the files from the repository root.
+
+## 📄 License
+
+MIT — see `package.json` for licensing details.
 
 ---
 
-Thank you for visiting!
-
-*Consistency is key. Next stop the top ⬆️⬆️⬆️*
+Thanks for stopping by — *consistency is key, next stop the top ⬆️⬆️⬆️!*
 
