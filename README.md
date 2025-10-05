@@ -9,18 +9,6 @@ This repository contains the source code for my personal website: a hub for shar
 - **Additional sections:** Dedicated pages for about, blog, podcasts, sports, and videos—each ready to be expanded with new content.
 - **Shared navigation:** A reusable navbar component (`components/navbar.html`) that is dynamically injected for consistency across pages.
 
-## 🗂️ Project structure
-
-```
-.
-├── index.html               # Root landing page
-├── pages/                   # Standalone sub-pages (about, blog, books, podcasts, sports, videos)
-├── components/              # Shared HTML snippets (e.g., navbar)
-├── assets/styles/           # Page-specific and global stylesheets
-├── scripts/                 # Vanilla JS for navigation, redirects, posts, media listings
-├── images/                  # Local images used across the site
-└── package.json             # Dev tooling (Live Server) metadata
-```
 
 ## 🚀 Getting started
 
@@ -56,11 +44,4 @@ Remember to keep asset paths relative to the page location (`data-root` attribut
 
 Because everything is static, you can deploy to any static host (GitHub Pages, Netlify, Vercel, Azure Static Web Apps, etc.). Build steps aren’t required—just upload the files from the repository root.
 
-## 📄 License
-
-MIT — see `package.json` for licensing details.
-
----
-
 Thanks for stopping by — *consistency is key, next stop the top ⬆️⬆️⬆️!*
-
