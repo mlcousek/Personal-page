@@ -314,30 +314,84 @@ function getSiteRootPrefix() {
     return '.';
 }
 
-function loadNavbar() {
+async function loadNavbar() {
     const placeholder = document.getElementById('navbar-placeholder');
     if (!placeholder || placeholder.dataset.navLoaded === 'true') return;
 
     const prefix = getSiteRootPrefix();
-    const navPath = `${prefix}/components/navbar.html`;
+    const tried = new Set();
+    const candidates = [];
 
-    fetch(navPath)
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Failed to fetch navbar: ${response.status}`);
-            }
-            return response.text();
-        })
-        .then(html => {
-            placeholder.innerHTML = html;
-            placeholder.dataset.navLoaded = 'true';
-            if (typeof window.applyLanguageAfterNavbar === 'function') {
-                window.applyLanguageAfterNavbar();
-            }
-        })
-        .catch(error => {
-            console.error('Navbar load error:', error);
-        });
+    const pushCandidate = path => {
+        if (path && !tried.has(path)) {
+            tried.add(path);
+            candidates.push(path);
+        }
+    };
+
+    if (prefix) {
+        pushCandidate(`${prefix}/components/navbar.html`);
+    }
+    pushCandidate('../components/navbar.html');
+    pushCandidate('components/navbar.html');
+    pushCandidate('/components/navbar.html');
+
+    let html = null;
+    for (const candidate of candidates) {
+        try {
+            const response = await fetch(candidate);
+            if (!response.ok) continue;
+            html = await response.text();
+            break;
+        } catch (err) {
+            // try next candidate
+        }
+    }
+
+    if (!html) {
+        console.warn('Navbar fetch failed for all candidates, injecting inline fallback.');
+        html = buildInlineNavbar(prefix);
+    }
+
+    placeholder.innerHTML = html;
+    placeholder.dataset.navLoaded = 'true';
+    if (typeof window.applyLanguageAfterNavbar === 'function') {
+        window.applyLanguageAfterNavbar();
+    }
+}
+
+function buildInlineNavbar(prefix) {
+    const base = (!prefix || prefix === '.') ? '.' : prefix;
+    const page = path => `${base}/pages/${path}`;
+    return `
+<nav class="navbar">
+    <a href="${page('index.html')}" class="logo" id="nav-logo" style="text-decoration:none; color:inherit;">Jiří Mlčoušek</a>
+    <ul class="nav-links">
+        <li class="nav-item"><a href="${page('about.html')}" id="nav-about">About</a></li>
+        <li class="nav-item dropdown">
+            <button class="nav-dropdown-toggle" id="nav-media" type="button" aria-haspopup="true" aria-expanded="false">Media Hub</button>
+            <ul class="dropdown-menu" aria-label="Media pages">
+                <li><a href="${page('books.html')}" id="nav-books">Read Books</a></li>
+                <li><a href="${page('podcasts.html')}" id="nav-podcasts">Podcast Log</a></li>
+                <li><a href="${page('videos.html')}" id="nav-videos">Video Vault</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a href="${page('blog.html')}" id="nav-blog">Blog</a></li>
+        <li class="nav-item"><a id="nav-sports" href="${page('sports.html')}">Sports</a></li>
+    </ul>
+    <div class="lang-toggle" style="margin-left:auto; display:flex; align-items:center; gap:8px;">
+        <button id="lang-en" class="lang-btn" aria-label="English" style="background:none; border:none; cursor:pointer; padding:0;">
+            <img src="https://flagcdn.com/24x18/gb.png" alt="English" width="24" height="18">
+        </button>
+        <button id="lang-cs" class="lang-btn" aria-label="Čeština" style="background:none; border:none; cursor:pointer; padding:0;">
+            <img src="https://flagcdn.com/24x18/cz.png" alt="Čeština" width="24" height="18">
+        </button>
+        <button id="lang-es" class="lang-btn" aria-label="Español" style="background:none; border:none; cursor:pointer; padding:0;">
+            <img src="https://flagcdn.com/24x18/es.png" alt="Español" width="24" height="18">
+        </button>
+    </div>
+</nav>
+    `.trim();
 }
 
 function closeAllDropdowns() {
