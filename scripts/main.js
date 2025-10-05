@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-logo': 'Jiří Mlčoušek',
             'nav-about': 'About',
             'nav-books': 'Read Books',
+            'nav-media': 'Media Hub',
+            'nav-podcasts': 'Podcast Log',
+            'nav-videos': 'Video Vault',
             'nav-sports': 'Sports',
             'hero-name': 'Jiří Mlčoušek',
             'hero-slogan': 'Consistency is key. Next stop the top ⬆️⬆️⬆️',
@@ -82,6 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-logo': 'Jiří Mlčoušek',
             'nav-about': 'O mně',
             'nav-books': 'Přečtené knihy',
+            'nav-media': 'Mediální hub',
+            'nav-podcasts': 'Podcasty',
+            'nav-videos': 'Video archiv',
             'nav-sports': 'Sport',
             'hero-name': 'Jiří Mlčoušek',
             'hero-slogan': 'Konzistence je klíč. Další zastávka vrchol ⬆️⬆️⬆️',
@@ -136,6 +142,9 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-logo': 'Jiří Mlčoušek',
             'nav-about': 'Sobre mí',
             'nav-books': 'Libros leídos',
+            'nav-media': 'Centro multimedia',
+            'nav-podcasts': 'Podcasts',
+            'nav-videos': 'Archivo de videos',
             'nav-sports': 'Deporte',
             'hero-name': 'Jiří Mlčoušek',
             'hero-slogan': 'La constancia es la clave. Próxima parada la cima ⬆️⬆️⬆️',
@@ -258,6 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 'nav-about', key: 'about.html' },
             { id: 'nav-books', key: 'books.html' },
             { id: 'nav-podcasts', key: 'podcasts.html' },
+            { id: 'nav-videos', key: 'videos.html' },
             { id: 'nav-blog', key: 'blog.html' },
             { id: 'nav-sports', key: 'sports.html' },
             { id: 'nav-logo', key: 'index.html' }
@@ -269,5 +279,71 @@ document.addEventListener('DOMContentLoaded', () => {
                 else el.classList.remove('active');
             }
         });
+
+        const mediaToggle = document.getElementById('nav-media');
+        if (mediaToggle) {
+            const mediaLinks = ['nav-books', 'nav-podcasts', 'nav-videos'];
+            const hasActiveChild = mediaLinks.some(id => {
+                const link = document.getElementById(id);
+                return link && link.classList.contains('active');
+            });
+            if (hasActiveChild) mediaToggle.classList.add('active');
+            else mediaToggle.classList.remove('active');
+        }
+
+        setupMediaDropdown();
     };
 });
+
+function closeAllDropdowns() {
+    document.querySelectorAll('.navbar .dropdown').forEach(dropdown => {
+        dropdown.classList.remove('open');
+        const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+        if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    });
+}
+
+function setupMediaDropdown() {
+    const dropdown = document.querySelector('.navbar .dropdown');
+    if (!dropdown) return;
+
+    const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+    if (!toggle || toggle.dataset.dropdownInit === 'true') return;
+
+    toggle.dataset.dropdownInit = 'true';
+    toggle.setAttribute('aria-expanded', toggle.getAttribute('aria-expanded') || 'false');
+
+    toggle.addEventListener('click', event => {
+        event.preventDefault();
+        event.stopPropagation();
+        const isOpen = dropdown.classList.contains('open');
+        closeAllDropdowns();
+        if (!isOpen) {
+            dropdown.classList.add('open');
+            toggle.setAttribute('aria-expanded', 'true');
+        }
+    });
+
+    const menuLinks = dropdown.querySelectorAll('.dropdown-menu a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            closeAllDropdowns();
+        });
+    });
+
+    if (!window.__mediaDropdownHandlersAttached) {
+        document.addEventListener('click', event => {
+            if (!event.target.closest('.navbar .dropdown')) {
+                closeAllDropdowns();
+            }
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape') {
+                closeAllDropdowns();
+            }
+        });
+
+        window.__mediaDropdownHandlersAttached = true;
+    }
+}

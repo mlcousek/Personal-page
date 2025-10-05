@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Vault - Jiří Mlčoušek</title>
+  <link rel="stylesheet" href="../assets/styles/main.css" />
+  <link rel="stylesheet" href="../assets/styles/videos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="navbar-placeholder"></div>
+  <section class="page-shell video-shell" aria-labelledby="video-page-title">
+    <header class="video-header">
+      <h1 id="video-page-title">Video Vault</h1>
+      <div id="video-count" aria-live="polite">0 videos</div>
+    </header>
+    <p id="video-note">Hand-picked long-form talks, documentaries, and stories that shaped my mindset. Most are hosted on YouTube—perfect for deep focus sessions.</p>
+
+    <nav id="video-filter-bar" class="video-filter-bar" aria-label="Video topic filters">
+      <button class="video-chip active" data-tag="all">All videos</button>
+    </nav>
+
+    <div id="video-controls">
+      <label for="video-sort">Sort by:</label>
+      <select id="video-sort">
+        <option value="published-desc">Recent first</option>
+        <option value="published-asc">Oldest first</option>
+        <option value="duration-desc">Longest</option>
+        <option value="duration-asc">Shortest</option>
+        <option value="title-asc">Title A–Z</option>
+      </select>
+      <button id="video-clear">Reset filters</button>
+    </div>
+
+    <main id="video-grid" class="video-grid" aria-label="Curated video list"></main>
+    <small id="video-last-updated">Last updated: —</small>
+  </section>
+
+  <footer class="footer alt" style="background:none;color:#475569;">
+    &copy; 2025 Jiří Mlčoušek. Video log.<br />
+    <small>Collection focuses on endurance mindset, performance, and long-term thinking.</small>
+  </footer>
+
+  <script>
+    fetch('../components/navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+        if (window.applyLanguageAfterNavbar) window.applyLanguageAfterNavbar();
+      });
+  </script>
+  <script src="../scripts/videos.js"></script>
+</body>
+</html>
