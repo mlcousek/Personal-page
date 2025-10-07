@@ -5,14 +5,15 @@
 .books-page main {
     font-size: 0.9rem;
     font-family: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+    padding-top: 150px; /* Increased spacing from navbar */
 }
 
 .books {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.6rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.2rem;
     max-width: 75em;
-    margin: 2rem auto 3rem;
+    margin: 2rem 0 3rem 0; /* Changed from 'auto' to '0' for left/right margins */
     padding: 0 1.5rem 3rem;
 }
 
@@ -32,7 +33,7 @@
     overflow: hidden;
     box-shadow: 0 6px 18px -12px rgba(15, 23, 42, 0.28);
     border: 1px solid rgba(226, 232, 240, 0.8);
-    min-height: 320px;
+    min-height: 280px;
     transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
@@ -43,7 +44,7 @@
 
 .book__img {
     width: 100%;
-    height: 210px;
+    height: 140px; /* Further reduced for smaller cards */
     object-fit: cover;
     border-bottom: 1px solid rgba(226, 232, 240, 0.7);
 }
@@ -93,12 +94,12 @@
     text-transform: uppercase;
 }
 
-[datetime="2021"] { background-color: #7dd3fc; }
-[datetime="2022"] { background-color: #ad3611; color: #fff; }
-[datetime="2023"] { background-color: #fef08a; }
-[datetime="2024"] { background-color: #7dd3fc; }
-[datetime="2025"] { background-color: #fef08a; }
-[datetime="0"] { background-color: #c026d3; color: #fff; }
+[datetime="2021"] { background-color: #3b82f6; color: #fff; } /* Blue */
+[datetime="2022"] { background-color: #ef4444; color: #fff; } /* Red */
+[datetime="2023"] { background-color: #f59e0b; color: #fff; } /* Orange */
+[datetime="2024"] { background-color: #10b981; color: #fff; } /* Green */
+[datetime="2025"] { background-color: #8b5cf6; color: #fff; } /* Purple */
+[datetime="0"] { background-color: #6b7280; color: #fff; } /* Gray for "Rozečteno" */
 
 .books-page .footer {
     text-align: center;
