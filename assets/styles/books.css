@@ -13,7 +13,7 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.2rem;
     max-width: 75em;
-    margin: 2rem 0 3rem 0; /* Changed from 'auto' to '0' for left/right margins */
+    margin: 2rem auto 3rem auto; /* Changed back to 'auto' to center the grid */
     padding: 0 1.5rem 3rem;
 }
 
@@ -94,12 +94,12 @@
     text-transform: uppercase;
 }
 
-[datetime="2021"] { background-color: #3b82f6; color: #fff; } /* Blue */
-[datetime="2022"] { background-color: #ef4444; color: #fff; } /* Red */
-[datetime="2023"] { background-color: #f59e0b; color: #fff; } /* Orange */
-[datetime="2024"] { background-color: #10b981; color: #fff; } /* Green */
-[datetime="2025"] { background-color: #8b5cf6; color: #fff; } /* Purple */
-[datetime="0"] { background-color: #6b7280; color: #fff; } /* Gray for "Rozečteno" */
+.book time[datetime="2021"] { background-color: #3b82f6; color: #fff; } /* Blue */
+.book time[datetime="2022"] { background-color: #ef4444; color: #fff; } /* Red */
+.book time[datetime="2023"] { background-color: #f59e0b; color: #fff; } /* Orange */
+.book time[datetime="2024"] { background-color: #10b981; color: #fff; } /* Green */
+.book time[datetime="2025"] { background-color: #8b5cf6; color: #fff; } /* Purple */
+.book time[datetime="0"] { background-color: #6b7280; color: #fff; } /* Gray for "Rozečteno" */
 
 .books-page .footer {
     text-align: center;
