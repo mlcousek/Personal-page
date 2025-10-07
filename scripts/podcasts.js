@@ -4,6 +4,10 @@
  */
 
 const PODCAST_EPISODES = [
+  // 7 Oct 2025
+  { id:'2025-10-07-1', date:'2025-10-07', title:'"nemusíš být pořád šťastný" - HRA ŽIVOTA #29', show:'HRA ŽIVOTA s Martinem Hrabinou', totalMinutes:22, cover:'https://i.scdn.co/image/ab67656300005f1f95b1cd0c17218ccbef751d6e', platform:'spotify', link:'https://open.spotify.com/episode/3vRegZEYymuNYFCqPIecEp?si=242c666857f54207', tags:['Czech', 'Self improvement'] },
+  { id:'2025-10-07-2', date:'2025-10-07', title:'FORCE YOURSELF TO DO IT', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:5, cover:'https://i.scdn.co/image/ab67656300005f1f44423e8be80b4894fd2dcf2c', platform:'spotify', link:'https://open.spotify.com/episode/3W4jlEU4OUH79LDXikfOAj?si=be0ffb6ad6964b9d', tags:['English', 'Motivation'] },
+
   // 5 Oct 2025
   { id:'2025-10-05-1', date:'2025-10-05', title:'#137: Jiří Petr - "Chci uspět, chci vyhrát, chci ty kluky porazit."', show:'TŘIŠESTPĚT', totalMinutes:90, cover:'https://i.scdn.co/image/ab6765630000ba8afb04ff49157a09c31bab76fc', platform:'spotify', link:'https://open.spotify.com/episode/3OaHSuuNco3CotWzUftEx1?si=1c27c06301aa41bf', tags:['Czech','Running', 'Ultra'] },
   { id:'2025-10-05-2', date:'2025-10-05', title:'"Někdy zlepšit život znamená zpomalit." | Jakub Vágner | SPIRIT SHOW #36', show:'Majk Spirit', totalMinutes:30, cover:'https://www.csmusic.cz/image_novinky/8541.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=LuM7w8MwA34&t=1569s', tags:['Czech','Life', 'Self improvement', 'Thinking'] },
