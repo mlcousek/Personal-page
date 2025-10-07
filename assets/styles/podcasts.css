@@ -95,19 +95,23 @@
 /* Uniform height for all podcast cards */
 .podcasts .podcast,
 .date-group .podcasts-for-date .podcast {
-  height: auto;
-  min-height: 400px; /* fallback minimum height */
-}
-
-/* JavaScript will set this custom property */
-.podcasts,
-.date-group .podcasts-for-date {
-  --uniform-height: auto;
-}
-
-.podcasts .podcast,
-.date-group .podcasts-for-date .podcast {
   height: var(--uniform-height, auto);
+  min-height: 400px; /* fallback minimum height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure content fills available space */
+.podcast-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Progress bar should always be at bottom */
+.progress {
+  margin-top: auto;
 }
 
 /* Platform icons */

@@ -142,10 +142,42 @@ function renderEpisodes(opts){
   }).join('');
   updateCount(list.length);
   
-  // Apply uniform height after rendering
+  // Apply uniform height after rendering and images load
   setTimeout(() => {
     applyUniformHeight();
-  }, 100);
+  }, 200);
+  
+  // Also apply when all images are loaded
+  const images = container.querySelectorAll('.podcast__img');
+  let loadedImages = 0;
+  const totalImages = images.length;
+  
+  if (totalImages === 0) {
+    // No images, apply height immediately
+    setTimeout(() => applyUniformHeight(), 100);
+  } else {
+    images.forEach(img => {
+      if (img.complete) {
+        loadedImages++;
+        if (loadedImages === totalImages) {
+          setTimeout(() => applyUniformHeight(), 50);
+        }
+      } else {
+        img.addEventListener('load', () => {
+          loadedImages++;
+          if (loadedImages === totalImages) {
+            setTimeout(() => applyUniformHeight(), 50);
+          }
+        });
+        img.addEventListener('error', () => {
+          loadedImages++;
+          if (loadedImages === totalImages) {
+            setTimeout(() => applyUniformHeight(), 50);
+          }
+        });
+      }
+    });
+  }
 }
 
 function renderCard(ep){
@@ -187,7 +219,7 @@ function renderCard(ep){
     : '';
 
   return `<article class="podcast" data-platform="${platform}">
-    <img loading="lazy" class="podcast__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';" onload="setTimeout(() => applyUniformHeight(), 50);">
+    <img loading="lazy" class="podcast__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';">
     ${statusTag}
     ${platformIcon}
     <div class="podcast-content">
@@ -211,20 +243,33 @@ function applyUniformHeight() {
     card.style.height = 'auto';
   });
   
-  // Find the tallest card
-  let maxHeight = 0;
-  allPodcasts.forEach(card => {
-    const height = card.offsetHeight;
-    if (height > maxHeight) {
-      maxHeight = height;
-    }
-  });
+  // Force reflow to ensure heights are calculated
+  document.body.offsetHeight;
   
-  // Apply the max height to all containers
-  const containers = document.querySelectorAll('.podcasts, .podcasts-for-date');
-  containers.forEach(container => {
-    container.style.setProperty('--uniform-height', maxHeight + 'px');
-  });
+  // Find the tallest card after a small delay to ensure images are loaded
+  setTimeout(() => {
+    let maxHeight = 0;
+    allPodcasts.forEach(card => {
+      const height = card.offsetHeight;
+      if (height > maxHeight) {
+        maxHeight = height;
+      }
+    });
+    
+    // Only apply if we have a valid height
+    if (maxHeight > 0) {
+      // Apply the max height to all cards directly
+      allPodcasts.forEach(card => {
+        card.style.height = maxHeight + 'px';
+      });
+      
+      // Also set CSS custom property for future use
+      const containers = document.querySelectorAll('.podcasts, .podcasts-for-date');
+      containers.forEach(container => {
+        container.style.setProperty('--uniform-height', maxHeight + 'px');
+      });
+    }
+  }, 50);
 }
 
 // small utility for safe text interpolation into attributes/text nodes
@@ -299,9 +344,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
   renderEpisodes({});
   
   // Apply uniform height when window is resized
+  let resizeTimeout;
   window.addEventListener('resize', () => {
-    setTimeout(() => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
       applyUniformHeight();
-    }, 100);
+    }, 150);
   });
 });
