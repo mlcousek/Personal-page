@@ -4,6 +4,14 @@
  */
 
 const PODCAST_EPISODES = [
+
+  // 10 Oct 2025
+  { id:'2025-10-10-1', date:'2025-10-10', title:'RR29 - Triatlon ho stál (skoro) všetko', show:'Romulus & Remus', totalMinutes:96, cover:'https://i.scdn.co/image/ab67656300005f1f3e41cd9912e8fa7cc7b9e2b4', platform:'youtube', link:'https://www.youtube.com/watch?v=Qafo6zbp90U&t=5067s', tags:['Czech', 'Triathlon', 'Sports', 'Motivation'] },
+
+  // 8 Oct 2025
+  { id:'2025-10-08-1', date:'2025-10-08', title:'YOU NEED TO FOCUS', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:5, cover:'https://i.scdn.co/image/ab67656300005f1fb5dd6365373d57386b1f3706', platform:'spotify', link:'https://open.spotify.com/episode/2fQIrpDiPGamn7DqKP38uH?si=64f0473edc1744b6', tags:['English', 'Motivation', 'Focus'] },
+  { id:'2025-10-08-2', date:'2025-10-08', title:'TAKE CONTROL OF YOURSELF', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:6, cover:'https://i.scdn.co/image/ab67656300005f1f99587b3a91682a372a512466', platform:'spotify', link:'https://open.spotify.com/episode/781NSkuv5xrYed52sjDgA0?si=3d3c0a14c3e549bb', tags:['English', 'Motivation', 'Self improvement'] },
+
   // 7 Oct 2025
   { id:'2025-10-07-1', date:'2025-10-07', title:'"nemusíš být pořád šťastný" - HRA ŽIVOTA #29', show:'HRA ŽIVOTA s Martinem Hrabinou', totalMinutes:22, cover:'https://i.scdn.co/image/ab67656300005f1f95b1cd0c17218ccbef751d6e', platform:'spotify', link:'https://open.spotify.com/episode/3vRegZEYymuNYFCqPIecEp?si=242c666857f54207', tags:['Czech', 'Self improvement'] },
   { id:'2025-10-07-2', date:'2025-10-07', title:'FORCE YOURSELF TO DO IT', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:5, cover:'https://i.scdn.co/image/ab67656300005f1f44423e8be80b4894fd2dcf2c', platform:'spotify', link:'https://open.spotify.com/episode/3W4jlEU4OUH79LDXikfOAj?si=be0ffb6ad6964b9d', tags:['English', 'Motivation'] },
@@ -21,7 +29,6 @@ const PODCAST_EPISODES = [
 
 // 30 Aug 2025
   { id:'2025-08-30-1', date:'2025-08-30', title:'Paďour: Chci zůstat v kondici a koučem, který dost času tráví na kole. Stravu so držím jak profík', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6lAoKExABjDn8TDZdraJfp?si=b3b93dc4b0bb4524', tags:['Czech', 'Cycling', 'Chill'] },
-  
 
   // 20 Aug 2025
   { id:'2025-08-20-1', date:'2025-08-20', title:'Psychika a krize na B7 (a jiných závodech)', show:'naHoru.tv|Rozhovory & motivace', totalMinutes:24, cover:'https://static.wixstatic.com/media/3b6e39_c28ea616ea3042bf953d65e196ba37cc~mv2.png/v1/fit/w_2500,h_1330,al_c/3b6e39_c28ea616ea3042bf953d65e196ba37cc~mv2.png', platform:'spotify', link:'https://open.spotify.com/episode/6WqF4wX8lmxtafuuunG1JG?si=8899e07aab604e0c', tags:['Czech', 'Ultra', 'Running', 'Self improvement', 'B7'] },
