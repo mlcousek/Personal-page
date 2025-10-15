@@ -5,6 +5,15 @@
 
 const PODCAST_EPISODES = [
 
+  // 14 Oct 2025
+  { id:'2025-10-14-1', date:'2025-10-14', title:'Vítěz Spartathlonu Brunner: Nejedu podle tabulek. Když vyběhnu, tak se rozhodnu, co půjdu za trénink', show:'Kilometry Jiřího Ježka', totalMinutes:49, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/76JrkNpH2miTeopLxJZf9Q?si=d5891f73cc474544', tags:['Czech', 'Running', 'Ultra', 'Spartathlon'] },
+  { id:'2025-10-14-2', date:'2025-10-14', title:'Jak se při běhání přiblížit elitám? Pomáhají kopce i intervaly, závaží naopak může uškodit', show:'YouTube', totalMinutes:60, cover:'https://via.placeholder.com/300x300?text=YouTube', platform:'youtube', link:'https://www.youtube.com/watch?v=EX0jg1opVh0', tags:['Czech', 'Running', 'Training'] },
+  
+  // 13 Oct 2025
+  { id:'2025-10-13-1', date:'2025-10-13', title:'Martin Fuksa: "Vojnou by si měl projít každý" 🥇 zlato na olympiádě bylo o hlavě', show:'YouTube', totalMinutes:60, cover:'https://via.placeholder.com/300x300?text=Martin+Fuksa', platform:'youtube', link:'https://www.youtube.com/watch?v=_RIgi6UUatw', tags:['Czech', 'Olympics', 'Canoe', 'Mental strength'] },
+  { id:'2025-10-13-2', date:'2025-10-13', title:'Makej vole! Podcast #96 - Radek Brunner o vítězství na Spartathlonu', show:'Makej vole! Podcast', totalMinutes:90, cover:'https://via.placeholder.com/300x300?text=Makej+Vole', platform:'youtube', link:'https://www.youtube.com/watch?v=M_9ZNa-oBv4', tags:['Czech', 'Running', 'Ultra', 'Spartathlon'] },
+  { id:'2025-10-13-3', date:'2025-10-13', title:'S příchodem AI bychom se měli o to víc naučit programovat: Umělá inteligence | Pavel Beránek', show:'YouTube', totalMinutes:75, cover:'https://via.placeholder.com/300x300?text=AI+Programming', platform:'youtube', link:'https://www.youtube.com/watch?v=KC_1RIsN-4o', tags:['Czech', 'Technology', 'AI', 'Programming'] },
+
   // 10 Oct 2025
   { id:'2025-10-10-1', date:'2025-10-10', title:'RR29 - Triatlon ho stál (skoro) všetko', show:'Romulus & Remus', totalMinutes:96, cover:'https://i.scdn.co/image/ab67656300005f1f3e41cd9912e8fa7cc7b9e2b4', platform:'youtube', link:'https://www.youtube.com/watch?v=Qafo6zbp90U&t=5067s', tags:['Czech', 'Triathlon', 'Sports', 'Motivation'] },
 
