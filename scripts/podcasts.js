@@ -5,6 +5,12 @@
 
 const PODCAST_EPISODES = [
 
+  // 16 Oct 2025
+  { id:'2025-10-16-1', date:'2025-10-16', title:'Tomáš Mikolov: AI, GPT, DeepSeek, Člověk, Vědomí, Vesmír, Evoluce #80', show:'Pavel Mirovský', totalMinutes:81, cover:'https://i.ytimg.com/vi/qpSMBXmNHfM/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=qpSMBXmNHfM&t=4122s', tags:['Czech', 'AI', 'Technology', 'Science', 'Philosophy'] },
+  
+  // 15 Oct 2025
+  { id:'2025-10-15-1', date:'2025-10-15', title:'Tomáš Berdych - ANATOMIE MIMOŘÁDNÉHO ÚSPĚCHU... | BROCAST #122', show:'Brocast', totalMinutes:195, cover:'https://i.ytimg.com/vi/pA7dlR1ROxg/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=pA7dlR1ROxg', tags:['Czech', 'Tennis', 'Success', 'Self improvement', 'Motivation'] },
+  
   // 14 Oct 2025
   { id:'2025-10-14-1', date:'2025-10-14', title:'Vítěz Spartathlonu Brunner: Nejedu podle tabulek. Když vyběhnu, tak se rozhodnu, co půjdu za trénink', show:'Kilometry Jiřího Ježka', totalMinutes:49, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/76JrkNpH2miTeopLxJZf9Q?si=d5891f73cc474544', tags:['Czech', 'Running', 'Ultra', 'Spartathlon'] },
   { id:'2025-10-14-2', date:'2025-10-14', title:'Jak se při běhání přiblížit elitám? Pomáhají kopce i intervaly, závaží naopak může uškodit', show:'YouTube', totalMinutes:60, cover:'https://i1.sndcdn.com/artworks-xeRkG5K8UE9TZjA3-0ijwhw-t500x500.png', platform:'youtube', link:'https://www.youtube.com/watch?v=EX0jg1opVh0', tags:['Czech', 'Running', 'Training'] },
@@ -27,7 +33,7 @@ const PODCAST_EPISODES = [
 
   // 5 Oct 2025
   { id:'2025-10-05-1', date:'2025-10-05', title:'#137: Jiří Petr - "Chci uspět, chci vyhrát, chci ty kluky porazit."', show:'TŘIŠESTPĚT', totalMinutes:90, cover:'https://i.scdn.co/image/ab6765630000ba8afb04ff49157a09c31bab76fc', platform:'spotify', link:'https://open.spotify.com/episode/3OaHSuuNco3CotWzUftEx1?si=1c27c06301aa41bf', tags:['Czech','Running', 'Ultra'] },
-  { id:'2025-10-05-2', date:'2025-10-05', title:'"Někdy zlepšit život znamená zpomalit." | Jakub Vágner | SPIRIT SHOW #36', show:'Majk Spirit', totalMinutes:30, cover:'https://www.csmusic.cz/image_novinky/8541.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=LuM7w8MwA34&t=1569s', tags:['Czech','Life', 'Self improvement', 'Thinking'] },
+  { id:'2025-10-05-2', date:'2025-10-05', title:'"Někdy zlepšit život znamená zpomalit." | Jakub Vágner | SPIRIT SHOW #36', show:'Majk Spirit', totalMinutes:30, cover:'https://www.csmusic.cz/image_novinky/8541.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=LuM7w8MwA34&t=1569s', tags:['Czech','Life', 'Self improvement', 'Philosophy'] },
 
   // 28 Sep 2025
   { id:'2025-09-28-1', date:'2025-09-28', title:"koupil jsem si kurz za 125 000 KČ a tohle je moje upřímná zkušenost... HRA ŽIVOTA #28", show:'HRA ŽIVOTA s Martinem Hrabinou', totalMinutes: 10, cover:'https://yt3.googleusercontent.com/tyMHvqC5Qh7lBayZhnYMW5SwTFkmDtRT3qpYfLTsju5Jp2oa0bg96jQLKcRClpIPKyHZJymtGw=s900-c-k-c0x00ffffff-no-rj', platform:'spotify', link:'https://open.spotify.com/episode/2As8PrKmTMUkz339vRiKzf?si=78cf9b016c784d9b', tags:['Czech', 'Self improvement'] },
