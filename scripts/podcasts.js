@@ -5,6 +5,9 @@
 
 const PODCAST_EPISODES = [
 
+  // 19 Oct 2025
+  { id:'2025-10-19-1', date:'2025-10-19', title:'DÍL TŘETÍ - Karbonové boty - revoluce v běhu, nebo jen hype?', show:'BETRI CAST', totalMinutes:70, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb7a811f699a501cf7eae3341', platform:'spotify', link:'https://open.spotify.com/episode/2UAICel6XQbVgjILNcSuKj?si=9a030a4b85454cc9', tags:['Czech', 'Running', 'Technology'] },
+
   // 16 Oct 2025
   { id:'2025-10-16-1', date:'2025-10-16', title:'Tomáš Mikolov: AI, GPT, DeepSeek, Člověk, Vědomí, Vesmír, Evoluce #80', show:'Pavel Mirovský', totalMinutes:81, cover:'https://i.ytimg.com/vi/qpSMBXmNHfM/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=qpSMBXmNHfM&t=4122s', tags:['Czech', 'AI', 'Technology', 'Science', 'Philosophy'] },
   
