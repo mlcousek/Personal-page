@@ -5,6 +5,16 @@
 
 const PODCAST_EPISODES = [
 
+  // 26 Oct 2025
+  { id:'2025-10-26-1', date:'2025-10-26', title:'Tréninková Bible č. 1 - Svalová vytrvalost', show:'Tréninková Bible', totalMinutes:78, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be0fdfee7d7b483f13815aa919', platform:'spotify', link:'https://open.spotify.com/episode/5RyklHgI597VALqi3EBdxF?si=67c9a4acddf04fa0', tags:['Czech', 'Running', 'Training', 'Ultra', 'Science'] },
+
+  // 21 Oct 2025
+  { id:'2025-10-21-1', date:'2025-10-21', title:'01 Damián Vích', show:'RunCzech podcast', totalMinutes:50, cover:'https://i.scdn.co/image/ab67656300005f1f7ed52563d918c43d3d932bcf', platform:'spotify', link:'https://open.spotify.com/episode/5CaZzbHGtinISA4Gdv1YYX?si=3d7d86ffcf024b4f', tags:['Czech', 'Running', 'Marathon'] },
+  { id:'2025-10-21-2', date:'2025-10-21', title:'DÍL SEDMÝ: Regeneruj jako profík! Bílkoviny ve vytrvalostních sportech.', show:'BETRI CAST 🎙️', totalMinutes:30, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015bedb3cae8583d710e95c0c1ff0', platform:'spotify', link:'https://open.spotify.com/episode/5zKPqX3AuuDNzuwxBPHK7B?si=b2cdde773ee44fd2', tags:['Czech', 'Nutrition', 'Training', 'Science', 'Triathlon'] },
+
+  // 20 Oct 2025
+  { id:'2025-10-20-1', date:'2025-10-20', title:'JIRKA PROCHÁZKA: Stav boží přítomnosti máme v sobě', show:'Kid Ajvn & A-Cast', totalMinutes:97, cover:'https://i.ytimg.com/vi/QlFbm5JEaqQ/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=QlFbm5JEaqQ', tags:['Czech', 'Philosophy', 'Spirituality', 'Self improvement', 'UFC'] },
+
   // 19 Oct 2025
   { id:'2025-10-19-1', date:'2025-10-19', title:'DÍL TŘETÍ - Karbonové boty - revoluce v běhu, nebo jen hype?', show:'BETRI CAST', totalMinutes:70, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb7a811f699a501cf7eae3341', platform:'spotify', link:'https://open.spotify.com/episode/2UAICel6XQbVgjILNcSuKj?si=9a030a4b85454cc9', tags:['Czech', 'Running', 'Technology'] },
 
