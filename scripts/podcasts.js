@@ -5,6 +5,13 @@
 
 const PODCAST_EPISODES = [
 
+  // 28 Oct 2025
+  { id:'2025-10-28-1', date:'2025-10-28', title:'O sportu, mozku a lidskosti s neurochirurgem Vladimírem Benešem', show:'progresstalk', totalMinutes:40, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be79a35fa69d248ef42f6c31cb', platform:'spotify', link:'https://open.spotify.com/episode/6JFSmx0nJxOjQvk0uGHTI6?si=95b2aec81ab34ce6', tags:['Czech', 'Science', 'Medicine', 'Neuroscience', 'Sports', 'Health'] },
+
+  // 27 Oct 2025
+  { id:'2025-10-27-1', date:'2025-10-27', title:'Speciál o běhání: Jak začít běhat? Jaké boty NEkupovat? Co dýchání? A jak pokořit maraton? David Vaš', show:'Podcast Inspiro Jakuba Stejskala', totalMinutes:89, cover:'https://i.ytimg.com/vi/qzO_N3BahSI/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=qzO_N3BahSI', tags:['Czech', 'Running', 'Marathon', 'Training'] },
+  { id:'2025-10-27-2', date:'2025-10-27', title:'Tréninková Bible č. 2 - David a Megan Roche – trénink, věda a rekord na Leadville Trail 100 Run', show:'Tréninková Bible', totalMinutes:91, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb3593361b68d9f980a493b16', platform:'spotify', link:'https://open.spotify.com/episode/2L3vsxRdmdNorf2lG5EWiP?si=998ac1ae047c4866', tags:['Czech', 'Running', 'Ultra', 'Training', 'Science', 'Leadville'] },
+
   // 26 Oct 2025
   { id:'2025-10-26-1', date:'2025-10-26', title:'Tréninková Bible č. 1 - Svalová vytrvalost', show:'Tréninková Bible', totalMinutes:78, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be0fdfee7d7b483f13815aa919', platform:'spotify', link:'https://open.spotify.com/episode/5RyklHgI597VALqi3EBdxF?si=67c9a4acddf04fa0', tags:['Czech', 'Running', 'Training', 'Ultra', 'Science'] },
 
