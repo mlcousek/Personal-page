@@ -2,44 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Video Vault - Jiří Mlčoušek</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Videos - Jiří Mlčoušek</title>
   <link rel="stylesheet" href="../assets/styles/main.css" />
   <link rel="stylesheet" href="../assets/styles/videos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="videos-page" data-root="..">
   <div id="navbar-placeholder"></div>
-  <section class="page-shell video-shell" aria-labelledby="video-page-title">
-    <header class="video-header">
-      <h1 id="video-page-title">Video Vault</h1>
-      <div id="video-count" aria-live="polite">0 videos</div>
+  <section class="page-shell" style="max-width:78em;margin:0 auto;padding:0 1.2rem;">
+    <header style="margin:20px 0 10px 0;display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
+      <h1 style="margin:0;font-size:1.8rem;flex:1 1 auto;">Video Log</h1>
+      <div id="video-count" style="font-size:.8rem;font-weight:600;letter-spacing:.5px;color:#555;">0 videos</div>
     </header>
-    <p id="video-note">Hand-picked long-form talks, documentaries, and stories that shaped my mindset. Most are hosted on YouTube—perfect for deep focus sessions.</p>
-
-    <nav id="video-filter-bar" class="video-filter-bar" aria-label="Video topic filters">
-      <button class="video-chip active" data-tag="all">All videos</button>
+    <nav id="video-filters" aria-label="Video filters" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px;">
+      <button class="filter-chip active" data-filter="all">All</button>
+      <button class="filter-chip" data-filter="in-progress">In Progress</button>
+      <button class="filter-chip" data-filter="finished">Finished</button>
+      <button class="filter-chip" data-filter="favorites">Favorites</button>
+      <button class="filter-chip" data-filter="2025">2025</button>
     </nav>
-
-    <div id="video-controls">
-      <label for="video-sort">Sort by:</label>
-      <select id="video-sort">
-        <option value="published-desc">Recent first</option>
-        <option value="published-asc">Oldest first</option>
-        <option value="duration-desc">Longest</option>
-        <option value="duration-asc">Shortest</option>
-        <option value="title-asc">Title A–Z</option>
+    <div id="video-controls" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:20px;">
+      <label for="video-sort" style="font-size:.9rem;color:#444;">Sort by:</label>
+      <select id="video-sort" style="padding:.3rem;border-radius:6px;border:1px solid #ddd;min-width:150px;">
+        <option value="date-desc">Date (newest)</option>
+        <option value="show-asc">Channel (A–Z)</option>
+        <option value="tag-asc">Tag (A–Z)</option>
       </select>
-      <button id="video-clear">Reset filters</button>
+
+      <label for="video-tag" style="font-size:.9rem;color:#444;">Tag:</label>
+      <select id="video-tag" style="padding:.3rem;border-radius:6px;border:1px solid #ddd;min-width:160px;">
+        <option value="all">All tags</option>
+      </select>
+
+      <button id="video-clear" style="padding:.35rem .6rem;border-radius:6px;border:1px solid #ddd;background:#f5f5f5;">Clear filters</button>
     </div>
-
-    <main id="video-grid" class="video-grid" aria-label="Curated video list"></main>
-    <small id="video-last-updated">Last updated: —</small>
+    <p id="video-note" style="font-size:.9rem;color:#444;margin-top:-6px;">Hand-picked long-form talks, documentaries, and stories that shaped my mindset.</p>
   </section>
-
-  <footer class="footer alt" style="background:none;color:#475569;">
-    &copy; 2025 Jiří Mlčoušek. Video log.<br />
-    <small>Collection focuses on endurance mindset, performance, and long-term thinking.</small>
+  <main id="video-grid" class="videos" aria-label="List of videos"></main>
+  <div style="max-width:78em;margin:0 auto;padding:0 1.2rem;"><small id="video-last-updated" style="color:#666;display:block;margin-top:12px;">Last updated: —</small></div>
+  <footer class="footer alt">
+    &copy; 2025 Jiří Mlčoušek. <br />
   </footer>
   <script src="../scripts/main.js"></script>
   <script src="../scripts/videos.js"></script>

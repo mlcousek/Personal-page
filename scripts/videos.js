@@ -1,221 +1,263 @@
 /**
- * Curated video library (primarily YouTube) with lightweight filtering and sorting.
- * Replace or extend the VIDEO_LIBRARY items to keep the collection fresh.
+ * Video Episodes Dataset
  */
 
-const VIDEO_LIBRARY = [
+const VIDEOS = [
+  // 20 Nov 2025
   {
-    id: '2025-09-28-torres',
-    title: 'David Goggins: Never Finished (Full Interview)',
-    channel: 'Impact Theory',
-    published: '2025-09-28',
-    duration: '1:45:26',
-    tags: ['Endurance', 'Mindset', 'Ultra'],
+    id: '2025-11-20-1',
+    date: '2025-11-20',
+    title: '#29 LEGS:ON podcast - SPECIÁL Na co se těšíme v roce 2026?',
+    show: 'LEGS:ON | Cyklistický podcast',
+    totalMinutes: 32,
+    cover: 'https://i.ytimg.com/vi/vAtwHh5o7z0/maxresdefault.jpg',
     platform: 'youtube',
-    thumbnail: 'https://i.ytimg.com/vi/gFs6bJ9_He0/hqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=gFs6bJ9_He0',
-    description: 'A brutally honest conversation about resilience, training deep focus, and carrying the logs when nobody is watching.'
+    link: 'https://www.youtube.com/watch?v=vAtwHh5o7z0',
+    tags: ['Czech', 'Cycling', 'Special'],
+    status: 'finished' // Assumed finished based on "watched at least half" requirement
+  },
+
+  // 11 Nov 2025
+  {
+    id: '2025-11-11-1',
+    date: '2025-11-11',
+    title: 'Tadej Pogačar Interview › Cyclist Magazine Podcast [ft. Fahri Diner]',
+    show: 'Cyclist',
+    totalMinutes: 88,
+    cover: 'https://i.ytimg.com/vi/ztqycLMnQgk/maxresdefault.jpg',
+    platform: 'youtube',
+    link: 'https://www.youtube.com/watch?v=ztqycLMnQgk',
+    tags: ['English', 'Cycling', 'Interview', 'Tour de France'],
+    status: 'finished'
   },
   {
-    id: '2025-09-14-nn',
-    title: 'Courtney Dauwalter: How to Run for Days',
-    channel: 'Rich Roll Podcast',
-    published: '2025-09-14',
-    duration: '2:09:44',
-    tags: ['Ultra', 'Running', 'Mindset'],
+    id: '2025-11-11-2',
+    date: '2025-11-11',
+    title: 'Je to 7 let... Co dělám teď a jaké mám plány? l Jirka Král',
+    show: 'RestDay',
+    totalMinutes: 83,
+    cover: 'https://i.ytimg.com/vi/FxeeAjUJsZg/maxresdefault.jpg',
     platform: 'youtube',
-    thumbnail: 'https://i.ytimg.com/vi/4LkMuNw0XMQ/hqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=4LkMuNw0XMQ',
-    description: 'Courtney shares her approach to pain caves, nutrition, and staying playful while dominating ultras.'
+    link: 'https://www.youtube.com/watch?v=FxeeAjUJsZg',
+    tags: ['Czech', 'Lifestyle', 'Vlog', 'Interview'],
+    status: 'finished'
   },
+
+  // 10 Nov 2025
   {
-    id: '2025-08-30-hoka',
-    title: 'Jim Walmsley: Hoka UTMB 2024 Documentary',
-    channel: 'Hoka',
-    published: '2025-08-30',
-    duration: '34:13',
-    tags: ['Ultra', 'Documentary', 'Training'],
+    id: '2025-11-10-2',
+    date: '2025-11-10',
+    title: 'Horolezec Trávniček: Výstup na Everest môže vyjsť až na 100 000 eur!',
+    show: 'Diskusný klub so Šimonom Žďárským',
+    totalMinutes: 34,
+    cover: 'https://i.ytimg.com/vi/ucwBXQeRN-g/maxresdefault.jpg',
     platform: 'youtube',
-    thumbnail: 'https://i.ytimg.com/vi/OT5t2xbYF9Y/hqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=OT5t2xbYF9Y',
-    description: 'Inside Jim Walmsley’s preparation, race-day execution, and mindset on the path to making UTMB history.'
-  },
-  {
-    id: '2025-08-10-lex',
-    title: 'David Sinclair: Extend Your Lifespan (Best Strategies)',
-    channel: 'Lex Fridman Podcast',
-    published: '2025-08-10',
-    duration: '2:51:34',
-    tags: ['Longevity', 'Science', 'Mindset'],
-    platform: 'youtube',
-    thumbnail: 'https://i.ytimg.com/vi/9nXop2lLDa4/hqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=9nXop2lLDa4',
-    description: 'Harvard geneticist David Sinclair breaks down aging research and daily protocols for long-term performance.'
-  },
-  {
-    id: '2025-07-21-pat',
-    title: 'How to Stay Hard: Jocko Willink & David Goggins',
-    channel: 'Jocko Podcast',
-    published: '2025-07-21',
-    duration: '3:14:03',
-    tags: ['Leadership', 'Discipline', 'Mindset'],
-    platform: 'youtube',
-    thumbnail: 'https://i.ytimg.com/vi/SmAJjl1yTe8/hqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=SmAJjl1yTe8',
-    description: 'Two masters of discipline discuss structured suffering, self-talk, and how to keep showing up.'
-  },
-  {
-    id: '2025-06-24-nike',
-    title: 'Eliud Kipchoge: Inside a Champion’s Mind',
-    channel: 'NN Running Team',
-    published: '2025-06-24',
-    duration: '23:48',
-    tags: ['Running', 'Mindset', 'Documentary'],
-    platform: 'youtube',
-    thumbnail: 'https://i.ytimg.com/vi/pCg_mNv9BA0/hqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=pCg_mNv9BA0',
-    description: 'Training routines, mental frameworks, and life philosophy from the marathon legend.'
-  },
-  {
-    id: '2025-05-15-sports',
-    title: 'The Science of Recovery with Dr. Peter Attia',
-    channel: 'The Drive Podcast Clips',
-    published: '2025-05-15',
-    duration: '18:06',
-    tags: ['Recovery', 'Science', 'Performance'],
-    platform: 'youtube',
-    thumbnail: 'https://i.ytimg.com/vi/a3xxwO_QGcE/hqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=a3xxwO_QGcE',
-    description: 'Protocols for sleep, heat, and cold exposure to accelerate adaptation and protect long-term capacity.'
-  },
-  {
-    id: '2025-04-01-b7',
-    title: 'Beskydská Sedmička 2024 Official Documentary',
-    channel: 'B7 Official',
-    published: '2025-04-01',
-    duration: '41:55',
-    tags: ['B7', 'Ultra', 'Czech'],
-    platform: 'youtube',
-    thumbnail: 'https://i.ytimg.com/vi/A0BEgJ7-Q6M/hqdefault.jpg',
-    link: 'https://www.youtube.com/watch?v=A0BEgJ7-Q6M',
-    description: 'Course breakdown, athlete stories, and race strategy from the Beskydská Sedmička ultra-marathon.'
+    link: 'https://www.youtube.com/watch?v=ucwBXQeRN-g',
+    tags: ['Slovak', 'Mountaineering', 'Everest', 'Interview'],
+    status: 'finished'
   }
 ];
 
-function collectVideoTags(list) {
-  const set = new Set();
-  list.forEach(video => {
-    if (Array.isArray(video.tags)) {
-      video.tags.forEach(tag => set.add(tag));
-    }
-  });
-  return Array.from(set).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+/** Utility: group episodes by date descending */
+function groupByDateDescending(list){
+  const map = new Map();
+  list.forEach(ep=>{ if(!map.has(ep.date)) map.set(ep.date, []); map.get(ep.date).push(ep); });
+  return Array.from(map.entries()).sort((a,b)=> b[0].localeCompare(a[0]));
 }
 
-function parseDurationToMinutes(duration) {
-  if (!duration) return 0;
-  const parts = duration.split(':').map(Number).reverse();
-  let minutes = 0;
-  if (parts[0]) minutes += parts[0] / 60; // seconds to minutes fraction
-  if (parts[1]) minutes += parts[1];
-  if (parts[2]) minutes += parts[2] * 60;
-  return minutes;
+function collectAllTags(list){
+  const s = new Set();
+  list.forEach(e=>{ if(Array.isArray(e.tags)) e.tags.forEach(t=>s.add(t)); });
+  return Array.from(s).sort((a,b)=>a.localeCompare(b));
 }
 
-function formatDate(dateStr) {
-  if (!dateStr) return '';
-  const date = new Date(dateStr + 'T00:00:00');
-  if (Number.isNaN(date.getTime())) return dateStr;
-  return date.toLocaleDateString('cs-CZ', { day: 'numeric', month: 'numeric', year: 'numeric' });
-}
-
-function applyVideoFilters({ tag = 'all', sort = 'published-desc' } = {}) {
-  let list = [...VIDEO_LIBRARY];
-
-  if (tag && tag !== 'all') {
-    list = list.filter(video => Array.isArray(video.tags) && video.tags.includes(tag));
+function applyFiltersAndSort({filter='all', tag='all', sort='date-desc'} = {}){
+  let list = [...VIDEOS];
+  // apply quick filters
+  switch(filter){
+    case 'in-progress': list = list.filter(e=>e.status==='in-progress'); break;
+    case 'finished': list = list.filter(e=>e.status==='finished'); break;
+    case 'favorites': list = list.filter(e=>e.tags && e.tags.includes('favorite')); break;
+    case '2025': list = list.filter(e=>e.date && e.date.startsWith('2025-')); break;
+    default: break;
   }
+  // tag filter
+  if(tag && tag!=='all') list = list.filter(e=>Array.isArray(e.tags) && e.tags.includes(tag));
 
-  list.sort((a, b) => {
-    switch (sort) {
-      case 'published-asc':
-        return (a.published || '').localeCompare(b.published || '');
-      case 'duration-desc':
-        return parseDurationToMinutes(b.duration) - parseDurationToMinutes(a.duration);
-      case 'duration-asc':
-        return parseDurationToMinutes(a.duration) - parseDurationToMinutes(b.duration);
-      case 'title-asc':
-        return (a.title || '').localeCompare(b.title || '', undefined, { sensitivity: 'base' });
-      case 'published-desc':
-      default:
-        return (b.published || '').localeCompare(a.published || '');
-    }
-  });
+  // sort
+  switch(sort){
+    case 'show-asc': list.sort((a,b)=> (a.show||'').localeCompare(b.show||'', undefined, {sensitivity:'base'})); break;
+    case 'tag-asc': list.sort((a,b)=> {
+      const ta = (a.tags && a.tags[0]) || '';
+      const tb = (b.tags && b.tags[0]) || '';
+      return ta.localeCompare(tb, undefined, {sensitivity:'base'}) || (a.date||'').localeCompare(b.date||'');
+    }); break;
+    case 'date-desc':
+    default:
+      list.sort((a,b)=> (b.date||'').localeCompare(a.date||''));
+  }
 
   return list;
 }
 
-function renderVideoGrid(options = {}) {
-  const grid = document.getElementById('video-grid');
+function renderVideos(opts){
+  const container = document.getElementById('video-grid');
+  if(!container) return;
+  const filterBar = document.getElementById('video-filters');
+  const tagSelect = document.getElementById('video-tag');
   const sortSelect = document.getElementById('video-sort');
-  const filterBar = document.getElementById('video-filter-bar');
-  const countEl = document.getElementById('video-count');
+  const filter = (opts && opts.filter) || (filterBar && filterBar.querySelector('button.active') && filterBar.querySelector('button.active').getAttribute('data-filter')) || 'all';
+  const tag = (opts && opts.tag) || (tagSelect && tagSelect.value) || 'all';
+  const sort = (opts && opts.sort) || (sortSelect && sortSelect.value) || 'date-desc';
 
-  if (!grid) return;
+  const list = applyFiltersAndSort({filter, tag, sort});
 
-  const activeChip = filterBar ? filterBar.querySelector('.video-chip.active') : null;
-  const tag = options.tag || (activeChip ? activeChip.dataset.tag : 'all');
-  const sort = options.sort || (sortSelect ? sortSelect.value : 'published-desc');
-
-  const list = applyVideoFilters({ tag, sort });
-
-  grid.innerHTML = list
-    .map(video => renderVideoCard(video))
-    .join('');
-
-  if (countEl) {
-    countEl.textContent = `${list.length} video${list.length === 1 ? '' : 's'}`;
+  // grouped by date
+  const grouped = groupByDateDescending(list);
+  container.innerHTML = grouped.map(([date, eps])=>{
+    const dateDisplay = new Date(date).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'});
+    const videoCards = eps.map(renderCard).join('');
+    const gridClass = eps.length > 1 ? 'videos-for-date' : '';
+    return `<div class="date-group">
+      <h3 class="date-heading">${dateDisplay}</h3>
+      <div class="${gridClass}">${videoCards}</div>
+    </div>`;
+  }).join('');
+  updateCount(list.length);
+  
+  // Apply uniform height after rendering and images load
+  setTimeout(() => {
+    applyUniformHeight();
+  }, 200);
+  
+  // Also apply when all images are loaded
+  const images = container.querySelectorAll('.video__img');
+  let loadedImages = 0;
+  const totalImages = images.length;
+  
+  if (totalImages === 0) {
+    // No images, apply height immediately
+    setTimeout(() => applyUniformHeight(), 100);
+  } else {
+    images.forEach(img => {
+      if (img.complete) {
+        loadedImages++;
+        if (loadedImages === totalImages) {
+          setTimeout(() => applyUniformHeight(), 50);
+        }
+      } else {
+        img.addEventListener('load', () => {
+          loadedImages++;
+          if (loadedImages === totalImages) {
+            setTimeout(() => applyUniformHeight(), 50);
+          }
+        });
+        img.addEventListener('error', () => {
+          loadedImages++;
+          if (loadedImages === totalImages) {
+            setTimeout(() => applyUniformHeight(), 50);
+          }
+        });
+      }
+    });
   }
 }
 
-function renderVideoCard(video) {
-  const safeTitle = escapeHtml(video.title);
-  const safeChannel = escapeHtml(video.channel);
-  const safeDescription = escapeHtml(video.description || '');
-  const formattedDate = formatDate(video.published);
-  const tagsList = (video.tags || [])
-    .map(tag => `<li>${escapeHtml(tag)}</li>`)
-    .join('');
+function renderCard(ep){
+  // Determine platform
+  const platform = ep.platform || 'generic';
+  
+  // Create platform icon
+  const platformIcon = platform === 'spotify' ? '<div class="platform-icon spotify" title="Spotify"></div>' :
+                       platform === 'youtube' ? '<div class="platform-icon youtube" title="YouTube"></div>' :
+                       '';
+  
+  // Handle status and progress
+  const total = ep.totalMinutes || 0;
+  let statusTag, progressBar;
+  
+  if (ep.status === 'finished') {
+    statusTag = '<span class="video__tag tag-finished">FINISHED</span>';
+    progressBar = '<div class="progress"><div class="progress-bar done" style="width:100%;"></div></div>';
+  } else if (ep.status === 'in-progress' && ep.minutesLeft) {
+    const progress = Math.max(0, Math.min(100, 100 - Math.round((ep.minutesLeft / (total || 1)) * 100)));
+    statusTag = `<span class="video__tag tag-progress">${ep.minutesLeft} min left</span>`;
+    progressBar = `<div class="progress"><div class="progress-bar" style="width:${progress}%;"></div></div>`;
+  } else {
+    // No status property or status is something else - show episode length
+    statusTag = total > 0 ? `<span class="video__tag">${total} min</span>` : '';
+    progressBar = '<div class="progress"><div class="progress-bar" style="width:0%;"></div></div>';
+  }
 
-  const platformLabel = video.platform === 'youtube' ? 'YouTube' : 'Watch';
+  // Duration display
+  const durationDisplay = total > 0 ? `<div class="video-duration">${total} minutes</div>` : '';
 
-  return `<article class="video-card" data-platform="${escapeHtml(video.platform || 'video')}">
-    <a class="video-thumb" href="${video.link || '#'}" target="_blank" rel="noopener">
-      <img loading="lazy" src="${video.thumbnail || 'https://via.placeholder.com/400x225?text=Video'}" alt="Thumbnail for ${safeTitle}" />
-      ${video.duration ? `<span class="video-duration">${escapeHtml(video.duration)}</span>` : ''}
-      <span class="video-platform">${renderPlatformIcon(video.platform)}${platformLabel}</span>
-    </a>
-    <div class="video-body">
-      <h2 class="video-title"><a href="${video.link || '#'}" target="_blank" rel="noopener">${safeTitle}</a></h2>
-      <div class="video-meta">
-        <span>${safeChannel}</span>
-        ${formattedDate ? `<span>• ${formattedDate}</span>` : ''}
-      </div>
-      ${safeDescription ? `<p class="video-description">${safeDescription}</p>` : ''}
-      ${tagsList ? `<ul class="video-tags">${tagsList}</ul>` : ''}
+  // image fallback: if the image fails to load, replace with a placeholder service
+  const imgSrc = ep.cover || 'https://via.placeholder.com/300x300?text=No+Cover';
+  const imgFallback = 'https://via.placeholder.com/300x300?text=No+Cover';
+
+  const descriptionHtml = ep.description ? `<p class="video__desc">${ep.description}</p>` : '';
+  const tagsHtml = Array.isArray(ep.tags) && ep.tags.length
+    ? `<ul class="video-tags">${ep.tags.map(tag => `<li>${escapeHtml(tag)}</li>`).join('')}</ul>`
+    : '';
+
+  return `<article class="video" data-platform="${platform}">
+    <img loading="lazy" class="video__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';">
+    ${statusTag}
+    ${platformIcon}
+    <div class="video-content">
+      <h2 class="video__title"><a href="${ep.link || '#'}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h2>
+      <p class="video__host">${escapeHtml(ep.show)}</p>
+      ${descriptionHtml}
+      ${durationDisplay}
+      ${tagsHtml}
+      ${progressBar}
     </div>
   </article>`;
 }
 
-function renderPlatformIcon(platform) {
-  if (platform === 'youtube') {
-    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.58 7.19a2.76 2.76 0 0 0-1.94-1.95C17.37 4.75 12 4.75 12 4.75s-5.37 0-7.64.49a2.76 2.76 0 0 0-1.94 1.95A28.7 28.7 0 0 0 1.94 12a28.7 28.7 0 0 0 .47 4.81 2.76 2.76 0 0 0 1.94 1.95c2.27.49 7.64.49 7.64.49s5.37 0 7.64-.49a2.76 2.76 0 0 0 1.94-1.95A28.7 28.7 0 0 0 22.06 12a28.7 28.7 0 0 0-.48-4.81ZM10 15.02V8.98L15.27 12Z"/></svg>';
-  }
-  return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4a8 8 0 1 1 0 16 8 8 0 0 1 0-16Zm0 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13Zm-.37 3.15 3.87 2.35a1 1 0 0 1 0 1.7l-3.87 2.35A1 1 0 0 1 11 14.35v-4.7a1 1 0 0 1 1.63-.74Z"/></svg>';
+// Function to apply uniform height to all video cards
+function applyUniformHeight() {
+  const allVideos = document.querySelectorAll('.video');
+  if (allVideos.length === 0) return;
+  
+  // Reset heights to auto to get natural heights
+  allVideos.forEach(card => {
+    card.style.height = 'auto';
+  });
+  
+  // Force reflow to ensure heights are calculated
+  document.body.offsetHeight;
+  
+  // Find the tallest card after a small delay to ensure images are loaded
+  setTimeout(() => {
+    let maxHeight = 0;
+    allVideos.forEach(card => {
+      const height = card.offsetHeight;
+      if (height > maxHeight) {
+        maxHeight = height;
+      }
+    });
+    
+    // Only apply if we have a valid height
+    if (maxHeight > 0) {
+      // Apply the max height to all cards directly
+      allVideos.forEach(card => {
+        card.style.height = maxHeight + 'px';
+      });
+      
+      // Also set CSS custom property for future use
+      const containers = document.querySelectorAll('.videos, .videos-for-date');
+      containers.forEach(container => {
+        container.style.setProperty('--uniform-height', maxHeight + 'px');
+      });
+    }
+  }, 50);
 }
 
-function escapeHtml(str) {
-  if (str === null || str === undefined) return '';
+// small utility for safe text interpolation into attributes/text nodes
+function escapeHtml(str){
+  if(!str && str!==0) return '';
   return String(str)
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
@@ -224,62 +266,72 @@ function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
-function setupVideoFilters() {
-  const filterBar = document.getElementById('video-filter-bar');
-  const sortSelect = document.getElementById('video-sort');
-  const clearBtn = document.getElementById('video-clear');
-  const lastUpdatedEl = document.getElementById('video-last-updated');
-
-  if (filterBar) {
-    const tags = collectVideoTags(VIDEO_LIBRARY);
-    tags.forEach(tag => {
-      const btn = document.createElement('button');
-      btn.className = 'video-chip';
-      btn.dataset.tag = tag;
-      btn.textContent = tag;
-      filterBar.appendChild(btn);
-    });
-
-    filterBar.addEventListener('click', event => {
-      const chip = event.target.closest('.video-chip');
-      if (!chip) return;
-      filterBar.querySelectorAll('.video-chip').forEach(el => el.classList.remove('active'));
-      chip.classList.add('active');
-      renderVideoGrid({ tag: chip.dataset.tag });
-    });
-  }
-
-  if (sortSelect) {
-    sortSelect.addEventListener('change', () => {
-      renderVideoGrid({ sort: sortSelect.value });
-    });
-  }
-
-  if (clearBtn) {
-    clearBtn.addEventListener('click', () => {
-      if (filterBar) {
-        filterBar.querySelectorAll('.video-chip').forEach(el => el.classList.remove('active'));
-        const allBtn = filterBar.querySelector('.video-chip[data-tag="all"]');
-        if (allBtn) allBtn.classList.add('active');
-      }
-      if (sortSelect) sortSelect.value = 'published-desc';
-      renderVideoGrid({ tag: 'all', sort: 'published-desc' });
-    });
-  }
-
-  if (lastUpdatedEl) {
-    const newestDate = VIDEO_LIBRARY
-      .map(video => video.published)
-      .filter(Boolean)
-      .sort()
-      .reverse()[0];
-    if (newestDate) {
-      lastUpdatedEl.textContent = 'Last updated: ' + formatDate(newestDate);
-    }
-  }
+function updateCount(n){
+  const el = document.getElementById('video-count');
+  if(el) el.textContent = n + ' videos';
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  setupVideoFilters();
-  renderVideoGrid({});
+function setupFilters(){
+  const bar = document.getElementById('video-filters');
+  const tagSelect = document.getElementById('video-tag');
+  const sortSelect = document.getElementById('video-sort');
+  const clearBtn = document.getElementById('video-clear');
+  if(!bar) return;
+
+  // populate tag select from data
+  if(tagSelect){
+    const tags = collectAllTags(VIDEOS);
+    // keep existing 'all' option then append
+    tags.forEach(t=>{
+      const opt = document.createElement('option'); opt.value = t; opt.textContent = t; tagSelect.appendChild(opt);
+    });
+    tagSelect.addEventListener('change', ()=> renderVideos({}));
+  }
+
+  if(sortSelect){
+    sortSelect.addEventListener('change', ()=> renderVideos({}));
+  }
+
+  // clear filters button
+  if(clearBtn){
+    clearBtn.addEventListener('click', ()=>{
+      // reset filter buttons to 'all'
+      bar.querySelectorAll('button[data-filter]').forEach(b=>b.classList.remove('active'));
+      const allBtn = bar.querySelector('button[data-filter="all"]');
+      if(allBtn) allBtn.classList.add('active');
+      // reset selects
+      if(tagSelect) tagSelect.value = 'all';
+      if(sortSelect) sortSelect.value = 'date-desc';
+      renderVideos({});
+    });
+  }
+
+  bar.addEventListener('click', e=>{
+    const btn = e.target.closest('button[data-filter]');
+    if(!btn) return;
+    bar.querySelectorAll('button').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    renderVideos({});
+  });
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  setupFilters();
+  // set last-updated text
+  const last = document.getElementById('video-last-updated');
+  if(last){
+    // try to infer newest date
+    const dates = VIDEOS.map(e=>e.date).filter(Boolean).sort().reverse();
+    if(dates.length) last.textContent = 'Last updated: ' + new Date(dates[0]).toLocaleDateString('cs-CZ');
+  }
+  renderVideos({});
+  
+  // Apply uniform height when window is resized
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      applyUniformHeight();
+    }, 150);
+  });
 });
