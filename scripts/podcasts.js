@@ -4,6 +4,25 @@
  */
 
 const PODCAST_EPISODES = [
+  // 23 Nov 2025
+  { id:'2025-11-23-1', date:'2025-11-23', title:'Tréninková Bible č. 4 - Odpovědnice', show:'Tréninková Bible', totalMinutes:96, cover:'https://i.scdn.co/image/ab6765630000f68d896ff1bbff5d945b6b02e7f7', platform:'spotify', link:'https://open.spotify.com/episode/0eTG781YyPjaGSkoUNzFsX?si=55f72f77f9da46bb', tags:['Czech', 'Running', 'Training', 'Q&A'] },
+  
+  // 20 Nov 2025
+  { id:'2025-11-20-1', date:'2025-11-20', title:'#29 LEGS:ON podcast - SPECIÁL Na co se těšíme v roce 2026?', show:'LEGS:ON | Cyklistický podcast', totalMinutes:32, cover:'https://i.ytimg.com/vi/vAtwHh5o7z0/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=vAtwHh5o7z0', tags:['Czech', 'Cycling', 'Special'] },
+  
+  // 11 Nov 2025
+  { id:'2025-11-11-1', date:'2025-11-11', title:'Tadej Pogačar Interview › Cyclist Magazine Podcast [ft. Fahri Diner]', show:'Cyclist', totalMinutes:88, cover:'https://i.ytimg.com/vi/ztqycLMnQgk/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=ztqycLMnQgk', tags:['English', 'Cycling', 'Interview', 'Tour de France'] },
+  { id:'2025-11-11-2', date:'2025-11-11', title:'Je to 7 let... Co dělám teď a jaké mám plány? l Jirka Král', show:'RestDay', totalMinutes:83, cover:'https://i.ytimg.com/vi/FxeeAjUJsZg/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=FxeeAjUJsZg', tags:['Czech', 'Lifestyle', 'Vlog', 'Interview'] },
+  
+  // 10 Nov 2025
+  { id:'2025-11-10-1', date:'2025-11-10', title:'145: The Pitfalls of High Volume Endurance Training', show:'The Nick Bare Podcast', totalMinutes:64, cover:'https://i.scdn.co/image/ab6765630000f68dbf809ec21bc6132d3e2b5852', platform:'spotify', link:'https://open.spotify.com/episode/05hPzbCZ8JE3lfW8RIbMtI?si=ce2d0d1a159f4b1f', tags:['English', 'Running', 'Training', 'Science'] },
+  { id:'2025-11-10-2', date:'2025-11-10', title:'Horolezec Trávniček: Výstup na Everest môže vyjsť až na 100 000 eur!', show:'Diskusný klub so Šimonom Žďárským', totalMinutes:34, cover:'https://i.ytimg.com/vi/ucwBXQeRN-g/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=ucwBXQeRN-g', tags:['Slovak', 'Mountaineering', 'Everest', 'Interview'] },
+  
+  // 9 Nov 2025
+  { id:'2025-11-09-1', date:'2025-11-09', title:'Tréninková Bible č. 3 - Bicarb, ketony a porovnání tréninkových přístupů z předchozích epizod', show:'Tréninková Bible', totalMinutes:85, cover:'https://i.scdn.co/image/ab6765630000f68d896ff1bbff5d945b6b02e7f7', platform:'spotify', link:'https://open.spotify.com/episode/6KMUf2dT2moQWBk1WamjQ5?si=3d7f561638134ce9', tags:['Czech', 'Running', 'Training', 'Science', 'Nutrition'] },
+
+  // 2 Nov 2025
+  { id:'2025-11-02-1', date:'2025-11-02', title:'#09 - TOMÁŠ ŠTVERÁK - Elitní ultrarunner', show:'#DYCKYJESTED (ne)podcast', totalMinutes:87, cover:'https://i.scdn.co/image/ab67656300005f1f83f88c0923e175cfff29b3e6', platform:'spotify', link:'https://open.spotify.com/episode/23c621ZeIUdNpTTgNw98hA?si=36567ae77d394325', tags:['Czech', 'Running', 'Ultra', 'Interview'] },
 
   // 28 Oct 2025
   { id:'2025-10-28-1', date:'2025-10-28', title:'O sportu, mozku a lidskosti s neurochirurgem Vladimírem Benešem', show:'progresstalk', totalMinutes:40, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be79a35fa69d248ef42f6c31cb', platform:'spotify', link:'https://open.spotify.com/episode/6JFSmx0nJxOjQvk0uGHTI6?si=95b2aec81ab34ce6', tags:['Czech', 'Science', 'Medicine', 'Neuroscience', 'Sports', 'Health'] },
