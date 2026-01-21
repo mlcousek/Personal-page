@@ -4,6 +4,23 @@
  */
 
 const PODCAST_EPISODES = [
+  
+  // 20 Jan 2026 
+  { id:'2026-01-20-1', date:'2026-01-20', title:'Kroky týmu Visma jsou zvláštní. Konec kariéry Yatese je toho dalším důkazem, diví se Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/7bQCkjs8U1yByfjd5EyvE1?si=b35bc8000111443e', tags:['Czech', 'Cycling', 'News'] },
+  
+  // 14 Jan 2026 (from Spotify)
+  { id:'2026-01-14-1', date:'2026-01-14', title:'Tréninková Bible č. 6 - Tajemství silového tréninku pro běžce', show:'Tréninková Bible', totalMinutes:28, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be5cebb896f2fb98e1b1889e40', platform:'spotify', link:'https://open.spotify.com/episode/6SfAdG0txuoy4ubEyVYWIc', tags:['Czech', 'Running', 'Training'] },
+  { id:'2026-01-14-2', date:'2026-01-14', title:"IT'S TIME TO RESET, RESTART, AND REFOCUS IN 2026 - The Most Powerful Motivational Speech Compilation", show:'Motivation Daily by Motiversity', totalMinutes:38, cover:'https://i.scdn.co/image/ab67656300005f1f132579598f5357289e616768', platform:'spotify', link:'https://open.spotify.com/episode/2XNv4MPCrgsDb2PitzdtD5', tags:['English','Motivation'] },
+  
+  // 30 Dec 2025 
+  { id:'2025-12-30-1', date:'2025-12-30', title:'Hobby sportovci si někdy škodí tím, že jí málo. Vše dohání sladkostmi, říká specialistka Mokrejšová', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/3rJgLhIYQ3iJ19y9Izrdey?si=e13ce08ae20d4ee0', tags:['Czech', 'Nutrition', 'Running'] },
+  
+  // 12 Dec 2025 (from Spotify)
+  { id:'2025-12-12-1', date:'2025-12-12', title:'Tréninková Bible č. 5 - Pražská stovka', show:'Tréninková Bible', totalMinutes:100, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb97347331c4ebd7f7596575c', platform:'spotify', link:'https://open.spotify.com/episode/2dIqdZYWPxwDgPgHQ98rQR', tags:['Czech', 'Running', 'Ultra'] },
+  
+  // 30 Nov 2025 
+  { id:'2025-11-30-1', date:'2025-11-30', title:'Cyklokros je fajn, ale pořád ho beru jako doplněk k hlavní sezoně. Na olympiádu nepatří, tvrdí Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/2z6bCSvOu1ifxpqmv2oleJ?si=a4fc6b9fee214525', tags:['Czech', 'Cycling', 'Chill'] },
+
   // 23 Nov 2025
   { id:'2025-11-23-1', date:'2025-11-23', title:'Tréninková Bible č. 4 - Odpovědnice', show:'Tréninková Bible', totalMinutes:96, cover:'https://i.scdn.co/image/ab6765630000f68d896ff1bbff5d945b6b02e7f7', platform:'spotify', link:'https://open.spotify.com/episode/0eTG781YyPjaGSkoUNzFsX?si=55f72f77f9da46bb', tags:['Czech', 'Running', 'Training', 'Q&A'] },
   
