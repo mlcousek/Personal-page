@@ -99,7 +99,7 @@
 .book time[datetime="2023"] { background-color: #f59e0b; color: #fff; } /* Orange */
 .book time[datetime="2024"] { background-color: #10b981; color: #fff; } /* Green */
 .book time[datetime="2025"] { background-color: #8b5cf6; color: #fff; } /* Purple */
-.book time[datetime="2026"] { background-color: #fffd87f5; color: #fff; } /* Purple */
+.book time[datetime="2026"] { background-color: #008d23f5; color: #fff; } /* Purple */
 .book time[datetime="0"] { background-color: #6b7280; color: #fff; } /* Gray for "Rozečteno" */
 
 .books-page .footer {
