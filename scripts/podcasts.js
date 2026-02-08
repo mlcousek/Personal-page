@@ -4,6 +4,25 @@
  */
 
 const PODCAST_EPISODES = [
+
+  // 07 Feb 2026
+  { id:'2026-02-07-1', date:'2026-02-07', title:'Myslel jsem si, že jsem naivní | Řekl jsem hov*o - udělám z toho svojí výhodu | PETR JÁKL', show:'NOHAMA NA ZEMI', totalMinutes:132, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab0000169254458474a113ae4d7f8e3bd3', platform:'spotify', link:'https://open.spotify.com/episode/0tArf1zgeY5iJF5sqrEGps', tags:['Czech', 'Interview', 'Self improvement'] },
+  { id:'2026-02-07-2', date:'2026-02-07', title:'JIRKA KRÁL - Chystá návrat na Youtube nebo chce úplně zmizet ze sítí? | MineCast #3', show:'MineCast', totalMinutes:90, cover:'https://i.ytimg.com/vi/URDvhaIhki0/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=URDvhaIhki0', tags:['Czech', 'Interview', 'YouTube'] },
+
+  // 06 Feb 2026
+  { id:'2026-02-06-1', date:'2026-02-06', title:'#3 Adam Korecký - „Neboj se doplňovat sacharidy včas…" | UltraMinuty', show:'UltraMinuty', totalMinutes:128, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab00001692dff3781e418e18209470565f', platform:'spotify', link:'https://open.spotify.com/episode/6G7yPXeDo2eTc5edo6z9G7', tags:['Czech', 'Running', 'Ultra', 'Nutrition'] },
+
+  // 31 Jan 2026
+  { id:'2026-01-31-1', date:'2026-01-31', title:'Pohodlí je výkon. Konzistence je klíčem úspěchu pro profíka i hobby sportovce, říká biomechanik', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/2etueq7SDC7x3Vn0Srf2qS', tags:['Czech', 'Cycling', 'Science', 'Biomechanics'] },
+
+  // 30 Jan 2026
+  { id:'2026-01-30-1', date:'2026-01-30', title:'Makej vole! Podcast #84 – Honza Procházka o tréninku a vítězství na LH24 2025', show:'Makej vole! Podcast', totalMinutes:90, cover:'https://i.ytimg.com/vi/6krg0G80NgY/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=6krg0G80NgY', tags:['Czech', 'Running', 'Ultra', 'LH24'] },
+
+  // 28 Jan 2026
+  { id:'2026-01-28-1', date:'2026-01-28', title:'#145: Martina Oroszová – "B7 jsem odběhla na Marskách."', show:'TŘIŠESTPĚT', totalMinutes:74, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab00001692a7d9239f2a1fbec3f11c9b1a', platform:'spotify', link:'https://open.spotify.com/episode/02YceG56oEVctkJmv3WqvP', tags:['Czech', 'Running', 'Ultra', 'B7'] },
+
+  // 23 Jan 2026
+  { id:'2026-01-23-1', date:'2026-01-23', title:'Tréninková Bible č. 7 - Proč pomalý trénink dělá rychlé běžce', show:'Tréninková Bible', totalMinutes:29, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab00001692cf8eeb730ebbd0000eed723b', platform:'spotify', link:'https://open.spotify.com/episode/6pJbwgz5KPYEgYCErUHZ1y', tags:['Czech', 'Running', 'Training'] },
   
   // 20 Jan 2026 
   { id:'2026-01-20-1', date:'2026-01-20', title:'Kroky týmu Visma jsou zvláštní. Konec kariéry Yatese je toho dalším důkazem, diví se Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/7bQCkjs8U1yByfjd5EyvE1?si=b35bc8000111443e', tags:['Czech', 'Cycling', 'News'] },
@@ -12,8 +31,14 @@ const PODCAST_EPISODES = [
   { id:'2026-01-14-1', date:'2026-01-14', title:'Tréninková Bible č. 6 - Tajemství silového tréninku pro běžce', show:'Tréninková Bible', totalMinutes:28, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be5cebb896f2fb98e1b1889e40', platform:'spotify', link:'https://open.spotify.com/episode/6SfAdG0txuoy4ubEyVYWIc', tags:['Czech', 'Running', 'Training'] },
   { id:'2026-01-14-2', date:'2026-01-14', title:"IT'S TIME TO RESET, RESTART, AND REFOCUS IN 2026 - The Most Powerful Motivational Speech Compilation", show:'Motivation Daily by Motiversity', totalMinutes:38, cover:'https://i.scdn.co/image/ab67656300005f1f132579598f5357289e616768', platform:'spotify', link:'https://open.spotify.com/episode/2XNv4MPCrgsDb2PitzdtD5', tags:['English','Motivation'] },
   
+  // 31 Dec 2025
+  { id:'2025-12-31-1', date:'2025-12-31', title:'HOUSE - Od Minecraftu k Everestu, dítěti a životu mimo YouTube | MineCast #2', show:'MineCast', totalMinutes:90, cover:'https://i.ytimg.com/vi/tE-FrPm8cDA/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=tE-FrPm8cDA', tags:['Czech', 'Interview', 'YouTube', 'Minecraft'] },
+  
   // 30 Dec 2025 
   { id:'2025-12-30-1', date:'2025-12-30', title:'Hobby sportovci si někdy škodí tím, že jí málo. Vše dohání sladkostmi, říká specialistka Mokrejšová', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/3rJgLhIYQ3iJ19y9Izrdey?si=e13ce08ae20d4ee0', tags:['Czech', 'Nutrition', 'Running'] },
+
+  // 20 Dec 2025
+  { id:'2025-12-20-1', date:'2025-12-20', title:'GEJMR - Otevřeně o vyhoření, anonymitě a cestě k milionu odběratelů | MineCast #1', show:'MineCast', totalMinutes:90, cover:'https://i.ytimg.com/vi/wHtPgpbtfYc/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=wHtPgpbtfYc', tags:['Czech', 'Interview', 'YouTube', 'Minecraft'] },
   
   // 12 Dec 2025 (from Spotify)
   { id:'2025-12-12-1', date:'2025-12-12', title:'Tréninková Bible č. 5 - Pražská stovka', show:'Tréninková Bible', totalMinutes:100, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb97347331c4ebd7f7596575c', platform:'spotify', link:'https://open.spotify.com/episode/2dIqdZYWPxwDgPgHQ98rQR', tags:['Czech', 'Running', 'Ultra'] },
