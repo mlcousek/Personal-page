@@ -17,9 +17,12 @@ const PODCAST_EPISODES = [
   // 18 Feb 2026 
   { id:'2026-02-18-1', date:'2026-02-18', title:'#12 - MATĚJ KUBRT - Ještěďák - finančník', show:'#DYCKYJESTED (ne)podcast', totalMinutes:41, cover:'https://i.scdn.co/image/ab67656300005f1fa15a69b93e0626791c9aa6c4', platform:'spotify', link:'https://open.spotify.com/episode/5jQB6vyNjIPZe5HcQM1Vnx?si=KZhLIzb8T8iEsAjo04xGWA', tags:['Czech','Podcast','Spotify'] },
   { id:'2026-02-18-2', date:'2026-02-18', title:'Jak si hlídat zdraví jednoduše a dlouhodobě - MUDr. Tomáš Kaštovský - progresstalk', show:'progresstalk', totalMinutes:49, cover:'https://i.scdn.co/image/ab6772ab0000169254458474a113ae4d7f8e3bd3', platform:'spotify', link:'https://open.spotify.com/episode/0tD7nIbpouH8IEkhxDK1TA?si=18FiqH6aTj6BGR7QHSaf5A', tags:['Czech','Health','Spotify'] },
-  
+
+  // 16 Feb 2026 
+  { id:'2026-02-16-1', date:'2026-02-16', title:'Tréninková Bible č. 8 - Anatomie dokonalé sezóny: Trénink podle Kiliana Jorneta', show:'Tréninková Bible', totalMinutes:30, cover:'https://i.scdn.co/image/ab6765630000f68d896ff1bbff5d945b6b02e7f7', platform:'spotify', link:'https://open.spotify.com/episode/3e2cGTzn4Fdd2UsT9dqA5A', tags:['Czech','Training','Spotify'] },
+
   // 17 Feb 2026 
-  { id:'2026-02-17-1', date:'2026-02-17', title:'Měl jsem krizi třeba i čtyřicet kilometrů. Často se na trati trápím sám, přiznává běžec Šumný', show:'Kilometry Jiřího Ježka', totalMinutes:43, cover:'https://i.scdn.co/image/ab6765630000f68d65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/4UYg4ndyRdGm0dQtnf9DhX?si=8H7kboHASGiNCCNA39Z4gA', tags:['Czech','Running','Spotify'] },
+  { id:'2026-02-17-1', date:'2026-02-17', title:'Měl jsem krizi třeba i čtyřicet kilometrů. Často se na trati trápím sám, přiznává běžec Šumný', show:'Kilometry Jiřího Ježka', totalMinutes:43, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/4UYg4ndyRdGm0dQtnf9DhX?si=8H7kboHASGiNCCNA39Z4gA', tags:['Czech','Running','Spotify'] },
   { id:'2026-02-17-2', date:'2026-02-17', title:'YOU NEED TO RESET, RESTART AND REFOCUS - Powerful Motivational Speech | Eric Thomas', show:'Motivation Daily by Motiversity', totalMinutes:9, cover:'https://i.scdn.co/image/ab6765630000f68de384591649ec6f970950234f', platform:'spotify', link:'https://open.spotify.com/episode/0XHYmUFJkzCg3JdZwCUcBw?si=mDIGZIgQS9OaEVTfpmL4ow', tags:['English','Motivation','Spotify'] },
   
   // 11 Feb 2026 
@@ -28,7 +31,7 @@ const PODCAST_EPISODES = [
   
   // 10 Feb 2026 
   { id:'2026-02-10-1', date:'2026-02-10', title:'UTMB – Jaká je historie a zajímavosti ohledně této světové série?', show:'Hodinky 365 smart', totalMinutes:0, cover:'https://i.ytimg.com/vi/vvQG90Pvj5s/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/vvQG90Pvj5s?si=R2FyQa2M4IlSO49O', tags:['Czech','Running','YouTube'] },
-  { id:'2026-02-10-2', date:'2026-02-10', title:'Znám každou výmluvu, která existuje. Na mě si svěřenci nepřijdou. Musí makat, směje se Šimůnek', show:'Kilometry Jiřího Ježka', totalMinutes:74, cover:'https://i.scdn.co/image/ab6765630000f68d65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6BkYb0ze53OWXGwnO93FRn?si=5f9ZPSGAQFCwfVa7U25M6Q', tags:['Czech','Cycling','Spotify'] },
+  { id:'2026-02-10-2', date:'2026-02-10', title:'Znám každou výmluvu, která existuje. Na mě si svěřenci nepřijdou. Musí makat, směje se Šimůnek', show:'Kilometry Jiřího Ježka', totalMinutes:74, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6BkYb0ze53OWXGwnO93FRn?si=5f9ZPSGAQFCwfVa7U25M6Q', tags:['Czech','Cycling','Spotify'] },
   
   // 07 Feb 2026
   { id:'2026-02-07-1', date:'2026-02-07', title:'Myslel jsem si, že jsem naivní | Řekl jsem hov*o - udělám z toho svojí výhodu | PETR JÁKL', show:'NOHAMA NA ZEMI', totalMinutes:132, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab0000169254458474a113ae4d7f8e3bd3', platform:'spotify', link:'https://open.spotify.com/episode/0tArf1zgeY5iJF5sqrEGps', tags:['Czech', 'Interview', 'Self improvement'] },
