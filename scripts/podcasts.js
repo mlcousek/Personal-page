@@ -12,7 +12,7 @@ const PODCAST_EPISODES = [
   { id:'2026-02-20-2', date:'2026-02-20', title:'Tréninkové zóny nejen v TrainingPeaks - Pohledem trenéra', show:'Pohledem trenéra', totalMinutes:22, cover:'https://i.scdn.co/image/ab6765630000f68ddc2f5cff492a72f54b511a44', platform:'spotify', link:'https://open.spotify.com/episode/3Zz0CMkSqlzOnYtIrLJkV4?si=TMJ43J8BQ1eBrJFEUODorw', tags:['Czech','Training','Spotify'] },
 
   // 19 Feb 2026 
-  { id:'2026-02-19-1', date:'2026-02-19', title:'VO2max, zóna 1 či 2 a vše ostatní z posledních článků na blogu - Pohledem trenéra', show:'Pohledem trenéra', totalMinutes:19, cover:'https://i.scdn.co/image/ab6765630000f68d65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/4eEl6jtjoR2YoDWpEqeSxK?si=f8mexCsWQL6V57qXLS3XnA', tags:['Czech','Training','Spotify'] },
+  { id:'2026-02-19-1', date:'2026-02-19', title:'VO2max, zóna 1 či 2 a vše ostatní z posledních článků na blogu - Pohledem trenéra', show:'Pohledem trenéra', totalMinutes:19, cover:'https://i.scdn.co/image/ab6765630000f68ddc2f5cff492a72f54b511a44', platform:'spotify', link:'https://open.spotify.com/episode/4eEl6jtjoR2YoDWpEqeSxK?si=f8mexCsWQL6V57qXLS3XnA', tags:['Czech','Training','Spotify'] },
   
   // 18 Feb 2026 
   { id:'2026-02-18-1', date:'2026-02-18', title:'#12 - MATĚJ KUBRT - Ještěďák - finančník', show:'#DYCKYJESTED (ne)podcast', totalMinutes:41, cover:'https://i.scdn.co/image/ab67656300005f1fa15a69b93e0626791c9aa6c4', platform:'spotify', link:'https://open.spotify.com/episode/5jQB6vyNjIPZe5HcQM1Vnx?si=KZhLIzb8T8iEsAjo04xGWA', tags:['Czech','Podcast','Spotify'] },
