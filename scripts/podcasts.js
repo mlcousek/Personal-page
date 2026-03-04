@@ -6,28 +6,65 @@
 const PODCAST_EPISODES = [
 
 
+  // 3 Mar 2026
+  { id:'2026-03-03-1', date:'2026-03-03', title:'#148: Žaneta Polášková – "Nebuďte na sebe tvrdí, buďte vytrvalí."', show:'TŘIŠESTPĚT', totalMinutes:94, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be7b9bdc334b25ab7fc7097cbc', platform:'spotify', link:'https://open.spotify.com/episode/5nsfY39mq097poeIXdcDBX?si=vsiH72ovTxmiSHyHaQtnXg', tags:['Czech','Running','Ultra','Interview','Spotify'] },
+  { id:'2026-03-03-2', date:'2026-03-03', title:'#134: Daniel Ligocki – "Překonávejte svůj strach a buďte lepší verzí sami sebe."', show:'TŘIŠESTPĚT', totalMinutes:0, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be3fba9ee3459848b655e9092b', platform:'spotify', link:'https://open.spotify.com/episode/6CH1X0m7BncIKt5mBKSvms?si=iDnIGEQaQ5iQZP9jJKq14Q', tags:['Czech','Running','Ultra','Interview','Spotify'] },
+
+  // 2 Mar 2026
+  { id:'2026-03-02-1', date:'2026-03-02', title:'Těšilo mě, když mi lídři dávali vědět, jak si váží mojí práce, vzpomíná na roli domestika Raboň', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6vSd5BzLSwZrk2oFTWARIv?si=c26t5ucyS9GfgzTXpPjFog', tags:['Czech','Cycling','Interview','Spotify'] },
+
+  // 28 Feb 2026
+  { id:'2026-02-28-1', date:'2026-02-28', title:'Petr Cech: What Most People Get Wrong About Football', show:'Business of Sport', totalMinutes:0, cover:'https://i.ytimg.com/vi/lot5Ixgbxkk/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/lot5Ixgbxkk?si=gc3fjnAxcTjmQP2l', tags:['English','Football','Interview','Sport','YouTube'] },
+  { id:'2026-02-28-2', date:'2026-02-28', title:'#131 Dalibor Dědek – Příběh skromného miliardáře z Jizerek', show:'Brocast', totalMinutes:0, cover:'https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f88a8ed53a0775d7d2cc3fd86', platform:'spotify', link:'https://open.spotify.com/episode/2lNscCnQVp5HbUtLN4aXth?si=e2537EGGSeK3QTvFFl5Z3A', tags:['Czech','Interview','Business','Success','Spotify'] },
+  { id:'2026-02-28-3', date:'2026-02-28', title:'#128 MUDr. Gertrúda Čápová – Tajemství švýcarského zdraví…', show:'Brocast', totalMinutes:0, cover:'https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fde75b41297998a5b2d6a20ec', platform:'spotify', link:'https://open.spotify.com/episode/1pwVl9sW7AclRiUKmVmQG9?si=wW23B-KPTRCyJZlBNLkRPQ', tags:['Czech','Health','Interview','Medicine','Spotify'] },
+
+  // 27 Feb 2026
+  { id:'2026-02-27-1', date:'2026-02-27', title:'Makej vole! Podcast #94 – Závodní speciál: Chopok Skymarathon, Beskydská sedmička a UTMB', show:'Makej vole! Podcast', totalMinutes:0, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/3OnRfEWVHoCpsskMr82CmU?si=-q0udo9hTvu_CAaRKEYb5Q', tags:['Czech','Running','Ultra','B7','UTMB','Spotify'] },
+  { id:'2026-02-27-2', date:'2026-02-27', title:'Makej vole! Podcast #95 Speciál – Ross Edgley, Kilian Jornet, rekord na Tor de Géants, Strava novinky a další…', show:'Makej vole! Podcast', totalMinutes:0, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/3umavfYvE5PsL3BxMWioV2?si=pxVrB3P6QgCO28cCmrMx1g', tags:['Czech','Running','Ultra','Special','Spotify'] },
+  { id:'2026-02-27-3', date:'2026-02-27', title:'#28 Metoděj Jílek: moje několikaté používání Penca bylo letos završeno spoluprací', show:'Penco podcast', totalMinutes:0, cover:'https://i.scdn.co/image/ab67656300005f1f0441e07884a097d964f41361', platform:'spotify', link:'https://open.spotify.com/episode/3Z00umZZGJoxjYsnMRt1if', tags:['Czech','Running','Sport','Spotify'] },
+
+  // 26 Feb 2026
+  { id:'2026-02-26-1', date:'2026-02-26', title:'Makej vole! Podcast #98 - Terka Rudolfová nejen o rekordu na Beskydské sedmičce', show:'Makej vole! Podcast', totalMinutes:0, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/1mjv46beRp7XW3Qn6ayoZT?si=UT6RrHDmT1Wqh0kTDKPkWA', tags:['Czech','Running','Ultra','B7','Spotify'] },
+
+  // 25 Feb 2026
+  { id:'2026-02-25-1', date:'2026-02-25', title:'#176 - JAN KOLLER - Miliony z fotbalu rozumně investoval, Dnes spoluvlastní padelový klub - Legenda fotbalu', show:'Kid Ajvn & A-Cast', totalMinutes:0, cover:'https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1fd3ec3065a51959341d5b0367', platform:'spotify', link:'https://open.spotify.com/episode/40j4q27YXlfTGd0LmEDgt2', tags:['Czech','Football','Interview','Business','Spotify'] },
+
+  // 24 Feb 2026
+  { id:'2026-02-24-1', date:'2026-02-24', title:'RoadCast #2 - Offseason a zimní příprava', show:'RoadCast', totalMinutes:0, cover:'https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f43e0955e4175799299096222', platform:'spotify', link:'https://open.spotify.com/episode/1YWxdnBsFlEHZVxKgUSKDP?si=66sjJOq6RrKW3wXpGtAY8g', tags:['Czech','Cycling','Training','Spotify'] },
+
+  // 23 Feb 2026
+  { id:'2026-02-23-1', date:'2026-02-23', title:'RoadCast #1 - Život profesionální cyklistky', show:'RoadCast', totalMinutes:0, cover:'https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fdb2417ec09f8a10f4042f525', platform:'spotify', link:'https://open.spotify.com/episode/71VKaxLjyTkXFGSQUTFrpZ?si=6PxxQ0eKSLKijxVQKWRirQ', tags:['Czech','Cycling','Interview','Spotify'] },
+
+  // 22 Feb 2026
+  { id:'2026-02-22-1', date:'2026-02-22', title:'JIŘÍ LANGMAJER: Byl jsem hrozný k*kot, teď čím dál víc pláču', show:'Čestmír Strakatý', totalMinutes:0, cover:'https://i.ytimg.com/vi/hEibxJ9omzs/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/hEibxJ9omzs?si=aVQDap6h-8ASSi5P', tags:['Czech','Interview','YouTube'] },
+  { id:'2026-02-22-2', date:'2026-02-22', title:'How to Train and Recover Like a 8X Cyclocross World Champion', show:'WHOOP', totalMinutes:0, cover:'https://i.ytimg.com/vi/xT1QXOmeFuI/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/xT1QXOmeFuI?si=95NkoDoCjdNs9cCE', tags:['English','Cycling','Training','YouTube'] },
+
   // 20 Feb 2026 
   { id:'2026-02-20-1', date:'2026-02-20', title:'Už nechci Rolexky ani Lamba: Vémola o radikální změně životních priorit I NERUDACAST 86', show:'NerudaCast - Pavol Neruda', totalMinutes:55, cover:'https://i.ytimg.com/vi/0SYtocNLeXA/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/0SYtocNLeXA?si=49M5AGmUgbSwyvh0', tags:['Slovak','Interview','YouTube'] },
 
-  { id:'2026-02-20-2', date:'2026-02-20', title:'Tréninkové zóny nejen v TrainingPeaks - Pohledem trenéra', show:'Pohledem trenéra', totalMinutes:22, cover:'https://i.scdn.co/image/ab6765630000f68ddc2f5cff492a72f54b511a44', platform:'spotify', link:'https://open.spotify.com/episode/3Zz0CMkSqlzOnYtIrLJkV4?si=TMJ43J8BQ1eBrJFEUODorw', tags:['Czech','Training','Spotify'] },
+  { id:'2026-02-20-2', date:'2026-02-20', title:'Tréninkové zóny nejen v TrainingPeaks - Pohledem trenéra', show:'Pohledem trenéra', totalMinutes:22, cover:'https://i.scdn.co/image/ab67656300005f1fdc2f5cff492a72f54b511a44', platform:'spotify', link:'https://open.spotify.com/episode/3Zz0CMkSqlzOnYtIrLJkV4?si=TMJ43J8BQ1eBrJFEUODorw', tags:['Czech','Training','Spotify'] },
+
+  { id:'2026-02-20-3', date:'2026-02-20', title:'Nechápu kam až to může růst. Talenti mají top profesionální přístup už od začátku, diví se Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:47, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/5MqNzYU49p8zVUYxi1hRY2?si=vO8MK297QG6cNP_OUo3U5w', tags:['Czech','Cycling','Spotify'] },
+
+  { id:'2026-02-20-4', date:'2026-02-20', title:'Makej vole! Podcast #101 - Jirka Petr a Petr Hének: O vítězství, supportu a tréninku na LH24', show:'Makej vole! Podcast', totalMinutes:35, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/4riwPwWuvT5pChA19Mj4bd?si=wuv7kS41Rde1Myu5YNvalw', tags:['Czech','Running','Podcast','LH24','Spotify'] },
 
   // 19 Feb 2026 
-  { id:'2026-02-19-1', date:'2026-02-19', title:'VO2max, zóna 1 či 2 a vše ostatní z posledních článků na blogu - Pohledem trenéra', show:'Pohledem trenéra', totalMinutes:19, cover:'https://i.scdn.co/image/ab6765630000f68ddc2f5cff492a72f54b511a44', platform:'spotify', link:'https://open.spotify.com/episode/4eEl6jtjoR2YoDWpEqeSxK?si=f8mexCsWQL6V57qXLS3XnA', tags:['Czech','Training','Spotify'] },
+  { id:'2026-02-19-1', date:'2026-02-19', title:'VO2max, zóna 1 či 2 a vše ostatní z posledních článků na blogu - Pohledem trenéra', show:'Pohledem trenéra', totalMinutes:19, cover:'https://i.scdn.co/image/ab67656300005f1fdc2f5cff492a72f54b511a44', platform:'spotify', link:'https://open.spotify.com/episode/4eEl6jtjoR2YoDWpEqeSxK?si=f8mexCsWQL6V57qXLS3XnA', tags:['Czech','Training','Spotify'] },
   
   // 18 Feb 2026 
   { id:'2026-02-18-1', date:'2026-02-18', title:'#12 - MATĚJ KUBRT - Ještěďák - finančník', show:'#DYCKYJESTED (ne)podcast', totalMinutes:41, cover:'https://i.scdn.co/image/ab67656300005f1fa15a69b93e0626791c9aa6c4', platform:'spotify', link:'https://open.spotify.com/episode/5jQB6vyNjIPZe5HcQM1Vnx?si=KZhLIzb8T8iEsAjo04xGWA', tags:['Czech','Podcast','Spotify'] },
-  { id:'2026-02-18-2', date:'2026-02-18', title:'Jak si hlídat zdraví jednoduše a dlouhodobě - MUDr. Tomáš Kaštovský - progresstalk', show:'progresstalk', totalMinutes:49, cover:'https://i.scdn.co/image/ab6772ab0000169254458474a113ae4d7f8e3bd3', platform:'spotify', link:'https://open.spotify.com/episode/0tD7nIbpouH8IEkhxDK1TA?si=18FiqH6aTj6BGR7QHSaf5A', tags:['Czech','Health','Spotify'] },
+  { id:'2026-02-18-2', date:'2026-02-18', title:'Jak si hlídat zdraví jednoduše a dlouhodobě - MUDr. Tomáš Kaštovský - progresstalk', show:'progresstalk', totalMinutes:49, cover:'https://i.scdn.co/image/ab67656300005f1fddb32fc687251ee907f66dfc', platform:'spotify', link:'https://open.spotify.com/episode/0tD7nIbpouH8IEkhxDK1TA?si=18FiqH6aTj6BGR7QHSaf5A', tags:['Czech','Health','Spotify'] },
 
   // 16 Feb 2026 
-  { id:'2026-02-16-1', date:'2026-02-16', title:'Tréninková Bible č. 8 - Anatomie dokonalé sezóny: Trénink podle Kiliana Jorneta', show:'Tréninková Bible', totalMinutes:30, cover:'https://i.scdn.co/image/ab6765630000f68d896ff1bbff5d945b6b02e7f7', platform:'spotify', link:'https://open.spotify.com/episode/3e2cGTzn4Fdd2UsT9dqA5A', tags:['Czech','Training','Spotify'] },
+  { id:'2026-02-16-1', date:'2026-02-16', title:'Tréninková Bible č. 8 - Anatomie dokonalé sezóny: Trénink podle Kiliana Jorneta', show:'Tréninková Bible', totalMinutes:30, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab00001692cf8eeb730ebbd0000eed723b', platform:'spotify', link:'https://open.spotify.com/episode/3e2cGTzn4Fdd2UsT9dqA5A', tags:['Czech','Training','Spotify'] },
 
   // 17 Feb 2026 
   { id:'2026-02-17-1', date:'2026-02-17', title:'Měl jsem krizi třeba i čtyřicet kilometrů. Často se na trati trápím sám, přiznává běžec Šumný', show:'Kilometry Jiřího Ježka', totalMinutes:43, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/4UYg4ndyRdGm0dQtnf9DhX?si=8H7kboHASGiNCCNA39Z4gA', tags:['Czech','Running','Spotify'] },
-  { id:'2026-02-17-2', date:'2026-02-17', title:'YOU NEED TO RESET, RESTART AND REFOCUS - Powerful Motivational Speech | Eric Thomas', show:'Motivation Daily by Motiversity', totalMinutes:9, cover:'https://i.scdn.co/image/ab6765630000f68de384591649ec6f970950234f', platform:'spotify', link:'https://open.spotify.com/episode/0XHYmUFJkzCg3JdZwCUcBw?si=mDIGZIgQS9OaEVTfpmL4ow', tags:['English','Motivation','Spotify'] },
+  { id:'2026-02-17-2', date:'2026-02-17', title:'YOU NEED TO RESET, RESTART AND REFOCUS - Powerful Motivational Speech | Eric Thomas', show:'Motivation Daily by Motiversity', totalMinutes:9, cover:'https://i.ytimg.com/vi/T0mjs9t616s/mqdefault.jpg', platform:'spotify', link:'https://open.spotify.com/episode/0XHYmUFJkzCg3JdZwCUcBw?si=mDIGZIgQS9OaEVTfpmL4ow', tags:['English','Motivation','Spotify'] },
   
   // 11 Feb 2026 
-  { id:'2026-02-11-1', date:'2026-02-11', title:'Makej vole! Trénink #2 - O běžecké technice', show:'Makej vole! Trénink', totalMinutes:17, cover:'https://i.scdn.co/image/ab6765630000f68dbb9b8343e92c7814d6a0efc2', platform:'spotify', link:'https://open.spotify.com/episode/3UOyuxRVrB0nVGhq5LGjt5?si=7cb518ff77004de5', tags:['Czech','Running','Training','Spotify'] },
-  { id:'2026-02-11-2', date:'2026-02-11', title:'Makej vole! Podcast #100 - Veronika Reade a Ing. Jiří Sedláček, CSc: Příběh značky PENCO', show:'Makej vole! Podcast', totalMinutes:34, cover:'https://i.scdn.co/image/ab6765630000f68d5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/7yRAg4kyuKBWjs90YQnrwr?si=FNwV9nNWT0G3s5PLnhXZuw', tags:['Czech','Podcast','Spotify'] },
+  { id:'2026-02-11-1', date:'2026-02-11', title:'Makej vole! Trénink #2 - O běžecké technice', show:'Makej vole! Trénink', totalMinutes:17, cover:'https://i.scdn.co/image/ab67656300005f1fbb9b8343e92c7814d6a0efc2', platform:'spotify', link:'https://open.spotify.com/episode/3UOyuxRVrB0nVGhq5LGjt5?si=7cb518ff77004de5', tags:['Czech','Running','Training','Spotify'] },
+  { id:'2026-02-11-2', date:'2026-02-11', title:'Makej vole! Podcast #100 - Veronika Reade a Ing. Jiří Sedláček, CSc: Příběh značky PENCO', show:'Makej vole! Podcast', totalMinutes:34, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/7yRAg4kyuKBWjs90YQnrwr?si=FNwV9nNWT0G3s5PLnhXZuw', tags:['Czech','Podcast','Spotify'] },
   
   // 10 Feb 2026 
   { id:'2026-02-10-1', date:'2026-02-10', title:'UTMB – Jaká je historie a zajímavosti ohledně této světové série?', show:'Hodinky 365 smart', totalMinutes:0, cover:'https://i.ytimg.com/vi/vvQG90Pvj5s/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/vvQG90Pvj5s?si=R2FyQa2M4IlSO49O', tags:['Czech','Running','YouTube'] },
