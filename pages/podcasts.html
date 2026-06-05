@@ -22,19 +22,17 @@
 
     <nav id="podcast-filters" class="filter-bar" aria-label="Podcast filters">
       <button class="filter-chip active" data-filter="all">All</button>
-      <button class="filter-chip" data-filter="in-progress">In Progress</button>
-      <button class="filter-chip" data-filter="finished">Finished</button>
-      <button class="filter-chip" data-filter="favorites">Favorites</button>
+      <button class="filter-chip" data-filter="spotify">Spotify</button>
+      <button class="filter-chip" data-filter="youtube">YouTube</button>
+      <button class="filter-chip" data-filter="2026">2026</button>
       <button class="filter-chip" data-filter="2025">2025</button>
     </nav>
 
     <div id="podcast-controls" class="media-controls">
       <div class="control-group">
-        <label for="podcast-sort" class="control-label">Sort by</label>
-        <select id="podcast-sort" class="control-select">
-          <option value="date-desc">Date (newest)</option>
-          <option value="show-asc">Show (A–Z)</option>
-          <option value="tag-asc">Tag (A–Z)</option>
+        <label for="podcast-show" class="control-label">Show</label>
+        <select id="podcast-show" class="control-select">
+          <option value="all">All shows</option>
         </select>
       </div>
       <div class="control-group">

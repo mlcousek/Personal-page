@@ -6,7 +6,7 @@
 const PODCAST_EPISODES = [
 
   // 4 Jun 2026
-  { id:'2026-06-04-1', date:'2026-06-04', title:'Kika to s muži umí, Standovo přemýšlení mi nahánělo strach | ROZHOVOR S JOHANKOU 🥥', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/1ia8nbph6Eg/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=1ia8nbph6Eg', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-06-04-1', date:'2026-06-04', title:'Kika to s muži umí, Standovo přemýšlení mi nahánělo strach | ROZHOVOR S JOHANKOU 🥥', show:'Tohle není MÚPI', totalMinutes:67, cover:'https://i.ytimg.com/vi/1ia8nbph6Eg/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=1ia8nbph6Eg', tags:['Czech','Reality TV','Survivor','YouTube'] },
 
   // 28 May 2026
   { id:'2026-05-28-1', date:'2026-05-28', title:'Močení do bidonů toleruji, ukazuje to lidskost cyklistů. Sportovci nejsou jen stroje, hlásí Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/78CHOqTyAomv2nDlhgTksC', tags:['Czech','Cycling','Spotify'] },
@@ -23,7 +23,7 @@ const PODCAST_EPISODES = [
 
   // 1 May 2026
   { id:'2026-05-01-1', date:'2026-05-01', title:'Podcast s Patrikem Vebrem o gut training, energii a vytrvalostním běhu', show:'Edgar podcast', totalMinutes:23, cover:'https://i.scdn.co/image/ab67656300005f1fb2df74649842302ab50f9b99', platform:'spotify', link:'https://open.spotify.com/episode/61XZUHmIhBCWbZZ4QFkXL8', tags:['Czech','Running','Training','Nutrition','Spotify'] },
-  { id:'2026-05-01-2', date:'2026-05-01', title:'V panici jsem hlasovala Johanku místo Vendy, v 6 jsme ji mohli převálcovat | ROZHOVOR S ŽOFIÍ 🥥', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/BEBGHBIMdc4/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=BEBGHBIMdc4', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-05-01-2', date:'2026-05-01', title:'V panici jsem hlasovala Johanku místo Vendy, v 6 jsme ji mohli převálcovat | ROZHOVOR S ŽOFIÍ 🥥', show:'Tohle není MÚPI', totalMinutes:70, cover:'https://i.ytimg.com/vi/BEBGHBIMdc4/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=BEBGHBIMdc4', tags:['Czech','Reality TV','Survivor','YouTube'] },
 
   // 30 Apr 2026
   { id:'2026-04-30-1', date:'2026-04-30', title:'DÍL 21: „Důchod v nedohlednu". Martin Zajíc myslel, že skončí. Místo tečky napsal vykřičník: 28:19!', show:'BETRI CAST 🎙️', totalMinutes:84, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015beb493a56ab6bb39c879b2a8f1', platform:'spotify', link:'https://open.spotify.com/episode/5U0r7V1QVQxJyRZFcPSVPc', tags:['Czech','Running','Interview','Spotify'] },
@@ -31,11 +31,11 @@ const PODCAST_EPISODES = [
 
   // 26 Apr 2026
   { id:'2026-04-26-1', date:'2026-04-26', title:'Seixas je výjimečný borec. Snad vydrží veškerou nálož tlaku, která se kolem něj tvoří, říká Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:54, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/0wgSQ7wMk3QVb2xy8RTST6', tags:['Czech','Cycling','Spotify'] },
-  { id:'2026-04-26-2', date:'2026-04-26', title:'KAREL VACEK: Většinu lidí brzdí strach a neznalost', show:'YouTube', totalMinutes:0, cover:'https://i.ytimg.com/vi/wy6bhsLosH4/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=wy6bhsLosH4', tags:['Czech','Interview','YouTube'] },
-  { id:'2026-04-26-3', date:'2026-04-26', title:'VŠICHNI Z NÍ MĚLI STRACH! Iki upřímně komentuje všechny soutěžící. (Survivor)', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/oNnwWIus6oE/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=oNnwWIus6oE', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-04-26-2', date:'2026-04-26', title:'KAREL VACEK: Většinu lidí brzdí strach a neznalost', show:'Cyklistickey', totalMinutes:105, cover:'https://i.ytimg.com/vi/wy6bhsLosH4/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=wy6bhsLosH4', tags:['Czech','Interview','YouTube'] },
+  { id:'2026-04-26-3', date:'2026-04-26', title:'VŠICHNI Z NÍ MĚLI STRACH! Iki upřímně komentuje všechny soutěžící. (Survivor)', show:'Popcorn Time', totalMinutes:109, cover:'https://i.ytimg.com/vi/oNnwWIus6oE/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=oNnwWIus6oE', tags:['Czech','Reality TV','Survivor','YouTube'] },
 
   // 25 Apr 2026
-  { id:'2026-04-25-1', date:'2026-04-25', title:'Vyplácat na mě 2 hlasy byl fail, Johanka vždy o 3 kroky napřed, lhát jí nemá cenu | ROZHOVOR S IKIM 🥥', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/5VpxbBxnOzk/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=5VpxbBxnOzk', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-04-25-1', date:'2026-04-25', title:'Vyplácat na mě 2 hlasy byl fail, Johanka vždy o 3 kroky napřed, lhát jí nemá cenu | ROZHOVOR S IKIM 🥥', show:'Tohle není MÚPI', totalMinutes:102, cover:'https://i.ytimg.com/vi/5VpxbBxnOzk/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=5VpxbBxnOzk', tags:['Czech','Reality TV','Survivor','YouTube'] },
 
   // 23 Apr 2026
   { id:'2026-04-23-1', date:'2026-04-23', title:'Jiří Petr - Jak se připravit na závod aby jsi podal výkon', show:'Edgar podcast', totalMinutes:71, cover:'https://i.scdn.co/image/ab67656300005f1f8463dcc46e24b518a986d18f', platform:'spotify', link:'https://open.spotify.com/episode/2mSCd5nhnjgEqFwWRDGT87', tags:['Czech','Running','Training','Interview','Spotify'] },
@@ -43,7 +43,7 @@ const PODCAST_EPISODES = [
   // 17 Apr 2026
   { id:'2026-04-17-1', date:'2026-04-17', title:'#151: O Lysacupu s jeho šéfem a zakladatelem Petrem Hudečkem', show:'TŘIŠESTPĚT', totalMinutes:81, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be1066498534a633d7b2886a6d', platform:'spotify', link:'https://open.spotify.com/episode/0wTLT7PhmTwc6DjYvXC2qB', tags:['Czech','Running','Ultra','Interview','Spotify'] },
   { id:'2026-04-17-2', date:'2026-04-17', title:'Tréninková Bible č. 11: Jim Walmsley - zrození legendy', show:'Tréninková Bible', totalMinutes:23, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be55a7a5ef9a99ed637c11c84e', platform:'spotify', link:'https://open.spotify.com/episode/66CfaZ3SnyaG9zOKZOevfk', tags:['Czech','Running','Ultra','Training','Spotify'] },
-  { id:'2026-04-17-3', date:'2026-04-17', title:'Říkal jsem si, co tam vlastně dělám?! Dopis mě lákal domů.', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/PGMrTnbUJjs/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=PGMrTnbUJjs', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-04-17-3', date:'2026-04-17', title:'Říkal jsem si, co tam vlastně dělám?! Dopis mě lákal domů. TRABO', show:'Popcorn Time', totalMinutes:104, cover:'https://i.ytimg.com/vi/PGMrTnbUJjs/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=PGMrTnbUJjs', tags:['Czech','Reality TV','Survivor','YouTube'] },
 
   // 14 Apr 2026
   { id:'2026-04-14-1', date:'2026-04-14', title:'Spoléhám na taktiku, že na kostkách nebudu tahat peloton, říká Bittner před Paříž-Roubaix', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6sc1V2VK5NihmXiEKnPt7d', tags:['Czech','Cycling','Interview','Spotify'] },
@@ -53,17 +53,17 @@ const PODCAST_EPISODES = [
   { id:'2026-04-13-1', date:'2026-04-13', title:'Přenést radost ze sportu je hlavním posláním při tvorbě videí, říká sportovní influencer König', show:'Kilometry Jiřího Ježka', totalMinutes:49, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6MsVbwOeUBPGfhjBbkzsiD', tags:['Czech','Cycling','Spotify'] },
 
   // 11 Apr 2026
-  { id:'2026-04-11-1', date:'2026-04-11', title:'Příchod holek byl podraz, nenávist k Johance mě zaslepila | ROZHOVOR S ADAMEM 🥥', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/O14P3i6pwZE/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=O14P3i6pwZE', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-04-11-2', date:'2026-04-11', title:'MĚL BÝT VŮBEC NA KMENOVCE? Mrzí ho to? Proč si do souboje nevybral Johanku? (REST)', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/SMpVcZ8926A/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=SMpVcZ8926A', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-04-11-1', date:'2026-04-11', title:'Příchod holek byl podraz, nenávist k Johance mě zaslepila | ROZHOVOR S ADAMEM 🥥', show:'Tohle není MÚPI', totalMinutes:108, cover:'https://i.ytimg.com/vi/O14P3i6pwZE/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=O14P3i6pwZE', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-04-11-2', date:'2026-04-11', title:'MĚL BÝT VŮBEC NA KMENOVCE? Mrzí ho to? Proč si do souboje nevybral Johanku? (REST)', show:'Popcorn Time', totalMinutes:82, cover:'https://i.ytimg.com/vi/SMpVcZ8926A/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=SMpVcZ8926A', tags:['Czech','Reality TV','Survivor','YouTube'] },
 
   // 9 Apr 2026
   { id:'2026-04-09-1', date:'2026-04-09', title:'#4 Roman Chládek - Speciální díl o zahraničních Ultra Trailových závodech na rok 2026', show:'UltraMinuty', totalMinutes:155, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015bef713230f6b9350706146cf99', platform:'spotify', link:'https://open.spotify.com/episode/6h49oyqP3NeXelq0wTMeek', tags:['Czech','Running','Ultra','Interview','Spotify'] },
 
   // 4 Apr 2026
-  { id:'2026-04-04-1', date:'2026-04-04', title:'Sadistické peklo v kleci a rozdělování jídla | Survivor RECAP 17 🌴', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/iFAAFJw0J24/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=iFAAFJw0J24', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-04-04-2', date:'2026-04-04', title:'Plán na Denisu padá! Adam se cítil jako hlava gangu ve vězení | Survivor RECAP 18 🌴', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/wpTfSc7elb0/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=wpTfSc7elb0', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-04-04-3', date:'2026-04-04', title:'TOHLE UŽ JE OSOBNÍ! Dostane Rest imunitu? Doplatí kmen na sabotáž? (Survivor 17. díl RECAP)', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/Xtppf-qBfJc/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=Xtppf-qBfJc', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-04-04-4', date:'2026-04-04', title:'NEJSMOLNĚJŠÍ KONEC V HISTORII! Rest neměl vypadnout! Johanka ukázala charakter! (Survivor RECAP)', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/Wvh-mrUOQpc/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=Wvh-mrUOQpc', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-04-04-1', date:'2026-04-04', title:'Sadistické peklo v kleci a rozdělování jídla | Survivor RECAP 17 🌴', show:'Tohle není MÚPI', totalMinutes:61, cover:'https://i.ytimg.com/vi/iFAAFJw0J24/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=iFAAFJw0J24', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-04-04-2', date:'2026-04-04', title:'Plán na Denisu padá! Adam se cítil jako hlava gangu ve vězení | Survivor RECAP 18 🌴', show:'Tohle není MÚPI', totalMinutes:64, cover:'https://i.ytimg.com/vi/wpTfSc7elb0/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=wpTfSc7elb0', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-04-04-3', date:'2026-04-04', title:'TOHLE UŽ JE OSOBNÍ! Dostane Rest imunitu? Doplatí kmen na sabotáž? (Survivor 17. díl RECAP)', show:'Popcorn Time', totalMinutes:79, cover:'https://i.ytimg.com/vi/Xtppf-qBfJc/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=Xtppf-qBfJc', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-04-04-4', date:'2026-04-04', title:'NEJSMOLNĚJŠÍ KONEC V HISTORII! Rest neměl vypadnout! Johanka ukázala charakter! (Survivor RECAP)', show:'Popcorn Time', totalMinutes:77, cover:'https://i.ytimg.com/vi/Wvh-mrUOQpc/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=Wvh-mrUOQpc', tags:['Czech','Reality TV','Survivor','YouTube'] },
 
   // 1 Apr 2026
   { id:'2026-04-01-1', date:'2026-04-01', title:'#113: Zdeněk Hruška – "Kvůli ultra jsem se osobnostně posunul."', show:'TŘIŠESTPĚT', totalMinutes:112, cover:'https://i.scdn.co/image/ab67656300005f1ffb04ff49157a09c31bab76fc', platform:'spotify', link:'https://open.spotify.com/episode/6TuJCE3xkheDvuCcuJG6yv', tags:['Czech','Running','Ultra','Interview','Spotify'] },
@@ -81,8 +81,8 @@ const PODCAST_EPISODES = [
 
   // 27 Mar 2026
   { id:'2026-03-27-1', date:'2026-03-27', title:'Jsme digitálně obézní. Začíná epidemie samoty.', show:'Brain We Are', totalMinutes:77, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be97fdd97192a6494f488f1579', platform:'spotify', link:'https://open.spotify.com/episode/7LJNuKf6LTAlyQoZNFcJzd', tags:['Czech','Self improvement','Science','Spotify'] },
-  { id:'2026-03-27-2', date:'2026-03-27', title:'Standa se rozhodně dostane do sloučení. Adama je mi líto, neumí to hrát | ROZHOVOR S LEOŠEM 🥥', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/z_YEdMvSP0k/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=z_YEdMvSP0k', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-03-27-3', date:'2026-03-27', title:'Zasloužil si to? Musela tohle televize udělat? Produkce se zlepšila! (Survivor Recap 14. díl)', show:'TRABO', totalMinutes:0, cover:'https://i.ytimg.com/vi/p5cwWeN1ztU/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=p5cwWeN1ztU', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-03-27-2', date:'2026-03-27', title:'Standa se rozhodně dostane do sloučení. Adama je mi líto, neumí to hrát | ROZHOVOR S LEOŠEM 🥥', show:'Tohle není MÚPI', totalMinutes:112, cover:'https://i.ytimg.com/vi/z_YEdMvSP0k/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=z_YEdMvSP0k', tags:['Czech','Reality TV','Survivor','YouTube'] },
+  { id:'2026-03-27-3', date:'2026-03-27', title:'Zasloužil si to? Musela tohle televize udělat? Produkce se zlepšila! (Survivor Recap 14. díl)', show:'Popcorn Time', totalMinutes:82, cover:'https://i.ytimg.com/vi/p5cwWeN1ztU/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=p5cwWeN1ztU', tags:['Czech','Reality TV','Survivor','YouTube'] },
 
   // 23 Mar 2026
   { id:'2026-03-23-1', date:'2026-03-23', title:'#127 Maroš Vago – Cílem je vnitřní klid... Jak ho dosáhnout?', show:'BROCAST', totalMinutes:230, cover:'https://i.scdn.co/image/ab67656300005f1f3d0993114c7ba094b0d8c8b3', platform:'spotify', link:'https://open.spotify.com/episode/6vp391Mm2Q6HJGGyuZTO3J', tags:['Czech','Self improvement','Philosophy','Interview','Spotify'] },
@@ -358,18 +358,26 @@ function collectAllTags(list){
   return Array.from(s).sort((a,b)=>a.localeCompare(b));
 }
 
-function applyFiltersAndSort({filter='all', tag='all', sort='date-desc'} = {}){
+function collectAllShows(list){
+  const s = new Set();
+  list.forEach(e=>{ if(e.show) s.add(e.show); });
+  return Array.from(s).sort((a,b)=>a.localeCompare(b, undefined, {sensitivity:'base'}));
+}
+
+function applyFiltersAndSort({filter='all', tag='all', show='all', sort='date-desc'} = {}){
   let list = [...PODCAST_EPISODES];
   // apply quick filters
   switch(filter){
-    case 'in-progress': list = list.filter(e=>e.status==='in-progress'); break;
-    case 'finished': list = list.filter(e=>e.status==='finished'); break;
-    case 'favorites': list = list.filter(e=>e.tags && e.tags.includes('favorite')); break;
+    case 'spotify': list = list.filter(e=>e.platform==='spotify'); break;
+    case 'youtube': list = list.filter(e=>e.platform==='youtube'); break;
     case '2025': list = list.filter(e=>e.date && e.date.startsWith('2025-')); break;
+    case '2026': list = list.filter(e=>e.date && e.date.startsWith('2026-')); break;
     default: break;
   }
   // tag filter
   if(tag && tag!=='all') list = list.filter(e=>Array.isArray(e.tags) && e.tags.includes(tag));
+  // show filter
+  if(show && show!=='all') list = list.filter(e=>e.show===show);
 
   // sort
   switch(sort){
@@ -393,21 +401,26 @@ function renderEpisodes(opts){
   const filterBar = document.getElementById('podcast-filters');
   const tagSelect = document.getElementById('podcast-tag');
   const sortSelect = document.getElementById('podcast-sort');
+  const showSelect = document.getElementById('podcast-show');
   const filter = (opts && opts.filter) || (filterBar && filterBar.querySelector('button.active') && filterBar.querySelector('button.active').getAttribute('data-filter')) || 'all';
   const tag = (opts && opts.tag) || (tagSelect && tagSelect.value) || 'all';
-  const sort = (opts && opts.sort) || (sortSelect && sortSelect.value) || 'date-desc';
+  const show = (opts && opts.show) || (showSelect && showSelect.value) || 'all';
 
-  const list = applyFiltersAndSort({filter, tag, sort});
+  const list = applyFiltersAndSort({filter, tag, show});
 
   // grouped by date
   const grouped = groupByDateDescending(list);
   container.innerHTML = grouped.map(([date, eps])=>{
     const dateDisplay = new Date(date).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'});
+    const isMulti = eps.length > 1;
+    const groupClass = isMulti ? 'date-group date-group--multi' : 'date-group date-group--single';
     const podcastCards = eps.map(renderCard).join('');
-    const gridClass = eps.length > 1 ? 'podcasts-for-date' : '';
-    return `<div class="date-group">
+    const innerHtml = isMulti
+      ? `<div class="podcasts-for-date">${podcastCards}</div>`
+      : podcastCards;
+    return `<div class="${groupClass}">
       <h3 class="date-heading">${dateDisplay}</h3>
-      <div class="${gridClass}">${podcastCards}</div>
+      ${innerHtml}
     </div>`;
   }).join('');
   updateCount(list.length);
@@ -472,7 +485,13 @@ function renderCard(ep){
     progressBar = `<div class="progress"><div class="progress-bar" style="width:${progress}%;"></div></div>`;
   } else {
     // No status property or status is something else - show episode length
-    statusTag = total > 0 ? `<span class="podcast__tag">${total} min</span>` : '';
+    if(total > 0){
+      statusTag = `<span class="podcast__tag">${total} min</span>`;
+    } else if(platform === 'youtube'){
+      statusTag = '<span class="podcast__tag tag-yt">YT</span>';
+    } else {
+      statusTag = '';
+    }
     progressBar = '<div class="progress"><div class="progress-bar" style="width:0%;"></div></div>';
   }
 
@@ -561,34 +580,36 @@ function updateCount(n){
 function setupFilters(){
   const bar = document.getElementById('podcast-filters');
   const tagSelect = document.getElementById('podcast-tag');
-  const sortSelect = document.getElementById('podcast-sort');
+  const showSelect = document.getElementById('podcast-show');
   const clearBtn = document.getElementById('podcast-clear');
   if(!bar) return;
+
+  // populate show select from data
+  if(showSelect){
+    const shows = collectAllShows(PODCAST_EPISODES);
+    shows.forEach(s=>{
+      const opt = document.createElement('option'); opt.value = s; opt.textContent = s; showSelect.appendChild(opt);
+    });
+    showSelect.addEventListener('change', ()=> renderEpisodes({}));
+  }
 
   // populate tag select from data
   if(tagSelect){
     const tags = collectAllTags(PODCAST_EPISODES);
-    // keep existing 'all' option then append
     tags.forEach(t=>{
       const opt = document.createElement('option'); opt.value = t; opt.textContent = t; tagSelect.appendChild(opt);
     });
     tagSelect.addEventListener('change', ()=> renderEpisodes({}));
   }
 
-  if(sortSelect){
-    sortSelect.addEventListener('change', ()=> renderEpisodes({}));
-  }
-
   // clear filters button
   if(clearBtn){
     clearBtn.addEventListener('click', ()=>{
-      // reset filter buttons to 'all'
       bar.querySelectorAll('button[data-filter]').forEach(b=>b.classList.remove('active'));
       const allBtn = bar.querySelector('button[data-filter="all"]');
       if(allBtn) allBtn.classList.add('active');
-      // reset selects
+      if(showSelect) showSelect.value = 'all';
       if(tagSelect) tagSelect.value = 'all';
-      if(sortSelect) sortSelect.value = 'date-desc';
       renderEpisodes({});
     });
   }
