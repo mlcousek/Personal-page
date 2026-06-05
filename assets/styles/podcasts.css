@@ -156,7 +156,7 @@
   box-shadow: 0 12px 28px -6px rgba(0,0,0,.14);
 }
 
-.podcast__img { width: 100%; height: 120px; object-fit: cover; filter: saturate(1.05); }
+.podcast__img { width: 100%; height: 160px; object-fit: cover; filter: saturate(1.05); }
 
 .podcast-content {
   padding: 1rem;

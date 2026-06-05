@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Jiří Mlčoušek</title>
+    <title>About – Jiří Mlčoušek</title>
     <link rel="stylesheet" href="../assets/styles/main.css">
     <link rel="stylesheet" href="../assets/styles/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,59 +12,164 @@
     <div id="navbar-placeholder"></div>
 
     <main class="about-wrapper page-shell">
-        <header class="page-hero">
-            <h1 id="about-title">About Me</h1>
-            <p id="about-summary-1">Loading...</p>
-            <p id="about-summary-2" class="about-summary-secondary"></p>
-        </header>
 
-        <div class="about-grid">
-            <section class="about-card" aria-labelledby="skills-heading">
-                <h3 id="skills-heading">Key Skills</h3>
-                <div class="tag-cloud" id="skills-tags">
-                    <span class="tag" data-i18n="skill-learning">Lifelong Learning</span>
-                    <span class="tag" data-i18n="skill-motivation">Motivation</span>
-                    <span class="tag" data-i18n="skill-security">Security Basics</span>
-                    <span class="tag" data-i18n="skill-crypto">Cryptography Interest</span>
-                    <span class="tag" data-i18n="skill-consistency">Consistency</span>
-                    <span class="tag" data-i18n="skill-growth">Growth Mindset</span>
+        <!-- ── Hero ── -->
+        <section class="about-hero">
+            <div class="about-hero-text">
+                <span class="about-eyebrow">Applied Informatics · .NET Developer · Monet+</span>
+                <h1>Jiří Mlčoušek</h1>
+                <p class="about-tagline">Always pushing for better. In everything.</p>
+                <p class="about-intro">I'm a disciplined, consistent and ambitious person who goes hard after what I want. Technical by nature, I love working with numbers, statistics and building systems that hold up. Competitive and detail-oriented, yet I know the best results come from a great team.</p>
+                <div class="trait-badges">
+                    <span class="trait">Disciplined</span>
+                    <span class="trait">Consistent</span>
+                    <span class="trait">Ambitious</span>
+                    <span class="trait">Technical</span>
+                    <span class="trait">Numbers &amp; Stats</span>
+                    <span class="trait">Competitive</span>
+                    <span class="trait">Team Player</span>
+                    <span class="trait">Detail-oriented</span>
                 </div>
-            </section>
+            </div>
+            <div class="about-hero-photo">
+                <div class="photo-frame">
+                    <img src="../images/1737442551739.jpg" alt="Jiří Mlčoušek">
+                </div>
+            </div>
+        </section>
 
-            <section class="about-card" aria-labelledby="experience-heading">
-                <h3 id="experience-heading">Experience</h3>
-                <ul class="timeline">
-                    <li>
-                        <p class="role-title" id="exp-role-1-title">Update Your Current Role</p>
-                        <p class="role-company" id="exp-role-1-company">Your Company / Organization</p>
-                        <p class="role-period" id="exp-role-1-period">Year – Present</p>
-                        <p class="role-desc" id="exp-role-1-desc">Describe your main contributions, learning focus and impact.</p>
-                    </li>
-                    <li>
-                        <p class="role-title" id="exp-role-2-title">Previous Role</p>
-                        <p class="role-company" id="exp-role-2-company">Previous Company</p>
-                        <p class="role-period" id="exp-role-2-period">Year – Year</p>
-                        <p class="role-desc" id="exp-role-2-desc">Highlight achievements, responsibilities or key lessons.</p>
-                    </li>
-                </ul>
-                <p class="lang-note" id="exp-note">(Replace the placeholders above with real experience details.)</p>
-            </section>
+        <!-- ── My Story ── -->
+        <section class="about-section about-story">
+            <h2 class="section-heading">My Story</h2>
+            <div class="story-body">
+                <p>I've always believed that the gap between where you are and where you want to be is closed by consistency — not occasional bursts of effort. Whether it's running, studying or writing code, I show up every day and look for 1% improvements. That mindset shaped everything: how I study, how I train and how I approach my career.</p>
+                <p>I studied Applied Informatics at Palacký University in Olomouc — first a bachelor's in General Informatics (2021–2024), then a master's in Software Development (2024–2026). During my master's I joined Monet+ as an intern in February 2025 and since then I've grown from intern to part-time to ¾ time, with full-time starting July 2026. The overlap between studying and working has been intentional: theory and practice, running in parallel.</p>
+                <p>I'm a technical person who loves structure — clean architecture, well-defined processes, measurable results. I enjoy digging into data, finding patterns and building solutions that hold up under pressure. Outside of work I run long distances, track every workout and read obsessively. Discipline in sport and discipline in code are the same muscle.</p>
+            </div>
+        </section>
 
-            <section class="about-card" aria-labelledby="focus-heading">
-                <h3 id="focus-heading">Focus &amp; Interests</h3>
-                <p id="focus-text-1" class="about-card-text">Motivated by disciplined progress, I explore technology, security concepts, and performance optimization.</p>
-                <p id="focus-text-2" class="about-card-text">I aim to combine structured learning with practical experimentation to build durable knowledge.</p>
-            </section>
-        </div>
+        <!-- ── Education & Career ── -->
+        <section class="about-section about-timeline-section">
+            <h2 class="section-heading">Education &amp; Career Path</h2>
+            <div class="timeline-track">
+                <div class="timeline-node node-edu">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zm5.99 7.176A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">2021 – 2024</span>
+                        <p class="timeline-title">Bc. Obecná informatika</p>
+                        <p class="timeline-sub">UPOL</p>
+                    </div>
+                </div>
+                <div class="timeline-node node-edu">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zm5.99 7.176A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">2024 – 2026</span>
+                        <p class="timeline-title">Mgr. Vývoj software</p>
+                        <p class="timeline-sub">UPOL</p>
+                    </div>
+                </div>
+                <div class="timeline-node node-work">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Feb – Jun 2025</span>
+                        <p class="timeline-title">Internship</p>
+                        <p class="timeline-sub">Monet+</p>
+                    </div>
+                </div>
+                <div class="timeline-node node-work">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Jun – Nov 2025</span>
+                        <p class="timeline-title">Part-time</p>
+                        <p class="timeline-sub">Monet+</p>
+                    </div>
+                </div>
+                <div class="timeline-node node-work">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"/><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Nov 2025 – Jul 2026</span>
+                        <p class="timeline-title">¾ time</p>
+                        <p class="timeline-sub">Monet+</p>
+                    </div>
+                </div>
+                <div class="timeline-node node-now">
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <span class="timeline-period">Jul 2026 →</span>
+                        <p class="timeline-title">Full-time</p>
+                        <p class="timeline-sub">Monet+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="bio-section">
-            <h2 id="long-bio-heading">A Longer Story</h2>
-            <p id="long-bio-p1">I like building momentum through small, well-defined daily actions. Whether it was years of competitive football, structured reading, or disciplined training for endurance events, I've learned that consistency isn't glamorous—but it wins. I apply that mindset to learning technology, understanding systems, and improving my personal performance.</p>
-            <p id="long-bio-p2">Books gave me frameworks: how to think clearly, how to train deliberately, and how to analyze problems instead of reacting to them. I'm especially interested in the intersection of security fundamentals and cryptography—how trust, identity, and verification shape the modern digital landscape. I approach those topics the same way I approach training: break complexity into repeatable, progressive cycles.</p>
-            <p id="long-bio-p3">Sport taught me resilience. Long runs, strength sessions, and tactical football years built discipline under fatigue. That directly translates to focused study sessions and long-term projects where progress can feel invisible day to day. I like turning vague goals into trackable inputs—mornings studied, pages read, kilometers run, repetitions logged.</p>
-            <p id="long-bio-p4">Right now I'm refining a system that blends physical training, technical learning, and reflective review. Each week I evaluate what compounded, what stalled, and what needs iteration. I don't chase intensity spikes—I engineer sustainable acceleration. That approach keeps me improving without burning out.</p>
-            <p id="long-bio-p5">Looking ahead, I want to deepen my expertise in applied security concepts while continuing to test endurance boundaries. I believe that combining mental rigor with physical durability creates a competitive advantage both professionally and personally. This page documents that ongoing build process—one disciplined block at a time.</p>
-        </div>
+        <!-- ── Skills ── -->
+        <section class="about-section about-skills-section">
+            <h2 class="section-heading">Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-col">
+                    <h3>Technical</h3>
+                    <ul class="skills-list">
+                        <li>.NET / C#</li>
+                        <li>REST APIs</li>
+                        <li>SQL &amp; Databases</li>
+                        <li>Git &amp; Version Control</li>
+                        <li>Software Architecture</li>
+                        <li>Cryptography &amp; PKI</li>
+                        <li>Data &amp; Statistics</li>
+                    </ul>
+                </div>
+                <div class="skills-col">
+                    <h3>Personal</h3>
+                    <ul class="skills-list">
+                        <li>Analytical thinking</li>
+                        <li>Disciplined &amp; consistent</li>
+                        <li>Goal tracking &amp; planning</li>
+                        <li>Continuous learning</li>
+                        <li>Problem solving</li>
+                        <li>Team collaboration</li>
+                        <li>Competitive drive</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── Certifications ── -->
+        <section class="about-section about-certs-section">
+            <h2 class="section-heading">Certifications</h2>
+            <div class="certs-grid">
+                <a class="cert-card cert-card--link" href="https://learn.microsoft.com/en-us/users/jirimlcousek-6170/credentials/e7eee83913415126" target="_blank" rel="noopener">
+                    <span class="cert-issuer cert-issuer--ms">Microsoft Learn</span>
+                    <p class="cert-name">GitHub Copilot</p>
+                    <span class="cert-cta">View credential →</span>
+                </a>
+                <div class="cert-card">
+                    <span class="cert-issuer cert-issuer--dometrain">Dometrain</span>
+                    <p class="cert-name">Deep Dive: C#</p>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-issuer cert-issuer--dometrain">Dometrain</span>
+                    <p class="cert-name">From Zero to Hero: REST APIs in .NET</p>
+                </div>
+                <div class="cert-card">
+                    <span class="cert-issuer cert-issuer--fcc">freeCodeCamp</span>
+                    <p class="cert-name">Foundational C# with Microsoft</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <div id="footer-placeholder"></div>
