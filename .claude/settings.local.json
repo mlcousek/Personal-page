@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx next *)",
+      "mcp__claude_ai_Spotify__search",
+      "PowerShell(Get-ChildItem *)",
+      "WebFetch(domain:github.com)",
+      "Read(//c/Users/jmlcousek/spotify-mcp-server/**)",
+      "Bash(npm run *)",
+      "Read(//mnt/c/Users/jmlcousek/AppData/Roaming/Claude/**)",
+      "Read(//c/Users/jmlcousek/.claude/**)",
+      "WebFetch(domain:open.spotify.com)"
+    ]
+  }
+}
