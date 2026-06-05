@@ -353,15 +353,15 @@ function groupByDateDescending(list){
 }
 
 function collectAllTags(list){
-  const s = new Set();
-  list.forEach(e=>{ if(Array.isArray(e.tags)) e.tags.forEach(t=>s.add(t)); });
-  return Array.from(s).sort((a,b)=>a.localeCompare(b));
+  const counts = {};
+  list.forEach(e=>{ if(Array.isArray(e.tags)) e.tags.forEach(t=>{ counts[t] = (counts[t] || 0) + 1; }); });
+  return Object.keys(counts).sort((a,b)=> counts[b] - counts[a]);
 }
 
 function collectAllShows(list){
-  const s = new Set();
-  list.forEach(e=>{ if(e.show) s.add(e.show); });
-  return Array.from(s).sort((a,b)=>a.localeCompare(b, undefined, {sensitivity:'base'}));
+  const counts = {};
+  list.forEach(e=>{ if(e.show) counts[e.show] = (counts[e.show] || 0) + 1; });
+  return Object.keys(counts).sort((a,b)=> counts[b] - counts[a]);
 }
 
 function applyFiltersAndSort({filter='all', tag='all', show='all', sort='date-desc'} = {}){
@@ -412,15 +412,11 @@ function renderEpisodes(opts){
   const grouped = groupByDateDescending(list);
   container.innerHTML = grouped.map(([date, eps])=>{
     const dateDisplay = new Date(date).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'});
-    const isMulti = eps.length > 1;
-    const groupClass = isMulti ? 'date-group date-group--multi' : 'date-group date-group--single';
+    const cols = Math.min(eps.length, 4);
     const podcastCards = eps.map(renderCard).join('');
-    const innerHtml = isMulti
-      ? `<div class="podcasts-for-date">${podcastCards}</div>`
-      : podcastCards;
-    return `<div class="${groupClass}">
+    return `<div class="date-group" data-cols="${cols}">
       <h3 class="date-heading">${dateDisplay}</h3>
-      ${innerHtml}
+      <div class="podcasts-for-date">${podcastCards}</div>
     </div>`;
   }).join('');
   updateCount(list.length);

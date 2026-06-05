@@ -281,16 +281,22 @@
   border-radius: 2px;
 }
 
-/* Multi-episode date group spans 2 outer columns */
-.date-group--multi {
-  grid-column: span 2;
-}
-
-.date-group--multi .podcasts-for-date {
+/* Inner date grid */
+.podcasts-for-date {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 1.4rem;
 }
+
+/* Date group spans match episode count (max 4 columns) */
+.date-group[data-cols="1"] { grid-column: span 1; }
+.date-group[data-cols="2"] { grid-column: span 2; }
+.date-group[data-cols="3"] { grid-column: span 3; }
+.date-group[data-cols="4"] { grid-column: span 4; }
+
+.date-group[data-cols="1"] .podcasts-for-date { grid-template-columns: 1fr; }
+.date-group[data-cols="2"] .podcasts-for-date { grid-template-columns: repeat(2, 1fr); }
+.date-group[data-cols="3"] .podcasts-for-date { grid-template-columns: repeat(3, 1fr); }
+.date-group[data-cols="4"] .podcasts-for-date { grid-template-columns: repeat(4, 1fr); }
 
 /* ─── Uniform card height ─── */
 .podcasts .podcast,
@@ -369,12 +375,15 @@
 /* ─── Responsive ─── */
 @media (max-width: 900px) {
   .podcasts { grid-template-columns: repeat(2, 1fr); }
-  .date-group--multi { grid-column: span 2; }
+  .date-group[data-cols="3"],
+  .date-group[data-cols="4"] { grid-column: span 2; }
+  .date-group[data-cols="3"] .podcasts-for-date,
+  .date-group[data-cols="4"] .podcasts-for-date { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 650px) {
   .podcasts { grid-template-columns: 1fr; }
-  .date-group--multi { grid-column: span 1; }
-  .date-group--multi .podcasts-for-date { grid-template-columns: 1fr; }
+  .date-group[data-cols] { grid-column: span 1; }
+  .date-group[data-cols] .podcasts-for-date { grid-template-columns: 1fr; }
   .podcast__img { height: 120px; }
 }
