@@ -32,7 +32,7 @@ function renderPosts() {
   const sorted = [...BLOG_POSTS].sort((a,b)=> b.date.localeCompare(a.date));
   const latest = sorted.slice(0,2);
   latestContainer.innerHTML = latest.map(p => cardHTML(p, lang)).join('');
-  allList.innerHTML = sorted.map(p => `<li><a href="#" data-post="${p.id}">${p.title[lang]||p.title.en}</a> <small style="color:#666;font-size:.6rem;letter-spacing:1px;">${p.date}</small></li>`).join('');
+  allList.innerHTML = sorted.map(p => `<li><a href="#" data-post="${p.id}">${p.title[lang]||p.title.en}</a><span class="post-date">${p.date}</span></li>`).join('');
 }
 
 function cardHTML(post, lang){

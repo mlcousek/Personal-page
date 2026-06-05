@@ -275,8 +275,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Call setupLanguageSwitcher on DOMContentLoaded
     setupLanguageSwitcher();
 
-    // Ensure the shared navbar is injected
+    // Ensure the shared navbar and footer are injected
     loadNavbar();
+    loadFooter();
 
     // Example: Smooth scrolling for navigation links
     const links = document.querySelectorAll('a[href^="#"]');
@@ -428,6 +429,37 @@ function buildInlineNavbar(prefix) {
     </div>
 </nav>
     `.trim();
+}
+
+async function loadFooter() {
+    const placeholder = document.getElementById('footer-placeholder');
+    if (!placeholder) return;
+
+    const prefix = getSiteRootPrefix();
+    const tried = new Set();
+    const candidates = [];
+
+    const push = path => { if (path && !tried.has(path)) { tried.add(path); candidates.push(path); } };
+    if (prefix) push(`${prefix}/components/footer.html`);
+    push('../components/footer.html');
+    push('components/footer.html');
+    push('/components/footer.html');
+
+    let html = null;
+    for (const candidate of candidates) {
+        try {
+            const response = await fetch(candidate);
+            if (!response.ok) continue;
+            html = await response.text();
+            break;
+        } catch (err) {}
+    }
+
+    if (!html) {
+        html = `<footer class="footer" id="footer">&copy; 2025 Jiří Mlčoušek. All rights reserved.</footer>`;
+    }
+
+    placeholder.outerHTML = html;
 }
 
 function closeAllDropdowns() {

@@ -6,44 +6,55 @@
   <title>Podcasts - Jiří Mlčoušek</title>
   <link rel="stylesheet" href="../assets/styles/main.css" />
   <link rel="stylesheet" href="../assets/styles/podcasts.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="podcasts-page" data-root="..">
   <div id="navbar-placeholder"></div>
-  <section class="page-shell" style="max-width:78em;margin:0 auto;padding:0 1.2rem;">
-    <header style="margin:20px 0 10px 0;display:flex;flex-wrap:wrap;gap:14px;align-items:center;">
-      <h1 style="margin:0;font-size:1.8rem;flex:1 1 auto;">Podcast Log</h1>
-      <div id="episode-count" style="font-size:.8rem;font-weight:600;letter-spacing:.5px;color:#555;">0 episodes</div>
+
+  <div class="media-page-shell page-shell">
+    <header class="media-page-header">
+      <div class="media-page-title-row">
+        <h1>Podcast Log</h1>
+        <span id="episode-count" class="media-count-badge">0 episodes</span>
+      </div>
+      <p id="podcast-note" class="media-note">Cover images and descriptions sourced from Spotify and other platforms when available.</p>
     </header>
-    <nav id="podcast-filters" aria-label="Podcast filters" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px;">
+
+    <nav id="podcast-filters" class="filter-bar" aria-label="Podcast filters">
       <button class="filter-chip active" data-filter="all">All</button>
       <button class="filter-chip" data-filter="in-progress">In Progress</button>
       <button class="filter-chip" data-filter="finished">Finished</button>
       <button class="filter-chip" data-filter="favorites">Favorites</button>
       <button class="filter-chip" data-filter="2025">2025</button>
     </nav>
-    <div id="podcast-controls" style="display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:20px;">
-      <label for="podcast-sort" style="font-size:.9rem;color:#444;">Sort by:</label>
-      <select id="podcast-sort" style="padding:.3rem;border-radius:6px;border:1px solid #ddd;min-width:150px;">
-        <option value="date-desc">Date (newest)</option>
-        <option value="show-asc">Show (A–Z)</option>
-        <option value="tag-asc">Tag (A–Z)</option>
-      </select>
 
-      <label for="podcast-tag" style="font-size:.9rem;color:#444;">Tag:</label>
-      <select id="podcast-tag" style="padding:.3rem;border-radius:6px;border:1px solid #ddd;min-width:160px;">
-        <option value="all">All tags</option>
-      </select>
-
-      <button id="podcast-clear" style="padding:.35rem .6rem;border-radius:6px;border:1px solid #ddd;background:#f5f5f5;">Clear filters</button>
+    <div id="podcast-controls" class="media-controls">
+      <div class="control-group">
+        <label for="podcast-sort" class="control-label">Sort by</label>
+        <select id="podcast-sort" class="control-select">
+          <option value="date-desc">Date (newest)</option>
+          <option value="show-asc">Show (A–Z)</option>
+          <option value="tag-asc">Tag (A–Z)</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="podcast-tag" class="control-label">Tag</label>
+        <select id="podcast-tag" class="control-select">
+          <option value="all">All tags</option>
+        </select>
+      </div>
+      <button id="podcast-clear" class="control-clear">Clear filters</button>
     </div>
-    <p id="podcast-note" style="font-size:.9rem;color:#444;margin-top:-6px;">Note: cover images and descriptions may be populated from external sources (Spotify) when available.</p>
-  </section>
+  </div>
+
   <main id="podcast-grid" class="podcasts" aria-label="List of podcasts"></main>
-  <div style="max-width:78em;margin:0 auto;padding:0 1.2rem;"><small id="podcast-last-updated" style="color:#666;display:block;margin-top:12px;">Last updated: —</small></div>
-  <footer class="footer alt">
-    &copy; 2025 Jiří Mlčoušek. <br />
-  </footer>
+
+  <div class="media-footer-meta">
+    <small id="podcast-last-updated" class="last-updated">Last updated: —</small>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
   <script src="../scripts/main.js"></script>
   <script src="../scripts/podcasts.js"></script>
 </body>

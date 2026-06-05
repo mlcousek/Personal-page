@@ -1,0 +1,164 @@
+.sports-page { background: var(--color-bg-subtle, #f8fafc); }
+
+.sports-wrapper {
+  max-width: 1100px;
+  margin: 0 auto 80px;
+  padding: 0 28px;
+}
+
+.sports-header {
+  text-align: center;
+  margin-bottom: 52px;
+}
+
+.sports-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--color-dark, #0f172a);
+}
+
+.sports-header p {
+  margin: 14px auto 0;
+  max-width: 680px;
+  font-size: 1rem;
+  color: var(--color-text-muted, #64748b);
+  line-height: 1.6;
+}
+
+/* ─── Stats grid ─── */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin: 0 0 56px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 28px 26px;
+  box-shadow: 0 6px 22px -6px rgba(0,0,0,.10), 0 2px 8px -2px rgba(0,0,0,.06);
+  border: 1px solid var(--color-border, #e2e8f0);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.22s, box-shadow 0.22s;
+}
+
+.stat-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,120,255,.06), rgba(0,180,216,.08));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.stat-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px -8px rgba(0,0,0,.14); }
+.stat-card:hover::before { opacity: 1; }
+
+.stat-label {
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: var(--color-primary, #0078ff);
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--color-dark, #0f172a);
+  line-height: 1;
+}
+
+/* ─── Race table ─── */
+.race-section { margin-bottom: 56px; }
+
+.race-section h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 22px;
+  color: var(--color-dark, #0f172a);
+}
+
+.races-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  background: #fff;
+  box-shadow: 0 4px 18px -6px rgba(0,0,0,.1);
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.races-table thead {
+  background: linear-gradient(90deg, #0078ff, #00b4d8);
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.races-table th,
+.races-table td {
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.races-table tbody tr {
+  border-top: 1px solid var(--color-border, #e2e8f0);
+  transition: background 0.18s;
+}
+
+.races-table tbody tr:hover { background: #f0f7ff; }
+
+.badge {
+  display: inline-block;
+  padding: 3px 9px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  border-radius: 30px;
+  background: #e0f2fe;
+  color: #0c4a6e;
+  margin-left: 6px;
+}
+
+.highlight { background: #fffbe6 !important; }
+
+/* ─── Career block ─── */
+.career-block {
+  background: #fff;
+  padding: 38px 36px;
+  border-radius: 20px;
+  box-shadow: 0 6px 22px -6px rgba(0,0,0,.10), 0 2px 8px -2px rgba(0,0,0,.06);
+  border: 1px solid var(--color-border, #e2e8f0);
+}
+
+.career-block h2 {
+  margin: 0 0 18px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-dark, #0f172a);
+}
+
+.career-block p {
+  margin: 0 0 14px;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #374151;
+}
+
+.career-block p:last-child { margin-bottom: 0; }
+
+/* ─── Responsive ─── */
+@media (max-width: 640px) {
+  .stat-value { font-size: 1.6rem; }
+  .sports-header h1 { font-size: 1.8rem; }
+  .races-table th, .races-table td { padding: 10px 12px; font-size: 0.8rem; }
+  .career-block { padding: 26px 22px; }
+}

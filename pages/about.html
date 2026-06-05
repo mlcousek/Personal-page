@@ -5,35 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Jiří Mlčoušek</title>
     <link rel="stylesheet" href="../assets/styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
-    <style>
-        .about-wrapper{max-width:1000px;margin:140px auto 60px auto;padding:0 24px;}
-        .about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;align-items:start;}
-        .about-card{background:#fff;border-radius:16px;padding:28px 26px;box-shadow:0 4px 18px -4px rgba(0,0,0,.08),0 2px 6px -2px rgba(0,0,0,.06);}        
-        .about-card h3{margin:0 0 14px 0;font-size:1.25rem;}
-        .tag-cloud{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
-        .tag{background:#eef3f8;color:#10324d;padding:6px 14px;font-size:.75rem;font-weight:600;border-radius:40px;letter-spacing:.5px;}
-        .timeline{position:relative;padding-left:18px;margin:0;list-style:none;}
-        .timeline:before{content:"";position:absolute;left:4px;top:0;bottom:0;width:2px;background:linear-gradient(#0078ff,#00b4d8);}        
-        .timeline li{margin:0 0 26px 0;position:relative;}
-        .timeline li:last-child{margin-bottom:0;}
-        .timeline li:before{content:"";position:absolute;left:-2px;top:6px;width:10px;height:10px;background:#0078ff;border-radius:50%;box-shadow:0 0 0 4px #e6f3ff;}
-        .role-title{font-weight:700;margin:0;font-size:.95rem;}
-        .role-company{margin:2px 0 4px 0;font-size:.8rem;color:#555;font-weight:600;}
-        .role-period{font-size:.7rem;font-weight:600;letter-spacing:1px;color:#0078ff;margin-bottom:6px;}
-        .role-desc{margin:0;font-size:.78rem;line-height:1.35;color:#333;}
-        .lang-note{font-size:.65rem;color:#666;margin-top:12px;}
-        @media (max-width:640px){.about-card{padding:22px 20px;} .role-desc{font-size:.75rem;} }
-    </style>
+    <link rel="stylesheet" href="../assets/styles/about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="about-page" data-root="..">
     <div id="navbar-placeholder"></div>
+
     <main class="about-wrapper page-shell">
-        <header style="text-align:center;margin-bottom:40px;">
+        <header class="page-hero">
             <h1 id="about-title">About Me</h1>
-            <p id="about-summary-1" style="font-size:1.05rem;max-width:760px;margin:12px auto 6px auto;">Loading...</p>
-            <p id="about-summary-2" style="font-size:.95rem;max-width:760px;margin:4px auto 0 auto;color:#444;">Loading...</p>
+            <p id="about-summary-1">Loading...</p>
+            <p id="about-summary-2" class="about-summary-secondary"></p>
         </header>
+
         <div class="about-grid">
             <section class="about-card" aria-labelledby="skills-heading">
                 <h3 id="skills-heading">Key Skills</h3>
@@ -46,42 +30,44 @@
                     <span class="tag" data-i18n="skill-growth">Growth Mindset</span>
                 </div>
             </section>
+
             <section class="about-card" aria-labelledby="experience-heading">
                 <h3 id="experience-heading">Experience</h3>
                 <ul class="timeline">
                     <li>
-                        <p class="role-title" id="exp-role-1-title">Role Title (Update)</p>
-                        <p class="role-company" id="exp-role-1-company">Company / Organization</p>
-                        <p class="role-period" id="exp-role-1-period">YEAR – Present</p>
-                        <p class="role-desc" id="exp-role-1-desc">Add a short description of your current responsibilities and impact.</p>
+                        <p class="role-title" id="exp-role-1-title">Update Your Current Role</p>
+                        <p class="role-company" id="exp-role-1-company">Your Company / Organization</p>
+                        <p class="role-period" id="exp-role-1-period">Year – Present</p>
+                        <p class="role-desc" id="exp-role-1-desc">Describe your main contributions, learning focus and impact.</p>
                     </li>
                     <li>
-                        <p class="role-title" id="exp-role-2-title">Previous Role Title</p>
+                        <p class="role-title" id="exp-role-2-title">Previous Role</p>
                         <p class="role-company" id="exp-role-2-company">Previous Company</p>
-                        <p class="role-period" id="exp-role-2-period">YEAR – YEAR</p>
-                        <p class="role-desc" id="exp-role-2-desc">Brief description of achievements, technologies, improvements or learning.</p>
+                        <p class="role-period" id="exp-role-2-period">Year – Year</p>
+                        <p class="role-desc" id="exp-role-2-desc">Highlight achievements, responsibilities or key lessons.</p>
                     </li>
                 </ul>
                 <p class="lang-note" id="exp-note">(Replace the placeholders above with real experience details.)</p>
             </section>
+
             <section class="about-card" aria-labelledby="focus-heading">
-                <h3 id="focus-heading">Focus & Interests</h3>
-                <p id="focus-text-1">Motivated by disciplined progress, I explore technology, security concepts, and performance optimization.</p>
-                <p id="focus-text-2">I aim to combine structured learning with practical experimentation to build durable knowledge.</p>
+                <h3 id="focus-heading">Focus &amp; Interests</h3>
+                <p id="focus-text-1" class="about-card-text">Motivated by disciplined progress, I explore technology, security concepts, and performance optimization.</p>
+                <p id="focus-text-2" class="about-card-text">I aim to combine structured learning with practical experimentation to build durable knowledge.</p>
             </section>
         </div>
-    </main>
-    <section class="about-wrapper" style="margin-top:20px;" aria-labelledby="long-bio-heading">
-        <div class="about-card" style="max-width:1000px;margin:0 auto;">
-            <h2 id="long-bio-heading" style="margin-top:0;font-size:1.6rem;">A Longer Story</h2>
-            <p id="long-bio-p1">I like building momentum through small, well-defined daily actions. Whether it was years of competitive football, structured reading, or disciplined training for endurance events, I’ve learned that consistency isn’t glamorous—but it wins. I apply that mindset to learning technology, understanding systems, and improving my personal performance.</p>
-            <p id="long-bio-p2">Books gave me frameworks: how to think clearly, how to train deliberately, and how to analyze problems instead of reacting to them. I’m especially interested in the intersection of security fundamentals and cryptography—how trust, identity, and verification shape the modern digital landscape. I approach those topics the same way I approach training: break complexity into repeatable, progressive cycles.</p>
+
+        <div class="bio-section">
+            <h2 id="long-bio-heading">A Longer Story</h2>
+            <p id="long-bio-p1">I like building momentum through small, well-defined daily actions. Whether it was years of competitive football, structured reading, or disciplined training for endurance events, I've learned that consistency isn't glamorous—but it wins. I apply that mindset to learning technology, understanding systems, and improving my personal performance.</p>
+            <p id="long-bio-p2">Books gave me frameworks: how to think clearly, how to train deliberately, and how to analyze problems instead of reacting to them. I'm especially interested in the intersection of security fundamentals and cryptography—how trust, identity, and verification shape the modern digital landscape. I approach those topics the same way I approach training: break complexity into repeatable, progressive cycles.</p>
             <p id="long-bio-p3">Sport taught me resilience. Long runs, strength sessions, and tactical football years built discipline under fatigue. That directly translates to focused study sessions and long-term projects where progress can feel invisible day to day. I like turning vague goals into trackable inputs—mornings studied, pages read, kilometers run, repetitions logged.</p>
-            <p id="long-bio-p4">Right now I’m refining a system that blends physical training, technical learning, and reflective review. Each week I evaluate what compounded, what stalled, and what needs iteration. I don’t chase intensity spikes—I engineer sustainable acceleration. That approach keeps me improving without burning out.</p>
+            <p id="long-bio-p4">Right now I'm refining a system that blends physical training, technical learning, and reflective review. Each week I evaluate what compounded, what stalled, and what needs iteration. I don't chase intensity spikes—I engineer sustainable acceleration. That approach keeps me improving without burning out.</p>
             <p id="long-bio-p5">Looking ahead, I want to deepen my expertise in applied security concepts while continuing to test endurance boundaries. I believe that combining mental rigor with physical durability creates a competitive advantage both professionally and personally. This page documents that ongoing build process—one disciplined block at a time.</p>
         </div>
-    </section>
-    <footer class="footer" id="footer">© 2025 Jiří Mlčoušek. All rights reserved.</footer>
+    </main>
+
+    <div id="footer-placeholder"></div>
     <script src="../scripts/main.js"></script>
 </body>
 </html>
