@@ -12,9 +12,10 @@
   <div id="navbar-placeholder"></div>
 
   <main class="blog-wrapper page-shell">
-    <header class="page-hero">
-      <h1 id="blog-title">Blog</h1>
-      <p id="blog-intro">Short updates, thoughts and progress notes. The newest appear first.</p>
+    <header class="blog-header">
+      <span class="blog-eyebrow">Running · Academic · Life</span>
+      <h1>Blog</h1>
+      <p class="blog-lead">Race reports, academic milestones and progress notes.</p>
     </header>
 
     <section class="blog-latest-section" aria-labelledby="latest-heading">
@@ -29,6 +30,16 @@
       <ul class="all-posts-list" id="all-posts"></ul>
     </section>
   </main>
+
+  <!-- ── Post modal ── -->
+  <div class="post-modal-backdrop" id="post-modal-backdrop" role="presentation">
+    <div class="post-modal" role="dialog" aria-modal="true" aria-labelledby="post-modal-title" tabindex="-1">
+      <button class="post-modal-close" id="post-modal-close" aria-label="Close">✕</button>
+      <p class="post-modal-meta" id="post-modal-meta"></p>
+      <h2 class="post-modal-title" id="post-modal-title"></h2>
+      <div class="post-modal-body" id="post-modal-body"></div>
+    </div>
+  </div>
 
   <div id="footer-placeholder"></div>
   <script src="../scripts/main.js"></script>
