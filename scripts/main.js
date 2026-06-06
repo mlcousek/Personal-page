@@ -270,6 +270,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         setupMediaDropdown();
+        setupHamburger();
     };
 
     // Call setupLanguageSwitcher on DOMContentLoaded
@@ -402,30 +403,29 @@ function buildInlineNavbar(prefix) {
     const page = path => `${base}/pages/${path}`;
     return `
 <nav class="navbar">
-    <a href="${page('index.html')}" class="logo" id="nav-logo" style="text-decoration:none; color:inherit;">Jiří Mlčoušek</a>
-    <ul class="nav-links">
-        <li class="nav-item"><a href="${page('about.html')}" id="nav-about">About</a></li>
-        <li class="nav-item dropdown">
-            <button class="nav-dropdown-toggle" id="nav-media" type="button" aria-haspopup="true" aria-expanded="false">Media Hub</button>
-            <ul class="dropdown-menu" aria-label="Media pages">
-                <li><a href="${page('books.html')}" id="nav-books">Read Books</a></li>
-                <li><a href="${page('podcasts.html')}" id="nav-podcasts">Podcast Log</a></li>
-                <li><a href="${page('videos.html')}" id="nav-videos">Video Vault</a></li>
-            </ul>
-        </li>
-        <li class="nav-item"><a href="${page('blog.html')}" id="nav-blog">Blog</a></li>
-        <li class="nav-item"><a id="nav-sports" href="${page('sports.html')}">Sports</a></li>
-    </ul>
-    <div class="lang-toggle" style="margin-left:auto; display:flex; align-items:center; gap:8px;">
-        <button id="lang-en" class="lang-btn" aria-label="English" style="background:none; border:none; cursor:pointer; padding:0;">
-            <img src="https://flagcdn.com/24x18/gb.png" alt="English" width="24" height="18">
-        </button>
-        <button id="lang-cs" class="lang-btn" aria-label="Čeština" style="background:none; border:none; cursor:pointer; padding:0;">
-            <img src="https://flagcdn.com/24x18/cz.png" alt="Čeština" width="24" height="18">
-        </button>
-        <button id="lang-es" class="lang-btn" aria-label="Español" style="background:none; border:none; cursor:pointer; padding:0;">
-            <img src="https://flagcdn.com/24x18/es.png" alt="Español" width="24" height="18">
-        </button>
+    <a href="${page('index.html')}" class="logo" id="nav-logo">Jiří Mlčoušek</a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
+    <div class="nav-panel" id="nav-panel">
+        <ul class="nav-links">
+            <li class="nav-item"><a href="${page('about.html')}" id="nav-about">About</a></li>
+            <li class="nav-item dropdown">
+                <button class="nav-dropdown-toggle" id="nav-media" type="button" aria-haspopup="true" aria-expanded="false">Media Hub</button>
+                <ul class="dropdown-menu" aria-label="Media pages">
+                    <li><a href="${page('books.html')}" id="nav-books">Read Books</a></li>
+                    <li><a href="${page('podcasts.html')}" id="nav-podcasts">Podcast Log</a></li>
+                    <li><a href="${page('videos.html')}" id="nav-videos">Video Vault</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="${page('blog.html')}" id="nav-blog">Blog</a></li>
+            <li class="nav-item"><a id="nav-sports" href="${page('sports.html')}">Sports</a></li>
+        </ul>
+        <div class="lang-toggle">
+            <button id="lang-en" class="lang-btn" aria-label="English"><img src="https://flagcdn.com/24x18/gb.png" alt="English" width="24" height="18"></button>
+            <button id="lang-cs" class="lang-btn" aria-label="Čeština"><img src="https://flagcdn.com/24x18/cz.png" alt="Čeština" width="24" height="18"></button>
+            <button id="lang-es" class="lang-btn" aria-label="Español"><img src="https://flagcdn.com/24x18/es.png" alt="Español" width="24" height="18"></button>
+        </div>
     </div>
 </nav>
     `.trim();
@@ -467,6 +467,47 @@ function closeAllDropdowns() {
         dropdown.classList.remove('open');
         const toggle = dropdown.querySelector('.nav-dropdown-toggle');
         if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    });
+}
+
+function setupHamburger() {
+    const btn = document.getElementById('nav-hamburger');
+    const navbar = document.querySelector('.navbar');
+    if (!btn || !navbar || btn.dataset.hamburgerInit === 'true') return;
+    btn.dataset.hamburgerInit = 'true';
+
+    function openMenu() {
+        navbar.classList.add('nav-open');
+        btn.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        navbar.classList.remove('nav-open');
+        btn.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+    }
+
+    btn.addEventListener('click', e => {
+        e.stopPropagation();
+        navbar.classList.contains('nav-open') ? closeMenu() : openMenu();
+    });
+
+    // Close when a nav link is clicked
+    document.querySelectorAll('.nav-panel .nav-links a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Close on outside click
+    document.addEventListener('click', e => {
+        if (navbar.classList.contains('nav-open') && !navbar.contains(e.target)) {
+            closeMenu();
+        }
+    });
+
+    // Close on resize to desktop width
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 820) closeMenu();
     });
 }
 
