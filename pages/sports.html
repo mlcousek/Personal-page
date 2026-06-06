@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sports - Jiří Mlčoušek</title>
+  <title>Sports – Jiří Mlčoušek</title>
   <link rel="stylesheet" href="../assets/styles/main.css" />
   <link rel="stylesheet" href="../assets/styles/sports.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,73 +12,94 @@
   <div id="navbar-placeholder"></div>
 
   <main class="sports-wrapper page-shell">
+
+    <!-- ── Header ── -->
     <header class="sports-header">
-      <h1 id="sports-title">Sports Journey</h1>
-      <p id="sports-lead" class="lead">A foundation of 15 years in football built endurance, discipline and competitive focus—now powering progress in endurance racing.</p>
+      <span class="sports-eyebrow">Running · Trail · Cycling · Endurance</span>
+      <h1>Sports Journey</h1>
+      <p class="sports-lead">15 years of competitive football built the discipline and resilience. After burning out at the 4th national division, I found a new fire in endurance — marathons, ultras and long rides.</p>
     </header>
 
+    <!-- ── Stat cards ── -->
     <section class="stats-grid" aria-label="Key sports stats">
       <div class="stat-card">
-        <p class="stat-label" id="stat-years-label">Years in Football</p>
-        <p class="stat-value" id="stat-years">15</p>
+        <div class="stat-icon">🏃</div>
+        <p class="stat-label">Marathons</p>
+        <p class="stat-value">3</p>
       </div>
       <div class="stat-card">
-        <p class="stat-label" id="stat-best-league-label">Highest Level</p>
-        <p class="stat-value" id="stat-best-league">4. CZ</p>
+        <div class="stat-icon">⏱️</div>
+        <p class="stat-label">Marathon PB</p>
+        <p class="stat-value">2:57:24</p>
       </div>
       <div class="stat-card">
-        <p class="stat-label" id="stat-marathons-label">Marathons</p>
-        <p class="stat-value" id="stat-marathons">2</p>
+        <div class="stat-icon">⛰️</div>
+        <p class="stat-label">Ultra Distance</p>
+        <p class="stat-value">110.5 km</p>
       </div>
       <div class="stat-card">
-        <p class="stat-label" id="stat-ultra-label">Ultra Events</p>
-        <p class="stat-value" id="stat-ultra">1</p>
+        <div class="stat-icon">🏅</div>
+        <p class="stat-label">Half Marathon PB</p>
+        <p class="stat-value">1:21:39</p>
       </div>
     </section>
 
-    <section class="race-section" aria-labelledby="race-heading">
-      <h2 id="race-heading">Races</h2>
-      <table class="races-table" aria-describedby="race-heading">
-        <thead>
-          <tr>
-            <th id="th-event">Event</th>
-            <th id="th-date">Date</th>
-            <th id="th-time">Time</th>
-            <th id="th-notes">Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Prague Marathon 2025 <span class="badge">42.2K</span></td>
-            <td>2025-05-04</td>
-            <td>3:32</td>
-            <td>Solid debut benchmark</td>
-          </tr>
-          <tr class="highlight">
-            <td>Olomouc Marathon 2025 <span class="badge">42.2K</span></td>
-            <td>2025-06-??</td>
-            <td>3:25</td>
-            <td>Improved pacing &amp; endurance</td>
-          </tr>
-          <tr>
-            <td>Beskydská Sedmička (B7) <span class="badge">Ultra</span></td>
-            <td>2025-09-??</td>
-            <td>14:52</td>
-            <td>Elevation &amp; resilience focus</td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- ── Races ── -->
+    <section class="sports-section race-section" aria-labelledby="race-heading">
+      <h2 class="sports-section-heading" id="race-heading">Races <span class="heading-hint">— click a row for details</span></h2>
+      <div class="table-wrap">
+        <table class="races-table" aria-describedby="race-heading">
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody id="races-tbody">
+            <!-- rendered by sports.js -->
+          </tbody>
+        </table>
+      </div>
     </section>
 
-    <section class="career-block" aria-labelledby="career-heading">
-      <h2 id="career-heading">Football Background</h2>
-      <p id="career-p-1">I played competitive football for 15 years, developing tactical awareness, speed endurance and team resilience.</p>
-      <p id="career-p-2">My highest competition level reached the Czech fourth tier, an environment that demanded structure, discipline and consistency.</p>
-      <p id="career-p-3">Those foundations now translate into structured training blocks for running, strength and hybrid endurance challenges.</p>
+    <!-- ── Strava training overview ── -->
+    <section class="sports-section strava-section" aria-labelledby="strava-heading">
+      <h2 class="sports-section-heading" id="strava-heading">Training Overview</h2>
+      <p class="strava-note">Strava data · last updated June 2026 · refresh: <code>node scripts/update-strava.mjs</code></p>
+      <div id="training-stats-container"><!-- rendered by sports.js --></div>
     </section>
+
+    <!-- ── Football background ── -->
+    <section class="sports-section football-section" aria-labelledby="football-heading">
+      <h2 class="sports-section-heading" id="football-heading">Football Background</h2>
+      <div class="football-card">
+        <div class="football-card-body">
+          <p>I grew up playing football in Město Albrechtice and joined FK Město Albrechtice as a kid — my hometown club. Over the years I worked my way up through the pyramid: from the 7th division to the 6th, then to the 5th, and eventually to the <strong>4th highest level in the Czech Republic</strong> — Moravskoslezská divize F — playing for FK Břidličná. I also spent a significant stint at FK Krnov along the way.</p>
+          <p>After years of intense competition at that level I burned out. The passion I once had for the game faded and I needed a new physical challenge. I turned to cycling and long-distance running — and found something I hadn't expected: the same fire, but without the burn. Endurance sport gave me back the competitive drive without the team politics, the injuries and the grind of weekend matches.</p>
+          <p>Football gave me discipline, tactical thinking and the ability to perform under pressure. Everything I learned on the pitch I now apply on the road and on the trail.</p>
+        </div>
+        <div class="football-photos" aria-hidden="true">
+          <img src="../images/football/FB_IMG_1622893629074_Original.jpg" alt="Football" class="football-photo">
+          <img src="../images/football/IMG_5420.jpg" alt="Football" class="football-photo">
+          <img src="../images/football/IMG_7459.jpg" alt="Football" class="football-photo">
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ── Race modal ── -->
+  <div class="race-modal-backdrop" id="race-modal-backdrop" role="presentation">
+    <div class="race-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 
   <div id="footer-placeholder"></div>
   <script src="../scripts/main.js"></script>
+  <script src="../scripts/sports.js"></script>
 </body>
 </html>
