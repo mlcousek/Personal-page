@@ -176,12 +176,19 @@ function renderCard(ep){
   const total = ep.totalMinutes || 0;
   let statusTag, progressBar;
   
+  const lang = localStorage.getItem('lang') || 'en';
+  const i18n = {
+    finished: { en: 'FINISHED', cs: 'DOKONČENO', es: 'TERMINADO' },
+    minLeft: { en: 'min left', cs: 'min zbývá', es: 'min restan' },
+    minutes: { en: 'minutes', cs: 'minut', es: 'minutos' }
+  };
+
   if (ep.status === 'finished') {
-    statusTag = '<span class="video__tag tag-finished">FINISHED</span>';
+    statusTag = `<span class="video__tag tag-finished">${i18n.finished[lang] || i18n.finished.en}</span>`;
     progressBar = '<div class="progress"><div class="progress-bar done" style="width:100%;"></div></div>';
   } else if (ep.status === 'in-progress' && ep.minutesLeft) {
     const progress = Math.max(0, Math.min(100, 100 - Math.round((ep.minutesLeft / (total || 1)) * 100)));
-    statusTag = `<span class="video__tag tag-progress">${ep.minutesLeft} min left</span>`;
+    statusTag = `<span class="video__tag tag-progress">${ep.minutesLeft} ${i18n.minLeft[lang] || i18n.minLeft.en}</span>`;
     progressBar = `<div class="progress"><div class="progress-bar" style="width:${progress}%;"></div></div>`;
   } else {
     // No status property or status is something else - show episode length
@@ -190,7 +197,7 @@ function renderCard(ep){
   }
 
   // Duration display
-  const durationDisplay = total > 0 ? `<div class="video-duration">${total} minutes</div>` : '';
+  const durationDisplay = total > 0 ? `<div class="video-duration">${total} ${i18n.minutes[lang] || i18n.minutes.en}</div>` : '';
 
   // image fallback: if the image fails to load, replace with a placeholder service
   const imgSrc = ep.cover || 'https://via.placeholder.com/300x300?text=No+Cover';
@@ -268,7 +275,9 @@ function escapeHtml(str){
 
 function updateCount(n){
   const el = document.getElementById('video-count');
-  if(el) el.textContent = n + ' videos';
+  const lang = localStorage.getItem('lang') || 'en';
+  const label = { en: 'videos', cs: 'videí', es: 'videos' };
+  if(el) el.textContent = n + ' ' + (label[lang] || label.en);
 }
 
 function setupFilters(){
@@ -322,7 +331,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
   if(last){
     // try to infer newest date
     const dates = VIDEOS.map(e=>e.date).filter(Boolean).sort().reverse();
-    if(dates.length) last.textContent = 'Last updated: ' + new Date(dates[0]).toLocaleDateString('cs-CZ');
+    const lang = localStorage.getItem('lang') || 'en';
+    const label = { en: 'Last updated: ', cs: 'Poslední aktualizace: ', es: 'Última actualización: ' };
+    if(dates.length) last.textContent = (label[lang] || label.en) + new Date(dates[0]).toLocaleDateString('cs-CZ');
   }
   renderVideos({});
   
@@ -334,4 +345,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
       applyUniformHeight();
     }, 150);
   });
+});
+
+document.addEventListener('languageChanged', () => {
+  const n = document.querySelectorAll('.video').length; // approximation for count if needed
+  renderVideos({});
+  
+  // Update last-updated text
+  const last = document.getElementById('video-last-updated');
+  if(last){
+    const dates = VIDEOS.map(e=>e.date).filter(Boolean).sort().reverse();
+    const lang = localStorage.getItem('lang') || 'en';
+    const label = { en: 'Last updated: ', cs: 'Poslední aktualizace: ', es: 'Última actualización: ' };
+    if(dates.length) last.textContent = (label[lang] || label.en) + new Date(dates[0]).toLocaleDateString('cs-CZ');
+  }
 });

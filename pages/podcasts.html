@@ -14,31 +14,31 @@
   <div class="media-page-shell page-shell">
     <header class="media-page-header">
       <div class="media-page-title-row">
-        <h1>Podcast Log</h1>
+        <h1 id="podcast-page-title">Podcast Log</h1>
         <span id="episode-count" class="media-count-badge">0 episodes</span>
       </div>
       <p id="podcast-note" class="media-note">Cover images and descriptions sourced from Spotify and other platforms when available.</p>
     </header>
 
     <nav id="podcast-filters" class="filter-bar" aria-label="Podcast filters">
-      <button class="filter-chip active" data-filter="all">All</button>
-      <button class="filter-chip" data-filter="spotify">Spotify</button>
-      <button class="filter-chip" data-filter="youtube">YouTube</button>
+      <button class="filter-chip active" data-filter="all" id="pf-all">All</button>
+      <button class="filter-chip" data-filter="spotify" id="pf-spotify">Spotify</button>
+      <button class="filter-chip" data-filter="youtube" id="pf-youtube">YouTube</button>
       <button class="filter-chip" data-filter="2026">2026</button>
       <button class="filter-chip" data-filter="2025">2025</button>
     </nav>
 
     <div id="podcast-controls" class="media-controls">
       <div class="control-group">
-        <label for="podcast-show" class="control-label">Show</label>
+        <label for="podcast-show" class="control-label" id="podcast-show-label">Show</label>
         <select id="podcast-show" class="control-select">
-          <option value="all">All shows</option>
+          <option value="all" id="podcast-show-all">All shows</option>
         </select>
       </div>
       <div class="control-group">
-        <label for="podcast-tag" class="control-label">Tag</label>
+        <label for="podcast-tag" class="control-label" id="podcast-tag-label">Tag</label>
         <select id="podcast-tag" class="control-select">
-          <option value="all">All tags</option>
+          <option value="all" id="podcast-tag-all">All tags</option>
         </select>
       </div>
       <button id="podcast-clear" class="control-clear">Clear filters</button>

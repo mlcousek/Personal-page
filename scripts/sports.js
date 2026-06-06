@@ -10,7 +10,11 @@ const RACES = [
     badge: '21.1K',
     badgeClass: 'race-badge--half',
     highlight: true,
-    story: 'An official half marathon in Zlín running alongside names like Petr Vabroušek and Tom Štverák. Finished 10th overall and 5th in category with a time of 1:21:39 — setting 38 personal records on the day. One of the best race experiences so far.',
+    story: {
+      en: 'An official half marathon in Zlín running alongside names like Petr Vabroušek and Tom Štverák. Finished 10th overall and 5th in category with a time of 1:21:39 — setting 38 personal records on the day. One of the best race experiences so far.',
+      cs: 'Oficiální půlmaraton ve Zlíně, běh po boku jmen jako Petr Vabroušek a Tom Štverák. Skončil jsem 10. celkově a 5. v kategorii s časem 1:21:39 — s 38 osobními rekordy v ten den. Zatím jeden z nejlepších závodních zážitků.',
+      es: 'Un medio maratón oficial en Zlín corriendo junto a nombres como Petr Vabroušek y Tom Štverák. Terminé 10.º en la general y 5.º en mi categoría con un tiempo de 1:21:39, estableciendo 38 récords personales en el día. Una de las mejores experiencias en carrera hasta ahora.'
+    },
     stravaUrl: 'https://www.strava.com/activities/18728683802',
     photos: [
       '../images/events/zlinHalf2026/_MTK_0077.JPG',
@@ -29,7 +33,11 @@ const RACES = [
     badge: '42.2K',
     badgeClass: 'race-badge--full',
     highlight: true,
-    story: 'The race that finally broke the sub-3 hour barrier. Finished 2nd overall out of 13 runners with a time of 2:57:24 — a massive personal best from the 3:32:31 debut just a year earlier. 41 Strava PRs set on the day. Going from debut marathon to sub-3 in exactly one year.',
+    story: {
+      en: 'The race that finally broke the sub-3 hour barrier. Finished 2nd overall out of 13 runners with a time of 2:57:24 — a massive personal best from the 3:32:31 debut just a year earlier. 41 Strava PRs set on the day. Going from debut marathon to sub-3 in exactly one year.',
+      cs: 'Závod, který konečně prolomil hranici pod 3 hodiny. Skončil jsem celkově 2. z 13 běžců s časem 2:57:24 — obrovský osobní rekord od debutu 3:32:31 pouhý rok předtím. V ten den padlo 41 Strava osobáků. Od debutového maratonu po sub-3 přesně za jeden rok.',
+      es: 'La carrera que finalmente rompió la barrera de las 3 horas. Terminé 2.º en la general de 13 corredores con un tiempo de 2:57:24: un enorme récord personal respecto al debut en 3:32:31 solo un año antes. 41 RP en Strava en ese día. Pasar de un maratón de debut a sub-3 en exactamente un año.'
+    },
     stravaUrl: 'https://www.strava.com/activities/18490047395',
     photos: [
       '../images/events/OlomoucMarathon2026/IMG_8773.jpg',
@@ -47,7 +55,11 @@ const RACES = [
     badge: '24h',
     badgeClass: 'race-badge--ultra',
     highlight: false,
-    story: 'Second 24-hour race, three weeks after Ještěd — an ambitious back-to-back schedule. Started with a compromised Achilles and ran through the pain to complete 6 laps (81.4 km, 5,322 m elevation). On the 6th lap a knee ligament gave way on the descent and the race was over. The result is bittersweet — but the lessons about race preparation, pacing and listening to the body are priceless. The promise: to come back and show what is possible when healthy.',
+    story: {
+      en: 'Second 24-hour race, three weeks after Ještěd — an ambitious back-to-back schedule. Started with a compromised Achilles and ran through the pain to complete 6 laps (81.4 km, 5,322 m elevation). On the 6th lap a knee ligament gave way on the descent and the race was over. The result is bittersweet — but the lessons about race preparation, pacing and listening to the body are priceless. The promise: to come back and show what is possible when healthy.',
+      cs: 'Druhý 24hodinový závod, tři týdny po Ještědu — ambiciózní plán. Odstartoval jsem s kompromitovanou achilovkou a přes bolest zaběhl 6 kol (81,4 km, 5 322 m převýšení). V 6. kole v seběhu povolil kolenní vaz a závod skončil. Výsledek je hořkosladký — ale lekce o přípravě, tempu a naslouchání tělu jsou k nezaplacení. Slib: vrátit se a ukázat, co je možné, když jsem zdravý.',
+      es: 'Segunda carrera de 24 horas, tres semanas después de Ještěd: un ambicioso calendario. Empecé con el tendón de Aquiles tocado y corrí con dolor hasta completar 6 vueltas (81,4 km, 5.322 m de desnivel). En la sexta vuelta, un ligamento de la rodilla cedió en el descenso y la carrera terminó. El resultado es agridulce, pero las lecciones sobre preparación, ritmo y escuchar al cuerpo son inestimables. La promesa: volver y demostrar lo que es posible estando sano.'
+    },
     stravaUrl: 'https://www.strava.com/activities/17243564338',
     photos: [
       '../images/events/LH242026/0049_IMG_9617%20(1).jpg',
@@ -65,7 +77,11 @@ const RACES = [
     badge: '24h',
     badgeClass: 'race-badge--ultra',
     highlight: false,
-    story: 'First-ever 24-hour race and the format was a revelation. Starting conservatively at ~2 hours per lap, the early hours went smoothly with good weather and daylight. The real race began after midnight. Despite long rest pauses — something to improve next time — completed 10 full laps (110.5 km, 6,389 m elevation) to finish 7th overall. Came away with sore legs, an Achilles warning and an enormous amount of lessons learned about this unique format.',
+    story: {
+      en: 'First-ever 24-hour race and the format was a revelation. Starting conservatively at ~2 hours per lap, the early hours went smoothly with good weather and daylight. The real race began after midnight. Despite long rest pauses — something to improve next time — completed 10 full laps (110.5 km, 6,389 m elevation) to finish 7th overall. Came away with sore legs, an Achilles warning and an enormous amount of lessons learned about this unique format.',
+      cs: 'První 24hodinový závod a tento formát byl zjevení. Začal jsem konzervativně zhruba 2 hodiny na kolo, první hodiny šly hladce za dobrého počasí a světla. Opravdový závod začal po půlnoci. I přes dlouhé pauzy na odpočinek — což chci příště zlepšit — jsem dokončil 10 plných kol (110,5 km, 6 389 m převýšení) a skončil celkově na 7. místě. Odnesl jsem si bolavé nohy, varování od achilovky a obrovské množství zkušeností z tohoto unikátního formátu.',
+      es: 'La primera carrera de 24 horas y el formato fue una revelación. Empezando de forma conservadora a ~2 horas por vuelta, las primeras horas fueron bien con buen tiempo y luz diurna. La verdadera carrera empezó pasada la medianoche. A pesar de las largas pausas de descanso —algo a mejorar la próxima vez— completé 10 vueltas (110,5 km, 6.389 m de desnivel) para acabar 7.º en la general. Salí con dolor de piernas, un aviso en el tendón de Aquiles y muchísimas lecciones sobre este formato único.'
+    },
     stravaUrl: 'https://www.strava.com/activities/17010517721',
     photos: [
       '../images/events/jestedWinter242026/321A6841.jpg',
@@ -83,7 +99,11 @@ const RACES = [
     badge: 'Trail',
     badgeClass: 'race-badge--trail',
     highlight: false,
-    story: 'INOV-8 TrailTour race at Kosíř hill — the first shorter trail race of 2026. A tough 10.5 km course with 259 m of elevation gain. Finished 13th overall and 6th in category. A fun first effort at a shorter format and a good early-season shakeout.',
+    story: {
+      en: 'INOV-8 TrailTour race at Kosíř hill — the first shorter trail race of 2026. A tough 10.5 km course with 259 m of elevation gain. Finished 13th overall and 6th in category. A fun first effort at a shorter format and a good early-season shakeout.',
+      cs: 'Závod INOV-8 TrailTour na vrchu Kosíř — první kratší trailový závod roku 2026. Náročná trať 10,5 km s 259 m převýšením. Skončil jsem na 13. místě celkově a 6. v kategorii. Zábavný první pokus o kratší formát a dobré probuzení do začátku sezóny.',
+      es: 'Carrera INOV-8 TrailTour en el monte Kosíř: la primera carrera de trail corta de 2026. Un recorrido duro de 10,5 km con 259 m de desnivel positivo. Terminé 13.º en la general y 6.º en mi categoría. Un primer esfuerzo divertido en un formato más corto y una buena activación al inicio de la temporada.'
+    },
     stravaUrl: 'https://www.strava.com/activities/16921423860',
     photos: [
       '../images/events/Kosir2026/IMG_1317.jpg'
@@ -100,7 +120,11 @@ const RACES = [
     badge: 'Ultra',
     badgeClass: 'race-badge--ultra',
     highlight: false,
-    story: 'A 101 km mountain ultra trail race through the Beskydy mountains with 5,585 m of total elevation gain. Starting at midnight and running through the night and the following day. Finished 53rd overall and took first place in the U23 category — the biggest result of the 2025 season.',
+    story: {
+      en: 'A 101 km mountain ultra trail race through the Beskydy mountains with 5,585 m of total elevation gain. Starting at midnight and running through the night and the following day. Finished 53rd overall and took first place in the U23 category — the biggest result of the 2025 season.',
+      cs: 'Horský ultra trail 101 km přes Beskydy s celkovým převýšením 5 585 m. Start o půlnoci a běh přes noc i celý následující den. Skončil jsem 53. celkově a vybojoval první místo v kategorii do 23 let — největší výsledek sezóny 2025.',
+      es: 'Un ultra trail de montaña de 101 km por las montañas Beskydy con 5.585 m de desnivel positivo total. Empezando a medianoche y corriendo durante la noche y el día siguiente. Terminé 53.º en la general y obtuve el primer puesto en la categoría sub-23: el mayor resultado de la temporada 2025.'
+    },
     stravaUrl: 'https://www.strava.com/activities/15636334015',
     photos: [
       '../images/events/B72025/IMG_5622.JPG',
@@ -118,7 +142,11 @@ const RACES = [
     badge: '42.2K',
     badgeClass: 'race-badge--full',
     highlight: false,
-    story: 'Just 10 days after the Prague debut, lined up again at Olomouc. Improved by 7 minutes to finish in 3:25:22 and placed 4th out of 13. The target was sub-3:30 — achieved. Proof that the body adapts faster than expected when the training is consistent.',
+    story: {
+      en: 'Just 10 days after the Prague debut, lined up again at Olomouc. Improved by 7 minutes to finish in 3:25:22 and placed 4th out of 13. The target was sub-3:30 — achieved. Proof that the body adapts faster than expected when the training is consistent.',
+      cs: 'Jen 10 dní po debutu v Praze jsem znovu stál na startu v Olomouci. Zlepšil jsem se o 7 minut a dokončil v čase 3:25:22 na 4. místě z 13. Cíl byl pod 3:30 — splněno. Důkaz, že tělo se adaptuje rychleji, než se čeká, když je trénink konzistentní.',
+      es: 'Apenas 10 días tras el debut en Praga, me alineé de nuevo en Olomouc. Mejoré 7 minutos para acabar en 3:25:22 y clasificarme 4.º de 13. El objetivo era sub-3:30: conseguido. La prueba de que el cuerpo se adapta más rápido de lo esperado cuando el entrenamiento es constante.'
+    },
     stravaUrl: 'https://www.strava.com/activities/14476221521',
     photos: [
       '../images/events/OlomoucMaraton2025/74a875bc-16b0-4030-af00-610e0c66fdae.JPG'
@@ -135,7 +163,11 @@ const RACES = [
     badge: '42.2K',
     badgeClass: 'race-badge--full',
     highlight: false,
-    story: 'The very first marathon. No real expectations — just a benchmark to build from. Crossed the finish line in 3:32:31 at one of the most iconic road races in the Czech Republic. 26 Strava PRs and a foundation laid for everything that followed.',
+    story: {
+      en: 'The very first marathon. No real expectations — just a benchmark to build from. Crossed the finish line in 3:32:31 at one of the most iconic road races in the Czech Republic. 26 Strava PRs and a foundation laid for everything that followed.',
+      cs: 'Úplně první maraton. Žádná velká očekávání — jen nastavit laťku, na které se dá stavět. Cílem jsem proběhl v čase 3:32:31 na jednom z nejikoničtějších silničních závodů v Česku. Padlo 26 Strava osobáků a položil se základ pro vše, co následovalo.',
+      es: 'El primer maratón. Sin grandes expectativas: solo una referencia sobre la que construir. Crucé la meta en 3:32:31 en una de las carreras en ruta más emblemáticas de la República Checa. 26 RP de Strava y las bases sentadas para todo lo que vino después.'
+    },
     stravaUrl: 'https://www.strava.com/activities/14373512969',
     photos: [
       '../images/events/PragueMaraton2025/IMG_6169.jpg',
@@ -150,12 +182,12 @@ const RACES = [
 const TRAINING_STATS = {
   updatedLabel: 'June 2026',
   cards: [
-    { icon: '🏃', value: '223 km',   label: 'Running this month' },
-    { icon: '⬆️', value: '1,900 m', label: 'Running elevation'   },
-    { icon: '📅', value: '15',        label: 'Running sessions'   },
-    { icon: '🚴', value: '169 km',   label: 'Cycling this month' },
-    { icon: '⛰️', value: '1,473 m', label: 'Cycling elevation'   },
-    { icon: '📏', value: '42.2 km',  label: 'Longest run'        },
+    { icon: '🏃', value: '223 km',   label: { en: 'Running this month', cs: 'Běh tento měsíc', es: 'Carrera este mes' } },
+    { icon: '⬆️', value: '1,900 m', label: { en: 'Running elevation', cs: 'Běžecké převýšení', es: 'Desnivel corriendo' } },
+    { icon: '📅', value: '15',        label: { en: 'Running sessions', cs: 'Běžecké tréninky', es: 'Sesiones de carrera' } },
+    { icon: '🚴', value: '169 km',   label: { en: 'Cycling this month', cs: 'Cyklistika tento měsíc', es: 'Ciclismo este mes' } },
+    { icon: '⛰️', value: '1,473 m', label: { en: 'Cycling elevation', cs: 'Cyklistické převýšení', es: 'Desnivel en bici' } },
+    { icon: '📏', value: '42.2 km',  label: { en: 'Longest run', cs: 'Nejdelší běh', es: 'Carrera más larga' } },
   ],
   weekly: [
     { label: 'May 5–11',     km: 22.3 },
@@ -172,11 +204,13 @@ function renderTrainingStats() {
 
   const maxKm = Math.max(...TRAINING_STATS.weekly.map(w => w.km));
 
+  const lang = localStorage.getItem('lang') || 'en';
+  
   const cardsHtml = TRAINING_STATS.cards.map(c => `
     <div class="training-stat-card">
       <span class="training-icon">${c.icon}</span>
       <span class="training-value">${c.value}</span>
-      <span class="training-label">${c.label}</span>
+      <span class="training-label">${c.label[lang] || c.label.en}</span>
     </div>`).join('');
 
   const barsHtml = TRAINING_STATS.weekly.map(w => {
@@ -187,11 +221,12 @@ function renderTrainingStats() {
       <span class="chart-week">${w.label}</span>
     </div>`;
   }).join('');
+  const weeklyTitle = { en: 'Weekly running km', cs: 'Týdenní uběhnuté km', es: 'Km de carrera semanal' };
 
   container.innerHTML = `
     <div class="training-stats">${cardsHtml}</div>
     <div class="weekly-chart-wrap">
-      <p class="weekly-chart-title">Weekly running km</p>
+      <p class="weekly-chart-title">${weeklyTitle[lang] || weeklyTitle.en}</p>
       <div class="weekly-chart">${barsHtml}</div>
     </div>`;
 }
@@ -220,6 +255,14 @@ function openModal(raceId) {
   const race = RACES.find(r => r.id === raceId);
   if (!race) return;
 
+  const lang = localStorage.getItem('lang') || 'en';
+  const labels = {
+    distance: { en: 'Distance', cs: 'Vzdálenost', es: 'Distancia' },
+    time: { en: 'Time', cs: 'Čas', es: 'Tiempo' },
+    result: { en: 'Result', cs: 'Výsledek', es: 'Resultado' },
+    strava: { en: 'View on Strava →', cs: 'Zobrazit na Stravě →', es: 'Ver en Strava →' }
+  };
+
   document.getElementById('modal-body').innerHTML = `
     <div class="modal-header">
       <span class="race-badge ${race.badgeClass} modal-badge">${race.category}</span>
@@ -228,15 +271,15 @@ function openModal(raceId) {
     </div>
     <div class="modal-stats">
       <div class="modal-stat">
-        <span class="modal-stat-label">Distance</span>
+        <span class="modal-stat-label">${labels.distance[lang] || labels.distance.en}</span>
         <span class="modal-stat-value">${race.distance}</span>
       </div>
       <div class="modal-stat">
-        <span class="modal-stat-label">Time</span>
+        <span class="modal-stat-label">${labels.time[lang] || labels.time.en}</span>
         <span class="modal-stat-value">${race.time}</span>
       </div>
       <div class="modal-stat">
-        <span class="modal-stat-label">Result</span>
+        <span class="modal-stat-label">${labels.result[lang] || labels.result.en}</span>
         <span class="modal-stat-value" style="font-size:0.82rem">${race.placement}</span>
       </div>
     </div>
@@ -245,8 +288,8 @@ function openModal(raceId) {
           ${race.photos.map(src => `<img class="modal-photo" src="${src}" alt="${race.name}" loading="lazy" onerror="this.style.display='none'">`).join('')}
         </div>`
       : ''}
-    <p class="modal-story">${race.story}</p>
-    ${race.stravaUrl ? `<a class="modal-strava-btn" href="${race.stravaUrl}" target="_blank" rel="noopener">View on Strava →</a>` : ''}
+    <p class="modal-story">${typeof race.story === 'object' ? (race.story[lang] || race.story.en) : race.story}</p>
+    ${race.stravaUrl ? `<a class="modal-strava-btn" href="${race.stravaUrl}" target="_blank" rel="noopener">${labels.strava[lang] || labels.strava.en}</a>` : ''}
   `;
 
   const backdrop = document.getElementById('race-modal-backdrop');
@@ -273,4 +316,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeModal();
   });
+});
+
+document.addEventListener('languageChanged', () => {
+  renderRaceTable();
+  renderTrainingStats();
 });

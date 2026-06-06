@@ -14,33 +14,33 @@
   <div class="media-page-shell page-shell">
     <header class="media-page-header">
       <div class="media-page-title-row">
-        <h1>Video Log</h1>
+        <h1 id="video-page-title">Video Log</h1>
         <span id="video-count" class="media-count-badge">0 videos</span>
       </div>
       <p id="video-note" class="media-note">Hand-picked long-form talks, documentaries, and stories that shaped my mindset.</p>
     </header>
 
     <nav id="video-filters" class="filter-bar" aria-label="Video filters">
-      <button class="filter-chip active" data-filter="all">All</button>
-      <button class="filter-chip" data-filter="in-progress">In Progress</button>
-      <button class="filter-chip" data-filter="finished">Finished</button>
-      <button class="filter-chip" data-filter="favorites">Favorites</button>
+      <button class="filter-chip active" data-filter="all" id="vf-all">All</button>
+      <button class="filter-chip" data-filter="in-progress" id="vf-in-progress">In Progress</button>
+      <button class="filter-chip" data-filter="finished" id="vf-finished">Finished</button>
+      <button class="filter-chip" data-filter="favorites" id="vf-favorites">Favorites</button>
       <button class="filter-chip" data-filter="2025">2025</button>
     </nav>
 
     <div id="video-controls" class="media-controls">
       <div class="control-group">
-        <label for="video-sort" class="control-label">Sort by</label>
+        <label for="video-sort" class="control-label" id="video-sort-label">Sort by</label>
         <select id="video-sort" class="control-select">
-          <option value="date-desc">Date (newest)</option>
-          <option value="show-asc">Channel (A–Z)</option>
-          <option value="tag-asc">Tag (A–Z)</option>
+          <option value="date-desc" id="vsort-date">Date (newest)</option>
+          <option value="show-asc" id="vsort-channel">Channel (A–Z)</option>
+          <option value="tag-asc" id="vsort-tag">Tag (A–Z)</option>
         </select>
       </div>
       <div class="control-group">
-        <label for="video-tag" class="control-label">Tag</label>
+        <label for="video-tag" class="control-label" id="video-tag-label">Tag</label>
         <select id="video-tag" class="control-select">
-          <option value="all">All tags</option>
+          <option value="all" id="video-tag-all">All tags</option>
         </select>
       </div>
       <button id="video-clear" class="control-clear">Clear filters</button>
