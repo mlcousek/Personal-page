@@ -1,0 +1,35 @@
+C:\Git\Projects\Personal-page\scratch\add_favourites.js
+C:\Git\Projects\Personal-page\scratch\add_favourites_podcasts.js
+C:\Git\Projects\Personal-page\scratch\add_favourites_podcasts2.js
+C:\Git\Projects\Personal-page\scratch\add_favourites_podcasts3.js
+C:\Git\Projects\Personal-page\scratch\append_css.js
+C:\Git\Projects\Personal-page\scripts\podcasts.js
+C:\Git\Projects\Personal-page\scripts\videos.js
+C:\Git\Projects\Personal-page\CLAUDE.md
+C:\Git\Projects\Personal-page\pages\podcasts.html
+C:\Git\Projects\Personal-page\pages\videos.html
+C:\Git\Projects\Personal-page\images\1737442551739.jpg
+C:\Git\Projects\Personal-page\images\IMG_6169.jpg
+C:\Git\Projects\Personal-page\images\PKI_course.png
+C:\Git\Projects\Personal-page\images\Posts\MastersDone\IMG_9011.jpg
+C:\Git\Projects\Personal-page\images\Posts\SVOC\IMG_8964.JPG
+C:\Git\Projects\Personal-page\images\events\B72025\IMG_5622.JPG
+C:\Git\Projects\Personal-page\images\events\B72025\IMG_5624.JPG
+C:\Git\Projects\Personal-page\images\events\B72025\IMG_8080.jpg
+C:\Git\Projects\Personal-page\images\events\Kosir2026\IMG_1317.jpg
+C:\Git\Projects\Personal-page\images\events\LH242026\0049_IMG_9617 (1).jpg
+C:\Git\Projects\Personal-page\images\events\LH242026\55073242584_83b7d721b5_o (1).jpg
+C:\Git\Projects\Personal-page\images\events\OlomoucMarathon2026\IMG_8773.jpg
+C:\Git\Projects\Personal-page\images\events\OlomoucMarathon2026\IMG_8776.PNG
+C:\Git\Projects\Personal-page\images\events\OlomoucMaraton2025\74a875bc-16b0-4030-af00-610e0c66fdae.JPG
+C:\Git\Projects\Personal-page\images\events\PragueMaraton2025\IMG_6112.jpg
+C:\Git\Projects\Personal-page\images\events\PragueMaraton2025\IMG_6124.jpg
+C:\Git\Projects\Personal-page\images\events\PragueMaraton2025\IMG_6169.jpg
+C:\Git\Projects\Personal-page\images\events\jestedWinter242026\321A6841.jpg
+C:\Git\Projects\Personal-page\images\events\jestedWinter242026\Jested 24 winter 2026-96.jpg
+C:\Git\Projects\Personal-page\images\events\zlinHalf2026\LIL_7023.JPG
+C:\Git\Projects\Personal-page\images\events\zlinHalf2026\_MTK_0077.JPG
+C:\Git\Projects\Personal-page\images\events\zlinHalf2026\_MTK_2364.JPG
+C:\Git\Projects\Personal-page\images\football\FB_IMG_1622893629074_Original.jpg
+C:\Git\Projects\Personal-page\images\football\IMG_5420.jpg
+C:\Git\Projects\Personal-page\images\football\IMG_7459.jpg

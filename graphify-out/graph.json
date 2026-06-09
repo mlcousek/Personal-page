@@ -1,58 +1,7 @@
 {
   "directed": false,
   "multigraph": false,
-  "graph": {
-    "hyperedges": [
-      {
-        "id": "language_system",
-        "label": "Trilingual Language System (translations + setLanguage + languageChanged event)",
-        "nodes": [
-          "scripts_main_translations",
-          "scripts_main_setlanguage",
-          "concept_languagechanged_event",
-          "scripts_posts",
-          "scripts_sports",
-          "scripts_videos"
-        ],
-        "relation": "implement",
-        "confidence": "INFERRED",
-        "confidence_score": 0.95,
-        "source_file": "scripts/main.js"
-      },
-      {
-        "id": "strava_pipeline",
-        "label": "Strava Data Pipeline (API fetch \u2192 computeStats \u2192 patchSportsJs \u2192 sports.html)",
-        "nodes": [
-          "scripts_updatestrava_getaccesstoken",
-          "scripts_updatestrava_fetchactivities",
-          "scripts_updatestrava_computestats",
-          "scripts_updatestrava_patchsportsjs",
-          "scripts_sports_trainingstats",
-          "pages_sports"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "scripts/update-strava.mjs"
-      },
-      {
-        "id": "navbar_injection_lifecycle",
-        "label": "Navbar Injection Lifecycle (loadNavbar \u2192 fetch \u2192 applyLanguageAfterNavbar \u2192 normalizeNavbarLinks)",
-        "nodes": [
-          "scripts_main_loadnavbar",
-          "components_navbar",
-          "scripts_main_applylanguageafternavbar",
-          "scripts_main_normalizenavarlinks",
-          "scripts_main_setupmediaddropdown",
-          "scripts_main_setuphamburger"
-        ],
-        "relation": "participate_in",
-        "confidence": "EXTRACTED",
-        "confidence_score": 1.0,
-        "source_file": "scripts/main.js"
-      }
-    ]
-  },
+  "graph": {},
   "nodes": [
     {
       "label": "settings.local.json",
@@ -60,9 +9,9 @@
       "source_file": ".claude/settings.local.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "claude_settings_local",
-      "community": 8,
-      "norm_label": "settings.local.json"
+      "community": 9,
+      "norm_label": "settings.local.json",
+      "id": "claude_settings_local"
     },
     {
       "label": "permissions",
@@ -70,9 +19,9 @@
       "source_file": ".claude/settings.local.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "claude_settings_local_permissions",
-      "community": 8,
-      "norm_label": "permissions"
+      "community": 9,
+      "norm_label": "permissions",
+      "id": "claude_settings_local_permissions"
     },
     {
       "label": "allow",
@@ -80,9 +29,9 @@
       "source_file": ".claude/settings.local.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "claude_settings_local_permissions_allow",
-      "community": 8,
-      "norm_label": "allow"
+      "community": 9,
+      "norm_label": "allow",
+      "id": "claude_settings_local_permissions_allow"
     },
     {
       "label": "package.json",
@@ -90,9 +39,9 @@
       "source_file": "package.json",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "package",
-      "community": 2,
-      "norm_label": "package.json"
+      "community": 5,
+      "norm_label": "package.json",
+      "id": "package"
     },
     {
       "label": "name",
@@ -100,9 +49,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "_origin": "ast",
-      "id": "package_name",
-      "community": 2,
-      "norm_label": "name"
+      "community": 5,
+      "norm_label": "name",
+      "id": "package_name"
     },
     {
       "label": "version",
@@ -110,9 +59,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "_origin": "ast",
-      "id": "package_version",
-      "community": 2,
-      "norm_label": "version"
+      "community": 5,
+      "norm_label": "version",
+      "id": "package_version"
     },
     {
       "label": "description",
@@ -120,9 +69,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "_origin": "ast",
-      "id": "package_description",
-      "community": 2,
-      "norm_label": "description"
+      "community": 5,
+      "norm_label": "description",
+      "id": "package_description"
     },
     {
       "label": "main",
@@ -130,9 +79,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "package_main",
-      "community": 2,
-      "norm_label": "main"
+      "community": 5,
+      "norm_label": "main",
+      "id": "package_main"
     },
     {
       "label": "scripts",
@@ -140,9 +89,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "package_scripts",
-      "community": 2,
-      "norm_label": "scripts"
+      "community": 5,
+      "norm_label": "scripts",
+      "id": "package_scripts"
     },
     {
       "label": "start",
@@ -150,9 +99,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "_origin": "ast",
-      "id": "package_scripts_start",
-      "community": 2,
-      "norm_label": "start"
+      "community": 5,
+      "norm_label": "start",
+      "id": "package_scripts_start"
     },
     {
       "label": "build",
@@ -160,9 +109,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "_origin": "ast",
-      "id": "package_scripts_build",
-      "community": 2,
-      "norm_label": "build"
+      "community": 5,
+      "norm_label": "build",
+      "id": "package_scripts_build"
     },
     {
       "label": "keywords",
@@ -170,9 +119,9 @@
       "source_file": "package.json",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "package_keywords",
-      "community": 2,
-      "norm_label": "keywords"
+      "community": 5,
+      "norm_label": "keywords",
+      "id": "package_keywords"
     },
     {
       "label": "author",
@@ -180,9 +129,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "package_author",
-      "community": 2,
-      "norm_label": "author"
+      "community": 5,
+      "norm_label": "author",
+      "id": "package_author"
     },
     {
       "label": "license",
@@ -190,9 +139,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "package_license",
-      "community": 2,
-      "norm_label": "license"
+      "community": 5,
+      "norm_label": "license",
+      "id": "package_license"
     },
     {
       "label": "devDependencies",
@@ -200,9 +149,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "_origin": "ast",
-      "id": "package_devdependencies",
-      "community": 2,
-      "norm_label": "devdependencies"
+      "community": 5,
+      "norm_label": "devdependencies",
+      "id": "package_devdependencies"
     },
     {
       "label": "live-server",
@@ -210,9 +159,169 @@
       "source_file": "package.json",
       "source_location": "L19",
       "_origin": "ast",
-      "id": "package_devdependencies_live_server",
-      "community": 2,
-      "norm_label": "live-server"
+      "community": 5,
+      "norm_label": "live-server",
+      "id": "package_devdependencies_live_server"
+    },
+    {
+      "label": "add_favourites.js",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "add_favourites.js",
+      "id": "scratch_add_favourites"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "fs",
+      "id": "scratch_add_favourites_fs"
+    },
+    {
+      "label": "addFavouriteField()",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "addfavouritefield()",
+      "id": "scratch_add_favourites_addfavouritefield"
+    },
+    {
+      "label": "add_favourites_podcasts.js",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "add_favourites_podcasts.js",
+      "id": "scratch_add_favourites_podcasts"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "fs",
+      "id": "scratch_add_favourites_podcasts_fs"
+    },
+    {
+      "label": "code",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "code",
+      "id": "scratch_add_favourites_podcasts_code"
+    },
+    {
+      "label": "match",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "match",
+      "id": "scratch_add_favourites_podcasts_match"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "fs",
+      "id": "scratch_add_favourites_podcasts2_fs"
+    },
+    {
+      "label": "code",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "code",
+      "id": "scratch_add_favourites_podcasts2_code"
+    },
+    {
+      "label": "startIdx",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "L4",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "startidx",
+      "id": "scratch_add_favourites_podcasts2_startidx"
+    },
+    {
+      "label": "endIdx",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "endidx",
+      "id": "scratch_add_favourites_podcasts2_endidx"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "fs",
+      "id": "scratch_add_favourites_podcasts3_fs"
+    },
+    {
+      "label": "code",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "L2",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "code",
+      "id": "scratch_add_favourites_podcasts3_code"
+    },
+    {
+      "label": "match",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 6,
+      "norm_label": "match",
+      "id": "scratch_add_favourites_podcasts3_match"
+    },
+    {
+      "label": "append_css.js",
+      "file_type": "code",
+      "source_file": "scratch/append_css.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "append_css.js",
+      "id": "scratch_append_css"
+    },
+    {
+      "label": "fs",
+      "file_type": "code",
+      "source_file": "scratch/append_css.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "fs",
+      "id": "scratch_append_css_fs"
     },
     {
       "label": "main.js",
@@ -220,9 +329,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_main",
-      "community": 0,
-      "norm_label": "main.js"
+      "community": 2,
+      "norm_label": "main.js",
+      "id": "scripts_main"
     },
     {
       "label": "setLanguage()",
@@ -230,9 +339,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L462",
       "_origin": "ast",
-      "id": "scripts_main_setlanguage",
-      "community": 0,
-      "norm_label": "setlanguage()"
+      "community": 2,
+      "norm_label": "setlanguage()",
+      "id": "scripts_main_setlanguage"
     },
     {
       "label": "setupLanguageSwitcher()",
@@ -240,9 +349,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L496",
       "_origin": "ast",
-      "id": "scripts_main_setuplanguageswitcher",
-      "community": 0,
-      "norm_label": "setuplanguageswitcher()"
+      "community": 2,
+      "norm_label": "setuplanguageswitcher()",
+      "id": "scripts_main_setuplanguageswitcher"
     },
     {
       "label": "getSiteRootPrefix()",
@@ -250,9 +359,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L589",
       "_origin": "ast",
-      "id": "scripts_main_getsiterootprefix",
-      "community": 0,
-      "norm_label": "getsiterootprefix()"
+      "community": 2,
+      "norm_label": "getsiterootprefix()",
+      "id": "scripts_main_getsiterootprefix"
     },
     {
       "label": "combinePath()",
@@ -260,19 +369,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L603",
       "_origin": "ast",
-      "id": "scripts_main_combinepath",
-      "community": 0,
-      "norm_label": "combinepath()"
-    },
-    {
-      "label": "normalizeNavbarLinks()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L612",
-      "_origin": "ast",
-      "id": "scripts_main_normalizenavbarlinks",
-      "community": 0,
-      "norm_label": "normalizenavbarlinks()"
+      "community": 2,
+      "norm_label": "combinepath()",
+      "id": "scripts_main_combinepath"
     },
     {
       "label": "loadNavbar()",
@@ -280,9 +379,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L638",
       "_origin": "ast",
-      "id": "scripts_main_loadnavbar",
-      "community": 0,
-      "norm_label": "loadnavbar()"
+      "community": 2,
+      "norm_label": "loadnavbar()",
+      "id": "scripts_main_loadnavbar"
     },
     {
       "label": "buildInlineNavbar()",
@@ -290,9 +389,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L684",
       "_origin": "ast",
-      "id": "scripts_main_buildinlinenavbar",
-      "community": 0,
-      "norm_label": "buildinlinenavbar()"
+      "community": 2,
+      "norm_label": "buildinlinenavbar()",
+      "id": "scripts_main_buildinlinenavbar"
     },
     {
       "label": "loadFooter()",
@@ -300,9 +399,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L717",
       "_origin": "ast",
-      "id": "scripts_main_loadfooter",
-      "community": 0,
-      "norm_label": "loadfooter()"
+      "community": 2,
+      "norm_label": "loadfooter()",
+      "id": "scripts_main_loadfooter"
     },
     {
       "label": "closeAllDropdowns()",
@@ -310,9 +409,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L752",
       "_origin": "ast",
-      "id": "scripts_main_closealldropdowns",
-      "community": 0,
-      "norm_label": "closealldropdowns()"
+      "community": 2,
+      "norm_label": "closealldropdowns()",
+      "id": "scripts_main_closealldropdowns"
     },
     {
       "label": "setupHamburger()",
@@ -320,9 +419,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L760",
       "_origin": "ast",
-      "id": "scripts_main_setuphamburger",
-      "community": 0,
-      "norm_label": "setuphamburger()"
+      "community": 2,
+      "norm_label": "setuphamburger()",
+      "id": "scripts_main_setuphamburger"
     },
     {
       "label": "setupMediaDropdown()",
@@ -330,9 +429,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L801",
       "_origin": "ast",
-      "id": "scripts_main_setupmediadropdown",
-      "community": 0,
-      "norm_label": "setupmediadropdown()"
+      "community": 2,
+      "norm_label": "setupmediadropdown()",
+      "id": "scripts_main_setupmediadropdown"
     },
     {
       "label": "podcasts.js",
@@ -340,9 +439,9 @@
       "source_file": "scripts/podcasts.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_podcasts",
-      "community": 3,
-      "norm_label": "podcasts.js"
+      "community": 0,
+      "norm_label": "podcasts.js",
+      "id": "scripts_podcasts"
     },
     {
       "label": "PODCAST_EPISODES",
@@ -350,109 +449,109 @@
       "source_file": "scripts/podcasts.js",
       "source_location": "L6",
       "_origin": "ast",
-      "id": "scripts_podcasts_podcast_episodes",
-      "community": 3,
-      "norm_label": "podcast_episodes"
+      "community": 0,
+      "norm_label": "podcast_episodes",
+      "id": "scripts_podcasts_podcast_episodes"
     },
     {
       "label": "groupByDateDescending()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L349",
+      "source_location": "L2276",
       "_origin": "ast",
-      "id": "scripts_podcasts_groupbydatedescending",
-      "community": 3,
-      "norm_label": "groupbydatedescending()"
+      "community": 0,
+      "norm_label": "groupbydatedescending()",
+      "id": "scripts_podcasts_groupbydatedescending"
     },
     {
       "label": "collectAllTags()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L355",
+      "source_location": "L2282",
       "_origin": "ast",
-      "id": "scripts_podcasts_collectalltags",
-      "community": 3,
-      "norm_label": "collectalltags()"
+      "community": 0,
+      "norm_label": "collectalltags()",
+      "id": "scripts_podcasts_collectalltags"
     },
     {
       "label": "collectAllShows()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L361",
+      "source_location": "L2288",
       "_origin": "ast",
-      "id": "scripts_podcasts_collectallshows",
-      "community": 3,
-      "norm_label": "collectallshows()"
+      "community": 0,
+      "norm_label": "collectallshows()",
+      "id": "scripts_podcasts_collectallshows"
     },
     {
       "label": "applyFiltersAndSort()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L367",
+      "source_location": "L2294",
       "_origin": "ast",
-      "id": "scripts_podcasts_applyfiltersandsort",
-      "community": 3,
-      "norm_label": "applyfiltersandsort()"
+      "community": 0,
+      "norm_label": "applyfiltersandsort()",
+      "id": "scripts_podcasts_applyfiltersandsort"
     },
     {
       "label": "renderEpisodes()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L398",
+      "source_location": "L2326",
       "_origin": "ast",
-      "id": "scripts_podcasts_renderepisodes",
-      "community": 3,
-      "norm_label": "renderepisodes()"
+      "community": 0,
+      "norm_label": "renderepisodes()",
+      "id": "scripts_podcasts_renderepisodes"
     },
     {
       "label": "renderCard()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L462",
+      "source_location": "L2390",
       "_origin": "ast",
-      "id": "scripts_podcasts_rendercard",
-      "community": 3,
-      "norm_label": "rendercard()"
+      "community": 0,
+      "norm_label": "rendercard()",
+      "id": "scripts_podcasts_rendercard"
     },
     {
       "label": "applyUniformHeight()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L529",
+      "source_location": "L2451",
       "_origin": "ast",
-      "id": "scripts_podcasts_applyuniformheight",
-      "community": 3,
-      "norm_label": "applyuniformheight()"
+      "community": 0,
+      "norm_label": "applyuniformheight()",
+      "id": "scripts_podcasts_applyuniformheight"
     },
     {
       "label": "escapeHtml()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L568",
+      "source_location": "L2490",
       "_origin": "ast",
-      "id": "scripts_podcasts_escapehtml",
-      "community": 3,
-      "norm_label": "escapehtml()"
+      "community": 0,
+      "norm_label": "escapehtml()",
+      "id": "scripts_podcasts_escapehtml"
     },
     {
       "label": "updateCount()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L578",
+      "source_location": "L2500",
       "_origin": "ast",
-      "id": "scripts_podcasts_updatecount",
-      "community": 3,
-      "norm_label": "updatecount()"
+      "community": 0,
+      "norm_label": "updatecount()",
+      "id": "scripts_podcasts_updatecount"
     },
     {
       "label": "setupFilters()",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L585",
+      "source_location": "L2507",
       "_origin": "ast",
-      "id": "scripts_podcasts_setupfilters",
-      "community": 3,
-      "norm_label": "setupfilters()"
+      "community": 0,
+      "norm_label": "setupfilters()",
+      "id": "scripts_podcasts_setupfilters"
     },
     {
       "label": "posts.js",
@@ -460,9 +559,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_posts",
-      "community": 5,
-      "norm_label": "posts.js"
+      "community": 4,
+      "norm_label": "posts.js",
+      "id": "scripts_posts"
     },
     {
       "label": "BLOG_POSTS",
@@ -470,9 +569,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_posts_blog_posts",
-      "community": 5,
-      "norm_label": "blog_posts"
+      "community": 4,
+      "norm_label": "blog_posts",
+      "id": "scripts_posts_blog_posts"
     },
     {
       "label": "getLang()",
@@ -480,9 +579,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L125",
       "_origin": "ast",
-      "id": "scripts_posts_getlang",
-      "community": 5,
-      "norm_label": "getlang()"
+      "community": 4,
+      "norm_label": "getlang()",
+      "id": "scripts_posts_getlang"
     },
     {
       "label": "renderPosts()",
@@ -490,9 +589,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L129",
       "_origin": "ast",
-      "id": "scripts_posts_renderposts",
-      "community": 5,
-      "norm_label": "renderposts()"
+      "community": 4,
+      "norm_label": "renderposts()",
+      "id": "scripts_posts_renderposts"
     },
     {
       "label": "isHomePage()",
@@ -500,9 +599,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L145",
       "_origin": "ast",
-      "id": "scripts_posts_ishomepage",
-      "community": 5,
-      "norm_label": "ishomepage()"
+      "community": 4,
+      "norm_label": "ishomepage()",
+      "id": "scripts_posts_ishomepage"
     },
     {
       "label": "CATEGORY_MAP",
@@ -510,9 +609,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L149",
       "_origin": "ast",
-      "id": "scripts_posts_category_map",
-      "community": 5,
-      "norm_label": "category_map"
+      "community": 4,
+      "norm_label": "category_map",
+      "id": "scripts_posts_category_map"
     },
     {
       "label": "cardHTML()",
@@ -520,9 +619,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L155",
       "_origin": "ast",
-      "id": "scripts_posts_cardhtml",
-      "community": 5,
-      "norm_label": "cardhtml()"
+      "community": 4,
+      "norm_label": "cardhtml()",
+      "id": "scripts_posts_cardhtml"
     },
     {
       "label": "openPost()",
@@ -530,9 +629,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L173",
       "_origin": "ast",
-      "id": "scripts_posts_openpost",
-      "community": 5,
-      "norm_label": "openpost()"
+      "community": 4,
+      "norm_label": "openpost()",
+      "id": "scripts_posts_openpost"
     },
     {
       "label": "closePost()",
@@ -540,9 +639,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L201",
       "_origin": "ast",
-      "id": "scripts_posts_closepost",
-      "community": 5,
-      "norm_label": "closepost()"
+      "community": 4,
+      "norm_label": "closepost()",
+      "id": "scripts_posts_closepost"
     },
     {
       "label": "renderHomeLatest()",
@@ -550,9 +649,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L207",
       "_origin": "ast",
-      "id": "scripts_posts_renderhomelatest",
-      "community": 5,
-      "norm_label": "renderhomelatest()"
+      "community": 4,
+      "norm_label": "renderhomelatest()",
+      "id": "scripts_posts_renderhomelatest"
     },
     {
       "label": "redirect.js",
@@ -560,9 +659,9 @@
       "source_file": "scripts/redirect.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_redirect",
-      "community": 7,
-      "norm_label": "redirect.js"
+      "community": 2,
+      "norm_label": "redirect.js",
+      "id": "scripts_redirect"
     },
     {
       "label": "sports.js",
@@ -570,9 +669,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_sports",
-      "community": 6,
-      "norm_label": "sports.js"
+      "community": 1,
+      "norm_label": "sports.js",
+      "id": "scripts_sports"
     },
     {
       "label": "RACES",
@@ -580,9 +679,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_sports_races",
-      "community": 6,
-      "norm_label": "races"
+      "community": 1,
+      "norm_label": "races",
+      "id": "scripts_sports_races"
     },
     {
       "label": "TRAINING_STATS",
@@ -590,9 +689,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L182",
       "_origin": "ast",
-      "id": "scripts_sports_training_stats",
-      "community": 6,
-      "norm_label": "training_stats"
+      "community": 1,
+      "norm_label": "training_stats",
+      "id": "scripts_sports_training_stats"
     },
     {
       "label": "renderTrainingStats()",
@@ -600,9 +699,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L201",
       "_origin": "ast",
-      "id": "scripts_sports_rendertrainingstats",
-      "community": 6,
-      "norm_label": "rendertrainingstats()"
+      "community": 3,
+      "norm_label": "rendertrainingstats()",
+      "id": "scripts_sports_rendertrainingstats"
     },
     {
       "label": "renderRaceTable()",
@@ -610,9 +709,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L234",
       "_origin": "ast",
-      "id": "scripts_sports_renderracetable",
-      "community": 6,
-      "norm_label": "renderracetable()"
+      "community": 1,
+      "norm_label": "renderracetable()",
+      "id": "scripts_sports_renderracetable"
     },
     {
       "label": "openModal()",
@@ -620,9 +719,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L254",
       "_origin": "ast",
-      "id": "scripts_sports_openmodal",
-      "community": 6,
-      "norm_label": "openmodal()"
+      "community": 1,
+      "norm_label": "openmodal()",
+      "id": "scripts_sports_openmodal"
     },
     {
       "label": "closeModal()",
@@ -630,9 +729,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L301",
       "_origin": "ast",
-      "id": "scripts_sports_closemodal",
-      "community": 6,
-      "norm_label": "closemodal()"
+      "community": 1,
+      "norm_label": "closemodal()",
+      "id": "scripts_sports_closemodal"
     },
     {
       "label": "update-strava.mjs",
@@ -640,9 +739,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_update_strava",
-      "community": 1,
-      "norm_label": "update-strava.mjs"
+      "community": 3,
+      "norm_label": "update-strava.mjs",
+      "id": "scripts_update_strava"
     },
     {
       "label": "__dir",
@@ -650,9 +749,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L16",
       "_origin": "ast",
-      "id": "scripts_update_strava_dir",
-      "community": 1,
-      "norm_label": "__dir"
+      "community": 3,
+      "norm_label": "__dir",
+      "id": "scripts_update_strava_dir"
     },
     {
       "label": "ROOT",
@@ -660,9 +759,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L17",
       "_origin": "ast",
-      "id": "scripts_update_strava_root",
-      "community": 1,
-      "norm_label": "root"
+      "community": 3,
+      "norm_label": "root",
+      "id": "scripts_update_strava_root"
     },
     {
       "label": "loadEnv()",
@@ -670,49 +769,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L20",
       "_origin": "ast",
-      "id": "scripts_update_strava_loadenv",
-      "community": 1,
-      "norm_label": "loadenv()"
-    },
-    {
-      "label": "getAccessToken()",
-      "file_type": "code",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L43",
-      "_origin": "ast",
-      "id": "scripts_update_strava_getaccesstoken",
-      "community": 1,
-      "norm_label": "getaccesstoken()"
-    },
-    {
-      "label": "fetchActivities()",
-      "file_type": "code",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L59",
-      "_origin": "ast",
-      "id": "scripts_update_strava_fetchactivities",
-      "community": 1,
-      "norm_label": "fetchactivities()"
-    },
-    {
-      "label": "computeStats()",
-      "file_type": "code",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L67",
-      "_origin": "ast",
-      "id": "scripts_update_strava_computestats",
-      "community": 1,
-      "norm_label": "computestats()"
-    },
-    {
-      "label": "computeWeekly()",
-      "file_type": "code",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L97",
-      "_origin": "ast",
-      "id": "scripts_update_strava_computeweekly",
-      "community": 1,
-      "norm_label": "computeweekly()"
+      "community": 3,
+      "norm_label": "loadenv()",
+      "id": "scripts_update_strava_loadenv"
     },
     {
       "label": "fmtKm()",
@@ -720,9 +779,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L125",
       "_origin": "ast",
-      "id": "scripts_update_strava_fmtkm",
-      "community": 1,
-      "norm_label": "fmtkm()"
+      "community": 3,
+      "norm_label": "fmtkm()",
+      "id": "scripts_update_strava_fmtkm"
     },
     {
       "label": "fmtElev()",
@@ -730,9 +789,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L126",
       "_origin": "ast",
-      "id": "scripts_update_strava_fmtelev",
-      "community": 1,
-      "norm_label": "fmtelev()"
+      "community": 3,
+      "norm_label": "fmtelev()",
+      "id": "scripts_update_strava_fmtelev"
     },
     {
       "label": "fmtMonth()",
@@ -740,29 +799,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L127",
       "_origin": "ast",
-      "id": "scripts_update_strava_fmtmonth",
-      "community": 1,
-      "norm_label": "fmtmonth()"
-    },
-    {
-      "label": "patchSportsJs()",
-      "file_type": "code",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L132",
-      "_origin": "ast",
-      "id": "scripts_update_strava_patchsportsjs",
-      "community": 1,
-      "norm_label": "patchsportsjs()"
-    },
-    {
-      "label": "patchHtml()",
-      "file_type": "code",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L160",
-      "_origin": "ast",
-      "id": "scripts_update_strava_patchhtml",
-      "community": 1,
-      "norm_label": "patchhtml()"
+      "community": 3,
+      "norm_label": "fmtmonth()",
+      "id": "scripts_update_strava_fmtmonth"
     },
     {
       "label": "now",
@@ -770,9 +809,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L171",
       "_origin": "ast",
-      "id": "scripts_update_strava_now",
-      "community": 1,
-      "norm_label": "now"
+      "community": 3,
+      "norm_label": "now",
+      "id": "scripts_update_strava_now"
     },
     {
       "label": "stats",
@@ -780,9 +819,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L181",
       "_origin": "ast",
-      "id": "scripts_update_strava_stats",
-      "community": 1,
-      "norm_label": "stats"
+      "community": 3,
+      "norm_label": "stats",
+      "id": "scripts_update_strava_stats"
     },
     {
       "label": "weekly",
@@ -790,9 +829,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L182",
       "_origin": "ast",
-      "id": "scripts_update_strava_weekly",
-      "community": 1,
-      "norm_label": "weekly"
+      "community": 3,
+      "norm_label": "weekly",
+      "id": "scripts_update_strava_weekly"
     },
     {
       "label": "videos.js",
@@ -800,9 +839,9 @@
       "source_file": "scripts/videos.js",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "scripts_videos",
-      "community": 4,
-      "norm_label": "videos.js"
+      "community": 0,
+      "norm_label": "videos.js",
+      "id": "scripts_videos"
     },
     {
       "label": "VIDEOS",
@@ -810,99 +849,289 @@
       "source_file": "scripts/videos.js",
       "source_location": "L5",
       "_origin": "ast",
-      "id": "scripts_videos_videos",
-      "community": 4,
-      "norm_label": "videos"
+      "community": 0,
+      "norm_label": "videos",
+      "id": "scripts_videos_videos"
     },
     {
       "label": "groupByDateDescending()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L58",
+      "source_location": "L1366",
       "_origin": "ast",
-      "id": "scripts_videos_groupbydatedescending",
-      "community": 4,
-      "norm_label": "groupbydatedescending()"
+      "community": 0,
+      "norm_label": "groupbydatedescending()",
+      "id": "scripts_videos_groupbydatedescending"
     },
     {
       "label": "collectAllTags()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L64",
+      "source_location": "L1372",
       "_origin": "ast",
-      "id": "scripts_videos_collectalltags",
-      "community": 4,
-      "norm_label": "collectalltags()"
+      "community": 0,
+      "norm_label": "collectalltags()",
+      "id": "scripts_videos_collectalltags"
+    },
+    {
+      "label": "collectAllShows()",
+      "file_type": "code",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1378",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "collectallshows()",
+      "id": "scripts_videos_collectallshows"
     },
     {
       "label": "applyFiltersAndSort()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L70",
+      "source_location": "L1384",
       "_origin": "ast",
-      "id": "scripts_videos_applyfiltersandsort",
-      "community": 4,
-      "norm_label": "applyfiltersandsort()"
+      "community": 0,
+      "norm_label": "applyfiltersandsort()",
+      "id": "scripts_videos_applyfiltersandsort"
     },
     {
       "label": "renderVideos()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L97",
+      "source_location": "L1405",
       "_origin": "ast",
-      "id": "scripts_videos_rendervideos",
-      "community": 4,
-      "norm_label": "rendervideos()"
+      "community": 0,
+      "norm_label": "rendervideos()",
+      "id": "scripts_videos_rendervideos"
     },
     {
       "label": "renderCard()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L160",
+      "source_location": "L1468",
       "_origin": "ast",
-      "id": "scripts_videos_rendercard",
-      "community": 4,
-      "norm_label": "rendercard()"
+      "community": 0,
+      "norm_label": "rendercard()",
+      "id": "scripts_videos_rendercard"
     },
     {
       "label": "applyUniformHeight()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L209",
+      "source_location": "L1514",
       "_origin": "ast",
-      "id": "scripts_videos_applyuniformheight",
-      "community": 4,
-      "norm_label": "applyuniformheight()"
+      "community": 0,
+      "norm_label": "applyuniformheight()",
+      "id": "scripts_videos_applyuniformheight"
     },
     {
       "label": "escapeHtml()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L248",
+      "source_location": "L1553",
       "_origin": "ast",
-      "id": "scripts_videos_escapehtml",
-      "community": 4,
-      "norm_label": "escapehtml()"
+      "community": 0,
+      "norm_label": "escapehtml()",
+      "id": "scripts_videos_escapehtml"
     },
     {
       "label": "updateCount()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L258",
+      "source_location": "L1563",
       "_origin": "ast",
-      "id": "scripts_videos_updatecount",
-      "community": 4,
-      "norm_label": "updatecount()"
+      "community": 0,
+      "norm_label": "updatecount()",
+      "id": "scripts_videos_updatecount"
     },
     {
       "label": "setupFilters()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L265",
+      "source_location": "L1570",
       "_origin": "ast",
-      "id": "scripts_videos_setupfilters",
-      "community": 4,
-      "norm_label": "setupfilters()"
+      "community": 0,
+      "norm_label": "setupfilters()",
+      "id": "scripts_videos_setupfilters"
+    },
+    {
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "claude.md",
+      "id": "claude"
+    },
+    {
+      "label": "Development",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "development",
+      "id": "claude_development"
+    },
+    {
+      "label": "Strava data refresh",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "strava data refresh",
+      "id": "claude_strava_data_refresh"
+    },
+    {
+      "label": "Architecture",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L24",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "architecture",
+      "id": "claude_architecture"
+    },
+    {
+      "label": "Path resolution",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "path resolution",
+      "id": "claude_path_resolution"
+    },
+    {
+      "label": "Component injection",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "component injection",
+      "id": "claude_component_injection"
+    },
+    {
+      "label": "i18n system",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "i18n system",
+      "id": "claude_i18n_system"
+    },
+    {
+      "label": "Feature scripts",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "feature scripts",
+      "id": "claude_feature_scripts"
+    },
+    {
+      "label": "Asset paths",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": "L51",
+      "_origin": "ast",
+      "community": 7,
+      "norm_label": "asset paths",
+      "id": "claude_asset_paths"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "readme.md",
+      "id": "readme"
+    },
+    {
+      "label": "Personal Webpage \u2013 Ji\u0159\u00ed Ml\u010dou\u0161ek",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "personal webpage \u2013 jiri mlcousek",
+      "id": "readme_personal_webpage_ji\u0159\u00ed_ml\u010dou\u0161ek"
+    },
+    {
+      "label": "\u2728 Features",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "\u2728 features",
+      "id": "readme_features"
+    },
+    {
+      "label": "\ud83d\ude80 Getting started",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "\ud83d\ude80 getting started",
+      "id": "readme_getting_started"
+    },
+    {
+      "label": "Prerequisites",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "prerequisites",
+      "id": "readme_prerequisites"
+    },
+    {
+      "label": "Install dependencies",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "install dependencies",
+      "id": "readme_install_dependencies"
+    },
+    {
+      "label": "Run a local dev server",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "run a local dev server",
+      "id": "readme_run_a_local_dev_server"
+    },
+    {
+      "label": "\ud83d\udee0\ufe0f Updating content",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "\ud83d\udee0\ufe0f updating content",
+      "id": "readme_updating_content"
+    },
+    {
+      "label": "\ud83d\udce6 Deployment",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "_origin": "ast",
+      "community": 8,
+      "norm_label": "\ud83d\udce6 deployment",
+      "id": "readme_deployment"
     },
     {
       "label": "Project Settings (Local Permissions)",
@@ -913,9 +1142,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "settings_local",
-      "community": 10,
-      "norm_label": "project settings (local permissions)"
+      "community": 11,
+      "norm_label": "project settings (local permissions)",
+      "id": "settings_local"
     },
     {
       "label": "VS Code MCP Server Config (Spotify)",
@@ -926,9 +1155,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "vscode_mcp",
-      "community": 10,
-      "norm_label": "vs code mcp server config (spotify)"
+      "community": 11,
+      "norm_label": "vs code mcp server config (spotify)",
+      "id": "vscode_mcp"
     },
     {
       "label": "package.json \u2013 personal-webpage",
@@ -939,9 +1168,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "root_package",
       "community": 12,
-      "norm_label": "package.json \u2013 personal-webpage"
+      "norm_label": "package.json \u2013 personal-webpage",
+      "id": "root_package"
     },
     {
       "label": "applyLanguageAfterNavbar()",
@@ -952,9 +1181,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_main_applylanguageafternavbar",
-      "community": 0,
-      "norm_label": "applylanguageafternavbar()"
+      "community": 2,
+      "norm_label": "applylanguageafternavbar()",
+      "id": "scripts_main_applylanguageafternavbar"
     },
     {
       "label": "normalizeNavbarLinks()",
@@ -965,22 +1194,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_main_normalizenavarlinks",
-      "community": 0,
-      "norm_label": "normalizenavbarlinks()"
-    },
-    {
-      "label": "setupMediaDropdown()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "line 801",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "id": "scripts_main_setupmediaddropdown",
-      "community": 0,
-      "norm_label": "setupmediadropdown()"
+      "community": 2,
+      "norm_label": "normalizenavbarlinks()",
+      "id": "scripts_main_normalizenavarlinks"
     },
     {
       "label": "translations object (EN/CS/ES i18n strings)",
@@ -991,9 +1207,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_main_translations",
-      "community": 0,
-      "norm_label": "translations object (en/cs/es i18n strings)"
+      "community": 2,
+      "norm_label": "translations object (en/cs/es i18n strings)",
+      "id": "scripts_main_translations"
     },
     {
       "label": "PODCAST_EPISODES array",
@@ -1004,9 +1220,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_podcasts_episodes",
-      "community": 4,
-      "norm_label": "podcast_episodes array"
+      "community": 1,
+      "norm_label": "podcast_episodes array",
+      "id": "scripts_podcasts_episodes"
     },
     {
       "label": "BLOG_POSTS array",
@@ -1017,9 +1233,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_posts_blogposts",
-      "community": 5,
-      "norm_label": "blog_posts array"
+      "community": 4,
+      "norm_label": "blog_posts array",
+      "id": "scripts_posts_blogposts"
     },
     {
       "label": "TRAINING_STATS object",
@@ -1030,9 +1246,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_sports_trainingstats",
-      "community": 6,
-      "norm_label": "training_stats object"
+      "community": 3,
+      "norm_label": "training_stats object",
+      "id": "scripts_sports_trainingstats"
     },
     {
       "label": "update-strava.mjs \u2013 Strava API data refresher",
@@ -1043,9 +1259,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_updatestrava",
       "community": 13,
-      "norm_label": "update-strava.mjs \u2013 strava api data refresher"
+      "norm_label": "update-strava.mjs \u2013 strava api data refresher",
+      "id": "scripts_updatestrava"
     },
     {
       "label": "getAccessToken()",
@@ -1056,9 +1272,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_updatestrava_getaccesstoken",
-      "community": 9,
-      "norm_label": "getaccesstoken()"
+      "community": 3,
+      "norm_label": "getaccesstoken()",
+      "id": "scripts_updatestrava_getaccesstoken"
     },
     {
       "label": "fetchActivities()",
@@ -1069,9 +1285,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_updatestrava_fetchactivities",
-      "community": 9,
-      "norm_label": "fetchactivities()"
+      "community": 3,
+      "norm_label": "fetchactivities()",
+      "id": "scripts_updatestrava_fetchactivities"
     },
     {
       "label": "computeStats()",
@@ -1082,9 +1298,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_updatestrava_computestats",
-      "community": 6,
-      "norm_label": "computestats()"
+      "community": 3,
+      "norm_label": "computestats()",
+      "id": "scripts_updatestrava_computestats"
     },
     {
       "label": "computeWeekly()",
@@ -1095,9 +1311,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_updatestrava_computeweekly",
-      "community": 14,
-      "norm_label": "computeweekly()"
+      "community": 3,
+      "norm_label": "computeweekly()",
+      "id": "scripts_updatestrava_computeweekly"
     },
     {
       "label": "patchSportsJs()",
@@ -1108,9 +1324,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_updatestrava_patchsportsjs",
-      "community": 6,
-      "norm_label": "patchsportsjs()"
+      "community": 3,
+      "norm_label": "patchsportsjs()",
+      "id": "scripts_updatestrava_patchsportsjs"
     },
     {
       "label": "patchHtml()",
@@ -1121,9 +1337,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "scripts_updatestrava_patchhtml",
-      "community": 6,
-      "norm_label": "patchhtml()"
+      "community": 3,
+      "norm_label": "patchhtml()",
+      "id": "scripts_updatestrava_patchhtml"
     },
     {
       "label": "README \u2013 Personal Webpage Documentation",
@@ -1134,9 +1350,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "root_readme",
-      "community": 7,
-      "norm_label": "readme \u2013 personal webpage documentation"
+      "community": 2,
+      "norm_label": "readme \u2013 personal webpage documentation",
+      "id": "root_readme"
     },
     {
       "label": "footer.html \u2013 Shared Footer Component",
@@ -1147,9 +1363,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "components_footer",
-      "community": 0,
-      "norm_label": "footer.html \u2013 shared footer component"
+      "community": 2,
+      "norm_label": "footer.html \u2013 shared footer component",
+      "id": "components_footer"
     },
     {
       "label": "navbar.html \u2013 Shared Navigation Component",
@@ -1160,9 +1376,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "components_navbar",
-      "community": 7,
-      "norm_label": "navbar.html \u2013 shared navigation component"
+      "community": 2,
+      "norm_label": "navbar.html \u2013 shared navigation component",
+      "id": "components_navbar"
     },
     {
       "label": "index.html \u2013 Root Redirect Page",
@@ -1173,9 +1389,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "root_index",
-      "community": 7,
-      "norm_label": "index.html \u2013 root redirect page"
+      "community": 2,
+      "norm_label": "index.html \u2013 root redirect page",
+      "id": "root_index"
     },
     {
       "label": "about.html \u2013 About Page",
@@ -1186,9 +1402,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_about",
-      "community": 7,
-      "norm_label": "about.html \u2013 about page"
+      "community": 1,
+      "norm_label": "about.html \u2013 about page",
+      "id": "pages_about"
     },
     {
       "label": "blog.html \u2013 Blog Page",
@@ -1199,9 +1415,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_blog",
-      "community": 5,
-      "norm_label": "blog.html \u2013 blog page"
+      "community": 4,
+      "norm_label": "blog.html \u2013 blog page",
+      "id": "pages_blog"
     },
     {
       "label": "books.html \u2013 Books Log Page",
@@ -1212,9 +1428,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_books",
-      "community": 11,
-      "norm_label": "books.html \u2013 books log page"
+      "community": 1,
+      "norm_label": "books.html \u2013 books log page",
+      "id": "pages_books"
     },
     {
       "label": "pages/index.html \u2013 Home Page",
@@ -1225,9 +1441,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_index",
-      "community": 7,
-      "norm_label": "pages/index.html \u2013 home page"
+      "community": 2,
+      "norm_label": "pages/index.html \u2013 home page",
+      "id": "pages_index"
     },
     {
       "label": "podcasts.html \u2013 Podcast Log Page",
@@ -1238,9 +1454,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_podcasts",
-      "community": 3,
-      "norm_label": "podcasts.html \u2013 podcast log page"
+      "community": 0,
+      "norm_label": "podcasts.html \u2013 podcast log page",
+      "id": "pages_podcasts"
     },
     {
       "label": "sports.html \u2013 Sports Page",
@@ -1251,9 +1467,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_sports",
-      "community": 6,
-      "norm_label": "sports.html \u2013 sports page"
+      "community": 1,
+      "norm_label": "sports.html \u2013 sports page",
+      "id": "pages_sports"
     },
     {
       "label": "videos.html \u2013 Video Vault Page",
@@ -1264,9 +1480,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "pages_videos",
-      "community": 4,
-      "norm_label": "videos.html \u2013 video vault page"
+      "community": 0,
+      "norm_label": "videos.html \u2013 video vault page",
+      "id": "pages_videos"
     },
     {
       "label": "Trilingual i18n (EN/CS/ES) Pattern",
@@ -1277,9 +1493,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_i18n",
-      "community": 0,
-      "norm_label": "trilingual i18n (en/cs/es) pattern"
+      "community": 2,
+      "norm_label": "trilingual i18n (en/cs/es) pattern",
+      "id": "concept_i18n"
     },
     {
       "label": "Strava API Integration Pattern",
@@ -1290,9 +1506,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_strava_integration",
-      "community": 9,
-      "norm_label": "strava api integration pattern"
+      "community": 3,
+      "norm_label": "strava api integration pattern",
+      "id": "concept_strava_integration"
     },
     {
       "label": "Shared Navbar/Footer Injection via fetch()",
@@ -1304,9 +1520,9 @@
       "author": null,
       "contributor": null,
       "rationale": "Navbar and footer are loaded asynchronously via fetch with multiple fallback path candidates. After injection, language and active-link state are re-applied via applyLanguageAfterNavbar(). An inline fallback is built if all fetch candidates fail, ensuring the site works even without a server.",
-      "id": "concept_shared_component_injection",
-      "community": 0,
-      "norm_label": "shared navbar/footer injection via fetch()"
+      "community": 2,
+      "norm_label": "shared navbar/footer injection via fetch()",
+      "id": "concept_shared_component_injection"
     },
     {
       "label": "languageChanged CustomEvent Bus",
@@ -1317,9 +1533,503 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "concept_languagechanged_event",
+      "community": 2,
+      "norm_label": "languagechanged customevent bus",
+      "id": "concept_languagechanged_event"
+    },
+    {
+      "label": "Feature script pattern: data array -> filter/sort -> render -> DOM",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "41",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
       "community": 0,
-      "norm_label": "languagechanged customevent bus"
+      "norm_label": "feature script pattern: data array -> filter/sort -> render -> dom",
+      "id": "claude_md_arch_pattern"
+    },
+    {
+      "label": "i18n languageChanged event re-render pattern",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": "36",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "i18n languagechanged event re-render pattern",
+      "id": "claude_md_i18n_concept"
+    },
+    {
+      "label": "podcasts.html",
+      "file_type": "document",
+      "source_file": "pages/podcasts.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "podcasts.html",
+      "id": "pages_podcasts_html"
+    },
+    {
+      "label": "videos.html",
+      "file_type": "document",
+      "source_file": "pages/videos.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "videos.html",
+      "id": "pages_videos_html"
+    },
+    {
+      "label": "favourite field on media items",
+      "file_type": "concept",
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "12",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "favourite field on media items",
+      "id": "concept_favourite_field"
+    },
+    {
+      "label": "Media filter UI (filter chips + controls)",
+      "file_type": "concept",
+      "source_file": "pages/podcasts.html",
+      "source_location": "23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 0,
+      "norm_label": "media filter ui (filter chips + controls)",
+      "id": "concept_media_filter_ui"
+    },
+    {
+      "label": "Portrait photo of young man in formal attire (tuxedo with bow tie)",
+      "file_type": "image",
+      "source_file": "images/1737442551739.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "portrait photo of young man in formal attire (tuxedo with bow tie)",
+      "id": "images_1737442551739"
+    },
+    {
+      "label": "Photo of man holding race finisher medal at outdoor running event",
+      "file_type": "image",
+      "source_file": "images/IMG_6169.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "photo of man holding race finisher medal at outdoor running event",
+      "id": "images_img_6169"
+    },
+    {
+      "label": "PKI a elektronick\u00fd podpis - course/document cover by Libor Dost\u00e1lek, 2020",
+      "file_type": "document",
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Libor Dost\u00e1lek",
+      "contributor": null,
+      "community": 10,
+      "norm_label": "pki a elektronicky podpis - course/document cover by libor dostalek, 2020",
+      "id": "images_pki_course"
+    },
+    {
+      "label": "Masters Graduation Celebration Photo",
+      "file_type": "image",
+      "source_file": "images/Posts/MastersDone/IMG_9011.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Ji\u0159\u00ed Ml\u010dou\u0161ek",
+      "contributor": null,
+      "community": 4,
+      "norm_label": "masters graduation celebration photo",
+      "id": "mastersdone_img_9011"
+    },
+    {
+      "label": "SVOC Award Ceremony - Ji\u0159\u00ed Ml\u010dou\u0161ek Receiving Certificate",
+      "file_type": "image",
+      "source_file": "images/Posts/SVOC/IMG_8964.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Ji\u0159\u00ed Ml\u010dou\u0161ek",
+      "contributor": null,
+      "community": 4,
+      "norm_label": "svoc award ceremony - jiri mlcousek receiving certificate",
+      "id": "svoc_img_8964"
+    },
+    {
+      "label": "Masters Degree Completion",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "masters degree completion",
+      "id": "concept_masters_graduation"
+    },
+    {
+      "label": "SVOC Academic Competition",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "svoc academic competition",
+      "id": "concept_svoc"
+    },
+    {
+      "label": "Trail runner on rocky forest path - B7 2025 race",
+      "file_type": "image",
+      "source_file": "images/events/B72025/IMG_5622.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "trail runner on rocky forest path - b7 2025 race",
+      "id": "b72025_img_5622"
+    },
+    {
+      "label": "Trail runner with poles, race number 0916, rocky forest path - B7 2025 race",
+      "file_type": "image",
+      "source_file": "images/events/B72025/IMG_5624.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "trail runner with poles, race number 0916, rocky forest path - b7 2025 race",
+      "id": "b72025_img_5624"
+    },
+    {
+      "label": "Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem",
+      "file_type": "image",
+      "source_file": "images/events/B72025/IMG_8080.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "podium ceremony at b7 2025 race (16th edition), frenstat pod radhostem",
+      "id": "b72025_img_8080"
+    },
+    {
+      "label": "Runner with bib number 99 at Kosir 2026 winter race event",
+      "file_type": "image",
+      "source_file": "images/events/Kosir2026/IMG_1317.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "runner with bib number 99 at kosir 2026 winter race event",
+      "id": "kosir2026_img_1317"
+    },
+    {
+      "label": "Kosir 2026 Running Event",
+      "file_type": "concept",
+      "source_file": "images/events/Kosir2026/IMG_1317.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "kosir 2026 running event",
+      "id": "concept_kosir2026_event"
+    },
+    {
+      "label": "Trail runner in snowy winter forest - LH242026 event photo",
+      "file_type": "image",
+      "source_file": "images/events/LH242026/0049_IMG_9617 (1).jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "trail runner in snowy winter forest - lh242026 event photo",
+      "id": "lh242026_0049_img_9617_1"
+    },
+    {
+      "label": "Trail runner with poles posing in snowy winter forest - LH242026 event photo",
+      "file_type": "image",
+      "source_file": "images/events/LH242026/55073242584_83b7d721b5_o (1).jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "trail runner with poles posing in snowy winter forest - lh242026 event photo",
+      "id": "lh242026_55073242584_83b7d721b5_o_1"
+    },
+    {
+      "label": "Runner bib #16 at Olomouc Marathon 2026 - race photo",
+      "file_type": "image",
+      "source_file": "images/events/OlomoucMarathon2026/IMG_8773.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "runner bib #16 at olomouc marathon 2026 - race photo",
+      "id": "olomoucmarathon2026_img_8773"
+    },
+    {
+      "label": "Runner bib #16 making peace sign at Olomouc Marathon 2026 - race photo",
+      "file_type": "image",
+      "source_file": "images/events/OlomoucMarathon2026/IMG_8776.PNG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "runner bib #16 making peace sign at olomouc marathon 2026 - race photo",
+      "id": "olomoucmarathon2026_img_8776"
+    },
+    {
+      "label": "Runner with bib number 94 at Olomouc Maraton 2025",
+      "file_type": "image",
+      "source_file": "images/events/OlomoucMaraton2025/74a875bc-16b0-4030-af00-610e0c66fdae.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "runner with bib number 94 at olomouc maraton 2025",
+      "id": "olomoucmaraton2025_74a875bc-16b0-4030-af00-610e0c66fdae"
+    },
+    {
+      "label": "Prague Marathon 2025 - Runner bib 3384 on cobblestone street",
+      "file_type": "image",
+      "source_file": "images/events/PragueMaraton2025/IMG_6112.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "prague marathon 2025 - runner bib 3384 on cobblestone street",
+      "id": "pragueMaraton2025_img_6112"
+    },
+    {
+      "label": "Prague Marathon 2025 - Two runners posing, bibs 3384 and 2189",
+      "file_type": "image",
+      "source_file": "images/events/PragueMaraton2025/IMG_6124.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "prague marathon 2025 - two runners posing, bibs 3384 and 2189",
+      "id": "pragueMaraton2025_img_6124"
+    },
+    {
+      "label": "Prague Marathon 2025 - Runner holding finisher medal at Wenceslas Square",
+      "file_type": "image",
+      "source_file": "images/events/PragueMaraton2025/IMG_6169.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "prague marathon 2025 - runner holding finisher medal at wenceslas square",
+      "id": "pragueMaraton2025_img_6169"
+    },
+    {
+      "label": "Jested 24 Winter 2026 - Athlete climbing snowy slope with poles",
+      "file_type": "image",
+      "source_file": "images/events/jestedWinter242026/321A6841.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "jested 24 winter 2026 - athlete climbing snowy slope with poles",
+      "id": "jestedwinter242026_321a6841"
+    },
+    {
+      "label": "Jested 24 Winter 2026 - Two athletes running through snowy forest trail",
+      "file_type": "image",
+      "source_file": "images/events/jestedWinter242026/Jested 24 winter 2026-96.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "jested 24 winter 2026 - two athletes running through snowy forest trail",
+      "id": "jestedwinter242026_jested_24_winter_2026-96"
+    },
+    {
+      "label": "Zlin Half Marathon 2026 - Runner #0037 finish celebration",
+      "file_type": "image",
+      "source_file": "images/events/zlinHalf2026/LIL_7023.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "zlin half marathon 2026 - runner #0037 finish celebration",
+      "id": "zlinhalf2026_lil_7023"
+    },
+    {
+      "label": "Zlin Half Marathon 2026 - Runners #0037 and #0015 on course",
+      "file_type": "image",
+      "source_file": "images/events/zlinHalf2026/_MTK_0077.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "zlin half marathon 2026 - runners #0037 and #0015 on course",
+      "id": "zlinhalf2026__mtk_0077"
+    },
+    {
+      "label": "Zlin Half Marathon 2026 - Runner #0037 running on tree-lined path",
+      "file_type": "image",
+      "source_file": "images/events/zlinHalf2026/_MTK_2364.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "zlin half marathon 2026 - runner #0037 running on tree-lined path",
+      "id": "zlinhalf2026__mtk_2364"
+    },
+    {
+      "label": "Football match action photo - player #6 in neon green kit dribbling ball",
+      "file_type": "image",
+      "source_file": "images/football/FB_IMG_1622893629074_Original.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "football match action photo - player #6 in neon green kit dribbling ball",
+      "id": "football_fb_img_1622893629074_original"
+    },
+    {
+      "label": "Football player portrait on pitch in black and yellow kit",
+      "file_type": "image",
+      "source_file": "images/football/IMG_5420.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "football player portrait on pitch in black and yellow kit",
+      "id": "football_img_5420"
+    },
+    {
+      "label": "Football match photo - two players contesting near touchline with spectators",
+      "file_type": "image",
+      "source_file": "images/football/IMG_7459.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "football match photo - two players contesting near touchline with spectators",
+      "id": "football_img_7459"
+    },
+    {
+      "label": "Public Key Infrastructure (PKI)",
+      "file_type": "concept",
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 10,
+      "norm_label": "public key infrastructure (pki)",
+      "id": "concept_pki"
+    },
+    {
+      "label": "Electronic Signature (Elektronick\u00fd podpis)",
+      "file_type": "concept",
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 10,
+      "norm_label": "electronic signature (elektronicky podpis)",
+      "id": "concept_electronic_signature"
+    },
+    {
+      "label": "Ji\u0159\u00ed Ml\u010dou\u0161ek",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "jiri mlcousek",
+      "id": "concept_jirik_mlcousek"
+    },
+    {
+      "label": "Football Career",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 1,
+      "norm_label": "football career",
+      "id": "concept_football_career"
     }
   ],
   "links": [
@@ -1329,9 +2039,9 @@
       "source_file": ".claude/settings.local.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_settings_local",
-      "target": "claude_settings_local_permissions",
-      "confidence_score": 1.0
+      "target": "claude_settings_local_permissions"
     },
     {
       "relation": "contains",
@@ -1339,9 +2049,9 @@
       "source_file": ".claude/settings.local.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "claude_settings_local_permissions",
-      "target": "claude_settings_local_permissions_allow",
-      "confidence_score": 1.0
+      "target": "claude_settings_local_permissions_allow"
     },
     {
       "relation": "contains",
@@ -1349,9 +2059,9 @@
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_author",
-      "confidence_score": 1.0
+      "target": "package_author"
     },
     {
       "relation": "contains",
@@ -1359,9 +2069,9 @@
       "source_file": "package.json",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_description",
-      "confidence_score": 1.0
+      "target": "package_description"
     },
     {
       "relation": "contains",
@@ -1369,9 +2079,9 @@
       "source_file": "package.json",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_devdependencies",
-      "confidence_score": 1.0
+      "target": "package_devdependencies"
     },
     {
       "relation": "contains",
@@ -1379,9 +2089,9 @@
       "source_file": "package.json",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_keywords",
-      "confidence_score": 1.0
+      "target": "package_keywords"
     },
     {
       "relation": "contains",
@@ -1389,9 +2099,9 @@
       "source_file": "package.json",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_license",
-      "confidence_score": 1.0
+      "target": "package_license"
     },
     {
       "relation": "contains",
@@ -1399,9 +2109,9 @@
       "source_file": "package.json",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_main",
-      "confidence_score": 1.0
+      "target": "package_main"
     },
     {
       "relation": "contains",
@@ -1409,9 +2119,9 @@
       "source_file": "package.json",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_name",
-      "confidence_score": 1.0
+      "target": "package_name"
     },
     {
       "relation": "contains",
@@ -1419,9 +2129,9 @@
       "source_file": "package.json",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_scripts",
-      "confidence_score": 1.0
+      "target": "package_scripts"
     },
     {
       "relation": "contains",
@@ -1429,9 +2139,9 @@
       "source_file": "package.json",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package",
-      "target": "package_version",
-      "confidence_score": 1.0
+      "target": "package_version"
     },
     {
       "relation": "contains",
@@ -1439,9 +2149,9 @@
       "source_file": "package.json",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_build",
-      "confidence_score": 1.0
+      "target": "package_scripts_build"
     },
     {
       "relation": "contains",
@@ -1449,9 +2159,9 @@
       "source_file": "package.json",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_scripts",
-      "target": "package_scripts_start",
-      "confidence_score": 1.0
+      "target": "package_scripts_start"
     },
     {
       "relation": "contains",
@@ -1459,9 +2169,209 @@
       "source_file": "package.json",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "package_devdependencies",
-      "target": "package_devdependencies_live_server",
-      "confidence_score": 1.0
+      "target": "package_devdependencies_live_server"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "12",
+      "weight": 1.0,
+      "source": "scratch_add_favourites",
+      "target": "concept_favourite_field"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites",
+      "target": "scratch_add_favourites_addfavouritefield"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites",
+      "target": "scratch_add_favourites_fs"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "31",
+      "weight": 1.0,
+      "source": "scratch_add_favourites",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "30",
+      "weight": 1.0,
+      "source": "scratch_add_favourites",
+      "target": "scripts_videos"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "9",
+      "weight": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "concept_favourite_field"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts2_code"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts2_endidx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts2_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts2_startidx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts3_code"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts3_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts3_match"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts_code"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts_fs"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scratch_add_favourites_podcasts_match"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "2",
+      "weight": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scratch/append_css.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scratch_append_css",
+      "target": "scratch_append_css_fs"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scratch/append_css.js",
+      "source_location": "13",
+      "weight": 1.0,
+      "source": "scratch_append_css",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scratch/append_css.js",
+      "source_location": "13",
+      "weight": 1.0,
+      "source": "scratch_append_css",
+      "target": "scripts_videos"
     },
     {
       "relation": "references",
@@ -1489,9 +2399,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L684",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_buildinlinenavbar",
-      "confidence_score": 1.0
+      "target": "scripts_main_buildinlinenavbar"
     },
     {
       "relation": "contains",
@@ -1499,9 +2409,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L752",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_closealldropdowns",
-      "confidence_score": 1.0
+      "target": "scripts_main_closealldropdowns"
     },
     {
       "relation": "contains",
@@ -1509,9 +2419,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L603",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_combinepath",
-      "confidence_score": 1.0
+      "target": "scripts_main_combinepath"
     },
     {
       "relation": "contains",
@@ -1519,9 +2429,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L589",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_getsiterootprefix",
-      "confidence_score": 1.0
+      "target": "scripts_main_getsiterootprefix"
     },
     {
       "relation": "contains",
@@ -1529,9 +2439,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L717",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_loadfooter",
-      "confidence_score": 1.0
+      "target": "scripts_main_loadfooter"
     },
     {
       "relation": "contains",
@@ -1539,9 +2449,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L638",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_loadnavbar",
-      "confidence_score": 1.0
+      "target": "scripts_main_loadnavbar"
     },
     {
       "relation": "contains",
@@ -1549,9 +2459,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L612",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_normalizenavbarlinks",
-      "confidence_score": 1.0
+      "target": "scripts_main_normalizenavarlinks"
     },
     {
       "relation": "contains",
@@ -1559,9 +2469,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L462",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_setlanguage",
-      "confidence_score": 1.0
+      "target": "scripts_main_setlanguage"
     },
     {
       "relation": "contains",
@@ -1569,9 +2479,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L760",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_setuphamburger",
-      "confidence_score": 1.0
+      "target": "scripts_main_setuphamburger"
     },
     {
       "relation": "contains",
@@ -1579,9 +2489,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L496",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_setuplanguageswitcher",
-      "confidence_score": 1.0
+      "target": "scripts_main_setuplanguageswitcher"
     },
     {
       "relation": "contains",
@@ -1589,9 +2499,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L801",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main",
-      "target": "scripts_main_setupmediadropdown",
-      "confidence_score": 1.0
+      "target": "scripts_main_setupmediadropdown"
     },
     {
       "relation": "references",
@@ -1620,9 +2530,9 @@
       "source_file": "scripts/main.js",
       "source_location": "L749",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_main_loadfooter",
-      "target": "scripts_main_setlanguage",
-      "confidence_score": 1.0
+      "target": "scripts_main_setlanguage"
     },
     {
       "relation": "calls",
@@ -1682,8 +2592,9 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/main.js",
-      "source_location": "line 616",
+      "source_location": "L616",
       "weight": 1.0,
+      "context": "call",
       "source": "scripts_main_normalizenavarlinks",
       "target": "scripts_main_getsiterootprefix"
     },
@@ -1692,22 +2603,11 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/main.js",
-      "source_location": "L616",
-      "weight": 1.0,
-      "source": "scripts_main_normalizenavbarlinks",
-      "target": "scripts_main_getsiterootprefix",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
       "source_location": "L618",
       "weight": 1.0,
-      "source": "scripts_main_normalizenavbarlinks",
-      "target": "scripts_main_combinepath",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "scripts_main_normalizenavarlinks",
+      "target": "scripts_main_combinepath"
     },
     {
       "relation": "references",
@@ -1761,6 +2661,46 @@
       "target": "scripts_main_setuphamburger"
     },
     {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/main.js",
+      "source_location": "line 555",
+      "weight": 1.0,
+      "source": "scripts_main_applylanguageafternavbar",
+      "target": "scripts_main_setupmediadropdown"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "41",
+      "weight": 1.0,
+      "source": "claude_md_arch_pattern",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "36",
+      "weight": 1.0,
+      "source": "claude_md_i18n_concept",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_podcasts"
+    },
+    {
       "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
@@ -1771,180 +2711,240 @@
       "target": "scripts_podcasts"
     },
     {
-      "relation": "contains",
+      "relation": "references",
       "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L367",
+      "confidence_score": 1.0,
+      "source_file": "pages/podcasts.html",
+      "source_location": "58",
       "weight": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_applyfiltersandsort",
-      "confidence_score": 1.0
+      "source": "pages_podcasts_html",
+      "target": "scripts_podcasts"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L529",
+      "source_location": "L2294",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_applyuniformheight",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_applyfiltersandsort"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L361",
+      "source_location": "L2451",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_collectallshows",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_applyuniformheight"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L355",
+      "source_location": "L2288",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_collectalltags",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_collectallshows"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L568",
+      "source_location": "L2282",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_escapehtml",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_collectalltags"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L349",
+      "source_location": "L2490",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_groupbydatedescending",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_escapehtml"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L6",
+      "source_location": "L2276",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_podcast_episodes",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_groupbydatedescending"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_podcast_episodes"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L462",
+      "source_location": "L2390",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_rendercard",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_rendercard"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L398",
+      "source_location": "L2326",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_renderepisodes",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_renderepisodes"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L585",
+      "source_location": "L2507",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_setupfilters",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_setupfilters"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L578",
+      "source_location": "L2500",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts",
-      "target": "scripts_podcasts_updatecount",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_updatecount"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2276",
+      "weight": 0.7,
+      "source": "scripts_podcasts_groupbydatedescending",
+      "target": "scripts_videos_groupbydatedescending"
     },
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "EXTRACTED",
+      "confidence": "INFERRED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L412",
+      "source_location": "2326",
       "weight": 1.0,
+      "confidence_score": 0.95,
       "source": "scripts_podcasts_renderepisodes",
-      "target": "scripts_podcasts_groupbydatedescending",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_groupbydatedescending"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L603",
+      "source_location": "L2525",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts_setupfilters",
-      "target": "scripts_podcasts_collectalltags",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_collectalltags"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L594",
+      "source_location": "L2516",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts_setupfilters",
-      "target": "scripts_podcasts_collectallshows",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_collectallshows"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L409",
+      "source_location": "L2337",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts_renderepisodes",
+      "target": "scripts_podcasts_applyfiltersandsort"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2326",
       "weight": 1.0,
       "source": "scripts_podcasts_renderepisodes",
-      "target": "scripts_podcasts_applyfiltersandsort",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_rendercard"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L422",
+      "source_location": "L2350",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts_renderepisodes",
-      "target": "scripts_podcasts_updatecount",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_updatecount"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/podcasts.js",
-      "source_location": "L514",
+      "source_location": "L2436",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_podcasts_rendercard",
-      "target": "scripts_podcasts_escapehtml",
-      "confidence_score": 1.0
+      "target": "scripts_podcasts_escapehtml"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2390",
+      "weight": 0.7,
+      "source": "scripts_podcasts_rendercard",
+      "target": "scripts_videos_rendercard"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2507",
+      "weight": 1.0,
+      "source": "scripts_podcasts_setupfilters",
+      "target": "concept_favourite_field"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_posts"
     },
     {
       "relation": "references",
@@ -1972,9 +2972,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts",
-      "target": "scripts_posts_blog_posts",
-      "confidence_score": 1.0
+      "target": "scripts_posts_blog_posts"
     },
     {
       "relation": "contains",
@@ -1982,9 +2982,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts",
-      "target": "scripts_posts_cardhtml",
-      "confidence_score": 1.0
+      "target": "scripts_posts_cardhtml"
     },
     {
       "relation": "contains",
@@ -1992,9 +2992,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts",
-      "target": "scripts_posts_category_map",
-      "confidence_score": 1.0
+      "target": "scripts_posts_category_map"
     },
     {
       "relation": "contains",
@@ -2002,9 +3002,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts",
-      "target": "scripts_posts_closepost",
-      "confidence_score": 1.0
+      "target": "scripts_posts_closepost"
     },
     {
       "relation": "contains",
@@ -2012,9 +3012,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts",
-      "target": "scripts_posts_getlang",
-      "confidence_score": 1.0
+      "target": "scripts_posts_getlang"
     },
     {
       "relation": "contains",
@@ -2022,9 +3022,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts",
-      "target": "scripts_posts_ishomepage",
-      "confidence_score": 1.0
+      "target": "scripts_posts_ishomepage"
     },
     {
       "relation": "contains",
@@ -2032,9 +3032,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts",
-      "target": "scripts_posts_openpost",
-      "confidence_score": 1.0
+      "target": "scripts_posts_openpost"
     },
     {
       "relation": "contains",
@@ -2042,9 +3042,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L207",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts",
-      "target": "scripts_posts_renderhomelatest",
-      "confidence_score": 1.0
+      "target": "scripts_posts_renderhomelatest"
     },
     {
       "relation": "contains",
@@ -2052,9 +3052,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts",
-      "target": "scripts_posts_renderposts",
-      "confidence_score": 1.0
+      "target": "scripts_posts_renderposts"
     },
     {
       "relation": "calls",
@@ -2063,9 +3063,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L177",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts_openpost",
-      "target": "scripts_posts_getlang",
-      "confidence_score": 1.0
+      "target": "scripts_posts_getlang"
     },
     {
       "relation": "calls",
@@ -2074,9 +3074,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L210",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts_renderhomelatest",
-      "target": "scripts_posts_getlang",
-      "confidence_score": 1.0
+      "target": "scripts_posts_getlang"
     },
     {
       "relation": "calls",
@@ -2085,9 +3085,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L130",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts_renderposts",
-      "target": "scripts_posts_getlang",
-      "confidence_score": 1.0
+      "target": "scripts_posts_getlang"
     },
     {
       "relation": "references",
@@ -2116,9 +3116,9 @@
       "source_file": "scripts/posts.js",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_posts_cardhtml",
-      "target": "scripts_posts_ishomepage",
-      "confidence_score": 1.0
+      "target": "scripts_posts_ishomepage"
     },
     {
       "relation": "calls",
@@ -2171,6 +3171,26 @@
       "target": "pages_index"
     },
     {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/sports.js",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "concept_football_career",
+      "target": "scripts_sports"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_sports"
+    },
+    {
       "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
@@ -2196,9 +3216,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L301",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sports",
-      "target": "scripts_sports_closemodal",
-      "confidence_score": 1.0
+      "target": "scripts_sports_closemodal"
     },
     {
       "relation": "contains",
@@ -2206,9 +3226,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L254",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sports",
-      "target": "scripts_sports_openmodal",
-      "confidence_score": 1.0
+      "target": "scripts_sports_openmodal"
     },
     {
       "relation": "contains",
@@ -2216,9 +3236,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sports",
-      "target": "scripts_sports_races",
-      "confidence_score": 1.0
+      "target": "scripts_sports_races"
     },
     {
       "relation": "contains",
@@ -2226,9 +3246,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L234",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sports",
-      "target": "scripts_sports_renderracetable",
-      "confidence_score": 1.0
+      "target": "scripts_sports_renderracetable"
     },
     {
       "relation": "contains",
@@ -2236,9 +3256,9 @@
       "source_file": "scripts/sports.js",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sports",
-      "target": "scripts_sports_rendertrainingstats",
-      "confidence_score": 1.0
+      "target": "scripts_sports_rendertrainingstats"
     },
     {
       "relation": "contains",
@@ -2246,9 +3266,159 @@
       "source_file": "scripts/sports.js",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_sports",
-      "target": "scripts_sports_training_stats",
-      "confidence_score": 1.0
+      "target": "scripts_sports_training_stats"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=b7-2025]",
+      "weight": 1.0,
+      "source": "b72025_img_5622",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=b7-2025]",
+      "weight": 1.0,
+      "source": "b72025_img_5624",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=b7-2025]",
+      "weight": 0.9,
+      "source": "b72025_img_8080",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=jested24-2026]",
+      "weight": 1.0,
+      "source": "jestedwinter242026_321a6841",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=jested24-2026]",
+      "weight": 1.0,
+      "source": "jestedwinter242026_jested_24_winter_2026-96",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=kosir-2026]",
+      "weight": 1.0,
+      "source": "kosir2026_img_1317",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=lh24-2026]",
+      "weight": 1.0,
+      "source": "lh242026_0049_img_9617_1",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=lh24-2026]",
+      "weight": 1.0,
+      "source": "lh242026_55073242584_83b7d721b5_o_1",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=memorial-2026]",
+      "weight": 1.0,
+      "source": "olomoucmarathon2026_img_8773",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=memorial-2026]",
+      "weight": 1.0,
+      "source": "olomoucmarathon2026_img_8776",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=olomouc-2025]",
+      "weight": 1.0,
+      "source": "olomoucmaraton2025_74a875bc-16b0-4030-af00-610e0c66fdae",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=prague-2025]",
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6112",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=prague-2025]",
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6124",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=prague-2025]",
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6169",
+      "target": "scripts_sports_races"
     },
     {
       "relation": "references",
@@ -2285,6 +3455,36 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=zlin-2026]",
+      "weight": 1.0,
+      "source": "zlinhalf2026__mtk_0077",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=zlin-2026]",
+      "weight": 1.0,
+      "source": "zlinhalf2026__mtk_2364",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=zlin-2026]",
+      "weight": 1.0,
+      "source": "zlinhalf2026_lil_7023",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
       "source_location": "line 205",
       "weight": 1.0,
       "source": "scripts_sports_rendertrainingstats",
@@ -2301,24 +3501,14 @@
       "target": "scripts_sports_openmodal"
     },
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L67",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
       "weight": 1.0,
-      "source": "scripts_update_strava",
-      "target": "scripts_update_strava_computestats",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L97",
-      "weight": 1.0,
-      "source": "scripts_update_strava",
-      "target": "scripts_update_strava_computeweekly",
-      "confidence_score": 1.0
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_update_strava"
     },
     {
       "relation": "contains",
@@ -2326,19 +3516,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_strava",
-      "target": "scripts_update_strava_dir",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L59",
-      "weight": 1.0,
-      "source": "scripts_update_strava",
-      "target": "scripts_update_strava_fetchactivities",
-      "confidence_score": 1.0
+      "target": "scripts_update_strava_dir"
     },
     {
       "relation": "contains",
@@ -2346,9 +3526,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_strava",
-      "target": "scripts_update_strava_fmtelev",
-      "confidence_score": 1.0
+      "target": "scripts_update_strava_fmtelev"
     },
     {
       "relation": "contains",
@@ -2356,9 +3536,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_strava",
-      "target": "scripts_update_strava_fmtkm",
-      "confidence_score": 1.0
+      "target": "scripts_update_strava_fmtkm"
     },
     {
       "relation": "contains",
@@ -2366,19 +3546,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_strava",
-      "target": "scripts_update_strava_fmtmonth",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L43",
-      "weight": 1.0,
-      "source": "scripts_update_strava",
-      "target": "scripts_update_strava_getaccesstoken",
-      "confidence_score": 1.0
+      "target": "scripts_update_strava_fmtmonth"
     },
     {
       "relation": "contains",
@@ -2386,9 +3556,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_strava",
-      "target": "scripts_update_strava_loadenv",
-      "confidence_score": 1.0
+      "target": "scripts_update_strava_loadenv"
     },
     {
       "relation": "contains",
@@ -2396,29 +3566,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L171",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_strava",
-      "target": "scripts_update_strava_now",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L160",
-      "weight": 1.0,
-      "source": "scripts_update_strava",
-      "target": "scripts_update_strava_patchhtml",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "L132",
-      "weight": 1.0,
-      "source": "scripts_update_strava",
-      "target": "scripts_update_strava_patchsportsjs",
-      "confidence_score": 1.0
+      "target": "scripts_update_strava_now"
     },
     {
       "relation": "contains",
@@ -2426,9 +3576,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_strava",
-      "target": "scripts_update_strava_root",
-      "confidence_score": 1.0
+      "target": "scripts_update_strava_root"
     },
     {
       "relation": "contains",
@@ -2436,9 +3586,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_strava",
-      "target": "scripts_update_strava_stats",
-      "confidence_score": 1.0
+      "target": "scripts_update_strava_stats"
     },
     {
       "relation": "contains",
@@ -2446,9 +3596,69 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L182",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_update_strava",
-      "target": "scripts_update_strava_weekly",
-      "confidence_score": 1.0
+      "target": "scripts_update_strava_weekly"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-strava.mjs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_update_strava",
+      "target": "scripts_updatestrava_computestats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-strava.mjs",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_update_strava",
+      "target": "scripts_updatestrava_computeweekly"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-strava.mjs",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_update_strava",
+      "target": "scripts_updatestrava_fetchactivities"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-strava.mjs",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_update_strava",
+      "target": "scripts_updatestrava_getaccesstoken"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-strava.mjs",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_update_strava",
+      "target": "scripts_updatestrava_patchhtml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/update-strava.mjs",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_update_strava",
+      "target": "scripts_updatestrava_patchsportsjs"
     },
     {
       "relation": "calls",
@@ -2457,9 +3667,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L141",
       "weight": 1.0,
-      "source": "scripts_update_strava_patchsportsjs",
-      "target": "scripts_update_strava_fmtkm",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "scripts_updatestrava_patchsportsjs",
+      "target": "scripts_update_strava_fmtkm"
     },
     {
       "relation": "calls",
@@ -2468,9 +3678,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L142",
       "weight": 1.0,
-      "source": "scripts_update_strava_patchsportsjs",
-      "target": "scripts_update_strava_fmtelev",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "scripts_updatestrava_patchsportsjs",
+      "target": "scripts_update_strava_fmtelev"
     },
     {
       "relation": "calls",
@@ -2479,9 +3689,9 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L165",
       "weight": 1.0,
-      "source": "scripts_update_strava_patchhtml",
-      "target": "scripts_update_strava_fmtmonth",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "scripts_updatestrava_patchhtml",
+      "target": "scripts_update_strava_fmtmonth"
     },
     {
       "relation": "calls",
@@ -2490,9 +3700,39 @@
       "source_file": "scripts/update-strava.mjs",
       "source_location": "L139",
       "weight": 1.0,
-      "source": "scripts_update_strava_patchsportsjs",
-      "target": "scripts_update_strava_fmtmonth",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "scripts_updatestrava_patchsportsjs",
+      "target": "scripts_update_strava_fmtmonth"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "41",
+      "weight": 1.0,
+      "source": "claude_md_arch_pattern",
+      "target": "scripts_videos"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "36",
+      "weight": 1.0,
+      "source": "claude_md_i18n_concept",
+      "target": "scripts_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_videos"
     },
     {
       "relation": "references",
@@ -2502,6 +3742,16 @@
       "source_location": null,
       "weight": 1.0,
       "source": "pages_videos",
+      "target": "scripts_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pages/videos.html",
+      "source_location": "56",
+      "weight": 1.0,
+      "source": "pages_videos_html",
       "target": "scripts_videos"
     },
     {
@@ -2518,101 +3768,121 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L70",
+      "source_location": "L1384",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_applyfiltersandsort",
-      "confidence_score": 1.0
+      "target": "scripts_videos_applyfiltersandsort"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L209",
+      "source_location": "L1514",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_applyuniformheight",
-      "confidence_score": 1.0
+      "target": "scripts_videos_applyuniformheight"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L64",
+      "source_location": "L1378",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_collectalltags",
-      "confidence_score": 1.0
+      "target": "scripts_videos_collectallshows"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L248",
+      "source_location": "L1372",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_escapehtml",
-      "confidence_score": 1.0
+      "target": "scripts_videos_collectalltags"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L58",
+      "source_location": "L1553",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_groupbydatedescending",
-      "confidence_score": 1.0
+      "target": "scripts_videos_escapehtml"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L160",
+      "source_location": "L1366",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_rendercard",
-      "confidence_score": 1.0
+      "target": "scripts_videos_groupbydatedescending"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L97",
+      "source_location": "L1468",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_rendervideos",
-      "confidence_score": 1.0
+      "target": "scripts_videos_rendercard"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L265",
+      "source_location": "L1405",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_setupfilters",
-      "confidence_score": 1.0
+      "target": "scripts_videos_rendervideos"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L258",
+      "source_location": "L1570",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_updatecount",
-      "confidence_score": 1.0
+      "target": "scripts_videos_setupfilters"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L5",
+      "source_location": "L1563",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos",
-      "target": "scripts_videos_videos",
-      "confidence_score": 1.0
+      "target": "scripts_videos_updatecount"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_videos_videos"
     },
     {
       "relation": "references",
@@ -2637,31 +3907,42 @@
     {
       "relation": "calls",
       "context": "call",
-      "confidence": "EXTRACTED",
+      "confidence": "INFERRED",
       "source_file": "scripts/videos.js",
-      "source_location": "L110",
+      "source_location": "1405",
       "weight": 1.0,
+      "confidence_score": 0.95,
       "source": "scripts_videos_rendervideos",
-      "target": "scripts_videos_groupbydatedescending",
-      "confidence_score": 1.0
+      "target": "scripts_videos_groupbydatedescending"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L274",
+      "source_location": "L1588",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos_setupfilters",
-      "target": "scripts_videos_collectalltags",
-      "confidence_score": 1.0
+      "target": "scripts_videos_collectalltags"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "line 107",
+      "source_location": "L1579",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos_setupfilters",
+      "target": "scripts_videos_collectallshows"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1415",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "scripts_videos_rendervideos",
@@ -2669,10 +3950,10 @@
     },
     {
       "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
       "source_file": "scripts/videos.js",
-      "source_location": "line 113",
+      "source_location": "1405",
       "weight": 1.0,
       "source": "scripts_videos_rendervideos",
       "target": "scripts_videos_rendercard"
@@ -2682,11 +3963,11 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L120",
+      "source_location": "L1428",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos_rendervideos",
-      "target": "scripts_videos_updatecount",
-      "confidence_score": 1.0
+      "target": "scripts_videos_updatecount"
     },
     {
       "relation": "calls",
@@ -2703,11 +3984,191 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
-      "source_location": "L195",
+      "source_location": "L1500",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "scripts_videos_rendercard",
-      "target": "scripts_videos_escapehtml",
-      "confidence_score": 1.0
+      "target": "scripts_videos_escapehtml"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/videos.js",
+      "source_location": "1570",
+      "weight": 1.0,
+      "source": "scripts_videos_setupfilters",
+      "target": "concept_favourite_field"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude",
+      "target": "claude_architecture"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude",
+      "target": "claude_development"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_development",
+      "target": "claude_strava_data_refresh"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture",
+      "target": "claude_asset_paths"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture",
+      "target": "claude_component_injection"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture",
+      "target": "claude_feature_scripts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture",
+      "target": "claude_i18n_system"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CLAUDE.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_architecture",
+      "target": "claude_path_resolution"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "readme"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme",
+      "target": "readme_personal_webpage_ji\u0159\u00ed_ml\u010dou\u0161ek"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_personal_webpage_ji\u0159\u00ed_ml\u010dou\u0161ek",
+      "target": "readme_deployment"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_personal_webpage_ji\u0159\u00ed_ml\u010dou\u0161ek",
+      "target": "readme_features"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_personal_webpage_ji\u0159\u00ed_ml\u010dou\u0161ek",
+      "target": "readme_getting_started"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_personal_webpage_ji\u0159\u00ed_ml\u010dou\u0161ek",
+      "target": "readme_updating_content"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_getting_started",
+      "target": "readme_install_dependencies"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_getting_started",
+      "target": "readme_prerequisites"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_getting_started",
+      "target": "readme_run_a_local_dev_server"
     },
     {
       "relation": "references",
@@ -2730,16 +4191,6 @@
       "target": "scripts_main_normalizenavarlinks"
     },
     {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 555",
-      "weight": 1.0,
-      "source": "scripts_main_applylanguageafternavbar",
-      "target": "scripts_main_setupmediaddropdown"
-    },
-    {
       "relation": "implements",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
@@ -2750,6 +4201,16 @@
       "target": "concept_i18n"
     },
     {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_podcasts_episodes"
+    },
+    {
       "relation": "semantically_similar_to",
       "confidence": "INFERRED",
       "confidence_score": 0.65,
@@ -2758,6 +4219,46 @@
       "weight": 0.65,
       "source": "scripts_podcasts_episodes",
       "target": "concept_i18n"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/posts.js",
+      "source_location": "BLOG_POSTS[id=masters-done]",
+      "weight": 0.95,
+      "source": "mastersdone_img_9011",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/posts.js",
+      "source_location": "BLOG_POSTS[id=svoc-2026]",
+      "weight": 0.95,
+      "source": "svoc_img_8964",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_sports_trainingstats"
     },
     {
       "relation": "shares_data_with",
@@ -2838,57 +4339,698 @@
       "weight": 1.0,
       "source": "pages_index",
       "target": "components_navbar"
-    }
-  ],
-  "hyperedges": [
+    },
     {
-      "id": "language_system",
-      "label": "Trilingual Language System (translations + setLanguage + languageChanged event)",
-      "nodes": [
-        "scripts_main_translations",
-        "scripts_main_setlanguage",
-        "concept_languagechanged_event",
-        "scripts_posts",
-        "scripts_sports",
-        "scripts_videos"
-      ],
-      "relation": "implement",
+      "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.95,
-      "source_file": "scripts/main.js"
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "root_index"
     },
     {
-      "id": "strava_pipeline",
-      "label": "Strava Data Pipeline (API fetch \u2192 computeStats \u2192 patchSportsJs \u2192 sports.html)",
-      "nodes": [
-        "scripts_updatestrava_getaccesstoken",
-        "scripts_updatestrava_fetchactivities",
-        "scripts_updatestrava_computestats",
-        "scripts_updatestrava_patchsportsjs",
-        "scripts_sports_trainingstats",
-        "pages_sports"
-      ],
-      "relation": "participate_in",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/update-strava.mjs"
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "pages_about"
     },
     {
-      "id": "navbar_injection_lifecycle",
-      "label": "Navbar Injection Lifecycle (loadNavbar \u2192 fetch \u2192 applyLanguageAfterNavbar \u2192 normalizeNavbarLinks)",
-      "nodes": [
-        "scripts_main_loadnavbar",
-        "components_navbar",
-        "scripts_main_applylanguageafternavbar",
-        "scripts_main_normalizenavarlinks",
-        "scripts_main_setupmediaddropdown",
-        "scripts_main_setuphamburger"
-      ],
-      "relation": "participate_in",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/1737442551739.jpg",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "images_1737442551739",
+      "target": "pages_about"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "pages_blog"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "pages_books"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "pages_index"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "pages_podcasts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "pages_sports"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "pages_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "concept_strava_integration"
+    },
+    {
+      "relation": "implements",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "scripts/main.js"
+      "source_file": "pages/podcasts.html",
+      "source_location": "23",
+      "weight": 1.0,
+      "source": "pages_podcasts_html",
+      "target": "concept_media_filter_ui"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pages/videos.html",
+      "source_location": "23",
+      "weight": 1.0,
+      "source": "pages_videos_html",
+      "target": "concept_media_filter_ui"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/1737442551739.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "images_1737442551739",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "images/1737442551739.jpg",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "images_1737442551739",
+      "target": "images_img_6169"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/IMG_6169.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "images_img_6169",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "weight": 0.2,
+      "source": "images_pki_course",
+      "target": "images_img_6169"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "images_pki_course",
+      "target": "concept_electronic_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "images_pki_course",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "images_pki_course",
+      "target": "concept_pki"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/Posts/MastersDone/IMG_9011.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mastersdone_img_9011",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/Posts/MastersDone/IMG_9011.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "mastersdone_img_9011",
+      "target": "concept_masters_graduation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": null,
+      "source_location": null,
+      "weight": 0.75,
+      "source": "mastersdone_img_9011",
+      "target": "svoc_img_8964"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/Posts/SVOC/IMG_8964.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "svoc_img_8964",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/Posts/SVOC/IMG_8964.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "svoc_img_8964",
+      "target": "concept_svoc"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "concept_masters_graduation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": null,
+      "source_location": null,
+      "weight": 0.65,
+      "source": "concept_masters_graduation",
+      "target": "concept_svoc"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "concept_svoc"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/B72025/IMG_5622.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "b72025_img_5622",
+      "target": "b72025_img_5624"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/events/B72025/IMG_5622.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "b72025_img_5622",
+      "target": "b72025_img_8080"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/B72025/IMG_5622.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "b72025_img_5622",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/events/B72025/IMG_5624.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "b72025_img_5624",
+      "target": "b72025_img_8080"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/B72025/IMG_5624.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "b72025_img_5624",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/B72025/IMG_8080.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "b72025_img_8080",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/Kosir2026/IMG_1317.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "kosir2026_img_1317",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/Kosir2026/IMG_1317.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "kosir2026_img_1317",
+      "target": "concept_kosir2026_event"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/LH242026/0049_IMG_9617 (1).jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lh242026_0049_img_9617_1",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/LH242026/0049_IMG_9617 (1).jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lh242026_0049_img_9617_1",
+      "target": "lh242026_55073242584_83b7d721b5_o_1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/LH242026/55073242584_83b7d721b5_o (1).jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "lh242026_55073242584_83b7d721b5_o_1",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/OlomoucMarathon2026/IMG_8773.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "olomoucmarathon2026_img_8773",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/OlomoucMarathon2026/IMG_8773.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "olomoucmarathon2026_img_8773",
+      "target": "olomoucmarathon2026_img_8776"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/OlomoucMarathon2026/IMG_8776.PNG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "olomoucmarathon2026_img_8776",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/OlomoucMaraton2025/74a875bc-16b0-4030-af00-610e0c66fdae.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "olomoucmaraton2025_74a875bc-16b0-4030-af00-610e0c66fdae",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/PragueMaraton2025/IMG_6112.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6112",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/PragueMaraton2025/IMG_6112.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6112",
+      "target": "pragueMaraton2025_img_6124"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/PragueMaraton2025/IMG_6112.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6112",
+      "target": "pragueMaraton2025_img_6169"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/PragueMaraton2025/IMG_6124.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6124",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/PragueMaraton2025/IMG_6124.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6124",
+      "target": "pragueMaraton2025_img_6169"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/PragueMaraton2025/IMG_6169.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6169",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/jestedWinter242026/321A6841.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "jestedwinter242026_321a6841",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/jestedWinter242026/321A6841.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "jestedwinter242026_321a6841",
+      "target": "jestedwinter242026_jested_24_winter_2026-96"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/jestedWinter242026/Jested 24 winter 2026-96.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "jestedwinter242026_jested_24_winter_2026-96",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/zlinHalf2026/LIL_7023.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "zlinhalf2026_lil_7023",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/zlinHalf2026/LIL_7023.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "zlinhalf2026_lil_7023",
+      "target": "zlinhalf2026__mtk_0077"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/zlinHalf2026/LIL_7023.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "zlinhalf2026_lil_7023",
+      "target": "zlinhalf2026__mtk_2364"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/zlinHalf2026/_MTK_0077.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "zlinhalf2026__mtk_0077",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/zlinHalf2026/_MTK_0077.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "zlinhalf2026__mtk_0077",
+      "target": "zlinhalf2026__mtk_2364"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/zlinHalf2026/_MTK_2364.JPG",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "zlinhalf2026__mtk_2364",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/football/FB_IMG_1622893629074_Original.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "football_fb_img_1622893629074_original",
+      "target": "concept_football_career"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/football/FB_IMG_1622893629074_Original.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "football_fb_img_1622893629074_original",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/football/FB_IMG_1622893629074_Original.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "football_fb_img_1622893629074_original",
+      "target": "football_img_5420"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/football/FB_IMG_1622893629074_Original.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "football_fb_img_1622893629074_original",
+      "target": "football_img_7459"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/football/IMG_5420.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "football_img_5420",
+      "target": "concept_football_career"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/football/IMG_5420.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "football_img_5420",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/football/IMG_5420.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "football_img_5420",
+      "target": "football_img_7459"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/football/IMG_7459.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "football_img_7459",
+      "target": "concept_football_career"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/football/IMG_7459.jpg",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "football_img_7459",
+      "target": "concept_jirik_mlcousek"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "concept_pki"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_pki",
+      "target": "concept_electronic_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "concept_football_career"
     }
   ],
-  "built_at_commit": "a2c33fd6236af062d4e249e18a9f731b01de2611"
+  "hyperedges": [],
+  "built_at_commit": "fc69836bee904c6c35939bc0bdc4116eb43c8f3b"
 }

@@ -1491,7 +1491,7 @@ function renderCard(ep){
 
   const descriptionHtml = ep.description ? `<p class="video__desc">${ep.description}</p>` : '';
   const tagsHtml = Array.isArray(ep.tags) && ep.tags.length
-    ? `<ul class="video-tags">${ep.tags.map(tag => `<li>${escapeHtml(tag)}</li>`).join('')}</ul>`
+    ? `<ul class="video-tags">${ep.tags.map(tag => `<li>${escapeHtml(translateTag(tag, lang))}</li>`).join('')}</ul>`
     : '';
 
   const favouriteStar = ep.favourite ? '<div class="favourite-star" title="Favourite">★</div>' : '';
@@ -1572,6 +1572,7 @@ function setupFilters(){
   const tagSelect = document.getElementById('video-tag');
   const showSelect = document.getElementById('video-show');
   const clearBtn = document.getElementById('video-clear');
+  const lang = localStorage.getItem('lang') || 'en';
   if(!bar) return;
 
   // populate show select from data
@@ -1588,7 +1589,7 @@ function setupFilters(){
     const tags = collectAllTags(VIDEOS);
     // keep existing 'all' option then append
     tags.forEach(t=>{
-      const opt = document.createElement('option'); opt.value = t; opt.textContent = t; tagSelect.appendChild(opt);
+      const opt = document.createElement('option'); opt.value = t; opt.textContent = translateTag(t, lang); tagSelect.appendChild(opt);
     });
     tagSelect.addEventListener('change', ()=> renderVideos({}));
   }

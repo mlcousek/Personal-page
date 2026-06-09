@@ -48,10 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
             'stat-marathons-label': 'Marathons',
             'stat-ultra-label': 'Ultra Events',
             'race-heading': 'Races',
+            'future-race-heading': 'Future Races',
             'th-event': 'Event',
+            'th-future-event': 'Event',
             'th-date': 'Date',
+            'th-future-date': 'Date',
             'th-time': 'Time',
+            'th-future-distance': 'Distance',
             'th-notes': 'Notes',
+            'th-future-link': 'Link',
             'career-heading': 'Football Background',
             'career-p-1': 'I played competitive football for 15 years, developing tactical awareness, speed endurance and team resilience.',
             'career-p-2': 'My highest competition level reached the Czech fourth tier, an environment that demanded structure, discipline and consistency.',
@@ -122,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'vf-in-progress': 'In Progress',
             'vf-finished': 'Finished',
             'vf-favorites': 'Favorites',
+            'vf-favourite': 'Favourites',
             'video-sort-label': 'Sort by',
             'vsort-date': 'Date (newest)',
             'vsort-channel': 'Channel (A–Z)',
@@ -133,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'podcast-page-title': 'Podcast Log',
             'podcast-note': 'Cover images and descriptions sourced from Spotify and other platforms when available.',
             'pf-all': 'All',
+            'pf-favourite': 'Favourites',
             'pf-spotify': 'Spotify',
             'pf-youtube': 'YouTube',
             'podcast-show-label': 'Show',
@@ -199,10 +206,15 @@ document.addEventListener('DOMContentLoaded', () => {
             'stat-marathons-label': 'Maratony',
             'stat-ultra-label': 'Ultra závody',
             'race-heading': 'Závody',
+            'future-race-heading': 'Plánované závody',
             'th-event': 'Závod',
+            'th-future-event': 'Závod',
             'th-date': 'Datum',
+            'th-future-date': 'Datum',
             'th-time': 'Čas',
-            'th-notes': 'Poznámka',
+            'th-future-distance': 'Vzdálenost',
+            'th-notes': 'Poznámky',
+            'th-future-link': 'Odkaz',
             'career-heading': 'Fotbalové pozadí',
             'career-p-1': 'Hrál jsem soutěžní fotbal 15 let a rozvíjel tak taktické vnímání, rychlostní vytrvalost a týmovou odolnost.',
             'career-p-2': 'Dosáhl jsem české čtvrté ligy, prostředí vyžadující strukturu, disciplínu a konzistenci.',
@@ -273,6 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'vf-in-progress': 'Rozkoukáno',
             'vf-finished': 'Dokoukaná',
             'vf-favorites': 'Oblíbená',
+            'vf-favourite': 'Oblíbené',
             'video-sort-label': 'Seřadit podle',
             'vsort-date': 'Datum (nejnovější)',
             'vsort-channel': 'Kanál (A–Z)',
@@ -284,6 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'podcast-page-title': 'Podcast deník',
             'podcast-note': 'Obrázky a popisy pořízeny ze Spotify a dalších platforem, pokud jsou dostupné.',
             'pf-all': 'Vše',
+            'pf-favourite': 'Oblíbené',
             'pf-spotify': 'Spotify',
             'pf-youtube': 'YouTube',
             'podcast-show-label': 'Pořad',
@@ -350,10 +364,15 @@ document.addEventListener('DOMContentLoaded', () => {
             'stat-marathons-label': 'Maratones',
             'stat-ultra-label': 'Eventos ultra',
             'race-heading': 'Carreras',
+            'future-race-heading': 'Carreras futuras',
             'th-event': 'Evento',
+            'th-future-event': 'Evento',
             'th-date': 'Fecha',
+            'th-future-date': 'Fecha',
             'th-time': 'Tiempo',
+            'th-future-distance': 'Distancia',
             'th-notes': 'Notas',
+            'th-future-link': 'Enlace',
             'career-heading': 'Antecedente futbolístico',
             'career-p-1': 'Jugué fútbol competitivo durante 15 años desarrollando percepción táctica, resistencia de velocidad y resiliencia en equipo.',
             'career-p-2': 'Mi nivel más alto fue la cuarta división checa, un entorno que exigía estructura, disciplina y constancia.',
@@ -424,6 +443,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'vf-in-progress': 'En progreso',
             'vf-finished': 'Terminados',
             'vf-favorites': 'Favoritos',
+            'vf-favourite': 'Favoritos',
             'video-sort-label': 'Ordenar por',
             'vsort-date': 'Fecha (más reciente)',
             'vsort-channel': 'Canal (A–Z)',
@@ -435,6 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'podcast-page-title': 'Registro de podcasts',
             'podcast-note': 'Imágenes y descripciones obtenidas de Spotify y otras plataformas cuando están disponibles.',
             'pf-all': 'Todos',
+            'pf-favourite': 'Favoritos',
             'pf-spotify': 'Spotify',
             'pf-youtube': 'YouTube',
             'podcast-show-label': 'Programa',
@@ -490,6 +511,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
         });
+
+        // Translate "Rozečteno" (datetime="0") on books page
+        const readingElements = document.querySelectorAll('time[datetime="0"]');
+        if (readingElements.length > 0) {
+            const readingText = { en: 'Reading', cs: 'Rozečteno', es: 'Leyendo' };
+            readingElements.forEach(el => el.textContent = readingText[lang] || readingText['en']);
+        }
+
         document.dispatchEvent(new CustomEvent('languageChanged', { detail: lang }));
     }
 

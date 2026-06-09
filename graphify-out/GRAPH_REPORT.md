@@ -1,106 +1,122 @@
-# Graph Report - .  (2026-06-08)
+# Graph Report - .  (2026-06-09)
 
 ## Corpus Check
-- Corpus is ~21,510 words - fits in a single context window. You may not need a graph.
+- 56 files · ~0 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 117 nodes · 149 edges · 15 communities (9 shown, 6 thin omitted)
-- Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 15 edges (avg confidence: 0.9)
-- Token cost: 12,000 input · 3,500 output
+- 182 nodes · 297 edges · 14 communities (10 shown, 4 thin omitted)
+- Extraction: 76% EXTRACTED · 24% INFERRED · 0% AMBIGUOUS · INFERRED: 70 edges (avg confidence: 0.91)
+- Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_i18n & Navbar Lifecycle|i18n & Navbar Lifecycle]]
-- [[_COMMUNITY_Strava Data Pipeline|Strava Data Pipeline]]
+- [[_COMMUNITY_i18n & Shared Components|i18n & Shared Components]]
+- [[_COMMUNITY_Podcasts & Favourites Feature|Podcasts & Favourites Feature]]
+- [[_COMMUNITY_Strava & Sports Integration|Strava & Sports Integration]]
+- [[_COMMUNITY_Videos Feature & CSS|Videos Feature & CSS]]
 - [[_COMMUNITY_Package & Project Config|Package & Project Config]]
-- [[_COMMUNITY_Podcasts Feature|Podcasts Feature]]
-- [[_COMMUNITY_Videos Feature|Videos Feature]]
 - [[_COMMUNITY_Blog & Posts|Blog & Posts]]
-- [[_COMMUNITY_Sports & Races|Sports & Races]]
-- [[_COMMUNITY_Navigation & Landing|Navigation & Landing]]
+- [[_COMMUNITY_Favourites Migration Scripts|Favourites Migration Scripts]]
+- [[_COMMUNITY_CLAUDE.md Architecture Docs|CLAUDE.md Architecture Docs]]
+- [[_COMMUNITY_README & Project Docs|README & Project Docs]]
+- [[_COMMUNITY_Sports Races & Modal UI|Sports Races & Modal UI]]
+- [[_COMMUNITY_PKI & Portrait Photos|PKI & Portrait Photos]]
+- [[_COMMUNITY_Academic Milestones|Academic Milestones]]
+- [[_COMMUNITY_B7 Trail Race 2025|B7 Trail Race 2025]]
 - [[_COMMUNITY_Claude Dev Settings|Claude Dev Settings]]
-- [[_COMMUNITY_Strava API Integration|Strava API Integration]]
-- [[_COMMUNITY_VS Code & Local Config|VS Code & Local Config]]
-- [[_COMMUNITY_Books Page|Books Page]]
-- [[_COMMUNITY_Root Package|Root Package]]
-- [[_COMMUNITY_Strava Updater Script|Strava Updater Script]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `renderVideos()` - 7 edges
-2. `setLanguage()` - 6 edges
-3. `getSiteRootPrefix()` - 5 edges
-4. `loadNavbar()` - 5 edges
-5. `applyLanguageAfterNavbar()` - 5 edges
-6. `loadFooter()` - 4 edges
-7. `renderEpisodes()` - 4 edges
-8. `getLang()` - 4 edges
-9. `renderPosts()` - 4 edges
-10. `cardHTML()` - 4 edges
+1. `RACES` - 22 edges
+2. `renderVideos()` - 7 edges
+3. `BLOG_POSTS array` - 7 edges
+4. `setLanguage()` - 6 edges
+5. `Architecture` - 6 edges
+6. `loadNavbar()` - 5 edges
+7. `renderEpisodes()` - 5 edges
+8. `setupFilters()` - 5 edges
+9. `Personal Webpage – Jiří Mlčoušek` - 5 edges
+10. `applyLanguageAfterNavbar()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `loadNavbar()` --references--> `navbar.html – Shared Navigation Component`  [EXTRACTED]
-  scripts/main.js → components/navbar.html
-- `loadFooter()` --references--> `footer.html – Shared Footer Component`  [EXTRACTED]
-  scripts/main.js → components/footer.html
-- `RACES` --semantically_similar_to--> `BLOG_POSTS array`  [INFERRED] [semantically similar]
-  scripts/sports.js → scripts/posts.js
-- `VS Code MCP Server Config (Spotify)` --references--> `Project Settings (Local Permissions)`  [INFERRED]
-  .vscode/mcp.json → .claude/settings.local.json
-- `PODCAST_EPISODES array` --semantically_similar_to--> `Trilingual i18n (EN/CS/ES) Pattern`  [INFERRED] [semantically similar]
-  scripts/podcasts.js → scripts/main.js
+- `Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem` --references--> `RACES`  [INFERRED]
+  images/events/B72025/IMG_8080.jpg → scripts/sports.js
+- `Runner with bib number 94 at Olomouc Maraton 2025` --references--> `RACES`  [EXTRACTED]
+  images/events/OlomoucMaraton2025/74a875bc-16b0-4030-af00-610e0c66fdae.JPG → scripts/sports.js
+- `Masters Graduation Celebration Photo` --references--> `BLOG_POSTS array`  [INFERRED]
+  images/Posts/MastersDone/IMG_9011.jpg → scripts/posts.js
+- `SVOC Award Ceremony - Jiří Mlčoušek Receiving Certificate` --references--> `BLOG_POSTS array`  [INFERRED]
+  images/Posts/SVOC/IMG_8964.JPG → scripts/posts.js
+- `patchHtml()` --references--> `sports.html – Sports Page`  [EXTRACTED]
+  scripts/update-strava.mjs → pages/sports.html
 
 ## Import Cycles
 - None detected.
 
-## Hyperedges (group relationships)
-- **Trilingual Language System (translations + setLanguage + languageChanged event)** — scripts_main_translations, scripts_main_setlanguage, concept_languagechanged_event, scripts_posts, scripts_sports, scripts_videos [INFERRED 0.95]
-- **Strava Data Pipeline (API fetch → computeStats → patchSportsJs → sports.html)** — scripts_updatestrava_getaccesstoken, scripts_updatestrava_fetchactivities, scripts_updatestrava_computestats, scripts_updatestrava_patchsportsjs, scripts_sports_trainingstats, pages_sports [EXTRACTED 1.00]
-- **Navbar Injection Lifecycle (loadNavbar → fetch → applyLanguageAfterNavbar → normalizeNavbarLinks)** — scripts_main_loadnavbar, components_navbar, scripts_main_applylanguageafternavbar, scripts_main_normalizenavarlinks, scripts_main_setupmediaddropdown, scripts_main_setuphamburger [EXTRACTED 1.00]
+## Communities (14 total, 4 thin omitted)
 
-## Communities (15 total, 6 thin omitted)
+### Community 0 - "i18n & Shared Components"
+Cohesion: 0.09
+Nodes (28): Feature script pattern: data array -> filter/sort -> render -> DOM, i18n languageChanged event re-render pattern, favourite field on media items, Media filter UI (filter chips + controls), podcasts.html – Podcast Log Page, videos.html – Video Vault Page, fs, fs (+20 more)
 
-### Community 0 - "i18n & Navbar Lifecycle"
-Cohesion: 0.16
-Nodes (15): footer.html – Shared Footer Component, Trilingual i18n (EN/CS/ES) Pattern, languageChanged CustomEvent Bus, applyLanguageAfterNavbar(), buildInlineNavbar(), combinePath(), getSiteRootPrefix(), loadFooter() (+7 more)
+### Community 1 - "Podcasts & Favourites Feature"
+Cohesion: 0.13
+Nodes (33): Trail runner on rocky forest path - B7 2025 race, Trail runner with poles, race number 0916, rocky forest path - B7 2025 race, Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem, Football Career, Jiří Mlčoušek, Kosir 2026 Running Event, Football match action photo - player #6 in neon green kit dribbling ball, Football player portrait on pitch in black and yellow kit (+25 more)
 
-### Community 1 - "Strava Data Pipeline"
-Cohesion: 0.16
-Nodes (10): __dir, fmtElev(), fmtKm(), fmtMonth(), now, patchHtml(), patchSportsJs(), ROOT (+2 more)
+### Community 2 - "Strava & Sports Integration"
+Cohesion: 0.14
+Nodes (19): footer.html – Shared Footer Component, navbar.html – Shared Navigation Component, Trilingual i18n (EN/CS/ES) Pattern, languageChanged CustomEvent Bus, pages/index.html – Home Page, index.html – Root Redirect Page, README – Personal Webpage Documentation, applyLanguageAfterNavbar() (+11 more)
 
-### Community 2 - "Package & Project Config"
+### Community 3 - "Videos Feature & CSS"
+Cohesion: 0.14
+Nodes (16): Strava API Integration Pattern, renderTrainingStats(), TRAINING_STATS object, __dir, fmtElev(), fmtKm(), fmtMonth(), now (+8 more)
+
+### Community 4 - "Package & Project Config"
+Cohesion: 0.21
+Nodes (14): Masters Degree Completion, SVOC Academic Competition, Masters Graduation Celebration Photo, blog.html – Blog Page, BLOG_POSTS, BLOG_POSTS array, cardHTML(), CATEGORY_MAP (+6 more)
+
+### Community 5 - "Blog & Posts"
 Cohesion: 0.15
 Nodes (12): author, description, devDependencies, live-server, keywords, license, main, name (+4 more)
 
-### Community 3 - "Podcasts Feature"
-Cohesion: 0.23
-Nodes (11): podcasts.html – Podcast Log Page, applyFiltersAndSort(), collectAllShows(), collectAllTags(), escapeHtml(), groupByDateDescending(), PODCAST_EPISODES, renderCard() (+3 more)
+### Community 6 - "Favourites Migration Scripts"
+Cohesion: 0.18
+Nodes (10): code, endIdx, fs, startIdx, code, fs, match, code (+2 more)
 
-### Community 4 - "Videos Feature"
-Cohesion: 0.26
-Nodes (11): videos.html – Video Vault Page, PODCAST_EPISODES array, applyFiltersAndSort(), collectAllTags(), escapeHtml(), groupByDateDescending(), renderCard(), renderVideos() (+3 more)
+### Community 7 - "CLAUDE.md Architecture Docs"
+Cohesion: 0.22
+Nodes (8): Architecture, Asset paths, Component injection, Development, Feature scripts, i18n system, Path resolution, Strava data refresh
 
-### Community 5 - "Blog & Posts"
-Cohesion: 0.29
-Nodes (10): blog.html – Blog Page, BLOG_POSTS, BLOG_POSTS array, cardHTML(), CATEGORY_MAP, getLang(), isHomePage(), openPost() (+2 more)
+### Community 8 - "README & Project Docs"
+Cohesion: 0.22
+Nodes (8): 📦 Deployment, ✨ Features, 🚀 Getting started, Install dependencies, Personal Webpage – Jiří Mlčoušek, Prerequisites, Run a local dev server, 🛠️ Updating content
 
-### Community 6 - "Sports & Races"
-Cohesion: 0.21
-Nodes (7): sports.html – Sports Page, openModal(), RACES, renderRaceTable(), renderTrainingStats(), TRAINING_STATS, TRAINING_STATS object
+### Community 10 - "PKI & Portrait Photos"
+Cohesion: 1.00
+Nodes (3): Electronic Signature (Elektronický podpis), Public Key Infrastructure (PKI), PKI a elektronický podpis - course/document cover by Libor Dostálek, 2020
 
-### Community 7 - "Navigation & Landing"
-Cohesion: 0.33
-Nodes (5): navbar.html – Shared Navigation Component, about.html – About Page, pages/index.html – Home Page, index.html – Root Redirect Page, README – Personal Webpage Documentation
+## Ambiguous Edges - Review These
+- `Photo of man holding race finisher medal at outdoor running event` → `PKI a elektronický podpis - course/document cover by Libor Dostálek, 2020`  [AMBIGUOUS]
+  images/PKI_course.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **31 isolated node(s):** `allow`, `name`, `version`, `description`, `main` (+26 more)
+- **51 isolated node(s):** `allow`, `name`, `version`, `description`, `main` (+46 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `languageChanged CustomEvent Bus` connect `i18n & Navbar Lifecycle` to `Videos Feature`, `Blog & Posts`, `Sports & Races`?**
-  _High betweenness centrality (0.194) - this node is a cross-community bridge._
-- **Why does `navbar.html – Shared Navigation Component` connect `Navigation & Landing` to `i18n & Navbar Lifecycle`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+- **What is the exact relationship between `Photo of man holding race finisher medal at outdoor running event` and `PKI a elektronický podpis - course/document cover by Libor Dostálek, 2020`?**
+  _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
+- **Why does `languageChanged CustomEvent Bus` connect `Strava & Sports Integration` to `i18n & Shared Components`, `Podcasts & Favourites Feature`, `Package & Project Config`?**
+  _High betweenness centrality (0.092) - this node is a cross-community bridge._
+- **Are the 24 inferred relationships involving `Jiří Mlčoušek` (e.g. with `Football Career` and `Masters Degree Completion`) actually correct?**
+  _`Jiří Mlčoušek` has 24 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 3 inferred relationships involving `RACES` (e.g. with `Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem` and `Jiří Mlčoušek`) actually correct?**
+  _`RACES` has 3 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 2 inferred relationships involving `renderVideos()` (e.g. with `groupByDateDescending()` and `renderCard()`) actually correct?**
+  _`renderVideos()` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 4 inferred relationships involving `BLOG_POSTS array` (e.g. with `Jiří Mlčoušek` and `Masters Graduation Celebration Photo`) actually correct?**
+  _`BLOG_POSTS array` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `allow`, `name`, `version` to the rest of the system?**
-  _31 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _51 weakly-connected nodes found - possible documentation gaps or missing edges._

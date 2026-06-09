@@ -2427,7 +2427,7 @@ function renderCard(ep){
 
   const descriptionHtml = ep.description ? `<p class="podcast__desc">${ep.description}</p>` : '';
   const tagsHtml = Array.isArray(ep.tags) && ep.tags.length
-    ? `<ul class="podcast-tags">${ep.tags.map(tag => `<li>${escapeHtml(tag)}</li>`).join('')}</ul>`
+    ? `<ul class="podcast-tags">${ep.tags.map(tag => `<li>${escapeHtml(translateTag(tag, lang))}</li>`).join('')}</ul>`
     : '';
 
   const favouriteStar = ep.favourite ? '<div class="favourite-star" title="Favourite">★</div>' : '';
@@ -2509,6 +2509,7 @@ function setupFilters(){
   const tagSelect = document.getElementById('podcast-tag');
   const showSelect = document.getElementById('podcast-show');
   const clearBtn = document.getElementById('podcast-clear');
+  const lang = localStorage.getItem('lang') || 'en';
   if(!bar) return;
 
   // populate show select from data
@@ -2524,7 +2525,7 @@ function setupFilters(){
   if(tagSelect){
     const tags = collectAllTags(PODCAST_EPISODES);
     tags.forEach(t=>{
-      const opt = document.createElement('option'); opt.value = t; opt.textContent = t; tagSelect.appendChild(opt);
+      const opt = document.createElement('option'); opt.value = t; opt.textContent = translateTag(t, lang); tagSelect.appendChild(opt);
     });
     tagSelect.addEventListener('change', ()=> renderEpisodes({}));
   }

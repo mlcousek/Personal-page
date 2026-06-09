@@ -1,0 +1,1226 @@
+{
+  "nodes": [
+    {
+      "id": "scratch_add_favourites_script",
+      "label": "add_favourites.js",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scratch_add_favourites_podcasts_script",
+      "label": "add_favourites_podcasts.js",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scratch_add_favourites_podcasts2_script",
+      "label": "add_favourites_podcasts2.js",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scratch_add_favourites_podcasts3_script",
+      "label": "add_favourites_podcasts3.js",
+      "file_type": "code",
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scratch_append_css_script",
+      "label": "append_css.js",
+      "file_type": "code",
+      "source_file": "scratch/append_css.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_podcasts_file",
+      "label": "podcasts.js",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_podcasts_podcast_episodes",
+      "label": "PODCAST_EPISODES array",
+      "file_type": "concept",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_podcasts_renderepisodes",
+      "label": "renderEpisodes()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2326",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_podcasts_rendercard",
+      "label": "renderCard() - podcasts",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2390",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_podcasts_groupbydatedescending",
+      "label": "groupByDateDescending() - podcasts",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2276",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_podcasts_setupfilters",
+      "label": "setupFilters() - podcasts",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2507",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_videos_file",
+      "label": "videos.js",
+      "file_type": "code",
+      "source_file": "scripts/videos.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_videos_videos",
+      "label": "VIDEOS array",
+      "file_type": "concept",
+      "source_file": "scripts/videos.js",
+      "source_location": "5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_videos_rendervideos",
+      "label": "renderVideos()",
+      "file_type": "code",
+      "source_file": "scripts/videos.js",
+      "source_location": "1405",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_videos_rendercard",
+      "label": "renderCard() - videos",
+      "file_type": "code",
+      "source_file": "scripts/videos.js",
+      "source_location": "1468",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_videos_groupbydatedescending",
+      "label": "groupByDateDescending() - videos",
+      "file_type": "code",
+      "source_file": "scripts/videos.js",
+      "source_location": "1366",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "scripts_videos_setupfilters",
+      "label": "setupFilters() - videos",
+      "file_type": "code",
+      "source_file": "scripts/videos.js",
+      "source_location": "1570",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_md_file",
+      "label": "CLAUDE.md",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_md_arch_pattern",
+      "label": "Feature script pattern: data array -> filter/sort -> render -> DOM",
+      "file_type": "rationale",
+      "source_file": "CLAUDE.md",
+      "source_location": "41",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "claude_md_i18n_concept",
+      "label": "i18n languageChanged event re-render pattern",
+      "file_type": "concept",
+      "source_file": "CLAUDE.md",
+      "source_location": "36",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_podcasts_html",
+      "label": "podcasts.html",
+      "file_type": "document",
+      "source_file": "pages/podcasts.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pages_videos_html",
+      "label": "videos.html",
+      "file_type": "document",
+      "source_file": "pages/videos.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_favourite_field",
+      "label": "favourite field on media items",
+      "file_type": "concept",
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "12",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_media_filter_ui",
+      "label": "Media filter UI (filter chips + controls)",
+      "file_type": "concept",
+      "source_file": "pages/podcasts.html",
+      "source_location": "23",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_1737442551739",
+      "label": "Portrait photo of young man in formal attire (tuxedo with bow tie)",
+      "file_type": "image",
+      "source_file": "images/1737442551739.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_img_6169",
+      "label": "Photo of man holding race finisher medal at outdoor running event",
+      "file_type": "image",
+      "source_file": "images/IMG_6169.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_pki_course",
+      "label": "PKI a elektronický podpis - course/document cover by Libor Dostálek, 2020",
+      "file_type": "document",
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Libor Dostálek",
+      "contributor": null
+    },
+    {
+      "id": "mastersdone_img_9011",
+      "label": "Masters Graduation Celebration Photo",
+      "file_type": "image",
+      "source_file": "images/Posts/MastersDone/IMG_9011.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Jiří Mlčoušek",
+      "contributor": null
+    },
+    {
+      "id": "svoc_img_8964",
+      "label": "SVOC Award Ceremony - Jiří Mlčoušek Receiving Certificate",
+      "file_type": "image",
+      "source_file": "images/Posts/SVOC/IMG_8964.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Jiří Mlčoušek",
+      "contributor": null
+    },
+    {
+      "id": "concept_masters_graduation",
+      "label": "Masters Degree Completion",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_svoc",
+      "label": "SVOC Academic Competition",
+      "file_type": "concept",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "b72025_img_5622",
+      "label": "Trail runner on rocky forest path - B7 2025 race",
+      "file_type": "image",
+      "source_file": "images/events/B72025/IMG_5622.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "b72025_img_5624",
+      "label": "Trail runner with poles, race number 0916, rocky forest path - B7 2025 race",
+      "file_type": "image",
+      "source_file": "images/events/B72025/IMG_5624.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "b72025_img_8080",
+      "label": "Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem",
+      "file_type": "image",
+      "source_file": "images/events/B72025/IMG_8080.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "kosir2026_img_1317",
+      "label": "Runner with bib number 99 at Kosir 2026 winter race event",
+      "file_type": "image",
+      "source_file": "images/events/Kosir2026/IMG_1317.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_kosir2026_event",
+      "label": "Kosir 2026 Running Event",
+      "file_type": "concept",
+      "source_file": "images/events/Kosir2026/IMG_1317.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lh242026_0049_img_9617_1",
+      "label": "Trail runner in snowy winter forest - LH242026 event photo",
+      "file_type": "image",
+      "source_file": "images/events/LH242026/0049_IMG_9617 (1).jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "lh242026_55073242584_83b7d721b5_o_1",
+      "label": "Trail runner with poles posing in snowy winter forest - LH242026 event photo",
+      "file_type": "image",
+      "source_file": "images/events/LH242026/55073242584_83b7d721b5_o (1).jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "olomoucmarathon2026_img_8773",
+      "label": "Runner bib #16 at Olomouc Marathon 2026 - race photo",
+      "file_type": "image",
+      "source_file": "images/events/OlomoucMarathon2026/IMG_8773.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "olomoucmarathon2026_img_8776",
+      "label": "Runner bib #16 making peace sign at Olomouc Marathon 2026 - race photo",
+      "file_type": "image",
+      "source_file": "images/events/OlomoucMarathon2026/IMG_8776.PNG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "olomoucmaraton2025_74a875bc-16b0-4030-af00-610e0c66fdae",
+      "label": "Runner with bib number 94 at Olomouc Maraton 2025",
+      "file_type": "image",
+      "source_file": "images/events/OlomoucMaraton2025/74a875bc-16b0-4030-af00-610e0c66fdae.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pragueMaraton2025_img_6112",
+      "label": "Prague Marathon 2025 - Runner bib 3384 on cobblestone street",
+      "file_type": "image",
+      "source_file": "images/events/PragueMaraton2025/IMG_6112.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pragueMaraton2025_img_6124",
+      "label": "Prague Marathon 2025 - Two runners posing, bibs 3384 and 2189",
+      "file_type": "image",
+      "source_file": "images/events/PragueMaraton2025/IMG_6124.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pragueMaraton2025_img_6169",
+      "label": "Prague Marathon 2025 - Runner holding finisher medal at Wenceslas Square",
+      "file_type": "image",
+      "source_file": "images/events/PragueMaraton2025/IMG_6169.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jestedwinter242026_321a6841",
+      "label": "Jested 24 Winter 2026 - Athlete climbing snowy slope with poles",
+      "file_type": "image",
+      "source_file": "images/events/jestedWinter242026/321A6841.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "jestedwinter242026_jested_24_winter_2026-96",
+      "label": "Jested 24 Winter 2026 - Two athletes running through snowy forest trail",
+      "file_type": "image",
+      "source_file": "images/events/jestedWinter242026/Jested 24 winter 2026-96.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "zlinhalf2026_lil_7023",
+      "label": "Zlin Half Marathon 2026 - Runner #0037 finish celebration",
+      "file_type": "image",
+      "source_file": "images/events/zlinHalf2026/LIL_7023.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "zlinhalf2026__mtk_0077",
+      "label": "Zlin Half Marathon 2026 - Runners #0037 and #0015 on course",
+      "file_type": "image",
+      "source_file": "images/events/zlinHalf2026/_MTK_0077.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "zlinhalf2026__mtk_2364",
+      "label": "Zlin Half Marathon 2026 - Runner #0037 running on tree-lined path",
+      "file_type": "image",
+      "source_file": "images/events/zlinHalf2026/_MTK_2364.JPG",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "football_fb_img_1622893629074_original",
+      "label": "Football match action photo - player #6 in neon green kit dribbling ball",
+      "file_type": "image",
+      "source_file": "images/football/FB_IMG_1622893629074_Original.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "football_img_5420",
+      "label": "Football player portrait on pitch in black and yellow kit",
+      "file_type": "image",
+      "source_file": "images/football/IMG_5420.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "football_img_7459",
+      "label": "Football match photo - two players contesting near touchline with spectators",
+      "file_type": "image",
+      "source_file": "images/football/IMG_7459.jpg",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "images_pki_course",
+      "label": "PKI a elektronický podpis (Course Document)",
+      "file_type": "image",
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Libor Dostálek",
+      "contributor": null
+    },
+    {
+      "id": "concept_pki",
+      "label": "Public Key Infrastructure (PKI)",
+      "file_type": "concept",
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_electronic_signature",
+      "label": "Electronic Signature (Elektronický podpis)",
+      "file_type": "concept",
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "scratch_add_favourites_script",
+      "target": "scripts_videos_file",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "30",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_add_favourites_script",
+      "target": "scripts_podcasts_file",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "31",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_add_favourites_podcasts_script",
+      "target": "scripts_podcasts_file",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_add_favourites_podcasts2_script",
+      "target": "scripts_podcasts_file",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_add_favourites_podcasts3_script",
+      "target": "scripts_podcasts_file",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_add_favourites_script",
+      "target": "concept_favourite_field",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "12",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_add_favourites_podcasts_script",
+      "target": "concept_favourite_field",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": "9",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_add_favourites_podcasts2_script",
+      "target": "concept_favourite_field",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": "13",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_add_favourites_podcasts3_script",
+      "target": "concept_favourite_field",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "9",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_append_css_script",
+      "target": "scripts_podcasts_file",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scratch/append_css.js",
+      "source_location": "13",
+      "weight": 1.0
+    },
+    {
+      "source": "scratch_append_css_script",
+      "target": "scripts_videos_file",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scratch/append_css.js",
+      "source_location": "13",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_podcasts_renderepisodes",
+      "target": "scripts_podcasts_rendercard",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2326",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_podcasts_renderepisodes",
+      "target": "scripts_podcasts_groupbydatedescending",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2326",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_videos_rendervideos",
+      "target": "scripts_videos_rendercard",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/videos.js",
+      "source_location": "1405",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_videos_rendervideos",
+      "target": "scripts_videos_groupbydatedescending",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/videos.js",
+      "source_location": "1405",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_podcasts_file",
+      "target": "scripts_podcasts_podcast_episodes",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "6",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_videos_file",
+      "target": "scripts_videos_videos",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/videos.js",
+      "source_location": "5",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_podcasts_html",
+      "target": "scripts_podcasts_file",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pages/podcasts.html",
+      "source_location": "58",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_videos_html",
+      "target": "scripts_videos_file",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pages/videos.html",
+      "source_location": "56",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_podcasts_html",
+      "target": "concept_media_filter_ui",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pages/podcasts.html",
+      "source_location": "23",
+      "weight": 1.0
+    },
+    {
+      "source": "pages_videos_html",
+      "target": "concept_media_filter_ui",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pages/videos.html",
+      "source_location": "23",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md_arch_pattern",
+      "target": "scripts_podcasts_file",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "41",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md_arch_pattern",
+      "target": "scripts_videos_file",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "41",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md_i18n_concept",
+      "target": "scripts_podcasts_file",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "36",
+      "weight": 1.0
+    },
+    {
+      "source": "claude_md_i18n_concept",
+      "target": "scripts_videos_file",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "36",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_podcasts_setupfilters",
+      "target": "concept_favourite_field",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2507",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_videos_setupfilters",
+      "target": "concept_favourite_field",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/videos.js",
+      "source_location": "1570",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_podcasts_groupbydatedescending",
+      "target": "scripts_videos_groupbydatedescending",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2276",
+      "weight": 0.7
+    },
+    {
+      "source": "scripts_podcasts_rendercard",
+      "target": "scripts_videos_rendercard",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2390",
+      "weight": 0.7
+    },
+    {
+      "source": "scratch_add_favourites_podcasts_script",
+      "target": "scratch_add_favourites_podcasts2_script",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scratch/add_favourites_podcasts.js",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "scratch_add_favourites_podcasts2_script",
+      "target": "scratch_add_favourites_podcasts3_script",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scratch/add_favourites_podcasts2.js",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "images_1737442551739",
+      "target": "images_img_6169",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "images/1737442551739.jpg",
+      "source_location": null,
+      "weight": 0.75
+    },
+    {
+      "source": "images_pki_course",
+      "target": "images_img_6169",
+      "relation": "conceptually_related_to",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.2,
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "weight": 0.2
+    },
+    {
+      "source": "mastersdone_img_9011",
+      "target": "concept_masters_graduation",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/Posts/MastersDone/IMG_9011.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "svoc_img_8964",
+      "target": "concept_svoc",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/Posts/SVOC/IMG_8964.JPG",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "mastersdone_img_9011",
+      "target": "svoc_img_8964",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": null,
+      "source_location": null,
+      "weight": 0.75
+    },
+    {
+      "source": "concept_masters_graduation",
+      "target": "concept_svoc",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": null,
+      "source_location": null,
+      "weight": 0.65
+    },
+    {
+      "source": "b72025_img_5622",
+      "target": "b72025_img_5624",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/B72025/IMG_5622.JPG",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "b72025_img_5624",
+      "target": "b72025_img_8080",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/events/B72025/IMG_5624.JPG",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "b72025_img_5622",
+      "target": "b72025_img_8080",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/events/B72025/IMG_5622.JPG",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "kosir2026_img_1317",
+      "target": "concept_kosir2026_event",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/Kosir2026/IMG_1317.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "lh242026_0049_img_9617_1",
+      "target": "lh242026_55073242584_83b7d721b5_o_1",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/LH242026/0049_IMG_9617 (1).jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "olomoucmarathon2026_img_8773",
+      "target": "olomoucmarathon2026_img_8776",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/OlomoucMarathon2026/IMG_8773.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "olomoucmaraton2025_74a875bc-16b0-4030-af00-610e0c66fdae",
+      "target": "olomoucmaraton2025_74a875bc-16b0-4030-af00-610e0c66fdae",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/OlomoucMaraton2025/74a875bc-16b0-4030-af00-610e0c66fdae.JPG",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pragueMaraton2025_img_6112",
+      "target": "pragueMaraton2025_img_6124",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/PragueMaraton2025/IMG_6112.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pragueMaraton2025_img_6124",
+      "target": "pragueMaraton2025_img_6169",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/PragueMaraton2025/IMG_6124.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pragueMaraton2025_img_6112",
+      "target": "pragueMaraton2025_img_6169",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/PragueMaraton2025/IMG_6112.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "jestedwinter242026_321a6841",
+      "target": "jestedwinter242026_jested_24_winter_2026-96",
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/events/jestedWinter242026/321A6841.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "zlinhalf2026_lil_7023",
+      "target": "zlinhalf2026__mtk_0077",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/zlinHalf2026/LIL_7023.JPG",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "zlinhalf2026__mtk_0077",
+      "target": "zlinhalf2026__mtk_2364",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/zlinHalf2026/_MTK_0077.JPG",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "zlinhalf2026_lil_7023",
+      "target": "zlinhalf2026__mtk_2364",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/events/zlinHalf2026/LIL_7023.JPG",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "football_fb_img_1622893629074_original",
+      "target": "football_img_5420",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/football/FB_IMG_1622893629074_Original.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "football_fb_img_1622893629074_original",
+      "target": "football_img_7459",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/football/FB_IMG_1622893629074_Original.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "football_img_5420",
+      "target": "football_img_7459",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "images/football/IMG_5420.jpg",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_pki_course",
+      "target": "concept_pki",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "images_pki_course",
+      "target": "concept_electronic_signature",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_pki",
+      "target": "concept_electronic_signature",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "images/PKI_course.png",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "he_favourite_field_migration",
+      "label": "Scratch scripts that add favourite field to media data arrays",
+      "nodes": [
+        "scratch_add_favourites_script",
+        "scratch_add_favourites_podcasts_script",
+        "scratch_add_favourites_podcasts2_script",
+        "scratch_add_favourites_podcasts3_script",
+        "concept_favourite_field"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "scratch/add_favourites.js"
+    },
+    {
+      "id": "he_media_page_pair_podcasts",
+      "label": "Podcasts page HTML + JS + data array triad",
+      "nodes": [
+        "pages_podcasts_html",
+        "scripts_podcasts_file",
+        "scripts_podcasts_podcast_episodes"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md"
+    },
+    {
+      "id": "he_media_page_pair_videos",
+      "label": "Videos page HTML + JS + data array triad",
+      "nodes": [
+        "pages_videos_html",
+        "scripts_videos_file",
+        "scripts_videos_videos"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

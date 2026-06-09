@@ -177,6 +177,14 @@ const RACES = [
   }
 ];
 
+const FUTURE_RACES = [
+  { name: 'MF50 (Malofatranská stovka)', date: '27.6.2026', distance: '50 km', link: 'https://www.mfstovka.eu/trasy', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
+  { name: 'Road Classics Vysočina - Dlouhá', date: '18.7.2026', distance: '102 km', link: 'https://www.roadclassics.cz/propozice/vysocina', badge: 'Bike', badgeClass: 'race-badge--bike' },
+  { name: 'Beskydský Ultra Trail', date: '1.8.2026', distance: '86 km', link: 'https://www.beskydskyultratrail.cz/', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
+  { name: 'B7 (Beskydská sedmička)', date: '28.8.2026', distance: '101 km', link: 'https://www.beskydskasedmicka.cz/', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
+  { name: '24DS (24 hod. na Dlouhých stráních)', date: '3.10.2026', distance: '24h', link: 'https://moravaflow.cz/dlouhe-strane/24ds/', badge: '24H', badgeClass: 'race-badge--ultra' }
+];
+
 // --- Training overview data ---
 // Run `node scripts/update-strava.mjs` to regenerate this block.
 const TRAINING_STATS = {
@@ -251,6 +259,22 @@ function renderRaceTable() {
   });
 }
 
+function renderFutureRaceTable() {
+  const tbody = document.getElementById('future-races-tbody');
+  if (!tbody) return;
+  const lang = localStorage.getItem('lang') || 'en';
+  const websiteTxt = { en: 'Website', cs: 'Web', es: 'Sitio web' };
+  
+  tbody.innerHTML = FUTURE_RACES.map(r => `
+    <tr>
+      <td>${r.name} <span class="race-badge ${r.badgeClass}">${r.badge}</span></td>
+      <td>${r.date}</td>
+      <td class="race-time">${r.distance}</td>
+      <td><a href="${r.link}" target="_blank" rel="noopener">${websiteTxt[lang] || websiteTxt.en}</a></td>
+    </tr>
+  `).join('');
+}
+
 function openModal(raceId) {
   const race = RACES.find(r => r.id === raceId);
   if (!race) return;
@@ -305,6 +329,7 @@ function closeModal() {
 
 document.addEventListener('DOMContentLoaded', () => {
   renderRaceTable();
+  renderFutureRaceTable();
   renderTrainingStats();
 
   document.getElementById('modal-close').addEventListener('click', closeModal);
@@ -320,5 +345,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('languageChanged', () => {
   renderRaceTable();
+  renderFutureRaceTable();
   renderTrainingStats();
 });
