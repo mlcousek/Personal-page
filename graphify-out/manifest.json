@@ -1,0 +1,107 @@
+{
+  "C:\\Git\\Projects\\Personal-page\\.claude\\settings.local.json": {
+    "mtime": 1780666824.4440343,
+    "ast_hash": "0de4b5fcbeb71ae52fdd8804e0526a43",
+    "semantic_hash": "0de4b5fcbeb71ae52fdd8804e0526a43"
+  },
+  "C:\\Git\\Projects\\Personal-page\\.vscode\\mcp.json": {
+    "mtime": 1763909776.7846243,
+    "ast_hash": "01de8cd8811ece38fcca4c9dd15ef635",
+    "semantic_hash": "01de8cd8811ece38fcca4c9dd15ef635"
+  },
+  "C:\\Git\\Projects\\Personal-page\\package.json": {
+    "mtime": 1780733757.3639078,
+    "ast_hash": "38359f9eeee6801e41cd0d5ae2279eae",
+    "semantic_hash": "38359f9eeee6801e41cd0d5ae2279eae"
+  },
+  "C:\\Git\\Projects\\Personal-page\\scripts\\main.js": {
+    "mtime": 1780741296.0447779,
+    "ast_hash": "7066212b087eba22768ad47b55e31b97",
+    "semantic_hash": "7066212b087eba22768ad47b55e31b97"
+  },
+  "C:\\Git\\Projects\\Personal-page\\scripts\\podcasts.js": {
+    "mtime": 1780736936.122893,
+    "ast_hash": "39ef44b0dfb98ee3e36e17fc4377b4a4",
+    "semantic_hash": "39ef44b0dfb98ee3e36e17fc4377b4a4"
+  },
+  "C:\\Git\\Projects\\Personal-page\\scripts\\posts.js": {
+    "mtime": 1780741194.3108523,
+    "ast_hash": "a6815470d31b7a0973c2ebfd6f97fdce",
+    "semantic_hash": "a6815470d31b7a0973c2ebfd6f97fdce"
+  },
+  "C:\\Git\\Projects\\Personal-page\\scripts\\redirect.js": {
+    "mtime": 1763909776.8369124,
+    "ast_hash": "03a00dccbcc61eee723b37aaabf7fb28",
+    "semantic_hash": "03a00dccbcc61eee723b37aaabf7fb28"
+  },
+  "C:\\Git\\Projects\\Personal-page\\scripts\\sports.js": {
+    "mtime": 1780736863.962695,
+    "ast_hash": "147b061f37faf2623fbde38004275d71",
+    "semantic_hash": "147b061f37faf2623fbde38004275d71"
+  },
+  "C:\\Git\\Projects\\Personal-page\\scripts\\update-strava.mjs": {
+    "mtime": 1780731780.0075767,
+    "ast_hash": "1e5da236c5480922bee4495c1197a3da",
+    "semantic_hash": "1e5da236c5480922bee4495c1197a3da"
+  },
+  "C:\\Git\\Projects\\Personal-page\\scripts\\videos.js": {
+    "mtime": 1780742334.4795117,
+    "ast_hash": "18a678fb15424d75866b0e9cf2e89cd5",
+    "semantic_hash": "18a678fb15424d75866b0e9cf2e89cd5"
+  },
+  "C:\\Git\\Projects\\Personal-page\\README.md": {
+    "mtime": 1763909776.789176,
+    "ast_hash": "ee5d833498148eccf4da0457ece04b1c",
+    "semantic_hash": "ee5d833498148eccf4da0457ece04b1c"
+  },
+  "C:\\Git\\Projects\\Personal-page\\components\\footer.html": {
+    "mtime": 1780740962.338129,
+    "ast_hash": "839379268885bebd136729d74a456261",
+    "semantic_hash": "839379268885bebd136729d74a456261"
+  },
+  "C:\\Git\\Projects\\Personal-page\\components\\navbar.html": {
+    "mtime": 1780734882.0961568,
+    "ast_hash": "7d9fb9e2d544887a6b76f00dc35670fc",
+    "semantic_hash": "7d9fb9e2d544887a6b76f00dc35670fc"
+  },
+  "C:\\Git\\Projects\\Personal-page\\index.html": {
+    "mtime": 1763909776.8161187,
+    "ast_hash": "3e052df1a231a730a4228bbe7ff75a00",
+    "semantic_hash": "3e052df1a231a730a4228bbe7ff75a00"
+  },
+  "C:\\Git\\Projects\\Personal-page\\pages\\about.html": {
+    "mtime": 1780735691.5300257,
+    "ast_hash": "99df2a1bfd4bc66a750c52fd455adf22",
+    "semantic_hash": "99df2a1bfd4bc66a750c52fd455adf22"
+  },
+  "C:\\Git\\Projects\\Personal-page\\pages\\blog.html": {
+    "mtime": 1780735704.4434636,
+    "ast_hash": "d409b41ad6670fe481c79f6100c7b93d",
+    "semantic_hash": "d409b41ad6670fe481c79f6100c7b93d"
+  },
+  "C:\\Git\\Projects\\Personal-page\\pages\\books.html": {
+    "mtime": 1780735800.61465,
+    "ast_hash": "6e4bac210dc3e8107bf3ea7b00e9d00a",
+    "semantic_hash": "6e4bac210dc3e8107bf3ea7b00e9d00a"
+  },
+  "C:\\Git\\Projects\\Personal-page\\pages\\index.html": {
+    "mtime": 1780735638.49026,
+    "ast_hash": "741c2ff9c0ca404d1a59aff61f50e59e",
+    "semantic_hash": "741c2ff9c0ca404d1a59aff61f50e59e"
+  },
+  "C:\\Git\\Projects\\Personal-page\\pages\\podcasts.html": {
+    "mtime": 1780735741.089932,
+    "ast_hash": "d9bc09184fd94a5cee57ec429b6cbb77",
+    "semantic_hash": "d9bc09184fd94a5cee57ec429b6cbb77"
+  },
+  "C:\\Git\\Projects\\Personal-page\\pages\\sports.html": {
+    "mtime": 1780735791.801592,
+    "ast_hash": "613f47e214d7aad64e39cea92f06231b",
+    "semantic_hash": "613f47e214d7aad64e39cea92f06231b"
+  },
+  "C:\\Git\\Projects\\Personal-page\\pages\\videos.html": {
+    "mtime": 1780742342.5287893,
+    "ast_hash": "50eb1f1a33f2ff80f5d82a31a9625286",
+    "semantic_hash": "50eb1f1a33f2ff80f5d82a31a9625286"
+  }
+}
