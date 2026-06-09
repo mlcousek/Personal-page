@@ -4,6 +4,24 @@
 
 const VIDEOS = [
   {
+    id: "2026-06-09-1",
+    date: "2026-06-09",
+    title: "Claude Code + Graphify = Insane Agentic OS",
+    show: "Jack Roberts",
+    totalMinutes: 10,
+    cover: "https://i.ytimg.com/vi_webp/Owv503rTqYY/maxresdefault.webp",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=Owv503rTqYY",
+    tags: [
+      "English",
+      "Programming",
+      "AI",
+      "Tech",
+      "Claude"
+    ],
+    favourite: false
+  },
+  {
     id: "2026-06-08-1",
     date: "2026-06-08",
     title: "This Open Source Repo Just Solved Claude Code's #1 Problem",

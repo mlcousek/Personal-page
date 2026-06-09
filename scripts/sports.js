@@ -190,53 +190,112 @@ const FUTURE_RACES = [
 const TRAINING_STATS = {
   updatedLabel: 'June 2026',
   cards: [
-    { icon: '🏃', value: '223 km',   label: { en: 'Running this month', cs: 'Běh tento měsíc', es: 'Carrera este mes' } },
-    { icon: '⬆️', value: '1,900 m', label: { en: 'Running elevation', cs: 'Běžecké převýšení', es: 'Desnivel corriendo' } },
-    { icon: '📅', value: '15',        label: { en: 'Running sessions', cs: 'Běžecké tréninky', es: 'Sesiones de carrera' } },
-    { icon: '🚴', value: '169 km',   label: { en: 'Cycling this month', cs: 'Cyklistika tento měsíc', es: 'Ciclismo este mes' } },
-    { icon: '⛰️', value: '1,473 m', label: { en: 'Cycling elevation', cs: 'Cyklistické převýšení', es: 'Desnivel en bici' } },
-    { icon: '📏', value: '42.2 km',  label: { en: 'Longest run', cs: 'Nejdelší běh', es: 'Carrera más larga' } },
+    { icon: '🏃', value: '221 km',    label: { en: 'Running this month', cs: 'Běh tento měsíc',       es: 'Carrera este mes'     } },
+    { icon: '⬆️', value: '2,230 m',  label: { en: 'Running elevation',  cs: 'Běžecké převýšení',     es: 'Desnivel corriendo'   } },
+    { icon: '📅', value: '16',         label: { en: 'Running sessions',   cs: 'Běžecké tréninky',      es: 'Sesiones de carrera'  } },
+    { icon: '🚴', value: '91 km',     label: { en: 'Cycling this month', cs: 'Cyklistika tento měsíc',es: 'Ciclismo este mes'     } },
+    { icon: '⛰️', value: '860 m',    label: { en: 'Cycling elevation',  cs: 'Cyklistické převýšení', es: 'Desnivel en bici'     } },
+    { icon: '📏', value: '42.2 km',   label: { en: 'Longest run',        cs: 'Nejdelší běh',          es: 'Carrera más larga'    } },
+    { icon: '⏱️', value: '5:50 /km', label: { en: 'Avg run pace',       cs: 'Průměrné tempo',        es: 'Ritmo promedio'       } },
+    { icon: '🕐', value: '21h 30m',   label: { en: 'Run time',           cs: 'Čas běhu',              es: 'Tiempo corriendo'     } },
+    { icon: '🔥', value: '16,220',    label: { en: 'Calories (run)',     cs: 'Kalorie (běh)',         es: 'Calorías (carrera)'   } },
   ],
   weekly: [
     { label: 'May 5–11',     km: 22.3 },
-    { label: 'May 12–18',    km: 72.3 },
+    { label: 'May 12–18',    km: 71.1 },
     { label: 'May 19–25',    km: 53.7 },
-    { label: 'May 26–Jun 1', km: 43.1 },
-    { label: 'Jun 2+',       km: 31.3 },
-  ]
+    { label: 'May 26–Jun 1', km: 41.9 },
+    { label: 'Jun 2–8',      km: 42.4 },
+  ],
+  yearCards: [
+    { icon: '🏃', value: '1,447 km',   label: { en: 'Running this year',  cs: 'Běh letos',              es: 'Carrera este año'      } },
+    { icon: '🚴', value: '1,981 km',   label: { en: 'Cycling this year',  cs: 'Kolo letos',             es: 'Ciclismo este año'     } },
+    { icon: '⬆️', value: '33,640 m',  label: { en: 'Run elevation YTD',  cs: 'Převýšení běh letos',   es: 'Desnivel carrera año'  } },
+    { icon: '📅', value: '93',          label: { en: 'Run sessions YTD',   cs: 'Tréninků běh letos',    es: 'Sesiones carrera año'  } },
+    { icon: '📊', value: '63 km/wk',   label: { en: 'Avg weekly km',      cs: 'Průměr km/týden',        es: 'Km semanales promedio' } },
+    { icon: '🕐', value: '159h',        label: { en: 'Total run hours',    cs: 'Celkový čas běhu',       es: 'Horas totales carrera' } },
+    { icon: '⏱️', value: '6:35 /km',  label: { en: 'Avg pace YTD',       cs: 'Průměrné tempo letos',   es: 'Ritmo promedio año'    } },
+    { icon: '🏆', value: '378',         label: { en: 'PRs set YTD',        cs: 'Osobáků letos',          es: 'Récords personales año'} },
+    { icon: '🔥', value: '111,420',     label: { en: 'Calories YTD (run)', cs: 'Kalorie letos (běh)',    es: 'Calorías año (carrera)' } },
+  ],
+  monthly: [
+    { label: 'Jan', runKm: 232.8, bikeKm: 114.4 },
+    { label: 'Feb', runKm: 200.4, bikeKm: 639.3 },
+    { label: 'Mar', runKm: 321.3, bikeKm: 674.8 },
+    { label: 'Apr', runKm: 377.2, bikeKm: 383.1 },
+    { label: 'May', runKm: 273.2, bikeKm: 168.9 },
+    { label: 'Jun', runKm:  42.4, bikeKm:   0.0 },
+  ],
 };
 
 function renderTrainingStats() {
   const container = document.getElementById('training-stats-container');
   if (!container) return;
 
-  const maxKm = Math.max(...TRAINING_STATS.weekly.map(w => w.km));
-
   const lang = localStorage.getItem('lang') || 'en';
-  
-  const cardsHtml = TRAINING_STATS.cards.map(c => `
+
+  const i18n = {
+    lastMonth:   { en: 'Last 30 days',          cs: 'Posledních 30 dní',      es: 'Últimos 30 días' },
+    yearToDate:  { en: 'Year to Date',           cs: 'Letos celkem',           es: 'Acumulado del año' },
+    weeklyTitle: { en: 'Weekly running km',      cs: 'Týdenní uběhnuté km',   es: 'Km de carrera semanal' },
+    monthlyTitle:{ en: 'Monthly km (run + bike)',cs: 'Měsíční km (běh + kolo)',es: 'Km mensuales (carrera + bici)' },
+    run:         { en: 'Run',                    cs: 'Běh',                    es: 'Carrera' },
+    bike:        { en: 'Bike',                   cs: 'Kolo',                   es: 'Bici' },
+  };
+  const t = k => i18n[k][lang] || i18n[k].en;
+
+  const cardHtml = c => `
     <div class="training-stat-card">
       <span class="training-icon">${c.icon}</span>
       <span class="training-value">${c.value}</span>
-      <span class="training-label">${c.label[lang] || c.label.en}</span>
-    </div>`).join('');
+      <span class="training-label">${typeof c.label === 'object' ? (c.label[lang] || c.label.en) : c.label}</span>
+    </div>`;
 
-  const barsHtml = TRAINING_STATS.weekly.map(w => {
-    const pct = Math.round((w.km / maxKm) * 100);
+  const maxWeekKm = Math.max(...TRAINING_STATS.weekly.map(w => w.km));
+  const weekBarsHtml = TRAINING_STATS.weekly.map(w => {
+    const pct = Math.round((w.km / maxWeekKm) * 100);
     return `<div class="chart-col">
       <span class="chart-km">${w.km}</span>
       <div class="chart-bar" style="height:${pct}%"></div>
       <span class="chart-week">${w.label}</span>
     </div>`;
   }).join('');
-  const weeklyTitle = { en: 'Weekly running km', cs: 'Týdenní uběhnuté km', es: 'Km de carrera semanal' };
+
+  const maxMonthVal = Math.max(...TRAINING_STATS.monthly.map(m => m.runKm + m.bikeKm));
+  const monthBarsHtml = TRAINING_STATS.monthly.map(m => {
+    const runPct  = Math.round((m.runKm  / maxMonthVal) * 100);
+    const bikePct = Math.round((m.bikeKm / maxMonthVal) * 100);
+    return `<div class="chart-col monthly-col">
+      <div class="monthly-bars">
+        ${m.runKm  > 0 ? `<div class="monthly-bar monthly-bar--run"  style="height:${runPct}%"  title="${m.runKm} km run"></div>`  : '<div class="monthly-bar monthly-bar--empty"></div>'}
+        ${m.bikeKm > 0 ? `<div class="monthly-bar monthly-bar--bike" style="height:${bikePct}%" title="${m.bikeKm} km bike"></div>` : '<div class="monthly-bar monthly-bar--empty"></div>'}
+      </div>
+      <span class="chart-week">${m.label}</span>
+    </div>`;
+  }).join('');
+
+  const yearCardsHtml = TRAINING_STATS.yearCards
+    ? TRAINING_STATS.yearCards.map(cardHtml).join('')
+    : '';
 
   container.innerHTML = `
-    <div class="training-stats">${cardsHtml}</div>
+    <div class="training-section-title">${t('lastMonth')}</div>
+    <div class="training-stats">${TRAINING_STATS.cards.map(cardHtml).join('')}</div>
     <div class="weekly-chart-wrap">
-      <p class="weekly-chart-title">${weeklyTitle[lang] || weeklyTitle.en}</p>
-      <div class="weekly-chart">${barsHtml}</div>
-    </div>`;
+      <p class="weekly-chart-title">${t('weeklyTitle')}</p>
+      <div class="weekly-chart">${weekBarsHtml}</div>
+    </div>
+    ${yearCardsHtml ? `
+    <div class="training-section-title training-section-title--ytd">${t('yearToDate')}</div>
+    <div class="training-stats training-stats--year">${yearCardsHtml}</div>
+    <div class="weekly-chart-wrap">
+      <p class="weekly-chart-title">${t('monthlyTitle')}</p>
+      <div class="monthly-legend">
+        <span class="legend-dot legend-dot--run"></span>${t('run')}
+        <span class="legend-dot legend-dot--bike"></span>${t('bike')}
+      </div>
+      <div class="weekly-chart monthly-chart">${monthBarsHtml}</div>
+    </div>` : ''}`;
 }
 
 function renderRaceTable() {
@@ -331,6 +390,13 @@ document.addEventListener('DOMContentLoaded', () => {
   renderRaceTable();
   renderFutureRaceTable();
   renderTrainingStats();
+
+  document.querySelectorAll('.stat-card--link').forEach(card => {
+    card.addEventListener('click', () => window.open(card.dataset.stravaUrl, '_blank', 'noopener'));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.open(card.dataset.stravaUrl, '_blank', 'noopener'); }
+    });
+  });
 
   document.getElementById('modal-close').addEventListener('click', closeModal);
 

@@ -10,7 +10,8 @@
       "Read(//mnt/c/Users/jmlcousek/AppData/Roaming/Claude/**)",
       "Read(//c/Users/jmlcousek/.claude/**)",
       "WebFetch(domain:open.spotify.com)",
-      "Bash(node -e ' *)"
+      "Bash(node -e ' *)",
+      "mcp__claude_ai_Strava__list_activities"
     ]
   }
 }
