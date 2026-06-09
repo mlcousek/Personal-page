@@ -22,17 +22,15 @@
 
     <nav id="video-filters" class="filter-bar" aria-label="Video filters">
       <button class="filter-chip active" data-filter="all" id="vf-all">All</button>
-      <button class="filter-chip" data-filter="favorites" id="vf-favorites">Favorites</button>
+      <button class="filter-chip" data-filter="2026">2026</button>
       <button class="filter-chip" data-filter="2025">2025</button>
     </nav>
 
     <div id="video-controls" class="media-controls">
       <div class="control-group">
-        <label for="video-sort" class="control-label" id="video-sort-label">Sort by</label>
-        <select id="video-sort" class="control-select">
-          <option value="date-desc" id="vsort-date">Date (newest)</option>
-          <option value="show-asc" id="vsort-channel">Channel (A–Z)</option>
-          <option value="tag-asc" id="vsort-tag">Tag (A–Z)</option>
+        <label for="video-show" class="control-label" id="video-show-label">Channel</label>
+        <select id="video-show" class="control-select">
+          <option value="all" id="video-show-all">All channels</option>
         </select>
       </div>
       <div class="control-group">

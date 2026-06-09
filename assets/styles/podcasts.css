@@ -387,3 +387,8 @@
   .date-group[data-cols] .podcasts-for-date { grid-template-columns: 1fr; }
   .podcast__img { height: 120px; }
 }
+
+.podcasts-page .media-page-title-row { justify-content: center; }
+.podcasts-page .media-note { text-align: center; }
+.podcasts-page .filter-bar { justify-content: center; }
+.podcasts-page .media-controls { justify-content: center; }
