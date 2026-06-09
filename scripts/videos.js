@@ -18,7 +18,8 @@ const VIDEOS = [
       "AI",
       "Tech",
       "Claude"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-06-08-2",
@@ -33,7 +34,8 @@ const VIDEOS = [
       "Czech",
       "Psychology",
       "Sports"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-06-05-3",
@@ -51,7 +53,8 @@ const VIDEOS = [
       "AI",
       "Tech",
       "Claude"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-06-05-4",
@@ -69,7 +72,8 @@ const VIDEOS = [
       "Tech",
       "Programming",
       "Claude"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-06-02-5",
@@ -87,7 +91,8 @@ const VIDEOS = [
       "AI",
       "Tech",
       "GitHub Copilot"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-30-6",
@@ -106,7 +111,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-26-7",
@@ -124,7 +130,8 @@ const VIDEOS = [
       ".NET",
       "Software Development",
       "Tech"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-26-8",
@@ -144,7 +151,8 @@ const VIDEOS = [
       "Machine Learning",
       ".NET",
       "Software Development"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-26-9",
@@ -162,7 +170,8 @@ const VIDEOS = [
       ".NET",
       "Software Development",
       "Tech"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-26-10",
@@ -182,7 +191,8 @@ const VIDEOS = [
       "Machine Learning",
       "C#",
       "Software Development"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-26-11",
@@ -197,7 +207,8 @@ const VIDEOS = [
       "English",
       "Algorithms",
       "Vlog"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-24-12",
@@ -216,7 +227,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-23-13",
@@ -231,7 +243,8 @@ const VIDEOS = [
       "Czech",
       "Psychology",
       "Sports"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-22-14",
@@ -246,7 +259,8 @@ const VIDEOS = [
       "Czech",
       "Running",
       "Ultramarathon"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-22-15",
@@ -264,7 +278,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Biking"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-20-16",
@@ -284,7 +299,8 @@ const VIDEOS = [
       "History",
       "Math",
       "Computer Science"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-20-17",
@@ -304,7 +320,8 @@ const VIDEOS = [
       "History",
       "Math",
       "Computer Science"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-18-18",
@@ -319,7 +336,8 @@ const VIDEOS = [
       "Czech",
       "Cycling",
       "Racing"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-09-19",
@@ -334,7 +352,8 @@ const VIDEOS = [
       "Czech",
       "Running",
       "Marathon"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-05-01-20",
@@ -353,7 +372,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-04-30-21",
@@ -371,7 +391,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Biking"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-04-27-22",
@@ -387,7 +408,8 @@ const VIDEOS = [
       "Fitness",
       "Tech",
       "Vlog"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-04-26-23",
@@ -402,7 +424,8 @@ const VIDEOS = [
       "Czech",
       "Running",
       "Ultramarathon"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-04-22-24",
@@ -421,7 +444,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-04-21-25",
@@ -440,7 +464,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-04-18-26",
@@ -458,7 +483,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-04-17-27",
@@ -476,7 +502,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Biking"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-04-16-28",
@@ -497,7 +524,8 @@ const VIDEOS = [
       "Trail Running",
       "Mindset",
       "Mental Health"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-04-14-29",
@@ -512,7 +540,8 @@ const VIDEOS = [
       "Czech",
       "Cycling",
       "Racing"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-04-06-30",
@@ -531,7 +560,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-03-28-31",
@@ -549,7 +579,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-03-27-32",
@@ -567,7 +598,8 @@ const VIDEOS = [
       "C#",
       "Software Development",
       "Tech"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-03-27-33",
@@ -583,7 +615,8 @@ const VIDEOS = [
       "Programming",
       ".NET",
       "Coding"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-03-26-34",
@@ -598,7 +631,8 @@ const VIDEOS = [
       "Czech",
       "Football",
       "News"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-03-22-35",
@@ -617,7 +651,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-03-22-36",
@@ -632,7 +667,8 @@ const VIDEOS = [
       "English",
       "Nutrition",
       "Endurance"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-03-11-37",
@@ -650,7 +686,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-02-25-38",
@@ -665,7 +702,8 @@ const VIDEOS = [
       "Czech",
       "Tech",
       "Apple"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-02-23-39",
@@ -684,7 +722,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-02-09-40",
@@ -703,7 +742,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-02-09-41",
@@ -719,7 +759,8 @@ const VIDEOS = [
       "Fitness",
       "Tech",
       "Vlog"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-02-08-42",
@@ -734,7 +775,8 @@ const VIDEOS = [
       "Czech",
       "Fitness",
       "VO2max"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-02-08-43",
@@ -753,7 +795,8 @@ const VIDEOS = [
       "Tech",
       "History",
       "Math"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-02-08-44",
@@ -772,7 +815,8 @@ const VIDEOS = [
       "Tech",
       "History",
       "Math"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-02-05-45",
@@ -790,7 +834,8 @@ const VIDEOS = [
       ".NET",
       "Software Development",
       "Tech"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-02-04-46",
@@ -809,7 +854,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-02-02-47",
@@ -827,7 +873,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Biking"
-    ]
+    ],
+    favourite: true
   },
   {
     id: "2026-02-01-48",
@@ -848,7 +895,8 @@ const VIDEOS = [
       "Psychology",
       "Mindset",
       "Mental Health"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-30-49",
@@ -865,7 +913,8 @@ const VIDEOS = [
       "AI",
       "Tech",
       "Machine Learning"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-30-50",
@@ -882,7 +931,8 @@ const VIDEOS = [
       "AI",
       "Tech",
       "Machine Learning"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-30-51",
@@ -901,7 +951,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-30-52",
@@ -919,7 +970,8 @@ const VIDEOS = [
       ".NET",
       "Software Development",
       "Tech"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-29-53",
@@ -943,7 +995,8 @@ const VIDEOS = [
       "History",
       "Math",
       "Computer Science"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-28-54",
@@ -961,7 +1014,8 @@ const VIDEOS = [
       ".NET",
       "Software Development",
       "Tech"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-27-55",
@@ -981,7 +1035,8 @@ const VIDEOS = [
       "C#",
       ".NET",
       "Software Development"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-26-56",
@@ -996,7 +1051,8 @@ const VIDEOS = [
       "Czech",
       "Running",
       "Ultramarathon"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-26-57",
@@ -1015,7 +1071,8 @@ const VIDEOS = [
       "Ultramarathon",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-26-58",
@@ -1038,7 +1095,8 @@ const VIDEOS = [
       "History",
       "Math",
       "Computer Science"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-26-59",
@@ -1056,7 +1114,8 @@ const VIDEOS = [
       "AI",
       "Tech",
       "Machine Learning"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-25-60",
@@ -1074,7 +1133,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Trail Running"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-20-61",
@@ -1090,7 +1150,8 @@ const VIDEOS = [
       "Fitness",
       "Flexibility",
       "Vlog"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-19-62",
@@ -1109,7 +1170,8 @@ const VIDEOS = [
       ".NET",
       "Software Development",
       "Tech"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-18-63",
@@ -1124,7 +1186,8 @@ const VIDEOS = [
       "Czech",
       "Running",
       "Ultramarathon"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-16-64",
@@ -1140,7 +1203,8 @@ const VIDEOS = [
       "Programming",
       "Web Dev",
       "Tech"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-16-65",
@@ -1156,7 +1220,8 @@ const VIDEOS = [
       "Programming",
       ".NET",
       "Coding"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-15-66",
@@ -1174,7 +1239,8 @@ const VIDEOS = [
       "C#",
       "Software Development",
       "Tech"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-07-67",
@@ -1189,7 +1255,8 @@ const VIDEOS = [
       "Czech",
       "Finance",
       "Investing"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-06-68",
@@ -1207,7 +1274,8 @@ const VIDEOS = [
       "Sports",
       "Endurance",
       "Biking"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2026-01-06-69",
@@ -1222,7 +1290,8 @@ const VIDEOS = [
       "Czech",
       "Tech",
       "Apple"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2025-12-31-70",
@@ -1238,7 +1307,8 @@ const VIDEOS = [
       "Quiz",
       "Entertainment",
       "Vlog"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2025-12-31-71",
@@ -1254,7 +1324,8 @@ const VIDEOS = [
       "Quiz",
       "Geography",
       "Vlog"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2025-12-31-72",
@@ -1269,7 +1340,8 @@ const VIDEOS = [
       "Czech",
       "Quiz",
       "General Knowledge"
-    ]
+    ],
+    favourite: false
   },
   {
     id: "2025-12-31-73",
@@ -1284,7 +1356,8 @@ const VIDEOS = [
       "Czech",
       "News",
       "Recap"
-    ]
+    ],
+    favourite: false
   }
 ];
 
@@ -1314,6 +1387,7 @@ function applyFiltersAndSort({filter='all', tag='all', show='all'} = {}){
   switch(filter){
     case '2026': list = list.filter(e=>e.date && e.date.startsWith('2026-')); break;
     case '2025': list = list.filter(e=>e.date && e.date.startsWith('2025-')); break;
+    case 'favourite': list = list.filter(e=>e.favourite); break;
     default: break;
   }
   // tag filter
@@ -1420,9 +1494,12 @@ function renderCard(ep){
     ? `<ul class="video-tags">${ep.tags.map(tag => `<li>${escapeHtml(tag)}</li>`).join('')}</ul>`
     : '';
 
+  const favouriteStar = ep.favourite ? '<div class="favourite-star" title="Favourite">★</div>' : '';
+
   return `<article class="video" data-platform="${platform}">
     <img loading="lazy" class="video__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';">
     ${platformIcon}
+    ${favouriteStar}
     <div class="video-content">
       <h2 class="video__title"><a href="${ep.link || '#'}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h2>
       <p class="video__host">${escapeHtml(ep.show)}</p>

@@ -187,18 +187,6 @@
 
 .podcast__host { font-size: 0.78rem; color: #64748b; margin: 0; }
 
-.podcast__tag {
-  position: absolute;
-  top: 0.7rem; right: 0.7rem;
-  font-size: 0.55rem;
-  padding: 0.4em 0.7em;
-  border-radius: 1em;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: #222;
-  background: #e2e8f0;
-}
-
 .tag-new { background: #bbf7d0; }
 .tag-fav { background: #fde68a; }
 .tag-listened { background: #93c5fd; }
@@ -392,3 +380,13 @@
 .podcasts-page .media-note { text-align: center; }
 .podcasts-page .filter-bar { justify-content: center; }
 .podcasts-page .media-controls { justify-content: center; }
+
+.favourite-star {
+  position: absolute;
+  top: 0.7rem; right: 0.7rem;
+  font-size: 1.5rem;
+  color: #fde68a;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  z-index: 10;
+  line-height: 1;
+}

@@ -4,346 +4,2273 @@
  */
 
 const PODCAST_EPISODES = [
-
-  // 4 Jun 2026
-  { id:'2026-06-04-1', date:'2026-06-04', title:'Kika to s muži umí, Standovo přemýšlení mi nahánělo strach | ROZHOVOR S JOHANKOU 🥥', show:'Tohle není MÚPI', totalMinutes:67, cover:'https://i.ytimg.com/vi/1ia8nbph6Eg/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=1ia8nbph6Eg', tags:['Czech','Reality TV','Survivor','YouTube'] },
-
-  // 28 May 2026
-  { id:'2026-05-28-1', date:'2026-05-28', title:'Močení do bidonů toleruji, ukazuje to lidskost cyklistů. Sportovci nejsou jen stroje, hlásí Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/78CHOqTyAomv2nDlhgTksC', tags:['Czech','Cycling','Spotify'] },
-
-  // 20 May 2026
-  { id:'2026-05-20-1', date:'2026-05-20', title:'Zklamalo mě to. Země nebyla do cyklistiky vůbec zblázněná, říká Ježek o startu Gira v Bulharsku', show:'Kilometry Jiřího Ježka', totalMinutes:54, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/0XyROlqBvZOQyXlBCxBrmn', tags:['Czech','Cycling','Spotify'] },
-
-  // 19 May 2026
-  { id:'2026-05-19-1', date:'2026-05-19', title:'Strýcová: Určitě to chci dát pod tři hodiny. Maraton v Bostonu mi připomínal atmosféru Wimbledonu', show:'Kilometry Jiřího Ježka', totalMinutes:51, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/2r6qaxnPzAuxpe37TCxkVr', tags:['Czech','Running','Tennis','Interview','Spotify'] },
-
-  // 6 May 2026
-  { id:'2026-05-06-1', date:'2026-05-06', title:'Ježek: Sawe je ambasadorem čistého sportu. Noc rekordů na Děkance ohromí každého běžce', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6lIjTGTkbqzqzRHVIGytgC', tags:['Czech','Running','Spotify'] },
-  { id:'2026-05-06-2', date:'2026-05-06', title:'Beskydská sedmička: trénink, strava, krize a noční start', show:'Edgar podcast', totalMinutes:61, cover:'https://i.scdn.co/image/ab67656300005f1f85e95ccc546952bd8689ee02', platform:'spotify', link:'https://open.spotify.com/episode/5IZjD6x73qG4BxwBW6lrlA', tags:['Czech','Running','Ultra','B7','Spotify'] },
-
-  // 1 May 2026
-  { id:'2026-05-01-1', date:'2026-05-01', title:'Podcast s Patrikem Vebrem o gut training, energii a vytrvalostním běhu', show:'Edgar podcast', totalMinutes:23, cover:'https://i.scdn.co/image/ab67656300005f1fb2df74649842302ab50f9b99', platform:'spotify', link:'https://open.spotify.com/episode/61XZUHmIhBCWbZZ4QFkXL8', tags:['Czech','Running','Training','Nutrition','Spotify'] },
-  { id:'2026-05-01-2', date:'2026-05-01', title:'V panici jsem hlasovala Johanku místo Vendy, v 6 jsme ji mohli převálcovat | ROZHOVOR S ŽOFIÍ 🥥', show:'Tohle není MÚPI', totalMinutes:70, cover:'https://i.ytimg.com/vi/BEBGHBIMdc4/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=BEBGHBIMdc4', tags:['Czech','Reality TV','Survivor','YouTube'] },
-
-  // 30 Apr 2026
-  { id:'2026-04-30-1', date:'2026-04-30', title:'DÍL 21: „Důchod v nedohlednu". Martin Zajíc myslel, že skončí. Místo tečky napsal vykřičník: 28:19!', show:'BETRI CAST 🎙️', totalMinutes:84, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015beb493a56ab6bb39c879b2a8f1', platform:'spotify', link:'https://open.spotify.com/episode/5U0r7V1QVQxJyRZFcPSVPc', tags:['Czech','Running','Interview','Spotify'] },
-  { id:'2026-04-30-2', date:'2026-04-30', title:'Makej vole! Podcast #104 - Josef Andrle a jeho tréninkové programy pro Beskydskou sedmičku', show:'Makej vole! Podcast', totalMinutes:39, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/1FnUk8cl3SOALG8EXmUuqA', tags:['Czech','Running','Ultra','B7','Spotify'] },
-
-  // 26 Apr 2026
-  { id:'2026-04-26-1', date:'2026-04-26', title:'Seixas je výjimečný borec. Snad vydrží veškerou nálož tlaku, která se kolem něj tvoří, říká Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:54, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/0wgSQ7wMk3QVb2xy8RTST6', tags:['Czech','Cycling','Spotify'] },
-  { id:'2026-04-26-2', date:'2026-04-26', title:'KAREL VACEK: Většinu lidí brzdí strach a neznalost', show:'Cyklistickey', totalMinutes:105, cover:'https://i.ytimg.com/vi/wy6bhsLosH4/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=wy6bhsLosH4', tags:['Czech','Interview','YouTube'] },
-  { id:'2026-04-26-3', date:'2026-04-26', title:'VŠICHNI Z NÍ MĚLI STRACH! Iki upřímně komentuje všechny soutěžící. (Survivor)', show:'Popcorn Time', totalMinutes:109, cover:'https://i.ytimg.com/vi/oNnwWIus6oE/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=oNnwWIus6oE', tags:['Czech','Reality TV','Survivor','YouTube'] },
-
-  // 25 Apr 2026
-  { id:'2026-04-25-1', date:'2026-04-25', title:'Vyplácat na mě 2 hlasy byl fail, Johanka vždy o 3 kroky napřed, lhát jí nemá cenu | ROZHOVOR S IKIM 🥥', show:'Tohle není MÚPI', totalMinutes:102, cover:'https://i.ytimg.com/vi/5VpxbBxnOzk/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=5VpxbBxnOzk', tags:['Czech','Reality TV','Survivor','YouTube'] },
-
-  // 23 Apr 2026
-  { id:'2026-04-23-1', date:'2026-04-23', title:'Jiří Petr - Jak se připravit na závod aby jsi podal výkon', show:'Edgar podcast', totalMinutes:71, cover:'https://i.scdn.co/image/ab67656300005f1f8463dcc46e24b518a986d18f', platform:'spotify', link:'https://open.spotify.com/episode/2mSCd5nhnjgEqFwWRDGT87', tags:['Czech','Running','Training','Interview','Spotify'] },
-
-  // 17 Apr 2026
-  { id:'2026-04-17-1', date:'2026-04-17', title:'#151: O Lysacupu s jeho šéfem a zakladatelem Petrem Hudečkem', show:'TŘIŠESTPĚT', totalMinutes:81, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be1066498534a633d7b2886a6d', platform:'spotify', link:'https://open.spotify.com/episode/0wTLT7PhmTwc6DjYvXC2qB', tags:['Czech','Running','Ultra','Interview','Spotify'] },
-  { id:'2026-04-17-2', date:'2026-04-17', title:'Tréninková Bible č. 11: Jim Walmsley - zrození legendy', show:'Tréninková Bible', totalMinutes:23, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be55a7a5ef9a99ed637c11c84e', platform:'spotify', link:'https://open.spotify.com/episode/66CfaZ3SnyaG9zOKZOevfk', tags:['Czech','Running','Ultra','Training','Spotify'] },
-  { id:'2026-04-17-3', date:'2026-04-17', title:'Říkal jsem si, co tam vlastně dělám?! Dopis mě lákal domů. TRABO', show:'Popcorn Time', totalMinutes:104, cover:'https://i.ytimg.com/vi/PGMrTnbUJjs/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=PGMrTnbUJjs', tags:['Czech','Reality TV','Survivor','YouTube'] },
-
-  // 14 Apr 2026
-  { id:'2026-04-14-1', date:'2026-04-14', title:'Spoléhám na taktiku, že na kostkách nebudu tahat peloton, říká Bittner před Paříž-Roubaix', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6sc1V2VK5NihmXiEKnPt7d', tags:['Czech','Cycling','Interview','Spotify'] },
-  { id:'2026-04-14-2', date:'2026-04-14', title:'Karel Poborský: Běhání jsem propadl. Maraton chci pod 4 hodiny', show:'Kilometry Jiřího Ježka', totalMinutes:54, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/4LB1vm7QKYfuoBO9LiN2p8', tags:['Czech','Running','Football','Interview','Spotify'] },
-
-  // 13 Apr 2026
-  { id:'2026-04-13-1', date:'2026-04-13', title:'Přenést radost ze sportu je hlavním posláním při tvorbě videí, říká sportovní influencer König', show:'Kilometry Jiřího Ježka', totalMinutes:49, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6MsVbwOeUBPGfhjBbkzsiD', tags:['Czech','Cycling','Spotify'] },
-
-  // 11 Apr 2026
-  { id:'2026-04-11-1', date:'2026-04-11', title:'Příchod holek byl podraz, nenávist k Johance mě zaslepila | ROZHOVOR S ADAMEM 🥥', show:'Tohle není MÚPI', totalMinutes:108, cover:'https://i.ytimg.com/vi/O14P3i6pwZE/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=O14P3i6pwZE', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-04-11-2', date:'2026-04-11', title:'MĚL BÝT VŮBEC NA KMENOVCE? Mrzí ho to? Proč si do souboje nevybral Johanku? (REST)', show:'Popcorn Time', totalMinutes:82, cover:'https://i.ytimg.com/vi/SMpVcZ8926A/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=SMpVcZ8926A', tags:['Czech','Reality TV','Survivor','YouTube'] },
-
-  // 9 Apr 2026
-  { id:'2026-04-09-1', date:'2026-04-09', title:'#4 Roman Chládek - Speciální díl o zahraničních Ultra Trailových závodech na rok 2026', show:'UltraMinuty', totalMinutes:155, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015bef713230f6b9350706146cf99', platform:'spotify', link:'https://open.spotify.com/episode/6h49oyqP3NeXelq0wTMeek', tags:['Czech','Running','Ultra','Interview','Spotify'] },
-
-  // 4 Apr 2026
-  { id:'2026-04-04-1', date:'2026-04-04', title:'Sadistické peklo v kleci a rozdělování jídla | Survivor RECAP 17 🌴', show:'Tohle není MÚPI', totalMinutes:61, cover:'https://i.ytimg.com/vi/iFAAFJw0J24/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=iFAAFJw0J24', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-04-04-2', date:'2026-04-04', title:'Plán na Denisu padá! Adam se cítil jako hlava gangu ve vězení | Survivor RECAP 18 🌴', show:'Tohle není MÚPI', totalMinutes:64, cover:'https://i.ytimg.com/vi/wpTfSc7elb0/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=wpTfSc7elb0', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-04-04-3', date:'2026-04-04', title:'TOHLE UŽ JE OSOBNÍ! Dostane Rest imunitu? Doplatí kmen na sabotáž? (Survivor 17. díl RECAP)', show:'Popcorn Time', totalMinutes:79, cover:'https://i.ytimg.com/vi/Xtppf-qBfJc/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=Xtppf-qBfJc', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-04-04-4', date:'2026-04-04', title:'NEJSMOLNĚJŠÍ KONEC V HISTORII! Rest neměl vypadnout! Johanka ukázala charakter! (Survivor RECAP)', show:'Popcorn Time', totalMinutes:77, cover:'https://i.ytimg.com/vi/Wvh-mrUOQpc/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=Wvh-mrUOQpc', tags:['Czech','Reality TV','Survivor','YouTube'] },
-
-  // 1 Apr 2026
-  { id:'2026-04-01-1', date:'2026-04-01', title:'#113: Zdeněk Hruška – "Kvůli ultra jsem se osobnostně posunul."', show:'TŘIŠESTPĚT', totalMinutes:112, cover:'https://i.scdn.co/image/ab67656300005f1ffb04ff49157a09c31bab76fc', platform:'spotify', link:'https://open.spotify.com/episode/6TuJCE3xkheDvuCcuJG6yv', tags:['Czech','Running','Ultra','Interview','Spotify'] },
-  { id:'2026-04-01-2', date:'2026-04-01', title:'#101: Titus Ablorh – "Byl bych rád, kdyby na Holedné někdo rozprášil můj popel."', show:'TŘIŠESTPĚT', totalMinutes:122, cover:'https://i.scdn.co/image/ab67656300005f1ffb04ff49157a09c31bab76fc', platform:'spotify', link:'https://open.spotify.com/episode/6FHYPAtC3zID44qLEfo0An', tags:['Czech','Running','Ultra','Interview','Spotify'] },
-
-  // 31 Mar 2026
-  { id:'2026-03-31-1', date:'2026-03-31', title:'Tréninková Bible č. 10 - Zdenda Hruška na Transgrancanaria 2026', show:'Tréninková Bible', totalMinutes:32, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be1601afc7e731f0ffb9d1a8ef', platform:'spotify', link:'https://open.spotify.com/episode/4wzTCpJlDNVDt0IQy58H5h', tags:['Czech','Running','Ultra','Training','Spotify'] },
-
-  // 30 Mar 2026
-  { id:'2026-03-30-1', date:'2026-03-30', title:'Jak se zlepšit v běhání podle elitního běžce | Patrik Vebr |', show:'TiimiTalks', totalMinutes:60, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015beb4ae44fa306bd85d28d229c8', platform:'spotify', link:'https://open.spotify.com/episode/1qwydXOs5ArnUAyoW0llpj', tags:['Czech','Running','Training','Interview','Spotify'] },
-  { id:'2026-03-30-2', date:'2026-03-30', title:'#117: Slovo trénink nepoužívám, chodím běhat', show:'TŘIŠESTPĚT', totalMinutes:64, cover:'https://i.scdn.co/image/ab67656300005f1ffb04ff49157a09c31bab76fc', platform:'spotify', link:'https://open.spotify.com/episode/5ysLhO71zyUp7FTRCirzpN', tags:['Czech','Running','Interview','Spotify'] },
-
-  // 28 Mar 2026
-  { id:'2026-03-28-1', date:'2026-03-28', title:'Homoláč: Základem vždy bude trénink. Běžci občas jedou až moc přehnaně podle hodinek jako roboti', show:'Kilometry Jiřího Ježka', totalMinutes:49, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/1DiD32mUC9CCUk7vyJucLV', tags:['Czech','Running','Interview','Spotify'] },
-
-  // 27 Mar 2026
-  { id:'2026-03-27-1', date:'2026-03-27', title:'Jsme digitálně obézní. Začíná epidemie samoty.', show:'Brain We Are', totalMinutes:77, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be97fdd97192a6494f488f1579', platform:'spotify', link:'https://open.spotify.com/episode/7LJNuKf6LTAlyQoZNFcJzd', tags:['Czech','Self improvement','Science','Spotify'] },
-  { id:'2026-03-27-2', date:'2026-03-27', title:'Standa se rozhodně dostane do sloučení. Adama je mi líto, neumí to hrát | ROZHOVOR S LEOŠEM 🥥', show:'Tohle není MÚPI', totalMinutes:112, cover:'https://i.ytimg.com/vi/z_YEdMvSP0k/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=z_YEdMvSP0k', tags:['Czech','Reality TV','Survivor','YouTube'] },
-  { id:'2026-03-27-3', date:'2026-03-27', title:'Zasloužil si to? Musela tohle televize udělat? Produkce se zlepšila! (Survivor Recap 14. díl)', show:'Popcorn Time', totalMinutes:82, cover:'https://i.ytimg.com/vi/p5cwWeN1ztU/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=p5cwWeN1ztU', tags:['Czech','Reality TV','Survivor','YouTube'] },
-
-  // 23 Mar 2026
-  { id:'2026-03-23-1', date:'2026-03-23', title:'#127 Maroš Vago – Cílem je vnitřní klid... Jak ho dosáhnout?', show:'BROCAST', totalMinutes:230, cover:'https://i.scdn.co/image/ab67656300005f1f3d0993114c7ba094b0d8c8b3', platform:'spotify', link:'https://open.spotify.com/episode/6vp391Mm2Q6HJGGyuZTO3J', tags:['Czech','Self improvement','Philosophy','Interview','Spotify'] },
-
-  // 20 Mar 2026
-  { id:'2026-03-20-1', date:'2026-03-20', title:'#127 Maroš Vago – Cílem je vnitřní klid... Jak ho dosáhnout?', show:'BROCAST', totalMinutes:230, cover:'https://i.scdn.co/image/ab67656300005f1f3d0993114c7ba094b0d8c8b3', platform:'spotify', link:'https://open.spotify.com/episode/6vp391Mm2Q6HJGGyuZTO3J', tags:['Czech','Self improvement','Philosophy','Interview','Spotify'] },
-
-  // 19 Mar 2026
-  { id:'2026-03-19-1', date:'2026-03-19', title:'#133 Jaroslav Brychta – Získat náskok díky AI může každý. Já to dělám takhle...', show:'BROCAST', totalMinutes:48, cover:'https://i.scdn.co/image/ab67656300005f1fe09464f6dd4601b38fbba447', platform:'spotify', link:'https://open.spotify.com/episode/5anrtqPFU5NPr4RzcqZc6r', tags:['Czech','AI','Technology','Interview','Spotify'] },
-  { id:'2026-03-19-2', date:'2026-03-19', title:'Soňa Kopčoková - Doktoři řekli stop, ona běžela 400 km', show:'Edgar podcast', totalMinutes:64, cover:'https://i.scdn.co/image/ab67656300005f1f04defeb99bf4e0bbd150318d', platform:'spotify', link:'https://open.spotify.com/episode/72ffasDcN6rKNNw5VEhTf5', tags:['Czech','Running','Ultra','Interview','Spotify'] },
-  { id:'2026-03-19-3', date:'2026-03-19', title:'Reality shows všude - Clickbait 43', show:'Clickbait', totalMinutes:102, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be7598e688fa5b8ec738763420', platform:'spotify', link:'https://open.spotify.com/episode/6xPHZkSHCeIPRKBAsguv34', tags:['Czech','Entertainment','Spotify'] },
-
-  // 18 Mar 2026
-  { id:'2026-03-18-1', date:'2026-03-18', title:'Zapomeňte na biohacking. Kaskadérka Hanka Dvorská (66) odhaluje svůj recept na mládí.', show:'Na Tělo(cvik)', totalMinutes:39, cover:'https://i.scdn.co/image/ab67656300005f1f9f0674b72b6c3cb135b68131', platform:'spotify', link:'https://open.spotify.com/episode/4wOwlZ0vVAJzmQzxAZpVci', tags:['Czech','Health','Interview','Spotify'] },
-
-  // 17 Mar 2026
-  { id:'2026-03-17-1', date:'2026-03-17', title:'JONAS VINGEGAARD v akci na Paříž - Nice a parádní finiše na Tirreno - Adriatico!', show:'Dojeto', totalMinutes:52, cover:'https://i.scdn.co/image/ab67656300005f1fe16f1cc39fd7d9f3bcdce9af', platform:'spotify', link:'https://open.spotify.com/episode/2647fFw5SuMuqQckYqnJTo', tags:['Czech','Cycling','Spotify'] },
-  { id:'2026-03-17-2', date:'2026-03-17', title:'TOP 10 největší talenti pro rok 2026', show:'Dojeto', totalMinutes:26, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015bed76a8b6925dd73affaa4a309', platform:'spotify', link:'https://open.spotify.com/episode/4IUOPHL7YBsA6fOh1pZ6EL', tags:['Czech','Cycling','Spotify'] },
-
-  // 15 Mar 2026
-  { id:'2026-03-15-1', date:'2026-03-15', title:'Patnáctistovka je někdy řežba, jindy vyčkávaná. Baví mě, jak se to rychle semele, říká atletka Mäki', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6XDpcISg1L7sHVx1MvTwRe', tags:['Czech','Athletics','Running','Interview','Spotify'] },
-  { id:'2026-03-15-2', date:'2026-03-15', title:'Blíží se doba, že v cyklistice dojde na platové stropy, říká Tesař o podmínkách mezi profesionály', show:'Kilometry Jiřího Ježka', totalMinutes:54, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/5V9uNsnpJ4dXjotRHLgJy6', tags:['Czech','Cycling','Interview','Spotify'] },
-  { id:'2026-03-15-3', date:'2026-03-15', title:'#132 Michal Horáček – Sametová revoluce 89. Co z učebnic dějepisu záměrně vynechali...', show:'BROCAST', totalMinutes:139, cover:'https://i.scdn.co/image/ab67656300005f1f74bedcf886284af30d2f399c', platform:'spotify', link:'https://open.spotify.com/episode/5PlhaILToPa9x2YgwF8ZNJ', tags:['Czech','History','Interview','Spotify'] },
-  { id:'2026-03-15-4', date:'2026-03-15', title:'Makej vole! Podcast #102 - Tomáš Štverák: Po letech bez trenéra přišla změna', show:'Makej vole! Podcast', totalMinutes:26, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/5hNprJWUXDzrKqUhRCPWJs', tags:['Czech','Running','Ultra','Spotify'] },
-
-  // 3 Mar 2026
-  { id:'2026-03-03-1', date:'2026-03-03', title:'#148: Žaneta Polášková – "Nebuďte na sebe tvrdí, buďte vytrvalí."', show:'TŘIŠESTPĚT', totalMinutes:94, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be7b9bdc334b25ab7fc7097cbc', platform:'spotify', link:'https://open.spotify.com/episode/5nsfY39mq097poeIXdcDBX?si=vsiH72ovTxmiSHyHaQtnXg', tags:['Czech','Running','Ultra','Interview','Spotify'] },
-  { id:'2026-03-03-2', date:'2026-03-03', title:'#134: Daniel Ligocki – "Překonávejte svůj strach a buďte lepší verzí sami sebe."', show:'TŘIŠESTPĚT', totalMinutes:0, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be3fba9ee3459848b655e9092b', platform:'spotify', link:'https://open.spotify.com/episode/6CH1X0m7BncIKt5mBKSvms?si=iDnIGEQaQ5iQZP9jJKq14Q', tags:['Czech','Running','Ultra','Interview','Spotify'] },
-
-  // 2 Mar 2026
-  { id:'2026-03-02-1', date:'2026-03-02', title:'Těšilo mě, když mi lídři dávali vědět, jak si váží mojí práce, vzpomíná na roli domestika Raboň', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6vSd5BzLSwZrk2oFTWARIv?si=c26t5ucyS9GfgzTXpPjFog', tags:['Czech','Cycling','Interview','Spotify'] },
-
-  // 28 Feb 2026
-  { id:'2026-02-28-1', date:'2026-02-28', title:'Petr Cech: What Most People Get Wrong About Football', show:'Business of Sport', totalMinutes:0, cover:'https://i.ytimg.com/vi/lot5Ixgbxkk/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/lot5Ixgbxkk?si=gc3fjnAxcTjmQP2l', tags:['English','Football','Interview','Sport','YouTube'] },
-  { id:'2026-02-28-2', date:'2026-02-28', title:'#131 Dalibor Dědek – Příběh skromného miliardáře z Jizerek', show:'Brocast', totalMinutes:0, cover:'https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f88a8ed53a0775d7d2cc3fd86', platform:'spotify', link:'https://open.spotify.com/episode/2lNscCnQVp5HbUtLN4aXth?si=e2537EGGSeK3QTvFFl5Z3A', tags:['Czech','Interview','Business','Success','Spotify'] },
-  { id:'2026-02-28-3', date:'2026-02-28', title:'#128 MUDr. Gertrúda Čápová – Tajemství švýcarského zdraví…', show:'Brocast', totalMinutes:0, cover:'https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fde75b41297998a5b2d6a20ec', platform:'spotify', link:'https://open.spotify.com/episode/1pwVl9sW7AclRiUKmVmQG9?si=wW23B-KPTRCyJZlBNLkRPQ', tags:['Czech','Health','Interview','Medicine','Spotify'] },
-
-  // 27 Feb 2026
-  { id:'2026-02-27-1', date:'2026-02-27', title:'Makej vole! Podcast #94 – Závodní speciál: Chopok Skymarathon, Beskydská sedmička a UTMB', show:'Makej vole! Podcast', totalMinutes:0, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/3OnRfEWVHoCpsskMr82CmU?si=-q0udo9hTvu_CAaRKEYb5Q', tags:['Czech','Running','Ultra','B7','UTMB','Spotify'] },
-  { id:'2026-02-27-2', date:'2026-02-27', title:'Makej vole! Podcast #95 Speciál – Ross Edgley, Kilian Jornet, rekord na Tor de Géants, Strava novinky a další…', show:'Makej vole! Podcast', totalMinutes:0, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/3umavfYvE5PsL3BxMWioV2?si=pxVrB3P6QgCO28cCmrMx1g', tags:['Czech','Running','Ultra','Special','Spotify'] },
-  { id:'2026-02-27-3', date:'2026-02-27', title:'#28 Metoděj Jílek: moje několikaté používání Penca bylo letos završeno spoluprací', show:'Penco podcast', totalMinutes:0, cover:'https://i.scdn.co/image/ab67656300005f1f0441e07884a097d964f41361', platform:'spotify', link:'https://open.spotify.com/episode/3Z00umZZGJoxjYsnMRt1if', tags:['Czech','Running','Sport','Spotify'] },
-
-  // 26 Feb 2026
-  { id:'2026-02-26-1', date:'2026-02-26', title:'Makej vole! Podcast #98 - Terka Rudolfová nejen o rekordu na Beskydské sedmičce', show:'Makej vole! Podcast', totalMinutes:0, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/1mjv46beRp7XW3Qn6ayoZT?si=UT6RrHDmT1Wqh0kTDKPkWA', tags:['Czech','Running','Ultra','B7','Spotify'] },
-
-  // 25 Feb 2026
-  { id:'2026-02-25-1', date:'2026-02-25', title:'#176 - JAN KOLLER - Miliony z fotbalu rozumně investoval, Dnes spoluvlastní padelový klub - Legenda fotbalu', show:'Kid Ajvn & A-Cast', totalMinutes:0, cover:'https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1fd3ec3065a51959341d5b0367', platform:'spotify', link:'https://open.spotify.com/episode/40j4q27YXlfTGd0LmEDgt2', tags:['Czech','Football','Interview','Business','Spotify'] },
-
-  // 24 Feb 2026
-  { id:'2026-02-24-1', date:'2026-02-24', title:'RoadCast #2 - Offseason a zimní příprava', show:'RoadCast', totalMinutes:0, cover:'https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f43e0955e4175799299096222', platform:'spotify', link:'https://open.spotify.com/episode/1YWxdnBsFlEHZVxKgUSKDP?si=66sjJOq6RrKW3wXpGtAY8g', tags:['Czech','Cycling','Training','Spotify'] },
-
-  // 23 Feb 2026
-  { id:'2026-02-23-1', date:'2026-02-23', title:'RoadCast #1 - Život profesionální cyklistky', show:'RoadCast', totalMinutes:0, cover:'https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fdb2417ec09f8a10f4042f525', platform:'spotify', link:'https://open.spotify.com/episode/71VKaxLjyTkXFGSQUTFrpZ?si=6PxxQ0eKSLKijxVQKWRirQ', tags:['Czech','Cycling','Interview','Spotify'] },
-
-  // 22 Feb 2026
-  { id:'2026-02-22-1', date:'2026-02-22', title:'JIŘÍ LANGMAJER: Byl jsem hrozný k*kot, teď čím dál víc pláču', show:'Čestmír Strakatý', totalMinutes:0, cover:'https://i.ytimg.com/vi/hEibxJ9omzs/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/hEibxJ9omzs?si=aVQDap6h-8ASSi5P', tags:['Czech','Interview','YouTube'] },
-  { id:'2026-02-22-2', date:'2026-02-22', title:'How to Train and Recover Like a 8X Cyclocross World Champion', show:'WHOOP', totalMinutes:0, cover:'https://i.ytimg.com/vi/xT1QXOmeFuI/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/xT1QXOmeFuI?si=95NkoDoCjdNs9cCE', tags:['English','Cycling','Training','YouTube'] },
-
-  // 20 Feb 2026 
-  { id:'2026-02-20-1', date:'2026-02-20', title:'Už nechci Rolexky ani Lamba: Vémola o radikální změně životních priorit I NERUDACAST 86', show:'NerudaCast - Pavol Neruda', totalMinutes:55, cover:'https://i.ytimg.com/vi/0SYtocNLeXA/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/0SYtocNLeXA?si=49M5AGmUgbSwyvh0', tags:['Slovak','Interview','YouTube'] },
-
-  { id:'2026-02-20-2', date:'2026-02-20', title:'Tréninkové zóny nejen v TrainingPeaks - Pohledem trenéra', show:'Pohledem trenéra', totalMinutes:22, cover:'https://i.scdn.co/image/ab67656300005f1fdc2f5cff492a72f54b511a44', platform:'spotify', link:'https://open.spotify.com/episode/3Zz0CMkSqlzOnYtIrLJkV4?si=TMJ43J8BQ1eBrJFEUODorw', tags:['Czech','Training','Spotify'] },
-
-  { id:'2026-02-20-3', date:'2026-02-20', title:'Nechápu kam až to může růst. Talenti mají top profesionální přístup už od začátku, diví se Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:47, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/5MqNzYU49p8zVUYxi1hRY2?si=vO8MK297QG6cNP_OUo3U5w', tags:['Czech','Cycling','Spotify'] },
-
-  { id:'2026-02-20-4', date:'2026-02-20', title:'Makej vole! Podcast #101 - Jirka Petr a Petr Hének: O vítězství, supportu a tréninku na LH24', show:'Makej vole! Podcast', totalMinutes:35, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/4riwPwWuvT5pChA19Mj4bd?si=wuv7kS41Rde1Myu5YNvalw', tags:['Czech','Running','Podcast','LH24','Spotify'] },
-
-  // 19 Feb 2026 
-  { id:'2026-02-19-1', date:'2026-02-19', title:'VO2max, zóna 1 či 2 a vše ostatní z posledních článků na blogu - Pohledem trenéra', show:'Pohledem trenéra', totalMinutes:19, cover:'https://i.scdn.co/image/ab67656300005f1fdc2f5cff492a72f54b511a44', platform:'spotify', link:'https://open.spotify.com/episode/4eEl6jtjoR2YoDWpEqeSxK?si=f8mexCsWQL6V57qXLS3XnA', tags:['Czech','Training','Spotify'] },
-  
-  // 18 Feb 2026 
-  { id:'2026-02-18-1', date:'2026-02-18', title:'#12 - MATĚJ KUBRT - Ještěďák - finančník', show:'#DYCKYJESTED (ne)podcast', totalMinutes:41, cover:'https://i.scdn.co/image/ab67656300005f1fa15a69b93e0626791c9aa6c4', platform:'spotify', link:'https://open.spotify.com/episode/5jQB6vyNjIPZe5HcQM1Vnx?si=KZhLIzb8T8iEsAjo04xGWA', tags:['Czech','Podcast','Spotify'] },
-  { id:'2026-02-18-2', date:'2026-02-18', title:'Jak si hlídat zdraví jednoduše a dlouhodobě - MUDr. Tomáš Kaštovský - progresstalk', show:'progresstalk', totalMinutes:49, cover:'https://i.scdn.co/image/ab67656300005f1fddb32fc687251ee907f66dfc', platform:'spotify', link:'https://open.spotify.com/episode/0tD7nIbpouH8IEkhxDK1TA?si=18FiqH6aTj6BGR7QHSaf5A', tags:['Czech','Health','Spotify'] },
-
-  // 16 Feb 2026 
-  { id:'2026-02-16-1', date:'2026-02-16', title:'Tréninková Bible č. 8 - Anatomie dokonalé sezóny: Trénink podle Kiliana Jorneta', show:'Tréninková Bible', totalMinutes:30, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab00001692cf8eeb730ebbd0000eed723b', platform:'spotify', link:'https://open.spotify.com/episode/3e2cGTzn4Fdd2UsT9dqA5A', tags:['Czech','Training','Spotify'] },
-
-  // 17 Feb 2026 
-  { id:'2026-02-17-1', date:'2026-02-17', title:'Měl jsem krizi třeba i čtyřicet kilometrů. Často se na trati trápím sám, přiznává běžec Šumný', show:'Kilometry Jiřího Ježka', totalMinutes:43, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/4UYg4ndyRdGm0dQtnf9DhX?si=8H7kboHASGiNCCNA39Z4gA', tags:['Czech','Running','Spotify'] },
-  { id:'2026-02-17-2', date:'2026-02-17', title:'YOU NEED TO RESET, RESTART AND REFOCUS - Powerful Motivational Speech | Eric Thomas', show:'Motivation Daily by Motiversity', totalMinutes:9, cover:'https://i.ytimg.com/vi/T0mjs9t616s/mqdefault.jpg', platform:'spotify', link:'https://open.spotify.com/episode/0XHYmUFJkzCg3JdZwCUcBw?si=mDIGZIgQS9OaEVTfpmL4ow', tags:['English','Motivation','Spotify'] },
-  
-  // 11 Feb 2026 
-  { id:'2026-02-11-1', date:'2026-02-11', title:'Makej vole! Trénink #2 - O běžecké technice', show:'Makej vole! Trénink', totalMinutes:17, cover:'https://i.scdn.co/image/ab67656300005f1fbb9b8343e92c7814d6a0efc2', platform:'spotify', link:'https://open.spotify.com/episode/3UOyuxRVrB0nVGhq5LGjt5?si=7cb518ff77004de5', tags:['Czech','Running','Training','Spotify'] },
-  { id:'2026-02-11-2', date:'2026-02-11', title:'Makej vole! Podcast #100 - Veronika Reade a Ing. Jiří Sedláček, CSc: Příběh značky PENCO', show:'Makej vole! Podcast', totalMinutes:34, cover:'https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8', platform:'spotify', link:'https://open.spotify.com/episode/7yRAg4kyuKBWjs90YQnrwr?si=FNwV9nNWT0G3s5PLnhXZuw', tags:['Czech','Podcast','Spotify'] },
-  
-  // 10 Feb 2026 
-  { id:'2026-02-10-1', date:'2026-02-10', title:'UTMB – Jaká je historie a zajímavosti ohledně této světové série?', show:'Hodinky 365 smart', totalMinutes:0, cover:'https://i.ytimg.com/vi/vvQG90Pvj5s/maxresdefault.jpg', platform:'youtube', link:'https://youtu.be/vvQG90Pvj5s?si=R2FyQa2M4IlSO49O', tags:['Czech','Running','YouTube'] },
-  { id:'2026-02-10-2', date:'2026-02-10', title:'Znám každou výmluvu, která existuje. Na mě si svěřenci nepřijdou. Musí makat, směje se Šimůnek', show:'Kilometry Jiřího Ježka', totalMinutes:74, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6BkYb0ze53OWXGwnO93FRn?si=5f9ZPSGAQFCwfVa7U25M6Q', tags:['Czech','Cycling','Spotify'] },
-  
-  // 07 Feb 2026
-  { id:'2026-02-07-1', date:'2026-02-07', title:'Myslel jsem si, že jsem naivní | Řekl jsem hov*o - udělám z toho svojí výhodu | PETR JÁKL', show:'NOHAMA NA ZEMI', totalMinutes:132, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab0000169254458474a113ae4d7f8e3bd3', platform:'spotify', link:'https://open.spotify.com/episode/0tArf1zgeY5iJF5sqrEGps', tags:['Czech', 'Interview', 'Self improvement'] },
-  { id:'2026-02-07-2', date:'2026-02-07', title:'JIRKA KRÁL - Chystá návrat na Youtube nebo chce úplně zmizet ze sítí? | MineCast #3', show:'MineCast', totalMinutes:90, cover:'https://i.ytimg.com/vi/URDvhaIhki0/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=URDvhaIhki0', tags:['Czech', 'Interview', 'YouTube'] },
-
-  // 06 Feb 2026
-  { id:'2026-02-06-1', date:'2026-02-06', title:'#3 Adam Korecký - „Neboj se doplňovat sacharidy včas…" | UltraMinuty', show:'UltraMinuty', totalMinutes:128, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab00001692dff3781e418e18209470565f', platform:'spotify', link:'https://open.spotify.com/episode/6G7yPXeDo2eTc5edo6z9G7', tags:['Czech', 'Running', 'Ultra', 'Nutrition'] },
-
-  // 31 Jan 2026
-  { id:'2026-01-31-1', date:'2026-01-31', title:'Pohodlí je výkon. Konzistence je klíčem úspěchu pro profíka i hobby sportovce, říká biomechanik', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/2etueq7SDC7x3Vn0Srf2qS', tags:['Czech', 'Cycling', 'Science', 'Biomechanics'] },
-
-  // 30 Jan 2026
-  { id:'2026-01-30-1', date:'2026-01-30', title:'Makej vole! Podcast #84 – Honza Procházka o tréninku a vítězství na LH24 2025', show:'Makej vole! Podcast', totalMinutes:90, cover:'https://i.ytimg.com/vi/6krg0G80NgY/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=6krg0G80NgY', tags:['Czech', 'Running', 'Ultra', 'LH24'] },
-
-  // 28 Jan 2026
-  { id:'2026-01-28-1', date:'2026-01-28', title:'#145: Martina Oroszová – "B7 jsem odběhla na Marskách."', show:'TŘIŠESTPĚT', totalMinutes:74, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab00001692a7d9239f2a1fbec3f11c9b1a', platform:'spotify', link:'https://open.spotify.com/episode/02YceG56oEVctkJmv3WqvP', tags:['Czech', 'Running', 'Ultra', 'B7'] },
-
-  // 23 Jan 2026
-  { id:'2026-01-23-1', date:'2026-01-23', title:'Tréninková Bible č. 7 - Proč pomalý trénink dělá rychlé běžce', show:'Tréninková Bible', totalMinutes:29, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab00001692cf8eeb730ebbd0000eed723b', platform:'spotify', link:'https://open.spotify.com/episode/6pJbwgz5KPYEgYCErUHZ1y', tags:['Czech', 'Running', 'Training'] },
-  
-  // 20 Jan 2026 
-  { id:'2026-01-20-1', date:'2026-01-20', title:'Kroky týmu Visma jsou zvláštní. Konec kariéry Yatese je toho dalším důkazem, diví se Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/7bQCkjs8U1yByfjd5EyvE1?si=b35bc8000111443e', tags:['Czech', 'Cycling', 'News'] },
-  
-  // 14 Jan 2026 (from Spotify)
-  { id:'2026-01-14-1', date:'2026-01-14', title:'Tréninková Bible č. 6 - Tajemství silového tréninku pro běžce', show:'Tréninková Bible', totalMinutes:28, cover:'https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be5cebb896f2fb98e1b1889e40', platform:'spotify', link:'https://open.spotify.com/episode/6SfAdG0txuoy4ubEyVYWIc', tags:['Czech', 'Running', 'Training'] },
-  { id:'2026-01-14-2', date:'2026-01-14', title:"IT'S TIME TO RESET, RESTART, AND REFOCUS IN 2026 - The Most Powerful Motivational Speech Compilation", show:'Motivation Daily by Motiversity', totalMinutes:38, cover:'https://i.scdn.co/image/ab67656300005f1f132579598f5357289e616768', platform:'spotify', link:'https://open.spotify.com/episode/2XNv4MPCrgsDb2PitzdtD5', tags:['English','Motivation'] },
-  
-  // 31 Dec 2025
-  { id:'2025-12-31-1', date:'2025-12-31', title:'HOUSE - Od Minecraftu k Everestu, dítěti a životu mimo YouTube | MineCast #2', show:'MineCast', totalMinutes:90, cover:'https://i.ytimg.com/vi/tE-FrPm8cDA/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=tE-FrPm8cDA', tags:['Czech', 'Interview', 'YouTube', 'Minecraft'] },
-  
-  // 30 Dec 2025 
-  { id:'2025-12-30-1', date:'2025-12-30', title:'Hobby sportovci si někdy škodí tím, že jí málo. Vše dohání sladkostmi, říká specialistka Mokrejšová', show:'Kilometry Jiřího Ježka', totalMinutes:53, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/3rJgLhIYQ3iJ19y9Izrdey?si=e13ce08ae20d4ee0', tags:['Czech', 'Nutrition', 'Running'] },
-
-  // 20 Dec 2025
-  { id:'2025-12-20-1', date:'2025-12-20', title:'GEJMR - Otevřeně o vyhoření, anonymitě a cestě k milionu odběratelů | MineCast #1', show:'MineCast', totalMinutes:90, cover:'https://i.ytimg.com/vi/wHtPgpbtfYc/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=wHtPgpbtfYc', tags:['Czech', 'Interview', 'YouTube', 'Minecraft'] },
-  
-  // 12 Dec 2025 (from Spotify)
-  { id:'2025-12-12-1', date:'2025-12-12', title:'Tréninková Bible č. 5 - Pražská stovka', show:'Tréninková Bible', totalMinutes:100, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb97347331c4ebd7f7596575c', platform:'spotify', link:'https://open.spotify.com/episode/2dIqdZYWPxwDgPgHQ98rQR', tags:['Czech', 'Running', 'Ultra'] },
-  
-  // 30 Nov 2025 
-  { id:'2025-11-30-1', date:'2025-11-30', title:'Cyklokros je fajn, ale pořád ho beru jako doplněk k hlavní sezoně. Na olympiádu nepatří, tvrdí Ježek', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/2z6bCSvOu1ifxpqmv2oleJ?si=a4fc6b9fee214525', tags:['Czech', 'Cycling', 'Chill'] },
-
-  // 23 Nov 2025
-  { id:'2025-11-23-1', date:'2025-11-23', title:'Tréninková Bible č. 4 - Odpovědnice', show:'Tréninková Bible', totalMinutes:96, cover:'https://i.scdn.co/image/ab6765630000f68d896ff1bbff5d945b6b02e7f7', platform:'spotify', link:'https://open.spotify.com/episode/0eTG781YyPjaGSkoUNzFsX?si=55f72f77f9da46bb', tags:['Czech', 'Running', 'Training', 'Q&A'] },
-  
-  // 20 Nov 2025
-  { id:'2025-11-20-1', date:'2025-11-20', title:'#29 LEGS:ON podcast - SPECIÁL Na co se těšíme v roce 2026?', show:'LEGS:ON | Cyklistický podcast', totalMinutes:32, cover:'https://i.ytimg.com/vi/vAtwHh5o7z0/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=vAtwHh5o7z0', tags:['Czech', 'Cycling', 'Special'] },
-  
-  // 11 Nov 2025
-  { id:'2025-11-11-1', date:'2025-11-11', title:'Tadej Pogačar Interview › Cyclist Magazine Podcast [ft. Fahri Diner]', show:'Cyclist', totalMinutes:88, cover:'https://i.ytimg.com/vi/ztqycLMnQgk/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=ztqycLMnQgk', tags:['English', 'Cycling', 'Interview', 'Tour de France'] },
-  { id:'2025-11-11-2', date:'2025-11-11', title:'Je to 7 let... Co dělám teď a jaké mám plány? l Jirka Král', show:'RestDay', totalMinutes:83, cover:'https://i.ytimg.com/vi/FxeeAjUJsZg/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=FxeeAjUJsZg', tags:['Czech', 'Lifestyle', 'Vlog', 'Interview'] },
-  
-  // 10 Nov 2025
-  { id:'2025-11-10-1', date:'2025-11-10', title:'145: The Pitfalls of High Volume Endurance Training', show:'The Nick Bare Podcast', totalMinutes:64, cover:'https://i.scdn.co/image/ab6765630000f68dbf809ec21bc6132d3e2b5852', platform:'spotify', link:'https://open.spotify.com/episode/05hPzbCZ8JE3lfW8RIbMtI?si=ce2d0d1a159f4b1f', tags:['English', 'Running', 'Training', 'Science'] },
-  { id:'2025-11-10-2', date:'2025-11-10', title:'Horolezec Trávniček: Výstup na Everest môže vyjsť až na 100 000 eur!', show:'Diskusný klub so Šimonom Žďárským', totalMinutes:34, cover:'https://i.ytimg.com/vi/ucwBXQeRN-g/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=ucwBXQeRN-g', tags:['Slovak', 'Mountaineering', 'Everest', 'Interview'] },
-  
-  // 9 Nov 2025
-  { id:'2025-11-09-1', date:'2025-11-09', title:'Tréninková Bible č. 3 - Bicarb, ketony a porovnání tréninkových přístupů z předchozích epizod', show:'Tréninková Bible', totalMinutes:85, cover:'https://i.scdn.co/image/ab6765630000f68d896ff1bbff5d945b6b02e7f7', platform:'spotify', link:'https://open.spotify.com/episode/6KMUf2dT2moQWBk1WamjQ5?si=3d7f561638134ce9', tags:['Czech', 'Running', 'Training', 'Science', 'Nutrition'] },
-
-  // 2 Nov 2025
-  { id:'2025-11-02-1', date:'2025-11-02', title:'#09 - TOMÁŠ ŠTVERÁK - Elitní ultrarunner', show:'#DYCKYJESTED (ne)podcast', totalMinutes:87, cover:'https://i.scdn.co/image/ab67656300005f1f83f88c0923e175cfff29b3e6', platform:'spotify', link:'https://open.spotify.com/episode/23c621ZeIUdNpTTgNw98hA?si=36567ae77d394325', tags:['Czech', 'Running', 'Ultra', 'Interview'] },
-
-  // 28 Oct 2025
-  { id:'2025-10-28-1', date:'2025-10-28', title:'O sportu, mozku a lidskosti s neurochirurgem Vladimírem Benešem', show:'progresstalk', totalMinutes:40, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be79a35fa69d248ef42f6c31cb', platform:'spotify', link:'https://open.spotify.com/episode/6JFSmx0nJxOjQvk0uGHTI6?si=95b2aec81ab34ce6', tags:['Czech', 'Science', 'Medicine', 'Neuroscience', 'Sports', 'Health'] },
-
-  // 27 Oct 2025
-  { id:'2025-10-27-1', date:'2025-10-27', title:'Speciál o běhání: Jak začít běhat? Jaké boty NEkupovat? Co dýchání? A jak pokořit maraton? David Vaš', show:'Podcast Inspiro Jakuba Stejskala', totalMinutes:89, cover:'https://i.ytimg.com/vi/qzO_N3BahSI/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=qzO_N3BahSI', tags:['Czech', 'Running', 'Marathon', 'Training'] },
-  { id:'2025-10-27-2', date:'2025-10-27', title:'Tréninková Bible č. 2 - David a Megan Roche – trénink, věda a rekord na Leadville Trail 100 Run', show:'Tréninková Bible', totalMinutes:91, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb3593361b68d9f980a493b16', platform:'spotify', link:'https://open.spotify.com/episode/2L3vsxRdmdNorf2lG5EWiP?si=998ac1ae047c4866', tags:['Czech', 'Running', 'Ultra', 'Training', 'Science', 'Leadville'] },
-
-  // 26 Oct 2025
-  { id:'2025-10-26-1', date:'2025-10-26', title:'Tréninková Bible č. 1 - Svalová vytrvalost', show:'Tréninková Bible', totalMinutes:78, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be0fdfee7d7b483f13815aa919', platform:'spotify', link:'https://open.spotify.com/episode/5RyklHgI597VALqi3EBdxF?si=67c9a4acddf04fa0', tags:['Czech', 'Running', 'Training', 'Ultra', 'Science'] },
-
-  // 21 Oct 2025
-  { id:'2025-10-21-1', date:'2025-10-21', title:'01 Damián Vích', show:'RunCzech podcast', totalMinutes:50, cover:'https://i.scdn.co/image/ab67656300005f1f7ed52563d918c43d3d932bcf', platform:'spotify', link:'https://open.spotify.com/episode/5CaZzbHGtinISA4Gdv1YYX?si=3d7d86ffcf024b4f', tags:['Czech', 'Running', 'Marathon'] },
-  { id:'2025-10-21-2', date:'2025-10-21', title:'DÍL SEDMÝ: Regeneruj jako profík! Bílkoviny ve vytrvalostních sportech.', show:'BETRI CAST 🎙️', totalMinutes:30, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015bedb3cae8583d710e95c0c1ff0', platform:'spotify', link:'https://open.spotify.com/episode/5zKPqX3AuuDNzuwxBPHK7B?si=b2cdde773ee44fd2', tags:['Czech', 'Nutrition', 'Training', 'Science', 'Triathlon'] },
-
-  // 20 Oct 2025
-  { id:'2025-10-20-1', date:'2025-10-20', title:'JIRKA PROCHÁZKA: Stav boží přítomnosti máme v sobě', show:'Kid Ajvn & A-Cast', totalMinutes:97, cover:'https://i.ytimg.com/vi/QlFbm5JEaqQ/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=QlFbm5JEaqQ', tags:['Czech', 'Philosophy', 'Spirituality', 'Self improvement', 'UFC'] },
-
-  // 19 Oct 2025
-  { id:'2025-10-19-1', date:'2025-10-19', title:'DÍL TŘETÍ - Karbonové boty - revoluce v běhu, nebo jen hype?', show:'BETRI CAST', totalMinutes:70, cover:'https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb7a811f699a501cf7eae3341', platform:'spotify', link:'https://open.spotify.com/episode/2UAICel6XQbVgjILNcSuKj?si=9a030a4b85454cc9', tags:['Czech', 'Running', 'Technology'] },
-
-  // 16 Oct 2025
-  { id:'2025-10-16-1', date:'2025-10-16', title:'Tomáš Mikolov: AI, GPT, DeepSeek, Člověk, Vědomí, Vesmír, Evoluce #80', show:'Pavel Mirovský', totalMinutes:81, cover:'https://i.ytimg.com/vi/qpSMBXmNHfM/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=qpSMBXmNHfM&t=4122s', tags:['Czech', 'AI', 'Technology', 'Science', 'Philosophy'] },
-  
-  // 15 Oct 2025
-  { id:'2025-10-15-1', date:'2025-10-15', title:'Tomáš Berdych - ANATOMIE MIMOŘÁDNÉHO ÚSPĚCHU... | BROCAST #122', show:'Brocast', totalMinutes:195, cover:'https://i.ytimg.com/vi/pA7dlR1ROxg/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=pA7dlR1ROxg', tags:['Czech', 'Tennis', 'Success', 'Self improvement', 'Motivation'] },
-  
-  // 14 Oct 2025
-  { id:'2025-10-14-1', date:'2025-10-14', title:'Vítěz Spartathlonu Brunner: Nejedu podle tabulek. Když vyběhnu, tak se rozhodnu, co půjdu za trénink', show:'Kilometry Jiřího Ježka', totalMinutes:49, cover:'https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/76JrkNpH2miTeopLxJZf9Q?si=d5891f73cc474544', tags:['Czech', 'Running', 'Ultra', 'Spartathlon'] },
-  { id:'2025-10-14-2', date:'2025-10-14', title:'Jak se při běhání přiblížit elitám? Pomáhají kopce i intervaly, závaží naopak může uškodit', show:'YouTube', totalMinutes:60, cover:'https://i1.sndcdn.com/artworks-xeRkG5K8UE9TZjA3-0ijwhw-t500x500.png', platform:'youtube', link:'https://www.youtube.com/watch?v=EX0jg1opVh0', tags:['Czech', 'Running', 'Training'] },
-  
-  // 13 Oct 2025
-  { id:'2025-10-13-1', date:'2025-10-13', title:'Martin Fuksa: "Vojnou by si měl projít každý" 🥇 zlato na olympiádě bylo o hlavě', show:'YouTube', totalMinutes:60, cover:'https://i.ytimg.com/vi/_RIgi6UUatw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCvw8TE73wbXQn8UNrmeIao0PD7mg', platform:'youtube', link:'https://www.youtube.com/watch?v=_RIgi6UUatw', tags:['Czech', 'Olympics', 'Canoe', 'Mental strength'] },
-  { id:'2025-10-13-2', date:'2025-10-13', title:'Makej vole! Podcast #96 - Radek Brunner o vítězství na Spartathlonu', show:'Makej vole! Podcast', totalMinutes:30, cover:'https://i.ytimg.com/vi/M_9ZNa-oBv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDaYIc7TVMtibFulycFvfItDIwzfg', platform:'youtube', link:'https://www.youtube.com/watch?v=M_9ZNa-oBv4', tags:['Czech', 'Running', 'Ultra', 'Spartathlon'] },
-  { id:'2025-10-13-3', date:'2025-10-13', title:'S příchodem AI bychom se měli o to víc naučit programovat: Umělá inteligence | Pavel Beránek', show:'YouTube', totalMinutes:61, cover:'https://i.ytimg.com/vi/KC_1RIsN-4o/maxresdefault.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=KC_1RIsN-4o', tags:['Czech', 'Technology', 'AI', 'Programming'] },
-
-  // 10 Oct 2025
-  { id:'2025-10-10-1', date:'2025-10-10', title:'RR29 - Triatlon ho stál (skoro) všetko', show:'Romulus & Remus', totalMinutes:96, cover:'https://i.scdn.co/image/ab67656300005f1f3e41cd9912e8fa7cc7b9e2b4', platform:'youtube', link:'https://www.youtube.com/watch?v=Qafo6zbp90U&t=5067s', tags:['Czech', 'Triathlon', 'Sports', 'Motivation'] },
-
-  // 8 Oct 2025
-  { id:'2025-10-08-1', date:'2025-10-08', title:'YOU NEED TO FOCUS', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:5, cover:'https://i.scdn.co/image/ab67656300005f1fb5dd6365373d57386b1f3706', platform:'spotify', link:'https://open.spotify.com/episode/2fQIrpDiPGamn7DqKP38uH?si=64f0473edc1744b6', tags:['English', 'Motivation', 'Focus'] },
-  { id:'2025-10-08-2', date:'2025-10-08', title:'TAKE CONTROL OF YOURSELF', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:6, cover:'https://i.scdn.co/image/ab67656300005f1f99587b3a91682a372a512466', platform:'spotify', link:'https://open.spotify.com/episode/781NSkuv5xrYed52sjDgA0?si=3d3c0a14c3e549bb', tags:['English', 'Motivation', 'Self improvement'] },
-
-  // 7 Oct 2025
-  { id:'2025-10-07-1', date:'2025-10-07', title:'"nemusíš být pořád šťastný" - HRA ŽIVOTA #29', show:'HRA ŽIVOTA s Martinem Hrabinou', totalMinutes:22, cover:'https://i.scdn.co/image/ab67656300005f1f95b1cd0c17218ccbef751d6e', platform:'spotify', link:'https://open.spotify.com/episode/3vRegZEYymuNYFCqPIecEp?si=242c666857f54207', tags:['Czech', 'Self improvement'] },
-  { id:'2025-10-07-2', date:'2025-10-07', title:'FORCE YOURSELF TO DO IT', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:5, cover:'https://i.scdn.co/image/ab67656300005f1f44423e8be80b4894fd2dcf2c', platform:'spotify', link:'https://open.spotify.com/episode/3W4jlEU4OUH79LDXikfOAj?si=be0ffb6ad6964b9d', tags:['English', 'Motivation'] },
-
-  // 5 Oct 2025
-  { id:'2025-10-05-1', date:'2025-10-05', title:'#137: Jiří Petr - "Chci uspět, chci vyhrát, chci ty kluky porazit."', show:'TŘIŠESTPĚT', totalMinutes:90, cover:'https://i.scdn.co/image/ab6765630000ba8afb04ff49157a09c31bab76fc', platform:'spotify', link:'https://open.spotify.com/episode/3OaHSuuNco3CotWzUftEx1?si=1c27c06301aa41bf', tags:['Czech','Running', 'Ultra'] },
-  { id:'2025-10-05-2', date:'2025-10-05', title:'"Někdy zlepšit život znamená zpomalit." | Jakub Vágner | SPIRIT SHOW #36', show:'Majk Spirit', totalMinutes:30, cover:'https://www.csmusic.cz/image_novinky/8541.jpg', platform:'youtube', link:'https://www.youtube.com/watch?v=LuM7w8MwA34&t=1569s', tags:['Czech','Life', 'Self improvement', 'Philosophy'] },
-
-  // 28 Sep 2025
-  { id:'2025-09-28-1', date:'2025-09-28', title:"koupil jsem si kurz za 125 000 KČ a tohle je moje upřímná zkušenost... HRA ŽIVOTA #28", show:'HRA ŽIVOTA s Martinem Hrabinou', totalMinutes: 10, cover:'https://yt3.googleusercontent.com/tyMHvqC5Qh7lBayZhnYMW5SwTFkmDtRT3qpYfLTsju5Jp2oa0bg96jQLKcRClpIPKyHZJymtGw=s900-c-k-c0x00ffffff-no-rj', platform:'spotify', link:'https://open.spotify.com/episode/2As8PrKmTMUkz339vRiKzf?si=78cf9b016c784d9b', tags:['Czech', 'Self improvement'] },
-  { id:'2025-09-28-2', date:'2025-09-28', title:'EMBRACE THE SUCK', show:'Weekly Motivation by Ben Lionel Scott', totalMinutes:5, cover:'https://i.scdn.co/image/ab67656300005f1ff366d13999e833769d2a1f1c', link:'https://open.spotify.com/episode/5eofnTkrQtmQfaeiLwxD0Q?si=3ixYp76zRAemc1-ufe1gDw', platform:'spotify', tags:['English', 'Motivation'] },
-  // 18 Sep 2025
-  { id:'2025-09-18-1', date:'2025-09-18', title:'Děti musíme v začátcích nadchnout pro cyklistiku formou hry. Výsledky přijdou časem, říká Spěšný', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:  'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/2TnKRDEYjpZKDej240iDRl?si=dc87bfa947664046', tags:['Czech', 'Cycling', 'Chill'] },
-  { id:'2025-09-18-2', date:'2025-09-18', title:'Do Keni jezdíme běhat do krásné přírody a zvolníme od zrychleného světa, shodují se Vebr a Sasynová', show:'Kilometry Jiřího Ježka',  totalMinutes:49, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link: 'https://open.spotify.com/episode/2XQTRE3qPvZ6uBS2PFQd2i?si=51ca6cf37b0a4bbe', tags:['Czech', 'Running', 'Chill', 'Cycling'] },
-
-// 30 Aug 2025
-  { id:'2025-08-30-1', date:'2025-08-30', title:'Paďour: Chci zůstat v kondici a koučem, který dost času tráví na kole. Stravu so držím jak profík', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/6lAoKExABjDn8TDZdraJfp?si=b3b93dc4b0bb4524', tags:['Czech', 'Cycling', 'Chill'] },
-
-  // 20 Aug 2025
-  { id:'2025-08-20-1', date:'2025-08-20', title:'Psychika a krize na B7 (a jiných závodech)', show:'naHoru.tv|Rozhovory & motivace', totalMinutes:24, cover:'https://static.wixstatic.com/media/3b6e39_c28ea616ea3042bf953d65e196ba37cc~mv2.png/v1/fit/w_2500,h_1330,al_c/3b6e39_c28ea616ea3042bf953d65e196ba37cc~mv2.png', platform:'spotify', link:'https://open.spotify.com/episode/6WqF4wX8lmxtafuuunG1JG?si=8899e07aab604e0c', tags:['Czech', 'Ultra', 'Running', 'Self improvement', 'B7'] },
-
-  // 17 Aug 2025
-  { id:'2025-08-17-1', date:'2025-08-17', title:'Chtěla jsem pokračovat, ale rozum rozhodl, že bude lepší to utnout, říká o odstoupení z Tour Burlová', show:'Kilometry Jiřího Ježka', totalMinutes:50, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/77A8C8OuXoTaSQothMXpgt?si=ef96b9625ff1474c', tags:['Czech', 'Cycling', 'Chill', 'Tour de France'] },
-
-  // 14 Aug 2025
-  { id:'2025-08-14-1', date:'2025-08-14', title:'Jak na Beskydskou sedmičku? S Matějem a Barčou Urbaczkovými o tréninku, výbavě i hlavě', show:'edgarpower podcast', totalMinutes:37, cover:'https://edgarpower.s17.cdn-upgates.com/e/e68891d99ba7e7-matej-s-bara-b7-podcast.jpg', platform:'spotify', link:'https://open.spotify.com/episode/7uPCEjZvgANZa8JiBH78qt?si=764240e2f11c4550', tags:['Czech','B7', 'Running', 'Ultra'] },
-
-  // 9 Aug 2025
-  { id:'2025-08-09-1', date:'2025-08-09', title:'Ježek: Z přestupu Evenepoela jsem rozpačitý. Je to divné rozhodnutí i v podání týmových manažerů', show:'Kilometry Jiřího Ježka', totalMinutes:49, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/3QqFaJRMCdT43HqecBO5xB?si=c4bbe87aa9d3499b', tags:['Czech', 'Cycling', 'Chill'] },
-
-  // 5 Aug 2025
-  { id:'2025-08-05-1', date:'2025-08-05', title:'Pogačar se cyklistikou baví a v každé etapě chtěl diváky něčím překvapit, vrací se Ježek k Tour', show:'Kilometry Jiřího Ježka', totalMinutes:38, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', platform:'spotify', link:'https://open.spotify.com/episode/7AiwwrwfKbODqxCtTc8JYg?si=275f13e239724959', tags:['Czech', 'Cycling', 'Chill', 'Tour de France'] },
-
-  // 4 Aug 2025
-  { id:'2025-08-04-1', date:'2025-08-04', title:'7 LEKCÍ, Které Mě Udělaly Milionářem v 19 Hra / Života #26', show:'HRA ŽIVOTA s Martinem Hrabinou', totalMinutes:30, cover:'https://yt3.googleusercontent.com/tyMHvqC5Qh7lBayZhnYMW5SwTFkmDtRT3qpYfLTsju5Jp2oa0bg96jQLKcRClpIPKyHZJymtGw=s900-c-k-c0x00ffffff-no-rj', platform:'spotify', link:'https://open.spotify.com/episode/0DRYeBxmcJO8qWe8M3a3Aw?si=8f39ad1abc814ae8', tags:['Czech', 'Self improvement'] },
-/*
-  // 30 Jul 2025
-  { id:'2025-07-30-1', date:'2025-07-30', title:'#41 Psychika na trailu: jak zvlád…', show:'Život na treku', status:'in-progress', minutesLeft:3, totalMinutes:75, cover:'https://i.imgur.com/zivotnat-reku-cover.png', link:'#', tags:['cz'] },
-  { id:'2025-07-30-2', date:'2025-07-30', title:'Makej vole! Podcast #87 – Tom…', show:'Makej vole! Podcast', status:'in-progress', minutesLeft:42, totalMinutes:90, cover:'https://i.imgur.com/makejvole-cover.png', link:'#', tags:['cz'] },
-
-  // 29 Jul 2025
-  { id:'2025-07-29-1', date:'2025-07-29', title:'Pogačarovi jde o to, aby každý…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:55, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', link:'#', tags:['cz'] },
-
-  // 26 Jul 2025
-  { id:'2025-07-26-1', date:'2025-07-26', title:'DÍL ŠESTÝ: Cukry jako palivo: J…', show:'BETRI CAST', status:'in-progress', minutesLeft:64, totalMinutes:125, cover:'https://i.imgur.com/betricast-cover.png', link:'#', tags:['cz','nutrition'] },
-
-  // 23 Jul 2025
-  { id:'2025-07-23-1', date:'2025-07-23', title:'Kelemen: Největší radost jsem…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:55, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', link:'#', tags:['cz'] },
-
-  // 15 Jul 2025
-  { id:'2025-07-15-1', date:'2025-07-15', title:'Petr Jan Juračka o ultracyklistic…', show:'naHoru.tv', status:'in-progress', minutesLeft:33, totalMinutes:80, cover:'https://i.imgur.com/nahoru-cover.png', link:'#', tags:['cz'] },
-
-  // 12 Jul 2025
-  { id:'2025-07-12-1', date:'2025-07-12', title:'Vingegaard dal v úvodu Tour tý…', show:'Kilometry Jiřího Ježka', status:'finished', minutesLeft:0, totalMinutes:55, cover:'https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c', link:'#', tags:['cz','cycling'] },
-  { id:'2025-07-12-2', date:'2025-07-12', title:'Dokázal jsem v 19-ti všechno, c…', show:'HRA ŽIVOTA s Martinem H.', status:'finished', minutesLeft:0, totalMinutes:70, cover:'https://i.imgur.com/hrazivota-cover.png', link:'#', tags:['cz'] },
-  { id:'2025-07-12-3', date:'2025-07-12', title:'Konečne normálna vražda', show:'Publixing', status:'in-progress', minutesLeft:18, totalMinutes:75, cover:'https://i.imgur.com/publixing-cover.png', link:'#', tags:['sk','true-crime'] },
-  { id:'2025-07-12-4', date:'2025-07-12', title:'Prečo mi to nikto nepovedal?', show:'Publixing', status:'finished', minutesLeft:0, totalMinutes:70, cover:'https://i.imgur.com/publixing-cover.png', link:'#', tags:['sk'] },
-  { id:'2025-07-12-5', date:'2025-07-12', title:'128: The 5 Habits That Changed…', show:'The Nick Bare Podcast', status:'in-progress', minutesLeft:18, totalMinutes:90, cover:'https://i.imgur.com/nickbare-cover.png', link:'#', tags:['english'] },
-
-  // 6 Jul 2025
-  { id:'2025-07-06-1', date:'2025-07-06', title:'ONDŘEJ RYBÍN: Zapletená kola…', show:'Cyklisticky podcast', status:'in-progress', minutesLeft:96, totalMinutes:156, cover:'https://via.placeholder.com/300x300?text=RYBIN', link:'#', tags:['cz','cycling'] },
-
-  // 5 Aug earlier cluster already captured above
-
-  // 1 Jul 2025
-  { id:'2025-07-01-1', date:'2025-07-01', title:'Umění čelit výzvě (Tatjana Kiel…', show:'Audiolibrix – Audioknihy pro…', status:'in-progress', minutesLeft:18, totalMinutes: placeholder  70, cover:'https://via.placeholder.com/300x300?text=AUDIO', link:'#', tags:['cz','audiobook'] },
-  { id:'2025-07-01-2', date:'2025-07-01', title:'Nejlepší rok vašeho života (Mic…', show:'Audiolibrix – Audioknihy pro…', status:'in-progress', minutesLeft:55, totalMinutes:85, cover:'https://via.placeholder.com/300x300?text=AUDIO', link:'#', tags:['cz','audiobook'] },
-  { id:'2025-07-01-3', date:'2025-07-01', title:'Odvaha volá (Ryan Holiday)', show:'Audiolibrix – Audioknihy pro…', status:'in-progress', minutesLeft:49, totalMinutes:/* placeholder  150, cover:'https://via.placeholder.com/300x300?text=AUDIO', link:'#', tags:['cz','audiobook'] },
-*/];
+  {
+    id: "2026-06-04-1",
+    date: "2026-06-04",
+    title: "Kika to s muži umí, Standovo přemýšlení mi nahánělo strach | ROZHOVOR S JOHANKOU 🥥",
+    show: "Tohle není MÚPI",
+    totalMinutes: 67,
+    cover: "https://i.ytimg.com/vi/1ia8nbph6Eg/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=1ia8nbph6Eg",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-05-28-1",
+    date: "2026-05-28",
+    title: "Močení do bidonů toleruji, ukazuje to lidskost cyklistů. Sportovci nejsou jen stroje, hlásí Ježek",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 53,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/78CHOqTyAomv2nDlhgTksC",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-05-20-1",
+    date: "2026-05-20",
+    title: "Zklamalo mě to. Země nebyla do cyklistiky vůbec zblázněná, říká Ježek o startu Gira v Bulharsku",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 54,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/0XyROlqBvZOQyXlBCxBrmn",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-05-19-1",
+    date: "2026-05-19",
+    title: "Strýcová: Určitě to chci dát pod tři hodiny. Maraton v Bostonu mi připomínal atmosféru Wimbledonu",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 51,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2r6qaxnPzAuxpe37TCxkVr",
+    tags: [
+      "Czech",
+      "Running",
+      "Tennis",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-05-06-1",
+    date: "2026-05-06",
+    title: "Ježek: Sawe je ambasadorem čistého sportu. Noc rekordů na Děkance ohromí každého běžce",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 53,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6lIjTGTkbqzqzRHVIGytgC",
+    tags: [
+      "Czech",
+      "Running",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-05-06-2",
+    date: "2026-05-06",
+    title: "Beskydská sedmička: trénink, strava, krize a noční start",
+    show: "Edgar podcast",
+    totalMinutes: 61,
+    cover: "https://i.scdn.co/image/ab67656300005f1f85e95ccc546952bd8689ee02",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5IZjD6x73qG4BxwBW6lrlA",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "B7",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-05-01-1",
+    date: "2026-05-01",
+    title: "Podcast s Patrikem Vebrem o gut training, energii a vytrvalostním běhu",
+    show: "Edgar podcast",
+    totalMinutes: 23,
+    cover: "https://i.scdn.co/image/ab67656300005f1fb2df74649842302ab50f9b99",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/61XZUHmIhBCWbZZ4QFkXL8",
+    tags: [
+      "Czech",
+      "Running",
+      "Training",
+      "Nutrition",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-05-01-2",
+    date: "2026-05-01",
+    title: "V panici jsem hlasovala Johanku místo Vendy, v 6 jsme ji mohli převálcovat | ROZHOVOR S ŽOFIÍ 🥥",
+    show: "Tohle není MÚPI",
+    totalMinutes: 70,
+    cover: "https://i.ytimg.com/vi/BEBGHBIMdc4/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=BEBGHBIMdc4",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-30-1",
+    date: "2026-04-30",
+    title: "DÍL 21: „Důchod v nedohlednu\". Martin Zajíc myslel, že skončí. Místo tečky napsal vykřičník: 28:19!",
+    show: "BETRI CAST 🎙️",
+    totalMinutes: 84,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015beb493a56ab6bb39c879b2a8f1",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5U0r7V1QVQxJyRZFcPSVPc",
+    tags: [
+      "Czech",
+      "Running",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-30-2",
+    date: "2026-04-30",
+    title: "Makej vole! Podcast #104 - Josef Andrle a jeho tréninkové programy pro Beskydskou sedmičku",
+    show: "Makej vole! Podcast",
+    totalMinutes: 39,
+    cover: "https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/1FnUk8cl3SOALG8EXmUuqA",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "B7",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-26-1",
+    date: "2026-04-26",
+    title: "Seixas je výjimečný borec. Snad vydrží veškerou nálož tlaku, která se kolem něj tvoří, říká Ježek",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 54,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/0wgSQ7wMk3QVb2xy8RTST6",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-26-2",
+    date: "2026-04-26",
+    title: "KAREL VACEK: Většinu lidí brzdí strach a neznalost",
+    show: "Cyklistickey",
+    totalMinutes: 105,
+    cover: "https://i.ytimg.com/vi/wy6bhsLosH4/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=wy6bhsLosH4",
+    tags: [
+      "Czech",
+      "Interview",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-26-3",
+    date: "2026-04-26",
+    title: "VŠICHNI Z NÍ MĚLI STRACH! Iki upřímně komentuje všechny soutěžící. (Survivor)",
+    show: "Popcorn Time",
+    totalMinutes: 109,
+    cover: "https://i.ytimg.com/vi/oNnwWIus6oE/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=oNnwWIus6oE",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-25-1",
+    date: "2026-04-25",
+    title: "Vyplácat na mě 2 hlasy byl fail, Johanka vždy o 3 kroky napřed, lhát jí nemá cenu | ROZHOVOR S IKIM 🥥",
+    show: "Tohle není MÚPI",
+    totalMinutes: 102,
+    cover: "https://i.ytimg.com/vi/5VpxbBxnOzk/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=5VpxbBxnOzk",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-23-1",
+    date: "2026-04-23",
+    title: "Jiří Petr - Jak se připravit na závod aby jsi podal výkon",
+    show: "Edgar podcast",
+    totalMinutes: 71,
+    cover: "https://i.scdn.co/image/ab67656300005f1f8463dcc46e24b518a986d18f",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2mSCd5nhnjgEqFwWRDGT87",
+    tags: [
+      "Czech",
+      "Running",
+      "Training",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-17-1",
+    date: "2026-04-17",
+    title: "#151: O Lysacupu s jeho šéfem a zakladatelem Petrem Hudečkem",
+    show: "TŘIŠESTPĚT",
+    totalMinutes: 81,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be1066498534a633d7b2886a6d",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/0wTLT7PhmTwc6DjYvXC2qB",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-17-2",
+    date: "2026-04-17",
+    title: "Tréninková Bible č. 11: Jim Walmsley - zrození legendy",
+    show: "Tréninková Bible",
+    totalMinutes: 23,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be55a7a5ef9a99ed637c11c84e",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/66CfaZ3SnyaG9zOKZOevfk",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Training",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-17-3",
+    date: "2026-04-17",
+    title: "Říkal jsem si, co tam vlastně dělám?! Dopis mě lákal domů. TRABO",
+    show: "Popcorn Time",
+    totalMinutes: 104,
+    cover: "https://i.ytimg.com/vi/PGMrTnbUJjs/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=PGMrTnbUJjs",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-14-1",
+    date: "2026-04-14",
+    title: "Spoléhám na taktiku, že na kostkách nebudu tahat peloton, říká Bittner před Paříž-Roubaix",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 53,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6sc1V2VK5NihmXiEKnPt7d",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-14-2",
+    date: "2026-04-14",
+    title: "Karel Poborský: Běhání jsem propadl. Maraton chci pod 4 hodiny",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 54,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/4LB1vm7QKYfuoBO9LiN2p8",
+    tags: [
+      "Czech",
+      "Running",
+      "Football",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-13-1",
+    date: "2026-04-13",
+    title: "Přenést radost ze sportu je hlavním posláním při tvorbě videí, říká sportovní influencer König",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 49,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6MsVbwOeUBPGfhjBbkzsiD",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-11-1",
+    date: "2026-04-11",
+    title: "Příchod holek byl podraz, nenávist k Johance mě zaslepila | ROZHOVOR S ADAMEM 🥥",
+    show: "Tohle není MÚPI",
+    totalMinutes: 108,
+    cover: "https://i.ytimg.com/vi/O14P3i6pwZE/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=O14P3i6pwZE",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: true
+  },
+  {
+    id: "2026-04-11-2",
+    date: "2026-04-11",
+    title: "MĚL BÝT VŮBEC NA KMENOVCE? Mrzí ho to? Proč si do souboje nevybral Johanku? (REST)",
+    show: "Popcorn Time",
+    totalMinutes: 82,
+    cover: "https://i.ytimg.com/vi/SMpVcZ8926A/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=SMpVcZ8926A",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-09-1",
+    date: "2026-04-09",
+    title: "#4 Roman Chládek - Speciální díl o zahraničních Ultra Trailových závodech na rok 2026",
+    show: "UltraMinuty",
+    totalMinutes: 155,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015bef713230f6b9350706146cf99",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6h49oyqP3NeXelq0wTMeek",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-04-1",
+    date: "2026-04-04",
+    title: "Sadistické peklo v kleci a rozdělování jídla | Survivor RECAP 17 🌴",
+    show: "Tohle není MÚPI",
+    totalMinutes: 61,
+    cover: "https://i.ytimg.com/vi/iFAAFJw0J24/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=iFAAFJw0J24",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-04-2",
+    date: "2026-04-04",
+    title: "Plán na Denisu padá! Adam se cítil jako hlava gangu ve vězení | Survivor RECAP 18 🌴",
+    show: "Tohle není MÚPI",
+    totalMinutes: 64,
+    cover: "https://i.ytimg.com/vi/wpTfSc7elb0/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=wpTfSc7elb0",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-04-3",
+    date: "2026-04-04",
+    title: "TOHLE UŽ JE OSOBNÍ! Dostane Rest imunitu? Doplatí kmen na sabotáž? (Survivor 17. díl RECAP)",
+    show: "Popcorn Time",
+    totalMinutes: 79,
+    cover: "https://i.ytimg.com/vi/Xtppf-qBfJc/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=Xtppf-qBfJc",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-04-4",
+    date: "2026-04-04",
+    title: "NEJSMOLNĚJŠÍ KONEC V HISTORII! Rest neměl vypadnout! Johanka ukázala charakter! (Survivor RECAP)",
+    show: "Popcorn Time",
+    totalMinutes: 77,
+    cover: "https://i.ytimg.com/vi/Wvh-mrUOQpc/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=Wvh-mrUOQpc",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-04-01-1",
+    date: "2026-04-01",
+    title: "#113: Zdeněk Hruška – \"Kvůli ultra jsem se osobnostně posunul.\"",
+    show: "TŘIŠESTPĚT",
+    totalMinutes: 112,
+    cover: "https://i.scdn.co/image/ab67656300005f1ffb04ff49157a09c31bab76fc",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6TuJCE3xkheDvuCcuJG6yv",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: true
+  },
+  {
+    id: "2026-04-01-2",
+    date: "2026-04-01",
+    title: "#101: Titus Ablorh – \"Byl bych rád, kdyby na Holedné někdo rozprášil můj popel.\"",
+    show: "TŘIŠESTPĚT",
+    totalMinutes: 122,
+    cover: "https://i.scdn.co/image/ab67656300005f1ffb04ff49157a09c31bab76fc",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6FHYPAtC3zID44qLEfo0An",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: true
+  },
+  {
+    id: "2026-03-31-1",
+    date: "2026-03-31",
+    title: "Tréninková Bible č. 10 - Zdenda Hruška na Transgrancanaria 2026",
+    show: "Tréninková Bible",
+    totalMinutes: 32,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be1601afc7e731f0ffb9d1a8ef",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/4wzTCpJlDNVDt0IQy58H5h",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Training",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-30-1",
+    date: "2026-03-30",
+    title: "Jak se zlepšit v běhání podle elitního běžce | Patrik Vebr |",
+    show: "TiimiTalks",
+    totalMinutes: 60,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015beb4ae44fa306bd85d28d229c8",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/1qwydXOs5ArnUAyoW0llpj",
+    tags: [
+      "Czech",
+      "Running",
+      "Training",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-30-2",
+    date: "2026-03-30",
+    title: "#117: Slovo trénink nepoužívám, chodím běhat",
+    show: "TŘIŠESTPĚT",
+    totalMinutes: 64,
+    cover: "https://i.scdn.co/image/ab67656300005f1ffb04ff49157a09c31bab76fc",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5ysLhO71zyUp7FTRCirzpN",
+    tags: [
+      "Czech",
+      "Running",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-28-1",
+    date: "2026-03-28",
+    title: "Homoláč: Základem vždy bude trénink. Běžci občas jedou až moc přehnaně podle hodinek jako roboti",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 49,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/1DiD32mUC9CCUk7vyJucLV",
+    tags: [
+      "Czech",
+      "Running",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-27-1",
+    date: "2026-03-27",
+    title: "Jsme digitálně obézní. Začíná epidemie samoty.",
+    show: "Brain We Are",
+    totalMinutes: 77,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be97fdd97192a6494f488f1579",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/7LJNuKf6LTAlyQoZNFcJzd",
+    tags: [
+      "Czech",
+      "Self improvement",
+      "Science",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-27-2",
+    date: "2026-03-27",
+    title: "Standa se rozhodně dostane do sloučení. Adama je mi líto, neumí to hrát | ROZHOVOR S LEOŠEM 🥥",
+    show: "Tohle není MÚPI",
+    totalMinutes: 112,
+    cover: "https://i.ytimg.com/vi/z_YEdMvSP0k/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=z_YEdMvSP0k",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-27-3",
+    date: "2026-03-27",
+    title: "Zasloužil si to? Musela tohle televize udělat? Produkce se zlepšila! (Survivor Recap 14. díl)",
+    show: "Popcorn Time",
+    totalMinutes: 82,
+    cover: "https://i.ytimg.com/vi/p5cwWeN1ztU/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=p5cwWeN1ztU",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-23-1",
+    date: "2026-03-23",
+    title: "#127 Maroš Vago – Cílem je vnitřní klid... Jak ho dosáhnout?",
+    show: "BROCAST",
+    totalMinutes: 230,
+    cover: "https://i.scdn.co/image/ab67656300005f1f3d0993114c7ba094b0d8c8b3",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6vp391Mm2Q6HJGGyuZTO3J",
+    tags: [
+      "Czech",
+      "Self improvement",
+      "Philosophy",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: true
+  },
+  {
+    id: "2026-03-20-1",
+    date: "2026-03-20",
+    title: "#127 Maroš Vago – Cílem je vnitřní klid... Jak ho dosáhnout?",
+    show: "BROCAST",
+    totalMinutes: 230,
+    cover: "https://i.scdn.co/image/ab67656300005f1f3d0993114c7ba094b0d8c8b3",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6vp391Mm2Q6HJGGyuZTO3J",
+    tags: [
+      "Czech",
+      "Self improvement",
+      "Philosophy",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-19-1",
+    date: "2026-03-19",
+    title: "#133 Jaroslav Brychta – Získat náskok díky AI může každý. Já to dělám takhle...",
+    show: "BROCAST",
+    totalMinutes: 48,
+    cover: "https://i.scdn.co/image/ab67656300005f1fe09464f6dd4601b38fbba447",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5anrtqPFU5NPr4RzcqZc6r",
+    tags: [
+      "Czech",
+      "AI",
+      "Technology",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-19-2",
+    date: "2026-03-19",
+    title: "Soňa Kopčoková - Doktoři řekli stop, ona běžela 400 km",
+    show: "Edgar podcast",
+    totalMinutes: 64,
+    cover: "https://i.scdn.co/image/ab67656300005f1f04defeb99bf4e0bbd150318d",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/72ffasDcN6rKNNw5VEhTf5",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-19-3",
+    date: "2026-03-19",
+    title: "Reality shows všude - Clickbait 43",
+    show: "Clickbait",
+    totalMinutes: 102,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be7598e688fa5b8ec738763420",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6xPHZkSHCeIPRKBAsguv34",
+    tags: [
+      "Czech",
+      "Entertainment",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-18-1",
+    date: "2026-03-18",
+    title: "Zapomeňte na biohacking. Kaskadérka Hanka Dvorská (66) odhaluje svůj recept na mládí.",
+    show: "Na Tělo(cvik)",
+    totalMinutes: 39,
+    cover: "https://i.scdn.co/image/ab67656300005f1f9f0674b72b6c3cb135b68131",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/4wOwlZ0vVAJzmQzxAZpVci",
+    tags: [
+      "Czech",
+      "Health",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-17-1",
+    date: "2026-03-17",
+    title: "JONAS VINGEGAARD v akci na Paříž - Nice a parádní finiše na Tirreno - Adriatico!",
+    show: "Dojeto",
+    totalMinutes: 52,
+    cover: "https://i.scdn.co/image/ab67656300005f1fe16f1cc39fd7d9f3bcdce9af",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2647fFw5SuMuqQckYqnJTo",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-17-2",
+    date: "2026-03-17",
+    title: "TOP 10 největší talenti pro rok 2026",
+    show: "Dojeto",
+    totalMinutes: 26,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015bed76a8b6925dd73affaa4a309",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/4IUOPHL7YBsA6fOh1pZ6EL",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-15-1",
+    date: "2026-03-15",
+    title: "Patnáctistovka je někdy řežba, jindy vyčkávaná. Baví mě, jak se to rychle semele, říká atletka Mäki",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 53,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6XDpcISg1L7sHVx1MvTwRe",
+    tags: [
+      "Czech",
+      "Athletics",
+      "Running",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-15-2",
+    date: "2026-03-15",
+    title: "Blíží se doba, že v cyklistice dojde na platové stropy, říká Tesař o podmínkách mezi profesionály",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 54,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5V9uNsnpJ4dXjotRHLgJy6",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-15-3",
+    date: "2026-03-15",
+    title: "#132 Michal Horáček – Sametová revoluce 89. Co z učebnic dějepisu záměrně vynechali...",
+    show: "BROCAST",
+    totalMinutes: 139,
+    cover: "https://i.scdn.co/image/ab67656300005f1f74bedcf886284af30d2f399c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5PlhaILToPa9x2YgwF8ZNJ",
+    tags: [
+      "Czech",
+      "History",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-15-4",
+    date: "2026-03-15",
+    title: "Makej vole! Podcast #102 - Tomáš Štverák: Po letech bez trenéra přišla změna",
+    show: "Makej vole! Podcast",
+    totalMinutes: 26,
+    cover: "https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5hNprJWUXDzrKqUhRCPWJs",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-03-1",
+    date: "2026-03-03",
+    title: "#148: Žaneta Polášková – \"Nebuďte na sebe tvrdí, buďte vytrvalí.\"",
+    show: "TŘIŠESTPĚT",
+    totalMinutes: 94,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be7b9bdc334b25ab7fc7097cbc",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5nsfY39mq097poeIXdcDBX?si=vsiH72ovTxmiSHyHaQtnXg",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-03-2",
+    date: "2026-03-03",
+    title: "#134: Daniel Ligocki – \"Překonávejte svůj strach a buďte lepší verzí sami sebe.\"",
+    show: "TŘIŠESTPĚT",
+    totalMinutes: 0,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be3fba9ee3459848b655e9092b",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6CH1X0m7BncIKt5mBKSvms?si=iDnIGEQaQ5iQZP9jJKq14Q",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-03-02-1",
+    date: "2026-03-02",
+    title: "Těšilo mě, když mi lídři dávali vědět, jak si váží mojí práce, vzpomíná na roli domestika Raboň",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 53,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6vSd5BzLSwZrk2oFTWARIv?si=c26t5ucyS9GfgzTXpPjFog",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-28-1",
+    date: "2026-02-28",
+    title: "Petr Cech: What Most People Get Wrong About Football",
+    show: "Business of Sport",
+    totalMinutes: 0,
+    cover: "https://i.ytimg.com/vi/lot5Ixgbxkk/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/lot5Ixgbxkk?si=gc3fjnAxcTjmQP2l",
+    tags: [
+      "English",
+      "Football",
+      "Interview",
+      "Sport",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-28-2",
+    date: "2026-02-28",
+    title: "#131 Dalibor Dědek – Příběh skromného miliardáře z Jizerek",
+    show: "Brocast",
+    totalMinutes: 0,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f88a8ed53a0775d7d2cc3fd86",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2lNscCnQVp5HbUtLN4aXth?si=e2537EGGSeK3QTvFFl5Z3A",
+    tags: [
+      "Czech",
+      "Interview",
+      "Business",
+      "Success",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-28-3",
+    date: "2026-02-28",
+    title: "#128 MUDr. Gertrúda Čápová – Tajemství švýcarského zdraví…",
+    show: "Brocast",
+    totalMinutes: 0,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fde75b41297998a5b2d6a20ec",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/1pwVl9sW7AclRiUKmVmQG9?si=wW23B-KPTRCyJZlBNLkRPQ",
+    tags: [
+      "Czech",
+      "Health",
+      "Interview",
+      "Medicine",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-27-1",
+    date: "2026-02-27",
+    title: "Makej vole! Podcast #94 – Závodní speciál: Chopok Skymarathon, Beskydská sedmička a UTMB",
+    show: "Makej vole! Podcast",
+    totalMinutes: 0,
+    cover: "https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3OnRfEWVHoCpsskMr82CmU?si=-q0udo9hTvu_CAaRKEYb5Q",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "B7",
+      "UTMB",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-27-2",
+    date: "2026-02-27",
+    title: "Makej vole! Podcast #95 Speciál – Ross Edgley, Kilian Jornet, rekord na Tor de Géants, Strava novinky a další…",
+    show: "Makej vole! Podcast",
+    totalMinutes: 0,
+    cover: "https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3umavfYvE5PsL3BxMWioV2?si=pxVrB3P6QgCO28cCmrMx1g",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Special",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-27-3",
+    date: "2026-02-27",
+    title: "#28 Metoděj Jílek: moje několikaté používání Penca bylo letos završeno spoluprací",
+    show: "Penco podcast",
+    totalMinutes: 0,
+    cover: "https://i.scdn.co/image/ab67656300005f1f0441e07884a097d964f41361",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3Z00umZZGJoxjYsnMRt1if",
+    tags: [
+      "Czech",
+      "Running",
+      "Sport",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-26-1",
+    date: "2026-02-26",
+    title: "Makej vole! Podcast #98 - Terka Rudolfová nejen o rekordu na Beskydské sedmičce",
+    show: "Makej vole! Podcast",
+    totalMinutes: 0,
+    cover: "https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/1mjv46beRp7XW3Qn6ayoZT?si=UT6RrHDmT1Wqh0kTDKPkWA",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "B7",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-25-1",
+    date: "2026-02-25",
+    title: "#176 - JAN KOLLER - Miliony z fotbalu rozumně investoval, Dnes spoluvlastní padelový klub - Legenda fotbalu",
+    show: "Kid Ajvn & A-Cast",
+    totalMinutes: 0,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1fd3ec3065a51959341d5b0367",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/40j4q27YXlfTGd0LmEDgt2",
+    tags: [
+      "Czech",
+      "Football",
+      "Interview",
+      "Business",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-24-1",
+    date: "2026-02-24",
+    title: "RoadCast #2 - Offseason a zimní příprava",
+    show: "RoadCast",
+    totalMinutes: 0,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab67656300005f1f43e0955e4175799299096222",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/1YWxdnBsFlEHZVxKgUSKDP?si=66sjJOq6RrKW3wXpGtAY8g",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Training",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-23-1",
+    date: "2026-02-23",
+    title: "RoadCast #1 - Život profesionální cyklistky",
+    show: "RoadCast",
+    totalMinutes: 0,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab67656300005f1fdb2417ec09f8a10f4042f525",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/71VKaxLjyTkXFGSQUTFrpZ?si=6PxxQ0eKSLKijxVQKWRirQ",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-22-1",
+    date: "2026-02-22",
+    title: "JIŘÍ LANGMAJER: Byl jsem hrozný k*kot, teď čím dál víc pláču",
+    show: "Čestmír Strakatý",
+    totalMinutes: 0,
+    cover: "https://i.ytimg.com/vi/hEibxJ9omzs/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/hEibxJ9omzs?si=aVQDap6h-8ASSi5P",
+    tags: [
+      "Czech",
+      "Interview",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-22-2",
+    date: "2026-02-22",
+    title: "How to Train and Recover Like a 8X Cyclocross World Champion",
+    show: "WHOOP",
+    totalMinutes: 0,
+    cover: "https://i.ytimg.com/vi/xT1QXOmeFuI/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/xT1QXOmeFuI?si=95NkoDoCjdNs9cCE",
+    tags: [
+      "English",
+      "Cycling",
+      "Training",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-20-1",
+    date: "2026-02-20",
+    title: "Už nechci Rolexky ani Lamba: Vémola o radikální změně životních priorit I NERUDACAST 86",
+    show: "NerudaCast - Pavol Neruda",
+    totalMinutes: 55,
+    cover: "https://i.ytimg.com/vi/0SYtocNLeXA/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/0SYtocNLeXA?si=49M5AGmUgbSwyvh0",
+    tags: [
+      "Slovak",
+      "Interview",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-20-2",
+    date: "2026-02-20",
+    title: "Tréninkové zóny nejen v TrainingPeaks - Pohledem trenéra",
+    show: "Pohledem trenéra",
+    totalMinutes: 22,
+    cover: "https://i.scdn.co/image/ab67656300005f1fdc2f5cff492a72f54b511a44",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3Zz0CMkSqlzOnYtIrLJkV4?si=TMJ43J8BQ1eBrJFEUODorw",
+    tags: [
+      "Czech",
+      "Training",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-20-3",
+    date: "2026-02-20",
+    title: "Nechápu kam až to může růst. Talenti mají top profesionální přístup už od začátku, diví se Ježek",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 47,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5MqNzYU49p8zVUYxi1hRY2?si=vO8MK297QG6cNP_OUo3U5w",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-20-4",
+    date: "2026-02-20",
+    title: "Makej vole! Podcast #101 - Jirka Petr a Petr Hének: O vítězství, supportu a tréninku na LH24",
+    show: "Makej vole! Podcast",
+    totalMinutes: 35,
+    cover: "https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/4riwPwWuvT5pChA19Mj4bd?si=wuv7kS41Rde1Myu5YNvalw",
+    tags: [
+      "Czech",
+      "Running",
+      "Podcast",
+      "LH24",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-19-1",
+    date: "2026-02-19",
+    title: "VO2max, zóna 1 či 2 a vše ostatní z posledních článků na blogu - Pohledem trenéra",
+    show: "Pohledem trenéra",
+    totalMinutes: 19,
+    cover: "https://i.scdn.co/image/ab67656300005f1fdc2f5cff492a72f54b511a44",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/4eEl6jtjoR2YoDWpEqeSxK?si=f8mexCsWQL6V57qXLS3XnA",
+    tags: [
+      "Czech",
+      "Training",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-18-1",
+    date: "2026-02-18",
+    title: "#12 - MATĚJ KUBRT - Ještěďák - finančník",
+    show: "#DYCKYJESTED (ne)podcast",
+    totalMinutes: 41,
+    cover: "https://i.scdn.co/image/ab67656300005f1fa15a69b93e0626791c9aa6c4",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5jQB6vyNjIPZe5HcQM1Vnx?si=KZhLIzb8T8iEsAjo04xGWA",
+    tags: [
+      "Czech",
+      "Podcast",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-18-2",
+    date: "2026-02-18",
+    title: "Jak si hlídat zdraví jednoduše a dlouhodobě - MUDr. Tomáš Kaštovský - progresstalk",
+    show: "progresstalk",
+    totalMinutes: 49,
+    cover: "https://i.scdn.co/image/ab67656300005f1fddb32fc687251ee907f66dfc",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/0tD7nIbpouH8IEkhxDK1TA?si=18FiqH6aTj6BGR7QHSaf5A",
+    tags: [
+      "Czech",
+      "Health",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-16-1",
+    date: "2026-02-16",
+    title: "Tréninková Bible č. 8 - Anatomie dokonalé sezóny: Trénink podle Kiliana Jorneta",
+    show: "Tréninková Bible",
+    totalMinutes: 30,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab00001692cf8eeb730ebbd0000eed723b",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3e2cGTzn4Fdd2UsT9dqA5A",
+    tags: [
+      "Czech",
+      "Training",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-17-1",
+    date: "2026-02-17",
+    title: "Měl jsem krizi třeba i čtyřicet kilometrů. Často se na trati trápím sám, přiznává běžec Šumný",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 43,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/4UYg4ndyRdGm0dQtnf9DhX?si=8H7kboHASGiNCCNA39Z4gA",
+    tags: [
+      "Czech",
+      "Running",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-17-2",
+    date: "2026-02-17",
+    title: "YOU NEED TO RESET, RESTART AND REFOCUS - Powerful Motivational Speech | Eric Thomas",
+    show: "Motivation Daily by Motiversity",
+    totalMinutes: 9,
+    cover: "https://i.ytimg.com/vi/T0mjs9t616s/mqdefault.jpg",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/0XHYmUFJkzCg3JdZwCUcBw?si=mDIGZIgQS9OaEVTfpmL4ow",
+    tags: [
+      "English",
+      "Motivation",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-11-1",
+    date: "2026-02-11",
+    title: "Makej vole! Trénink #2 - O běžecké technice",
+    show: "Makej vole! Trénink",
+    totalMinutes: 17,
+    cover: "https://i.scdn.co/image/ab67656300005f1fbb9b8343e92c7814d6a0efc2",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3UOyuxRVrB0nVGhq5LGjt5?si=7cb518ff77004de5",
+    tags: [
+      "Czech",
+      "Running",
+      "Training",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-11-2",
+    date: "2026-02-11",
+    title: "Makej vole! Podcast #100 - Veronika Reade a Ing. Jiří Sedláček, CSc: Příběh značky PENCO",
+    show: "Makej vole! Podcast",
+    totalMinutes: 34,
+    cover: "https://i.scdn.co/image/ab67656300005f1f5426fd70c857a0c0d055e8d8",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/7yRAg4kyuKBWjs90YQnrwr?si=FNwV9nNWT0G3s5PLnhXZuw",
+    tags: [
+      "Czech",
+      "Podcast",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-10-1",
+    date: "2026-02-10",
+    title: "UTMB – Jaká je historie a zajímavosti ohledně této světové série?",
+    show: "Hodinky 365 smart",
+    totalMinutes: 0,
+    cover: "https://i.ytimg.com/vi/vvQG90Pvj5s/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/vvQG90Pvj5s?si=R2FyQa2M4IlSO49O",
+    tags: [
+      "Czech",
+      "Running",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-10-2",
+    date: "2026-02-10",
+    title: "Znám každou výmluvu, která existuje. Na mě si svěřenci nepřijdou. Musí makat, směje se Šimůnek",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 74,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6BkYb0ze53OWXGwnO93FRn?si=5f9ZPSGAQFCwfVa7U25M6Q",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-07-1",
+    date: "2026-02-07",
+    title: "Myslel jsem si, že jsem naivní | Řekl jsem hov*o - udělám z toho svojí výhodu | PETR JÁKL",
+    show: "NOHAMA NA ZEMI",
+    totalMinutes: 132,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab0000169254458474a113ae4d7f8e3bd3",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/0tArf1zgeY5iJF5sqrEGps",
+    tags: [
+      "Czech",
+      "Interview",
+      "Self improvement"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-07-2",
+    date: "2026-02-07",
+    title: "JIRKA KRÁL - Chystá návrat na Youtube nebo chce úplně zmizet ze sítí? | MineCast #3",
+    show: "MineCast",
+    totalMinutes: 90,
+    cover: "https://i.ytimg.com/vi/URDvhaIhki0/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=URDvhaIhki0",
+    tags: [
+      "Czech",
+      "Interview",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-02-06-1",
+    date: "2026-02-06",
+    title: "#3 Adam Korecký - „Neboj se doplňovat sacharidy včas…\" | UltraMinuty",
+    show: "UltraMinuty",
+    totalMinutes: 128,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab00001692dff3781e418e18209470565f",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6G7yPXeDo2eTc5edo6z9G7",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Nutrition"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-01-31-1",
+    date: "2026-01-31",
+    title: "Pohodlí je výkon. Konzistence je klíčem úspěchu pro profíka i hobby sportovce, říká biomechanik",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 50,
+    cover: "https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2etueq7SDC7x3Vn0Srf2qS",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Science",
+      "Biomechanics"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-01-30-1",
+    date: "2026-01-30",
+    title: "Makej vole! Podcast #84 – Honza Procházka o tréninku a vítězství na LH24 2025",
+    show: "Makej vole! Podcast",
+    totalMinutes: 90,
+    cover: "https://i.ytimg.com/vi/6krg0G80NgY/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=6krg0G80NgY",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "LH24"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-01-28-1",
+    date: "2026-01-28",
+    title: "#145: Martina Oroszová – \"B7 jsem odběhla na Marskách.\"",
+    show: "TŘIŠESTPĚT",
+    totalMinutes: 74,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab00001692a7d9239f2a1fbec3f11c9b1a",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/02YceG56oEVctkJmv3WqvP",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "B7"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-01-23-1",
+    date: "2026-01-23",
+    title: "Tréninková Bible č. 7 - Proč pomalý trénink dělá rychlé běžce",
+    show: "Tréninková Bible",
+    totalMinutes: 29,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab00001692cf8eeb730ebbd0000eed723b",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6pJbwgz5KPYEgYCErUHZ1y",
+    tags: [
+      "Czech",
+      "Running",
+      "Training"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-01-20-1",
+    date: "2026-01-20",
+    title: "Kroky týmu Visma jsou zvláštní. Konec kariéry Yatese je toho dalším důkazem, diví se Ježek",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 50,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/7bQCkjs8U1yByfjd5EyvE1?si=b35bc8000111443e",
+    tags: [
+      "Czech",
+      "Cycling",
+      "News"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-01-14-1",
+    date: "2026-01-14",
+    title: "Tréninková Bible č. 6 - Tajemství silového tréninku pro běžce",
+    show: "Tréninková Bible",
+    totalMinutes: 28,
+    cover: "https://image-cdn-fa.spotifycdn.com/image/ab6772ab000015be5cebb896f2fb98e1b1889e40",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6SfAdG0txuoy4ubEyVYWIc",
+    tags: [
+      "Czech",
+      "Running",
+      "Training"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-01-14-2",
+    date: "2026-01-14",
+    title: "IT'S TIME TO RESET, RESTART, AND REFOCUS IN 2026 - The Most Powerful Motivational Speech Compilation",
+    show: "Motivation Daily by Motiversity",
+    totalMinutes: 38,
+    cover: "https://i.scdn.co/image/ab67656300005f1f132579598f5357289e616768",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2XNv4MPCrgsDb2PitzdtD5",
+    tags: [
+      "English",
+      "Motivation"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-12-31-1",
+    date: "2025-12-31",
+    title: "HOUSE - Od Minecraftu k Everestu, dítěti a životu mimo YouTube | MineCast #2",
+    show: "MineCast",
+    totalMinutes: 90,
+    cover: "https://i.ytimg.com/vi/tE-FrPm8cDA/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=tE-FrPm8cDA",
+    tags: [
+      "Czech",
+      "Interview",
+      "YouTube",
+      "Minecraft"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-12-30-1",
+    date: "2025-12-30",
+    title: "Hobby sportovci si někdy škodí tím, že jí málo. Vše dohání sladkostmi, říká specialistka Mokrejšová",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 53,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3rJgLhIYQ3iJ19y9Izrdey?si=e13ce08ae20d4ee0",
+    tags: [
+      "Czech",
+      "Nutrition",
+      "Running"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-12-20-1",
+    date: "2025-12-20",
+    title: "GEJMR - Otevřeně o vyhoření, anonymitě a cestě k milionu odběratelů | MineCast #1",
+    show: "MineCast",
+    totalMinutes: 90,
+    cover: "https://i.ytimg.com/vi/wHtPgpbtfYc/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=wHtPgpbtfYc",
+    tags: [
+      "Czech",
+      "Interview",
+      "YouTube",
+      "Minecraft"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-12-12-1",
+    date: "2025-12-12",
+    title: "Tréninková Bible č. 5 - Pražská stovka",
+    show: "Tréninková Bible",
+    totalMinutes: 100,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb97347331c4ebd7f7596575c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2dIqdZYWPxwDgPgHQ98rQR",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-11-30-1",
+    date: "2025-11-30",
+    title: "Cyklokros je fajn, ale pořád ho beru jako doplněk k hlavní sezoně. Na olympiádu nepatří, tvrdí Ježek",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 50,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2z6bCSvOu1ifxpqmv2oleJ?si=a4fc6b9fee214525",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Chill"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-11-23-1",
+    date: "2025-11-23",
+    title: "Tréninková Bible č. 4 - Odpovědnice",
+    show: "Tréninková Bible",
+    totalMinutes: 96,
+    cover: "https://i.scdn.co/image/ab6765630000f68d896ff1bbff5d945b6b02e7f7",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/0eTG781YyPjaGSkoUNzFsX?si=55f72f77f9da46bb",
+    tags: [
+      "Czech",
+      "Running",
+      "Training",
+      "Q&A"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-11-20-1",
+    date: "2025-11-20",
+    title: "#29 LEGS:ON podcast - SPECIÁL Na co se těšíme v roce 2026?",
+    show: "LEGS:ON | Cyklistický podcast",
+    totalMinutes: 32,
+    cover: "https://i.ytimg.com/vi/vAtwHh5o7z0/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=vAtwHh5o7z0",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Special"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-11-11-1",
+    date: "2025-11-11",
+    title: "Tadej Pogačar Interview › Cyclist Magazine Podcast [ft. Fahri Diner]",
+    show: "Cyclist",
+    totalMinutes: 88,
+    cover: "https://i.ytimg.com/vi/ztqycLMnQgk/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=ztqycLMnQgk",
+    tags: [
+      "English",
+      "Cycling",
+      "Interview",
+      "Tour de France"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-11-11-2",
+    date: "2025-11-11",
+    title: "Je to 7 let... Co dělám teď a jaké mám plány? l Jirka Král",
+    show: "RestDay",
+    totalMinutes: 83,
+    cover: "https://i.ytimg.com/vi/FxeeAjUJsZg/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=FxeeAjUJsZg",
+    tags: [
+      "Czech",
+      "Lifestyle",
+      "Vlog",
+      "Interview"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-11-10-1",
+    date: "2025-11-10",
+    title: "145: The Pitfalls of High Volume Endurance Training",
+    show: "The Nick Bare Podcast",
+    totalMinutes: 64,
+    cover: "https://i.scdn.co/image/ab6765630000f68dbf809ec21bc6132d3e2b5852",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/05hPzbCZ8JE3lfW8RIbMtI?si=ce2d0d1a159f4b1f",
+    tags: [
+      "English",
+      "Running",
+      "Training",
+      "Science"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-11-10-2",
+    date: "2025-11-10",
+    title: "Horolezec Trávniček: Výstup na Everest môže vyjsť až na 100 000 eur!",
+    show: "Diskusný klub so Šimonom Žďárským",
+    totalMinutes: 34,
+    cover: "https://i.ytimg.com/vi/ucwBXQeRN-g/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=ucwBXQeRN-g",
+    tags: [
+      "Slovak",
+      "Mountaineering",
+      "Everest",
+      "Interview"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-11-09-1",
+    date: "2025-11-09",
+    title: "Tréninková Bible č. 3 - Bicarb, ketony a porovnání tréninkových přístupů z předchozích epizod",
+    show: "Tréninková Bible",
+    totalMinutes: 85,
+    cover: "https://i.scdn.co/image/ab6765630000f68d896ff1bbff5d945b6b02e7f7",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6KMUf2dT2moQWBk1WamjQ5?si=3d7f561638134ce9",
+    tags: [
+      "Czech",
+      "Running",
+      "Training",
+      "Science",
+      "Nutrition"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-11-02-1",
+    date: "2025-11-02",
+    title: "#09 - TOMÁŠ ŠTVERÁK - Elitní ultrarunner",
+    show: "#DYCKYJESTED (ne)podcast",
+    totalMinutes: 87,
+    cover: "https://i.scdn.co/image/ab67656300005f1f83f88c0923e175cfff29b3e6",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/23c621ZeIUdNpTTgNw98hA?si=36567ae77d394325",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Interview"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-28-1",
+    date: "2025-10-28",
+    title: "O sportu, mozku a lidskosti s neurochirurgem Vladimírem Benešem",
+    show: "progresstalk",
+    totalMinutes: 40,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be79a35fa69d248ef42f6c31cb",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6JFSmx0nJxOjQvk0uGHTI6?si=95b2aec81ab34ce6",
+    tags: [
+      "Czech",
+      "Science",
+      "Medicine",
+      "Neuroscience",
+      "Sports",
+      "Health"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-27-1",
+    date: "2025-10-27",
+    title: "Speciál o běhání: Jak začít běhat? Jaké boty NEkupovat? Co dýchání? A jak pokořit maraton? David Vaš",
+    show: "Podcast Inspiro Jakuba Stejskala",
+    totalMinutes: 89,
+    cover: "https://i.ytimg.com/vi/qzO_N3BahSI/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=qzO_N3BahSI",
+    tags: [
+      "Czech",
+      "Running",
+      "Marathon",
+      "Training"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-27-2",
+    date: "2025-10-27",
+    title: "Tréninková Bible č. 2 - David a Megan Roche – trénink, věda a rekord na Leadville Trail 100 Run",
+    show: "Tréninková Bible",
+    totalMinutes: 91,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb3593361b68d9f980a493b16",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2L3vsxRdmdNorf2lG5EWiP?si=998ac1ae047c4866",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Training",
+      "Science",
+      "Leadville"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-26-1",
+    date: "2025-10-26",
+    title: "Tréninková Bible č. 1 - Svalová vytrvalost",
+    show: "Tréninková Bible",
+    totalMinutes: 78,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015be0fdfee7d7b483f13815aa919",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5RyklHgI597VALqi3EBdxF?si=67c9a4acddf04fa0",
+    tags: [
+      "Czech",
+      "Running",
+      "Training",
+      "Ultra",
+      "Science"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-21-1",
+    date: "2025-10-21",
+    title: "01 Damián Vích",
+    show: "RunCzech podcast",
+    totalMinutes: 50,
+    cover: "https://i.scdn.co/image/ab67656300005f1f7ed52563d918c43d3d932bcf",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5CaZzbHGtinISA4Gdv1YYX?si=3d7d86ffcf024b4f",
+    tags: [
+      "Czech",
+      "Running",
+      "Marathon"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-21-2",
+    date: "2025-10-21",
+    title: "DÍL SEDMÝ: Regeneruj jako profík! Bílkoviny ve vytrvalostních sportech.",
+    show: "BETRI CAST 🎙️",
+    totalMinutes: 30,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015bedb3cae8583d710e95c0c1ff0",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5zKPqX3AuuDNzuwxBPHK7B?si=b2cdde773ee44fd2",
+    tags: [
+      "Czech",
+      "Nutrition",
+      "Training",
+      "Science",
+      "Triathlon"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-20-1",
+    date: "2025-10-20",
+    title: "JIRKA PROCHÁZKA: Stav boží přítomnosti máme v sobě",
+    show: "Kid Ajvn & A-Cast",
+    totalMinutes: 97,
+    cover: "https://i.ytimg.com/vi/QlFbm5JEaqQ/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=QlFbm5JEaqQ",
+    tags: [
+      "Czech",
+      "Philosophy",
+      "Spirituality",
+      "Self improvement",
+      "UFC"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-19-1",
+    date: "2025-10-19",
+    title: "DÍL TŘETÍ - Karbonové boty - revoluce v běhu, nebo jen hype?",
+    show: "BETRI CAST",
+    totalMinutes: 70,
+    cover: "https://image-cdn-ak.spotifycdn.com/image/ab6772ab000015beb7a811f699a501cf7eae3341",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2UAICel6XQbVgjILNcSuKj?si=9a030a4b85454cc9",
+    tags: [
+      "Czech",
+      "Running",
+      "Technology"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-16-1",
+    date: "2025-10-16",
+    title: "Tomáš Mikolov: AI, GPT, DeepSeek, Člověk, Vědomí, Vesmír, Evoluce #80",
+    show: "Pavel Mirovský",
+    totalMinutes: 81,
+    cover: "https://i.ytimg.com/vi/qpSMBXmNHfM/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=qpSMBXmNHfM&t=4122s",
+    tags: [
+      "Czech",
+      "AI",
+      "Technology",
+      "Science",
+      "Philosophy"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-15-1",
+    date: "2025-10-15",
+    title: "Tomáš Berdych - ANATOMIE MIMOŘÁDNÉHO ÚSPĚCHU... | BROCAST #122",
+    show: "Brocast",
+    totalMinutes: 195,
+    cover: "https://i.ytimg.com/vi/pA7dlR1ROxg/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=pA7dlR1ROxg",
+    tags: [
+      "Czech",
+      "Tennis",
+      "Success",
+      "Self improvement",
+      "Motivation"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-14-1",
+    date: "2025-10-14",
+    title: "Vítěz Spartathlonu Brunner: Nejedu podle tabulek. Když vyběhnu, tak se rozhodnu, co půjdu za trénink",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 49,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/76JrkNpH2miTeopLxJZf9Q?si=d5891f73cc474544",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Spartathlon"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-14-2",
+    date: "2025-10-14",
+    title: "Jak se při běhání přiblížit elitám? Pomáhají kopce i intervaly, závaží naopak může uškodit",
+    show: "YouTube",
+    totalMinutes: 60,
+    cover: "https://i1.sndcdn.com/artworks-xeRkG5K8UE9TZjA3-0ijwhw-t500x500.png",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=EX0jg1opVh0",
+    tags: [
+      "Czech",
+      "Running",
+      "Training"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-13-1",
+    date: "2025-10-13",
+    title: "Martin Fuksa: \"Vojnou by si měl projít každý\" 🥇 zlato na olympiádě bylo o hlavě",
+    show: "YouTube",
+    totalMinutes: 60,
+    cover: "https://i.ytimg.com/vi/_RIgi6UUatw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCvw8TE73wbXQn8UNrmeIao0PD7mg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=_RIgi6UUatw",
+    tags: [
+      "Czech",
+      "Olympics",
+      "Canoe",
+      "Mental strength"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-13-2",
+    date: "2025-10-13",
+    title: "Makej vole! Podcast #96 - Radek Brunner o vítězství na Spartathlonu",
+    show: "Makej vole! Podcast",
+    totalMinutes: 30,
+    cover: "https://i.ytimg.com/vi/M_9ZNa-oBv4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDaYIc7TVMtibFulycFvfItDIwzfg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=M_9ZNa-oBv4",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra",
+      "Spartathlon"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-13-3",
+    date: "2025-10-13",
+    title: "S příchodem AI bychom se měli o to víc naučit programovat: Umělá inteligence | Pavel Beránek",
+    show: "YouTube",
+    totalMinutes: 61,
+    cover: "https://i.ytimg.com/vi/KC_1RIsN-4o/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=KC_1RIsN-4o",
+    tags: [
+      "Czech",
+      "Technology",
+      "AI",
+      "Programming"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-10-1",
+    date: "2025-10-10",
+    title: "RR29 - Triatlon ho stál (skoro) všetko",
+    show: "Romulus & Remus",
+    totalMinutes: 96,
+    cover: "https://i.scdn.co/image/ab67656300005f1f3e41cd9912e8fa7cc7b9e2b4",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=Qafo6zbp90U&t=5067s",
+    tags: [
+      "Czech",
+      "Triathlon",
+      "Sports",
+      "Motivation"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-08-1",
+    date: "2025-10-08",
+    title: "YOU NEED TO FOCUS",
+    show: "Weekly Motivation by Ben Lionel Scott",
+    totalMinutes: 5,
+    cover: "https://i.scdn.co/image/ab67656300005f1fb5dd6365373d57386b1f3706",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2fQIrpDiPGamn7DqKP38uH?si=64f0473edc1744b6",
+    tags: [
+      "English",
+      "Motivation",
+      "Focus"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-08-2",
+    date: "2025-10-08",
+    title: "TAKE CONTROL OF YOURSELF",
+    show: "Weekly Motivation by Ben Lionel Scott",
+    totalMinutes: 6,
+    cover: "https://i.scdn.co/image/ab67656300005f1f99587b3a91682a372a512466",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/781NSkuv5xrYed52sjDgA0?si=3d3c0a14c3e549bb",
+    tags: [
+      "English",
+      "Motivation",
+      "Self improvement"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-07-1",
+    date: "2025-10-07",
+    title: "\"nemusíš být pořád šťastný\" - HRA ŽIVOTA #29",
+    show: "HRA ŽIVOTA s Martinem Hrabinou",
+    totalMinutes: 22,
+    cover: "https://i.scdn.co/image/ab67656300005f1f95b1cd0c17218ccbef751d6e",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3vRegZEYymuNYFCqPIecEp?si=242c666857f54207",
+    tags: [
+      "Czech",
+      "Self improvement"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-07-2",
+    date: "2025-10-07",
+    title: "FORCE YOURSELF TO DO IT",
+    show: "Weekly Motivation by Ben Lionel Scott",
+    totalMinutes: 5,
+    cover: "https://i.scdn.co/image/ab67656300005f1f44423e8be80b4894fd2dcf2c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3W4jlEU4OUH79LDXikfOAj?si=be0ffb6ad6964b9d",
+    tags: [
+      "English",
+      "Motivation"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-05-1",
+    date: "2025-10-05",
+    title: "#137: Jiří Petr - \"Chci uspět, chci vyhrát, chci ty kluky porazit.\"",
+    show: "TŘIŠESTPĚT",
+    totalMinutes: 90,
+    cover: "https://i.scdn.co/image/ab6765630000ba8afb04ff49157a09c31bab76fc",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3OaHSuuNco3CotWzUftEx1?si=1c27c06301aa41bf",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultra"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-10-05-2",
+    date: "2025-10-05",
+    title: "\"Někdy zlepšit život znamená zpomalit.\" | Jakub Vágner | SPIRIT SHOW #36",
+    show: "Majk Spirit",
+    totalMinutes: 30,
+    cover: "https://www.csmusic.cz/image_novinky/8541.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=LuM7w8MwA34&t=1569s",
+    tags: [
+      "Czech",
+      "Life",
+      "Self improvement",
+      "Philosophy"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-09-28-1",
+    date: "2025-09-28",
+    title: "koupil jsem si kurz za 125 000 KČ a tohle je moje upřímná zkušenost... HRA ŽIVOTA #28",
+    show: "HRA ŽIVOTA s Martinem Hrabinou",
+    totalMinutes: 10,
+    cover: "https://yt3.googleusercontent.com/tyMHvqC5Qh7lBayZhnYMW5SwTFkmDtRT3qpYfLTsju5Jp2oa0bg96jQLKcRClpIPKyHZJymtGw=s900-c-k-c0x00ffffff-no-rj",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2As8PrKmTMUkz339vRiKzf?si=78cf9b016c784d9b",
+    tags: [
+      "Czech",
+      "Self improvement"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-09-28-2",
+    date: "2025-09-28",
+    title: "EMBRACE THE SUCK",
+    show: "Weekly Motivation by Ben Lionel Scott",
+    totalMinutes: 5,
+    cover: "https://i.scdn.co/image/ab67656300005f1ff366d13999e833769d2a1f1c",
+    link: "https://open.spotify.com/episode/5eofnTkrQtmQfaeiLwxD0Q?si=3ixYp76zRAemc1-ufe1gDw",
+    platform: "spotify",
+    tags: [
+      "English",
+      "Motivation"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-09-18-1",
+    date: "2025-09-18",
+    title: "Děti musíme v začátcích nadchnout pro cyklistiku formou hry. Výsledky přijdou časem, říká Spěšný",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 50,
+    cover: "https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2TnKRDEYjpZKDej240iDRl?si=dc87bfa947664046",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Chill"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-09-18-2",
+    date: "2025-09-18",
+    title: "Do Keni jezdíme běhat do krásné přírody a zvolníme od zrychleného světa, shodují se Vebr a Sasynová",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 49,
+    cover: "https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2XQTRE3qPvZ6uBS2PFQd2i?si=51ca6cf37b0a4bbe",
+    tags: [
+      "Czech",
+      "Running",
+      "Chill",
+      "Cycling"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-08-30-1",
+    date: "2025-08-30",
+    title: "Paďour: Chci zůstat v kondici a koučem, který dost času tráví na kole. Stravu so držím jak profík",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 50,
+    cover: "https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6lAoKExABjDn8TDZdraJfp?si=b3b93dc4b0bb4524",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Chill"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-08-20-1",
+    date: "2025-08-20",
+    title: "Psychika a krize na B7 (a jiných závodech)",
+    show: "naHoru.tv|Rozhovory & motivace",
+    totalMinutes: 24,
+    cover: "https://static.wixstatic.com/media/3b6e39_c28ea616ea3042bf953d65e196ba37cc~mv2.png/v1/fit/w_2500,h_1330,al_c/3b6e39_c28ea616ea3042bf953d65e196ba37cc~mv2.png",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/6WqF4wX8lmxtafuuunG1JG?si=8899e07aab604e0c",
+    tags: [
+      "Czech",
+      "Ultra",
+      "Running",
+      "Self improvement",
+      "B7"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-08-17-1",
+    date: "2025-08-17",
+    title: "Chtěla jsem pokračovat, ale rozum rozhodl, že bude lepší to utnout, říká o odstoupení z Tour Burlová",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 50,
+    cover: "https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/77A8C8OuXoTaSQothMXpgt?si=ef96b9625ff1474c",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Chill",
+      "Tour de France"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-08-14-1",
+    date: "2025-08-14",
+    title: "Jak na Beskydskou sedmičku? S Matějem a Barčou Urbaczkovými o tréninku, výbavě i hlavě",
+    show: "edgarpower podcast",
+    totalMinutes: 37,
+    cover: "https://edgarpower.s17.cdn-upgates.com/e/e68891d99ba7e7-matej-s-bara-b7-podcast.jpg",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/7uPCEjZvgANZa8JiBH78qt?si=764240e2f11c4550",
+    tags: [
+      "Czech",
+      "B7",
+      "Running",
+      "Ultra"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-08-09-1",
+    date: "2025-08-09",
+    title: "Ježek: Z přestupu Evenepoela jsem rozpačitý. Je to divné rozhodnutí i v podání týmových manažerů",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 49,
+    cover: "https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/3QqFaJRMCdT43HqecBO5xB?si=c4bbe87aa9d3499b",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Chill"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-08-05-1",
+    date: "2025-08-05",
+    title: "Pogačar se cyklistikou baví a v každé etapě chtěl diváky něčím překvapit, vrací se Ježek k Tour",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 38,
+    cover: "https://i.scdn.co/image/ab6765630000ba8a65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/7AiwwrwfKbODqxCtTc8JYg?si=275f13e239724959",
+    tags: [
+      "Czech",
+      "Cycling",
+      "Chill",
+      "Tour de France"
+    ],
+    favourite: false
+  },
+  {
+    id: "2025-08-04-1",
+    date: "2025-08-04",
+    title: "7 LEKCÍ, Které Mě Udělaly Milionářem v 19 Hra / Života #26",
+    show: "HRA ŽIVOTA s Martinem Hrabinou",
+    totalMinutes: 30,
+    cover: "https://yt3.googleusercontent.com/tyMHvqC5Qh7lBayZhnYMW5SwTFkmDtRT3qpYfLTsju5Jp2oa0bg96jQLKcRClpIPKyHZJymtGw=s900-c-k-c0x00ffffff-no-rj",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/0DRYeBxmcJO8qWe8M3a3Aw?si=8f39ad1abc814ae8",
+    tags: [
+      "Czech",
+      "Self improvement"
+    ],
+    favourite: false
+  }
+];
 
 /** Utility: group episodes by date descending */
 function groupByDateDescending(list){
@@ -372,6 +2299,7 @@ function applyFiltersAndSort({filter='all', tag='all', show='all', sort='date-de
     case 'youtube': list = list.filter(e=>e.platform==='youtube'); break;
     case '2025': list = list.filter(e=>e.date && e.date.startsWith('2025-')); break;
     case '2026': list = list.filter(e=>e.date && e.date.startsWith('2026-')); break;
+    case 'favourite': list = list.filter(e=>e.favourite); break;
     default: break;
   }
   // tag filter
@@ -480,21 +2408,13 @@ function renderCard(ep){
   };
 
   if (ep.status === 'finished') {
-    statusTag = `<span class="podcast__tag tag-finished">${i18n.finished[lang] || i18n.finished.en}</span>`;
     progressBar = '<div class="progress"><div class="progress-bar done" style="width:100%;"></div></div>';
   } else if (ep.status === 'in-progress' && ep.minutesLeft) {
     const progress = Math.max(0, Math.min(100, 100 - Math.round((ep.minutesLeft / (total || 1)) * 100)));
-    statusTag = `<span class="podcast__tag tag-progress">${ep.minutesLeft} ${i18n.minLeft[lang] || i18n.minLeft.en}</span>`;
     progressBar = `<div class="progress"><div class="progress-bar" style="width:${progress}%;"></div></div>`;
   } else {
     // No status property or status is something else - show episode length
-    if(total > 0){
-      statusTag = `<span class="podcast__tag">${total} min</span>`;
-    } else if(platform === 'youtube'){
-      statusTag = '<span class="podcast__tag tag-yt">YT</span>';
-    } else {
-      statusTag = '';
-    }
+    
     progressBar = '<div class="progress"><div class="progress-bar" style="width:0%;"></div></div>';
   }
 
@@ -510,10 +2430,12 @@ function renderCard(ep){
     ? `<ul class="podcast-tags">${ep.tags.map(tag => `<li>${escapeHtml(tag)}</li>`).join('')}</ul>`
     : '';
 
+  const favouriteStar = ep.favourite ? '<div class="favourite-star" title="Favourite">★</div>' : '';
+
   return `<article class="podcast" data-platform="${platform}">
     <img loading="lazy" class="podcast__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';">
-    ${statusTag}
     ${platformIcon}
+    ${favouriteStar}
     <div class="podcast-content">
       <h2 class="podcast__title"><a href="${ep.link || '#'}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h2>
       <p class="podcast__host">${escapeHtml(ep.show)}</p>
