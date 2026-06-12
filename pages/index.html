@@ -49,7 +49,7 @@
 
             <div class="hero-visual">
                 <div class="hero-portrait">
-                    <img src="../images/IMG_6169.jpg" alt="Jiří Mlčoušek">
+                    <img id="hero-portrait-img" src="../images/IMG_6169.jpg" alt="Jiří Mlčoušek">
                 </div>
                 <span class="hero-chip hero-chip--1"><span class="chip-emoji">💻</span>.NET / C#</span>
                 <span class="hero-chip hero-chip--2"><span class="chip-emoji">🏃</span>2:57:24 - 42.195 km</span>
@@ -84,5 +84,18 @@
     <script src="../scripts/main.js"></script>
     <script src="../scripts/posts.js"></script>
     <script src="../scripts/effects.js"></script>
+    <script>
+      (function(){
+        var photos = [
+          { src: '../images/IMG_6169.jpg',                                   pos: 'center 15%' },
+          { src: '../images/Posts/SVOC/IMG_8964.JPG',                        pos: 'right 15%'  },
+          { src: '../images/events/LH242026/0049_IMG_9617 (1).jpg',          pos: 'right 50%'  }
+        ];
+        var pick = photos[Math.floor(Math.random() * photos.length)];
+        var img = document.getElementById('hero-portrait-img');
+        img.src = pick.src;
+        img.style.objectPosition = pick.pos;
+      })();
+    </script>
 </body>
 </html>

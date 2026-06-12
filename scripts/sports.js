@@ -215,7 +215,7 @@ const TRAINING_STATS = {
     { icon: '📊', value: '63 km/wk',   label: { en: 'Avg weekly km',      cs: 'Průměr km/týden',        es: 'Km semanales promedio' } },
     { icon: '🕐', value: '159h',        label: { en: 'Total run hours',    cs: 'Celkový čas běhu',       es: 'Horas totales carrera' } },
     { icon: '⏱️', value: '6:35 /km',  label: { en: 'Avg pace YTD',       cs: 'Průměrné tempo letos',   es: 'Ritmo promedio año'    } },
-    { icon: '🏆', value: '378',         label: { en: 'PRs set YTD',        cs: 'Osobáků letos',          es: 'Récords personales año'} },
+    { icon: '🏆', value: '378',         label: { en: 'Strava PRs set YTD',        cs: 'Strava Osobáků letos',          es: 'Strava Récords personales año'} },
     { icon: '🔥', value: '111,420',     label: { en: 'Calories YTD (run)', cs: 'Kalorie letos (běh)',    es: 'Calorías año (carrera)' } },
   ],
   monthly: [

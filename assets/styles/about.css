@@ -154,6 +154,7 @@
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
+  object-position: right 15%;
   border-radius: 20px;
   display: block;
   border: 4px solid var(--chrome-bg);
