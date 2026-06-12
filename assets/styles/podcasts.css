@@ -2,7 +2,7 @@
 .media-page-shell {
   max-width: 78em;
   margin: 0 auto;
-  padding: 0 1.4rem;
+  padding: 100px 1.4rem 0;
 }
 
 .media-page-header { margin-bottom: 24px; }
