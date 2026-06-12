@@ -1,18 +1,13 @@
-# Graph Report - Personal-page  (2026-06-12)
+# Graph Report - .  (2026-06-09)
 
 ## Corpus Check
-- 118 files · ~2,805,263 words
+- 56 files · ~0 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 188 nodes · 287 edges · 17 communities (13 shown, 4 thin omitted)
-- Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 52 edges (avg confidence: 0.91)
+- 182 nodes · 297 edges · 14 communities (10 shown, 4 thin omitted)
+- Extraction: 76% EXTRACTED · 24% INFERRED · 0% AMBIGUOUS · INFERRED: 70 edges (avg confidence: 0.91)
 - Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `a3cd8a3c`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_i18n & Shared Components|i18n & Shared Components]]
@@ -29,21 +24,18 @@
 - [[_COMMUNITY_Academic Milestones|Academic Milestones]]
 - [[_COMMUNITY_B7 Trail Race 2025|B7 Trail Race 2025]]
 - [[_COMMUNITY_Claude Dev Settings|Claude Dev Settings]]
-- [[_COMMUNITY_Football Photos|Football Photos]]
-- [[_COMMUNITY_Prague Marathon 2025|Prague Marathon 2025]]
-- [[_COMMUNITY_Zlin Half Marathon 2026|Zlin Half Marathon 2026]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `RACES` - 22 edges
-2. `Product` - 8 edges
-3. `renderVideos()` - 7 edges
-4. `BLOG_POSTS array` - 7 edges
+2. `renderVideos()` - 7 edges
+3. `BLOG_POSTS array` - 7 edges
+4. `setLanguage()` - 6 edges
 5. `Architecture` - 6 edges
-6. `Design System` - 5 edges
-7. `init()` - 5 edges
-8. `renderEpisodes()` - 5 edges
-9. `setupFilters()` - 5 edges
-10. `Personal Webpage – Jiří Mlčoušek` - 5 edges
+6. `loadNavbar()` - 5 edges
+7. `renderEpisodes()` - 5 edges
+8. `setupFilters()` - 5 edges
+9. `Personal Webpage – Jiří Mlčoušek` - 5 edges
+10. `applyLanguageAfterNavbar()` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem` --references--> `RACES`  [INFERRED]
@@ -54,33 +46,33 @@
   images/Posts/MastersDone/IMG_9011.jpg → scripts/posts.js
 - `SVOC Award Ceremony - Jiří Mlčoušek Receiving Certificate` --references--> `BLOG_POSTS array`  [INFERRED]
   images/Posts/SVOC/IMG_8964.JPG → scripts/posts.js
-- `loadNavbar()` --references--> `navbar.html – Shared Navigation Component`  [EXTRACTED]
-  scripts/main.js → components/navbar.html
+- `patchHtml()` --references--> `sports.html – Sports Page`  [EXTRACTED]
+  scripts/update-strava.mjs → pages/sports.html
 
 ## Import Cycles
 - None detected.
 
-## Communities (17 total, 4 thin omitted)
+## Communities (14 total, 4 thin omitted)
 
 ### Community 0 - "i18n & Shared Components"
-Cohesion: 0.11
-Nodes (25): Feature script pattern: data array -> filter/sort -> render -> DOM, i18n languageChanged event re-render pattern, favourite field on media items, fs, fs, applyFiltersAndSort(), collectAllShows(), collectAllTags() (+17 more)
+Cohesion: 0.09
+Nodes (28): Feature script pattern: data array -> filter/sort -> render -> DOM, i18n languageChanged event re-render pattern, favourite field on media items, Media filter UI (filter chips + controls), podcasts.html – Podcast Log Page, videos.html – Video Vault Page, fs, fs (+20 more)
 
 ### Community 1 - "Podcasts & Favourites Feature"
 Cohesion: 0.13
-Nodes (31): Trail runner on rocky forest path - B7 2025 race, Trail runner with poles, race number 0916, rocky forest path - B7 2025 race, Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem, Football Career, Jiří Mlčoušek, Kosir 2026 Running Event, Football match action photo - player #6 in neon green kit dribbling ball, Football player portrait on pitch in black and yellow kit (+23 more)
+Nodes (33): Trail runner on rocky forest path - B7 2025 race, Trail runner with poles, race number 0916, rocky forest path - B7 2025 race, Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem, Football Career, Jiří Mlčoušek, Kosir 2026 Running Event, Football match action photo - player #6 in neon green kit dribbling ball, Football player portrait on pitch in black and yellow kit (+25 more)
 
 ### Community 2 - "Strava & Sports Integration"
-Cohesion: 0.23
-Nodes (10): navbar.html – Shared Navigation Component, README – Personal Webpage Documentation, buildInlineNavbar(), combinePath(), getSiteRootPrefix(), loadFooter(), loadNavbar(), normalizeNavbarLinks() (+2 more)
+Cohesion: 0.14
+Nodes (19): footer.html – Shared Footer Component, navbar.html – Shared Navigation Component, Trilingual i18n (EN/CS/ES) Pattern, languageChanged CustomEvent Bus, pages/index.html – Home Page, index.html – Root Redirect Page, README – Personal Webpage Documentation, applyLanguageAfterNavbar() (+11 more)
 
 ### Community 3 - "Videos Feature & CSS"
 Cohesion: 0.14
 Nodes (16): Strava API Integration Pattern, renderTrainingStats(), TRAINING_STATS object, __dir, fmtElev(), fmtKm(), fmtMonth(), now (+8 more)
 
 ### Community 4 - "Package & Project Config"
-Cohesion: 0.23
-Nodes (13): Masters Degree Completion, SVOC Academic Competition, Masters Graduation Celebration Photo, BLOG_POSTS, BLOG_POSTS array, cardHTML(), CATEGORY_MAP, getLang() (+5 more)
+Cohesion: 0.21
+Nodes (14): Masters Degree Completion, SVOC Academic Competition, Masters Graduation Celebration Photo, blog.html – Blog Page, BLOG_POSTS, BLOG_POSTS array, cardHTML(), CATEGORY_MAP (+6 more)
 
 ### Community 5 - "Blog & Posts"
 Cohesion: 0.15
@@ -102,24 +94,12 @@ Nodes (8): 📦 Deployment, ✨ Features, 🚀 Getting started, Install dependen
 Cohesion: 1.00
 Nodes (3): Electronic Signature (Elektronický podpis), Public Key Infrastructure (PKI), PKI a elektronický podpis - course/document cover by Libor Dostálek, 2020
 
-### Community 14 - "Football Photos"
-Cohesion: 0.22
-Nodes (8): Accessibility & Inclusion, Anti-references, Brand Personality, Design Principles, Product, Product Purpose, Register, Users
-
-### Community 15 - "Prague Marathon 2025"
-Cohesion: 0.46
-Nodes (6): init(), prepareCounters(), prepareReveals(), scheduleScan(), setupNavState(), setupParallax()
-
-### Community 16 - "Zlin Half Marathon 2026"
-Cohesion: 0.33
-Nodes (5): Color, Design System, Motion, Shape, Typography
-
 ## Ambiguous Edges - Review These
 - `Photo of man holding race finisher medal at outdoor running event` → `PKI a elektronický podpis - course/document cover by Libor Dostálek, 2020`  [AMBIGUOUS]
   images/PKI_course.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **59 isolated node(s):** `allow`, `Color`, `Typography`, `Shape`, `Motion` (+54 more)
+- **51 isolated node(s):** `allow`, `name`, `version`, `description`, `main` (+46 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -128,15 +108,15 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Photo of man holding race finisher medal at outdoor running event` and `PKI a elektronický podpis - course/document cover by Libor Dostálek, 2020`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `RACES` connect `Podcasts & Favourites Feature` to `Package & Project Config`?**
-  _High betweenness centrality (0.016) - this node is a cross-community bridge._
-- **Are the 17 inferred relationships involving `Jiří Mlčoušek` (e.g. with `Football Career` and `Masters Degree Completion`) actually correct?**
-  _`Jiří Mlčoušek` has 17 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `languageChanged CustomEvent Bus` connect `Strava & Sports Integration` to `i18n & Shared Components`, `Podcasts & Favourites Feature`, `Package & Project Config`?**
+  _High betweenness centrality (0.092) - this node is a cross-community bridge._
+- **Are the 24 inferred relationships involving `Jiří Mlčoušek` (e.g. with `Football Career` and `Masters Degree Completion`) actually correct?**
+  _`Jiří Mlčoušek` has 24 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 3 inferred relationships involving `RACES` (e.g. with `Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem` and `Jiří Mlčoušek`) actually correct?**
   _`RACES` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `renderVideos()` (e.g. with `groupByDateDescending()` and `renderCard()`) actually correct?**
   _`renderVideos()` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 4 inferred relationships involving `BLOG_POSTS array` (e.g. with `Jiří Mlčoušek` and `Masters Graduation Celebration Photo`) actually correct?**
   _`BLOG_POSTS array` has 4 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `allow`, `Color`, `Typography` to the rest of the system?**
-  _59 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `allow`, `name`, `version` to the rest of the system?**
+  _51 weakly-connected nodes found - possible documentation gaps or missing edges._

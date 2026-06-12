@@ -1,8 +1,8 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1780666824.4440343,
-    "ast_hash": "0de4b5fcbeb71ae52fdd8804e0526a43",
-    "semantic_hash": "0de4b5fcbeb71ae52fdd8804e0526a43"
+    "mtime": 1781261992.7107894,
+    "ast_hash": "1ebff78a21341b7942a7efb13e9dc6c8",
+    "semantic_hash": ""
   },
   ".vscode/mcp.json": {
     "mtime": 1763909776.7846243,
@@ -15,13 +15,13 @@
     "semantic_hash": "38359f9eeee6801e41cd0d5ae2279eae"
   },
   "scripts/main.js": {
-    "mtime": 1780741296.0447779,
-    "ast_hash": "7066212b087eba22768ad47b55e31b97",
-    "semantic_hash": "7066212b087eba22768ad47b55e31b97"
+    "mtime": 1781261855.1165037,
+    "ast_hash": "62a7278e97fa872b76256c1ced0dde4c",
+    "semantic_hash": ""
   },
   "scripts/podcasts.js": {
-    "mtime": 1780983663.5315163,
-    "ast_hash": "786a4779a5ced93d297a59c4dcf1f6d1",
+    "mtime": 1781258706.6594746,
+    "ast_hash": "4e1b5ac6be7b12de5e42bf6619703f2e",
     "semantic_hash": ""
   },
   "scripts/posts.js": {
@@ -35,29 +35,29 @@
     "semantic_hash": "03a00dccbcc61eee723b37aaabf7fb28"
   },
   "scripts/sports.js": {
-    "mtime": 1780736863.962695,
-    "ast_hash": "147b061f37faf2623fbde38004275d71",
-    "semantic_hash": "147b061f37faf2623fbde38004275d71"
+    "mtime": 1781244916.446807,
+    "ast_hash": "437da475b9d973913f0457710e3cbef4",
+    "semantic_hash": ""
   },
   "scripts/update-strava.mjs": {
-    "mtime": 1780731780.0075767,
-    "ast_hash": "1e5da236c5480922bee4495c1197a3da",
-    "semantic_hash": "1e5da236c5480922bee4495c1197a3da"
+    "mtime": 1781005626.71061,
+    "ast_hash": "95bdd7720dd440b7d1d178ce286ef510",
+    "semantic_hash": ""
   },
   "scripts/videos.js": {
-    "mtime": 1780983546.3112862,
-    "ast_hash": "9ab50d7a883939055e0aa948d9708380",
+    "mtime": 1781258731.4640298,
+    "ast_hash": "795a6b52be156d9ee57f84b6690c9258",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1763909776.789176,
-    "ast_hash": "ee5d833498148eccf4da0457ece04b1c",
-    "semantic_hash": "ee5d833498148eccf4da0457ece04b1c"
+    "mtime": 1781006142.9525032,
+    "ast_hash": "067ca061647587474e47d6baba60b0ad",
+    "semantic_hash": ""
   },
   "components/footer.html": {
-    "mtime": 1780740962.338129,
-    "ast_hash": "839379268885bebd136729d74a456261",
-    "semantic_hash": "839379268885bebd136729d74a456261"
+    "mtime": 1781261844.542039,
+    "ast_hash": "9ca5d705455012d92642c6cdec87d76f",
+    "semantic_hash": ""
   },
   "components/navbar.html": {
     "mtime": 1780734882.0961568,
@@ -70,403 +70,698 @@
     "semantic_hash": "3e052df1a231a730a4228bbe7ff75a00"
   },
   "pages/about.html": {
-    "mtime": 1780735691.5300257,
-    "ast_hash": "99df2a1bfd4bc66a750c52fd455adf22",
-    "semantic_hash": "99df2a1bfd4bc66a750c52fd455adf22"
+    "mtime": 1781261837.5358703,
+    "ast_hash": "a444ac3c348f6606a20d48d9e99986e5",
+    "semantic_hash": ""
   },
   "pages/blog.html": {
-    "mtime": 1780735704.4434636,
-    "ast_hash": "d409b41ad6670fe481c79f6100c7b93d",
-    "semantic_hash": "d409b41ad6670fe481c79f6100c7b93d"
+    "mtime": 1781261837.5769777,
+    "ast_hash": "0bbb8caba691117759e9757f97ce14fc",
+    "semantic_hash": ""
   },
   "pages/books.html": {
-    "mtime": 1780735800.61465,
-    "ast_hash": "6e4bac210dc3e8107bf3ea7b00e9d00a",
-    "semantic_hash": "6e4bac210dc3e8107bf3ea7b00e9d00a"
+    "mtime": 1781261837.583492,
+    "ast_hash": "0c97b40494a5fcaeb5d2d19eb059edc6",
+    "semantic_hash": ""
   },
   "pages/index.html": {
-    "mtime": 1780735638.49026,
-    "ast_hash": "741c2ff9c0ca404d1a59aff61f50e59e",
-    "semantic_hash": "741c2ff9c0ca404d1a59aff61f50e59e"
+    "mtime": 1781261864.819645,
+    "ast_hash": "b8c404c5ef591baa728edef2f4cd9443",
+    "semantic_hash": ""
   },
   "pages/podcasts.html": {
-    "mtime": 1780983057.7794416,
-    "ast_hash": "c2546368d257086e867b93cb4cc78606",
+    "mtime": 1781261837.6021745,
+    "ast_hash": "9ae01854dbc8f7f5417a153e02a462b7",
     "semantic_hash": ""
   },
   "pages/sports.html": {
-    "mtime": 1780735791.801592,
-    "ast_hash": "613f47e214d7aad64e39cea92f06231b",
-    "semantic_hash": "613f47e214d7aad64e39cea92f06231b"
+    "mtime": 1781261837.6115525,
+    "ast_hash": "6b7f12c8431131660047b5de34dcd38b",
+    "semantic_hash": ""
   },
   "pages/videos.html": {
-    "mtime": 1780982764.5670445,
-    "ast_hash": "31acf3b55b29d600a23304b36fcdc694",
+    "mtime": 1781261837.6071706,
+    "ast_hash": "af70ae223e955515967e4f689074326a",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1780927614.362396,
-    "ast_hash": "700d807109f429f6d20d2ab2c00ac354",
+    "mtime": 1781241689.786514,
+    "ast_hash": "da91935fd4d6223dbfd1620b39d41997",
     "semantic_hash": ""
   },
   "images/1737442551739.jpg": {
     "mtime": 1764919206.7478614,
     "ast_hash": "34441b7801148b061d3ea742365ad091",
-    "semantic_hash": ""
+    "semantic_hash": "34441b7801148b061d3ea742365ad091"
   },
   "images/IMG_6169.jpg": {
     "mtime": 1763909776.8133755,
     "ast_hash": "9673e2f4e4a7812c5225635cddb012ba",
-    "semantic_hash": ""
+    "semantic_hash": "9673e2f4e4a7812c5225635cddb012ba"
   },
   "images/PKI_course.png": {
     "mtime": 1763909776.8161187,
     "ast_hash": "60cc755b45bc109045c261452df1dada",
-    "semantic_hash": ""
+    "semantic_hash": "60cc755b45bc109045c261452df1dada"
   },
   "images/Posts/MastersDone/IMG_9011.jpg": {
     "mtime": 1780733749.611,
     "ast_hash": "863b3e9661cd1705a3ada86edbd8ba95",
-    "semantic_hash": ""
+    "semantic_hash": "863b3e9661cd1705a3ada86edbd8ba95"
   },
   "images/Posts/SVOC/IMG_8964.JPG": {
     "mtime": 1780733614.1836724,
     "ast_hash": "a62621f941e14dea7a2aaad58a9c9c6b",
-    "semantic_hash": ""
+    "semantic_hash": "a62621f941e14dea7a2aaad58a9c9c6b"
   },
   "images/events/B72025/IMG_5622.JPG": {
     "mtime": 1780730376.70777,
     "ast_hash": "53c82d5ce9c795869432a66ffd0c3063",
-    "semantic_hash": ""
+    "semantic_hash": "53c82d5ce9c795869432a66ffd0c3063"
   },
   "images/events/B72025/IMG_5624.JPG": {
     "mtime": 1780730376.6641634,
     "ast_hash": "1b86355ebc12ec6b0a2aacf7d28d8e52",
-    "semantic_hash": ""
+    "semantic_hash": "1b86355ebc12ec6b0a2aacf7d28d8e52"
   },
   "images/events/B72025/IMG_8080.jpg": {
     "mtime": 1780730926.5972886,
     "ast_hash": "b3963164585def4a4c8afe3aad25cd69",
-    "semantic_hash": ""
+    "semantic_hash": "b3963164585def4a4c8afe3aad25cd69"
   },
   "images/events/Kosir2026/IMG_1317.jpg": {
     "mtime": 1780730929.8457217,
     "ast_hash": "3fb0e6b12ad98100e284b670217711b4",
-    "semantic_hash": ""
+    "semantic_hash": "3fb0e6b12ad98100e284b670217711b4"
   },
   "images/events/LH242026/0049_IMG_9617 (1).jpg": {
     "mtime": 1780729600.379696,
     "ast_hash": "e35f4fea28706d5bd7c5ff971137524c",
-    "semantic_hash": ""
+    "semantic_hash": "e35f4fea28706d5bd7c5ff971137524c"
   },
   "images/events/LH242026/55073242584_83b7d721b5_o (1).jpg": {
     "mtime": 1780729598.3808932,
     "ast_hash": "f81d6ceb66500b421893c25ab19197b2",
-    "semantic_hash": ""
+    "semantic_hash": "f81d6ceb66500b421893c25ab19197b2"
   },
   "images/events/OlomoucMarathon2026/IMG_8773.jpg": {
     "mtime": 1780730325.72003,
     "ast_hash": "ab451afb8a896d715c58ad93e4200b09",
-    "semantic_hash": ""
+    "semantic_hash": "ab451afb8a896d715c58ad93e4200b09"
   },
   "images/events/OlomoucMarathon2026/IMG_8776.PNG": {
     "mtime": 1780730326.0120344,
     "ast_hash": "f42acccd38af67ac8b7f3b89787257b1",
-    "semantic_hash": ""
+    "semantic_hash": "f42acccd38af67ac8b7f3b89787257b1"
   },
   "images/events/OlomoucMaraton2025/74a875bc-16b0-4030-af00-610e0c66fdae.JPG": {
     "mtime": 1780730325.7020998,
     "ast_hash": "10180065b416094b2decad3bd76a3f0a",
-    "semantic_hash": ""
+    "semantic_hash": "10180065b416094b2decad3bd76a3f0a"
   },
   "images/events/PragueMaraton2025/IMG_6112.jpg": {
     "mtime": 1780730932.7594643,
     "ast_hash": "5422af2e101e50425f3d69c627c3ddfa",
-    "semantic_hash": ""
+    "semantic_hash": "5422af2e101e50425f3d69c627c3ddfa"
   },
   "images/events/PragueMaraton2025/IMG_6124.jpg": {
     "mtime": 1780730935.7945454,
     "ast_hash": "c386f4c5eec69b6df88afb0d59d9974c",
-    "semantic_hash": ""
+    "semantic_hash": "c386f4c5eec69b6df88afb0d59d9974c"
   },
   "images/events/PragueMaraton2025/IMG_6169.jpg": {
     "mtime": 1780730938.8127546,
     "ast_hash": "e8aa05cf412cd2bc3d3dbc89b8dec974",
-    "semantic_hash": ""
+    "semantic_hash": "e8aa05cf412cd2bc3d3dbc89b8dec974"
   },
   "images/events/jestedWinter242026/321A6841.jpg": {
     "mtime": 1768462225.293801,
     "ast_hash": "f9808594660baedf37020d3b0d967bc6",
-    "semantic_hash": ""
+    "semantic_hash": "f9808594660baedf37020d3b0d967bc6"
   },
   "images/events/jestedWinter242026/Jested 24 winter 2026-96.jpg": {
     "mtime": 1768403495.836736,
     "ast_hash": "eda4516f4cd172b362d9720fe1499b22",
-    "semantic_hash": ""
+    "semantic_hash": "eda4516f4cd172b362d9720fe1499b22"
   },
   "images/events/zlinHalf2026/LIL_7023.JPG": {
     "mtime": 1780335966.182927,
     "ast_hash": "2effb3a867c1006a21a242d30db35f15",
-    "semantic_hash": ""
+    "semantic_hash": "2effb3a867c1006a21a242d30db35f15"
   },
   "images/events/zlinHalf2026/_MTK_0077.JPG": {
     "mtime": 1780335968.7314303,
     "ast_hash": "58a955e7f362ec40bb91bcc86172cffc",
-    "semantic_hash": ""
+    "semantic_hash": "58a955e7f362ec40bb91bcc86172cffc"
   },
   "images/events/zlinHalf2026/_MTK_2364.JPG": {
     "mtime": 1780335969.055477,
     "ast_hash": "cb927f0180b891fdfc89f6f289b099e8",
-    "semantic_hash": ""
+    "semantic_hash": "cb927f0180b891fdfc89f6f289b099e8"
   },
   "images/football/FB_IMG_1622893629074_Original.jpg": {
     "mtime": 1780730205.0870895,
     "ast_hash": "6eabcb484aa49b29de6a93ddd3f2e5d7",
-    "semantic_hash": ""
+    "semantic_hash": "6eabcb484aa49b29de6a93ddd3f2e5d7"
   },
   "images/football/IMG_5420.jpg": {
     "mtime": 1780730205.1038465,
     "ast_hash": "fdce8f9fdd9c55aa1638a7bc3a419108",
-    "semantic_hash": ""
+    "semantic_hash": "fdce8f9fdd9c55aa1638a7bc3a419108"
   },
   "images/football/IMG_7459.jpg": {
     "mtime": 1780730205.1186757,
     "ast_hash": "fe553b168bddb94edc2f81502eb08175",
+    "semantic_hash": "fe553b168bddb94edc2f81502eb08175"
+  },
+  ".claude/skills/impeccable/scripts/command-metadata.json": {
+    "mtime": 1781148064.0,
+    "ast_hash": "883d1962f87b23b4a0f6229e1aadd484",
     "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\.claude\\settings.local.json": {
-    "mtime": 1780666824.4440343,
-    "ast_hash": "0de4b5fcbeb71ae52fdd8804e0526a43",
-    "semantic_hash": "0de4b5fcbeb71ae52fdd8804e0526a43"
+  ".claude/skills/impeccable/scripts/context-signals.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "ed7a5fe15dbaebb1513d5e6db09cc32c",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\.vscode\\mcp.json": {
-    "mtime": 1763909776.7846243,
-    "ast_hash": "01de8cd8811ece38fcca4c9dd15ef635",
-    "semantic_hash": "01de8cd8811ece38fcca4c9dd15ef635"
+  ".claude/skills/impeccable/scripts/context.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "5db7930910705545dc776e946c320be9",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\package.json": {
-    "mtime": 1780733757.3639078,
-    "ast_hash": "38359f9eeee6801e41cd0d5ae2279eae",
-    "semantic_hash": "38359f9eeee6801e41cd0d5ae2279eae"
+  ".claude/skills/impeccable/scripts/critique-storage.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "942bbd0169358eecab57d82ad9c29f18",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\scripts\\main.js": {
-    "mtime": 1780741296.0447779,
-    "ast_hash": "7066212b087eba22768ad47b55e31b97",
-    "semantic_hash": "7066212b087eba22768ad47b55e31b97"
+  ".claude/skills/impeccable/scripts/detect-csp.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "02c5a9a8ad69f87d23af72bf580fd3f4",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\scripts\\podcasts.js": {
-    "mtime": 1780983663.5315163,
-    "ast_hash": "786a4779a5ced93d297a59c4dcf1f6d1",
-    "semantic_hash": "786a4779a5ced93d297a59c4dcf1f6d1"
+  ".claude/skills/impeccable/scripts/detect.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "11dbeb9341477d06d1a24c3ad1f37ac9",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\scripts\\posts.js": {
-    "mtime": 1780741194.3108523,
-    "ast_hash": "a6815470d31b7a0973c2ebfd6f97fdce",
-    "semantic_hash": "a6815470d31b7a0973c2ebfd6f97fdce"
+  ".claude/skills/impeccable/scripts/detector/browser/injected/index.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "c4846ef42ab73951d7de2fdfb28a25f6",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\scripts\\redirect.js": {
-    "mtime": 1763909776.8369124,
-    "ast_hash": "03a00dccbcc61eee723b37aaabf7fb28",
-    "semantic_hash": "03a00dccbcc61eee723b37aaabf7fb28"
+  ".claude/skills/impeccable/scripts/detector/cli/main.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "5208183c07f839d8ff178d4614b0a5e8",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\scripts\\sports.js": {
-    "mtime": 1780736863.962695,
-    "ast_hash": "147b061f37faf2623fbde38004275d71",
-    "semantic_hash": "147b061f37faf2623fbde38004275d71"
+  ".claude/skills/impeccable/scripts/detector/detect-antipatterns-browser.js": {
+    "mtime": 1781148064.0,
+    "ast_hash": "b972b4c90fd7eb235c76c38acbfcad57",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\scripts\\update-strava.mjs": {
-    "mtime": 1780731780.0075767,
-    "ast_hash": "1e5da236c5480922bee4495c1197a3da",
-    "semantic_hash": "1e5da236c5480922bee4495c1197a3da"
+  ".claude/skills/impeccable/scripts/detector/detect-antipatterns.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "1ee45163c27e086f43af1a3bb6b76504",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\scripts\\videos.js": {
-    "mtime": 1780983546.3112862,
-    "ast_hash": "9ab50d7a883939055e0aa948d9708380",
-    "semantic_hash": "9ab50d7a883939055e0aa948d9708380"
+  ".claude/skills/impeccable/scripts/detector/engines/browser/detect-url.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "f9a37e92021f13b178b860eb52a33f98",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\CLAUDE.md": {
-    "mtime": 1780927614.362396,
-    "ast_hash": "700d807109f429f6d20d2ab2c00ac354",
-    "semantic_hash": "700d807109f429f6d20d2ab2c00ac354"
+  ".claude/skills/impeccable/scripts/detector/engines/regex/detect-text.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "f99d96047b51dbe3dd24ca272d009a09",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\README.md": {
-    "mtime": 1763909776.789176,
-    "ast_hash": "ee5d833498148eccf4da0457ece04b1c",
-    "semantic_hash": "ee5d833498148eccf4da0457ece04b1c"
+  ".claude/skills/impeccable/scripts/detector/engines/static-html/css-cascade.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "689ec9d7f83a11443141c48b0f6514e8",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\components\\footer.html": {
-    "mtime": 1780740962.338129,
-    "ast_hash": "839379268885bebd136729d74a456261",
-    "semantic_hash": "839379268885bebd136729d74a456261"
+  ".claude/skills/impeccable/scripts/detector/engines/static-html/detect-html.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "48549abcbb3e1fee4f93f07661d77ac0",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\components\\navbar.html": {
-    "mtime": 1780734882.0961568,
-    "ast_hash": "7d9fb9e2d544887a6b76f00dc35670fc",
-    "semantic_hash": "7d9fb9e2d544887a6b76f00dc35670fc"
+  ".claude/skills/impeccable/scripts/detector/engines/visual/screenshot-contrast.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "6312c6dbc048c4445f50e69f167a297d",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\index.html": {
-    "mtime": 1763909776.8161187,
-    "ast_hash": "3e052df1a231a730a4228bbe7ff75a00",
-    "semantic_hash": "3e052df1a231a730a4228bbe7ff75a00"
+  ".claude/skills/impeccable/scripts/detector/findings.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "f7f3de6f00121150c4762809df00df9f",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\pages\\about.html": {
-    "mtime": 1780735691.5300257,
-    "ast_hash": "99df2a1bfd4bc66a750c52fd455adf22",
-    "semantic_hash": "99df2a1bfd4bc66a750c52fd455adf22"
+  ".claude/skills/impeccable/scripts/detector/node/file-system.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "310714c7a308e35e386034999479ff84",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\pages\\blog.html": {
-    "mtime": 1780735704.4434636,
-    "ast_hash": "d409b41ad6670fe481c79f6100c7b93d",
-    "semantic_hash": "d409b41ad6670fe481c79f6100c7b93d"
+  ".claude/skills/impeccable/scripts/detector/profile/profiler.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "88c5d2027852842be578edf349a0f9c8",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\pages\\books.html": {
-    "mtime": 1780735800.61465,
-    "ast_hash": "6e4bac210dc3e8107bf3ea7b00e9d00a",
-    "semantic_hash": "6e4bac210dc3e8107bf3ea7b00e9d00a"
+  ".claude/skills/impeccable/scripts/detector/registry/antipatterns.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "30ed4f1a91098bf96a2dd2e0582a8162",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\pages\\index.html": {
-    "mtime": 1780735638.49026,
-    "ast_hash": "741c2ff9c0ca404d1a59aff61f50e59e",
-    "semantic_hash": "741c2ff9c0ca404d1a59aff61f50e59e"
+  ".claude/skills/impeccable/scripts/detector/rules/checks.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "c0df66beab10180beaff8fd9e222b8bc",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\pages\\podcasts.html": {
-    "mtime": 1780983057.7794416,
-    "ast_hash": "c2546368d257086e867b93cb4cc78606",
-    "semantic_hash": "c2546368d257086e867b93cb4cc78606"
+  ".claude/skills/impeccable/scripts/detector/shared/color.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "2363d500ccf490f9ff285119b613276d",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\pages\\sports.html": {
-    "mtime": 1780735791.801592,
-    "ast_hash": "613f47e214d7aad64e39cea92f06231b",
-    "semantic_hash": "613f47e214d7aad64e39cea92f06231b"
+  ".claude/skills/impeccable/scripts/detector/shared/constants.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "5700477c8a86d876b90de9d6eb63f191",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\pages\\videos.html": {
-    "mtime": 1780982764.5670445,
-    "ast_hash": "31acf3b55b29d600a23304b36fcdc694",
-    "semantic_hash": "31acf3b55b29d600a23304b36fcdc694"
+  ".claude/skills/impeccable/scripts/detector/shared/page.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "ab3a243b690b4f70c4ef639cdf970d82",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\1737442551739.jpg": {
-    "mtime": 1764919206.7478614,
-    "ast_hash": "34441b7801148b061d3ea742365ad091",
-    "semantic_hash": "34441b7801148b061d3ea742365ad091"
+  ".claude/skills/impeccable/scripts/lib/design-parser.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "77bbd8593cdea6e08a0b3e7870e93fc8",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\IMG_6169.jpg": {
-    "mtime": 1763909776.8133755,
-    "ast_hash": "9673e2f4e4a7812c5225635cddb012ba",
-    "semantic_hash": "9673e2f4e4a7812c5225635cddb012ba"
+  ".claude/skills/impeccable/scripts/lib/impeccable-paths.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "2dd4310d900b4e7678f8b3620e634687",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\PKI_course.png": {
-    "mtime": 1763909776.8161187,
-    "ast_hash": "60cc755b45bc109045c261452df1dada",
-    "semantic_hash": "60cc755b45bc109045c261452df1dada"
+  ".claude/skills/impeccable/scripts/lib/is-generated.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "edd718b1a4737edbf9631ff7f6f512ef",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\Posts\\MastersDone\\IMG_9011.jpg": {
-    "mtime": 1780733749.611,
-    "ast_hash": "863b3e9661cd1705a3ada86edbd8ba95",
-    "semantic_hash": "863b3e9661cd1705a3ada86edbd8ba95"
+  ".claude/skills/impeccable/scripts/live-accept.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "63a98882c6e9cee6155ec14f0541cf6b",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\Posts\\SVOC\\IMG_8964.JPG": {
-    "mtime": 1780733614.1836724,
-    "ast_hash": "a62621f941e14dea7a2aaad58a9c9c6b",
-    "semantic_hash": "a62621f941e14dea7a2aaad58a9c9c6b"
+  ".claude/skills/impeccable/scripts/live-browser-dom.js": {
+    "mtime": 1781148064.0,
+    "ast_hash": "b96db5b10874366237a40305c5dc72a1",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\B72025\\IMG_5622.JPG": {
-    "mtime": 1780730376.70777,
-    "ast_hash": "53c82d5ce9c795869432a66ffd0c3063",
-    "semantic_hash": "53c82d5ce9c795869432a66ffd0c3063"
+  ".claude/skills/impeccable/scripts/live-browser-session.js": {
+    "mtime": 1781148064.0,
+    "ast_hash": "5dec3dae6158050d69762fb79facaf48",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\B72025\\IMG_5624.JPG": {
-    "mtime": 1780730376.6641634,
-    "ast_hash": "1b86355ebc12ec6b0a2aacf7d28d8e52",
-    "semantic_hash": "1b86355ebc12ec6b0a2aacf7d28d8e52"
+  ".claude/skills/impeccable/scripts/live-browser.js": {
+    "mtime": 1781148064.0,
+    "ast_hash": "d600f17ae3d7619f5fcb802120fe3362",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\B72025\\IMG_8080.jpg": {
-    "mtime": 1780730926.5972886,
-    "ast_hash": "b3963164585def4a4c8afe3aad25cd69",
-    "semantic_hash": "b3963164585def4a4c8afe3aad25cd69"
+  ".claude/skills/impeccable/scripts/live-commit-manual-edits.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "866079c1dea82be936f92cf11adf01d3",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\Kosir2026\\IMG_1317.jpg": {
-    "mtime": 1780730929.8457217,
-    "ast_hash": "3fb0e6b12ad98100e284b670217711b4",
-    "semantic_hash": "3fb0e6b12ad98100e284b670217711b4"
+  ".claude/skills/impeccable/scripts/live-complete.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "18ddd6db2567d7d385291b813d310518",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\LH242026\\0049_IMG_9617 (1).jpg": {
-    "mtime": 1780729600.379696,
-    "ast_hash": "e35f4fea28706d5bd7c5ff971137524c",
-    "semantic_hash": "e35f4fea28706d5bd7c5ff971137524c"
+  ".claude/skills/impeccable/scripts/live-copy-edit-agent.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "1c4926b56d5442775dab0138bf71a790",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\LH242026\\55073242584_83b7d721b5_o (1).jpg": {
-    "mtime": 1780729598.3808932,
-    "ast_hash": "f81d6ceb66500b421893c25ab19197b2",
-    "semantic_hash": "f81d6ceb66500b421893c25ab19197b2"
+  ".claude/skills/impeccable/scripts/live-discard-manual-edits.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "bbd49a16f77178fc8e778759653dd4c5",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\OlomoucMarathon2026\\IMG_8773.jpg": {
-    "mtime": 1780730325.72003,
-    "ast_hash": "ab451afb8a896d715c58ad93e4200b09",
-    "semantic_hash": "ab451afb8a896d715c58ad93e4200b09"
+  ".claude/skills/impeccable/scripts/live-inject.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "db03faa3fa9968afd185542c56e1ac6f",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\OlomoucMarathon2026\\IMG_8776.PNG": {
-    "mtime": 1780730326.0120344,
-    "ast_hash": "f42acccd38af67ac8b7f3b89787257b1",
-    "semantic_hash": "f42acccd38af67ac8b7f3b89787257b1"
+  ".claude/skills/impeccable/scripts/live-insert.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "a0ce4a29836987cc67cad70e630d5dcf",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\OlomoucMaraton2025\\74a875bc-16b0-4030-af00-610e0c66fdae.JPG": {
-    "mtime": 1780730325.7020998,
-    "ast_hash": "10180065b416094b2decad3bd76a3f0a",
-    "semantic_hash": "10180065b416094b2decad3bd76a3f0a"
+  ".claude/skills/impeccable/scripts/live-manual-edit-evidence.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "aafd35ccb714ec883362d7dde83f61d1",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\PragueMaraton2025\\IMG_6112.jpg": {
-    "mtime": 1780730932.7594643,
-    "ast_hash": "5422af2e101e50425f3d69c627c3ddfa",
-    "semantic_hash": "5422af2e101e50425f3d69c627c3ddfa"
+  ".claude/skills/impeccable/scripts/live-poll.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "765dd3974cce3c380200bde3c3cb9426",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\PragueMaraton2025\\IMG_6124.jpg": {
-    "mtime": 1780730935.7945454,
-    "ast_hash": "c386f4c5eec69b6df88afb0d59d9974c",
-    "semantic_hash": "c386f4c5eec69b6df88afb0d59d9974c"
+  ".claude/skills/impeccable/scripts/live-resume.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "0791b79bb824ffc6b52fcec25c6982a7",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\PragueMaraton2025\\IMG_6169.jpg": {
-    "mtime": 1780730938.8127546,
-    "ast_hash": "e8aa05cf412cd2bc3d3dbc89b8dec974",
-    "semantic_hash": "e8aa05cf412cd2bc3d3dbc89b8dec974"
+  ".claude/skills/impeccable/scripts/live-server.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "59d8a8437f1dec1597a2285f602d09ba",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\jestedWinter242026\\321A6841.jpg": {
-    "mtime": 1768462225.293801,
-    "ast_hash": "f9808594660baedf37020d3b0d967bc6",
-    "semantic_hash": "f9808594660baedf37020d3b0d967bc6"
+  ".claude/skills/impeccable/scripts/live-status.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "039529830229f091246f26baabaaa0dd",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\jestedWinter242026\\Jested 24 winter 2026-96.jpg": {
-    "mtime": 1768403495.836736,
-    "ast_hash": "eda4516f4cd172b362d9720fe1499b22",
-    "semantic_hash": "eda4516f4cd172b362d9720fe1499b22"
+  ".claude/skills/impeccable/scripts/live-wrap.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "bc09a57b1adf3f796e57055f702df208",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\zlinHalf2026\\LIL_7023.JPG": {
-    "mtime": 1780335966.182927,
-    "ast_hash": "2effb3a867c1006a21a242d30db35f15",
-    "semantic_hash": "2effb3a867c1006a21a242d30db35f15"
+  ".claude/skills/impeccable/scripts/live.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "20c20abb6254d328f575e6ee62e83e97",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\zlinHalf2026\\_MTK_0077.JPG": {
-    "mtime": 1780335968.7314303,
-    "ast_hash": "58a955e7f362ec40bb91bcc86172cffc",
-    "semantic_hash": "58a955e7f362ec40bb91bcc86172cffc"
+  ".claude/skills/impeccable/scripts/live/browser-script-parts.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "f04f047fda5e9b2a3b1e510983da153d",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\events\\zlinHalf2026\\_MTK_2364.JPG": {
-    "mtime": 1780335969.055477,
-    "ast_hash": "cb927f0180b891fdfc89f6f289b099e8",
-    "semantic_hash": "cb927f0180b891fdfc89f6f289b099e8"
+  ".claude/skills/impeccable/scripts/live/completion.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "77185bc6cced6322e6892af8e05839f0",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\football\\FB_IMG_1622893629074_Original.jpg": {
-    "mtime": 1780730205.0870895,
-    "ast_hash": "6eabcb484aa49b29de6a93ddd3f2e5d7",
-    "semantic_hash": "6eabcb484aa49b29de6a93ddd3f2e5d7"
+  ".claude/skills/impeccable/scripts/live/event-validation.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "97a304ab4b04080bcdbaf3816d3ee968",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\football\\IMG_5420.jpg": {
-    "mtime": 1780730205.1038465,
-    "ast_hash": "fdce8f9fdd9c55aa1638a7bc3a419108",
-    "semantic_hash": "fdce8f9fdd9c55aa1638a7bc3a419108"
+  ".claude/skills/impeccable/scripts/live/insert-ui.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "b6c5c82e14218c0c1b1e66f0851bff3f",
+    "semantic_hash": ""
   },
-  "C:\\Git\\Projects\\Personal-page\\images\\football\\IMG_7459.jpg": {
-    "mtime": 1780730205.1186757,
-    "ast_hash": "fe553b168bddb94edc2f81502eb08175",
-    "semantic_hash": "fe553b168bddb94edc2f81502eb08175"
+  ".claude/skills/impeccable/scripts/live/manual-apply.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "043d0a1a7a4a373178648502bbe7da81",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/live/manual-edit-routes.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "5f801f9370461d1faa9ae4cde85a96be",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/live/manual-edits-buffer.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "a36834f2a77dd6a81ee324ef4f6f8baa",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/live/session-store.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "1f464fe28989247246d53927a1698265",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/live/svelte-component.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "b23495379a1527dbb9c7c3171041819e",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/live/sveltekit-adapter.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "66e07d2c07827af6099ce81a442bd66e",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/live/ui-core.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "fd7d2bdbdab291957cffacfce95a19d1",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/live/vocabulary.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "e7e5650764fceb61f2197769c7f5864e",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/modern-screenshot.umd.js": {
+    "mtime": 1781148064.0,
+    "ast_hash": "4fe5f9e490ab4f107afc707d7eafc819",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/palette.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "adbc82e1e9021b4948901b21563277a2",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/scripts/pin.mjs": {
+    "mtime": 1781148064.0,
+    "ast_hash": "867ca7fdded9987e84a128a3b4fb6bab",
+    "semantic_hash": ""
+  },
+  "scratch/generate_tags_i18n.js": {
+    "mtime": 1780985286.6432734,
+    "ast_hash": "95fce2a68bfa3d105d6f82ecf541b7ef",
+    "semantic_hash": ""
+  },
+  "scripts/effects.js": {
+    "mtime": 1781261792.6880798,
+    "ast_hash": "9314b205307c290a7d900a3fe1203d94",
+    "semantic_hash": ""
+  },
+  "scripts/tags_i18n.js": {
+    "mtime": 1780988851.916901,
+    "ast_hash": "9a74b0b8001a27d167994642ada375d6",
+    "semantic_hash": ""
+  },
+  ".claude/agents/impeccable-manual-edit-applier.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "b41b5738c22e811262012593b1d20ac8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/brandkit/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "cd3701c774e9bd7ce4fc9078377d517f",
+    "semantic_hash": ""
+  },
+  ".claude/skills/brutalist-skill/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "9e673477ecc2eaf4a230c8326cbc2f0d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/gpt-tasteskill/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "0968d17fda872b36dc35e6bcc0c9af36",
+    "semantic_hash": ""
+  },
+  ".claude/skills/image-to-code-skill/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "442613e4710f0005b94f1c4b1d3ac246",
+    "semantic_hash": ""
+  },
+  ".claude/skills/imagegen-frontend-mobile/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "4c84e37e50e610779a71e0fb0a198963",
+    "semantic_hash": ""
+  },
+  ".claude/skills/imagegen-frontend-web/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "208c5866f7320c7f842283b312a00e17",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/SKILL.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "e77a3a6431535075e52b66bb957357be",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/adapt.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "677c79a3dfdb092d711e5e59c46b41bb",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/animate.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "87e75f869b8289acb616dce325e1d008",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/audit.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "fb3a1ab9b014ecc9fe0d22075616702a",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/bolder.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "60c92579e8c0b55945bac5f3fbdd7746",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/brand.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "f70d1cd822ae916a55a2c26e775885aa",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/clarify.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "59f37b001528ffa685aa9fc8b815ac0c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/codex.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "6d97d559484916f05fa74f6b74f3da07",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/colorize.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "69f597448e78f518d64617c0137bc533",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/craft.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "30b636d36ebb80efb147c409fbd56ef0",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/critique.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "8f6903ba0a98fff1c229bfd091bb56fa",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/delight.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "994a24c88a90cd4497831f73ad50e92c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/distill.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "d47f1e82b6f7728ed0cad7e7ea0711b4",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/document.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "ae73c8b196b13f02a2616080f4db0709",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/extract.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "85e31dfecff207358c2ac0e335085245",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/harden.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "e87b0bff32be86e7825e7ff4c50157e3",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/init.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "77ef1cf6a45cfcc629b1be3bc9469ea4",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/interaction-design.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "1dd83bb8a96d7e250914064aa7389f8b",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/layout.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "0df4b2064cadee109afe865ce7d20d1e",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/live.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "6e4be1931ac0a93ccaf23a781f001ec0",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/onboard.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "7095aaea9e2994e37afb3cf1743bc092",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/optimize.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "d01f252b7e5cb35b8443d57eaad40b58",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/overdrive.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "dadd48faf8bc6dbb63196215a7195abb",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/polish.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "fe186b5a0d88279bc0675d0ba1c5213f",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/product.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "6408a63ddbfe7003c732650381506860",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/quieter.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "2f534f1c782f998a78ef17b34eedb0ce",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/shape.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "328ad4e06423eed564fa9391985f834c",
+    "semantic_hash": ""
+  },
+  ".claude/skills/impeccable/reference/typeset.md": {
+    "mtime": 1781148064.0,
+    "ast_hash": "8e8e3a58858713ff62de8ffa1a740cc6",
+    "semantic_hash": ""
+  },
+  ".claude/skills/minimalist-skill/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "c7f814d7df4b1b0e3eebf706a6d74adf",
+    "semantic_hash": ""
+  },
+  ".claude/skills/output-skill/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "5ed528ceb72c5d089757ba70c5a434e8",
+    "semantic_hash": ""
+  },
+  ".claude/skills/redesign-skill/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "31d802d02ccb9f5da82d99156af36317",
+    "semantic_hash": ""
+  },
+  ".claude/skills/soft-skill/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "269e37851b3a17693d8052f5f8002cfc",
+    "semantic_hash": ""
+  },
+  ".claude/skills/stitch-skill/DESIGN.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "ee7cc02dcc99eda38299a5a6f6727563",
+    "semantic_hash": ""
+  },
+  ".claude/skills/stitch-skill/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "82dc71a62461f956b5666c1041efc886",
+    "semantic_hash": ""
+  },
+  ".claude/skills/taste-skill-v1/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "c702d3d833567da18f39c50c616346c3",
+    "semantic_hash": ""
+  },
+  ".claude/skills/taste-skill/SKILL.md": {
+    "mtime": 1781158096.0,
+    "ast_hash": "6f73606d20cd948b471b1ce1767aab50",
+    "semantic_hash": ""
+  },
+  "DESIGN.md": {
+    "mtime": 1781260872.005176,
+    "ast_hash": "a4376ccb9d675eb3ea1d6c6c10dbcf33",
+    "semantic_hash": ""
+  },
+  "PRODUCT.md": {
+    "mtime": 1781260853.2466786,
+    "ast_hash": "f83e44b873ce445e40d31a6ae7942fd8",
+    "semantic_hash": ""
   }
 }

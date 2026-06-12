@@ -127,6 +127,25 @@
 
   const mo = new MutationObserver(scheduleScan);
 
+  /* ══════════ Ambient backdrop (orange drift blobs + orbital arc) ══════════ */
+
+  function setupBackdrop() {
+    if (document.querySelector('.bg-scene')) return;
+    const scene = document.createElement('div');
+    scene.className = 'bg-scene';
+    scene.setAttribute('aria-hidden', 'true');
+    scene.innerHTML =
+      '<div class="bg-blob bg-blob--1"></div>' +
+      '<div class="bg-blob bg-blob--2"></div>' +
+      '<div class="bg-blob bg-blob--3"></div>' +
+      '<div class="bg-line bg-line--1"></div>' +
+      '<div class="bg-line bg-line--2"></div>' +
+      '<div class="bg-line bg-line--3"></div>' +
+      '<div class="bg-line bg-line--4"></div>' +
+      '<div class="bg-line bg-line--5"></div>';
+    document.body.prepend(scene);
+  }
+
   /* ══════════ Navbar scroll state (sentinel, no scroll listener) ══════════ */
 
   function setupNavState() {
@@ -193,6 +212,7 @@
   /* ══════════ Boot ══════════ */
 
   function init() {
+    setupBackdrop();
     prepareReveals(document.body);
     prepareCounters(document.body);
     mo.observe(document.body, { childList: true, subtree: true });

@@ -93,11 +93,131 @@ body::after {
   z-index: -1;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.016) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.016) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 25%, transparent 78%);
   -webkit-mask-image: radial-gradient(ellipse 90% 60% at 50% 0%, #000 25%, transparent 78%);
+}
+
+/* ════════════════════════════════
+   AMBIENT BACKDROP  (.bg-scene, injected by effects.js on every page)
+   transform-only loops, fixed layer, zero layout cost
+════════════════════════════════ */
+.bg-scene {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  will-change: transform;
+}
+
+.bg-blob--1 {
+  width: 58vmax;
+  height: 58vmax;
+  top: -26vmax;
+  left: -16vmax;
+  background: radial-gradient(circle, rgba(252, 82, 0, 0.15), transparent 62%);
+  animation: blob-drift-a 46s ease-in-out infinite alternate;
+}
+
+.bg-blob--2 {
+  width: 50vmax;
+  height: 50vmax;
+  bottom: -24vmax;
+  right: -14vmax;
+  background:
+    radial-gradient(circle, rgba(252, 82, 0, 0.11), rgba(255, 255, 255, 0.025) 48%, transparent 66%);
+  animation: blob-drift-b 58s ease-in-out infinite alternate;
+}
+
+.bg-blob--3 {
+  width: 30vmax;
+  height: 30vmax;
+  top: 38%;
+  left: 56%;
+  background: radial-gradient(circle, rgba(252, 82, 0, 0.07), transparent 60%);
+  animation: blob-drift-c 38s ease-in-out infinite alternate;
+}
+
+/* sharp diagonal beams: faint hairline tracks, each with an orange
+   comet pulse lapping along it (varied length / speed / delay) */
+.bg-line {
+  position: absolute;
+  width: 1px;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(255, 255, 255, 0.07) 18%,
+    rgba(255, 255, 255, 0.07) 82%,
+    transparent
+  );
+  transform: rotate(var(--tilt, -34deg));
+  transform-origin: center;
+}
+
+.bg-line::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 16%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(252, 82, 0, 0.85) 55%,
+    rgba(255, 158, 92, 0.9) 72%,
+    transparent
+  );
+  transform: translateY(-110%);
+  animation: line-run var(--run, 9s) linear infinite;
+  animation-delay: var(--run-delay, 0s);
+  will-change: transform;
+}
+
+.bg-line--1 { left: 14%;  top: -16%; height: 90vmax; --run: 9s;    --run-delay: 0s; }
+.bg-line--2 { left: 34%;  top: 8%;   height: 56vmax; --run: 13s;   --run-delay: -4s; }
+.bg-line--3 { left: 58%;  top: -22%; height: 100vmax; --run: 11s;  --run-delay: -7.5s; }
+.bg-line--4 { left: 78%;  top: 2%;   height: 64vmax; --run: 15s;   --run-delay: -2s; }
+.bg-line--5 { left: 92%;  top: -10%; height: 80vmax; --run: 10s;   --run-delay: -5.5s; }
+
+@keyframes blob-drift-a {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(6vw, 5vh, 0) scale(1.12); }
+  100% { transform: translate3d(-4vw, 9vh, 0) scale(0.96); }
+}
+
+@keyframes blob-drift-b {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-7vw, -5vh, 0) scale(1.1); }
+  100% { transform: translate3d(3vw, -9vh, 0) scale(1.02); }
+}
+
+@keyframes blob-drift-c {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-9vw, 7vh, 0) scale(1.18); }
+  100% { transform: translate3d(7vw, -6vh, 0) scale(0.92); }
+}
+
+@keyframes line-run {
+  from { transform: translateY(-110%); }
+  to   { transform: translateY(740%); }
+}
+
+@media (max-width: 700px) {
+  .bg-blob { filter: blur(60px); }
+  /* fewer beams on small screens */
+  .bg-line--2,
+  .bg-line--4 { display: none; }
 }
 
 ::selection { background: rgba(252, 82, 0, 0.4); color: #fff; }

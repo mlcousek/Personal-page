@@ -18,7 +18,8 @@
       "Read(//c/tmp/**)",
       "Bash(npm i *)",
       "Bash(cygpath -w /tmp/mobile3.png)",
-      "PowerShell($job = Start-Job -ScriptBlock { Set-Location 'C:\\\\Git\\\\Projects\\\\Personal-page'; npx http-server -p 8123 -s 2>&1 }; Start-Sleep -Seconds 6; try { \\(Invoke-WebRequest -UseBasicParsing http://127.0.0.1:8123/pages/index.html\\).StatusCode } catch { Receive-Job $job | Select-Object -First 10 })"
+      "PowerShell($job = Start-Job -ScriptBlock { Set-Location 'C:\\\\Git\\\\Projects\\\\Personal-page'; npx http-server -p 8123 -s 2>&1 }; Start-Sleep -Seconds 6; try { \\(Invoke-WebRequest -UseBasicParsing http://127.0.0.1:8123/pages/index.html\\).StatusCode } catch { Receive-Job $job | Select-Object -First 10 })",
+      "PowerShell(Remove-Item *)"
     ]
   }
 }

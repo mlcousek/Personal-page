@@ -33,6 +33,10 @@ Accent is locked: no second accent. Semantic exceptions: race-category badges (r
 - Chips, pills, buttons: full pill (`--radius-pill`)
 - Images inside cards: inherit card clipping
 
+## Ambient backdrop
+
+`.bg-scene` (injected by `effects.js` on every page, styled in `main.css`): three orange radial blobs on slow transform-only drift loops (38–58s, alternate) plus five sharp diagonal beam lines at a shared -34° tilt: faint hairline tracks, each with an orange comet pulse lapping along it (9–15s, staggered negative delays). Layered under the blueprint grid. Fixed layer, `pointer-events: none`, glow peaks at ~15% accent alpha so AA contrast holds. Two beams hidden below 700px; freezes under `prefers-reduced-motion`.
+
 ## Motion
 
 - `--ease-out: cubic-bezier(0.23, 1, 0.32, 1)`, `--ease-in-out: cubic-bezier(0.77, 0, 0.175, 1)`
