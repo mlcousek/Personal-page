@@ -199,6 +199,32 @@
 .tag-progress { background: rgba(251,191,36,0.2) !important; color: #fcd34d !important; }
 .tag-yt { background: rgba(239,68,68,0.18) !important; color: #fca5a5 !important; }
 
+/* Personal note ("my comment") shown on a card */
+.media__comment {
+  margin: 0.15rem 0 0.1rem;
+  padding: 0.55rem 0.7rem;
+  border-left: 3px solid #22d3ee;
+  border-radius: 0 8px 8px 0;
+  background: rgba(34,211,238,0.08);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--color-text, #c7d2e3);
+}
+
+.media__comment-label {
+  display: block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #67e8f9;
+  margin-bottom: 0.2rem;
+}
+
+.media__comment-text {
+  font-style: italic;
+}
+
 [data-platform="spotify"] .podcast__img { filter: saturate(1.1); }
 [data-platform="youtube"] .podcast__img { filter: saturate(1.05); }
 

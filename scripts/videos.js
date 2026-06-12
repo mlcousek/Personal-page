@@ -91,7 +91,8 @@ const VIDEOS = [
       "Programming",
       "Claude"
     ],
-    favourite: true
+    favourite: true,
+    comment: "Mindblowing how Claude actually works — I am really into it now."
   },
   {
     id: "2026-06-02-5",
@@ -1508,6 +1509,13 @@ function renderCard(ep){
   const imgFallback = 'https://via.placeholder.com/300x300?text=No+Cover';
 
   const descriptionHtml = ep.description ? `<p class="video__desc">${ep.description}</p>` : '';
+
+  // Personal note ("my comment") – only rendered when present
+  const noteLabel = { en: 'My note', cs: 'Moje poznámka', es: 'Mi nota' };
+  const commentHtml = ep.comment
+    ? `<div class="media__comment"><span class="media__comment-label">💬 ${noteLabel[lang] || noteLabel.en}</span><span class="media__comment-text">${escapeHtml(ep.comment)}</span></div>`
+    : '';
+
   const tagsHtml = Array.isArray(ep.tags) && ep.tags.length
     ? `<ul class="video-tags">${ep.tags.map(tag => `<li>${escapeHtml(translateTag(tag, lang))}</li>`).join('')}</ul>`
     : '';
@@ -1522,6 +1530,7 @@ function renderCard(ep){
       <h2 class="video__title"><a href="${ep.link || '#'}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h2>
       <p class="video__host">${escapeHtml(ep.show)}</p>
       ${descriptionHtml}
+      ${commentHtml}
       ${durationDisplay}
       ${tagsHtml}
     </div>

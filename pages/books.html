@@ -109,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <div class="book" data-year="2026" data-favourite="true">
+        <div class="book" data-year="2026" data-favourite="true" data-comment="Totally surprised me — I felt every second of it. After this I really want to visit Mexico one day.">
             <img class="book__img" src="https://www.databazeknih.cz/img/books/72_/72487/bmid_zrozeni-k-behu-HNw-72487.jpg?v=1539030848" alt="Born to Run / Zrozeni k běhu">
             <time datetime="2026">3/2026</time>
             <div class="book-content">
@@ -393,14 +393,37 @@
         var chips = document.querySelectorAll('#book-filters .filter-chip');
         var books = document.querySelectorAll('.books .book');
 
-        // inject star for favourite books
+        // localized label for the personal note
+        var lang = localStorage.getItem('lang') || 'en';
+        var noteLabel = { en: 'My note', cs: 'Moje poznámka', es: 'Mi nota' };
+
         books.forEach(function (book) {
+          // inject star for favourite books
           if (book.dataset.favourite === 'true') {
             var star = document.createElement('div');
             star.className = 'favourite-star';
             star.title = 'Favourite';
             star.textContent = '★';
             book.appendChild(star);
+          }
+
+          // inject personal note when a data-comment is present
+          var comment = book.dataset.comment;
+          if (comment && comment.trim()) {
+            var content = book.querySelector('.book-content');
+            if (content) {
+              var note = document.createElement('div');
+              note.className = 'media__comment';
+              var label = document.createElement('span');
+              label.className = 'media__comment-label';
+              label.textContent = '💬 ' + (noteLabel[lang] || noteLabel.en);
+              var text = document.createElement('span');
+              text.className = 'media__comment-text';
+              text.textContent = comment;
+              note.appendChild(label);
+              note.appendChild(text);
+              content.appendChild(note);
+            }
           }
         });
 
