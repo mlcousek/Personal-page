@@ -51,3 +51,9 @@ All feature scripts follow the same pattern: data array → filter/sort → `ren
 ### Asset paths
 
 CSS lives in `assets/styles/`. Each page loads `main.css` plus its own stylesheet. Images are in `images/`. All paths are relative — keep them that way.
+
+### Design system & animations
+
+The whole site uses a dark "aurora" theme defined by CSS custom properties in `main.css` `:root` (`--color-*`, `--glass-*`, `--grad-brand`). Sub-page stylesheets consume those tokens, so palette changes belong in `main.css` only. `body::before/::after` paint the animated gradient backdrop on every page.
+
+`scripts/effects.js` (loaded last on every page) provides the live-animation layer: scroll-reveal via IntersectionObserver (`.reveal` / `.in-view` classes added to selectors in its `REVEAL_SELECTORS` list, with a MutationObserver so dynamically rendered cards are picked up), animated number counters on `.stat-value` / `.training-value`, the navbar `.scrolled` state, and hero parallax. It respects `prefers-reduced-motion`. When adding a new card/section type, add its selector to `REVEAL_SELECTORS` to get the entrance animation.

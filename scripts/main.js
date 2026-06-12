@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'long-bio-p4': 'Right now I’m refining a system that blends physical training, technical learning, and reflective review. Each week I evaluate what compounded, what stalled, and what needs iteration. I don’t chase intensity spikes—I engineer sustainable acceleration. That approach keeps me improving without burning out.',
             'long-bio-p5': 'Looking ahead, I want to deepen my expertise in applied security concepts while continuing to test endurance boundaries. I believe that combining mental rigor with physical durability creates a competitive advantage both professionally and personally. This page documents that ongoing build process—one disciplined block at a time.',
             // ── Index page ──
-            'hero-eyebrow': '.NET dev / runner / a lifelong learner',
+            'hero-eyebrow': ' .NET dev / runner / a lifelong learner',
             'hero-scroll': 'Scroll',
             'home-blog-eyebrow': 'From the blog',
             'home-blog-heading': 'Latest Updates',
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'long-bio-p4': 'Momentálně ladím systém, který kombinuje fyzický trénink, technické učení a reflexi. Každý týden hodnotím, co se násobilo, co stagnovalo a co potřebuje iteraci. Nehoním se za špičkami intenzity – navrhuji udržitelnou akceleraci. Díky tomu zlepšuji bez vyhoření.',
             'long-bio-p5': 'Do budoucna chci prohloubit odbornost v aplikovaných bezpečnostních konceptech a zároveň dál testovat hranice vytrvalosti. Věřím, že spojení mentální preciznosti s fyzickou odolností vytváří konkurenční výhodu profesně i osobně. Tato stránka dokumentuje proces budování – krok za krokem.',
             // ── Index page ──
-            'hero-eyebrow': '.NET vývojář / běžec / celoživotní learner',
+            'hero-eyebrow': ' .NET vývojář / běžec / celoživotní student',
             'hero-scroll': 'Scrollovat',
             'home-blog-eyebrow': 'Z blogu',
             'home-blog-heading': 'Nejnovější příspěvky',

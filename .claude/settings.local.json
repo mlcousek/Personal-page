@@ -11,7 +11,13 @@
       "Read(//c/Users/jmlcousek/.claude/**)",
       "WebFetch(domain:open.spotify.com)",
       "Bash(node -e ' *)",
-      "mcp__claude_ai_Strava__list_activities"
+      "mcp__claude_ai_Strava__list_activities",
+      "Bash(node -e \"require\\('http'\\).createServer\\(\\(q,s\\)=>{const fs=require\\('fs'\\),p=require\\('path'\\);let f=p.join\\(process.cwd\\(\\),decodeURIComponent\\(q.url.split\\('?'\\)[0]\\)\\);if\\(f.endsWith\\('/'\\)\\)f+='index.html';fs.readFile\\(f,\\(e,d\\)=>{if\\(e\\){s.statusCode=404;s.end\\('nf'\\);return}const ext=p.extname\\(f\\);const m={'.html':'text/html','.css':'text/css','.js':'text/javascript','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml'};s.setHeader\\('Content-Type',m[ext]||'application/octet-stream'\\);s.end\\(d\\)}\\)}\\).listen\\(8123,\\(\\)=>console.log\\('up'\\)\\)\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8123/pages/index.html)",
+      "Read(//tmp/**)",
+      "Read(//c/tmp/**)",
+      "Bash(npm i *)",
+      "Bash(cygpath -w /tmp/mobile3.png)"
     ]
   }
 }

@@ -24,9 +24,15 @@
 .sports-header h1 {
   margin: 0 0 14px;
   font-size: clamp(1.9rem, 4vw, 2.8rem);
-  font-weight: 700;
-  color: var(--color-dark);
-  letter-spacing: -0.3px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(115deg, #f8fafc 35%, #22d3ee 75%, #a78bfa 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: gradient-pan 8s ease infinite;
 }
 
 .sports-lead {
@@ -48,8 +54,20 @@
   color: var(--color-dark);
   margin: 0 0 24px;
   padding-bottom: 14px;
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
   letter-spacing: -0.2px;
+  position: relative;
+}
+
+.sports-section-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 64px;
+  height: 2px;
+  background: var(--grad-brand);
+  border-radius: 2px;
 }
 
 .heading-hint {
@@ -68,14 +86,16 @@
 }
 
 .stat-card {
-  background: var(--color-bg);
+  background: var(--glass-bg);
   border-radius: var(--radius-lg);
   padding: 28px 24px;
   box-shadow: var(--shadow-card);
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
-  transition: transform 0.22s, box-shadow 0.22s;
+  transition: transform 0.25s cubic-bezier(.22,.65,.3,1), box-shadow 0.25s, border-color 0.25s;
 }
 
 .stat-card::after {
@@ -91,9 +111,13 @@
 }
 
 .stat-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 32px -8px rgba(0,0,0,.14);
+  transform: translateY(-5px);
+  border-color: rgba(34,211,238,0.3);
+  box-shadow: 0 16px 36px -8px rgba(0,0,0,.5), var(--glow-cyan);
 }
+
+.stat-card:hover .stat-icon { transform: scale(1.2) rotate(-6deg); }
+.stat-icon { transition: transform 0.3s cubic-bezier(.22,.65,.3,1); }
 
 .stat-card:hover::after { opacity: 1; }
 
@@ -158,11 +182,11 @@
   width: 100%;
   border-collapse: collapse;
   font-size: 0.88rem;
-  background: var(--color-bg);
+  background: rgba(12,19,38,0.6);
 }
 
 .races-table thead {
-  background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
+  background: linear-gradient(90deg, rgba(99,102,241,.85), rgba(34,211,238,.85));
   color: #fff;
   font-size: 0.68rem;
   letter-spacing: 1.2px;
@@ -181,10 +205,10 @@
   cursor: pointer;
 }
 
-.races-table tbody tr:hover { background: #f0f9ff; }
+.races-table tbody tr:hover { background: rgba(34,211,238,0.07); }
 
-.row-highlight { background: #fffbeb !important; }
-.row-highlight:hover { background: #fef3c7 !important; }
+.row-highlight { background: rgba(251,191,36,0.08) !important; }
+.row-highlight:hover { background: rgba(251,191,36,0.15) !important; }
 
 .race-time {
   font-weight: 700;
@@ -203,11 +227,11 @@
   vertical-align: middle;
 }
 
-.race-badge--full  { background: #dbeafe; color: #1e40af; }
-.race-badge--ultra { background: #fce7f3; color: #9d174d; }
-.race-badge--half  { background: #dcfce7; color: #15803d; }
-.race-badge--trail { background: #fef3c7; color: #92400e; }
-.race-badge--bike  { background: #f3e8ff; color: #6b21a8; }
+.race-badge--full  { background: rgba(59,130,246,0.18);  color: #93c5fd; }
+.race-badge--ultra { background: rgba(236,72,153,0.18);  color: #f9a8d4; }
+.race-badge--half  { background: rgba(34,197,94,0.18);   color: #86efac; }
+.race-badge--trail { background: rgba(245,158,11,0.18);  color: #fcd34d; }
+.race-badge--bike  { background: rgba(168,85,247,0.18);  color: #d8b4fe; }
 
 /* ─── Training section sub-titles ─── */
 .training-section-title {
@@ -270,6 +294,8 @@
   border-radius: 3px 3px 0 0;
   min-height: 4px;
   transition: opacity 0.2s;
+  transform-origin: bottom;
+  animation: bar-rise .9s cubic-bezier(.22,.65,.3,1) both;
 }
 
 .monthly-bar--run  { background: linear-gradient(180deg, var(--color-primary), var(--color-accent)); }
@@ -298,8 +324,10 @@
 
 /* ─── Weekly bar chart ─── */
 .weekly-chart-wrap {
-  background: var(--color-bg-subtle);
-  border: 1px solid var(--color-border);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: var(--radius-md);
   padding: 20px 24px 16px;
   box-shadow: var(--shadow-sm);
@@ -331,12 +359,19 @@
   justify-content: flex-end;
 }
 
+@keyframes bar-rise {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+
 .chart-bar {
   width: 100%;
   background: linear-gradient(180deg, var(--color-primary), var(--color-accent));
   border-radius: 3px 3px 0 0;
   min-height: 4px;
   transition: opacity 0.2s;
+  transform-origin: bottom;
+  animation: bar-rise .9s cubic-bezier(.22,.65,.3,1) both;
 }
 
 .chart-col:hover .chart-bar { opacity: 0.75; }
@@ -358,14 +393,23 @@
 }
 
 .training-stat-card {
-  background: var(--color-bg-subtle);
-  border: 1px solid var(--color-border);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: var(--radius-md);
   padding: 20px 18px;
   display: flex;
   flex-direction: column;
   gap: 6px;
   box-shadow: var(--shadow-sm);
+  transition: transform 0.22s, border-color 0.22s, box-shadow 0.22s;
+}
+
+.training-stat-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(34,211,238,0.25);
+  box-shadow: var(--shadow-sm), 0 0 24px rgba(34,211,238,.12);
 }
 
 .training-icon {
@@ -389,8 +433,10 @@
 
 /* ─── Football card (light theme) ─── */
 .football-card {
-  background: #f0f9ff;
-  border: 1px solid #bae6fd;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: var(--radius-lg);
   padding: 44px 48px;
   display: flex;
@@ -398,6 +444,23 @@
   gap: 28px;
   position: relative;
   overflow: hidden;
+}
+
+.football-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--grad-brand);
+}
+
+.football-photo {
+  transition: transform 0.3s cubic-bezier(.22,.65,.3,1), box-shadow 0.3s;
+}
+
+.football-photo:hover {
+  transform: scale(1.04) translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0,0,0,.5);
 }
 
 .football-card-body p {
@@ -435,7 +498,9 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(15,23,42,.65);
+  background: rgba(3,6,14,.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   z-index: 1000;
   align-items: center;
   justify-content: center;
@@ -443,16 +508,18 @@
 }
 
 .race-modal-backdrop.open { display: flex; }
+.race-modal-backdrop.open .race-modal { animation: fade-up .35s cubic-bezier(.22,.65,.3,1) both; }
 
 body.modal-open { overflow: hidden; }
 
 .race-modal {
   max-width: 540px;
   width: 100%;
-  background: var(--color-bg);
+  background: var(--chrome-surface);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   padding: 36px 32px;
-  box-shadow: 0 24px 60px rgba(0,0,0,.22);
+  box-shadow: 0 24px 60px rgba(0,0,0,.55);
   position: relative;
   max-height: 90vh;
   overflow-y: auto;
@@ -470,14 +537,15 @@ body.modal-open { overflow: hidden; }
   cursor: pointer;
   font-size: 0.85rem;
   color: var(--color-text-muted);
-  transition: background 0.18s, color 0.18s, border-color 0.18s;
+  transition: background 0.18s, color 0.18s, border-color 0.18s, transform 0.25s;
   flex-shrink: 0;
 }
 
 .modal-close:hover {
-  background: #fee2e2;
-  color: #dc2626;
-  border-color: #fca5a5;
+  background: rgba(220,38,38,0.18);
+  color: #f87171;
+  border-color: rgba(248,113,113,0.4);
+  transform: rotate(90deg);
 }
 
 .modal-badge { margin-bottom: 10px; display: inline-block; }

@@ -1,10 +1,5 @@
-.books-page {
-    background-color: #f3f4f6;
-}
-
 .books-page main {
     font-size: 0.9rem;
-    font-family: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
 }
 
 .books {
@@ -12,7 +7,7 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1.2rem;
     max-width: 75em;
-    margin: 2rem auto 3rem auto; /* Changed back to 'auto' to center the grid */
+    margin: 2rem auto 3rem auto;
     padding: 0 1.5rem 3rem;
 }
 
@@ -24,25 +19,33 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background: #fff;
-    border-radius: 10px;
+    background: var(--glass-bg, rgba(255,255,255,0.045));
+    border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 6px 18px -12px rgba(15, 23, 42, 0.28);
-    border: 1px solid rgba(226, 232, 240, 0.8);
+    box-shadow: var(--shadow-card-dark, 0 10px 32px rgba(0,0,0,.45));
+    border: 1px solid var(--glass-border, rgba(255,255,255,0.10));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     min-height: 280px;
-    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    transition: transform 0.28s cubic-bezier(.22,.65,.3,1), box-shadow 0.28s, border-color 0.28s;
 }
 
 .book:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 28px -18px rgba(15, 23, 42, 0.4);
+    transform: translateY(-6px);
+    border-color: rgba(34,211,238,0.3);
+    box-shadow: 0 18px 40px -8px rgba(0,0,0,.55), 0 0 28px rgba(34,211,238,.14);
 }
 
 .book__img {
     width: 100%;
-    height: 350px; /* Further reduced for smaller cards */
+    height: 350px;
     object-fit: cover;
-    border-bottom: 1px solid rgba(226, 232, 240, 0.7);
+    border-bottom: 1px solid var(--glass-border, rgba(255,255,255,0.10));
+    transition: transform 0.4s cubic-bezier(.22,.65,.3,1);
+}
+
+.book:hover .book__img {
+    transform: scale(1.04);
 }
 
 .book-content {
@@ -51,53 +54,67 @@
     gap: 0.65rem;
     padding: 1.1rem 1.2rem 1.4rem;
     flex: 1;
+    position: relative;
+    z-index: 1;
+    background: inherit;
 }
 
 .book__title {
     margin: 0;
-    font-size: 1.05rem;
+    font-size: 1.02rem;
     font-weight: 700;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
+    color: var(--color-dark, #f8fafc);
 }
 
 .book__title a {
     text-decoration: none;
     color: inherit;
+    background-image: linear-gradient(90deg, #22d3ee, #818cf8);
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: left bottom;
+    transition: background-size 0.25s;
 }
 
 .book__title a:hover {
-    text-decoration: underline;
+    background-size: 100% 2px;
 }
 
 .book__author {
-    font-size: 0.95rem;
-    color: #475569;
+    font-size: 0.88rem;
+    color: var(--color-text-muted, #8b9bb4);
     margin: 0 0 0.4rem;
     font-weight: 600;
 }
 
-.book time {
+.book > time {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.45em 0.9em;
-    font-size: 0.72rem;
+    top: 0.7rem;
+    right: 0.7rem;
+    padding: 0.35em 0.8em;
+    font-size: 0.7rem;
     border-radius: 999px;
-    color: #1f2933;
-    background: #e2e8f0;
+    color: #e2e8f0;
+    background: rgba(10,16,32,0.82);
+    border: 1px solid rgba(255,255,255,0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     font-weight: 700;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    box-shadow: 0 4px 14px rgba(0,0,0,.5);
+    z-index: 3;
+    pointer-events: none;
 }
 
-.book time[datetime="2021"] { background-color: #3b82f6; color: #fff; } /* Blue */
-.book time[datetime="2022"] { background-color: #ef4444; color: #fff; } /* Red */
-.book time[datetime="2023"] { background-color: #f59e0b; color: #fff; } /* Orange */
-.book time[datetime="2024"] { background-color: #10b981; color: #fff; } /* Green */
-.book time[datetime="2025"] { background-color: #8b5cf6; color: #fff; } /* Purple */
-.book time[datetime="2026"] { background-color: #008d23f5; color: #fff; } /* Purple */
-.book time[datetime="0"] { background-color: #6b7280; color: #fff; } /* Gray for "Rozečteno" */
-
+.book time[datetime="2021"] { background: rgba(59,130,246,0.85); border-color: transparent; }
+.book time[datetime="2022"] { background: rgba(239,68,68,0.85); border-color: transparent; }
+.book time[datetime="2023"] { background: rgba(245,158,11,0.88); border-color: transparent; }
+.book time[datetime="2024"] { background: rgba(16,185,129,0.85); border-color: transparent; }
+.book time[datetime="2025"] { background: rgba(139,92,246,0.85); border-color: transparent; }
+.book time[datetime="2026"] { background: rgba(0,141,35,0.88); border-color: transparent; }
+.book time[datetime="0"]    { background: rgba(107,114,128,0.85); border-color: transparent; }
 
 @media (max-width: 900px) {
     .books {
