@@ -1,7 +1,7 @@
 # Graph Report - Personal-page  (2026-06-12)
 
 ## Corpus Check
-- 118 files · ~2,805,406 words
+- 118 files · ~2,805,446 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `26e57f75`
+- Built from commit: `c43e99d1`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -37,8 +37,8 @@
 2. `Product` - 8 edges
 3. `renderVideos()` - 7 edges
 4. `BLOG_POSTS array` - 7 edges
-5. `Design System` - 6 edges
-6. `init()` - 6 edges
+5. `init()` - 6 edges
+6. `Design System` - 6 edges
 7. `Architecture` - 6 edges
 8. `renderEpisodes()` - 5 edges
 9. `setupFilters()` - 5 edges
