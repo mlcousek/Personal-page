@@ -3,13 +3,15 @@
    · scroll-reveal (IntersectionObserver, works with
      dynamically rendered content via MutationObserver)
    · animated number counters (.stat-value / .training-value)
-   · navbar scroll state (.scrolled)
-   · hero parallax (orbs + portrait follow the cursor)
+   · navbar scroll state (.scrolled) via top-of-page sentinel
+   · hero parallax (orbs + portrait follow the cursor,
+     fine pointers only)
 ───────────────────────────────────────────── */
 (function () {
   'use strict';
 
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
   /* ══════════ Scroll reveal ══════════ */
 
@@ -52,7 +54,7 @@
           el.parentElement.children,
           function (s) { return s.dataset && s.dataset.revealed; }
         );
-        delay = Math.min(siblings.length - 1, 10) * 55;
+        delay = Math.min(siblings.length - 1, 8) * 55;
       }
       el.style.setProperty('--reveal-delay', delay + 'ms');
       el.classList.add('reveal');
@@ -87,12 +89,12 @@
     const decimals = (numStr.split(/[.,]/)[1] || '').length;
     const prefix = original.slice(0, match.index);
     const suffix = original.slice(match.index + match[1].length);
-    const dur = 1400;
+    const dur = 1200;
     const start = performance.now();
 
     function frame(now) {
       const t = Math.min(1, (now - start) / dur);
-      const eased = 1 - Math.pow(1 - t, 3); // ease-out cubic
+      const eased = 1 - Math.pow(1 - t, 4); // ease-out quart
       const val = (target * eased).toFixed(decimals).replace('.', decimals ? ',' : '.');
       el.textContent = prefix + (decimals ? val.replace(',', '.') : Math.round(target * eased)) + suffix;
       if (t < 1) requestAnimationFrame(frame);
@@ -125,23 +127,44 @@
 
   const mo = new MutationObserver(scheduleScan);
 
-  /* ══════════ Navbar scroll state ══════════ */
+  /* ══════════ Navbar scroll state (sentinel, no scroll listener) ══════════ */
 
-  let ticking = false;
-  function onScroll() {
-    if (ticking) return;
-    ticking = true;
-    requestAnimationFrame(function () {
-      ticking = false;
+  function setupNavState() {
+    const sentinel = document.createElement('div');
+    sentinel.setAttribute('aria-hidden', 'true');
+    sentinel.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:32px;pointer-events:none;';
+    document.body.prepend(sentinel);
+
+    function applyState(scrolled) {
       const nav = document.querySelector('.navbar');
-      if (nav) nav.classList.toggle('scrolled', window.scrollY > 24);
-    });
+      if (nav) nav.classList.toggle('scrolled', scrolled);
+    }
+
+    if ('IntersectionObserver' in window) {
+      let lastScrolled = window.scrollY > 24;
+      applyState(lastScrolled);
+      const navIO = new IntersectionObserver(function (entries) {
+        lastScrolled = !entries[0].isIntersecting;
+        applyState(lastScrolled);
+      });
+      navIO.observe(sentinel);
+      // navbar is fetch-injected after load — re-apply once it exists
+      const navMO = new MutationObserver(function () {
+        if (document.querySelector('.navbar')) {
+          applyState(lastScrolled);
+          navMO.disconnect();
+        }
+      });
+      navMO.observe(document.body, { childList: true, subtree: true });
+    } else {
+      applyState(window.scrollY > 24);
+    }
   }
 
   /* ══════════ Hero parallax ══════════ */
 
   function setupParallax() {
-    if (prefersReduced) return;
+    if (prefersReduced || !finePointer) return;
     const hero = document.querySelector('.hero-fullscreen');
     if (!hero) return;
     const orbs = hero.querySelectorAll('.hero-orb');
@@ -152,12 +175,12 @@
       const x = (e.clientX - r.left) / r.width - 0.5;
       const y = (e.clientY - r.top) / r.height - 0.5;
       orbs.forEach(function (orb, i) {
-        const depth = (i + 1) * 14;
+        const depth = (i + 1) * 12;
         orb.style.transform = 'translate3d(' + (x * depth) + 'px,' + (y * depth) + 'px,0)';
       });
       if (portrait) {
         portrait.style.transform =
-          'perspective(900px) rotateY(' + (x * 6) + 'deg) rotateX(' + (-y * 6) + 'deg)';
+          'perspective(900px) rotateY(' + (x * 5) + 'deg) rotateX(' + (-y * 5) + 'deg)';
       }
     });
 
@@ -173,8 +196,7 @@
     prepareReveals(document.body);
     prepareCounters(document.body);
     mo.observe(document.body, { childList: true, subtree: true });
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    setupNavState();
     setupParallax();
   }
 

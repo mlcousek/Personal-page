@@ -771,7 +771,7 @@ async function loadFooter() {
     }
 
     if (!html) {
-        html = `<footer class="footer" id="footer">&copy; 2026 Jiří Mlčoušek &mdash; <span id="footer-text">Built with consistency, one block at a time.</span></footer>`;
+        html = `<footer class="footer" id="footer">&copy; 2026 Jiří Mlčoušek · <span id="footer-text">Built with consistency, one block at a time.</span></footer>`;
     }
 
     placeholder.outerHTML = html;

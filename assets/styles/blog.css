@@ -7,32 +7,26 @@
 
 /* ─── Header ─── */
 .blog-header {
-  padding: 150px 0 52px;
+  padding: 140px 0 56px;
   text-align: center;
 }
 
 .blog-eyebrow {
   display: inline-block;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  color: var(--accent-text);
   margin-bottom: 14px;
 }
 
 .blog-header h1 {
   margin: 0 0 14px;
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  background: linear-gradient(115deg, #f8fafc 35%, #22d3ee 75%, #a78bfa 100%);
-  background-size: 200% 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  animation: gradient-pan 8s ease infinite;
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: var(--ink);
 }
 
 .blog-lead {
@@ -40,29 +34,26 @@
   max-width: 520px;
   font-size: 0.95rem;
   line-height: 1.7;
-  color: var(--color-text-muted);
+  color: var(--muted);
 }
 
 /* ─── Section label ─── */
-.blog-latest-section {
-  margin-bottom: 52px;
-}
+.blog-latest-section { margin-bottom: 56px; }
 
 .section-label {
-  font-size: 0.68rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--color-text-muted);
+  letter-spacing: -0.01em;
+  color: var(--ink);
   margin: 0 0 22px;
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
 }
 
 /* ─── Post cards grid ─── */
 .posts-grid {
   display: grid;
-  gap: 24px;
+  gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
@@ -80,8 +71,8 @@
 }
 
 .post-modal-photos::-webkit-scrollbar { height: 4px; }
-.post-modal-photos::-webkit-scrollbar-track { background: var(--color-bg-subtle); border-radius: 2px; }
-.post-modal-photos::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 2px; }
+.post-modal-photos::-webkit-scrollbar-track { background: var(--surface-2); border-radius: 2px; }
+.post-modal-photos::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 2px; }
 
 .post-modal-photo {
   flex-shrink: 0;
@@ -101,32 +92,27 @@
   object-fit: contain;
 }
 
-/* ─── Strava button in modal ─── */
+/* ─── Strava button in modal (platform brand color) ─── */
 .post-modal-strava-btn {
   display: inline-block;
-  background: #fc4c02;
+  background: #fc5200;
   color: #fff;
   text-decoration: none;
-  padding: 10px 20px;
-  border-radius: var(--radius-sm);
+  padding: 10px 22px;
+  border-radius: var(--radius-pill);
   font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.3px;
+  font-weight: 600;
   margin-top: 22px;
-  transition: background 0.18s, transform 0.18s;
+  transition: background .18s var(--ease-out), transform .14s var(--ease-out);
 }
 
-.post-modal-strava-btn:hover {
-  background: #e04200;
-  transform: translateY(-1px);
-}
-
-/* .read-more styled in main.css */
+.post-modal-strava-btn:hover { background: #e04a00; }
+.post-modal-strava-btn:active { transform: scale(0.97); }
 
 /* ─── Divider ─── */
 .divider {
   border: none;
-  border-top: 2px solid var(--color-border);
+  border-top: 1px solid var(--border);
   margin: 0 0 40px;
 }
 
@@ -134,14 +120,13 @@
 .archive-section { margin-top: 0; }
 
 .archive-section h2 {
-  font-size: 0.68rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: var(--color-text-muted);
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
   margin: 0 0 16px;
   padding-bottom: 12px;
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 1px solid var(--border);
 }
 
 .all-posts-list {
@@ -157,29 +142,30 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 14px;
+  padding: 11px 14px;
   border-radius: var(--radius-sm);
-  transition: background 0.18s;
+  transition: background .16s var(--ease-out);
   cursor: pointer;
 }
 
-.all-posts-list li:hover { background: var(--color-bg-subtle); }
+.all-posts-list li:hover { background: var(--surface); }
+.all-posts-list li:active { background: var(--surface-2); }
 
 .all-posts-list a {
   text-decoration: none;
-  color: var(--color-dark);
-  font-weight: 600;
-  font-size: 0.9rem;
+  color: var(--ink);
+  font-weight: 500;
+  font-size: 0.92rem;
   flex: 1;
 }
 
-.all-posts-list a:hover { color: var(--color-primary); }
+.all-posts-list a:hover { color: var(--accent-text); }
 
 .all-posts-list .post-date {
-  font-size: 0.65rem;
-  letter-spacing: 0.8px;
-  font-weight: 600;
-  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--muted);
   white-space: nowrap;
 }
 
@@ -188,7 +174,7 @@
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(3,6,14,.72);
+  background: rgba(5, 6, 8, 0.75);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   z-index: 1000;
@@ -197,19 +183,31 @@
   padding: 20px;
 }
 
-.post-modal-backdrop.open { display: flex; }
-.post-modal-backdrop.open .post-modal { animation: fade-up .35s cubic-bezier(.22,.65,.3,1) both; }
+.post-modal-backdrop.open { display: flex; animation: backdrop-in .2s ease both; }
+
+@keyframes backdrop-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* modal scales from center (not trigger-anchored) */
+.post-modal-backdrop.open .post-modal { animation: modal-in .25s var(--ease-out) both; }
+
+@keyframes modal-in {
+  from { opacity: 0; transform: scale(0.96) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
 
 body.modal-open { overflow: hidden; }
 
 .post-modal {
   max-width: 680px;
   width: 100%;
-  background: var(--chrome-surface);
-  border: 1px solid var(--glass-border);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
   border-radius: var(--radius-lg);
   padding: 44px 40px;
-  box-shadow: 0 24px 60px rgba(0,0,0,.55);
+  box-shadow: var(--shadow-pop);
   position: relative;
   max-height: 90vh;
   overflow-y: auto;
@@ -219,57 +217,54 @@ body.modal-open { overflow: hidden; }
 .post-modal-close {
   position: absolute;
   top: 16px; right: 16px;
-  background: var(--color-bg-subtle);
-  border: 1px solid var(--color-border);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
   border-radius: 50%;
   width: 32px; height: 32px;
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   font-size: 0.85rem;
-  color: var(--color-text-muted);
-  transition: background 0.18s, color 0.18s, border-color 0.18s;
+  color: var(--muted);
+  transition: background .18s var(--ease-out), color .18s var(--ease-out), border-color .18s var(--ease-out), transform .14s var(--ease-out);
 }
 
 .post-modal-close:hover {
-  background: rgba(220,38,38,0.18);
-  color: #f87171;
-  border-color: rgba(248,113,113,0.4);
-  transform: rotate(90deg);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ink);
+  border-color: var(--border-strong);
 }
 
-.post-modal-close { transition: background 0.18s, color 0.18s, border-color 0.18s, transform 0.25s; }
+.post-modal-close:active { transform: scale(0.92); }
 
 .post-modal-meta {
+  font-family: var(--font-mono);
   font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 1.2px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--accent-text);
   margin: 0 0 10px;
 }
 
 .post-modal-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-dark);
+  color: var(--ink);
   margin: 0 0 28px;
   line-height: 1.3;
+  letter-spacing: -0.015em;
   padding-right: 40px;
 }
 
 .post-modal-body {
-  font-size: 0.93rem;
+  font-size: 0.95rem;
   line-height: 1.8;
-  color: var(--color-text);
+  color: var(--text);
 }
 
-.post-modal-body p {
-  margin: 0 0 18px;
-}
-
+.post-modal-body p { margin: 0 0 18px; }
 .post-modal-body p:last-child { margin-bottom: 0; }
-
-.post-modal-body strong { color: var(--color-dark); }
+.post-modal-body strong { color: var(--ink); }
 
 /* ─── Responsive ─── */
 @media (max-width: 640px) {
