@@ -9,9 +9,9 @@
       "source_file": ".claude/settings.local.json",
       "source_location": "L1",
       "_origin": "ast",
+      "id": "claude_settings_local",
       "community": 9,
-      "norm_label": "settings.local.json",
-      "id": "claude_settings_local"
+      "norm_label": "settings.local.json"
     },
     {
       "label": "permissions",
@@ -19,9 +19,9 @@
       "source_file": ".claude/settings.local.json",
       "source_location": "L2",
       "_origin": "ast",
+      "id": "claude_settings_local_permissions",
       "community": 9,
-      "norm_label": "permissions",
-      "id": "claude_settings_local_permissions"
+      "norm_label": "permissions"
     },
     {
       "label": "allow",
@@ -29,9 +29,359 @@
       "source_file": ".claude/settings.local.json",
       "source_location": "L3",
       "_origin": "ast",
+      "id": "claude_settings_local_permissions_allow",
       "community": 9,
-      "norm_label": "allow",
-      "id": "claude_settings_local_permissions_allow"
+      "norm_label": "allow"
+    },
+    {
+      "label": "DESIGN.md",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "design",
+      "community": 16,
+      "norm_label": "design.md"
+    },
+    {
+      "label": "Design System",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "design_design_system",
+      "community": 16,
+      "norm_label": "design system"
+    },
+    {
+      "label": "Color",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "design_color",
+      "community": 16,
+      "norm_label": "color"
+    },
+    {
+      "label": "Typography",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "design_typography",
+      "community": 16,
+      "norm_label": "typography"
+    },
+    {
+      "label": "Shape",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "design_shape",
+      "community": 16,
+      "norm_label": "shape"
+    },
+    {
+      "label": "Motion",
+      "file_type": "document",
+      "source_file": "DESIGN.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "design_motion",
+      "community": 16,
+      "norm_label": "motion"
+    },
+    {
+      "label": "PRODUCT.md",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "product",
+      "community": 14,
+      "norm_label": "product.md"
+    },
+    {
+      "label": "Product",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "product_product",
+      "community": 14,
+      "norm_label": "product"
+    },
+    {
+      "label": "Register",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "product_register",
+      "community": 14,
+      "norm_label": "register"
+    },
+    {
+      "label": "Users",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "product_users",
+      "community": 14,
+      "norm_label": "users"
+    },
+    {
+      "label": "Product Purpose",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "product_product_purpose",
+      "community": 14,
+      "norm_label": "product purpose"
+    },
+    {
+      "label": "Brand Personality",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "product_brand_personality",
+      "community": 14,
+      "norm_label": "brand personality"
+    },
+    {
+      "label": "Anti-references",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "product_anti_references",
+      "community": 14,
+      "norm_label": "anti-references"
+    },
+    {
+      "label": "Design Principles",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "product_design_principles",
+      "community": 14,
+      "norm_label": "design principles"
+    },
+    {
+      "label": "Accessibility & Inclusion",
+      "file_type": "document",
+      "source_file": "PRODUCT.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "product_accessibility_inclusion",
+      "community": 14,
+      "norm_label": "accessibility & inclusion"
+    },
+    {
+      "label": "effects.js",
+      "file_type": "code",
+      "source_file": "scripts/effects.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_effects",
+      "community": 15,
+      "norm_label": "effects.js"
+    },
+    {
+      "label": "prepareReveals()",
+      "file_type": "code",
+      "source_file": "scripts/effects.js",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "scripts_effects_preparereveals",
+      "community": 15,
+      "norm_label": "preparereveals()"
+    },
+    {
+      "label": "runCounter()",
+      "file_type": "code",
+      "source_file": "scripts/effects.js",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "scripts_effects_runcounter",
+      "community": 15,
+      "norm_label": "runcounter()"
+    },
+    {
+      "label": "prepareCounters()",
+      "file_type": "code",
+      "source_file": "scripts/effects.js",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "scripts_effects_preparecounters",
+      "community": 15,
+      "norm_label": "preparecounters()"
+    },
+    {
+      "label": "scheduleScan()",
+      "file_type": "code",
+      "source_file": "scripts/effects.js",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "scripts_effects_schedulescan",
+      "community": 15,
+      "norm_label": "schedulescan()"
+    },
+    {
+      "label": "setupNavState()",
+      "file_type": "code",
+      "source_file": "scripts/effects.js",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "scripts_effects_setupnavstate",
+      "community": 15,
+      "norm_label": "setupnavstate()"
+    },
+    {
+      "label": "setupParallax()",
+      "file_type": "code",
+      "source_file": "scripts/effects.js",
+      "source_location": "L166",
+      "_origin": "ast",
+      "id": "scripts_effects_setupparallax",
+      "community": 15,
+      "norm_label": "setupparallax()"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "scripts/effects.js",
+      "source_location": "L195",
+      "_origin": "ast",
+      "id": "scripts_effects_init",
+      "community": 15,
+      "norm_label": "init()"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_main",
+      "community": 2,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "setLanguage()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L486",
+      "_origin": "ast",
+      "id": "scripts_main_setlanguage",
+      "community": 2,
+      "norm_label": "setlanguage()"
+    },
+    {
+      "label": "setupLanguageSwitcher()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L528",
+      "_origin": "ast",
+      "id": "scripts_main_setuplanguageswitcher",
+      "community": 2,
+      "norm_label": "setuplanguageswitcher()"
+    },
+    {
+      "label": "getSiteRootPrefix()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L621",
+      "_origin": "ast",
+      "id": "scripts_main_getsiterootprefix",
+      "community": 2,
+      "norm_label": "getsiterootprefix()"
+    },
+    {
+      "label": "combinePath()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L635",
+      "_origin": "ast",
+      "id": "scripts_main_combinepath",
+      "community": 2,
+      "norm_label": "combinepath()"
+    },
+    {
+      "label": "normalizeNavbarLinks()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L644",
+      "_origin": "ast",
+      "id": "scripts_main_normalizenavbarlinks",
+      "community": 2,
+      "norm_label": "normalizenavbarlinks()"
+    },
+    {
+      "label": "loadNavbar()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L670",
+      "_origin": "ast",
+      "id": "scripts_main_loadnavbar",
+      "community": 2,
+      "norm_label": "loadnavbar()"
+    },
+    {
+      "label": "buildInlineNavbar()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L716",
+      "_origin": "ast",
+      "id": "scripts_main_buildinlinenavbar",
+      "community": 2,
+      "norm_label": "buildinlinenavbar()"
+    },
+    {
+      "label": "loadFooter()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L749",
+      "_origin": "ast",
+      "id": "scripts_main_loadfooter",
+      "community": 2,
+      "norm_label": "loadfooter()"
+    },
+    {
+      "label": "closeAllDropdowns()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L784",
+      "_origin": "ast",
+      "id": "scripts_main_closealldropdowns",
+      "community": 2,
+      "norm_label": "closealldropdowns()"
+    },
+    {
+      "label": "setupHamburger()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L792",
+      "_origin": "ast",
+      "id": "scripts_main_setuphamburger",
+      "community": 2,
+      "norm_label": "setuphamburger()"
+    },
+    {
+      "label": "setupMediaDropdown()",
+      "file_type": "code",
+      "source_file": "scripts/main.js",
+      "source_location": "L833",
+      "_origin": "ast",
+      "id": "scripts_main_setupmediadropdown",
+      "community": 2,
+      "norm_label": "setupmediadropdown()"
     },
     {
       "label": "package.json",
@@ -324,116 +674,6 @@
       "id": "scratch_append_css_fs"
     },
     {
-      "label": "main.js",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "main.js",
-      "id": "scripts_main"
-    },
-    {
-      "label": "setLanguage()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L462",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "setlanguage()",
-      "id": "scripts_main_setlanguage"
-    },
-    {
-      "label": "setupLanguageSwitcher()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L496",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "setuplanguageswitcher()",
-      "id": "scripts_main_setuplanguageswitcher"
-    },
-    {
-      "label": "getSiteRootPrefix()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L589",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "getsiterootprefix()",
-      "id": "scripts_main_getsiterootprefix"
-    },
-    {
-      "label": "combinePath()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L603",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "combinepath()",
-      "id": "scripts_main_combinepath"
-    },
-    {
-      "label": "loadNavbar()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L638",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadnavbar()",
-      "id": "scripts_main_loadnavbar"
-    },
-    {
-      "label": "buildInlineNavbar()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L684",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "buildinlinenavbar()",
-      "id": "scripts_main_buildinlinenavbar"
-    },
-    {
-      "label": "loadFooter()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L717",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "loadfooter()",
-      "id": "scripts_main_loadfooter"
-    },
-    {
-      "label": "closeAllDropdowns()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L752",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "closealldropdowns()",
-      "id": "scripts_main_closealldropdowns"
-    },
-    {
-      "label": "setupHamburger()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L760",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "setuphamburger()",
-      "id": "scripts_main_setuphamburger"
-    },
-    {
-      "label": "setupMediaDropdown()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "L801",
-      "_origin": "ast",
-      "community": 2,
-      "norm_label": "setupmediadropdown()",
-      "id": "scripts_main_setupmediadropdown"
-    },
-    {
       "label": "podcasts.js",
       "file_type": "code",
       "source_file": "scripts/podcasts.js",
@@ -659,7 +899,7 @@
       "source_file": "scripts/redirect.js",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 2,
+      "community": 1,
       "norm_label": "redirect.js",
       "id": "scripts_redirect"
     },
@@ -1134,19 +1374,6 @@
       "id": "readme_deployment"
     },
     {
-      "label": "Project Settings (Local Permissions)",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 11,
-      "norm_label": "project settings (local permissions)",
-      "id": "settings_local"
-    },
-    {
       "label": "VS Code MCP Server Config (Spotify)",
       "file_type": "code",
       "source_file": ".vscode/mcp.json",
@@ -1171,45 +1398,6 @@
       "community": 12,
       "norm_label": "package.json \u2013 personal-webpage",
       "id": "root_package"
-    },
-    {
-      "label": "applyLanguageAfterNavbar()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "line 517",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "applylanguageafternavbar()",
-      "id": "scripts_main_applylanguageafternavbar"
-    },
-    {
-      "label": "normalizeNavbarLinks()",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "line 612",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "normalizenavbarlinks()",
-      "id": "scripts_main_normalizenavarlinks"
-    },
-    {
-      "label": "translations object (EN/CS/ES i18n strings)",
-      "file_type": "code",
-      "source_file": "scripts/main.js",
-      "source_location": "line 6",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "translations object (en/cs/es i18n strings)",
-      "id": "scripts_main_translations"
     },
     {
       "label": "PODCAST_EPISODES array",
@@ -1355,19 +1543,6 @@
       "id": "root_readme"
     },
     {
-      "label": "footer.html \u2013 Shared Footer Component",
-      "file_type": "code",
-      "source_file": "components/footer.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "footer.html \u2013 shared footer component",
-      "id": "components_footer"
-    },
-    {
       "label": "navbar.html \u2013 Shared Navigation Component",
       "file_type": "code",
       "source_file": "components/navbar.html",
@@ -1389,113 +1564,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 2,
+      "community": 1,
       "norm_label": "index.html \u2013 root redirect page",
       "id": "root_index"
-    },
-    {
-      "label": "about.html \u2013 About Page",
-      "file_type": "code",
-      "source_file": "pages/about.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "about.html \u2013 about page",
-      "id": "pages_about"
-    },
-    {
-      "label": "blog.html \u2013 Blog Page",
-      "file_type": "code",
-      "source_file": "pages/blog.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 4,
-      "norm_label": "blog.html \u2013 blog page",
-      "id": "pages_blog"
-    },
-    {
-      "label": "books.html \u2013 Books Log Page",
-      "file_type": "code",
-      "source_file": "pages/books.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "books.html \u2013 books log page",
-      "id": "pages_books"
-    },
-    {
-      "label": "pages/index.html \u2013 Home Page",
-      "file_type": "code",
-      "source_file": "pages/index.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "pages/index.html \u2013 home page",
-      "id": "pages_index"
-    },
-    {
-      "label": "podcasts.html \u2013 Podcast Log Page",
-      "file_type": "code",
-      "source_file": "pages/podcasts.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "podcasts.html \u2013 podcast log page",
-      "id": "pages_podcasts"
-    },
-    {
-      "label": "sports.html \u2013 Sports Page",
-      "file_type": "code",
-      "source_file": "pages/sports.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 1,
-      "norm_label": "sports.html \u2013 sports page",
-      "id": "pages_sports"
-    },
-    {
-      "label": "videos.html \u2013 Video Vault Page",
-      "file_type": "code",
-      "source_file": "pages/videos.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "videos.html \u2013 video vault page",
-      "id": "pages_videos"
-    },
-    {
-      "label": "Trilingual i18n (EN/CS/ES) Pattern",
-      "file_type": "concept",
-      "source_file": "scripts/main.js",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "trilingual i18n (en/cs/es) pattern",
-      "id": "concept_i18n"
     },
     {
       "label": "Strava API Integration Pattern",
@@ -1509,33 +1580,6 @@
       "community": 3,
       "norm_label": "strava api integration pattern",
       "id": "concept_strava_integration"
-    },
-    {
-      "label": "Shared Navbar/Footer Injection via fetch()",
-      "file_type": "concept",
-      "source_file": "scripts/main.js",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "rationale": "Navbar and footer are loaded asynchronously via fetch with multiple fallback path candidates. After injection, language and active-link state are re-applied via applyLanguageAfterNavbar(). An inline fallback is built if all fetch candidates fail, ensuring the site works even without a server.",
-      "community": 2,
-      "norm_label": "shared navbar/footer injection via fetch()",
-      "id": "concept_shared_component_injection"
-    },
-    {
-      "label": "languageChanged CustomEvent Bus",
-      "file_type": "concept",
-      "source_file": "scripts/main.js",
-      "source_location": "line 493",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 2,
-      "norm_label": "languagechanged customevent bus",
-      "id": "concept_languagechanged_event"
     },
     {
       "label": "Feature script pattern: data array -> filter/sort -> render -> DOM",
@@ -1564,32 +1608,6 @@
       "id": "claude_md_i18n_concept"
     },
     {
-      "label": "podcasts.html",
-      "file_type": "document",
-      "source_file": "pages/podcasts.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "podcasts.html",
-      "id": "pages_podcasts_html"
-    },
-    {
-      "label": "videos.html",
-      "file_type": "document",
-      "source_file": "pages/videos.html",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "videos.html",
-      "id": "pages_videos_html"
-    },
-    {
       "label": "favourite field on media items",
       "file_type": "concept",
       "source_file": "scratch/add_favourites.js",
@@ -1601,19 +1619,6 @@
       "community": 0,
       "norm_label": "favourite field on media items",
       "id": "concept_favourite_field"
-    },
-    {
-      "label": "Media filter UI (filter chips + controls)",
-      "file_type": "concept",
-      "source_file": "pages/podcasts.html",
-      "source_location": "23",
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 0,
-      "norm_label": "media filter ui (filter chips + controls)",
-      "id": "concept_media_filter_ui"
     },
     {
       "label": "Portrait photo of young man in formal attire (tuxedo with bow tie)",
@@ -2056,6 +2061,479 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "design",
+      "target": "design_design_system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "design_design_system",
+      "target": "design_color",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "design_design_system",
+      "target": "design_motion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "design_design_system",
+      "target": "design_shape",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "DESIGN.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "design_design_system",
+      "target": "design_typography",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "product",
+      "target": "product_product",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_accessibility_inclusion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_anti_references",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_brand_personality",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_design_principles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_product_purpose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "PRODUCT.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "product_product",
+      "target": "product_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "scripts_effects",
+      "target": "scripts_effects_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "scripts_effects",
+      "target": "scripts_effects_preparecounters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "scripts_effects",
+      "target": "scripts_effects_preparereveals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "scripts_effects",
+      "target": "scripts_effects_runcounter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "scripts_effects",
+      "target": "scripts_effects_schedulescan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "scripts_effects",
+      "target": "scripts_effects_setupnavstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "scripts_effects",
+      "target": "scripts_effects_setupparallax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "scripts_effects_init",
+      "target": "scripts_effects_preparereveals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "scripts_effects_schedulescan",
+      "target": "scripts_effects_preparereveals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "scripts_effects_init",
+      "target": "scripts_effects_preparecounters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "scripts_effects_schedulescan",
+      "target": "scripts_effects_preparecounters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "scripts_effects_init",
+      "target": "scripts_effects_setupnavstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/effects.js",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "scripts_effects_init",
+      "target": "scripts_effects_setupparallax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "line 38",
+      "weight": 1.0,
+      "source": "root_readme",
+      "target": "scripts_main"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L684",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_buildinlinenavbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L752",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_closealldropdowns"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L603",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_combinepath"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L589",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_getsiterootprefix"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L717",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_loadfooter"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L638",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_loadnavbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L644",
+      "weight": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_normalizenavbarlinks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L462",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_setlanguage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L760",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_setuphamburger"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L496",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_setuplanguageswitcher"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L801",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main",
+      "target": "scripts_main_setupmediadropdown"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L749",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main_loadfooter",
+      "target": "scripts_main_setlanguage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "line 513",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main_setuplanguageswitcher",
+      "target": "scripts_main_setlanguage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "line 722",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main_loadfooter",
+      "target": "scripts_main_getsiterootprefix"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "line 642",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main_loadnavbar",
+      "target": "scripts_main_getsiterootprefix"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L648",
+      "weight": 1.0,
+      "source": "scripts_main_normalizenavbarlinks",
+      "target": "scripts_main_getsiterootprefix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "L650",
+      "weight": 1.0,
+      "source": "scripts_main_normalizenavbarlinks",
+      "target": "scripts_main_combinepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/main.js",
+      "source_location": "line 656",
+      "weight": 1.0,
+      "source": "scripts_main_loadnavbar",
+      "target": "components_navbar"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/main.js",
+      "source_location": "line 673",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_main_loadnavbar",
+      "target": "scripts_main_buildinlinenavbar"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "package.json",
       "source_location": "L16",
       "weight": 1.0,
@@ -2374,303 +2852,6 @@
       "target": "scripts_videos"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "line 38",
-      "weight": 1.0,
-      "source": "root_readme",
-      "target": "scripts_main"
-    },
-    {
-      "relation": "implements",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "scripts/main.js",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "scripts_main",
-      "target": "concept_shared_component_injection"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L684",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_buildinlinenavbar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L752",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_closealldropdowns"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L603",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_combinepath"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L589",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_getsiterootprefix"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L717",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_loadfooter"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L638",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_loadnavbar"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L612",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_normalizenavarlinks"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L462",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_setlanguage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L760",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_setuphamburger"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L496",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_setuplanguageswitcher"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L801",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_setupmediadropdown"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 6",
-      "weight": 1.0,
-      "source": "scripts_main",
-      "target": "scripts_main_translations"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 523",
-      "weight": 1.0,
-      "source": "scripts_main_applylanguageafternavbar",
-      "target": "scripts_main_setlanguage"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L749",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main_loadfooter",
-      "target": "scripts_main_setlanguage"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 493",
-      "weight": 1.0,
-      "source": "scripts_main_setlanguage",
-      "target": "concept_languagechanged_event"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 464",
-      "weight": 1.0,
-      "source": "scripts_main_setlanguage",
-      "target": "scripts_main_translations"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "line 513",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main_setuplanguageswitcher",
-      "target": "scripts_main_setlanguage"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "line 722",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main_loadfooter",
-      "target": "scripts_main_getsiterootprefix"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "line 642",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main_loadnavbar",
-      "target": "scripts_main_getsiterootprefix"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "L616",
-      "weight": 1.0,
-      "context": "call",
-      "source": "scripts_main_normalizenavarlinks",
-      "target": "scripts_main_getsiterootprefix"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "L618",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main_normalizenavarlinks",
-      "target": "scripts_main_combinepath"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 656",
-      "weight": 1.0,
-      "source": "scripts_main_loadnavbar",
-      "target": "components_navbar"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 679",
-      "weight": 1.0,
-      "source": "scripts_main_loadnavbar",
-      "target": "scripts_main_applylanguageafternavbar"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/main.js",
-      "source_location": "line 673",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_main_loadnavbar",
-      "target": "scripts_main_buildinlinenavbar"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 726",
-      "weight": 1.0,
-      "source": "scripts_main_loadfooter",
-      "target": "components_footer"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 556",
-      "weight": 1.0,
-      "source": "scripts_main_applylanguageafternavbar",
-      "target": "scripts_main_setuphamburger"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 555",
-      "weight": 1.0,
-      "source": "scripts_main_applylanguageafternavbar",
-      "target": "scripts_main_setupmediadropdown"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -2698,26 +2879,6 @@
       "source_location": null,
       "weight": 1.0,
       "source": "concept_jirik_mlcousek",
-      "target": "scripts_podcasts"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "pages/podcasts.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "pages_podcasts",
-      "target": "scripts_podcasts"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "pages/podcasts.html",
-      "source_location": "58",
-      "weight": 1.0,
-      "source": "pages_podcasts_html",
       "target": "scripts_podcasts"
     },
     {
@@ -2947,26 +3108,6 @@
       "target": "scripts_posts"
     },
     {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "pages/blog.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "pages_blog",
-      "target": "scripts_posts"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/posts.js",
-      "source_location": "line 263",
-      "weight": 1.0,
-      "source": "scripts_posts",
-      "target": "concept_languagechanged_event"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/posts.js",
@@ -3161,16 +3302,6 @@
       "target": "scripts_redirect"
     },
     {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/redirect.js",
-      "source_location": "line 1",
-      "weight": 1.0,
-      "source": "scripts_redirect",
-      "target": "pages_index"
-    },
-    {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
@@ -3189,26 +3320,6 @@
       "weight": 1.0,
       "source": "concept_jirik_mlcousek",
       "target": "scripts_sports"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "pages/sports.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "pages_sports",
-      "target": "scripts_sports"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "line 321",
-      "weight": 1.0,
-      "source": "scripts_sports",
-      "target": "concept_languagechanged_event"
     },
     {
       "relation": "contains",
@@ -3735,36 +3846,6 @@
       "target": "scripts_videos"
     },
     {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "pages/videos.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "pages_videos",
-      "target": "scripts_videos"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "pages/videos.html",
-      "source_location": "56",
-      "weight": 1.0,
-      "source": "pages_videos_html",
-      "target": "scripts_videos"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/videos.js",
-      "source_location": "line 332",
-      "weight": 1.0,
-      "source": "scripts_videos",
-      "target": "concept_languagechanged_event"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/videos.js",
@@ -4173,52 +4254,12 @@
     {
       "relation": "references",
       "confidence": "INFERRED",
-      "confidence_score": 0.75,
-      "source_file": ".vscode/mcp.json",
-      "source_location": null,
-      "weight": 0.75,
-      "source": "vscode_mcp",
-      "target": "settings_local"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/main.js",
-      "source_location": "line 524",
-      "weight": 1.0,
-      "source": "scripts_main_applylanguageafternavbar",
-      "target": "scripts_main_normalizenavarlinks"
-    },
-    {
-      "relation": "implements",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "scripts/main.js",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "scripts_main_translations",
-      "target": "concept_i18n"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "concept",
       "source_location": null,
       "weight": 1.0,
       "source": "concept_jirik_mlcousek",
       "target": "scripts_podcasts_episodes"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.65,
-      "source_file": "scripts/podcasts.js",
-      "source_location": null,
-      "weight": 0.65,
-      "source": "scripts_podcasts_episodes",
-      "target": "concept_i18n"
     },
     {
       "relation": "references",
@@ -4304,40 +4345,10 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source_file": "scripts/update-strava.mjs",
-      "source_location": "line 161",
-      "weight": 1.0,
-      "source": "scripts_updatestrava_patchhtml",
-      "target": "pages_sports"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
       "source_file": "README.md",
       "source_location": "line 12",
       "weight": 1.0,
       "source": "root_readme",
-      "target": "components_navbar"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "pages/about.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "pages_about",
-      "target": "components_navbar"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "pages/index.html",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "pages_index",
       "target": "components_navbar"
     },
     {
@@ -4358,107 +4369,7 @@
       "source_location": null,
       "weight": 1.0,
       "source": "concept_jirik_mlcousek",
-      "target": "pages_about"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "images/1737442551739.jpg",
-      "source_location": null,
-      "weight": 0.85,
-      "source": "images_1737442551739",
-      "target": "pages_about"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "pages_blog"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "pages_books"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "pages_index"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "pages_podcasts"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "pages_sports"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "pages_videos"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
       "target": "concept_strava_integration"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "pages/podcasts.html",
-      "source_location": "23",
-      "weight": 1.0,
-      "source": "pages_podcasts_html",
-      "target": "concept_media_filter_ui"
-    },
-    {
-      "relation": "implements",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "pages/videos.html",
-      "source_location": "23",
-      "weight": 1.0,
-      "source": "pages_videos_html",
-      "target": "concept_media_filter_ui"
     },
     {
       "relation": "references",
@@ -5032,5 +4943,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "fc69836bee904c6c35939bc0bdc4116eb43c8f3b"
+  "built_at_commit": "a3cd8a3c7d59ab586be9d026c13a4236cd401bd5"
 }

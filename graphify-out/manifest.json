@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1781261992.7107894,
-    "ast_hash": "1ebff78a21341b7942a7efb13e9dc6c8",
+    "mtime": 1781263778.545832,
+    "ast_hash": "24f0238bb74dfbf8ee1e948f6088fd6e",
     "semantic_hash": ""
   },
   ".vscode/mcp.json": {
@@ -530,8 +530,8 @@
     "semantic_hash": ""
   },
   "scripts/effects.js": {
-    "mtime": 1781261792.6880798,
-    "ast_hash": "9314b205307c290a7d900a3fe1203d94",
+    "mtime": 1781264353.8118005,
+    "ast_hash": "64bc801d3dec40abf2b61affea4108fe",
     "semantic_hash": ""
   },
   "scripts/tags_i18n.js": {
@@ -755,8 +755,8 @@
     "semantic_hash": ""
   },
   "DESIGN.md": {
-    "mtime": 1781260872.005176,
-    "ast_hash": "a4376ccb9d675eb3ea1d6c6c10dbcf33",
+    "mtime": 1781264453.029912,
+    "ast_hash": "c5b65912bd824b9fd1352edbb2597d25",
     "semantic_hash": ""
   },
   "PRODUCT.md": {

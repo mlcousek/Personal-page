@@ -142,7 +142,17 @@
       '<div class="bg-line bg-line--2"></div>' +
       '<div class="bg-line bg-line--3"></div>' +
       '<div class="bg-line bg-line--4"></div>' +
-      '<div class="bg-line bg-line--5"></div>';
+      '<div class="bg-line bg-line--5"></div>' +
+      '<div class="bg-line bg-line--6"></div>' +
+      '<div class="bg-line bg-line--7"></div>' +
+      '<div class="bg-line bg-line--8"></div>' +
+      '<div class="bg-line bg-line--9"></div>' +
+      '<div class="bg-line bg-line--10"></div>' +
+      '<div class="bg-line bg-line--11"></div>' +
+      '<div class="bg-line bg-line--12"></div>' +
+      '<div class="bg-line bg-line--13"></div>' +
+      '<div class="bg-line bg-line--14"></div>' +
+      '<div class="bg-line bg-line--15"></div>';
     document.body.prepend(scene);
   }
 
