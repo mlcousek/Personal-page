@@ -1,37 +1,206 @@
 .books-page main { font-size: 0.9rem; }
 
+/* ═══════════════════════════════════════
+   Book Filter Dropdown  (.bfd)
+═══════════════════════════════════════ */
 .books-filter-bar {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 28px;
+  gap: 10px;
+  margin-bottom: 32px;
   justify-content: center;
 }
 
-.books-filter-bar .filter-chip {
+/* Wrapper – position: relative is the anchor for the panel */
+.bfd {
+  position: relative;
+}
+
+/* Trigger button */
+.bfd__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.5rem 1rem 0.5rem 0.9rem;
   background: var(--surface);
   border: 1px solid var(--border);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  cursor: pointer;
   color: var(--text);
-  padding: 0.5rem 1rem;
+  transition: border-color .18s var(--ease-out), background .18s var(--ease-out);
+  white-space: nowrap;
+  user-select: none;
+}
+.bfd__btn:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+}
+.bfd--open .bfd__btn {
+  border-color: var(--accent);
+  color: var(--ink);
+}
+
+/* Label (dim) / Value (bright) inside the button */
+.bfd__label {
+  color: var(--muted);
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.bfd__value {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Chevron rotates when open */
+.bfd__chevron {
+  width: 13px;
+  height: 13px;
+  color: var(--muted);
+  transition: transform .2s var(--ease-out);
+  flex-shrink: 0;
+}
+.bfd--open .bfd__chevron { transform: rotate(180deg); }
+
+/* Dropdown panel */
+.bfd__menu {
+  list-style: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  margin: 0;
+  padding: 6px;
+  min-width: 200px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-pop);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 300;
+  /* hidden state */
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px) scale(0.98);
+  transform-origin: top left;
+  transition: opacity .15s var(--ease-out), transform .15s var(--ease-out);
+}
+/* Bridge so moving mouse into the panel doesn't lose hover */
+.bfd__menu::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0; right: 0;
+  height: 12px;
+  background: transparent;
+}
+.bfd--open .bfd__menu {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+
+/* Menu items */
+.bfd__item {
+  padding: 7px 10px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.73rem;
+  font-weight: 500;
+  color: var(--text);
+  cursor: pointer;
+  transition: background .12s var(--ease-out), color .12s var(--ease-out);
+  white-space: nowrap;
+}
+.bfd__item:hover {
+  background: rgba(255,255,255,0.05);
+  color: var(--ink);
+}
+.bfd__item--active {
+  color: var(--accent-text);
+  background: rgba(252, 82, 0, 0.12);
+  border: 1px solid var(--accent-border);
+}
+.bfd__item--active:hover {
+  background: rgba(252, 82, 0, 0.18);
+}
+
+/* Thin separator line */
+.bfd__sep {
+  height: 1px;
+  background: var(--border);
+  margin: 5px 4px;
+}
+
+/* ── Standalone status buttons (All / Favourites / Reading) ── */
+.bfb {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: var(--radius-pill);
   font-family: var(--font-mono);
   font-size: 0.72rem;
   font-weight: 500;
   cursor: pointer;
-  transition: background .16s var(--ease-out), color .16s var(--ease-out), border-color .16s var(--ease-out), transform .14s var(--ease-out);
+  color: var(--text);
+  transition: background .16s var(--ease-out), color .16s var(--ease-out),
+              border-color .16s var(--ease-out), transform .12s var(--ease-out);
+  white-space: nowrap;
+  user-select: none;
 }
-
-.books-filter-bar .filter-chip:hover {
+.bfb:hover {
   border-color: var(--border-strong);
   color: var(--ink);
+  background: var(--surface-2);
 }
-
-.books-filter-bar .filter-chip:active { transform: scale(0.95); }
-
-.books-filter-bar .filter-chip.active {
+.bfb:active { transform: scale(0.96); }
+.bfb--active {
   background: var(--ink);
   color: var(--bg);
   border-color: var(--ink);
+}
+
+/* ── Scrollable tag menu ── */
+.bfd__menu--scroll {
+  max-height: 260px;
+  overflow-y: auto;
+  /* Slim custom scrollbar matching the dark theme */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-strong) transparent;
+}
+.bfd__menu--scroll::-webkit-scrollbar { width: 4px; }
+.bfd__menu--scroll::-webkit-scrollbar-track { background: transparent; }
+.bfd__menu--scroll::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 2px;
+}
+
+
+/* ── Tag pills on each book card ── */
+.book-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+.book-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 0.22em 0.65em;
+  border-radius: var(--radius-pill);
+  background: rgba(252, 82, 0, 0.1);
+  color: var(--accent-text);
+  border: 1px solid var(--accent-border);
+  white-space: nowrap;
+  text-transform: lowercase;
 }
 
 .book .favourite-star {
@@ -128,7 +297,7 @@
   font-weight: 500;
 }
 
-/* Personal note ("my comment") shown on a book card */
+/* Personal note shown on a book card */
 .media__comment {
   margin: 0.25rem 0 0.1rem;
   padding: 0.6rem 0.75rem;
@@ -153,7 +322,7 @@
 
 .media__comment-text { font-style: italic; }
 
-/* one quiet mono badge for every year; "reading" is the only accent state */
+/* one quiet mono badge for every year; "reading" is the accent state */
 .book > time {
   position: absolute;
   top: 0.7rem;

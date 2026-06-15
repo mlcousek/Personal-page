@@ -8,6 +8,8 @@ const TAGS_I18N = {
   "B7": { en: "B7", cs: "B7", es: "B7" },
   "Biking": { en: "Biking", cs: "Kolo", es: "Ciclismo" },
   "Biomechanics": { en: "Biomechanics", cs: "Biomechanika", es: "Biomecánica" },
+  "Biography": { en: "Biography", cs: "Biografie", es: "Biografía" },
+  "Biology": { en: "Biology", cs: "Biologie", es: "Biología" },
   "Business": { en: "Business", cs: "Byznys", es: "Negocios" },
   "C#": { en: "C#", cs: "C#", es: "C#" },
   "Canoe": { en: "Canoe", cs: "Kánoe", es: "Canoa" },
@@ -15,7 +17,9 @@ const TAGS_I18N = {
   "Claude": { en: "Claude", cs: "Claude", es: "Claude" },
   "Climbing": { en: "Climbing", cs: "Lezení", es: "Escalada" },
   "Coding": { en: "Coding", cs: "Kódování", es: "Codificación" },
+  "Cognition": { en: "Cognition", cs: "Kognice", es: "Cognición" },
   "Computer Science": { en: "Computer Science", cs: "Informatika", es: "Informática" },
+  "Cryptography": { en: "Cryptography", cs: "Kryptografie", es: "Criptografía" },
   "Cycling": { en: "Cycling", cs: "Cyklistika", es: "Ciclismo" },
   "Czech": { en: "Czech", cs: "Česky", es: "Checo" },
   "Education": { en: "Education", cs: "Vzdělání", es: "Educación" },
@@ -23,6 +27,7 @@ const TAGS_I18N = {
   "English": { en: "English", cs: "Anglicky", es: "Inglés" },
   "Entertainment": { en: "Entertainment", cs: "Zábava", es: "Entretenimiento" },
   "Everest": { en: "Everest", cs: "Everest", es: "Everest" },
+  "Fiction": { en: "Fiction", cs: "Beletrie", es: "Ficción" },
   "Finance": { en: "Finance", cs: "Finance", es: "Finanzas" },
   "Fitness": { en: "Fitness", cs: "Kondice", es: "Forma física" },
   "Flexibility": { en: "Flexibility", cs: "Flexibilita", es: "Flexibilidad" },
@@ -33,6 +38,7 @@ const TAGS_I18N = {
   "Geography": { en: "Geography", cs: "Geografie", es: "Geografía" },
   "Geometry": { en: "Geometry", cs: "Geometrie", es: "Geometría" },
   "GitHub Copilot": { en: "GitHub Copilot", cs: "GitHub Copilot", es: "GitHub Copilot" },
+  "Habits": { en: "Habits", cs: "Návyky", es: "Hábitos" },
   "Health": { en: "Health", cs: "Zdraví", es: "Salud" },
   "History": { en: "History", cs: "Historie", es: "Historia" },
   "Interview": { en: "Interview", cs: "Rozhovor", es: "Entrevista" },
@@ -43,6 +49,8 @@ const TAGS_I18N = {
   "Lifestyle": { en: "Lifestyle", cs: "Životní styl", es: "Estilo de vida" },
   "Machine Learning": { en: "Machine Learning", cs: "Strojové učení", es: "Aprendizaje automático" },
   "Marathon": { en: "Marathon", cs: "Maraton", es: "Maratón" },
+  "Martial Arts": { en: "Martial Arts", cs: "Bojová umění", es: "Artes marciales" },
+  "Mastery": { en: "Mastery", cs: "Mistrovství", es: "Maestría" },
   "Math": { en: "Math", cs: "Matematika", es: "Matemáticas" },
   "Mathematics": { en: "Mathematics", cs: "Matematika", es: "Matemáticas" },
   "Medicine": { en: "Medicine", cs: "Medicína", es: "Medicina" },
@@ -53,12 +61,15 @@ const TAGS_I18N = {
   "Monument": { en: "Monument", cs: "Monument", es: "Monument" },
   "Motivation": { en: "Motivation", cs: "Motivace", es: "Motivación" },
   "Mountaineering": { en: "Mountaineering", cs: "Horolezectví", es: "Montañismo" },
+  "Nature": { en: "Nature", cs: "Příroda", es: "Naturaleza" },
   "Neuroscience": { en: "Neuroscience", cs: "Neurověda", es: "Neurociencia" },
   "News": { en: "News", cs: "Zprávy", es: "Noticias" },
   "Nutrition": { en: "Nutrition", cs: "Výživa", es: "Nutrición" },
   "Olympics": { en: "Olympics", cs: "Olympics", es: "Olympics" },
+  "Performance": { en: "Performance", cs: "Výkon", es: "Rendimiento" },
   "Philosophy": { en: "Philosophy", cs: "Filozofie", es: "Filosofía" },
   "Podcast": { en: "Podcast", cs: "Podcast", es: "Podcast" },
+  "Productivity": { en: "Productivity", cs: "Produktivita", es: "Productividad" },
   "Programming": { en: "Programming", cs: "Programování", es: "Programación" },
   "Psychology": { en: "Psychology", cs: "Psychologie", es: "Psicología" },
   "Python": { en: "Python", cs: "Python", es: "Python" },
@@ -67,9 +78,11 @@ const TAGS_I18N = {
   "Racing": { en: "Racing", cs: "Závodění", es: "Carreras" },
   "Reality TV": { en: "Reality TV", cs: "Reality show", es: "Telerrealidad" },
   "Recap": { en: "Recap", cs: "Recap", es: "Recap" },
+  "Resilience": { en: "Resilience", cs: "Odolnost", es: "Resiliencia" },
   "Road Classics": { en: "Road Classics", cs: "Road Classics", es: "Road Classics" },
   "Running": { en: "Running", cs: "Běh", es: "Correr" },
   "Science": { en: "Science", cs: "Věda", es: "Ciencia" },
+  "Security": { en: "Security", cs: "Bezpečnost", es: "Seguridad" },
   "Self improvement": { en: "Self improvement", cs: "Sebarozvoj", es: "Desarrollo personal" },
   "Slovak": { en: "Slovak", cs: "Slovensky", es: "Eslovaco" },
   "Software Development": { en: "Software Development", cs: "Vývoj softwaru", es: "Desarrollo de software" },
@@ -79,6 +92,8 @@ const TAGS_I18N = {
   "Sport": { en: "Sport", cs: "Sport", es: "Deporte" },
   "Sports": { en: "Sports", cs: "Sporty", es: "Deportes" },
   "Spotify": { en: "Spotify", cs: "Spotify", es: "Spotify" },
+  "Stoicism": { en: "Stoicism", cs: "Stoicismus", es: "Estoicismo" },
+  "Strategy": { en: "Strategy", cs: "Strategie", es: "Estrategia" },
   "Success": { en: "Success", cs: "Success", es: "Success" },
   "Survivor": { en: "Survivor", cs: "Survivor", es: "Survivor" },
   "Tech": { en: "Tech", cs: "Technologie", es: "Tecnología" },
@@ -100,6 +115,20 @@ const TAGS_I18N = {
 };
 
 function translateTag(tag, lang) {
+  if (!tag) return "";
+  // Exact match first
   if (TAGS_I18N[tag] && TAGS_I18N[tag][lang]) return TAGS_I18N[tag][lang];
+  
+  // Case-insensitive and hyphen-insensitive matching
+  var normalized = tag.toLowerCase().replace(/[\s-]/g, "");
+  var keys = Object.keys(TAGS_I18N);
+  for (var i = 0; i < keys.length; i++) {
+    var k = keys[i];
+    if (k.toLowerCase().replace(/[\s-]/g, "") === normalized) {
+      if (TAGS_I18N[k] && TAGS_I18N[k][lang]) {
+        return TAGS_I18N[k][lang];
+      }
+    }
+  }
   return tag;
 }

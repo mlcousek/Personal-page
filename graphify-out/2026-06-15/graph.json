@@ -64,20 +64,10 @@
       "norm_label": "setupbackdrop()"
     },
     {
-      "label": "setupBeams()",
-      "file_type": "code",
-      "source_file": "scripts/effects.js",
-      "source_location": "L153",
-      "_origin": "ast",
-      "id": "scripts_effects_setupbeams",
-      "community": 15,
-      "norm_label": "setupbeams()"
-    },
-    {
       "label": "setupNavState()",
       "file_type": "code",
       "source_file": "scripts/effects.js",
-      "source_location": "L398",
+      "source_location": "L161",
       "_origin": "ast",
       "id": "scripts_effects_setupnavstate",
       "community": 15,
@@ -87,7 +77,7 @@
       "label": "setupParallax()",
       "file_type": "code",
       "source_file": "scripts/effects.js",
-      "source_location": "L432",
+      "source_location": "L195",
       "_origin": "ast",
       "id": "scripts_effects_setupparallax",
       "community": 15,
@@ -97,7 +87,7 @@
       "label": "init()",
       "file_type": "code",
       "source_file": "scripts/effects.js",
-      "source_location": "L461",
+      "source_location": "L224",
       "_origin": "ast",
       "id": "scripts_effects_init",
       "community": 15,
@@ -1685,7 +1675,7 @@
       "captured_at": null,
       "author": "Libor Dost\u00e1lek",
       "contributor": null,
-      "community": 10,
+      "community": 1,
       "norm_label": "pki a elektronicky podpis - course/document cover by libor dostalek, 2020",
       "id": "images_pki_course"
     },
@@ -2023,7 +2013,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 1,
       "norm_label": "public key infrastructure (pki)",
       "id": "concept_pki"
     },
@@ -2036,7 +2026,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 10,
+      "community": 1,
       "norm_label": "electronic signature (elektronicky podpis)",
       "id": "concept_electronic_signature"
     },
@@ -2132,16 +2122,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/effects.js",
-      "source_location": "L153",
-      "weight": 1.0,
-      "source": "scripts_effects",
-      "target": "scripts_effects_setupbeams",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/effects.js",
       "source_location": "L132",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -2212,17 +2192,6 @@
       "confidence_score": 1.0,
       "source": "scripts_effects_init",
       "target": "scripts_effects_setupbackdrop"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/effects.js",
-      "source_location": "L463",
-      "weight": 1.0,
-      "source": "scripts_effects_init",
-      "target": "scripts_effects_setupbeams",
-      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5025,5 +4994,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8af7960193b00d6e85fad1136a17856fd01b7c74"
+  "built_at_commit": "c43e99d1ba8d6183f14de83e9f7988194f0382c3"
 }

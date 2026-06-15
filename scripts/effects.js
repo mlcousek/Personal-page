@@ -172,7 +172,7 @@
     // Fraction of the beam's total length
     var ORANGE_LEN = 0.36;   // size of the orange glowing head (doubled)
     var GRAY_LEN   = 0.80;   // size of the fading gray tail (longer)
-    var MAX_BEAMS  = 9;     // max simultaneous beams`
+    var MAX_BEAMS  = 7;     // max simultaneous beams`
     var SPAWN_GAP  = 350;    // ms minimum between spawns (higher frequency)
 
     var beams = [];
@@ -239,7 +239,7 @@
         segs: segs,
         totalLen: cumLen,
         progress: 0,            // fraction 0 → 1 + ORANGE_LEN + GRAY_LEN
-        speed: rand(0.0001, 0.0002) // 30 % slower than before
+        speed: rand(0.00008, 0.00012) 
       };
     }
 

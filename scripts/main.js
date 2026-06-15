@@ -121,6 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // ── Books page ──
             'books-title': 'Read Books',
             'books-lead': 'A personal log of books that shaped my thinking — across security, performance, philosophy, and endurance.',
+            'bfb-all': 'All',
+            'bfb-fav': '★ Favourites',
+            'bfb-reading': 'Reading',
+            'bfd-year-label': 'Year',
+            'bfd-year-all': 'All years',
+            'bfd-tag-label': 'Tag',
             // ── Videos page ──
             'video-page-title': 'Video Log',
             'video-note': 'Hand-picked long-form talks, documentaries, and stories that shaped my mindset.',
@@ -280,6 +286,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // ── Books page ──
             'books-title': 'Přečtené knihy',
             'books-lead': 'Osobní přehled knih, které formovaly mé myšlení — bezpečnost, výkon, filozofie a vytrvalost.',
+            'bfb-all': 'Vše',
+            'bfb-fav': '★ Oblíbené',
+            'bfb-reading': 'Rozečteno',
+            'bfd-year-label': 'Rok',
+            'bfd-year-all': 'Všechny roky',
+            'bfd-tag-label': 'Tag',
             // ── Videos page ──
             'video-page-title': 'Video deník',
             'video-note': 'Ručně vybraná dlouhá videa, dokumenty a příběhy, které formovaly můj přístup.',
@@ -439,6 +451,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // ── Books page ──
             'books-title': 'Libros leídos',
             'books-lead': 'Un registro personal de libros que moldearon mi pensamiento — seguridad, rendimiento, filosofía y resistencia.',
+            'bfb-all': 'Todos',
+            'bfb-fav': '★ Favoritos',
+            'bfb-reading': 'Leyendo',
+            'bfd-year-label': 'Año',
+            'bfd-year-all': 'Todos los años',
+            'bfd-tag-label': 'Etiqueta',
             // ── Videos page ──
             'video-page-title': 'Registro de videos',
             'video-note': 'Charlas largas, documentales e historias seleccionadas a mano que moldearon mi mentalidad.',

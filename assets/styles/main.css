@@ -377,6 +377,18 @@ h1, h2, h3 { text-wrap: balance; }
   z-index: 200;
 }
 
+/* Invisible bridge over the 10px gap so the mouse can reach menu items
+   without :hover on .dropdown being lost mid-travel */
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -14px;   /* 10px gap + a little extra for the transform offset */
+  left: 0;
+  right: 0;
+  height: 14px;
+  background: transparent;
+}
+
 .dropdown-menu li { width: 100%; }
 
 .dropdown-menu a {
