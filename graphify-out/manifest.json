@@ -15,8 +15,8 @@
     "semantic_hash": "38359f9eeee6801e41cd0d5ae2279eae"
   },
   "scripts/main.js": {
-    "mtime": 1781261855.1165037,
-    "ast_hash": "62a7278e97fa872b76256c1ced0dde4c",
+    "mtime": 1781505140.482136,
+    "ast_hash": "ddd1c640920a341586a92587d5ae4723",
     "semantic_hash": ""
   },
   "scripts/podcasts.js": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "pages/books.html": {
-    "mtime": 1781261837.583492,
-    "ast_hash": "0c97b40494a5fcaeb5d2d19eb059edc6",
+    "mtime": 1781505228.064253,
+    "ast_hash": "a22d6c8cb7ce89896b7605f82bc4fc25",
     "semantic_hash": ""
   },
   "pages/index.html": {
@@ -530,13 +530,13 @@
     "semantic_hash": ""
   },
   "scripts/effects.js": {
-    "mtime": 1781503204.7169392,
-    "ast_hash": "30e25793063592083c118a83baecbd08",
+    "mtime": 1781503596.7285032,
+    "ast_hash": "6da351f64aec94929e74b37b3c38bef2",
     "semantic_hash": ""
   },
   "scripts/tags_i18n.js": {
-    "mtime": 1780988851.916901,
-    "ast_hash": "9a74b0b8001a27d167994642ada375d6",
+    "mtime": 1781505397.6980965,
+    "ast_hash": "cd1e7f2bcd63b616b970a52dc69d7137",
     "semantic_hash": ""
   },
   ".claude/agents/impeccable-manual-edit-applier.md": {

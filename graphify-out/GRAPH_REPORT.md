@@ -1,16 +1,16 @@
 # Graph Report - Personal-page  (2026-06-15)
 
 ## Corpus Check
-- 118 files · ~2,806,677 words
+- 118 files · ~2,807,617 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 191 nodes · 292 edges · 17 communities (13 shown, 4 thin omitted)
+- 194 nodes · 294 edges · 17 communities (12 shown, 5 thin omitted)
 - Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 52 edges (avg confidence: 0.91)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8af79601`
+- Built from commit: `7423e9b6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -60,15 +60,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (17 total, 4 thin omitted)
+## Communities (17 total, 5 thin omitted)
 
 ### Community 0 - "i18n & Shared Components"
-Cohesion: 0.09
-Nodes (24): Feature script pattern: data array -> filter/sort -> render -> DOM, i18n languageChanged event re-render pattern, favourite field on media items, fs, code, endIdx, fs, startIdx (+16 more)
+Cohesion: 0.11
+Nodes (25): Feature script pattern: data array -> filter/sort -> render -> DOM, i18n languageChanged event re-render pattern, favourite field on media items, fs, fs, applyFiltersAndSort(), collectAllShows(), collectAllTags() (+17 more)
 
 ### Community 1 - "Podcasts & Favourites Feature"
-Cohesion: 0.13
-Nodes (31): Trail runner on rocky forest path - B7 2025 race, Trail runner with poles, race number 0916, rocky forest path - B7 2025 race, Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem, Football Career, Jiří Mlčoušek, Kosir 2026 Running Event, Football match action photo - player #6 in neon green kit dribbling ball, Football player portrait on pitch in black and yellow kit (+23 more)
+Cohesion: 0.12
+Nodes (34): Trail runner on rocky forest path - B7 2025 race, Trail runner with poles, race number 0916, rocky forest path - B7 2025 race, Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem, Electronic Signature (Elektronický podpis), Football Career, Jiří Mlčoušek, Kosir 2026 Running Event, Public Key Infrastructure (PKI) (+26 more)
 
 ### Community 2 - "Strava & Sports Integration"
 Cohesion: 0.23
@@ -87,8 +87,8 @@ Cohesion: 0.15
 Nodes (12): author, description, devDependencies, live-server, keywords, license, main, name (+4 more)
 
 ### Community 6 - "Favourites Migration Scripts"
-Cohesion: 0.24
-Nodes (11): fs, applyFiltersAndSort(), collectAllShows(), collectAllTags(), escapeHtml(), groupByDateDescending(), renderCard(), renderVideos() (+3 more)
+Cohesion: 0.18
+Nodes (10): code, endIdx, fs, startIdx, code, fs, match, code (+2 more)
 
 ### Community 7 - "CLAUDE.md Architecture Docs"
 Cohesion: 0.22
@@ -97,10 +97,6 @@ Nodes (8): Architecture, Asset paths, Component injection, Development, Feature 
 ### Community 8 - "README & Project Docs"
 Cohesion: 0.22
 Nodes (8): 📦 Deployment, ✨ Features, 🚀 Getting started, Install dependencies, Personal Webpage – Jiří Mlčoušek, Prerequisites, Run a local dev server, 🛠️ Updating content
-
-### Community 10 - "Community 10"
-Cohesion: 1.00
-Nodes (3): Electronic Signature (Elektronický podpis), Public Key Infrastructure (PKI), PKI a elektronický podpis - course/document cover by Libor Dostálek, 2020
 
 ### Community 14 - "Football Photos"
 Cohesion: 0.22
@@ -119,9 +115,9 @@ Nodes (6): Ambient backdrop, Color, Design System, Motion, Shape, Typography
   images/PKI_course.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **60 isolated node(s):** `allow`, `Color`, `Typography`, `Shape`, `Ambient backdrop` (+55 more)
+- **61 isolated node(s):** `TAGS_I18N`, `allow`, `Color`, `Typography`, `Shape` (+56 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **4 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -136,7 +132,7 @@ _Questions this graph is uniquely positioned to answer:_
   _`RACES` has 3 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `renderVideos()` (e.g. with `groupByDateDescending()` and `renderCard()`) actually correct?**
   _`renderVideos()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `allow`, `Color`, `Typography` to the rest of the system?**
-  _60 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `TAGS_I18N`, `allow`, `Color` to the rest of the system?**
+  _61 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `i18n & Shared Components` be split into smaller, more focused modules?**
-  _Cohesion score 0.09113300492610837 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10887096774193548 - nodes in this community are weakly interconnected._
