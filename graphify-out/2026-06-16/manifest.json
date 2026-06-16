@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1781593655.7518432,
-    "ast_hash": "e1adb53985a6c654503abc3a90b3aa7e",
+    "mtime": 1781263778.545832,
+    "ast_hash": "24f0238bb74dfbf8ee1e948f6088fd6e",
     "semantic_hash": ""
   },
   ".vscode/mcp.json": {
@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "scripts/podcasts.js": {
-    "mtime": 1781593674.6138186,
-    "ast_hash": "9ea7c3bc6a8a513f9e90a633849f9920",
+    "mtime": 1781258706.6594746,
+    "ast_hash": "4e1b5ac6be7b12de5e42bf6619703f2e",
     "semantic_hash": ""
   },
   "scripts/posts.js": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "scripts/videos.js": {
-    "mtime": 1781593213.2204566,
-    "ast_hash": "9ff7bc664987d4a9c0b9f25a22c0fe7b",
+    "mtime": 1781258731.4640298,
+    "ast_hash": "795a6b52be156d9ee57f84b6690c9258",
     "semantic_hash": ""
   },
   "README.md": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "pages/books.html": {
-    "mtime": 1781593418.6480181,
-    "ast_hash": "b8949a523f6b9c8c3e20d6aa093285f9",
+    "mtime": 1781505228.064253,
+    "ast_hash": "a22d6c8cb7ce89896b7605f82bc4fc25",
     "semantic_hash": ""
   },
   "pages/index.html": {
