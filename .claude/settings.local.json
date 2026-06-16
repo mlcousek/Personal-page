@@ -19,7 +19,15 @@
       "Bash(npm i *)",
       "Bash(cygpath -w /tmp/mobile3.png)",
       "PowerShell($job = Start-Job -ScriptBlock { Set-Location 'C:\\\\Git\\\\Projects\\\\Personal-page'; npx http-server -p 8123 -s 2>&1 }; Start-Sleep -Seconds 6; try { \\(Invoke-WebRequest -UseBasicParsing http://127.0.0.1:8123/pages/index.html\\).StatusCode } catch { Receive-Job $job | Select-Object -First 10 })",
-      "PowerShell(Remove-Item *)"
+      "PowerShell(Remove-Item *)",
+      "WebFetch(domain:youtu.be)",
+      "WebFetch(domain:www.youtube.com)",
+      "Bash(curl -s \"https://www.youtube.com/watch?v=ulcMLoQpBOA\")",
+      "Bash(curl -s \"https://www.youtube.com/watch?v=2xAcKzI2R_M\")",
+      "Bash(curl -s \"https://www.youtube.com/watch?v=6wBLSkMqoHs\")",
+      "Bash(curl -s \"https://www.youtube.com/watch?v=mWLDn49_8HA\")",
+      "Bash(curl -s \"https://www.youtube.com/watch?v=1PBRhm5ZnjU\")",
+      "Bash(curl -s \"https://open.spotify.com/episode/4tLCpSFDx01In4R2cMQOfb\")"
     ]
   }
 }

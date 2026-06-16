@@ -5,6 +5,40 @@
 
 const PODCAST_EPISODES = [
   {
+    id: "2026-06-16-1",
+    date: "2026-06-16",
+    title: "Stach: Při moderování maratonu nachodím půlmaraton. Do běžců pumpuji energii a nemusím se brzdit",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 53,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/4tLCpSFDx01In4R2cMQOfb?si=E_zXPUphQN-7xhHtc3hy7Q",
+    tags: [
+      "Czech",
+      "Running",
+      "Interview",
+      "Spotify"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-06-15-1",
+    date: "2026-06-15",
+    title: "Letos bylo vítězů víc, moje hra začala už na Terminálu 1 | ROZHOVOR S VÍTĚZEM OŤASEM🦅",
+    show: "Tohle není MÚPI",
+    totalMinutes: 85,
+    cover: "https://i.ytimg.com/vi/FxhMfBV6XCE/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/FxhMfBV6XCE?si=CjgcgngbSf8dV8mC",
+    tags: [
+      "Czech",
+      "Reality TV",
+      "Survivor",
+      "YouTube"
+    ],
+    favourite: false
+  },
+  {
     id: "2026-06-04-1",
     date: "2026-06-04",
     title: "Kika to s muži umí, Standovo přemýšlení mi nahánělo strach | ROZHOVOR S JOHANKOU 🥥",

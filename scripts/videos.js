@@ -4,6 +4,98 @@
 
 const VIDEOS = [
   {
+    id: "2026-06-15-1",
+    date: "2026-06-15",
+    title: "moje první ultra  /  56 km a 2100+ m převýšení. 🏔️",
+    show: "El_Maršis",
+    totalMinutes: 20,
+    cover: "https://i.ytimg.com/vi/ulcMLoQpBOA/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/ulcMLoQpBOA?si=pzjtw3-WjmdWXO65",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultramarathon",
+      "Sports",
+      "Endurance",
+      "Trail Running"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-06-14-1",
+    date: "2026-06-14",
+    title: "I Built a Model to Predict The World Cup..",
+    show: "0xHadyy",
+    totalMinutes: 5,
+    cover: "https://i.ytimg.com/vi/2xAcKzI2R_M/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/2xAcKzI2R_M?si=dFhdNBQVHUiv2I5r",
+    tags: [
+      "English",
+      "Programming",
+      "AI",
+      "Tech",
+      "Machine Learning"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-06-14-2",
+    date: "2026-06-14",
+    title: "Beskydská sedmička: Cesta průměrného hobíka",
+    show: "Fiky z Hořic",
+    totalMinutes: 37,
+    cover: "https://i.ytimg.com/vi/6wBLSkMqoHs/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/6wBLSkMqoHs?si=QSMFAow8MQVDFg-h",
+    tags: [
+      "Czech",
+      "Running",
+      "Ultramarathon",
+      "Sports",
+      "Endurance",
+      "Trail Running"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-06-12-1",
+    date: "2026-06-12",
+    title: "Graphify + Obsidian + Claude Code = CHEAT CODE",
+    show: "Chase AI",
+    totalMinutes: 17,
+    cover: "https://i.ytimg.com/vi/mWLDn49_8HA/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/mWLDn49_8HA?si=r5pGqlR72dq7OV_w",
+    tags: [
+      "English",
+      "Programming",
+      "AI",
+      "Tech",
+      "Claude"
+    ],
+    favourite: false
+  },
+  {
+    id: "2026-06-12-2",
+    date: "2026-06-12",
+    title: "Anthropic begged the world to stop AI… then shipped this",
+    show: "Fireship",
+    totalMinutes: 5,
+    cover: "https://i.ytimg.com/vi/1PBRhm5ZnjU/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://youtu.be/1PBRhm5ZnjU?si=zvxAgKjnRhqzED3x",
+    tags: [
+      "English",
+      "Programming",
+      "AI",
+      "Tech",
+      "Claude"
+    ],
+    favourite: false
+  },
+  {
     id: "2026-06-09-1",
     date: "2026-06-09",
     title: "Claude Code + Graphify = Insane Agentic OS",
