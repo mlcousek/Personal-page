@@ -1,7 +1,7 @@
-# Graph Report - Personal-page  (2026-06-23)
+# Graph Report - Personal-page  (2026-06-16)
 
 ## Corpus Check
-- 118 files · ~2,808,011 words
+- 118 files · ~2,807,959 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b479e51d`
+- Built from commit: `28293244`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -42,8 +42,8 @@
 5. `BLOG_POSTS array` - 7 edges
 6. `Design System` - 6 edges
 7. `Architecture` - 6 edges
-8. `setupFilters()` - 5 edges
-9. `renderEpisodes()` - 5 edges
+8. `renderEpisodes()` - 5 edges
+9. `setupFilters()` - 5 edges
 10. `Personal Webpage – Jiří Mlčoušek` - 5 edges
 
 ## Surprising Connections (you probably didn't know these)

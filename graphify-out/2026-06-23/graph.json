@@ -4,6 +4,156 @@
   "graph": {},
   "nodes": [
     {
+      "label": "settings.local.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "claude_settings_local",
+      "community": 9,
+      "norm_label": "settings.local.json"
+    },
+    {
+      "label": "permissions",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "claude_settings_local_permissions",
+      "community": 9,
+      "norm_label": "permissions"
+    },
+    {
+      "label": "allow",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "claude_settings_local_permissions_allow",
+      "community": 9,
+      "norm_label": "allow"
+    },
+    {
+      "label": "podcasts.js",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_podcasts",
+      "community": 0,
+      "norm_label": "podcasts.js"
+    },
+    {
+      "label": "PODCAST_EPISODES",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "scripts_podcasts_podcast_episodes",
+      "community": 0,
+      "norm_label": "podcast_episodes"
+    },
+    {
+      "label": "groupByDateDescending()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2311",
+      "_origin": "ast",
+      "id": "scripts_podcasts_groupbydatedescending",
+      "community": 0,
+      "norm_label": "groupbydatedescending()"
+    },
+    {
+      "label": "collectAllTags()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2317",
+      "_origin": "ast",
+      "id": "scripts_podcasts_collectalltags",
+      "community": 0,
+      "norm_label": "collectalltags()"
+    },
+    {
+      "label": "collectAllShows()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2323",
+      "_origin": "ast",
+      "id": "scripts_podcasts_collectallshows",
+      "community": 0,
+      "norm_label": "collectallshows()"
+    },
+    {
+      "label": "applyFiltersAndSort()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2329",
+      "_origin": "ast",
+      "id": "scripts_podcasts_applyfiltersandsort",
+      "community": 0,
+      "norm_label": "applyfiltersandsort()"
+    },
+    {
+      "label": "renderEpisodes()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2361",
+      "_origin": "ast",
+      "id": "scripts_podcasts_renderepisodes",
+      "community": 0,
+      "norm_label": "renderepisodes()"
+    },
+    {
+      "label": "renderCard()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2425",
+      "_origin": "ast",
+      "id": "scripts_podcasts_rendercard",
+      "community": 0,
+      "norm_label": "rendercard()"
+    },
+    {
+      "label": "applyUniformHeight()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2494",
+      "_origin": "ast",
+      "id": "scripts_podcasts_applyuniformheight",
+      "community": 0,
+      "norm_label": "applyuniformheight()"
+    },
+    {
+      "label": "escapeHtml()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2533",
+      "_origin": "ast",
+      "id": "scripts_podcasts_escapehtml",
+      "community": 0,
+      "norm_label": "escapehtml()"
+    },
+    {
+      "label": "updateCount()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2543",
+      "_origin": "ast",
+      "id": "scripts_podcasts_updatecount",
+      "community": 0,
+      "norm_label": "updatecount()"
+    },
+    {
+      "label": "setupFilters()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2550",
+      "_origin": "ast",
+      "id": "scripts_podcasts_setupfilters",
+      "community": 0,
+      "norm_label": "setupfilters()"
+    },
+    {
       "label": "videos.js",
       "file_type": "code",
       "source_file": "scripts/videos.js",
@@ -27,7 +177,7 @@
       "label": "groupByDateDescending()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1496",
+      "source_location": "L1477",
       "_origin": "ast",
       "id": "scripts_videos_groupbydatedescending",
       "community": 0,
@@ -37,7 +187,7 @@
       "label": "collectAllTags()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1502",
+      "source_location": "L1483",
       "_origin": "ast",
       "id": "scripts_videos_collectalltags",
       "community": 0,
@@ -47,7 +197,7 @@
       "label": "collectAllShows()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1508",
+      "source_location": "L1489",
       "_origin": "ast",
       "id": "scripts_videos_collectallshows",
       "community": 0,
@@ -57,7 +207,7 @@
       "label": "applyFiltersAndSort()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1514",
+      "source_location": "L1495",
       "_origin": "ast",
       "id": "scripts_videos_applyfiltersandsort",
       "community": 0,
@@ -67,7 +217,7 @@
       "label": "renderVideos()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1535",
+      "source_location": "L1516",
       "_origin": "ast",
       "id": "scripts_videos_rendervideos",
       "community": 0,
@@ -77,7 +227,7 @@
       "label": "renderCard()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1598",
+      "source_location": "L1579",
       "_origin": "ast",
       "id": "scripts_videos_rendercard",
       "community": 0,
@@ -87,7 +237,7 @@
       "label": "applyUniformHeight()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1653",
+      "source_location": "L1633",
       "_origin": "ast",
       "id": "scripts_videos_applyuniformheight",
       "community": 0,
@@ -97,7 +247,7 @@
       "label": "escapeHtml()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1692",
+      "source_location": "L1672",
       "_origin": "ast",
       "id": "scripts_videos_escapehtml",
       "community": 0,
@@ -107,7 +257,7 @@
       "label": "updateCount()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1702",
+      "source_location": "L1682",
       "_origin": "ast",
       "id": "scripts_videos_updatecount",
       "community": 0,
@@ -117,161 +267,11 @@
       "label": "setupFilters()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L1709",
+      "source_location": "L1689",
       "_origin": "ast",
       "id": "scripts_videos_setupfilters",
       "community": 0,
       "norm_label": "setupfilters()"
-    },
-    {
-      "label": "settings.local.json",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "settings.local.json",
-      "id": "claude_settings_local"
-    },
-    {
-      "label": "permissions",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L2",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "permissions",
-      "id": "claude_settings_local_permissions"
-    },
-    {
-      "label": "allow",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 9,
-      "norm_label": "allow",
-      "id": "claude_settings_local_permissions_allow"
-    },
-    {
-      "label": "podcasts.js",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "podcasts.js",
-      "id": "scripts_podcasts"
-    },
-    {
-      "label": "PODCAST_EPISODES",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L6",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "podcast_episodes",
-      "id": "scripts_podcasts_podcast_episodes"
-    },
-    {
-      "label": "groupByDateDescending()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2311",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "groupbydatedescending()",
-      "id": "scripts_podcasts_groupbydatedescending"
-    },
-    {
-      "label": "collectAllTags()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2317",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "collectalltags()",
-      "id": "scripts_podcasts_collectalltags"
-    },
-    {
-      "label": "collectAllShows()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2323",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "collectallshows()",
-      "id": "scripts_podcasts_collectallshows"
-    },
-    {
-      "label": "applyFiltersAndSort()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2329",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "applyfiltersandsort()",
-      "id": "scripts_podcasts_applyfiltersandsort"
-    },
-    {
-      "label": "renderEpisodes()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2361",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "renderepisodes()",
-      "id": "scripts_podcasts_renderepisodes"
-    },
-    {
-      "label": "renderCard()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2425",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "rendercard()",
-      "id": "scripts_podcasts_rendercard"
-    },
-    {
-      "label": "applyUniformHeight()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2494",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "applyuniformheight()",
-      "id": "scripts_podcasts_applyuniformheight"
-    },
-    {
-      "label": "escapeHtml()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2533",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "escapehtml()",
-      "id": "scripts_podcasts_escapehtml"
-    },
-    {
-      "label": "updateCount()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2543",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "updatecount()",
-      "id": "scripts_podcasts_updatecount"
-    },
-    {
-      "label": "setupFilters()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2550",
-      "_origin": "ast",
-      "community": 0,
-      "norm_label": "setupfilters()",
-      "id": "scripts_podcasts_setupfilters"
     },
     {
       "label": "effects.js",
@@ -2086,302 +2086,6 @@
   ],
   "links": [
     {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "41",
-      "weight": 1.0,
-      "source": "claude_md_arch_pattern",
-      "target": "scripts_videos"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "36",
-      "weight": 1.0,
-      "source": "claude_md_i18n_concept",
-      "target": "scripts_videos"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "scripts_videos"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scratch/add_favourites.js",
-      "source_location": "30",
-      "weight": 1.0,
-      "source": "scratch_add_favourites",
-      "target": "scripts_videos"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "scratch/append_css.js",
-      "source_location": "13",
-      "weight": 1.0,
-      "source": "scratch_append_css",
-      "target": "scripts_videos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1384",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_applyfiltersandsort"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1514",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_applyuniformheight"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1378",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_collectallshows"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1372",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_collectalltags"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1553",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_escapehtml"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1366",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_groupbydatedescending"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1468",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_rendercard"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1405",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_rendervideos"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1570",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_setupfilters"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1563",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_updatecount"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "5",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos",
-      "target": "scripts_videos_videos"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "scripts_videos_videos"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/videos.js",
-      "source_location": "line 107",
-      "weight": 1.0,
-      "source": "scripts_videos_rendervideos",
-      "target": "scripts_videos_videos"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "scripts/podcasts.js",
-      "source_location": "2276",
-      "weight": 0.7,
-      "source": "scripts_podcasts_groupbydatedescending",
-      "target": "scripts_videos_groupbydatedescending"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "source_file": "scripts/videos.js",
-      "source_location": "1405",
-      "weight": 1.0,
-      "confidence_score": 0.95,
-      "source": "scripts_videos_rendervideos",
-      "target": "scripts_videos_groupbydatedescending"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1588",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos_setupfilters",
-      "target": "scripts_videos_collectalltags"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1579",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos_setupfilters",
-      "target": "scripts_videos_collectallshows"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1415",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos_rendervideos",
-      "target": "scripts_videos_applyfiltersandsort"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "scripts/videos.js",
-      "source_location": "1405",
-      "weight": 1.0,
-      "source": "scripts_videos_rendervideos",
-      "target": "scripts_videos_rendercard"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1428",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos_rendervideos",
-      "target": "scripts_videos_updatecount"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/videos.js",
-      "source_location": "line 279",
-      "weight": 1.0,
-      "source": "scripts_videos_setupfilters",
-      "target": "scripts_videos_rendervideos"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "scripts/podcasts.js",
-      "source_location": "2390",
-      "weight": 0.7,
-      "source": "scripts_podcasts_rendercard",
-      "target": "scripts_videos_rendercard"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/videos.js",
-      "source_location": "L1500",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_videos_rendercard",
-      "target": "scripts_videos_escapehtml"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "scripts/videos.js",
-      "source_location": "1570",
-      "weight": 1.0,
-      "source": "scripts_videos_setupfilters",
-      "target": "concept_favourite_field"
-    },
-    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".claude/settings.local.json",
@@ -2572,6 +2276,16 @@
       "target": "scripts_podcasts_updatecount"
     },
     {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2276",
+      "weight": 0.7,
+      "source": "scripts_podcasts_groupbydatedescending",
+      "target": "scripts_videos_groupbydatedescending"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -2648,6 +2362,16 @@
       "target": "scripts_podcasts_escapehtml"
     },
     {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2390",
+      "weight": 0.7,
+      "source": "scripts_podcasts_rendercard",
+      "target": "scripts_videos_rendercard"
+    },
+    {
       "relation": "references",
       "confidence": "INFERRED",
       "confidence_score": 0.85,
@@ -2655,6 +2379,282 @@
       "source_location": "2507",
       "weight": 1.0,
       "source": "scripts_podcasts_setupfilters",
+      "target": "concept_favourite_field"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "41",
+      "weight": 1.0,
+      "source": "claude_md_arch_pattern",
+      "target": "scripts_videos"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "36",
+      "weight": 1.0,
+      "source": "claude_md_i18n_concept",
+      "target": "scripts_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "30",
+      "weight": 1.0,
+      "source": "scratch_add_favourites",
+      "target": "scripts_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scratch/append_css.js",
+      "source_location": "13",
+      "weight": 1.0,
+      "source": "scratch_append_css",
+      "target": "scripts_videos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1384",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_applyfiltersandsort"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1514",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_applyuniformheight"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1378",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_collectallshows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1372",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_collectalltags"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1553",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_escapehtml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1366",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_groupbydatedescending"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1468",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_rendercard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1405",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_rendervideos"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1570",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_setupfilters"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1563",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_updatecount"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos",
+      "target": "scripts_videos_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_videos_videos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/videos.js",
+      "source_location": "line 107",
+      "weight": 1.0,
+      "source": "scripts_videos_rendervideos",
+      "target": "scripts_videos_videos"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "scripts/videos.js",
+      "source_location": "1405",
+      "weight": 1.0,
+      "confidence_score": 0.95,
+      "source": "scripts_videos_rendervideos",
+      "target": "scripts_videos_groupbydatedescending"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1588",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos_setupfilters",
+      "target": "scripts_videos_collectalltags"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1579",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos_setupfilters",
+      "target": "scripts_videos_collectallshows"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1415",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos_rendervideos",
+      "target": "scripts_videos_applyfiltersandsort"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/videos.js",
+      "source_location": "1405",
+      "weight": 1.0,
+      "source": "scripts_videos_rendervideos",
+      "target": "scripts_videos_rendercard"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1428",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos_rendervideos",
+      "target": "scripts_videos_updatecount"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/videos.js",
+      "source_location": "line 279",
+      "weight": 1.0,
+      "source": "scripts_videos_setupfilters",
+      "target": "scripts_videos_rendervideos"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/videos.js",
+      "source_location": "L1500",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_videos_rendercard",
+      "target": "scripts_videos_escapehtml"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/videos.js",
+      "source_location": "1570",
+      "weight": 1.0,
+      "source": "scripts_videos_setupfilters",
       "target": "concept_favourite_field"
     },
     {
@@ -5042,5 +5042,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b479e51dda27b52ff36f28d4cffbb361913f5375"
+  "built_at_commit": "28293244c8b059db0510434dd3664b66e98f9c3f"
 }
