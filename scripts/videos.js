@@ -4,6 +4,25 @@
 
 const VIDEOS = [
   {
+    id: "2026-06-23-1",
+    date: "2026-06-23",
+    title: "Microsoft Cloud & AI Frontier Week: Build and Power AI Apps at Scale on Azure",
+    show: "Microsoft",
+    totalMinutes: 60,
+    cover: "https://developer.microsoft.com/en-us/reactor/images/reactor-og-img.png",
+    platform: "microsoft",
+    link: "https://developer.microsoft.com/en-us/reactor/",
+    tags: [
+      "English",
+      "AI",
+      "Azure",
+      "Cloud",
+      "Tech",
+      "Microsoft"
+    ],
+    favourite: false
+  },
+  {
     id: "2026-06-15-1",
     date: "2026-06-15",
     title: "moje první ultra  /  56 km a 2100+ m převýšení. 🏔️",
@@ -1583,6 +1602,7 @@ function renderCard(ep){
   // Create platform icon
   const platformIcon = platform === 'spotify' ? '<div class="platform-icon spotify" title="Spotify"></div>' :
                        platform === 'youtube' ? '<div class="platform-icon youtube" title="YouTube"></div>' :
+                       platform === 'microsoft' ? '<div class="platform-icon microsoft" title="Microsoft"></div>' :
                        '';
   
   // Handle status and progress
