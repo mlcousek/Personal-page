@@ -4,196 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "posts.js",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "scripts_posts",
-      "community": 4,
-      "norm_label": "posts.js"
-    },
-    {
-      "label": "BLOG_POSTS",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "scripts_posts_blog_posts",
-      "community": 4,
-      "norm_label": "blog_posts"
-    },
-    {
-      "label": "getLang()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L160",
-      "_origin": "ast",
-      "id": "scripts_posts_getlang",
-      "community": 4,
-      "norm_label": "getlang()"
-    },
-    {
-      "label": "renderPosts()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L164",
-      "_origin": "ast",
-      "id": "scripts_posts_renderposts",
-      "community": 4,
-      "norm_label": "renderposts()"
-    },
-    {
-      "label": "isHomePage()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L180",
-      "_origin": "ast",
-      "id": "scripts_posts_ishomepage",
-      "community": 4,
-      "norm_label": "ishomepage()"
-    },
-    {
-      "label": "CATEGORY_MAP",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L184",
-      "_origin": "ast",
-      "id": "scripts_posts_category_map",
-      "community": 4,
-      "norm_label": "category_map"
-    },
-    {
-      "label": "cardHTML()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L190",
-      "_origin": "ast",
-      "id": "scripts_posts_cardhtml",
-      "community": 4,
-      "norm_label": "cardhtml()"
-    },
-    {
-      "label": "openPost()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L208",
-      "_origin": "ast",
-      "id": "scripts_posts_openpost",
-      "community": 4,
-      "norm_label": "openpost()"
-    },
-    {
-      "label": "closePost()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L236",
-      "_origin": "ast",
-      "id": "scripts_posts_closepost",
-      "community": 4,
-      "norm_label": "closepost()"
-    },
-    {
-      "label": "renderHomeLatest()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L242",
-      "_origin": "ast",
-      "id": "scripts_posts_renderhomelatest",
-      "community": 4,
-      "norm_label": "renderhomelatest()"
-    },
-    {
-      "label": "sports.js",
-      "file_type": "code",
-      "source_file": "scripts/sports.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "scripts_sports",
-      "community": 17,
-      "norm_label": "sports.js"
-    },
-    {
-      "label": "RACES",
-      "file_type": "code",
-      "source_file": "scripts/sports.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "scripts_sports_races",
-      "community": 1,
-      "norm_label": "races"
-    },
-    {
-      "label": "FUTURE_RACES",
-      "file_type": "code",
-      "source_file": "scripts/sports.js",
-      "source_location": "L199",
-      "_origin": "ast",
-      "id": "scripts_sports_future_races",
-      "community": 17,
-      "norm_label": "future_races"
-    },
-    {
-      "label": "TRAINING_STATS",
-      "file_type": "code",
-      "source_file": "scripts/sports.js",
-      "source_location": "L208",
-      "_origin": "ast",
-      "id": "scripts_sports_training_stats",
-      "community": 17,
-      "norm_label": "training_stats"
-    },
-    {
-      "label": "renderTrainingStats()",
-      "file_type": "code",
-      "source_file": "scripts/sports.js",
-      "source_location": "L249",
-      "_origin": "ast",
-      "id": "scripts_sports_rendertrainingstats",
-      "community": 17,
-      "norm_label": "rendertrainingstats()"
-    },
-    {
-      "label": "renderRaceTable()",
-      "file_type": "code",
-      "source_file": "scripts/sports.js",
-      "source_location": "L319",
-      "_origin": "ast",
-      "id": "scripts_sports_renderracetable",
-      "community": 17,
-      "norm_label": "renderracetable()"
-    },
-    {
-      "label": "renderFutureRaceTable()",
-      "file_type": "code",
-      "source_file": "scripts/sports.js",
-      "source_location": "L339",
-      "_origin": "ast",
-      "id": "scripts_sports_renderfutureracetable",
-      "community": 17,
-      "norm_label": "renderfutureracetable()"
-    },
-    {
-      "label": "openModal()",
-      "file_type": "code",
-      "source_file": "scripts/sports.js",
-      "source_location": "L355",
-      "_origin": "ast",
-      "id": "scripts_sports_openmodal",
-      "community": 17,
-      "norm_label": "openmodal()"
-    },
-    {
-      "label": "closeModal()",
-      "file_type": "code",
-      "source_file": "scripts/sports.js",
-      "source_location": "L402",
-      "_origin": "ast",
-      "id": "scripts_sports_closemodal",
-      "community": 17,
-      "norm_label": "closemodal()"
-    },
-    {
       "label": "videos.js",
       "file_type": "code",
       "source_file": "scripts/videos.js",
@@ -1164,6 +974,106 @@
       "id": "scratch_append_css_fs"
     },
     {
+      "label": "posts.js",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "posts.js",
+      "id": "scripts_posts"
+    },
+    {
+      "label": "BLOG_POSTS",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "blog_posts",
+      "id": "scripts_posts_blog_posts"
+    },
+    {
+      "label": "getLang()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L125",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "getlang()",
+      "id": "scripts_posts_getlang"
+    },
+    {
+      "label": "renderPosts()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L129",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "renderposts()",
+      "id": "scripts_posts_renderposts"
+    },
+    {
+      "label": "isHomePage()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L145",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "ishomepage()",
+      "id": "scripts_posts_ishomepage"
+    },
+    {
+      "label": "CATEGORY_MAP",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L149",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "category_map",
+      "id": "scripts_posts_category_map"
+    },
+    {
+      "label": "cardHTML()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L155",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "cardhtml()",
+      "id": "scripts_posts_cardhtml"
+    },
+    {
+      "label": "openPost()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L173",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "openpost()",
+      "id": "scripts_posts_openpost"
+    },
+    {
+      "label": "closePost()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L201",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "closepost()",
+      "id": "scripts_posts_closepost"
+    },
+    {
+      "label": "renderHomeLatest()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L207",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "renderhomelatest()",
+      "id": "scripts_posts_renderhomelatest"
+    },
+    {
       "label": "redirect.js",
       "file_type": "code",
       "source_file": "scripts/redirect.js",
@@ -1172,6 +1082,76 @@
       "community": 1,
       "norm_label": "redirect.js",
       "id": "scripts_redirect"
+    },
+    {
+      "label": "sports.js",
+      "file_type": "code",
+      "source_file": "scripts/sports.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 17,
+      "norm_label": "sports.js",
+      "id": "scripts_sports"
+    },
+    {
+      "label": "RACES",
+      "file_type": "code",
+      "source_file": "scripts/sports.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 1,
+      "norm_label": "races",
+      "id": "scripts_sports_races"
+    },
+    {
+      "label": "TRAINING_STATS",
+      "file_type": "code",
+      "source_file": "scripts/sports.js",
+      "source_location": "L182",
+      "_origin": "ast",
+      "community": 17,
+      "norm_label": "training_stats",
+      "id": "scripts_sports_training_stats"
+    },
+    {
+      "label": "renderTrainingStats()",
+      "file_type": "code",
+      "source_file": "scripts/sports.js",
+      "source_location": "L201",
+      "_origin": "ast",
+      "community": 3,
+      "norm_label": "rendertrainingstats()",
+      "id": "scripts_sports_rendertrainingstats"
+    },
+    {
+      "label": "renderRaceTable()",
+      "file_type": "code",
+      "source_file": "scripts/sports.js",
+      "source_location": "L234",
+      "_origin": "ast",
+      "community": 17,
+      "norm_label": "renderracetable()",
+      "id": "scripts_sports_renderracetable"
+    },
+    {
+      "label": "openModal()",
+      "file_type": "code",
+      "source_file": "scripts/sports.js",
+      "source_location": "L254",
+      "_origin": "ast",
+      "community": 17,
+      "norm_label": "openmodal()",
+      "id": "scripts_sports_openmodal"
+    },
+    {
+      "label": "closeModal()",
+      "file_type": "code",
+      "source_file": "scripts/sports.js",
+      "source_location": "L301",
+      "_origin": "ast",
+      "community": 17,
+      "norm_label": "closemodal()",
+      "id": "scripts_sports_closemodal"
     },
     {
       "label": "update-strava.mjs",
@@ -1478,6 +1458,32 @@
       "community": 12,
       "norm_label": "package.json \u2013 personal-webpage",
       "id": "root_package"
+    },
+    {
+      "label": "BLOG_POSTS array",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 4,
+      "norm_label": "blog_posts array",
+      "id": "scripts_posts_blogposts"
+    },
+    {
+      "label": "TRAINING_STATS object",
+      "file_type": "code",
+      "source_file": "scripts/sports.js",
+      "source_location": "line 182",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 3,
+      "norm_label": "training_stats object",
+      "id": "scripts_sports_trainingstats"
     },
     {
       "label": "update-strava.mjs \u2013 Strava API data refresher",
@@ -2079,480 +2085,6 @@
     }
   ],
   "links": [
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "scripts_posts"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_blog_posts"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L155",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_cardhtml"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L149",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_category_map"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L201",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_closepost"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L125",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_getlang"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L145",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_ishomepage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L173",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_openpost"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L207",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_renderhomelatest"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L129",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_renderposts"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L177",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts_openpost",
-      "target": "scripts_posts_getlang"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L210",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts_renderhomelatest",
-      "target": "scripts_posts_getlang"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L130",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts_renderposts",
-      "target": "scripts_posts_getlang"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/posts.js",
-      "source_location": "line 137",
-      "weight": 1.0,
-      "source": "scripts_posts_renderposts",
-      "target": "scripts_posts_cardhtml"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L156",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts_cardhtml",
-      "target": "scripts_posts_ishomepage"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/posts.js",
-      "source_location": "line 212",
-      "weight": 1.0,
-      "source": "scripts_posts_renderhomelatest",
-      "target": "scripts_posts_cardhtml"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "scripts/sports.js",
-      "source_location": null,
-      "weight": 0.85,
-      "source": "concept_football_career",
-      "target": "scripts_sports"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "scripts_sports"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sports.js",
-      "source_location": "L301",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sports",
-      "target": "scripts_sports_closemodal"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sports.js",
-      "source_location": "L199",
-      "weight": 1.0,
-      "source": "scripts_sports",
-      "target": "scripts_sports_future_races",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sports.js",
-      "source_location": "L254",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sports",
-      "target": "scripts_sports_openmodal"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sports.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sports",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sports.js",
-      "source_location": "L339",
-      "weight": 1.0,
-      "source": "scripts_sports",
-      "target": "scripts_sports_renderfutureracetable",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sports.js",
-      "source_location": "L234",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sports",
-      "target": "scripts_sports_renderracetable"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sports.js",
-      "source_location": "L201",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sports",
-      "target": "scripts_sports_rendertrainingstats"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/sports.js",
-      "source_location": "L182",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_sports",
-      "target": "scripts_sports_training_stats"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=b7-2025]",
-      "weight": 1.0,
-      "source": "b72025_img_5622",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=b7-2025]",
-      "weight": 1.0,
-      "source": "b72025_img_5624",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.9,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=b7-2025]",
-      "weight": 0.9,
-      "source": "b72025_img_8080",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=jested24-2026]",
-      "weight": 1.0,
-      "source": "jestedwinter242026_321a6841",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=jested24-2026]",
-      "weight": 1.0,
-      "source": "jestedwinter242026_jested_24_winter_2026-96",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=kosir-2026]",
-      "weight": 1.0,
-      "source": "kosir2026_img_1317",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=lh24-2026]",
-      "weight": 1.0,
-      "source": "lh242026_0049_img_9617_1",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=lh24-2026]",
-      "weight": 1.0,
-      "source": "lh242026_55073242584_83b7d721b5_o_1",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=memorial-2026]",
-      "weight": 1.0,
-      "source": "olomoucmarathon2026_img_8773",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=memorial-2026]",
-      "weight": 1.0,
-      "source": "olomoucmarathon2026_img_8776",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=olomouc-2025]",
-      "weight": 1.0,
-      "source": "olomoucmaraton2025_74a875bc-16b0-4030-af00-610e0c66fdae",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=prague-2025]",
-      "weight": 1.0,
-      "source": "pragueMaraton2025_img_6112",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=prague-2025]",
-      "weight": 1.0,
-      "source": "pragueMaraton2025_img_6124",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=prague-2025]",
-      "weight": 1.0,
-      "source": "pragueMaraton2025_img_6169",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "line 255",
-      "weight": 1.0,
-      "source": "scripts_sports_openmodal",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "line 237",
-      "weight": 1.0,
-      "source": "scripts_sports_renderracetable",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=zlin-2026]",
-      "weight": 1.0,
-      "source": "zlinhalf2026__mtk_0077",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=zlin-2026]",
-      "weight": 1.0,
-      "source": "zlinhalf2026__mtk_2364",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "RACES[id=zlin-2026]",
-      "weight": 1.0,
-      "source": "zlinhalf2026_lil_7023",
-      "target": "scripts_sports_races"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/sports.js",
-      "source_location": "line 247",
-      "weight": 1.0,
-      "source": "scripts_sports_renderracetable",
-      "target": "scripts_sports_openmodal"
-    },
     {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
@@ -3942,6 +3474,200 @@
     },
     {
       "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_posts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_blog_posts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_cardhtml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_category_map"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L201",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_closepost"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_getlang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_ishomepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_openpost"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L207",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_renderhomelatest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_renderposts"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L177",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts_openpost",
+      "target": "scripts_posts_getlang"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L210",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts_renderhomelatest",
+      "target": "scripts_posts_getlang"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts_renderposts",
+      "target": "scripts_posts_getlang"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/posts.js",
+      "source_location": "line 135",
+      "weight": 1.0,
+      "source": "scripts_posts_renderposts",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/posts.js",
+      "source_location": "line 137",
+      "weight": 1.0,
+      "source": "scripts_posts_renderposts",
+      "target": "scripts_posts_cardhtml"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L156",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts_cardhtml",
+      "target": "scripts_posts_ishomepage"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/posts.js",
+      "source_location": "line 212",
+      "weight": 1.0,
+      "source": "scripts_posts_renderhomelatest",
+      "target": "scripts_posts_cardhtml"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/posts.js",
+      "source_location": "line 179",
+      "weight": 1.0,
+      "source": "scripts_posts_openpost",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/posts.js",
+      "source_location": "line 212",
+      "weight": 1.0,
+      "source": "scripts_posts_renderhomelatest",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "index.html",
@@ -3949,6 +3675,316 @@
       "weight": 1.0,
       "source": "root_index",
       "target": "scripts_redirect"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/sports.js",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "concept_football_career",
+      "target": "scripts_sports"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_sports"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sports.js",
+      "source_location": "L301",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sports",
+      "target": "scripts_sports_closemodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sports.js",
+      "source_location": "L254",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sports",
+      "target": "scripts_sports_openmodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sports.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sports",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sports.js",
+      "source_location": "L234",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sports",
+      "target": "scripts_sports_renderracetable"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sports.js",
+      "source_location": "L201",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sports",
+      "target": "scripts_sports_rendertrainingstats"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/sports.js",
+      "source_location": "L182",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_sports",
+      "target": "scripts_sports_training_stats"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=b7-2025]",
+      "weight": 1.0,
+      "source": "b72025_img_5622",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=b7-2025]",
+      "weight": 1.0,
+      "source": "b72025_img_5624",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=b7-2025]",
+      "weight": 0.9,
+      "source": "b72025_img_8080",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=jested24-2026]",
+      "weight": 1.0,
+      "source": "jestedwinter242026_321a6841",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=jested24-2026]",
+      "weight": 1.0,
+      "source": "jestedwinter242026_jested_24_winter_2026-96",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=kosir-2026]",
+      "weight": 1.0,
+      "source": "kosir2026_img_1317",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=lh24-2026]",
+      "weight": 1.0,
+      "source": "lh242026_0049_img_9617_1",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=lh24-2026]",
+      "weight": 1.0,
+      "source": "lh242026_55073242584_83b7d721b5_o_1",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=memorial-2026]",
+      "weight": 1.0,
+      "source": "olomoucmarathon2026_img_8773",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=memorial-2026]",
+      "weight": 1.0,
+      "source": "olomoucmarathon2026_img_8776",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=olomouc-2025]",
+      "weight": 1.0,
+      "source": "olomoucmaraton2025_74a875bc-16b0-4030-af00-610e0c66fdae",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=prague-2025]",
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6112",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=prague-2025]",
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6124",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=prague-2025]",
+      "weight": 1.0,
+      "source": "pragueMaraton2025_img_6169",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "line 255",
+      "weight": 1.0,
+      "source": "scripts_sports_openmodal",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "scripts/sports.js",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "scripts_sports_races",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "line 237",
+      "weight": 1.0,
+      "source": "scripts_sports_renderracetable",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=zlin-2026]",
+      "weight": 1.0,
+      "source": "zlinhalf2026__mtk_0077",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=zlin-2026]",
+      "weight": 1.0,
+      "source": "zlinhalf2026__mtk_2364",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "RACES[id=zlin-2026]",
+      "weight": 1.0,
+      "source": "zlinhalf2026_lil_7023",
+      "target": "scripts_sports_races"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "line 205",
+      "weight": 1.0,
+      "source": "scripts_sports_rendertrainingstats",
+      "target": "scripts_sports_trainingstats"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/sports.js",
+      "source_location": "line 247",
+      "weight": 1.0,
+      "source": "scripts_sports_renderracetable",
+      "target": "scripts_sports_openmodal"
     },
     {
       "relation": "references",
@@ -4323,6 +4359,66 @@
       "confidence_score": 1.0,
       "source": "readme_getting_started",
       "target": "readme_run_a_local_dev_server"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/posts.js",
+      "source_location": "BLOG_POSTS[id=masters-done]",
+      "weight": 0.95,
+      "source": "mastersdone_img_9011",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/posts.js",
+      "source_location": "BLOG_POSTS[id=svoc-2026]",
+      "weight": 0.95,
+      "source": "svoc_img_8964",
+      "target": "scripts_posts_blogposts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_sports_trainingstats"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/update-strava.mjs",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "scripts_updatestrava_computestats",
+      "target": "scripts_sports_trainingstats"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/update-strava.mjs",
+      "source_location": "line 132",
+      "weight": 1.0,
+      "source": "scripts_updatestrava_patchsportsjs",
+      "target": "scripts_sports_trainingstats"
     },
     {
       "relation": "implements",
@@ -4946,5 +5042,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "6e0edd806f057f6e06cfaf5f37ec33f9747a090a"
+  "built_at_commit": "b479e51dda27b52ff36f28d4cffbb361913f5375"
 }

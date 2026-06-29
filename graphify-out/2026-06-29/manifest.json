@@ -25,9 +25,9 @@
     "semantic_hash": ""
   },
   "scripts/posts.js": {
-    "mtime": 1782754968.7568464,
-    "ast_hash": "553b10404e1c5dfc9d9ef3636fce9d0f",
-    "semantic_hash": ""
+    "mtime": 1780741194.3108523,
+    "ast_hash": "a6815470d31b7a0973c2ebfd6f97fdce",
+    "semantic_hash": "a6815470d31b7a0973c2ebfd6f97fdce"
   },
   "scripts/redirect.js": {
     "mtime": 1763909776.8369124,
@@ -35,8 +35,8 @@
     "semantic_hash": "03a00dccbcc61eee723b37aaabf7fb28"
   },
   "scripts/sports.js": {
-    "mtime": 1782754962.2423348,
-    "ast_hash": "bb3be65bd284949e910c01530e6dd8c8",
+    "mtime": 1781244916.446807,
+    "ast_hash": "437da475b9d973913f0457710e3cbef4",
     "semantic_hash": ""
   },
   "scripts/update-strava.mjs": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "scripts/videos.js": {
-    "mtime": 1782208792.7077835,
-    "ast_hash": "711f09fdd66c4c48b7e984fe79cd45d3",
+    "mtime": 1782208529.9947107,
+    "ast_hash": "1469e100492663fd9bfc78ceb875959e",
     "semantic_hash": ""
   },
   "README.md": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "pages/sports.html": {
-    "mtime": 1782754732.5112374,
-    "ast_hash": "f452807ee7715887be7118d1612b2980",
+    "mtime": 1781261837.6115525,
+    "ast_hash": "6b7f12c8431131660047b5de34dcd38b",
     "semantic_hash": ""
   },
   "pages/videos.html": {
@@ -762,11 +762,6 @@
   "PRODUCT.md": {
     "mtime": 1781260853.2466786,
     "ast_hash": "f83e44b873ce445e40d31a6ae7942fd8",
-    "semantic_hash": ""
-  },
-  "images/events/mf50-2026/mf50_finish.jpg": {
-    "mtime": 1782754946.6876695,
-    "ast_hash": "9aeb094dc9a1f515d484979a3ce22f38",
     "semantic_hash": ""
   }
 }
