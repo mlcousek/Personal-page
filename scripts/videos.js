@@ -9,9 +9,9 @@ const VIDEOS = [
     title: "Microsoft Cloud & AI Frontier Week: Build and Power AI Apps at Scale on Azure",
     show: "Microsoft",
     totalMinutes: 60,
-    cover: "https://developer.microsoft.com/en-us/reactor/images/reactor-og-img.png",
+    cover: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ZJhNylWFKBhzhBXEPmuPVb1ISsvTYfOrWyKZp4GUTQ&s=10",
     platform: "microsoft",
-    link: "https://developer.microsoft.com/en-us/reactor/",
+    link: "https://www.microsoft.com/en/cloud-ai-frontier-week",
     tags: [
       "English",
       "AI",

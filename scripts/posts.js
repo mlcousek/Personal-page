@@ -1,5 +1,40 @@
 const BLOG_POSTS = [
   {
+    id: 'mf50-2026',
+    date: '2026-06-29',
+    category: 'Running',
+    coverPhoto: '../images/events/mf50-2026/mf50_finish.jpg',
+    photos: ['../images/events/mf50-2026/mf50_finish.jpg'],
+    stravaUrl: 'https://www.strava.com/activities/19089092100',
+    title: {
+      en: 'Surviving MF50: A Brutal School of Mountain Ultra',
+      cs: 'Přežít MF50: Brutální škola horského ultra',
+      es: 'Sobreviviendo a la MF50: Una escuela brutal de ultra de montaña'
+    },
+    excerpt: {
+      en: 'A raw account of Malofatranská 50 (56 km, 4,400m+). High heart rates, two broken poles, toenail issues, and the deepest crisis of my running journey.',
+      cs: 'Surový report z Malofatranské padesátky (56 km, 4 400 m+). Vysoké tepy, dvě zlomené hůlky, zničené nehty a největší krize mé dosavadní běžecké cesty.',
+      es: 'Una crónica cruda de la Malofatranská 50 (56 km, 4.400m+). Frecuencias cardíacas altas, dos bastones rotos, problemas de uñas y la crisis más profunda de mi trayectoria.'
+    },
+    body: {
+      en: `<p>The Malofatranská padesátka (MF50) is not just a run; it is a 56 km lesson in humility with 4,400 meters of vertical climb in the beautiful but unforgiving Malá Fatra mountains. On June 27, 2026, I lined up in Terchová ready for a major mountain test. I finished it, but the price was high and the lessons were priceless.</p>
+<p>My first mistake was pacing. I ran the flat opening kilometers too fast, hitting the first climb with a heart rate of 170+ bpm. I spent nearly half of the race in zones 4 and 5—an intensity no body can sustain for a full day. Soon after calling my partner Alžbeta around km 15, I tripped and snapped my first LEKI pole. I had to improvise and find a sturdy wooden branch in the forest, which became my companion for the next 35 kilometers.</p>
+<p>The course was relentless. Climbing Velký Rozsutec went well, but the descent to K2 (Sedlo Medziholie) was a vertical drop of -35% over steep rocks. With poorly trimmed toenails and quads already battered from aggressive early descents, this section started a long-lasting physical crisis. Things got even worse on the climb to Stoh under the blistering sun. Later, on the second rocky scramble near Suchý and Stratenec, dehydration and exhaustion completely broke me. I was forced to sit in the shade, questioning why I do this, while my watch battery died because I brought a charging cable that didn't fit my powerbank.</p>
+<p>But ultra running is about what you do when everything goes wrong. Some runners on the course helped me with water and a gel, and calling Alžbeta, who was waiting at the finish, gave me the mental strength to keep moving. I managed to jog again, cooled my head in an ice-cold spring, and reached K4. Right after K4, I tripped again and broke my second pole, completing the final descent with only my wooden branch.</p>
+<p>Crossing the finish line in Lipovec with Alžbeta and my family waiting was a moment of pure relief. I finished 22nd overall out of only 68 finishers (with a DNF rate of over 55%) in a time of 11:37:53. The data from my FIT file confirmed everything: a massive drop in heart rate ceiling due to glycogen depletion, and quad overload from too fast a start. It was a brutal school, but it made me a much wiser runner.</p>`,
+      cs: `<p>Malofatranská padesátka (MF50) není jen závod, je to 56 km dlouhá lekce pokory s převýšením 4 400 metrů v krásném, ale nekompromisním prostředí Malé Fatry. 27. června 2026 jsem se postavil na start v Terchově připraven na velkou horskou zkoušku. Cílem jsem sice proběhl, ale cena byla vysoká a lekce k nezaplacení.</p>
+<p>První chybou bylo tempo. Úvodní rovinaté kilometry jsem rozběhl příliš rychle a pod první kopec dorazil s tepem přes 170 bpm. Téměř polovinu závodu jsem strávil v zónách 4 a 5 — v intenzitě, kterou tělo při celodenním závodě neudrží. Krátce po prvním telefonátu s Alžbětkou na 15. kilometru jsem navíc zakopl a zlomil první hůlku LEKI. Musel jsem improvizovat a najít si v lese klacek, se kterým jsem pak odběhl dalších 35 kilometrů.</p>
+<p>Trasa byla neúprosná. Výstup na Velký Rozsutec šel sice dobře, ale následný sestup na K2 (Sedlo Medziholie) byl strmý se sklonem -35 % po skalách. Kvůli neostříhaným nehtům a stehnům zničeným z agresivních úvodních seběhů se zde rozjela velká krize. Ta vyvrcholila na Stohu na přímém slunci. Později, v druhé skalnaté pasáži u Suchého a Stratence, mě úplně dorazila dehydratace a slabost. Musel jsem sedět ve stínu a poprvé v kariéře vážně uvažoval o DNF, zatímco mi zhasínaly hodinky, protože jsem si vzal špatný kabel k powerbance.</p>
+<p>Ultra je ale o tom, jak se zachováte, když se všechno sype. Kluci na trati mi pomohli vodou a gelem a Alžbětka mi do telefonu připomněla, že na mě čekají v cíli. Kousek za studánkou s ledovou vodou jsem chytil druhý dech. Aby toho nebylo málo, na začátku posledního seběhu jsem zlomil i druhou hůlku a dolů kulhal už jen s klackem.</p>
+<p>Cílová rovinka v Lipovci, kde na mě čekala Alžbětka s rodinou, byla obrovským vysvobozením. Dokončil jsem na 22. místě z pouhých 68 finišerů (více než 55 % startovního pole závod nedokončilo) v čase 11:37:53. Analýza FIT souboru zpětně potvrdila vše — totální vyčerpání glykogenu doprovázené poklesem tepového stropu a zničená stehna z rychlého úvodu. Byla to brutální škola, ale odnáším si z ní neskutečně cenné zkušenosti.</p>`,
+      es: `<p>La Malofatranská cincuenta (MF50) no es solo una carrera; es una lección de humildad de 56 km con 4.400 metros de desnivel positivo en la hermosa pero implacable cordillera de Malá Fatra. El 27 de junio de 2026, me alineé en Terchová listo para una gran prueba de montaña. Crucé la meta, pero el precio fue alto y las lecciones, invaluables.</p>
+<p>Mi primer error fue el ritmo. Corrí los kilómetros llanos iniciales demasiado rápido, llegando a la primera subida con una frecuencia cardíaca de más de 170 ppm. Pasé casi la mitad de la carrera en las zonas 4 y 5, una intensidad que ningún cuerpo puede sostener durante todo un día. Poco después de hablar por teléfono con Alžbeta en el km 15, tropecé y rompí mi primer bastón LEKI. Tuve que improvisar y buscar una rama de madera en el bosque, que se convirtió en mi compañera durante los siguientes 35 kilómetros.</p>
+<p>El recorrido fue implacable. La subida al Velký Rozsutec fue buena, pero el descenso hacia K2 (Sedlo Medziholie) fue una caída vertical de -35% sobre rocas escarpadas. Con las uñas de los pies mal cortadas y los cuádriceps ya destrozados por los descensos agresivos del principio, esta sección inició una larga crisis física. Las cosas empeoraron en la subida a Stoh bajo un sol abrasador. Más tarde, en la segunda sección rocosa cerca de Suchý y Stratenec, la deshidratación y el cansancio me rompieron por completo. Me vi obligado a sentarme a la sombra, preguntándome por qué hacía esto, mientras la batería de mi reloj se agotaba porque llevé un cable que no encajaba en mi powerbank.</p>
+<p>Pero el ultra running se trata de lo que haces cuando todo sale mal. Algunos corredores en la ruta me ayudaron con agua y un gel, y llamar a Alžbeta, que esperaba en la meta, me dio la fuerza mental para seguir moviéndome. Logré volver a trotar, me refresqué la cabeza en un manantial helado y llegué a K4. Justo después de K4, tropecé de nuevo y rompí mi segundo bastón, completando el descenso final solo con mi rama de madera.</p>
+<p>Cruzar la línea de meta en Lipovec con Alžbeta y mi familia esperando fue un momento de puro alivio. Terminé 22.º en la general de solo 68 finalistas (con una tasa de DNF de más del 55%) en un tiempo de 11:37:53. Los datos de mi archivo FIT confirmaron todo: una caída masiva en el techo de la frecuencia cardíaca debido al agotamiento de glucógeno y sobrecarga de cuádriceps por un inicio demasiado rápido. Fue una escuela brutal, pero me convirtió en un corredor mucho más sabio.</p>`
+    }
+  },
+  {
     id: 'masters-done',
     date: '2026-06-06',
     category: 'Life',

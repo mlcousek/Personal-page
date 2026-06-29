@@ -1,5 +1,24 @@
 const RACES = [
   {
+    id: 'mf50-2026',
+    name: 'Malofatranská stovka (MF50) 2026',
+    date: '2026-06-27',
+    category: 'Trail Ultra',
+    distance: '56 km',
+    time: '11:37:53',
+    placement: '22nd overall · 6th in category',
+    badge: 'Ultra',
+    badgeClass: 'race-badge--ultra',
+    highlight: true,
+    story: {
+      en: 'A brutal 56 km mountain ultra in Malá Fatra with 4,400m elevation gain. Started way too fast (HR 170+ bpm) and paid for it with multiple severe crises on Stoh and the hot rock scrambling sections, eventually dropping my HR ceiling. Broke both LEKI poles during the race and finished using a wooden stick. Despite the suffering and watch battery dying at km 51, pushed through to finish 22nd overall and 6th in category, welcomed by family at the finish line. An invaluable lesson in pacing and nutrition.',
+      cs: 'Brutální 56 km horské ultra v Malé Fatře s převýšením 4 400 m. Odstartoval jsem příliš rychle (tep 170+ bpm) a zaplatil za to několika těžkými krizemi na Stohu a rozpálených skalních pasážích. Během závodu jsem zlomil obě hůlky LEKI a do cíle dobíhal s dřevěným klackem. I přes velké trápení a vybití hodinek na 51. km jsem se kousnul a dokončil na 22. místě celkově (6. v kategorii), kdy mě v cíli přivítala rodina. Neskutečně cenná lekce ohledně tempa a doplňování energie.',
+      es: 'Un brutal ultra de montaña de 56 km en Malá Fatra con 4.400 m de desnivel positivo. Empecé demasiado rápido (FC 170+ ppm) y lo pagué con múltiples crisis severas en Stoh y en los tramos de roca caliente. Rompí ambos bastones LEKI durante la carrera y terminé usando un palo de madera. A pesar del sufrimiento y de que la batería del reloj se agotó en el km 51, logré terminar en el puesto 22 de la general y 6.º de la categoría, recibido por mi familia en la meta. Una lección invaluable de ritmo y nutrición.'
+    },
+    stravaUrl: 'https://www.strava.com/activities/19089092100',
+    photos: ['../images/events/mf50-2026/mf50_finish.jpg']
+  },
+  {
     id: 'zlin-2026',
     name: '11. Festivalový půlmaraton Zlín',
     date: '2026-05-31',
@@ -178,7 +197,6 @@ const RACES = [
 ];
 
 const FUTURE_RACES = [
-  { name: 'MF50 (Malofatranská stovka)', date: '27.6.2026', distance: '50 km', link: 'https://www.mfstovka.eu/trasy', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
   { name: 'Road Classics Vysočina - Dlouhá', date: '18.7.2026', distance: '102 km', link: 'https://www.roadclassics.cz/propozice/vysocina', badge: 'Bike', badgeClass: 'race-badge--bike' },
   { name: 'Beskydský Ultra Trail', date: '1.8.2026', distance: '86 km', link: 'https://www.beskydskyultratrail.cz/', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
   { name: 'B7 (Beskydská sedmička)', date: '28.8.2026', distance: '101 km', link: 'https://www.beskydskasedmicka.cz/', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
