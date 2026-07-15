@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "scripts/podcasts.js": {
-    "mtime": 1784113955.8019595,
-    "ast_hash": "b53fc3f78b7dadfd8a2966a9a6cfdaa4",
+    "mtime": 1784115992.6758196,
+    "ast_hash": "4e8ad4733e880b6607a32b794a8369e3",
     "semantic_hash": ""
   },
   "scripts/posts.js": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "scripts/videos.js": {
-    "mtime": 1784115111.7037687,
-    "ast_hash": "540459b9815257b1243753327c4fb344",
+    "mtime": 1784117045.4238856,
+    "ast_hash": "d9185ef652a72aad30b91beda32a8062",
     "semantic_hash": ""
   },
   "README.md": {
@@ -522,11 +522,6 @@
   ".claude/skills/impeccable/scripts/pin.mjs": {
     "mtime": 1781148064.0,
     "ast_hash": "867ca7fdded9987e84a128a3b4fb6bab",
-    "semantic_hash": ""
-  },
-  "scratch/generate_tags_i18n.js": {
-    "mtime": 1780985286.6432734,
-    "ast_hash": "95fce2a68bfa3d105d6f82ecf541b7ef",
     "semantic_hash": ""
   },
   "scripts/effects.js": {
