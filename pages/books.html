@@ -90,7 +90,7 @@
             </div>
         </div>
         <!-- Read -->
-        <div class="book" data-year="2026" data-favourite="true" data-comment="Mind changer. I recommend it to everyone who want to be successful in future years." data-tags="psychology,self-improvement,mindset">
+        <div class="book" data-year="2026" data-favourite="true" data-comment-en="Mind changer. I recommend it to everyone who wants to be successful in the coming years." data-comment-cs="Změnilo mi pohled na svět. Doporučuji každému, kdo chce být úspěšný v nadcházejících letech." data-comment-es="Un libro que cambia la perspectiva. Lo recomiendo a todos los que quieran tener éxito en los próximos años." data-tags="psychology,self-improvement,mindset">
             <img class="book__img" src="https://www.databazeknih.cz/img/books/58_/581143/bmid_od-chaosu-ke-smyslu.webp?v=1760976638" alt="Od chaosu ke smyslu">
             <time datetime="2026">7/2026</time>
             <div class="book-content">
@@ -104,7 +104,7 @@
                 </div>
             </div>
         </div>
-        <div class="book" data-year="2026" data-favourite="false" data-comment="Great insights on circadian rhythms that are good to know to everyone." data-tags="health,biology,performance">
+        <div class="book" data-year="2026" data-favourite="false" data-comment-en="Great insights on circadian rhythms that are good to know to everyone." data-comment-cs="Skvělé poznatky o cirkadiánních rytmech, které by měl znát každý." data-comment-es="Grandes conocimientos sobre ritmos circadianos que todo el mundo debería conocer." data-tags="health,biology,performance">
             <img class="book__img" src="https://www.databazeknih.cz/img/books/45_/457576/cirkadianni-kody0I8TA-SQg-.jpg?v=1604599969" alt="Cirkadiánní kód">
             <time datetime="2026">6/2026</time>
             <div class="book-content">
@@ -172,7 +172,7 @@
                 </div>
             </div>
         </div>
-        <div class="book" data-year="2026" data-favourite="true" data-comment="Totally surprised me — I felt every second of it. After this I really want to visit Mexico one day." data-tags="sport,running,biography">
+        <div class="book" data-year="2026" data-favourite="true" data-comment-en="Totally surprised me — I felt every second of it. After this I really want to visit Mexico one day." data-comment-cs="Totálně mě překvapila — cítil jsem každou sekundu příběhu. Po přečtení chci jednou navštívit Mexiko." data-comment-es="Me sorprendió totalmente — sentí cada segundo del relato. Después de esto, tengo muchas ganas de visitar México algún día." data-tags="sport,running,biography">
             <img class="book__img" src="https://www.databazeknih.cz/img/books/72_/72487/bmid_zrozeni-k-behu-HNw-72487.jpg?v=1539030848" alt="Born to Run / Zrozeni k běhu">
             <time datetime="2026">3/2026</time>
             <div class="book-content">
@@ -536,7 +536,8 @@
             }
 
             // Comment note
-            var comment = book.dataset.comment;
+            var commentKey = 'comment' + lang.charAt(0).toUpperCase() + lang.slice(1);
+            var comment = book.dataset[commentKey] || book.dataset.commentEn || book.dataset.comment;
             if (comment && comment.trim()) {
               var c = book.querySelector('.book-content');
               if (c) {
