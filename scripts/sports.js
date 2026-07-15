@@ -200,41 +200,42 @@ const FUTURE_RACES = [
   { name: 'Road Classics Vysočina - Dlouhá', date: '18.7.2026', distance: '102 km', link: 'https://www.roadclassics.cz/propozice/vysocina', badge: 'Bike', badgeClass: 'race-badge--bike' },
   { name: 'Beskydský Ultra Trail', date: '1.8.2026', distance: '86 km', link: 'https://www.beskydskyultratrail.cz/', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
   { name: 'B7 (Beskydská sedmička)', date: '28.8.2026', distance: '101 km', link: 'https://www.beskydskasedmicka.cz/', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
-  { name: '24DS (24 hod. na Dlouhých stráních)', date: '3.10.2026', distance: '24h', link: 'https://moravaflow.cz/dlouhe-strane/24ds/', badge: '24H', badgeClass: 'race-badge--ultra' }
+  { name: '24DS (24 hod. na Dlouhých stráních)', date: '3.10.2026', distance: '24h', link: 'https://moravaflow.cz/dlouhe-strane/24ds/', badge: '24H', badgeClass: 'race-badge--ultra' },
+  { name: 'Ladermon Trail', date: '10.10.2026', distance: '30 km / 940m+', link: 'https://ladermontrail.cz/', badge: 'Trail', badgeClass: 'race-badge--trail' }
 ];
 
 // --- Training overview data ---
 // Run `node scripts/update-strava.mjs` to regenerate this block.
 const TRAINING_STATS = {
-  updatedLabel: 'June 2026',
+  updatedLabel: 'July 2026',
   cards: [
-    { icon: '🏃', value: '221 km',    label: { en: 'Running this month', cs: 'Běh tento měsíc',       es: 'Carrera este mes'     } },
-    { icon: '⬆️', value: '2,230 m',  label: { en: 'Running elevation',  cs: 'Běžecké převýšení',     es: 'Desnivel corriendo'   } },
-    { icon: '📅', value: '16',         label: { en: 'Running sessions',   cs: 'Běžecké tréninky',      es: 'Sesiones de carrera'  } },
-    { icon: '🚴', value: '91 km',     label: { en: 'Cycling this month', cs: 'Cyklistika tento měsíc',es: 'Ciclismo este mes'     } },
-    { icon: '⛰️', value: '860 m',    label: { en: 'Cycling elevation',  cs: 'Cyklistické převýšení', es: 'Desnivel en bici'     } },
-    { icon: '📏', value: '42.2 km',   label: { en: 'Longest run',        cs: 'Nejdelší běh',          es: 'Carrera más larga'    } },
-    { icon: '⏱️', value: '5:50 /km', label: { en: 'Avg run pace',       cs: 'Průměrné tempo',        es: 'Ritmo promedio'       } },
-    { icon: '🕐', value: '21h 30m',   label: { en: 'Run time',           cs: 'Čas běhu',              es: 'Tiempo corriendo'     } },
-    { icon: '🔥', value: '16,220',    label: { en: 'Calories (run)',     cs: 'Kalorie (běh)',         es: 'Calorías (carrera)'   } },
+    { icon: '🏃', value: '112 km',    label: { en: 'Running this month', cs: 'Běh tento měsíc',       es: 'Carrera este mes'     } },
+    { icon: '⬆️', value: '1,782 m',  label: { en: 'Running elevation',  cs: 'Běžecké převýšení',     es: 'Desnivel corriendo'   } },
+    { icon: '📅', value: '6',          label: { en: 'Running sessions',   cs: 'Běžecké tréninky',      es: 'Sesiones de carrera'  } },
+    { icon: '🚴', value: '0 km',      label: { en: 'Cycling this month', cs: 'Cyklistika tento měsíc',es: 'Ciclismo este mes'     } },
+    { icon: '⛰️', value: '1,514 m',  label: { en: 'Cycling elevation',  cs: 'Cyklistické převýšení', es: 'Desnivel en bici'     } },
+    { icon: '📏', value: '54.1 km',   label: { en: 'Longest run',        cs: 'Nejdelší běh',          es: 'Carrera más larga'    } },
+    { icon: '⏱️', value: '7:16 /km', label: { en: 'Avg run pace',       cs: 'Průměrné tempo',        es: 'Ritmo promedio'       } },
+    { icon: '🕐', value: '~20h',      label: { en: 'Run time',           cs: 'Čas běhu',              es: 'Tiempo corriendo'     } },
+    { icon: '🔥', value: '8,715',     label: { en: 'Calories (run)',     cs: 'Kalorie (běh)',         es: 'Calorías (carrera)'   } },
   ],
   weekly: [
-    { label: 'May 5–11',     km: 22.3 },
-    { label: 'May 12–18',    km: 71.1 },
-    { label: 'May 19–25',    km: 53.7 },
-    { label: 'May 26–Jun 1', km: 41.9 },
-    { label: 'Jun 2–8',      km: 42.4 },
+    { label: 'Jun 9–15',     km: 24.7 },
+    { label: 'Jun 16–22',    km: 70.6 },
+    { label: 'Jun 23–29',    km: 59.0 },
+    { label: 'Jun 30–Jul 6', km: 0.0  },
+    { label: 'Jul 7–13',     km: 100.0 },
   ],
   yearCards: [
-    { icon: '🏃', value: '1,447 km',   label: { en: 'Running this year',  cs: 'Běh letos',              es: 'Carrera este año'      } },
-    { icon: '🚴', value: '1,981 km',   label: { en: 'Cycling this year',  cs: 'Kolo letos',             es: 'Ciclismo este año'     } },
-    { icon: '⬆️', value: '33,640 m',  label: { en: 'Run elevation YTD',  cs: 'Převýšení běh letos',   es: 'Desnivel carrera año'  } },
-    { icon: '📅', value: '93',          label: { en: 'Run sessions YTD',   cs: 'Tréninků běh letos',    es: 'Sesiones carrera año'  } },
-    { icon: '📊', value: '63 km/wk',   label: { en: 'Avg weekly km',      cs: 'Průměr km/týden',        es: 'Km semanales promedio' } },
-    { icon: '🕐', value: '159h',        label: { en: 'Total run hours',    cs: 'Celkový čas běhu',       es: 'Horas totales carrera' } },
-    { icon: '⏱️', value: '6:35 /km',  label: { en: 'Avg pace YTD',       cs: 'Průměrné tempo letos',   es: 'Ritmo promedio año'    } },
-    { icon: '🏆', value: '378',         label: { en: 'Strava PRs set YTD',        cs: 'Strava Osobáků letos',          es: 'Strava Récords personales año'} },
-    { icon: '🔥', value: '111,420',     label: { en: 'Calories YTD (run)', cs: 'Kalorie letos (běh)',    es: 'Calorías año (carrera)' } },
+    { icon: '🏃', value: '1,714 km',   label: { en: 'Running this year',  cs: 'Běh letos',              es: 'Carrera este año'      } },
+    { icon: '🚴', value: '2,029 km',   label: { en: 'Cycling this year',  cs: 'Kolo letos',             es: 'Ciclismo este año'     } },
+    { icon: '⬆️', value: '42,630 m',  label: { en: 'Run elevation YTD',  cs: 'Převýšení běh letos',   es: 'Desnivel carrera año'  } },
+    { icon: '📅', value: '110',         label: { en: 'Run sessions YTD',   cs: 'Tréninků běh letos',    es: 'Sesiones carrera año'  } },
+    { icon: '📊', value: '60 km/wk',   label: { en: 'Avg weekly km',      cs: 'Průměr km/týden',        es: 'Km semanales promedio' } },
+    { icon: '🕐', value: '194h',        label: { en: 'Total run hours',    cs: 'Celkový čas běhu',       es: 'Horas totales carrera' } },
+    { icon: '⏱️', value: '6:43 /km',  label: { en: 'Avg pace YTD',       cs: 'Průměrné tempo letos',   es: 'Ritmo promedio rok'    } },
+    { icon: '🏆', value: '430',         label: { en: 'Strava PRs set YTD',        cs: 'Strava Osobáků letos',          es: 'Strava Récords personales año'} },
+    { icon: '🔥', value: '135,100',     label: { en: 'Calories YTD (run)', cs: 'Kalorie letos (běh)',    es: 'Calorías año (carrera)' } },
   ],
   monthly: [
     { label: 'Jan', runKm: 232.8, bikeKm: 114.4 },
@@ -242,7 +243,8 @@ const TRAINING_STATS = {
     { label: 'Mar', runKm: 321.3, bikeKm: 674.8 },
     { label: 'Apr', runKm: 377.2, bikeKm: 383.1 },
     { label: 'May', runKm: 273.2, bikeKm: 168.9 },
-    { label: 'Jun', runKm:  42.4, bikeKm:   0.0 },
+    { label: 'Jun', runKm: 196.6, bikeKm:  48.1 },
+    { label: 'Jul*',runKm: 112.1, bikeKm:   0.0 },
   ],
 };
 
