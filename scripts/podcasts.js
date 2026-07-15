@@ -146,7 +146,7 @@ const PODCAST_EPISODES = [
     platform: "spotify",
     link: "https://open.spotify.com/episode/0e4dRIOgQ8T2OEcHG5dk3K",
     tags: ["Czech", "Running", "Trail Running", "Spotify"],
-    favourite: false
+    favourite: TextTrackCue
   },
   {
     id: "2026-07-05-1",
@@ -266,7 +266,7 @@ const PODCAST_EPISODES = [
     platform: "spotify",
     link: "https://open.spotify.com/episode/7nGQKcj4Cp6jxd5awzJ5xo",
     tags: ["Czech", "Interview", "Spotify"],
-    favourite: false
+    favourite: true
   },
   {
     id: "2026-06-18-1",
