@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "scripts/podcasts.js": {
-    "mtime": 1784113955.8019595,
-    "ast_hash": "b53fc3f78b7dadfd8a2966a9a6cfdaa4",
+    "mtime": 1781593674.6138186,
+    "ast_hash": "9ea7c3bc6a8a513f9e90a633849f9920",
     "semantic_hash": ""
   },
   "scripts/posts.js": {
@@ -35,8 +35,8 @@
     "semantic_hash": "03a00dccbcc61eee723b37aaabf7fb28"
   },
   "scripts/sports.js": {
-    "mtime": 1784102387.9485278,
-    "ast_hash": "40d2410368a46855e06742eefede88a6",
+    "mtime": 1782754962.2423348,
+    "ast_hash": "bb3be65bd284949e910c01530e6dd8c8",
     "semantic_hash": ""
   },
   "scripts/update-strava.mjs": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "scripts/videos.js": {
-    "mtime": 1784115111.7037687,
-    "ast_hash": "540459b9815257b1243753327c4fb344",
+    "mtime": 1782208792.7077835,
+    "ast_hash": "711f09fdd66c4c48b7e984fe79cd45d3",
     "semantic_hash": ""
   },
   "README.md": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "pages/books.html": {
-    "mtime": 1784112182.7225127,
-    "ast_hash": "f260b00b741504026ee248b4af7cac15",
+    "mtime": 1781593418.6480181,
+    "ast_hash": "b8949a523f6b9c8c3e20d6aa093285f9",
     "semantic_hash": ""
   },
   "pages/index.html": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "pages/sports.html": {
-    "mtime": 1784102398.636961,
-    "ast_hash": "e5a0bd79d67cd155b4b64f4fb81d5c9d",
+    "mtime": 1782754732.5112374,
+    "ast_hash": "f452807ee7715887be7118d1612b2980",
     "semantic_hash": ""
   },
   "pages/videos.html": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "scripts/tags_i18n.js": {
-    "mtime": 1784112388.9334962,
-    "ast_hash": "7d5eb2a0c440be8a801e9fba699885c3",
+    "mtime": 1781505397.6980965,
+    "ast_hash": "cd1e7f2bcd63b616b970a52dc69d7137",
     "semantic_hash": ""
   },
   ".claude/agents/impeccable-manual-edit-applier.md": {
