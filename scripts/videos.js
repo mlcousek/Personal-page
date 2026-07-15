@@ -13,7 +13,8 @@ const VIDEOS = [
     platform: "youtube",
     link: "https://youtu.be/ZZmeB4qub_U",
     tags: ["English", "Running", "Ultramarathon", "Ultra", "Endurance"],
-    favourite: false
+    favourite: true,
+    comment: "What did I just see???"
   },
   {
     id: "2026-07-14-2",
@@ -25,7 +26,8 @@ const VIDEOS = [
     platform: "youtube",
     link: "https://youtu.be/ypWE0ZmblZk",
     tags: ["English", "Running", "Ultramarathon", "Ultra", "Endurance"],
-    favourite: false
+    favourite: true,
+    comment: "Crazy, my new favourite runner."
   },
   {
     id: "2026-07-14-3",
@@ -61,7 +63,8 @@ const VIDEOS = [
     platform: "youtube",
     link: "https://youtu.be/AJcGrJc1CVw",
     tags: ["English", "Running", "Trail Running"],
-    favourite: false
+    favourite: false,
+    comment: "New shoes on the way!"
   },
   {
     id: "2026-07-08-1",
@@ -73,7 +76,8 @@ const VIDEOS = [
     platform: "youtube",
     link: "https://youtu.be/9yWOnDKptY8",
     tags: ["Slovak", "Running", "Ultramarathon", "Ultra", "Trail Running", "Endurance"],
-    favourite: false
+    favourite: true,
+    comment: "I ran MF50 there and it was brutal. I can only imagine how hard MF100 is."
   },
   {
     id: "2026-07-07-1",
@@ -109,7 +113,7 @@ const VIDEOS = [
     platform: "youtube",
     link: "https://youtu.be/MbXwKTZoLQ4",
     tags: ["English", "Running", "Ultramarathon", "Ultra", "Endurance"],
-    favourite: false
+    favourite: TextTrackCue
   },
   {
     id: "2026-07-01-1",
@@ -145,7 +149,7 @@ const VIDEOS = [
     platform: "youtube",
     link: "https://youtu.be/cyud2zNdNNc",
     tags: ["Czech", "Cycling"],
-    favourite: false
+    favourite: true
   },
   {
     id: "2026-07-01-4",
