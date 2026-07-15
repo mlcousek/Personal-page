@@ -1,7 +1,7 @@
-# Graph Report - Personal-page  (2026-06-29)
+# Graph Report - Personal-page  (2026-07-15)
 
 ## Corpus Check
-- 118 files · ~2,817,085 words
+- 118 files · ~2,818,884 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6e0edd80`
+- Built from commit: `a7dd98d8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -41,10 +41,10 @@
 4. `init()` - 7 edges
 5. `Design System` - 6 edges
 6. `Architecture` - 6 edges
-7. `setupFilters()` - 5 edges
-8. `renderEpisodes()` - 5 edges
+7. `renderEpisodes()` - 5 edges
+8. `setupFilters()` - 5 edges
 9. `Personal Webpage – Jiří Mlčoušek` - 5 edges
-10. `getLang()` - 4 edges
+10. `renderCard()` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Podium ceremony at B7 2025 race (16th edition), Frenstat pod Radhostem` --references--> `RACES`  [INFERRED]
@@ -120,7 +120,7 @@ Nodes (8): Football Career, Football match action photo - player #6 in neon gree
   images/PKI_course.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **62 isolated node(s):** `BLOG_POSTS`, `CATEGORY_MAP`, `FUTURE_RACES`, `TRAINING_STATS`, `allow` (+57 more)
+- **62 isolated node(s):** `PODCAST_EPISODES`, `TAGS_I18N`, `BLOG_POSTS`, `CATEGORY_MAP`, `FUTURE_RACES` (+57 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -137,7 +137,7 @@ _Questions this graph is uniquely positioned to answer:_
   _`RACES` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `renderVideos()` (e.g. with `groupByDateDescending()` and `renderCard()`) actually correct?**
   _`renderVideos()` has 2 INFERRED edges - model-reasoned connections that need verification._
-- **What connects `BLOG_POSTS`, `CATEGORY_MAP`, `FUTURE_RACES` to the rest of the system?**
+- **What connects `PODCAST_EPISODES`, `TAGS_I18N`, `BLOG_POSTS` to the rest of the system?**
   _62 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `i18n & Shared Components` be split into smaller, more focused modules?**
   _Cohesion score 0.10887096774193548 - nodes in this community are weakly interconnected._

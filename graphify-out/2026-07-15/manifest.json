@@ -20,8 +20,8 @@
     "semantic_hash": ""
   },
   "scripts/podcasts.js": {
-    "mtime": 1781593674.6138186,
-    "ast_hash": "9ea7c3bc6a8a513f9e90a633849f9920",
+    "mtime": 1784115992.6758196,
+    "ast_hash": "4e8ad4733e880b6607a32b794a8369e3",
     "semantic_hash": ""
   },
   "scripts/posts.js": {
@@ -35,8 +35,8 @@
     "semantic_hash": "03a00dccbcc61eee723b37aaabf7fb28"
   },
   "scripts/sports.js": {
-    "mtime": 1782754962.2423348,
-    "ast_hash": "bb3be65bd284949e910c01530e6dd8c8",
+    "mtime": 1784102387.9485278,
+    "ast_hash": "40d2410368a46855e06742eefede88a6",
     "semantic_hash": ""
   },
   "scripts/update-strava.mjs": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "scripts/videos.js": {
-    "mtime": 1782208792.7077835,
-    "ast_hash": "711f09fdd66c4c48b7e984fe79cd45d3",
+    "mtime": 1784117045.4238856,
+    "ast_hash": "d9185ef652a72aad30b91beda32a8062",
     "semantic_hash": ""
   },
   "README.md": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "pages/books.html": {
-    "mtime": 1781593418.6480181,
-    "ast_hash": "b8949a523f6b9c8c3e20d6aa093285f9",
+    "mtime": 1784115719.474198,
+    "ast_hash": "bbc214f0f6ea5dd445f0564472d95a1f",
     "semantic_hash": ""
   },
   "pages/index.html": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "pages/sports.html": {
-    "mtime": 1782754732.5112374,
-    "ast_hash": "f452807ee7715887be7118d1612b2980",
+    "mtime": 1784102398.636961,
+    "ast_hash": "e5a0bd79d67cd155b4b64f4fb81d5c9d",
     "semantic_hash": ""
   },
   "pages/videos.html": {
@@ -524,19 +524,14 @@
     "ast_hash": "867ca7fdded9987e84a128a3b4fb6bab",
     "semantic_hash": ""
   },
-  "scratch/generate_tags_i18n.js": {
-    "mtime": 1780985286.6432734,
-    "ast_hash": "95fce2a68bfa3d105d6f82ecf541b7ef",
-    "semantic_hash": ""
-  },
   "scripts/effects.js": {
     "mtime": 1781503596.7285032,
     "ast_hash": "6da351f64aec94929e74b37b3c38bef2",
     "semantic_hash": ""
   },
   "scripts/tags_i18n.js": {
-    "mtime": 1781505397.6980965,
-    "ast_hash": "cd1e7f2bcd63b616b970a52dc69d7137",
+    "mtime": 1784112388.9334962,
+    "ast_hash": "7d5eb2a0c440be8a801e9fba699885c3",
     "semantic_hash": ""
   },
   ".claude/agents/impeccable-manual-edit-applier.md": {
