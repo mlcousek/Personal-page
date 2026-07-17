@@ -146,7 +146,7 @@ const PODCAST_EPISODES = [
     platform: "spotify",
     link: "https://open.spotify.com/episode/0e4dRIOgQ8T2OEcHG5dk3K",
     tags: ["Czech", "Running", "Trail Running", "Spotify"],
-    favourite: TextTrackCue
+    favourite: true
   },
   {
     id: "2026-07-05-1",
