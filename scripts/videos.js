@@ -113,7 +113,7 @@ const VIDEOS = [
     platform: "youtube",
     link: "https://youtu.be/MbXwKTZoLQ4",
     tags: ["English", "Running", "Ultramarathon", "Ultra", "Endurance"],
-    favourite: TextTrackCue
+    favourite: true
   },
   {
     id: "2026-07-01-1",
