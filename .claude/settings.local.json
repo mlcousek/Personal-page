@@ -27,7 +27,16 @@
       "Bash(curl -s \"https://www.youtube.com/watch?v=6wBLSkMqoHs\")",
       "Bash(curl -s \"https://www.youtube.com/watch?v=mWLDn49_8HA\")",
       "Bash(curl -s \"https://www.youtube.com/watch?v=1PBRhm5ZnjU\")",
-      "Bash(curl -s \"https://open.spotify.com/episode/4tLCpSFDx01In4R2cMQOfb\")"
+      "Bash(curl -s \"https://open.spotify.com/episode/4tLCpSFDx01In4R2cMQOfb\")",
+      "Bash(magick --version)",
+      "Bash(ffmpeg -version)",
+      "Bash(python -c \"from PIL import Image; print\\('pillow ok'\\)\")",
+      "PowerShell(magick *)",
+      "PowerShell(python -c \"from PIL import Image; print\\('pillow ok'\\)\" 2>$null)",
+      "PowerShell(python3 -c \"from PIL import Image; print\\('pillow ok'\\)\" 2>$null)",
+      "PowerShell(python -c \"import wand; print\\('wand ok'\\)\" 2>$null)",
+      "PowerShell(python --version 2>$null; python3 --version 2>$null; node --version 2>$null)",
+      "PowerShell(pip install *)"
     ]
   }
 }
