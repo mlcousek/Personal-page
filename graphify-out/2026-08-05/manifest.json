@@ -1,7 +1,7 @@
 {
   ".claude/settings.local.json": {
-    "mtime": 1785916633.6098588,
-    "ast_hash": "a4e7188fd4533376f8e5aa6503293fd9",
+    "mtime": 1781593655.7518432,
+    "ast_hash": "e1adb53985a6c654503abc3a90b3aa7e",
     "semantic_hash": ""
   },
   ".vscode/mcp.json": {
@@ -20,13 +20,13 @@
     "semantic_hash": ""
   },
   "scripts/podcasts.js": {
-    "mtime": 1785915541.2652504,
-    "ast_hash": "ec4da6d4ea5735ced3dcca7fe6c89ae9",
+    "mtime": 1784115992.6758196,
+    "ast_hash": "4e8ad4733e880b6607a32b794a8369e3",
     "semantic_hash": ""
   },
   "scripts/posts.js": {
-    "mtime": 1785916816.9137704,
-    "ast_hash": "7443b9790580d5b8adfb7114fb3f65c5",
+    "mtime": 1782754968.7568464,
+    "ast_hash": "553b10404e1c5dfc9d9ef3636fce9d0f",
     "semantic_hash": ""
   },
   "scripts/redirect.js": {
@@ -45,8 +45,8 @@
     "semantic_hash": ""
   },
   "scripts/videos.js": {
-    "mtime": 1785916002.1223707,
-    "ast_hash": "d0169a28de040f3655e6543aee7c4bec",
+    "mtime": 1784117597.7418485,
+    "ast_hash": "124fe8cbeadc6dd05f44c335b091cfc4",
     "semantic_hash": ""
   },
   "README.md": {
@@ -762,16 +762,6 @@
   "images/events/mf50-2026/mf50_finish.jpg": {
     "mtime": 1782754946.6876695,
     "ast_hash": "9aeb094dc9a1f515d484979a3ce22f38",
-    "semantic_hash": ""
-  },
-  "images/events/but2026/IMG_3411.jpg": {
-    "mtime": 1785916649.6830244,
-    "ast_hash": "f12eaedcc367fd317dc78c95d9b87e79",
-    "semantic_hash": ""
-  },
-  "images/events/but2026/IMG_6176.JPG": {
-    "mtime": 1785916078.332916,
-    "ast_hash": "c0a72ec59fee71b639f79c86c0777bcd",
     "semantic_hash": ""
   }
 }

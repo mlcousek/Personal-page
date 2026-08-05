@@ -4,256 +4,6 @@
   "graph": {},
   "nodes": [
     {
-      "label": "settings.local.json",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "claude_settings_local",
-      "community": 9,
-      "norm_label": "settings.local.json"
-    },
-    {
-      "label": "permissions",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L2",
-      "_origin": "ast",
-      "id": "claude_settings_local_permissions",
-      "community": 9,
-      "norm_label": "permissions"
-    },
-    {
-      "label": "allow",
-      "file_type": "code",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L3",
-      "_origin": "ast",
-      "id": "claude_settings_local_permissions_allow",
-      "community": 9,
-      "norm_label": "allow"
-    },
-    {
-      "label": "podcasts.js",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "scripts_podcasts",
-      "community": 0,
-      "norm_label": "podcasts.js"
-    },
-    {
-      "label": "PODCAST_EPISODES",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L6",
-      "_origin": "ast",
-      "id": "scripts_podcasts_podcast_episodes",
-      "community": 0,
-      "norm_label": "podcast_episodes"
-    },
-    {
-      "label": "groupByDateDescending()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2839",
-      "_origin": "ast",
-      "id": "scripts_podcasts_groupbydatedescending",
-      "community": 0,
-      "norm_label": "groupbydatedescending()"
-    },
-    {
-      "label": "collectAllTags()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2845",
-      "_origin": "ast",
-      "id": "scripts_podcasts_collectalltags",
-      "community": 0,
-      "norm_label": "collectalltags()"
-    },
-    {
-      "label": "collectAllShows()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2851",
-      "_origin": "ast",
-      "id": "scripts_podcasts_collectallshows",
-      "community": 0,
-      "norm_label": "collectallshows()"
-    },
-    {
-      "label": "applyFiltersAndSort()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2857",
-      "_origin": "ast",
-      "id": "scripts_podcasts_applyfiltersandsort",
-      "community": 0,
-      "norm_label": "applyfiltersandsort()"
-    },
-    {
-      "label": "renderEpisodes()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2889",
-      "_origin": "ast",
-      "id": "scripts_podcasts_renderepisodes",
-      "community": 0,
-      "norm_label": "renderepisodes()"
-    },
-    {
-      "label": "renderCard()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2953",
-      "_origin": "ast",
-      "id": "scripts_podcasts_rendercard",
-      "community": 0,
-      "norm_label": "rendercard()"
-    },
-    {
-      "label": "applyUniformHeight()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L3022",
-      "_origin": "ast",
-      "id": "scripts_podcasts_applyuniformheight",
-      "community": 0,
-      "norm_label": "applyuniformheight()"
-    },
-    {
-      "label": "escapeHtml()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L3061",
-      "_origin": "ast",
-      "id": "scripts_podcasts_escapehtml",
-      "community": 0,
-      "norm_label": "escapehtml()"
-    },
-    {
-      "label": "updateCount()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L3071",
-      "_origin": "ast",
-      "id": "scripts_podcasts_updatecount",
-      "community": 0,
-      "norm_label": "updatecount()"
-    },
-    {
-      "label": "setupFilters()",
-      "file_type": "code",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L3078",
-      "_origin": "ast",
-      "id": "scripts_podcasts_setupfilters",
-      "community": 0,
-      "norm_label": "setupfilters()"
-    },
-    {
-      "label": "posts.js",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "scripts_posts",
-      "community": 4,
-      "norm_label": "posts.js"
-    },
-    {
-      "label": "BLOG_POSTS",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L1",
-      "_origin": "ast",
-      "id": "scripts_posts_blog_posts",
-      "community": 4,
-      "norm_label": "blog_posts"
-    },
-    {
-      "label": "getLang()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L195",
-      "_origin": "ast",
-      "id": "scripts_posts_getlang",
-      "community": 4,
-      "norm_label": "getlang()"
-    },
-    {
-      "label": "renderPosts()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L199",
-      "_origin": "ast",
-      "id": "scripts_posts_renderposts",
-      "community": 4,
-      "norm_label": "renderposts()"
-    },
-    {
-      "label": "isHomePage()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L215",
-      "_origin": "ast",
-      "id": "scripts_posts_ishomepage",
-      "community": 4,
-      "norm_label": "ishomepage()"
-    },
-    {
-      "label": "CATEGORY_MAP",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L219",
-      "_origin": "ast",
-      "id": "scripts_posts_category_map",
-      "community": 4,
-      "norm_label": "category_map"
-    },
-    {
-      "label": "cardHTML()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L225",
-      "_origin": "ast",
-      "id": "scripts_posts_cardhtml",
-      "community": 4,
-      "norm_label": "cardhtml()"
-    },
-    {
-      "label": "openPost()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L243",
-      "_origin": "ast",
-      "id": "scripts_posts_openpost",
-      "community": 4,
-      "norm_label": "openpost()"
-    },
-    {
-      "label": "closePost()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L271",
-      "_origin": "ast",
-      "id": "scripts_posts_closepost",
-      "community": 4,
-      "norm_label": "closepost()"
-    },
-    {
-      "label": "renderHomeLatest()",
-      "file_type": "code",
-      "source_file": "scripts/posts.js",
-      "source_location": "L277",
-      "_origin": "ast",
-      "id": "scripts_posts_renderhomelatest",
-      "community": 4,
-      "norm_label": "renderhomelatest()"
-    },
-    {
       "label": "videos.js",
       "file_type": "code",
       "source_file": "scripts/videos.js",
@@ -277,7 +27,7 @@
       "label": "groupByDateDescending()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2102",
+      "source_location": "L1764",
       "_origin": "ast",
       "id": "scripts_videos_groupbydatedescending",
       "community": 0,
@@ -287,7 +37,7 @@
       "label": "collectAllTags()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2108",
+      "source_location": "L1770",
       "_origin": "ast",
       "id": "scripts_videos_collectalltags",
       "community": 0,
@@ -297,7 +47,7 @@
       "label": "collectAllShows()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2114",
+      "source_location": "L1776",
       "_origin": "ast",
       "id": "scripts_videos_collectallshows",
       "community": 0,
@@ -307,7 +57,7 @@
       "label": "applyFiltersAndSort()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2120",
+      "source_location": "L1782",
       "_origin": "ast",
       "id": "scripts_videos_applyfiltersandsort",
       "community": 0,
@@ -317,7 +67,7 @@
       "label": "renderVideos()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2141",
+      "source_location": "L1803",
       "_origin": "ast",
       "id": "scripts_videos_rendervideos",
       "community": 0,
@@ -327,7 +77,7 @@
       "label": "renderCard()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2204",
+      "source_location": "L1866",
       "_origin": "ast",
       "id": "scripts_videos_rendercard",
       "community": 0,
@@ -337,7 +87,7 @@
       "label": "applyUniformHeight()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2259",
+      "source_location": "L1921",
       "_origin": "ast",
       "id": "scripts_videos_applyuniformheight",
       "community": 0,
@@ -347,7 +97,7 @@
       "label": "escapeHtml()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2298",
+      "source_location": "L1960",
       "_origin": "ast",
       "id": "scripts_videos_escapehtml",
       "community": 0,
@@ -357,7 +107,7 @@
       "label": "updateCount()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2308",
+      "source_location": "L1970",
       "_origin": "ast",
       "id": "scripts_videos_updatecount",
       "community": 0,
@@ -367,11 +117,131 @@
       "label": "setupFilters()",
       "file_type": "code",
       "source_file": "scripts/videos.js",
-      "source_location": "L2315",
+      "source_location": "L1977",
       "_origin": "ast",
       "id": "scripts_videos_setupfilters",
       "community": 0,
       "norm_label": "setupfilters()"
+    },
+    {
+      "label": "podcasts.js",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "podcasts.js",
+      "id": "scripts_podcasts"
+    },
+    {
+      "label": "PODCAST_EPISODES",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L6",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "podcast_episodes",
+      "id": "scripts_podcasts_podcast_episodes"
+    },
+    {
+      "label": "groupByDateDescending()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2611",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "groupbydatedescending()",
+      "id": "scripts_podcasts_groupbydatedescending"
+    },
+    {
+      "label": "collectAllTags()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2617",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "collectalltags()",
+      "id": "scripts_podcasts_collectalltags"
+    },
+    {
+      "label": "collectAllShows()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2623",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "collectallshows()",
+      "id": "scripts_podcasts_collectallshows"
+    },
+    {
+      "label": "applyFiltersAndSort()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2629",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "applyfiltersandsort()",
+      "id": "scripts_podcasts_applyfiltersandsort"
+    },
+    {
+      "label": "renderEpisodes()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2661",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "renderepisodes()",
+      "id": "scripts_podcasts_renderepisodes"
+    },
+    {
+      "label": "renderCard()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2725",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "rendercard()",
+      "id": "scripts_podcasts_rendercard"
+    },
+    {
+      "label": "applyUniformHeight()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2794",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "applyuniformheight()",
+      "id": "scripts_podcasts_applyuniformheight"
+    },
+    {
+      "label": "escapeHtml()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2833",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "escapehtml()",
+      "id": "scripts_podcasts_escapehtml"
+    },
+    {
+      "label": "updateCount()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2843",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "updatecount()",
+      "id": "scripts_podcasts_updatecount"
+    },
+    {
+      "label": "setupFilters()",
+      "file_type": "code",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2850",
+      "_origin": "ast",
+      "community": 0,
+      "norm_label": "setupfilters()",
+      "id": "scripts_podcasts_setupfilters"
     },
     {
       "label": "tags_i18n.js",
@@ -402,6 +272,106 @@
       "community": 10,
       "norm_label": "translatetag()",
       "id": "scripts_tags_i18n_translatetag"
+    },
+    {
+      "label": "posts.js",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "posts.js",
+      "id": "scripts_posts"
+    },
+    {
+      "label": "BLOG_POSTS",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "blog_posts",
+      "id": "scripts_posts_blog_posts"
+    },
+    {
+      "label": "getLang()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L160",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "getlang()",
+      "id": "scripts_posts_getlang"
+    },
+    {
+      "label": "renderPosts()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L164",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "renderposts()",
+      "id": "scripts_posts_renderposts"
+    },
+    {
+      "label": "isHomePage()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L180",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "ishomepage()",
+      "id": "scripts_posts_ishomepage"
+    },
+    {
+      "label": "CATEGORY_MAP",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L184",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "category_map",
+      "id": "scripts_posts_category_map"
+    },
+    {
+      "label": "cardHTML()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L190",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "cardhtml()",
+      "id": "scripts_posts_cardhtml"
+    },
+    {
+      "label": "openPost()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L208",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "openpost()",
+      "id": "scripts_posts_openpost"
+    },
+    {
+      "label": "closePost()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L236",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "closepost()",
+      "id": "scripts_posts_closepost"
+    },
+    {
+      "label": "renderHomeLatest()",
+      "file_type": "code",
+      "source_file": "scripts/posts.js",
+      "source_location": "L242",
+      "_origin": "ast",
+      "community": 4,
+      "norm_label": "renderhomelatest()",
+      "id": "scripts_posts_renderhomelatest"
     },
     {
       "label": "sports.js",
@@ -492,6 +462,36 @@
       "community": 17,
       "norm_label": "closemodal()",
       "id": "scripts_sports_closemodal"
+    },
+    {
+      "label": "settings.local.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "settings.local.json",
+      "id": "claude_settings_local"
+    },
+    {
+      "label": "permissions",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "permissions",
+      "id": "claude_settings_local_permissions"
+    },
+    {
+      "label": "allow",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "community": 9,
+      "norm_label": "allow",
+      "id": "claude_settings_local_permissions_allow"
     },
     {
       "label": "effects.js",
@@ -2080,466 +2080,6 @@
   ],
   "links": [
     {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L2",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_settings_local",
-      "target": "claude_settings_local_permissions"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": ".claude/settings.local.json",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "claude_settings_local_permissions",
-      "target": "claude_settings_local_permissions_allow"
-    },
-    {
-      "relation": "rationale_for",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "41",
-      "weight": 1.0,
-      "source": "claude_md_arch_pattern",
-      "target": "scripts_podcasts"
-    },
-    {
-      "relation": "conceptually_related_to",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "CLAUDE.md",
-      "source_location": "36",
-      "weight": 1.0,
-      "source": "claude_md_i18n_concept",
-      "target": "scripts_podcasts"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "scripts_podcasts"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scratch/add_favourites.js",
-      "source_location": "31",
-      "weight": 1.0,
-      "source": "scratch_add_favourites",
-      "target": "scripts_podcasts"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scratch/add_favourites_podcasts3.js",
-      "source_location": "2",
-      "weight": 1.0,
-      "source": "scratch_add_favourites_podcasts",
-      "target": "scripts_podcasts"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "scratch/append_css.js",
-      "source_location": "13",
-      "weight": 1.0,
-      "source": "scratch_append_css",
-      "target": "scripts_podcasts"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2294",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_applyfiltersandsort"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2451",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_applyuniformheight"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2288",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_collectallshows"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2282",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_collectalltags"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2490",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_escapehtml"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2276",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_groupbydatedescending"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "6",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_podcast_episodes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2390",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_rendercard"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2326",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_renderepisodes"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2507",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_setupfilters"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2500",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts",
-      "target": "scripts_podcasts_updatecount"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "scripts/podcasts.js",
-      "source_location": "2276",
-      "weight": 0.7,
-      "source": "scripts_podcasts_groupbydatedescending",
-      "target": "scripts_videos_groupbydatedescending"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "INFERRED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "2326",
-      "weight": 1.0,
-      "confidence_score": 0.95,
-      "source": "scripts_podcasts_renderepisodes",
-      "target": "scripts_podcasts_groupbydatedescending"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2525",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts_setupfilters",
-      "target": "scripts_podcasts_collectalltags"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2516",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts_setupfilters",
-      "target": "scripts_podcasts_collectallshows"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2337",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts_renderepisodes",
-      "target": "scripts_podcasts_applyfiltersandsort"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "scripts/podcasts.js",
-      "source_location": "2326",
-      "weight": 1.0,
-      "source": "scripts_podcasts_renderepisodes",
-      "target": "scripts_podcasts_rendercard"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2350",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts_renderepisodes",
-      "target": "scripts_podcasts_updatecount"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/podcasts.js",
-      "source_location": "L2436",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_podcasts_rendercard",
-      "target": "scripts_podcasts_escapehtml"
-    },
-    {
-      "relation": "semantically_similar_to",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "scripts/podcasts.js",
-      "source_location": "2390",
-      "weight": 0.7,
-      "source": "scripts_podcasts_rendercard",
-      "target": "scripts_videos_rendercard"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.85,
-      "source_file": "scripts/podcasts.js",
-      "source_location": "2507",
-      "weight": 1.0,
-      "source": "scripts_podcasts_setupfilters",
-      "target": "concept_favourite_field"
-    },
-    {
-      "relation": "references",
-      "confidence": "INFERRED",
-      "confidence_score": 0.95,
-      "source_file": "concept",
-      "source_location": null,
-      "weight": 1.0,
-      "source": "concept_jirik_mlcousek",
-      "target": "scripts_posts"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_blog_posts"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L155",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_cardhtml"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L149",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_category_map"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L201",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_closepost"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L125",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_getlang"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L145",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_ishomepage"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L173",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_openpost"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L207",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_renderhomelatest"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L129",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts",
-      "target": "scripts_posts_renderposts"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L177",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts_openpost",
-      "target": "scripts_posts_getlang"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L210",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts_renderhomelatest",
-      "target": "scripts_posts_getlang"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L130",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts_renderposts",
-      "target": "scripts_posts_getlang"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/posts.js",
-      "source_location": "line 137",
-      "weight": 1.0,
-      "source": "scripts_posts_renderposts",
-      "target": "scripts_posts_cardhtml"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "scripts/posts.js",
-      "source_location": "L156",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "scripts_posts_cardhtml",
-      "target": "scripts_posts_ishomepage"
-    },
-    {
-      "relation": "calls",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "scripts/posts.js",
-      "source_location": "line 212",
-      "weight": 1.0,
-      "source": "scripts_posts_renderhomelatest",
-      "target": "scripts_posts_cardhtml"
-    },
-    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -2720,6 +2260,16 @@
       "target": "scripts_videos_videos"
     },
     {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2276",
+      "weight": 0.7,
+      "source": "scripts_podcasts_groupbydatedescending",
+      "target": "scripts_videos_groupbydatedescending"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "INFERRED",
@@ -2795,6 +2345,16 @@
       "target": "scripts_videos_rendervideos"
     },
     {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2390",
+      "weight": 0.7,
+      "source": "scripts_podcasts_rendercard",
+      "target": "scripts_videos_rendercard"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
@@ -2816,6 +2376,262 @@
       "target": "concept_favourite_field"
     },
     {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "41",
+      "weight": 1.0,
+      "source": "claude_md_arch_pattern",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "CLAUDE.md",
+      "source_location": "36",
+      "weight": 1.0,
+      "source": "claude_md_i18n_concept",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites.js",
+      "source_location": "31",
+      "weight": 1.0,
+      "source": "scratch_add_favourites",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scratch/add_favourites_podcasts3.js",
+      "source_location": "2",
+      "weight": 1.0,
+      "source": "scratch_add_favourites_podcasts",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scratch/append_css.js",
+      "source_location": "13",
+      "weight": 1.0,
+      "source": "scratch_append_css",
+      "target": "scripts_podcasts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2294",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_applyfiltersandsort"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2451",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_applyuniformheight"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2288",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_collectallshows"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2282",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_collectalltags"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2490",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_escapehtml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2276",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_groupbydatedescending"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_podcast_episodes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2390",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_rendercard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2326",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_renderepisodes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2507",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_setupfilters"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2500",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts",
+      "target": "scripts_podcasts_updatecount"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2326",
+      "weight": 1.0,
+      "confidence_score": 0.95,
+      "source": "scripts_podcasts_renderepisodes",
+      "target": "scripts_podcasts_groupbydatedescending"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2525",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts_setupfilters",
+      "target": "scripts_podcasts_collectalltags"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2516",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts_setupfilters",
+      "target": "scripts_podcasts_collectallshows"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2337",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts_renderepisodes",
+      "target": "scripts_podcasts_applyfiltersandsort"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2326",
+      "weight": 1.0,
+      "source": "scripts_podcasts_renderepisodes",
+      "target": "scripts_podcasts_rendercard"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2350",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts_renderepisodes",
+      "target": "scripts_podcasts_updatecount"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/podcasts.js",
+      "source_location": "L2436",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_podcasts_rendercard",
+      "target": "scripts_podcasts_escapehtml"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "scripts/podcasts.js",
+      "source_location": "2507",
+      "weight": 1.0,
+      "source": "scripts_podcasts_setupfilters",
+      "target": "concept_favourite_field"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "scripts/tags_i18n.js",
@@ -2834,6 +2650,170 @@
       "confidence_score": 1.0,
       "source": "scripts_tags_i18n",
       "target": "scripts_tags_i18n_translatetag"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "concept",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concept_jirik_mlcousek",
+      "target": "scripts_posts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_blog_posts"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L155",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_cardhtml"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_category_map"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L201",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_closepost"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L125",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_getlang"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_ishomepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L173",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_openpost"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L207",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_renderhomelatest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L129",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts",
+      "target": "scripts_posts_renderposts"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L177",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts_openpost",
+      "target": "scripts_posts_getlang"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L210",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts_renderhomelatest",
+      "target": "scripts_posts_getlang"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L130",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts_renderposts",
+      "target": "scripts_posts_getlang"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/posts.js",
+      "source_location": "line 137",
+      "weight": 1.0,
+      "source": "scripts_posts_renderposts",
+      "target": "scripts_posts_cardhtml"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/posts.js",
+      "source_location": "L156",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "scripts_posts_cardhtml",
+      "target": "scripts_posts_ishomepage"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/posts.js",
+      "source_location": "line 212",
+      "weight": 1.0,
+      "source": "scripts_posts_renderhomelatest",
+      "target": "scripts_posts_cardhtml"
     },
     {
       "relation": "conceptually_related_to",
@@ -3144,6 +3124,26 @@
       "weight": 1.0,
       "source": "scripts_sports_renderracetable",
       "target": "scripts_sports_openmodal"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_local",
+      "target": "claude_settings_local_permissions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "claude_settings_local_permissions",
+      "target": "claude_settings_local_permissions_allow"
     },
     {
       "relation": "contains",
@@ -4946,5 +4946,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "1e96a2372b4e8244e5cbf132a692f178a27adeb9"
+  "built_at_commit": "1f8a4213db2db237c22c2da562c1df57f78ab820"
 }
