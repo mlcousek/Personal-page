@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "scripts/posts.js": {
-    "mtime": 1788847849.9446628,
-    "ast_hash": "962940ca8bafecc08b81cffb11fc70a6",
+    "mtime": 1785917548.309342,
+    "ast_hash": "9484ee48caf84e4648782618d2641f4b",
     "semantic_hash": ""
   },
   "scripts/redirect.js": {
@@ -35,8 +35,8 @@
     "semantic_hash": "03a00dccbcc61eee723b37aaabf7fb28"
   },
   "scripts/sports.js": {
-    "mtime": 1788847849.9399958,
-    "ast_hash": "7b9483362143754c956145e4a8c9ce82",
+    "mtime": 1784102387.9485278,
+    "ast_hash": "40d2410368a46855e06742eefede88a6",
     "semantic_hash": ""
   },
   "scripts/update-strava.mjs": {
@@ -772,21 +772,6 @@
   "images/events/but2026/IMG_6176.JPG": {
     "mtime": 1785916913.8035004,
     "ast_hash": "c0a72ec59fee71b639f79c86c0777bcd",
-    "semantic_hash": ""
-  },
-  "images/events/b72026/61de1404-65dc-406d-a3f2-bf146807dd9a.jpg": {
-    "mtime": 1788454561.7611334,
-    "ast_hash": "69d7a33c04fb243f5a8e4da87eaa0343",
-    "semantic_hash": ""
-  },
-  "images/events/b72026/IMG_0774.jpg": {
-    "mtime": 1788167668.2199702,
-    "ast_hash": "5cc11bbec254c3dc795653d4c6142583",
-    "semantic_hash": ""
-  },
-  "images/events/b72026/MAC06476.jpg": {
-    "mtime": 1788267766.5306778,
-    "ast_hash": "86554829ea22f23bb5039d9d5caaba88",
     "semantic_hash": ""
   }
 }
