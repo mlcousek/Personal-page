@@ -1,5 +1,69 @@
 const RACES = [
   {
+    id: 'b7-2026',
+    name: 'B7 – IMOS Beskydská Sedmička 2026',
+    date: '2026-08-28',
+    category: 'Ultra',
+    distance: '101 km · 5,603 m+',
+    time: '13:57:12',
+    placement: '31st / 3,015 · 🥈 2nd in category',
+    badge: 'Ultra',
+    badgeClass: 'race-badge--ultra',
+    highlight: true,
+    story: {
+      en: 'The target race of the season, and the goal was a single number: sub-14 hours. Result: 13:57:12 — inside by 2 minutes 48 seconds, 55 minutes faster than the same course in 2025, and a jump from 53rd to 31st of 3,015 starters. 101 km and 5,603 m of climbing along the Beskydy ridge, starting at 23:00 in Třinec, with 6 hours 57 minutes run in darkness and 11.3 mm of rain falling on the way over Lysá hora. The race was won in the details: 13:53 of total stopped time against 58:05 a year earlier, 82.3 % of the race held in Zone 2, and never a place lost at any checkpoint. Best of all — Radhošť and Velký Javorník, climbed in hour 13, went faster than the first climb of the night.',
+      cs: 'Hlavní závod sezóny a cíl byl jediné číslo: pod 14 hodin. Výsledek: 13:57:12 — o 2 minuty a 48 sekund pod cílem, o 55 minut rychleji než na stejné trati v roce 2025 a posun z 53. na 31. místo z 3 015 startujících. 101 km a 5 603 m převýšení po hřebeni Beskyd, start ve 23:00 v Třinci, 6 hodin a 57 minut běhu ve tmě a 11,3 mm deště cestou přes Lysou horu. Závod se vyhrál v detailech: 13:53 celkového času ve stoje proti loňským 58:05, 82,3 % závodu v zóně 2 a ani na jedné kontrole ztráta pozice. A nejlepší na tom je — Radhošť a Velký Javorník ve 13. hodině závodu jsem vyběhl rychleji než první kopec té noci.',
+      es: 'La carrera objetivo de la temporada, y la meta era un solo número: bajar de 14 horas. Resultado: 13:57:12, dentro por 2 minutos y 48 segundos, 55 minutos más rápido que en el mismo recorrido en 2025 y un salto del puesto 53 al 31 de 3.015 participantes. 101 km y 5.603 m de desnivel por la cresta de los Beskydy, con salida a las 23:00 en Třinec, 6 horas y 57 minutos corriendo en la oscuridad y 11,3 mm de lluvia al pasar por Lysá hora. La carrera se ganó en los detalles: 13:53 de tiempo total detenido frente a 58:05 el año anterior, el 82,3 % de la carrera en Zona 2 y ni un solo puesto perdido en ningún control. Lo mejor: Radhošť y Velký Javorník, subidos en la hora 13, fueron más rápidos que la primera subida de la noche.'
+    },
+    stravaUrl: 'https://www.strava.com/activities/19948322867',
+    photos: [
+      '../images/events/b72026/MAC06476.jpg',
+      '../images/events/b72026/IMG_0774.jpg',
+      '../images/events/b72026/61de1404-65dc-406d-a3f2-bf146807dd9a.jpg'
+    ]
+  },
+  {
+    id: 'but-2026',
+    name: 'Beskydský Ultra Trail (BUT) 2026',
+    date: '2026-08-01',
+    category: 'Trail Ultra',
+    distance: '86 km · 3,658 m+',
+    time: '11:17:22',
+    placement: '19th overall · 8th in category',
+    badge: 'Ultra',
+    badgeClass: 'race-badge--ultra',
+    highlight: false,
+    story: {
+      en: 'A full loop of the Beskydy ridge from Bumbálka via Pustevny, Ostravice, Lysá hora and Bílý Kříž. The legs felt heavy from km 2, yet I was still 24 minutes ahead of plan at halfway in Ostravice and finished 17 minutes behind it — a 41-minute swing across the back half. Nutrition saved the day: two litres between every pair of aid stations, real food and salt at each one, and no bonk at any point. The heart rate ceiling collapsed after Lysá hora but the pace never did. Finished 19th overall and 8th in category in 11:17:22, without knowing my position until the finish line.',
+      cs: 'Celý okruh beskydským hřebenem z Bumbálky přes Pustevny, Ostravici, Lysou horu a Bílý Kříž. Nohy byly těžké už od 2. kilometru, přesto jsem byl v půlce v Ostravici stále 24 minut před plánem a do cíle dorazil 17 minut za ním — obrat 41 minut ve druhé polovině. Závod zachránila výživa: dva litry mezi každými dvěma bufety, jídlo a sůl na každém stanovišti a ani jednou žádný kolaps. Strop tepu po Lysé hoře spadl, ale tempo ne. V cíli 19. místo celkově a 8. v kategorii v čase 11:17:22, aniž bych až do cílové pásky tušil, na jaké pozici jsem.',
+      es: 'Una vuelta completa a la cresta de los Beskydy desde Bumbálka pasando por Pustevny, Ostravice, Lysá hora y Bílý Kříž. Las piernas pesaban desde el km 2 y aun así llegué al ecuador en Ostravice con 24 minutos de ventaja sobre el plan y crucé la meta 17 minutos por detrás: un vuelco de 41 minutos en la segunda mitad. La nutrición salvó el día: dos litros entre cada par de avituallamientos, comida real y sal en cada uno, y ningún bajón en todo el recorrido. El techo de pulsaciones se derrumbó tras Lysá hora, pero el ritmo no. Terminé 19.º en la general y 8.º de categoría en 11:17:22, sin saber mi posición hasta la línea de meta.'
+    },
+    stravaUrl: 'https://www.strava.com/activities/19560243980',
+    photos: [
+      '../images/events/but2026/IMG_6176.JPG',
+      '../images/events/but2026/IMG_3411.jpg'
+    ]
+  },
+  {
+    id: 'roadclassics-2026',
+    name: 'Road Classics Vysočina 2026',
+    date: '2026-07-18',
+    category: 'Gran Fondo',
+    distance: '104 km · 1,912 m+',
+    time: '3:41:27',
+    placement: 'Gran fondo · 28.2 km/h avg',
+    badge: 'Bike',
+    badgeClass: 'race-badge--bike',
+    highlight: false,
+    story: {
+      en: 'My first road gran fondo — 104 km and 1,912 m of climbing through the Vysočina hills, and a Christmas present from Alžbeta that turned into one of the best days of the year. Wet roads and a tight peloton made the opening nervous, but once the tarmac dried I flew: from km 20 to km 60 I was attacking, chasing groups and bombing every descent. The chain dropped three times in that stretch, each one costing a group. At km 65 the wall arrived and the last 40 km became a grind through the hills — suffering, but never stopping. Finished in 3:41:27 at 28.2 km/h average. Definitely not my last gran fondo.',
+      cs: 'Můj první silniční gran fondo — 104 km a 1 912 m převýšení přes kopce Vysočiny a vánoční dárek od Alžbety, ze kterého se stal jeden z nejlepších dnů roku. Mokré silnice a kompaktní balík dělaly začátek nervózním, ale jakmile asfalt oschl, letěl jsem: od 20. do 60. km jsem útočil, sjížděl skupinky a bombil každý sjezd. Třikrát mi v té pasáži spadl řetěz, pokaždé mě to stálo skupinu. Na 65. km přišla zeď a posledních 40 km byla dřina přes kopce — trápení, ale bez zastavení. V cíli 3:41:27 při průměru 28,2 km/h. Rozhodně to nebyl můj poslední závod tohoto formátu.',
+      es: 'Mi primera gran fondo en carretera: 104 km y 1.912 m de desnivel por las colinas de Vysočina, y un regalo de Navidad de Alžbeta que se convirtió en uno de los mejores días del año. Las carreteras mojadas y un pelotón compacto hicieron nervioso el inicio, pero en cuanto se secó el asfalto volé: del km 20 al km 60 estuve atacando, cazando grupos y lanzándome en cada bajada. La cadena se me salió tres veces en ese tramo, y cada una me costó un grupo. En el km 65 llegó el muro y los últimos 40 km fueron pura brega por las colinas: sufriendo, pero sin parar nunca. Terminé en 3:41:27 a 28,2 km/h de media. Desde luego no será mi última gran fondo.'
+    },
+    stravaUrl: 'https://www.strava.com/activities/19362663020',
+    photos: []
+  },
+  {
     id: 'mf50-2026',
     name: 'Malofatranská stovka (MF50) 2026',
     date: '2026-06-27',
@@ -197,9 +261,6 @@ const RACES = [
 ];
 
 const FUTURE_RACES = [
-  { name: 'Road Classics Vysočina - Dlouhá', date: '18.7.2026', distance: '102 km', link: 'https://www.roadclassics.cz/propozice/vysocina', badge: 'Bike', badgeClass: 'race-badge--bike' },
-  { name: 'Beskydský Ultra Trail', date: '1.8.2026', distance: '86 km', link: 'https://www.beskydskyultratrail.cz/', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
-  { name: 'B7 (Beskydská sedmička)', date: '28.8.2026', distance: '101 km', link: 'https://www.beskydskasedmicka.cz/', badge: 'Ultra', badgeClass: 'race-badge--ultra' },
   { name: '24DS (24 hod. na Dlouhých stráních)', date: '3.10.2026', distance: '24h', link: 'https://moravaflow.cz/dlouhe-strane/24ds/', badge: '24H', badgeClass: 'race-badge--ultra' },
   { name: 'Ladermon Trail', date: '10.10.2026', distance: '30 km / 940m+', link: 'https://ladermontrail.cz/', badge: 'Trail', badgeClass: 'race-badge--trail' }
 ];
@@ -207,44 +268,46 @@ const FUTURE_RACES = [
 // --- Training overview data ---
 // Run `node scripts/update-strava.mjs` to regenerate this block.
 const TRAINING_STATS = {
-  updatedLabel: 'July 2026',
+  updatedLabel: 'September 2026',
   cards: [
-    { icon: '🏃', value: '112 km',    label: { en: 'Running this month', cs: 'Běh tento měsíc',       es: 'Carrera este mes'     } },
-    { icon: '⬆️', value: '1,782 m',  label: { en: 'Running elevation',  cs: 'Běžecké převýšení',     es: 'Desnivel corriendo'   } },
-    { icon: '📅', value: '6',          label: { en: 'Running sessions',   cs: 'Běžecké tréninky',      es: 'Sesiones de carrera'  } },
-    { icon: '🚴', value: '0 km',      label: { en: 'Cycling this month', cs: 'Cyklistika tento měsíc',es: 'Ciclismo este mes'     } },
-    { icon: '⛰️', value: '1,514 m',  label: { en: 'Cycling elevation',  cs: 'Cyklistické převýšení', es: 'Desnivel en bici'     } },
-    { icon: '📏', value: '54.1 km',   label: { en: 'Longest run',        cs: 'Nejdelší běh',          es: 'Carrera más larga'    } },
-    { icon: '⏱️', value: '7:16 /km', label: { en: 'Avg run pace',       cs: 'Průměrné tempo',        es: 'Ritmo promedio'       } },
-    { icon: '🕐', value: '~20h',      label: { en: 'Run time',           cs: 'Čas běhu',              es: 'Tiempo corriendo'     } },
-    { icon: '🔥', value: '8,715',     label: { en: 'Calories (run)',     cs: 'Kalorie (běh)',         es: 'Calorías (carrera)'   } },
+    { icon: '🏃', value: '270 km',    label: { en: 'Running this month', cs: 'Běh tento měsíc',       es: 'Carrera este mes'     } },
+    { icon: '⬆️', value: '9,750 m',  label: { en: 'Running elevation',  cs: 'Běžecké převýšení',     es: 'Desnivel corriendo'   } },
+    { icon: '📅', value: '14',         label: { en: 'Running sessions',   cs: 'Běžecké tréninky',      es: 'Sesiones de carrera'  } },
+    { icon: '🚴', value: '370 km',    label: { en: 'Cycling this month', cs: 'Cyklistika tento měsíc',es: 'Ciclismo este mes'     } },
+    { icon: '⛰️', value: '2,630 m',  label: { en: 'Cycling elevation',  cs: 'Cyklistické převýšení', es: 'Desnivel en bici'     } },
+    { icon: '📏', value: '101.5 km',  label: { en: 'Longest run',        cs: 'Nejdelší běh',          es: 'Carrera más larga'    } },
+    { icon: '⏱️', value: '6:39 /km', label: { en: 'Avg run pace',       cs: 'Průměrné tempo',        es: 'Ritmo promedio'       } },
+    { icon: '🕐', value: '30h 00m',   label: { en: 'Run time',           cs: 'Čas běhu',              es: 'Tiempo corriendo'     } },
+    { icon: '🔥', value: '21,799',    label: { en: 'Calories (run)',     cs: 'Kalorie (běh)',         es: 'Calorías (carrera)'   } },
   ],
   weekly: [
-    { label: 'Jun 9–15',     km: 24.7 },
-    { label: 'Jun 16–22',    km: 70.6 },
-    { label: 'Jun 23–29',    km: 59.0 },
-    { label: 'Jun 30–Jul 6', km: 0.0  },
-    { label: 'Jul 7–13',     km: 100.0 },
+    { label: 'Aug 10–16',    km: 93.4 },
+    { label: 'Aug 17–23',    km: 41.1 },
+    { label: 'Aug 24–30',    km: 114.1 },
+    { label: 'Aug 31–Sep 6', km: 11.0 },
+    { label: 'Sep 7–13',     km: 11.0 },
   ],
   yearCards: [
-    { icon: '🏃', value: '1,714 km',   label: { en: 'Running this year',  cs: 'Běh letos',              es: 'Carrera este año'      } },
-    { icon: '🚴', value: '2,029 km',   label: { en: 'Cycling this year',  cs: 'Kolo letos',             es: 'Ciclismo este año'     } },
-    { icon: '⬆️', value: '42,630 m',  label: { en: 'Run elevation YTD',  cs: 'Převýšení běh letos',   es: 'Desnivel carrera año'  } },
-    { icon: '📅', value: '110',         label: { en: 'Run sessions YTD',   cs: 'Tréninků běh letos',    es: 'Sesiones carrera año'  } },
-    { icon: '📊', value: '60 km/wk',   label: { en: 'Avg weekly km',      cs: 'Průměr km/týden',        es: 'Km semanales promedio' } },
-    { icon: '🕐', value: '194h',        label: { en: 'Total run hours',    cs: 'Celkový čas běhu',       es: 'Horas totales carrera' } },
+    { icon: '🏃', value: '2,449 km',   label: { en: 'Running this year',  cs: 'Běh letos',              es: 'Carrera este año'      } },
+    { icon: '🚴', value: '2,867 km',   label: { en: 'Cycling this year',  cs: 'Kolo letos',             es: 'Ciclismo este año'     } },
+    { icon: '⬆️', value: '66,580 m',  label: { en: 'Run elevation YTD',  cs: 'Převýšení běh letos',   es: 'Desnivel carrera año'  } },
+    { icon: '📅', value: '151',         label: { en: 'Run sessions YTD',   cs: 'Tréninků běh letos',    es: 'Sesiones carrera año'  } },
+    { icon: '📊', value: '68 km/wk',   label: { en: 'Avg weekly km',      cs: 'Průměr km/týden',        es: 'Km semanales promedio' } },
+    { icon: '🕐', value: '274h',        label: { en: 'Total run hours',    cs: 'Celkový čas běhu',       es: 'Horas totales carrera' } },
     { icon: '⏱️', value: '6:43 /km',  label: { en: 'Avg pace YTD',       cs: 'Průměrné tempo letos',   es: 'Ritmo promedio rok'    } },
     { icon: '🏆', value: '430',         label: { en: 'Strava PRs set YTD',        cs: 'Strava Osobáků letos',          es: 'Strava Récords personales año'} },
-    { icon: '🔥', value: '135,100',     label: { en: 'Calories YTD (run)', cs: 'Kalorie letos (běh)',    es: 'Calorías año (carrera)' } },
+    { icon: '🔥', value: '191,654',     label: { en: 'Calories YTD (run)', cs: 'Kalorie letos (běh)',    es: 'Calorías año (carrera)' } },
   ],
   monthly: [
-    { label: 'Jan', runKm: 232.8, bikeKm: 114.4 },
-    { label: 'Feb', runKm: 200.4, bikeKm: 639.3 },
-    { label: 'Mar', runKm: 321.3, bikeKm: 674.8 },
-    { label: 'Apr', runKm: 377.2, bikeKm: 383.1 },
+    { label: 'Jan', runKm: 232.8, bikeKm: 203.9 },
+    { label: 'Feb', runKm: 200.4, bikeKm: 714.2 },
+    { label: 'Mar', runKm: 359.1, bikeKm: 674.8 },
+    { label: 'Apr', runKm: 401.9, bikeKm: 383.1 },
     { label: 'May', runKm: 273.2, bikeKm: 168.9 },
     { label: 'Jun', runKm: 196.6, bikeKm:  48.1 },
-    { label: 'Jul*',runKm: 112.1, bikeKm:   0.0 },
+    { label: 'Jul', runKm: 364.2, bikeKm: 232.3 },
+    { label: 'Aug', runKm: 398.9, bikeKm: 262.5 },
+    { label: 'Sep*',runKm:  22.0, bikeKm: 179.4 },
   ],
 };
 
