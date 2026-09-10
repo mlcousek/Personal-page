@@ -196,6 +196,12 @@ h1, h2, h3 { text-wrap: balance; }
   border-radius: 4px;
 }
 
+/* The navbar is fixed at --nav-height, so anything scrolled to by Tab or by an
+   in-page anchor would otherwise land underneath it (WCAG 2.4.11). */
+html {
+  scroll-padding-top: calc(var(--nav-height) + 16px);
+}
+
 /* Keyboard users land here first and can jump the injected navbar.
    Off-screen until focused, then slides into the top-left corner. */
 .skip-link {

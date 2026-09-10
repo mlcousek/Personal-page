@@ -546,6 +546,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.dispatchEvent(new CustomEvent('languageChanged', { detail: lang }));
     }
 
+    // setLanguage is declared inside this DOMContentLoaded closure, but loadFooter()
+    // is top-level and calls it after injecting the footer. Without this export that
+    // call throws ReferenceError into an unawaited promise, and the footer is left
+    // untranslated for cs/es visitors.
+    window.setLanguage = setLanguage;
+
     const SUPPORTED_LANGS = ['en', 'cs', 'es'];
 
     // ?lang=cs beats the stored preference, so a shared link carries its language.
@@ -810,9 +816,15 @@ async function loadFooter() {
 
     placeholder.outerHTML = html;
     
-    // Re-apply language translations to newly injected footer
+    // Re-apply language translations to newly injected footer. setLanguage is defined
+    // inside the DOMContentLoaded closure and exported onto window from there, so guard
+    // against this fetch resolving before that listener has run. localStorage is
+    // authoritative for the current language because setLanguage() writes it on
+    // every call, including when it was resolved from ?lang=.
     const currentLang = localStorage.getItem('lang') || 'en';
-    setLanguage(currentLang);
+    if (typeof window.setLanguage === 'function') {
+        window.setLanguage(currentLang);
+    }
 }
 
 function closeAllDropdowns() {
