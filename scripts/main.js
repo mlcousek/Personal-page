@@ -503,6 +503,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function setLanguage(lang) {
         localStorage.setItem('lang', lang);
+        // Keep <html lang> in sync with the rendered content: screen readers pick
+        // the right voice, and crawlers stop reading cs/es pages as English.
+        document.documentElement.lang = lang;
         const dict = translations[lang] || translations['en'];
         Object.keys(dict).forEach(id => {
             const el = document.getElementById(id);
@@ -543,34 +546,47 @@ document.addEventListener('DOMContentLoaded', () => {
         document.dispatchEvent(new CustomEvent('languageChanged', { detail: lang }));
     }
 
+    const SUPPORTED_LANGS = ['en', 'cs', 'es'];
+
+    // ?lang=cs beats the stored preference, so a shared link carries its language.
+    function resolveInitialLang() {
+        const fromUrl = new URLSearchParams(window.location.search).get('lang');
+        if (SUPPORTED_LANGS.includes(fromUrl)) return fromUrl;
+        const stored = localStorage.getItem('lang');
+        return SUPPORTED_LANGS.includes(stored) ? stored : 'en';
+    }
+
+    // Mirror the choice into the URL so the page stays shareable in that language.
+    function syncLangParam(lang) {
+        const url = new URL(window.location.href);
+        if (url.searchParams.get('lang') === lang) return;
+        url.searchParams.set('lang', lang);
+        window.history.replaceState(null, '', url);
+    }
+
+    function selectLanguage(lang) {
+        setLanguage(lang);
+        syncLangParam(lang);
+    }
+
     function setupLanguageSwitcher() {
         // Listen for language button clicks
         document.addEventListener('click', function(e) {
             if (e.target.closest('#lang-en')) {
-                setLanguage('en');
+                selectLanguage('en');
             } else if (e.target.closest('#lang-cs')) {
-                setLanguage('cs');
+                selectLanguage('cs');
             } else if (e.target.closest('#lang-es')) {
-                setLanguage('es');
+                selectLanguage('es');
             }
         });
         // Set initial language
-        let savedLang = localStorage.getItem('lang') || 'en';
-        if (!['en','cs','es'].includes(savedLang)) {
-            savedLang = 'en';
-            localStorage.setItem('lang','en');
-        }
-        setLanguage(savedLang);
+        setLanguage(resolveInitialLang());
     }
 
     // Re-apply language and nav state after navbar is injected
     window.applyLanguageAfterNavbar = function() {
-        let savedLang = localStorage.getItem('lang') || 'en';
-        if (!['en','cs','es'].includes(savedLang)) {
-            savedLang = 'en';
-            localStorage.setItem('lang','en');
-        }
-        setLanguage(savedLang);
+        setLanguage(resolveInitialLang());
         normalizeNavbarLinks();
         // Auto-detect active nav link based on current path
         const path = window.location.pathname;

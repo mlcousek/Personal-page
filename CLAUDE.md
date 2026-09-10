@@ -21,6 +21,17 @@ node scripts/update-strava.mjs
 
 This fetches the last 30 days of activities from the Strava API and directly patches the `TRAINING_STATS` block inside `scripts/sports.js`. Requires Node.js 20+.
 
+### Image optimization
+
+Run this after adding any photo to `images/` — camera originals are 2–20 MB each and go straight into git history:
+
+```powershell
+npm run optimize:images                      # rewrites images/ in place
+node scripts/optimize-images.mjs --dry-run   # report only, writes nothing
+```
+
+Resizes to 1920px max edge, re-encodes (mozjpeg q82 / png q82), and overwrites the original — filenames and extensions are preserved so no HTML or JS reference changes. EXIF is stripped, which also removes the GPS coordinates embedded in phone photos. Files that would grow are left alone, so re-running is safe and idempotent.
+
 ## Architecture
 
 ### Path resolution

@@ -1,11 +1,12 @@
 {
   "name": "personal-webpage",
   "version": "1.0.0",
-  "description": "A modern design personal webpage.",
-  "main": "src/index.html",
+  "description": "Personal website of Jiří Mlčoušek — .NET developer and ultra runner.",
+  "main": "index.html",
   "scripts": {
-    "start": "live-server src",
-    "build": "echo 'Build process not defined yet.'"
+    "start": "live-server . --open=index.html",
+    "optimize:images": "node scripts/optimize-images.mjs",
+    "update:strava": "node scripts/update-strava.mjs"
   },
   "keywords": [
     "personal",
@@ -16,6 +17,7 @@
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "sharp": "^0.35.4"
   }
 }
