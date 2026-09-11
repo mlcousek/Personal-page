@@ -245,23 +245,46 @@ const TRAINING_STATS = {
   monthly: ${JSON.stringify(monthly, null, 4).replace(/^/gm, '  ').trim()},
 };`;
 
-  src = src.replace(
+  // Replace via a function, never a replacement string: a literal `$&` or `$1`
+  // arriving in a Strava-derived value would otherwise be read as a substitution
+  // pattern and silently corrupt the block.
+  const out = src.replace(
     /\/\/ --- Training overview data ---[\s\S]*?^};/m,
-    newBlock
+    () => newBlock
   );
 
-  writeFileSync(filePath, src, 'utf8');
+  // String.replace returns the input untouched when nothing matched, so without
+  // this check a failed patch rewrites identical content and still reports success.
+  if (out === src) {
+    throw new Error(
+      'TRAINING_STATS marker not found in scripts/sports.js — aborting, file left untouched. ' +
+      'Check that the "// --- Training overview data ---" comment still exists and is terminated by "};" at column 0.'
+    );
+  }
+
+  writeFileSync(filePath, out, 'utf8');
 }
 
 // ── Also patch the strava-note in sports.html ─────────────────────────────────
 function patchHtml() {
   const filePath = resolve(ROOT, 'pages', 'sports.html');
-  let src = readFileSync(filePath, 'utf8');
-  src = src.replace(
-    /Strava data · last updated [^<]+/,
-    `Strava data · last updated ${fmtMonth()}`
+  const src = readFileSync(filePath, 'utf8');
+
+  // Stop at the next "·" or tag, not merely at "<". The previous pattern ran
+  // greedily up to the tag and swallowed the trailing " · refresh: " label,
+  // deleting a little more of the sentence on every single run.
+  const out = src.replace(
+    /(Strava data · last updated )[^<·]+?(?=\s·|\s*<)/,
+    (_match, prefix) => prefix + fmtMonth()
   );
-  writeFileSync(filePath, src, 'utf8');
+
+  if (out === src) {
+    throw new Error(
+      'Could not find the "Strava data · last updated …" note in pages/sports.html — aborting, file left untouched.'
+    );
+  }
+
+  writeFileSync(filePath, out, 'utf8');
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────────
