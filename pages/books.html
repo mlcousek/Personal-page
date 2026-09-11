@@ -584,27 +584,88 @@
           });
         }
 
-        /* ── 4. Dropdown open/close ── */
+        /* ── 4. Dropdown open/close ──
+           These are role="listbox" menus whose options are plain <li>s. Without
+           the keyboard handling below a keyboard or switch user could open the
+           menu and never reach a single option (WCAG 2.1.1). Follows the APG
+           listbox pattern: roving focus, arrows, Home/End, Enter/Space to pick,
+           Escape to close and hand focus back to the button. */
         var dropdowns = document.querySelectorAll('.bfd');
-        function closeAll() {
+
+        function optionsOf(drop) {
+          return Array.prototype.slice.call(drop.querySelectorAll('.bfd__item'));
+        }
+
+        function closeAll(returnFocusTo) {
           dropdowns.forEach(function (d) {
             d.classList.remove('bfd--open');
             d.querySelector('.bfd__btn').setAttribute('aria-expanded', 'false');
           });
+          if (returnFocusTo) returnFocusTo.focus();
         }
+
+        function openDrop(drop) {
+          closeAll();
+          drop.classList.add('bfd--open');
+          drop.querySelector('.bfd__btn').setAttribute('aria-expanded', 'true');
+          var opts = optionsOf(drop);
+          // Set on open, not in markup, because the tag menu is rebuilt dynamically.
+          opts.forEach(function (o) { o.setAttribute('tabindex', '-1'); });
+          var active = drop.querySelector('.bfd__item--active') || opts[0];
+          if (active) active.focus();
+        }
+
+        function focusOption(drop, from, delta) {
+          var opts = optionsOf(drop);
+          if (!opts.length) return;
+          var i = opts.indexOf(from);
+          if (i === -1) i = 0;
+          var next = opts[Math.min(opts.length - 1, Math.max(0, i + delta))];
+          if (next) next.focus();
+        }
+
         dropdowns.forEach(function (drop) {
-          drop.querySelector('.bfd__btn').addEventListener('click', function (e) {
+          var btn = drop.querySelector('.bfd__btn');
+
+          btn.addEventListener('click', function (e) {
             e.stopPropagation();
-            var isOpen = drop.classList.contains('bfd--open');
-            closeAll();
-            if (!isOpen) {
-              drop.classList.add('bfd--open');
-              drop.querySelector('.bfd__btn').setAttribute('aria-expanded', 'true');
+            if (drop.classList.contains('bfd--open')) closeAll();
+            else openDrop(drop);
+          });
+
+          btn.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              openDrop(drop);
+            }
+          });
+
+          drop.querySelector('.bfd__menu').addEventListener('keydown', function (e) {
+            var item = e.target.closest('.bfd__item');
+            if (e.key === 'ArrowDown') { e.preventDefault(); focusOption(drop, item, 1); }
+            else if (e.key === 'ArrowUp') { e.preventDefault(); focusOption(drop, item, -1); }
+            else if (e.key === 'Home') { e.preventDefault(); focusOption(drop, null, 0); }
+            else if (e.key === 'End') { e.preventDefault(); focusOption(drop, null, optionsOf(drop).length); }
+            else if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              // Reuse the existing selection handlers rather than duplicating them.
+              if (item) { item.click(); btn.focus(); }
+            } else if (e.key === 'Escape') {
+              e.preventDefault();
+              closeAll(btn);
+            } else if (e.key === 'Tab') {
+              closeAll();
             }
           });
         });
-        document.addEventListener('click', closeAll);
-        document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll(); });
+
+        // Wrapped: a bare listener would pass the event object as returnFocusTo.
+        document.addEventListener('click', function () { closeAll(); });
+        document.addEventListener('keydown', function (e) {
+          if (e.key !== 'Escape') return;
+          var open = document.querySelector('.bfd--open');
+          if (open) closeAll(open.querySelector('.bfd__btn'));
+        });
 
         /* ── 5. Three independent filter states ── */
         function applyFilters() {

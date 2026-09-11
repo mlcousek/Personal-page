@@ -2906,7 +2906,7 @@ function renderEpisodes(opts){
     const cols = Math.min(eps.length, 4);
     const podcastCards = eps.map(renderCard).join('');
     return `<div class="date-group" data-cols="${cols}">
-      <h3 class="date-heading">${dateDisplay}</h3>
+      <h2 class="date-heading">${dateDisplay}</h2>
       <div class="podcasts-for-date">${podcastCards}</div>
     </div>`;
   }).join('');
@@ -3007,7 +3007,7 @@ function renderCard(ep){
     ${platformIcon}
     ${favouriteStar}
     <div class="podcast-content">
-      <h2 class="podcast__title"><a href="${ep.link || '#'}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h2>
+      <h3 class="podcast__title"><a href="${ep.link || '#'}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h3>
       <p class="podcast__host">${escapeHtml(ep.show)}</p>
       ${descriptionHtml}
       ${commentHtml}

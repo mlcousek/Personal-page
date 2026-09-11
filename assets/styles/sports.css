@@ -202,6 +202,24 @@
 }
 
 /* race-category badges: real categories, tonal and quiet */
+/* The race name is a real <button> so the row is keyboard-operable without
+   overriding the <tr> role. It should read as the plain text it replaced —
+   the global :focus-visible ring in main.css supplies the focus indicator. */
+.race-open {
+  background: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.race-open:hover {
+  color: var(--accent-text);
+}
+
 .race-badge {
   display: inline-block;
   padding: 3px 8px;
