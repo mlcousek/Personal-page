@@ -41,6 +41,30 @@ const PODCAST_EPISODES = [
     favourite: false
   },
   {
+    id: "2026-09-14-4",
+    date: "2026-09-14",
+    title: "Do mistrovského závodu jsem šel s taktikou, že jedu měřený trénink na Labi, směje se Fuksa",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 40,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/2LxOfaFjZj3DnbeKuVXCPx",
+    tags: ["Czech", "Sport", "Interview", "Spotify"],
+    favourite: false
+  },
+  {
+    id: "2026-09-14-5",
+    date: "2026-09-14",
+    title: "7 Brutálně Upřímných Lekcí, Které Bych si Přál Vědět Dřív... HRA ŽIVOTA #40",
+    show: "HRA ŽIVOTA s Martinem Hrabinou",
+    totalMinutes: 22,
+    cover: "https://i.scdn.co/image/ab67656300005f1f95b1cd0c17218ccbef751d6e",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/59BzvLFEikSQX47uA3gYq0",
+    tags: ["Czech", "Self improvement", "Spotify"],
+    favourite: false
+  },
+  {
     id: "2026-08-05-1",
     date: "2026-08-05",
     title: "#218: Lukáš Sedláček – Jak najít smysl života v době umělé inteligence?",
