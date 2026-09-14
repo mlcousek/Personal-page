@@ -5,6 +5,42 @@
 
 const PODCAST_EPISODES = [
   {
+    id: "2026-09-14-1",
+    date: "2026-09-14",
+    title: "pov: ve 20 letech jsi založil první firmu.... HRA ŽIVOTA #39",
+    show: "HRA ŽIVOTA s Martinem Hrabinou",
+    totalMinutes: 21,
+    cover: "https://i.scdn.co/image/ab67656300005f1f95b1cd0c17218ccbef751d6e",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/0jYspd9jzlQYg2QYAayn8t",
+    tags: ["Czech", "Business", "Self improvement", "Spotify"],
+    favourite: false
+  },
+  {
+    id: "2026-09-14-2",
+    date: "2026-09-14",
+    title: "Mühlfeit: Sociální sítě občas nabízí výtah k úspěchu. V realitě k němu ale vedou schody",
+    show: "Kilometry Jiřího Ježka",
+    totalMinutes: 54,
+    cover: "https://i.scdn.co/image/ab67656300005f1f65bfd0524d2e54f9cf14232c",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/5i1KwtBO1nX0B1d4wyZkfz",
+    tags: ["Czech", "Motivation", "Self improvement", "Interview", "Spotify"],
+    favourite: false
+  },
+  {
+    id: "2026-09-14-3",
+    date: "2026-09-14",
+    title: "Vojna, blackout alebo nehoda: Sme pripravení prežiť? | Michal Ščepko",
+    show: "Mozgová Atletika",
+    totalMinutes: 50,
+    cover: "https://i.scdn.co/image/ab67656300005f1feb172e367126edf79bdf67d1",
+    platform: "spotify",
+    link: "https://open.spotify.com/episode/4WglIAznCfS8mD6CqIkjTi",
+    tags: ["Slovak", "Resilience", "Interview", "Spotify"],
+    favourite: false
+  },
+  {
     id: "2026-08-05-1",
     date: "2026-08-05",
     title: "#218: Lukáš Sedláček – Jak najít smysl života v době umělé inteligence?",
