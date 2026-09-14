@@ -283,25 +283,6 @@
   border-color: var(--ink);
 }
 
-/* ─── Progress bar (listening progress) ─── */
-.progress {
-  height: 4px;
-  background: rgba(255, 255, 255, 0.07);
-  border-radius: 4px;
-  overflow: hidden;
-  margin-top: auto;
-  margin-bottom: 0.4rem;
-}
-
-.progress-bar {
-  height: 100%;
-  background: var(--accent);
-  width: 0;
-  transition: width 1s var(--ease-out);
-}
-
-.progress-bar.done { background: #3f9d63; }
-
 /* ─── Date groups ─── */
 .date-group { margin-bottom: 2.2rem; }
 
@@ -343,7 +324,17 @@
   flex-direction: column;
 }
 
-.progress { margin-top: auto; }
+/* ─── Load more ─── */
+.load-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+}
+
+.load-more-btn {
+  padding: 10px 22px;
+  font-size: 0.82rem;
+}
 
 /* ─── Platform icons ─── */
 .platform-icon {
