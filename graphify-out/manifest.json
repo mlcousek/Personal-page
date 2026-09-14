@@ -788,5 +788,15 @@
     "mtime": 1788267766.5306778,
     "ast_hash": "86554829ea22f23bb5039d9d5caaba88",
     "semantic_hash": ""
+  },
+  ".serena/project.local.yml": {
+    "mtime": 1789014075.274697,
+    "ast_hash": "f136e7d47205d9a758913615074760e5",
+    "semantic_hash": ""
+  },
+  ".serena/project.yml": {
+    "mtime": 1789014075.7271817,
+    "ast_hash": "bd0546ffc50a1094356a7a304e1ae865",
+    "semantic_hash": ""
   }
 }

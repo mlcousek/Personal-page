@@ -44,6 +44,20 @@ node scripts/update-strava.mjs
 
 Fetches activities for the last 30 days and year-to-date, computes running and cycling stats, and patches the `TRAINING_STATS` block in `scripts/sports.js` directly. Commit the result.
 
+### Image optimization
+
+Always run this after dropping new photos into `images/` — straight-from-the-camera files are 2–20 MB each:
+
+```powershell
+npm run optimize:images
+```
+
+Resizes to 1920px max edge and re-encodes in place, keeping filenames and extensions so nothing else has to change. EXIF metadata is stripped (this removes embedded GPS coordinates too). Safe to re-run; already-optimised files are skipped.
+
+### SEO metadata
+
+Every page carries `description`, `canonical`, Open Graph and Twitter card tags pointing at `images/og-cover.jpg` (1200×630). Language is switchable via `?lang=en|cs|es`, which is what the `hreflang` alternates point at. If the site ever moves off `https://mlcousek.github.io/Personal-page`, those absolute URLs plus `sitemap.xml` need updating.
+
 ## 📦 Deployment
 
 Everything is static — deploy to GitHub Pages, Netlify, Vercel, Azure Static Web Apps, or any static host. No build step needed; just upload from the repo root.
