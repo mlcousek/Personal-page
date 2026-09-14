@@ -384,20 +384,30 @@ function renderTrainingStats() {
 function renderRaceTable() {
   const tbody = document.getElementById('races-tbody');
   if (!tbody) return;
+  // The row stays a plain <tr>. It previously carried role="button", which
+  // overrode the implicit row role and orphaned its cells, so screen readers
+  // announced only the aria-label and lost Date, Time and Result entirely —
+  // the very data the table exists to convey.
   tbody.innerHTML = RACES.map(r => `
-    <tr data-race-id="${r.id}" tabindex="0" role="button" aria-label="View details for ${r.name}">
-      <td>${r.name} <span class="race-badge ${r.badgeClass}">${r.badge}</span></td>
+    <tr data-race-id="${r.id}">
+      <td><button type="button" class="race-open" data-race-id="${r.id}">${r.name}</button> <span class="race-badge ${r.badgeClass}">${r.badge}</span></td>
       <td>${r.date}</td>
       <td class="race-time">${r.time}</td>
       <td>${r.placement}</td>
     </tr>
   `).join('');
 
+  // The button in the first cell is the real, keyboard-operable control.
+  tbody.querySelectorAll('.race-open').forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      openModal(btn.dataset.raceId);
+    });
+  });
+
+  // Clicking anywhere on the row stays a mouse-only convenience.
   tbody.querySelectorAll('tr').forEach(tr => {
     tr.addEventListener('click', () => openModal(tr.dataset.raceId));
-    tr.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(tr.dataset.raceId); }
-    });
   });
 }
 
@@ -461,12 +471,51 @@ function openModal(raceId) {
   const backdrop = document.getElementById('race-modal-backdrop');
   backdrop.classList.add('open');
   document.body.classList.add('modal-open');
-  backdrop.querySelector('.race-modal').focus();
+
+  // Remember what opened the dialog so focus can return there instead of <body>.
+  lastFocusedBeforeRace = document.activeElement;
+
+  const dialog = backdrop.querySelector('.race-modal');
+  const closeBtn = document.getElementById('modal-close');
+  // Focus the close button, not the dialog box: the box sets outline:none, so
+  // focusing it leaves a sighted keyboard user with no indication of where they are.
+  (closeBtn || dialog).focus();
+  dialog.addEventListener('keydown', trapRaceTab);
+}
+
+let lastFocusedBeforeRace = null;
+
+// aria-modal does not stop Tab walking out of the dialog onto controls hidden
+// behind the backdrop, so cycle focus within the dialog by hand.
+function trapRaceTab(e) {
+  if (e.key !== 'Tab') return;
+  const focusables = e.currentTarget.querySelectorAll(
+    'a[href], button:not([disabled]), input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])'
+  );
+  if (!focusables.length) return;
+  const first = focusables[0];
+  const last = focusables[focusables.length - 1];
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault();
+    first.focus();
+  }
 }
 
 function closeModal() {
-  document.getElementById('race-modal-backdrop').classList.remove('open');
+  const backdrop = document.getElementById('race-modal-backdrop');
+  backdrop.classList.remove('open');
   document.body.classList.remove('modal-open');
+
+  const dialog = backdrop.querySelector('.race-modal');
+  if (dialog) dialog.removeEventListener('keydown', trapRaceTab);
+
+  if (lastFocusedBeforeRace && document.contains(lastFocusedBeforeRace)) {
+    lastFocusedBeforeRace.focus();
+  }
+  lastFocusedBeforeRace = null;
 }
 
 document.addEventListener('DOMContentLoaded', () => {

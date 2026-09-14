@@ -307,12 +307,51 @@ function openPost(id) {
 
   backdrop.classList.add('open');
   document.body.classList.add('modal-open');
-  backdrop.querySelector('.post-modal').focus();
+
+  // Remember what opened the dialog so focus can return there instead of <body>.
+  lastFocusedBeforePost = document.activeElement;
+
+  const dialog = backdrop.querySelector('.post-modal');
+  const closeBtn = document.getElementById('post-modal-close');
+  // Focus the close button, not the dialog box: the box sets outline:none, so
+  // focusing it leaves a sighted keyboard user with no indication of where they are.
+  (closeBtn || dialog).focus();
+  dialog.addEventListener('keydown', trapPostTab);
+}
+
+let lastFocusedBeforePost = null;
+
+// aria-modal does not stop Tab walking out of the dialog onto controls hidden
+// behind the backdrop, so cycle focus within the dialog by hand.
+function trapPostTab(e) {
+  if (e.key !== 'Tab') return;
+  const focusables = e.currentTarget.querySelectorAll(
+    'a[href], button:not([disabled]), input:not([disabled]), select, textarea, [tabindex]:not([tabindex="-1"])'
+  );
+  if (!focusables.length) return;
+  const first = focusables[0];
+  const last = focusables[focusables.length - 1];
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault();
+    first.focus();
+  }
 }
 
 function closePost() {
-  document.getElementById('post-modal-backdrop').classList.remove('open');
+  const backdrop = document.getElementById('post-modal-backdrop');
+  backdrop.classList.remove('open');
   document.body.classList.remove('modal-open');
+
+  const dialog = backdrop.querySelector('.post-modal');
+  if (dialog) dialog.removeEventListener('keydown', trapPostTab);
+
+  if (lastFocusedBeforePost && document.contains(lastFocusedBeforePost)) {
+    lastFocusedBeforePost.focus();
+  }
+  lastFocusedBeforePost = null;
 }
 
 // ── Home page latest ─────────────────────────────────────────────────────────

@@ -82,8 +82,10 @@
   transition: border-color .16s var(--ease-out);
 }
 
+/* No outline:none here — the 1px border swap alone measures ~1.65:1 against the
+   surface, well under the 3:1 that WCAG 2.4.13 wants. Let the global
+   :focus-visible ring in main.css apply on top of the border tint. */
 .control-select:focus {
-  outline: none;
   border-color: var(--accent-border);
 }
 
