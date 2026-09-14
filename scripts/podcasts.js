@@ -15,7 +15,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/12uA103QOeBafHykbKzqef",
     tags: ["Czech", "Cycling", "Tour de France", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-09-14-7",
     date: "2026-09-14",
@@ -27,7 +27,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/1dj2lQahHSiOZLondGDfL6",
     tags: ["Czech", "Cycling", "Tour de France", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-10-1",
     date: "2026-08-10",
@@ -39,7 +39,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/1QjW2C4mBWNQMNtGvmj6i7",
     tags: ["Czech", "Cycling", "Tour de France", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-10-2",
     date: "2026-08-10",
@@ -51,7 +51,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/04p86q0fB0tdsT9h1KguZN",
     tags: ["Slovak", "Interview", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-10-3",
     date: "2026-08-10",
@@ -63,7 +63,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/1BL9NAI0l4EibBUOIDJ4f7",
     tags: ["Slovak", "Running", "Trail Running", "Interview", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-17-1",
     date: "2026-08-17",
@@ -75,7 +75,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/7Mk8Y9n0WGmJy0pEzqSnNz",
     tags: ["Czech", "Running", "Interview", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-09-06-1",
     date: "2026-09-06",
@@ -87,7 +87,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/2EyH14eUE8Bdx5aeNsJNgO",
     tags: ["Czech", "Cycling", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-09-06-2",
     date: "2026-09-06",
@@ -99,7 +99,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/5xeNTdWwji1cZQQjPjyZEH",
     tags: ["Czech", "Cycling", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-22-1",
     date: "2026-08-22",
@@ -111,7 +111,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/179oWJXGrJOOOGigcuscEV",
     tags: ["Czech", "Cycling", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-18-1",
     date: "2026-08-18",
@@ -123,7 +123,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/4Qxve7D9VvDqWekCTSgxjP",
     tags: ["Czech", "Running", "Trail Running", "Ultra", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-18-2",
     date: "2026-08-18",
@@ -135,7 +135,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/3uagC2AjcoqeXJ4M9bnQD3",
     tags: ["Czech", "Running", "Training", "Trail Running", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-18-3",
     date: "2026-08-18",
@@ -147,7 +147,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/7dsxW9Deb0IGE8w1zA6MGm",
     tags: ["Czech", "Running", "Trail Running", "Ultra", "Interview", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-26-1",
     date: "2026-08-26",
@@ -159,7 +159,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/0UwOSV4mUowWIClc0fjA9G",
     tags: ["Czech", "Running", "Trail Running", "UTMB", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-09-03-1",
     date: "2026-09-03",
@@ -171,7 +171,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/1FczcEVEBFeyoYwOrpNH9p",
     tags: ["Czech", "Running", "Trail Running", "Ultra", "UTMB", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-11-1",
     date: "2026-08-11",
@@ -183,7 +183,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/4WLxp4Nep9xKcKrfwLKXSu",
     tags: ["Czech", "Running", "Training", "Ultra", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-06-1",
     date: "2026-08-06",
@@ -195,7 +195,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/6jhgTYy9sNsJMpnYrJ2YTP",
     tags: ["Czech", "Self improvement", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-14-1",
     date: "2026-08-14",
@@ -207,7 +207,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/607Mkn20EIrfgVkOyRj9Q2",
     tags: ["English", "Interview", "Sport", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-08-14-2",
     date: "2026-08-14",
@@ -219,7 +219,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/2qSIQaT0jBFaiSHv7ZH2cU",
     tags: ["Czech", "Interview", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-09-04-1",
     date: "2026-09-04",
@@ -231,7 +231,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/3lfWJrU5DwnTgJC5RMEP3U",
     tags: ["Czech", "Interview", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-09-08-1",
     date: "2026-09-08",
@@ -243,7 +243,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/1J8DgMU7VKzT1ZQfAiXykS",
     tags: ["Czech", "Running", "Trail Running", "Ultra", "Interview", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-09-08-2",
     date: "2026-09-08",
@@ -255,7 +255,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/74ri6UEOACl8nHEo2YFyqK",
     tags: ["Czech", "Sport", "Interview", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-09-08-3",
     date: "2026-09-08",
@@ -267,7 +267,7 @@ const PODCAST_EPISODES = [
     link: "https://open.spotify.com/episode/3WYkEM70WLI9e35BdnRLgR",
     tags: ["Slovak", "Tech", "Programming", "AI", "Spotify"],
     favourite: false
-  },
+  },
   {
     id: "2026-09-14-1",
     date: "2026-09-14",
