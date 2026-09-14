@@ -2726,6 +2726,10 @@ function applyFiltersAndSort({filter='all', tag='all', show='all'} = {}){
   return list;
 }
 
+const VIDEO_PAGE_SIZE = 40;
+let videoVisibleCount = VIDEO_PAGE_SIZE;
+const videoLoadMoreLabel = { en: 'Load more', cs: 'Načíst další', es: 'Cargar más' };
+
 function renderVideos(opts){
   const container = document.getElementById('video-grid');
   if(!container) return;
@@ -2736,11 +2740,19 @@ function renderVideos(opts){
   const tag = (opts && opts.tag) || (tagSelect && tagSelect.value) || 'all';
   const show = (opts && opts.show) || (showSelect && showSelect.value) || 'all';
 
+  // Any render that isn't explicitly "load more" (filter change, language
+  // switch, initial load) starts back at page one.
+  if (!(opts && opts.loadMore)) {
+    videoVisibleCount = VIDEO_PAGE_SIZE;
+  }
+
   const list = applyFiltersAndSort({filter, tag, show});
+  const visibleList = list.slice(0, videoVisibleCount);
+  const remaining = list.length - visibleList.length;
 
   // grouped by date
-  const grouped = groupByDateDescending(list);
-  container.innerHTML = grouped.map(([date, eps])=>{
+  const grouped = groupByDateDescending(visibleList);
+  const cardsHtml = grouped.map(([date, eps])=>{
     const dateDisplay = new Date(date).toLocaleDateString('cs-CZ',{day:'numeric',month:'numeric',year:'numeric'});
     const cols = Math.min(eps.length, 5);
     const videoCards = eps.map(renderCard).join('');
@@ -2749,44 +2761,19 @@ function renderVideos(opts){
       <div class="videos-for-date">${videoCards}</div>
     </div>`;
   }).join('');
+
+  const lang = localStorage.getItem('lang') || 'en';
+  const loadMoreHtml = remaining > 0
+    ? `<div class="load-more-wrap"><button type="button" id="video-load-more" class="control-clear load-more-btn">${videoLoadMoreLabel[lang] || videoLoadMoreLabel.en} (${remaining})</button></div>`
+    : '';
+
+  container.innerHTML = cardsHtml + loadMoreHtml;
   updateCount(list.length);
-  
-  // Apply uniform height after rendering and images load
-  setTimeout(() => {
-    applyUniformHeight();
-  }, 200);
-  
-  // Also apply when all images are loaded
-  const images = container.querySelectorAll('.video__img');
-  let loadedImages = 0;
-  const totalImages = images.length;
-  
-  if (totalImages === 0) {
-    // No images, apply height immediately
-    setTimeout(() => applyUniformHeight(), 100);
-  } else {
-    images.forEach(img => {
-      if (img.complete) {
-        loadedImages++;
-        if (loadedImages === totalImages) {
-          setTimeout(() => applyUniformHeight(), 50);
-        }
-      } else {
-        img.addEventListener('load', () => {
-          loadedImages++;
-          if (loadedImages === totalImages) {
-            setTimeout(() => applyUniformHeight(), 50);
-          }
-        });
-        img.addEventListener('error', () => {
-          loadedImages++;
-          if (loadedImages === totalImages) {
-            setTimeout(() => applyUniformHeight(), 50);
-          }
-        });
-      }
-    });
-  }
+
+  // Card height only varies with text content (the cover box has a fixed
+  // CSS height), so one frame after paint is enough — no need to wait on
+  // image load events.
+  requestAnimationFrame(() => applyUniformHeight());
 }
 
 function renderCard(ep){
@@ -2811,10 +2798,10 @@ function renderCard(ep){
   const durationDisplay = total > 0 ? `<div class="video-duration">${total} ${i18n.minutes[lang] || i18n.minutes.en}</div>` : '';
 
   // image fallback: if the image fails to load, replace with a placeholder service
-  const imgSrc = ep.cover || 'https://via.placeholder.com/300x300?text=No+Cover';
-  const imgFallback = 'https://via.placeholder.com/300x300?text=No+Cover';
+  const imgSrc = ep.cover || '../images/media-placeholder.svg';
+  const imgFallback = '../images/media-placeholder.svg';
 
-  const descriptionHtml = ep.description ? `<p class="video__desc">${ep.description}</p>` : '';
+  const descriptionHtml = ep.description ? `<p class="video__desc">${escapeHtml(ep.description)}</p>` : '';
 
   // Personal note ("my comment") – only rendered when present
   const noteLabel = { en: 'My note', cs: 'Moje poznámka', es: 'Mi nota' };
@@ -2844,42 +2831,27 @@ function renderCard(ep){
 }
 
 // Function to apply uniform height to all video cards
+// Card height only varies with text content (the cover image box has a fixed
+// CSS height), so this doesn't need to wait for images — one batched
+// read-then-write pass per call is enough, no reflow-forcing chains.
 function applyUniformHeight() {
   const allVideos = document.querySelectorAll('.video');
   if (allVideos.length === 0) return;
-  
-  // Reset heights to auto to get natural heights
+
+  // Batch write: clear any height a previous call forced, so natural
+  // content height can be measured (matters on resize/re-render).
+  allVideos.forEach(card => { card.style.height = 'auto'; });
+
+  // Batch read: single reflow to find the tallest card.
+  let maxHeight = 0;
   allVideos.forEach(card => {
-    card.style.height = 'auto';
+    if (card.offsetHeight > maxHeight) maxHeight = card.offsetHeight;
   });
-  
-  // Force reflow to ensure heights are calculated
-  document.body.offsetHeight;
-  
-  // Find the tallest card after a small delay to ensure images are loaded
-  setTimeout(() => {
-    let maxHeight = 0;
-    allVideos.forEach(card => {
-      const height = card.offsetHeight;
-      if (height > maxHeight) {
-        maxHeight = height;
-      }
-    });
-    
-    // Only apply if we have a valid height
-    if (maxHeight > 0) {
-      // Apply the max height to all cards directly
-      allVideos.forEach(card => {
-        card.style.height = maxHeight + 'px';
-      });
-      
-      // Also set CSS custom property for future use
-      const containers = document.querySelectorAll('.videos, .videos-for-date');
-      containers.forEach(container => {
-        container.style.setProperty('--uniform-height', maxHeight + 'px');
-      });
-    }
-  }, 50);
+
+  // Batch write: apply the uniform height.
+  if (maxHeight > 0) {
+    allVideos.forEach(card => { card.style.height = maxHeight + 'px'; });
+  }
 }
 
 // small utility for safe text interpolation into attributes/text nodes
@@ -2947,6 +2919,14 @@ function setupFilters(){
     bar.querySelectorAll('button').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
     renderVideos({});
+  });
+
+  // Delegated on document since #video-load-more is rebuilt on every render.
+  document.addEventListener('click', e=>{
+    const loadMoreBtn = e.target.closest('#video-load-more');
+    if(!loadMoreBtn) return;
+    videoVisibleCount += VIDEO_PAGE_SIZE;
+    renderVideos({loadMore: true});
   });
 }
 

@@ -198,6 +198,18 @@
   flex: 1;
 }
 
+/* ─── Load more ─── */
+.load-more-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+}
+
+.load-more-btn {
+  padding: 10px 22px;
+  font-size: 0.82rem;
+}
+
 .video__title {
   margin: 0.15rem 0 0;
   font-size: 0.95rem;
