@@ -139,6 +139,46 @@ const BLOG_POSTS = [
     }
   },
   {
+    id: 'cybercon-2026',
+    date: '2026-09-14',
+    category: 'Tech',
+    coverPhoto: '',
+    photos: [],
+    title: {
+      en: 'CYBER_CON 2026: My First Security Conference',
+      cs: 'CYBER_CON 2026 – moje první konference',
+      es: 'CYBER_CON 2026: mi primera conferencia'
+    },
+    excerpt: {
+      en: 'My first time at a security conference of this kind — three talks on incident response, AI\'s impact on software resilience, and resilience beyond compliance stuck with me most.',
+      cs: 'Moje vůbec první zkušenost s konferencí tohoto typu — nejvíc mě zaujaly tři příspěvky o reakci na incidenty, vlivu AI na odolnost softwaru a odolnosti nad rámec zákonů.',
+      es: 'Mi primera vez en una conferencia de este tipo — tres ponencias sobre respuesta a incidentes, el impacto de la IA en la resiliencia del software y la resiliencia más allá del cumplimiento me dejaron pensando.'
+    },
+    body: {
+      en: `<p>This week I attended <strong>CYBER_CON 2026</strong> in Brno — my first time at a conference of this kind, and I left with my horizons seriously expanded.</p>
+<p>Three talks stood out to me the most.</p>
+<p><strong>The First Hour After an Incident — From Compliance to Real Resilience.</strong> A walkthrough of real-world scenarios (spear phishing, AI vishing, CEO fraud, BEC) covering how organizations react in the first minutes and where they most often fail. The idea that stuck with me: meeting requirements on paper and being genuinely resilient are two very different things.</p>
+<p><strong>AI and Its Impact on the Resilience of Software Systems</strong> (Ondřej Vlček, AISLE). A practical look at how AI is changing defenders' work — speeding up threat detection and incident response while opening up new categories of risk. As a developer, I was especially interested in the limits of today's solutions.</p>
+<p><strong>Are We Resilient?</strong> (Jan Kolouch, CESNET, and Dominik Marek, Kraj Vysočina). Short but dense — a look at how to strengthen resilience beyond what the law requires, and why it makes sense to treat security as one connected whole.</p>
+<p>And one more thing I can't leave out: the coffee and the ice cream were excellent. 🍦☕</p>
+<p>Thanks to the organizers.</p>`,
+      cs: `<p>Tenhle týden jsem byl na <strong>CYBER_CONu v Brně</strong> a byla to moje vůbec první zkušenost s konferencí tohoto typu. Odcházím s pořádně rozšířenými obzory.</p>
+<p>Nejvíc mě zaujaly tři příspěvky.</p>
+<p><strong>První hodina po incidentu – od compliance k reálné odolnosti.</strong> Ukázka na reálných scénářích (spear phishing, AI vishing, CEO fraud, BEC), jak organizace reagují v prvních minutách a kde nejčastěji selhávají. Hlavní myšlenka, která mi utkvěla: splnit požadavky na papíře a být skutečně odolný jsou dvě různé věci.</p>
+<p><strong>AI a její vliv na odolnost softwarových systémů</strong> (Ondřej Vlček, AISLE). Praktický pohled na to, jak AI mění práci obránců – zrychluje detekci hrozeb i reakci na incidenty, ale zároveň otevírá nové typy rizik. Jako vývojáře mě obzvlášť zajímaly limity dnešních řešení.</p>
+<p><strong>Jsme odolní?</strong> (Jan Kolouch, CESNET a Dominik Marek, Kraj Vysočina). Krátký, ale výživný pohled na to, jak posilovat odolnost i mimo rámec zákonů a proč dává smysl brát bezpečnost jako jeden propojený celek.</p>
+<p>A ještě jedna věc, kterou nemůžu nezmínit: káva a zmrzlina byly skvělé. 🍦☕</p>
+<p>Díky organizátorům.</p>`,
+      es: `<p>Esta semana estuve en <strong>CYBER_CON 2026</strong> en Brno — mi primera vez en una conferencia de este tipo, y me voy con los horizontes bastante ampliados.</p>
+<p>Tres ponencias me llamaron especialmente la atención.</p>
+<p><strong>La primera hora después de un incidente — del cumplimiento normativo a la resiliencia real.</strong> Un recorrido por escenarios reales (spear phishing, vishing con IA, fraude del CEO, BEC) sobre cómo reaccionan las organizaciones en los primeros minutos y dónde suelen fallar más. La idea que se me quedó grabada: cumplir los requisitos sobre el papel y ser realmente resiliente son dos cosas muy distintas.</p>
+<p><strong>La IA y su impacto en la resiliencia de los sistemas de software</strong> (Ondřej Vlček, AISLE). Una mirada práctica a cómo la IA está cambiando el trabajo de los defensores — acelera la detección de amenazas y la respuesta a incidentes, pero a la vez abre nuevos tipos de riesgo. Como desarrollador, me interesaron especialmente los límites de las soluciones actuales.</p>
+<p><strong>¿Somos resilientes?</strong> (Jan Kolouch, CESNET, y Dominik Marek, Kraj Vysočina). Una charla corta pero densa sobre cómo reforzar la resiliencia más allá de lo que exige la ley, y por qué tiene sentido tratar la seguridad como un todo conectado.</p>
+<p>Y una cosa más que no puedo dejar de mencionar: el café y el helado estaban excelentes. 🍦☕</p>
+<p>Gracias a los organizadores.</p>`
+    }
+  },
+  {
     id: 'svoc-2026',
     date: '2026-04-25',
     category: 'Academic',
@@ -261,7 +301,8 @@ function isHomePage() {
 const CATEGORY_MAP = {
   'Life': { en: 'Life', cs: 'Život', es: 'Vida' },
   'Academic': { en: 'Academic', cs: 'Akademické', es: 'Académico' },
-  'Running': { en: 'Running', cs: 'Běh', es: 'Carrera' }
+  'Running': { en: 'Running', cs: 'Běh', es: 'Carrera' },
+  'Tech': { en: 'Tech', cs: 'Technologie', es: 'Tecnología' }
 };
 
 function cardHTML(post, lang) {
