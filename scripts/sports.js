@@ -311,6 +311,16 @@ const TRAINING_STATS = {
   ],
 };
 
+function escapeHtml(str){
+  if(!str && str!==0) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function renderTrainingStats() {
   const container = document.getElementById('training-stats-container');
   if (!container) return;
@@ -389,11 +399,11 @@ function renderRaceTable() {
   // announced only the aria-label and lost Date, Time and Result entirely —
   // the very data the table exists to convey.
   tbody.innerHTML = RACES.map(r => `
-    <tr data-race-id="${r.id}">
-      <td><button type="button" class="race-open" data-race-id="${r.id}">${r.name}</button> <span class="race-badge ${r.badgeClass}">${r.badge}</span></td>
-      <td>${r.date}</td>
-      <td class="race-time">${r.time}</td>
-      <td>${r.placement}</td>
+    <tr data-race-id="${escapeHtml(r.id)}">
+      <td><button type="button" class="race-open" data-race-id="${escapeHtml(r.id)}">${escapeHtml(r.name)}</button> <span class="race-badge ${r.badgeClass}">${escapeHtml(r.badge)}</span></td>
+      <td>${escapeHtml(r.date)}</td>
+      <td class="race-time">${escapeHtml(r.time)}</td>
+      <td>${escapeHtml(r.placement)}</td>
     </tr>
   `).join('');
 
@@ -419,10 +429,10 @@ function renderFutureRaceTable() {
   
   tbody.innerHTML = FUTURE_RACES.map(r => `
     <tr>
-      <td>${r.name} <span class="race-badge ${r.badgeClass}">${r.badge}</span></td>
-      <td>${r.date}</td>
-      <td class="race-time">${r.distance}</td>
-      <td><a href="${r.link}" target="_blank" rel="noopener">${websiteTxt[lang] || websiteTxt.en}</a></td>
+      <td>${escapeHtml(r.name)} <span class="race-badge ${r.badgeClass}">${escapeHtml(r.badge)}</span></td>
+      <td>${escapeHtml(r.date)}</td>
+      <td class="race-time">${escapeHtml(r.distance)}</td>
+      <td><a href="${escapeHtml(r.link)}" target="_blank" rel="noopener">${websiteTxt[lang] || websiteTxt.en}</a></td>
     </tr>
   `).join('');
 }
@@ -439,33 +449,35 @@ function openModal(raceId) {
     strava: { en: 'View on Strava →', cs: 'Zobrazit na Stravě →', es: 'Ver en Strava →' }
   };
 
+  const storyText = typeof race.story === 'object' ? (race.story[lang] || race.story.en) : race.story;
+
   document.getElementById('modal-body').innerHTML = `
     <div class="modal-header">
-      <span class="race-badge ${race.badgeClass} modal-badge">${race.category}</span>
-      <h2 id="modal-title" class="modal-title">${race.name}</h2>
-      <p class="modal-date">${race.date}</p>
+      <span class="race-badge ${race.badgeClass} modal-badge">${escapeHtml(race.category)}</span>
+      <h2 id="modal-title" class="modal-title">${escapeHtml(race.name)}</h2>
+      <p class="modal-date">${escapeHtml(race.date)}</p>
     </div>
     <div class="modal-stats">
       <div class="modal-stat">
         <span class="modal-stat-label">${labels.distance[lang] || labels.distance.en}</span>
-        <span class="modal-stat-value">${race.distance}</span>
+        <span class="modal-stat-value">${escapeHtml(race.distance)}</span>
       </div>
       <div class="modal-stat">
         <span class="modal-stat-label">${labels.time[lang] || labels.time.en}</span>
-        <span class="modal-stat-value">${race.time}</span>
+        <span class="modal-stat-value">${escapeHtml(race.time)}</span>
       </div>
       <div class="modal-stat">
         <span class="modal-stat-label">${labels.result[lang] || labels.result.en}</span>
-        <span class="modal-stat-value" style="font-size:0.82rem">${race.placement}</span>
+        <span class="modal-stat-value" style="font-size:0.82rem">${escapeHtml(race.placement)}</span>
       </div>
     </div>
     ${race.photos && race.photos.length > 0
       ? `<div class="modal-photos">
-          ${race.photos.map(src => `<img class="modal-photo" src="${src}" alt="${race.name}" loading="lazy" onerror="this.style.display='none'">`).join('')}
+          ${race.photos.map(src => `<img class="modal-photo" src="${escapeHtml(src)}" alt="${escapeHtml(race.name)}" loading="lazy" onerror="this.style.display='none'">`).join('')}
         </div>`
       : ''}
-    <p class="modal-story">${typeof race.story === 'object' ? (race.story[lang] || race.story.en) : race.story}</p>
-    ${race.stravaUrl ? `<a class="modal-strava-btn" href="${race.stravaUrl}" target="_blank" rel="noopener">${labels.strava[lang] || labels.strava.en}</a>` : ''}
+    <p class="modal-story">${escapeHtml(storyText)}</p>
+    ${race.stravaUrl ? `<a class="modal-strava-btn" href="${escapeHtml(race.stravaUrl)}" target="_blank" rel="noopener">${labels.strava[lang] || labels.strava.en}</a>` : ''}
   `;
 
   const backdrop = document.getElementById('race-modal-backdrop');
