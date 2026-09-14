@@ -5,6 +5,18 @@
 
 const PODCAST_EPISODES = [
   {
+    id: "2026-08-26-2",
+    date: "2026-08-26",
+    title: "Alkan: Hrál jsem 35 hodin vkuse!",
+    show: "RestDay",
+    totalMinutes: 0,
+    cover: "https://i.ytimg.com/vi/HHeLONyeiQw/maxresdefault.jpg",
+    platform: "youtube",
+    link: "https://www.youtube.com/watch?v=HHeLONyeiQw",
+    tags: ["Czech", "Lifestyle", "Interview", "YouTube"],
+    favourite: false
+  },
+  {
     id: "2026-09-14-6",
     date: "2026-09-14",
     title: "Pogačar neplácá sílu jen na výhru pro sebe, ale neuvěřitelným způsobem pomáhal i týmu, žasne Ježek",
