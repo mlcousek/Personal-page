@@ -2816,11 +2816,11 @@ function renderCard(ep){
   const favouriteStar = ep.favourite ? '<div class="favourite-star" title="Favourite">★</div>' : '';
 
   return `<article class="video" data-platform="${platform}">
-    <img loading="lazy" class="video__img" src="${imgSrc}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';">
+    <img loading="lazy" class="video__img" src="${escapeHtml(imgSrc)}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';">
     ${platformIcon}
     ${favouriteStar}
     <div class="video-content">
-      <h3 class="video__title"><a href="${ep.link || '#'}" target="_blank" rel="noopener">${escapeHtml(ep.title)}</a></h3>
+      <h3 class="video__title"><a href="${escapeHtml(ep.link || '#')}" target="_blank" rel="noopener noreferrer">${escapeHtml(ep.title)}</a></h3>
       <p class="video__host">${escapeHtml(ep.show)}</p>
       ${descriptionHtml}
       ${commentHtml}

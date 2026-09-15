@@ -374,8 +374,11 @@
     }
 
     var lastFrame = 0;
+    var isRunning = true;
+    var rafId = null;
 
     function loop(now) {
+      if (!isRunning) return;
       var dt = Math.min(50, now - lastFrame);
       lastFrame = now;
 
@@ -387,10 +390,21 @@
         if (drawBeam(beams[i], dt)) beams.splice(i, 1);
       }
 
-      requestAnimationFrame(loop);
+      rafId = requestAnimationFrame(loop);
     }
 
-    requestAnimationFrame(loop);
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) {
+        isRunning = false;
+        if (rafId) cancelAnimationFrame(rafId);
+      } else if (!isRunning) {
+        isRunning = true;
+        lastFrame = performance.now();
+        rafId = requestAnimationFrame(loop);
+      }
+    });
+
+    rafId = requestAnimationFrame(loop);
   }
 
   /* ══════════ Navbar scroll state (sentinel, no scroll listener) ══════════ */
@@ -436,17 +450,29 @@
     const orbs = hero.querySelectorAll('.hero-orb');
     const portrait = hero.querySelector('.hero-portrait');
 
-    hero.addEventListener('mousemove', function (e) {
-      const r = hero.getBoundingClientRect();
-      const x = (e.clientX - r.left) / r.width - 0.5;
-      const y = (e.clientY - r.top) / r.height - 0.5;
+    let mouseX = 0;
+    let mouseY = 0;
+    let isPending = false;
+
+    function updateParallax() {
+      isPending = false;
       orbs.forEach(function (orb, i) {
         const depth = (i + 1) * 12;
-        orb.style.transform = 'translate3d(' + (x * depth) + 'px,' + (y * depth) + 'px,0)';
+        orb.style.transform = 'translate3d(' + (mouseX * depth) + 'px,' + (mouseY * depth) + 'px,0)';
       });
       if (portrait) {
         portrait.style.transform =
-          'perspective(900px) rotateY(' + (x * 5) + 'deg) rotateX(' + (-y * 5) + 'deg)';
+          'perspective(900px) rotateY(' + (mouseX * 5) + 'deg) rotateX(' + (-mouseY * 5) + 'deg)';
+      }
+    }
+
+    hero.addEventListener('mousemove', function (e) {
+      const r = hero.getBoundingClientRect();
+      mouseX = (e.clientX - r.left) / r.width - 0.5;
+      mouseY = (e.clientY - r.top) / r.height - 0.5;
+      if (!isPending) {
+        isPending = true;
+        requestAnimationFrame(updateParallax);
       }
     });
 

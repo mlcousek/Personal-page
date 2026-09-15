@@ -432,7 +432,7 @@ function renderFutureRaceTable() {
       <td>${escapeHtml(r.name)} <span class="race-badge ${r.badgeClass}">${escapeHtml(r.badge)}</span></td>
       <td>${escapeHtml(r.date)}</td>
       <td class="race-time">${escapeHtml(r.distance)}</td>
-      <td><a href="${escapeHtml(r.link)}" target="_blank" rel="noopener">${websiteTxt[lang] || websiteTxt.en}</a></td>
+      <td><a href="${escapeHtml(r.link)}" target="_blank" rel="noopener noreferrer">${websiteTxt[lang] || websiteTxt.en}</a></td>
     </tr>
   `).join('');
 }
@@ -477,7 +477,7 @@ function openModal(raceId) {
         </div>`
       : ''}
     <p class="modal-story">${escapeHtml(storyText)}</p>
-    ${race.stravaUrl ? `<a class="modal-strava-btn" href="${escapeHtml(race.stravaUrl)}" target="_blank" rel="noopener">${labels.strava[lang] || labels.strava.en}</a>` : ''}
+    ${race.stravaUrl ? `<a class="modal-strava-btn" href="${escapeHtml(race.stravaUrl)}" target="_blank" rel="noopener noreferrer">${labels.strava[lang] || labels.strava.en}</a>` : ''}
   `;
 
   const backdrop = document.getElementById('race-modal-backdrop');
@@ -535,10 +535,10 @@ document.addEventListener('DOMContentLoaded', () => {
   renderFutureRaceTable();
   renderTrainingStats();
 
-  document.querySelectorAll('.stat-card--link').forEach(card => {
-    card.addEventListener('click', () => window.open(card.dataset.stravaUrl, '_blank', 'noopener'));
+  document.querySelectorAll('.stat-card--link:not(a)').forEach(card => {
+    card.addEventListener('click', () => window.open(card.dataset.stravaUrl, '_blank', 'noopener,noreferrer'));
     card.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.open(card.dataset.stravaUrl, '_blank', 'noopener'); }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); window.open(card.dataset.stravaUrl, '_blank', 'noopener,noreferrer'); }
     });
   });
 

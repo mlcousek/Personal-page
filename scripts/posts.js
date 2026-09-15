@@ -273,6 +273,16 @@ const BLOG_POSTS = [
   }
 ];
 
+function escapeHtml(str) {
+  if (!str && str !== 0) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 // ── Rendering ───────────────────────────────────────────────────────────────
 function getLang() {
   return localStorage.getItem('lang') || 'en';
@@ -289,8 +299,8 @@ function renderPosts() {
   latestContainer.innerHTML = sorted.slice(0, 2).map(p => cardHTML(p, lang)).join('');
   allList.innerHTML = sorted.map(p => `
     <li>
-      <a href="#" data-post="${p.id}">${p.title[lang] || p.title.en}</a>
-      <span class="post-date">${p.date}</span>
+      <a href="#" data-post="${escapeHtml(p.id)}">${escapeHtml(p.title[lang] || p.title.en)}</a>
+      <span class="post-date">${escapeHtml(p.date)}</span>
     </li>`).join('');
 }
 
@@ -306,18 +316,19 @@ const CATEGORY_MAP = {
 };
 
 function cardHTML(post, lang) {
+  const safeId = escapeHtml(post.id);
   const action = isHomePage()
-    ? `href="blog.html#${post.id}" class="read-more read-more-link"`
-    : `data-read="${post.id}" class="read-more"`;
+    ? `href="blog.html#${safeId}" class="read-more read-more-link"`
+    : `data-read="${safeId}" class="read-more"`;
   const tag = isHomePage() ? 'a' : 'button';
   const readMoreText = { en: 'Read more', cs: 'Číst dál', es: 'Leer más' };
   const catText = CATEGORY_MAP[post.category] ? (CATEGORY_MAP[post.category][lang] || CATEGORY_MAP[post.category].en) : post.category;
-  return `<article class="post-card" data-read="${post.id}">
+  return `<article class="post-card" data-read="${safeId}">
     <div class="post-card-body">
-      <div class="post-meta">${post.date} &nbsp;·&nbsp; ${catText}</div>
-      <h3 class="post-title">${post.title[lang] || post.title.en}</h3>
-      <p class="post-excerpt">${post.excerpt[lang] || post.excerpt.en}</p>
-      <${tag} ${action}>${readMoreText[lang] || readMoreText.en}</${tag}>
+      <div class="post-meta">${escapeHtml(post.date)} &nbsp;·&nbsp; ${escapeHtml(catText)}</div>
+      <h3 class="post-title">${escapeHtml(post.title[lang] || post.title.en)}</h3>
+      <p class="post-excerpt">${escapeHtml(post.excerpt[lang] || post.excerpt.en)}</p>
+      <${tag} ${action}>${escapeHtml(readMoreText[lang] || readMoreText.en)}</${tag}>
     </div>
   </article>`;
 }
@@ -333,12 +344,12 @@ function openPost(id) {
 
   const photosHtml = post.photos && post.photos.length > 0
     ? `<div class="post-modal-photos">${post.photos.map(src =>
-        `<img class="post-modal-photo" src="${src}" alt="${post.title.en}" loading="lazy" onerror="this.style.display='none'">`
+        `<img class="post-modal-photo" src="${escapeHtml(src)}" alt="${escapeHtml(post.title[lang] || post.title.en)}" loading="lazy" onerror="this.style.display='none'">`
       ).join('')}</div>`
     : '';
 
   const stravaHtml = post.stravaUrl
-    ? `<a class="post-modal-strava-btn" href="${post.stravaUrl}" target="_blank" rel="noopener">${{ en: 'View on Strava →', cs: 'Zobrazit na Stravě →', es: 'Ver en Strava →' }[lang] || 'View on Strava →'}</a>`
+    ? `<a class="post-modal-strava-btn" href="${escapeHtml(post.stravaUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml({ en: 'View on Strava →', cs: 'Zobrazit na Stravě →', es: 'Ver en Strava →' }[lang] || 'View on Strava →')}</a>`
     : '';
 
   const catText = CATEGORY_MAP[post.category] ? (CATEGORY_MAP[post.category][lang] || CATEGORY_MAP[post.category].en) : post.category;
@@ -410,6 +421,13 @@ document.addEventListener('DOMContentLoaded', () => {
   renderHomeLatest();
 
   document.addEventListener('click', e => {
+    // If clicked with non-primary button (e.g. middle click) or modifier keys (ctrl/cmd/shift/alt),
+    // let the browser handle native behavior (open in new tab/window)
+    if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+
+    // On home page, clicking the "read-more-link" anchor navigates naturally to blog.html#id
+    if (e.target.closest('.read-more-link')) return;
+
     // Prevent double-firing when button inside card is clicked
     const readBtn = e.target.closest('[data-read]');
     if (readBtn) { e.preventDefault(); openPost(readBtn.dataset.read); return; }

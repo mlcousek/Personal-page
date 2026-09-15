@@ -99,7 +99,7 @@
 
 .stat-icon { transition: transform .3s var(--ease-out); }
 
-.stat-card--link { cursor: pointer; }
+.stat-card--link { cursor: pointer; text-decoration: none; color: inherit; }
 .stat-card--link:active { transform: scale(0.97); }
 
 .stat-strava-hint {

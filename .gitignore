@@ -1,2 +1,16 @@
 .env
 node_modules/
+
+# Build & temp files
+*.tmp
+.next/
+graphify-out/
+
+# IDE & agent artifacts
+.vscode/
+.serena/
+.claude/worktrees/
+
+# OS metadata
+.DS_Store
+Thumbs.db

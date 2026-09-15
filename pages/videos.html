@@ -29,9 +29,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body class="videos-page" data-root="..">
-  <a class="skip-link" href="#video-grid">Skip to content</a>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div id="navbar-placeholder"></div>
-  <div class="media-page-shell page-shell">
+
+  <main class="media-page-shell page-shell" id="main-content" tabindex="-1">
+    <header class="page-hero">
+      <h1 id="video-page-title">Video Log</h1>
+      <p id="video-note">Hand-picked long-form talks, documentaries, and stories that shaped my mindset.</p>
+    </header>
+
     <nav id="video-filters" class="filter-bar" aria-label="Video filters">
       <button class="filter-chip active" data-filter="all" id="vf-all">All</button>
       <button class="filter-chip" data-filter="favourite" id="vf-favourite">Favourites</button>
@@ -54,9 +60,9 @@
       </div>
       <button id="video-clear" class="control-clear">Clear filters</button>
     </div>
-  </div>
 
-  <main id="video-grid" class="videos" aria-label="List of videos"></main>
+    <section id="video-grid" class="videos" aria-label="List of videos"></section>
+  </main>
 
   <div class="media-footer-meta">
     <small id="video-last-updated" class="last-updated">Last updated: —</small>

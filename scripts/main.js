@@ -635,27 +635,23 @@ document.addEventListener('DOMContentLoaded', () => {
     loadNavbar();
     loadFooter();
 
-    // Example: Smooth scrolling for navigation links
+    // Smooth scrolling for in-page anchor links (ignoring empty or bare hash)
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
+            if (!targetId || targetId === '#' || targetId.length <= 1) return;
+            try {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    e.preventDefault();
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            } catch (err) {
+                // Ignore invalid CSS selector
             }
         });
     });
-
-    // Example: Toggle mobile navigation menu
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    }
 });
 
 function getSiteRootPrefix() {

@@ -14,10 +14,13 @@
     "portfolio",
     "modern"
   ],
-  "author": "Your Name",
+  "author": "Jiří Mlčoušek",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1",
     "sharp": "^0.35.4"
+  },
+  "overrides": {
+    "braces": "^3.0.3"
   }
 }

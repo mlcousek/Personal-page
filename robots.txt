@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mlcousek.github.io/Personal-page/sitemap.xml
