@@ -124,7 +124,7 @@
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
-  object-position: right 15%;
+  object-position: center 20%;
   border-radius: calc(var(--radius-lg) - 1px);
   display: block;
 }
