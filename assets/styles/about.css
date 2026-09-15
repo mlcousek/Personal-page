@@ -122,9 +122,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  object-position: center 20%;
+  object-fit: contain;
   border-radius: calc(var(--radius-lg) - 1px);
   display: block;
 }
@@ -370,7 +368,6 @@
 
   .about-hero-photo { order: -1; }
   .photo-frame { width: 180px; }
-  .photo-frame img { aspect-ratio: 1; }
 
   /* Vertical timeline */
   .timeline-track {
