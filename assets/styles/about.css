@@ -110,7 +110,7 @@
 
 .photo-frame {
   position: relative;
-  width: 180px;
+  width: 280px;
   padding: 1px;
   border-radius: var(--radius-lg);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.05) 40%, rgba(252, 82, 0, 0.35));
@@ -356,7 +356,7 @@
     padding-top: 90px;
   }
 
-  .photo-frame { width: 160px; }
+  .photo-frame { width: 220px; }
 }
 
 @media (max-width: 700px) {
@@ -367,7 +367,7 @@
   }
 
   .about-hero-photo { order: -1; }
-  .photo-frame { width: 140px; }
+  .photo-frame { width: 180px; }
 
   /* Vertical timeline */
   .timeline-track {

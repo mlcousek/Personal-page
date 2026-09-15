@@ -10,23 +10,23 @@
     "semantic_hash": "01de8cd8811ece38fcca4c9dd15ef635"
   },
   "package.json": {
-    "mtime": 1780733757.3639078,
-    "ast_hash": "38359f9eeee6801e41cd0d5ae2279eae",
-    "semantic_hash": "38359f9eeee6801e41cd0d5ae2279eae"
+    "mtime": 1789454684.244863,
+    "ast_hash": "0b1032a9e4bab90e13157f8f57f2f8ef",
+    "semantic_hash": ""
   },
   "scripts/main.js": {
-    "mtime": 1781505140.482136,
-    "ast_hash": "ddd1c640920a341586a92587d5ae4723",
+    "mtime": 1789467336.0130484,
+    "ast_hash": "4436396afdbebc5839be466e66bac9ea",
     "semantic_hash": ""
   },
   "scripts/podcasts.js": {
-    "mtime": 1785916913.8065133,
-    "ast_hash": "a55b468985c0cd9433f07ebc80b65bc2",
+    "mtime": 1789467547.2423084,
+    "ast_hash": "52fb59f79bf9d1f3ad4098c5df6784e8",
     "semantic_hash": ""
   },
   "scripts/posts.js": {
-    "mtime": 1788847849.9446628,
-    "ast_hash": "962940ca8bafecc08b81cffb11fc70a6",
+    "mtime": 1789467388.8137524,
+    "ast_hash": "656e4ee5fb131c0bfc36400304bde8c7",
     "semantic_hash": ""
   },
   "scripts/redirect.js": {
@@ -35,23 +35,23 @@
     "semantic_hash": "03a00dccbcc61eee723b37aaabf7fb28"
   },
   "scripts/sports.js": {
-    "mtime": 1788847849.9399958,
-    "ast_hash": "7b9483362143754c956145e4a8c9ce82",
+    "mtime": 1789454368.1042504,
+    "ast_hash": "eb43ca55b5c221250ff0326410d173f3",
     "semantic_hash": ""
   },
   "scripts/update-strava.mjs": {
-    "mtime": 1781005626.71061,
-    "ast_hash": "95bdd7720dd440b7d1d178ce286ef510",
+    "mtime": 1789449471.614946,
+    "ast_hash": "f742678d85a94d41000dd31138789908",
     "semantic_hash": ""
   },
   "scripts/videos.js": {
-    "mtime": 1785916913.8118231,
-    "ast_hash": "86b76c6845b09a0512e28bfc336c2b30",
+    "mtime": 1789467602.810647,
+    "ast_hash": "a6f6aa8e2e827453efa5e5fe47f2b630",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1781006142.9525032,
-    "ast_hash": "067ca061647587474e47d6baba60b0ad",
+    "mtime": 1789449471.2791212,
+    "ast_hash": "730026a1ef2e851de3aa69ce2d54d793",
     "semantic_hash": ""
   },
   "components/footer.html": {
@@ -60,179 +60,179 @@
     "semantic_hash": ""
   },
   "components/navbar.html": {
-    "mtime": 1780734882.0961568,
-    "ast_hash": "7d9fb9e2d544887a6b76f00dc35670fc",
-    "semantic_hash": "7d9fb9e2d544887a6b76f00dc35670fc"
+    "mtime": 1789449471.4424317,
+    "ast_hash": "5d410c5fbbf19762f7ea3022bc0bdb63",
+    "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1763909776.8161187,
-    "ast_hash": "3e052df1a231a730a4228bbe7ff75a00",
-    "semantic_hash": "3e052df1a231a730a4228bbe7ff75a00"
+    "mtime": 1789449471.591705,
+    "ast_hash": "3e005cc0eecc923a4143b061b4772044",
+    "semantic_hash": ""
   },
   "pages/about.html": {
-    "mtime": 1781261837.5358703,
-    "ast_hash": "a444ac3c348f6606a20d48d9e99986e5",
+    "mtime": 1789474850.2669594,
+    "ast_hash": "b9674f4361a3dc6e00dd220488588d72",
     "semantic_hash": ""
   },
   "pages/blog.html": {
-    "mtime": 1781261837.5769777,
-    "ast_hash": "0bbb8caba691117759e9757f97ce14fc",
+    "mtime": 1789467764.4006248,
+    "ast_hash": "d2851e962a69fd1df3de2209de4fd947",
     "semantic_hash": ""
   },
   "pages/books.html": {
-    "mtime": 1784115719.474198,
-    "ast_hash": "bbc214f0f6ea5dd445f0564472d95a1f",
+    "mtime": 1789454601.9938164,
+    "ast_hash": "43f5e9feb040ea91870626dc5fb33b7e",
     "semantic_hash": ""
   },
   "pages/index.html": {
-    "mtime": 1781261864.819645,
-    "ast_hash": "b8c404c5ef591baa728edef2f4cd9443",
+    "mtime": 1789467670.3140104,
+    "ast_hash": "ce6d0c9c540867b3eefe9aba3d64a947",
     "semantic_hash": ""
   },
   "pages/podcasts.html": {
-    "mtime": 1781261837.6021745,
-    "ast_hash": "9ae01854dbc8f7f5417a153e02a462b7",
+    "mtime": 1789454529.3014374,
+    "ast_hash": "abb869079e9dab9641076254a069c0f2",
     "semantic_hash": ""
   },
   "pages/sports.html": {
-    "mtime": 1784102398.636961,
-    "ast_hash": "e5a0bd79d67cd155b4b64f4fb81d5c9d",
+    "mtime": 1789454568.1708093,
+    "ast_hash": "f5058fedc60849bfac454ed9ec1b84b1",
     "semantic_hash": ""
   },
   "pages/videos.html": {
-    "mtime": 1781261837.6071706,
-    "ast_hash": "af70ae223e955515967e4f689074326a",
+    "mtime": 1789454539.069279,
+    "ast_hash": "c79ded0f7a97155f1974da8c0017bd16",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1781241689.786514,
-    "ast_hash": "da91935fd4d6223dbfd1620b39d41997",
+    "mtime": 1789449471.2776048,
+    "ast_hash": "c46e966c16e50ac1bf45d5448c6e8952",
     "semantic_hash": ""
   },
   "images/1737442551739.jpg": {
-    "mtime": 1764919206.7478614,
-    "ast_hash": "34441b7801148b061d3ea742365ad091",
-    "semantic_hash": "34441b7801148b061d3ea742365ad091"
+    "mtime": 1789449471.4525104,
+    "ast_hash": "327ba980d898837786661c48253e9cab",
+    "semantic_hash": ""
   },
   "images/IMG_6169.jpg": {
-    "mtime": 1763909776.8133755,
-    "ast_hash": "9673e2f4e4a7812c5225635cddb012ba",
-    "semantic_hash": "9673e2f4e4a7812c5225635cddb012ba"
+    "mtime": 1789449471.4561212,
+    "ast_hash": "eee3eaecbe4a4d02e1d622dfa2a1622b",
+    "semantic_hash": ""
   },
   "images/PKI_course.png": {
-    "mtime": 1763909776.8161187,
-    "ast_hash": "60cc755b45bc109045c261452df1dada",
-    "semantic_hash": "60cc755b45bc109045c261452df1dada"
+    "mtime": 1789449471.4561212,
+    "ast_hash": "8fba05ac6ef681944b33c59d4fe2839e",
+    "semantic_hash": ""
   },
   "images/Posts/MastersDone/IMG_9011.jpg": {
-    "mtime": 1780733749.611,
-    "ast_hash": "863b3e9661cd1705a3ada86edbd8ba95",
-    "semantic_hash": "863b3e9661cd1705a3ada86edbd8ba95"
+    "mtime": 1789449471.4625516,
+    "ast_hash": "48be200fd2aa29d4c884381d03b4e85a",
+    "semantic_hash": ""
   },
   "images/Posts/SVOC/IMG_8964.JPG": {
-    "mtime": 1780733614.1836724,
-    "ast_hash": "a62621f941e14dea7a2aaad58a9c9c6b",
-    "semantic_hash": "a62621f941e14dea7a2aaad58a9c9c6b"
+    "mtime": 1789449471.4625516,
+    "ast_hash": "b6e405b1435ecd6044080228fa65f48d",
+    "semantic_hash": ""
   },
   "images/events/B72025/IMG_5622.JPG": {
-    "mtime": 1780730376.70777,
-    "ast_hash": "53c82d5ce9c795869432a66ffd0c3063",
-    "semantic_hash": "53c82d5ce9c795869432a66ffd0c3063"
+    "mtime": 1789449471.4625516,
+    "ast_hash": "4c09f093ea843111b1ab093859edc662",
+    "semantic_hash": ""
   },
   "images/events/B72025/IMG_5624.JPG": {
-    "mtime": 1780730376.6641634,
-    "ast_hash": "1b86355ebc12ec6b0a2aacf7d28d8e52",
-    "semantic_hash": "1b86355ebc12ec6b0a2aacf7d28d8e52"
+    "mtime": 1789449471.4780853,
+    "ast_hash": "329bb842e3b1769205bee81ad062d3b5",
+    "semantic_hash": ""
   },
   "images/events/B72025/IMG_8080.jpg": {
-    "mtime": 1780730926.5972886,
-    "ast_hash": "b3963164585def4a4c8afe3aad25cd69",
-    "semantic_hash": "b3963164585def4a4c8afe3aad25cd69"
+    "mtime": 1789449471.480614,
+    "ast_hash": "49d4c7710eb09a2e0fe440297b799170",
+    "semantic_hash": ""
   },
   "images/events/Kosir2026/IMG_1317.jpg": {
-    "mtime": 1780730929.8457217,
-    "ast_hash": "3fb0e6b12ad98100e284b670217711b4",
-    "semantic_hash": "3fb0e6b12ad98100e284b670217711b4"
+    "mtime": 1789449471.4948728,
+    "ast_hash": "0c1cb6685ea413eeffec7235f662c1ce",
+    "semantic_hash": ""
   },
   "images/events/LH242026/0049_IMG_9617 (1).jpg": {
-    "mtime": 1780729600.379696,
-    "ast_hash": "e35f4fea28706d5bd7c5ff971137524c",
-    "semantic_hash": "e35f4fea28706d5bd7c5ff971137524c"
+    "mtime": 1789449471.4948728,
+    "ast_hash": "a0f2b098775f3c7c4aad78ec7fec671d",
+    "semantic_hash": ""
   },
   "images/events/LH242026/55073242584_83b7d721b5_o (1).jpg": {
-    "mtime": 1780729598.3808932,
-    "ast_hash": "f81d6ceb66500b421893c25ab19197b2",
-    "semantic_hash": "f81d6ceb66500b421893c25ab19197b2"
+    "mtime": 1789449471.4948728,
+    "ast_hash": "954b8d4b39fea55bdfb14025e732de3a",
+    "semantic_hash": ""
   },
   "images/events/OlomoucMarathon2026/IMG_8773.jpg": {
-    "mtime": 1780730325.72003,
-    "ast_hash": "ab451afb8a896d715c58ad93e4200b09",
-    "semantic_hash": "ab451afb8a896d715c58ad93e4200b09"
+    "mtime": 1789449471.4948728,
+    "ast_hash": "4a33a82427bc010300f2a35c0a13f301",
+    "semantic_hash": ""
   },
   "images/events/OlomoucMarathon2026/IMG_8776.PNG": {
-    "mtime": 1780730326.0120344,
-    "ast_hash": "f42acccd38af67ac8b7f3b89787257b1",
-    "semantic_hash": "f42acccd38af67ac8b7f3b89787257b1"
+    "mtime": 1789449471.514494,
+    "ast_hash": "2b6f572e42c190a6a17eaa5714588c5a",
+    "semantic_hash": ""
   },
   "images/events/OlomoucMaraton2025/74a875bc-16b0-4030-af00-610e0c66fdae.JPG": {
-    "mtime": 1780730325.7020998,
-    "ast_hash": "10180065b416094b2decad3bd76a3f0a",
-    "semantic_hash": "10180065b416094b2decad3bd76a3f0a"
+    "mtime": 1789449471.5169578,
+    "ast_hash": "c76a20049902e26e768a43113e287e49",
+    "semantic_hash": ""
   },
   "images/events/PragueMaraton2025/IMG_6112.jpg": {
-    "mtime": 1780730932.7594643,
-    "ast_hash": "5422af2e101e50425f3d69c627c3ddfa",
-    "semantic_hash": "5422af2e101e50425f3d69c627c3ddfa"
+    "mtime": 1789449471.5169578,
+    "ast_hash": "80210c7485f55a64b4ab2ed8a07da06d",
+    "semantic_hash": ""
   },
   "images/events/PragueMaraton2025/IMG_6124.jpg": {
-    "mtime": 1780730935.7945454,
-    "ast_hash": "c386f4c5eec69b6df88afb0d59d9974c",
-    "semantic_hash": "c386f4c5eec69b6df88afb0d59d9974c"
+    "mtime": 1789449471.5304887,
+    "ast_hash": "66eb2b77c2ca59307d0e5bff5cd1fae5",
+    "semantic_hash": ""
   },
   "images/events/PragueMaraton2025/IMG_6169.jpg": {
-    "mtime": 1780730938.8127546,
-    "ast_hash": "e8aa05cf412cd2bc3d3dbc89b8dec974",
-    "semantic_hash": "e8aa05cf412cd2bc3d3dbc89b8dec974"
+    "mtime": 1789449471.5304887,
+    "ast_hash": "0eeb847974e176e8ef2abda3443eba65",
+    "semantic_hash": ""
   },
   "images/events/jestedWinter242026/321A6841.jpg": {
-    "mtime": 1768462225.293801,
-    "ast_hash": "f9808594660baedf37020d3b0d967bc6",
-    "semantic_hash": "f9808594660baedf37020d3b0d967bc6"
+    "mtime": 1789449471.5598125,
+    "ast_hash": "e9654392e7b209dd970a10a60403fad8",
+    "semantic_hash": ""
   },
   "images/events/jestedWinter242026/Jested 24 winter 2026-96.jpg": {
-    "mtime": 1768403495.836736,
-    "ast_hash": "eda4516f4cd172b362d9720fe1499b22",
-    "semantic_hash": "eda4516f4cd172b362d9720fe1499b22"
+    "mtime": 1789449471.5598125,
+    "ast_hash": "9683c0a44173061a62f1298116079a0d",
+    "semantic_hash": ""
   },
   "images/events/zlinHalf2026/LIL_7023.JPG": {
-    "mtime": 1780335966.182927,
-    "ast_hash": "2effb3a867c1006a21a242d30db35f15",
-    "semantic_hash": "2effb3a867c1006a21a242d30db35f15"
+    "mtime": 1789449471.5598125,
+    "ast_hash": "b971a8c6e79e75b99e700f47a1254b68",
+    "semantic_hash": ""
   },
   "images/events/zlinHalf2026/_MTK_0077.JPG": {
-    "mtime": 1780335968.7314303,
-    "ast_hash": "58a955e7f362ec40bb91bcc86172cffc",
-    "semantic_hash": "58a955e7f362ec40bb91bcc86172cffc"
+    "mtime": 1789449471.5598125,
+    "ast_hash": "8d7925e942ddf299c5ba3fd83145656f",
+    "semantic_hash": ""
   },
   "images/events/zlinHalf2026/_MTK_2364.JPG": {
-    "mtime": 1780335969.055477,
-    "ast_hash": "cb927f0180b891fdfc89f6f289b099e8",
-    "semantic_hash": "cb927f0180b891fdfc89f6f289b099e8"
+    "mtime": 1789449471.5759046,
+    "ast_hash": "d6609ec8156a0c18b24e3d9e708d02b2",
+    "semantic_hash": ""
   },
   "images/football/FB_IMG_1622893629074_Original.jpg": {
-    "mtime": 1780730205.0870895,
-    "ast_hash": "6eabcb484aa49b29de6a93ddd3f2e5d7",
-    "semantic_hash": "6eabcb484aa49b29de6a93ddd3f2e5d7"
+    "mtime": 1789449471.5759046,
+    "ast_hash": "8c2acbd5fd4d9927a691f41665e7a912",
+    "semantic_hash": ""
   },
   "images/football/IMG_5420.jpg": {
-    "mtime": 1780730205.1038465,
-    "ast_hash": "fdce8f9fdd9c55aa1638a7bc3a419108",
-    "semantic_hash": "fdce8f9fdd9c55aa1638a7bc3a419108"
+    "mtime": 1789449471.5759046,
+    "ast_hash": "aa2f93185df5ec44773f4c5cd6cb8867",
+    "semantic_hash": ""
   },
   "images/football/IMG_7459.jpg": {
-    "mtime": 1780730205.1186757,
-    "ast_hash": "fe553b168bddb94edc2f81502eb08175",
-    "semantic_hash": "fe553b168bddb94edc2f81502eb08175"
+    "mtime": 1789449471.5759046,
+    "ast_hash": "d7af5cf0154b9bb896eccff0df2b1997",
+    "semantic_hash": ""
   },
   ".claude/skills/impeccable/scripts/command-metadata.json": {
     "mtime": 1781148064.0,
@@ -525,8 +525,8 @@
     "semantic_hash": ""
   },
   "scripts/effects.js": {
-    "mtime": 1781503596.7285032,
-    "ast_hash": "6da351f64aec94929e74b37b3c38bef2",
+    "mtime": 1789454383.9874356,
+    "ast_hash": "9423558e68ff571be2b3c370bbfec1f4",
     "semantic_hash": ""
   },
   "scripts/tags_i18n.js": {
@@ -760,43 +760,68 @@
     "semantic_hash": ""
   },
   "images/events/mf50-2026/mf50_finish.jpg": {
-    "mtime": 1782754946.6876695,
-    "ast_hash": "9aeb094dc9a1f515d484979a3ce22f38",
+    "mtime": 1789449471.5598125,
+    "ast_hash": "b5fae8fca4968f7ee5b4b07dea524ad1",
     "semantic_hash": ""
   },
   "images/events/but2026/IMG_3411.jpg": {
-    "mtime": 1785916913.795608,
-    "ast_hash": "f12eaedcc367fd317dc78c95d9b87e79",
+    "mtime": 1789449471.5462997,
+    "ast_hash": "013da16adb5a23ec23f1820840e6221a",
     "semantic_hash": ""
   },
   "images/events/but2026/IMG_6176.JPG": {
-    "mtime": 1785916913.8035004,
-    "ast_hash": "c0a72ec59fee71b639f79c86c0777bcd",
+    "mtime": 1789449471.5462997,
+    "ast_hash": "40e34f0dcc0763e646947d8be5f613fb",
     "semantic_hash": ""
   },
   "images/events/b72026/61de1404-65dc-406d-a3f2-bf146807dd9a.jpg": {
-    "mtime": 1788454561.7611334,
-    "ast_hash": "69d7a33c04fb243f5a8e4da87eaa0343",
+    "mtime": 1789449471.5304887,
+    "ast_hash": "118fb1de58a394c08f19179d8960d37d",
     "semantic_hash": ""
   },
   "images/events/b72026/IMG_0774.jpg": {
-    "mtime": 1788167668.2199702,
-    "ast_hash": "5cc11bbec254c3dc795653d4c6142583",
+    "mtime": 1789449471.5304887,
+    "ast_hash": "f10c8d555889a3852d6abdede8d8d01c",
     "semantic_hash": ""
   },
   "images/events/b72026/MAC06476.jpg": {
-    "mtime": 1788267766.5306778,
-    "ast_hash": "86554829ea22f23bb5039d9d5caaba88",
+    "mtime": 1789449471.5462997,
+    "ast_hash": "ed8e2d10b11aa01e060b7cfa2cf49b8c",
     "semantic_hash": ""
   },
-  ".serena/project.local.yml": {
-    "mtime": 1789014075.274697,
-    "ast_hash": "f136e7d47205d9a758913615074760e5",
+  "scripts/books.js": {
+    "mtime": 1789467495.716967,
+    "ast_hash": "3f04ece76bb7d0b2bcfc78f1cf764a20",
     "semantic_hash": ""
   },
-  ".serena/project.yml": {
-    "mtime": 1789014075.7271817,
-    "ast_hash": "bd0546ffc50a1094356a7a304e1ae865",
+  "scripts/optimize-images.mjs": {
+    "mtime": 1789449471.598888,
+    "ast_hash": "027c7f9aaa2d762f58a92d34e356b37e",
+    "semantic_hash": ""
+  },
+  "robots.txt": {
+    "mtime": 1789454284.2617583,
+    "ast_hash": "4fc30a1103a75359e148f9a0ec83b914",
+    "semantic_hash": ""
+  },
+  "favicon.svg": {
+    "mtime": 1789449471.4469838,
+    "ast_hash": "d0da781c139807d2b4a905a3c4a5c177",
+    "semantic_hash": ""
+  },
+  "images/about-portrait.jpg": {
+    "mtime": 1789473438.984,
+    "ast_hash": "66743f032da7e876f428d52796f68a5a",
+    "semantic_hash": ""
+  },
+  "images/media-placeholder.svg": {
+    "mtime": 1789449471.5759046,
+    "ast_hash": "113be689a7f84ef4bb3eba9beebf9ea3",
+    "semantic_hash": ""
+  },
+  "images/og-cover.jpg": {
+    "mtime": 1789449471.5759046,
+    "ast_hash": "93ba734becc37879bce853ca7332c1ec",
     "semantic_hash": ""
   }
 }
