@@ -110,7 +110,7 @@
 
 .photo-frame {
   position: relative;
-  width: 280px;
+  width: 220px;
   padding: 1px;
   border-radius: var(--radius-lg);
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.05) 40%, rgba(252, 82, 0, 0.35));
@@ -122,7 +122,9 @@
   position: relative;
   z-index: 1;
   width: 100%;
-  object-fit: contain;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 15%;
   border-radius: calc(var(--radius-lg) - 1px);
   display: block;
 }
@@ -356,7 +358,7 @@
     padding-top: 90px;
   }
 
-  .photo-frame { width: 220px; }
+  .photo-frame { width: 180px; }
 }
 
 @media (max-width: 700px) {
@@ -367,7 +369,7 @@
   }
 
   .about-hero-photo { order: -1; }
-  .photo-frame { width: 180px; }
+  .photo-frame { width: 150px; }
 
   /* Vertical timeline */
   .timeline-track {
