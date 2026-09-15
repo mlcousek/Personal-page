@@ -360,6 +360,11 @@ function openPost(id) {
   backdrop.classList.add('open');
   document.body.classList.add('modal-open');
 
+  // Keep URL hash in sync so open modal is linkable
+  if (window.location.hash !== `#${id}`) {
+    history.replaceState(null, '', `#${id}`);
+  }
+
   // Remember what opened the dialog so focus can return there instead of <body>.
   lastFocusedBeforePost = document.activeElement;
 
@@ -404,6 +409,11 @@ function closePost() {
     lastFocusedBeforePost.focus();
   }
   lastFocusedBeforePost = null;
+
+  // Clean URL hash without triggering scroll or extra history entry
+  if (window.location.hash) {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
 }
 
 // ── Home page latest ─────────────────────────────────────────────────────────

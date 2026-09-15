@@ -3373,13 +3373,29 @@ function setupFilters(){
   const lang = localStorage.getItem('lang') || 'en';
   if(!bar) return;
 
+  function syncPodcastUrl() {
+    const url = new URL(window.location.href);
+    const activeBtn = bar.querySelector('button[data-filter].active');
+    const f = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+    if (f && f !== 'all') url.searchParams.set('filter', f);
+    else url.searchParams.delete('filter');
+
+    if (showSelect && showSelect.value !== 'all') url.searchParams.set('show', showSelect.value);
+    else url.searchParams.delete('show');
+
+    if (tagSelect && tagSelect.value !== 'all') url.searchParams.set('tag', tagSelect.value);
+    else url.searchParams.delete('tag');
+
+    window.history.replaceState(null, '', url);
+  }
+
   // populate show select from data
   if(showSelect){
     const shows = collectAllShows(PODCAST_EPISODES);
     shows.forEach(s=>{
       const opt = document.createElement('option'); opt.value = s; opt.textContent = s; showSelect.appendChild(opt);
     });
-    showSelect.addEventListener('change', ()=> renderEpisodes({}));
+    showSelect.addEventListener('change', ()=> { syncPodcastUrl(); renderEpisodes({}); });
   }
 
   // populate tag select from data
@@ -3388,8 +3404,23 @@ function setupFilters(){
     tags.forEach(t=>{
       const opt = document.createElement('option'); opt.value = t; opt.textContent = translateTag(t, lang); tagSelect.appendChild(opt);
     });
-    tagSelect.addEventListener('change', ()=> renderEpisodes({}));
+    tagSelect.addEventListener('change', ()=> { syncPodcastUrl(); renderEpisodes({}); });
   }
+
+  // initialize from URL query params
+  const initParams = new URLSearchParams(window.location.search);
+  const initFilter = initParams.get('filter');
+  if (initFilter) {
+    const targetBtn = bar.querySelector(`button[data-filter="${initFilter}"]`);
+    if (targetBtn) {
+      bar.querySelectorAll('button[data-filter]').forEach(b => b.classList.remove('active'));
+      targetBtn.classList.add('active');
+    }
+  }
+  const initShow = initParams.get('show');
+  if (initShow && showSelect) showSelect.value = initShow;
+  const initTag = initParams.get('tag');
+  if (initTag && tagSelect) tagSelect.value = initTag;
 
   // clear filters button
   if(clearBtn){
@@ -3399,6 +3430,7 @@ function setupFilters(){
       if(allBtn) allBtn.classList.add('active');
       if(showSelect) showSelect.value = 'all';
       if(tagSelect) tagSelect.value = 'all';
+      syncPodcastUrl();
       renderEpisodes({});
     });
   }
@@ -3408,6 +3440,7 @@ function setupFilters(){
     if(!btn) return;
     bar.querySelectorAll('button').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
+    syncPodcastUrl();
     renderEpisodes({});
   });
 

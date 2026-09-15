@@ -28,9 +28,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   /* ── 2. Populate tag dropdown and card decorations dynamically ── */
-  var activeStatus = 'all';   // all | favourite | reading
-  var activeYear   = '';      // '' = any year
-  var activeTag    = '';      // '' = any tag
+  var urlParams = new URLSearchParams(window.location.search);
+  var validStatuses = ['all', 'favourite', 'reading'];
+  var paramStatus = urlParams.get('status');
+  var activeStatus = (paramStatus && validStatuses.includes(paramStatus)) ? paramStatus : 'all';
+  var activeYear   = urlParams.get('year') || '';
+  var activeTag    = urlParams.get('tag') || '';
+
+  function syncUrlParams() {
+    var url = new URL(window.location.href);
+    if (activeStatus && activeStatus !== 'all') url.searchParams.set('status', activeStatus);
+    else url.searchParams.delete('status');
+    if (activeYear) url.searchParams.set('year', activeYear);
+    else url.searchParams.delete('year');
+    if (activeTag) url.searchParams.set('tag', activeTag);
+    else url.searchParams.delete('tag');
+    window.history.replaceState(null, '', url);
+  }
 
   var yearAllTexts = { en: 'All', cs: 'Vše', es: 'Todos' };
   var tagAnyTexts = { en: 'Any', cs: 'Jakýkoliv', es: 'Cualquier' };
@@ -216,10 +230,14 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── 6. Status buttons ── */
   var statusBtns = document.querySelectorAll('.bfb[data-status]');
   statusBtns.forEach(function (btn) {
+    if (btn.dataset.status === activeStatus) btn.classList.add('bfb--active');
+    else btn.classList.remove('bfb--active');
+
     btn.addEventListener('click', function () {
       statusBtns.forEach(function (b) { b.classList.remove('bfb--active'); });
       btn.classList.add('bfb--active');
       activeStatus = btn.dataset.status;
+      syncUrlParams();
       applyFilters();
     });
   });
@@ -235,6 +253,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       item.classList.add('bfd__item--active'); item.setAttribute('aria-selected', 'true');
       activeYear = item.dataset.year || '';
+      syncUrlParams();
       translatePageContent();
       closeAll(); applyFilters();
     });
@@ -247,6 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var item = e.target.closest('.bfd__item');
       if (!item) return;
       activeTag = item.dataset.tag || '';
+      syncUrlParams();
       translatePageContent();
       closeAll(); applyFilters();
     });

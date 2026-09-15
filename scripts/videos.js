@@ -2880,13 +2880,29 @@ function setupFilters(){
   const lang = localStorage.getItem('lang') || 'en';
   if(!bar) return;
 
+  function syncVideoUrl() {
+    const url = new URL(window.location.href);
+    const activeBtn = bar.querySelector('button[data-filter].active');
+    const f = activeBtn ? activeBtn.getAttribute('data-filter') : 'all';
+    if (f && f !== 'all') url.searchParams.set('filter', f);
+    else url.searchParams.delete('filter');
+
+    if (showSelect && showSelect.value !== 'all') url.searchParams.set('channel', showSelect.value);
+    else url.searchParams.delete('channel');
+
+    if (tagSelect && tagSelect.value !== 'all') url.searchParams.set('tag', tagSelect.value);
+    else url.searchParams.delete('tag');
+
+    window.history.replaceState(null, '', url);
+  }
+
   // populate show select from data
   if(showSelect){
     const shows = collectAllShows(VIDEOS);
     shows.forEach(s=>{
       const opt = document.createElement('option'); opt.value = s; opt.textContent = s; showSelect.appendChild(opt);
     });
-    showSelect.addEventListener('change', ()=> renderVideos({}));
+    showSelect.addEventListener('change', ()=> { syncVideoUrl(); renderVideos({}); });
   }
 
   // populate tag select from data
@@ -2896,8 +2912,23 @@ function setupFilters(){
     tags.forEach(t=>{
       const opt = document.createElement('option'); opt.value = t; opt.textContent = translateTag(t, lang); tagSelect.appendChild(opt);
     });
-    tagSelect.addEventListener('change', ()=> renderVideos({}));
+    tagSelect.addEventListener('change', ()=> { syncVideoUrl(); renderVideos({}); });
   }
+
+  // initialize from URL query params
+  const initParams = new URLSearchParams(window.location.search);
+  const initFilter = initParams.get('filter');
+  if (initFilter) {
+    const targetBtn = bar.querySelector(`button[data-filter="${initFilter}"]`);
+    if (targetBtn) {
+      bar.querySelectorAll('button[data-filter]').forEach(b => b.classList.remove('active'));
+      targetBtn.classList.add('active');
+    }
+  }
+  const initChannel = initParams.get('channel');
+  if (initChannel && showSelect) showSelect.value = initChannel;
+  const initTag = initParams.get('tag');
+  if (initTag && tagSelect) tagSelect.value = initTag;
 
   // clear filters button
   if(clearBtn){
@@ -2909,6 +2940,7 @@ function setupFilters(){
       // reset selects
       if(tagSelect) tagSelect.value = 'all';
       if(showSelect) showSelect.value = 'all';
+      syncVideoUrl();
       renderVideos({});
     });
   }
@@ -2918,6 +2950,7 @@ function setupFilters(){
     if(!btn) return;
     bar.querySelectorAll('button').forEach(b=>b.classList.remove('active'));
     btn.classList.add('active');
+    syncVideoUrl();
     renderVideos({});
   });
 
