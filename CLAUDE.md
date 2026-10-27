@@ -11,16 +11,6 @@ npx live-server . --open=index.html
 
 No build step — everything is plain static HTML/CSS/JS deployed as-is. The VS Code Live Server extension also works.
 
-### Strava data refresh
-
-Requires a `.env` file (copy `.env.example`) with Strava API credentials:
-
-```powershell
-node scripts/update-strava.mjs
-```
-
-This fetches the last 30 days of activities from the Strava API and directly patches the `TRAINING_STATS` block inside `scripts/sports.js`. Requires Node.js 20+.
-
 ### Image optimization
 
 Run this after adding any photo to `images/` — camera originals are 2–20 MB each and go straight into git history:
@@ -55,9 +45,11 @@ Each content page pairs one HTML file with one JS file under `scripts/`:
 | `pages/blog.html` | `scripts/posts.js` | `BLOG_POSTS` array |
 | `pages/podcasts.html` | `scripts/podcasts.js` | `PODCAST_EPISODES` array |
 | `pages/videos.html` | `scripts/videos.js` | `VIDEOS` array |
-| `pages/sports.html` | `scripts/sports.js` | `RACES` + `TRAINING_STATS` |
+| `pages/sports.html` | `scripts/sports.js` | `RACES` + `FUTURE_RACES` |
+| `pages/projects.html` | `scripts/projects.js` | `PROJECTS` (+ `VAULT_PLUGINS`, `VAULT_AUTOMATIONS`) |
+| `pages/cv.html` | `scripts/cv.js` | `CV_*` data sets |
 
-All feature scripts follow the same pattern: data array → filter/sort → `renderCard()` / `renderXxx()` → DOM update. `TRAINING_STATS` in `sports.js` is the only data structure written by an external script (`update-strava.mjs`).
+All feature scripts follow the same pattern: data array → filter/sort → `renderCard()` / `renderXxx()` → DOM update.
 
 ### Asset paths
 

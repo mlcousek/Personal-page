@@ -150,8 +150,8 @@ const PROJECTS = [
   }
 ];
 
-// Optional `image: '../images/projects/<file>.jpg'` on an entry replaces its emoji
-// icon with a 16:9 screenshot.
+// An optional `image` on an entry (a path under ../images/projects/) replaces its
+// emoji icon with a 16:9 screenshot.
 const VAULT_PLUGINS = [
   {
     icon: '🌍',

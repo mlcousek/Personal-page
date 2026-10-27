@@ -2,7 +2,7 @@
    effects.js — shared live-animation layer
    · scroll-reveal (IntersectionObserver, works with
      dynamically rendered content via MutationObserver)
-   · animated number counters (.stat-value / .training-value)
+   · animated number counters (.stat-value)
    · navbar scroll state (.scrolled) via top-of-page sentinel
    · hero parallax (orbs + portrait follow the cursor,
      fine pointers only)
@@ -16,11 +16,11 @@
   /* ══════════ Scroll reveal ══════════ */
 
   const REVEAL_SELECTORS = [
-    '.post-card', '.stat-card', '.training-stat-card', '.podcast', '.video',
+    '.post-card', '.stat-card', '.podcast', '.video',
     '.book', '.cert-card', '.skills-col', '.timeline-node', '.date-group',
     '.about-section > .section-heading', '.sports-section-heading',
     '.about-hero-text', '.about-hero-photo', '.story-body p',
-    '.table-wrap', '.football-card', '.weekly-chart-wrap',
+    '.table-wrap', '.football-card',
     '.blog-header', '.sports-header', '.page-hero', '.media-page-header',
     '.all-posts-list li', '.home-blog-header', '.filter-bar', '.media-controls',
     '.projects-header', '.projects-heading', '.project-card', '.vault-intro',
@@ -108,7 +108,7 @@
 
   function prepareCounters(root) {
     if (!counterIO || !root.querySelectorAll) return;
-    root.querySelectorAll('.stat-value, .training-value').forEach(function (el) {
+    root.querySelectorAll('.stat-value').forEach(function (el) {
       if (el.dataset.countTarget) return;
       el.dataset.countTarget = el.textContent.trim();
       counterIO.observe(el);
@@ -170,12 +170,18 @@
       H = canvas.height = window.innerHeight;
     }
     resize();
-    window.addEventListener('resize', resize);
+    // one resize per frame: assigning canvas.width clears and reallocates the bitmap
+    var resizePending = false;
+    window.addEventListener('resize', function () {
+      if (resizePending) return;
+      resizePending = true;
+      requestAnimationFrame(function () { resizePending = false; resize(); });
+    });
 
     // Fraction of the beam's total length
     var ORANGE_LEN = 0.36;   // size of the orange glowing head (doubled)
     var GRAY_LEN   = 0.80;   // size of the fading gray tail (longer)
-    var MAX_BEAMS  = 7;     // max simultaneous beams`
+    var MAX_BEAMS  = 7;     // max simultaneous beams
     var SPAWN_GAP  = 350;    // ms minimum between spawns (higher frequency)
 
     var beams = [];

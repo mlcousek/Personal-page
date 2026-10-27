@@ -366,3 +366,8 @@
   .book { min-height: 280px; }
   .book__img { height: 170px; }
 }
+
+/* keep the (closed) filter menus inside the viewport so they cannot cause sideways scroll */
+@media (max-width: 640px) {
+  .bfd__menu { min-width: 160px; max-width: calc(100vw - 32px); }
+}

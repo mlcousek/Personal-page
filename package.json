@@ -6,7 +6,7 @@
   "scripts": {
     "start": "live-server . --open=index.html",
     "optimize:images": "node scripts/optimize-images.mjs",
-    "update:strava": "node scripts/update-strava.mjs"
+    "check": "node scripts/check-links.mjs"
   },
   "keywords": [
     "personal",
