@@ -201,7 +201,7 @@ const VIDEOS = [
     title: "Nejtěžších 400 metrů v životě - Red Bull 400",
     show: "nikos je frajer",
     totalMinutes: 0,
-    cover: "https://i.ytimg.com/vi/Z9mqp0qBxm0/maxresdefault.jpg",
+    cover: "https://i.ytimg.com/vi/Z9mqp0qBxm0/hqdefault.jpg",
     platform: "youtube",
     link: "https://youtu.be/Z9mqp0qBxm0",
     tags: ["Czech", "Running", "Entertainment"],
@@ -333,7 +333,7 @@ const VIDEOS = [
     title: "Beskydský Ultra Trail (BUT) 2025 official video",
     show: "Beskydský Ultra Trail",
     totalMinutes: 0,
-    cover: "https://i.ytimg.com/vi/SoUoshvgIHI/maxresdefault.jpg",
+    cover: "https://i.ytimg.com/vi/SoUoshvgIHI/hqdefault.jpg",
     platform: "youtube",
     link: "https://youtu.be/SoUoshvgIHI",
     tags: ["Czech", "Running", "Ultra", "Recap"],
@@ -357,7 +357,7 @@ const VIDEOS = [
     title: "Beskydská sedmička (vol. 4 - do pekla a zpět!)",
     show: "Jakub Konsel",
     totalMinutes: 0,
-    cover: "https://i.ytimg.com/vi/q1qjOi5facc/maxresdefault.jpg",
+    cover: "https://i.ytimg.com/vi/q1qjOi5facc/hqdefault.jpg",
     platform: "youtube",
     link: "https://youtu.be/q1qjOi5facc",
     tags: ["Czech", "Running", "Ultra", "Vlog"],
@@ -790,7 +790,7 @@ const VIDEOS = [
     title: "Beskydský Ultra Trail (BUT) 2025 official video",
     show: "Beskydský Ultra Trail",
     totalMinutes: 0,
-    cover: "https://i.ytimg.com/vi/SoUoshvgIHI/maxresdefault.jpg",
+    cover: "https://i.ytimg.com/vi/SoUoshvgIHI/hqdefault.jpg",
     platform: "youtube",
     link: "https://youtu.be/SoUoshvgIHI",
     tags: ["Czech", "Running", "Ultra", "Trail Running"],
@@ -2800,6 +2800,10 @@ function renderCard(ep){
   // image fallback: if the image fails to load, replace with a placeholder service
   const imgSrc = ep.cover || '../images/media-placeholder.svg';
   const imgFallback = '../images/media-placeholder.svg';
+  // maxresdefault does not exist for every YouTube video: step down to hqdefault before the placeholder
+  // (a missing one answers 404 with a 120px grey image, so onload checks the size too)
+  const imgOnError = "if(this.src.includes('/maxresdefault.jpg')){this.src=this.src.replace('maxresdefault','hqdefault');}else{this.onerror=null;this.src='" + imgFallback + "';}";
+  const imgOnLoad = "if(this.naturalWidth<=120&&this.src.includes('/maxresdefault.jpg')){this.src=this.src.replace('maxresdefault','hqdefault');}";
 
   const descriptionHtml = ep.description ? `<p class="video__desc">${escapeHtml(ep.description)}</p>` : '';
 
@@ -2816,7 +2820,7 @@ function renderCard(ep){
   const favouriteStar = ep.favourite ? '<div class="favourite-star" title="Favourite">★</div>' : '';
 
   return `<article class="video" data-platform="${platform}">
-    <img loading="lazy" class="video__img" src="${escapeHtml(imgSrc)}" alt="Cover of ${escapeHtml(ep.title)}" onerror="this.onerror=null;this.src='${imgFallback}';">
+    <img loading="lazy" class="video__img" src="${escapeHtml(imgSrc)}" alt="Cover of ${escapeHtml(ep.title)}" onload="${imgOnLoad}" onerror="${imgOnError}">
     ${platformIcon}
     ${favouriteStar}
     <div class="video-content">

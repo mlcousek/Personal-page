@@ -283,52 +283,6 @@ const FUTURE_RACES = [
   { name: '24DS (24 hod. na Dlouhých stráních)', date: '2.10.2027', distance: '24h', link: 'https://moravaflow.cz/dlouhe-strane/24ds/', badge: '24H', badgeClass: 'race-badge--ultra' }
 ];
 
-// --- Training overview data ---
-// Run `node scripts/update-strava.mjs` to regenerate this block.
-const TRAINING_STATS = {
-  updatedLabel: 'September 2026',
-  cards: [
-    { icon: '🏃', value: '270 km',    label: { en: 'Running this month', cs: 'Běh tento měsíc',       es: 'Carrera este mes'     } },
-    { icon: '⬆️', value: '9,750 m',  label: { en: 'Running elevation',  cs: 'Běžecké převýšení',     es: 'Desnivel corriendo'   } },
-    { icon: '📅', value: '14',         label: { en: 'Running sessions',   cs: 'Běžecké tréninky',      es: 'Sesiones de carrera'  } },
-    { icon: '🚴', value: '370 km',    label: { en: 'Cycling this month', cs: 'Cyklistika tento měsíc',es: 'Ciclismo este mes'     } },
-    { icon: '⛰️', value: '2,630 m',  label: { en: 'Cycling elevation',  cs: 'Cyklistické převýšení', es: 'Desnivel en bici'     } },
-    { icon: '📏', value: '101.5 km',  label: { en: 'Longest run',        cs: 'Nejdelší běh',          es: 'Carrera más larga'    } },
-    { icon: '⏱️', value: '6:39 /km', label: { en: 'Avg run pace',       cs: 'Průměrné tempo',        es: 'Ritmo promedio'       } },
-    { icon: '🕐', value: '30h 00m',   label: { en: 'Run time',           cs: 'Čas běhu',              es: 'Tiempo corriendo'     } },
-    { icon: '🔥', value: '21,799',    label: { en: 'Calories (run)',     cs: 'Kalorie (běh)',         es: 'Calorías (carrera)'   } },
-  ],
-  weekly: [
-    { label: 'Aug 10–16',    km: 93.4 },
-    { label: 'Aug 17–23',    km: 41.1 },
-    { label: 'Aug 24–30',    km: 114.1 },
-    { label: 'Aug 31–Sep 6', km: 11.0 },
-    { label: 'Sep 7–13',     km: 11.0 },
-  ],
-  yearCards: [
-    { icon: '🏃', value: '2,449 km',   label: { en: 'Running this year',  cs: 'Běh letos',              es: 'Carrera este año'      } },
-    { icon: '🚴', value: '2,867 km',   label: { en: 'Cycling this year',  cs: 'Kolo letos',             es: 'Ciclismo este año'     } },
-    { icon: '⬆️', value: '66,580 m',  label: { en: 'Run elevation YTD',  cs: 'Převýšení běh letos',   es: 'Desnivel carrera año'  } },
-    { icon: '📅', value: '151',         label: { en: 'Run sessions YTD',   cs: 'Tréninků běh letos',    es: 'Sesiones carrera año'  } },
-    { icon: '📊', value: '68 km/wk',   label: { en: 'Avg weekly km',      cs: 'Průměr km/týden',        es: 'Km semanales promedio' } },
-    { icon: '🕐', value: '274h',        label: { en: 'Total run hours',    cs: 'Celkový čas běhu',       es: 'Horas totales carrera' } },
-    { icon: '⏱️', value: '6:43 /km',  label: { en: 'Avg pace YTD',       cs: 'Průměrné tempo letos',   es: 'Ritmo promedio rok'    } },
-    { icon: '🏆', value: '430',         label: { en: 'Strava PRs set YTD',        cs: 'Strava Osobáků letos',          es: 'Strava Récords personales año'} },
-    { icon: '🔥', value: '191,654',     label: { en: 'Calories YTD (run)', cs: 'Kalorie letos (běh)',    es: 'Calorías año (carrera)' } },
-  ],
-  monthly: [
-    { label: 'Jan', runKm: 232.8, bikeKm: 203.9 },
-    { label: 'Feb', runKm: 200.4, bikeKm: 714.2 },
-    { label: 'Mar', runKm: 359.1, bikeKm: 674.8 },
-    { label: 'Apr', runKm: 401.9, bikeKm: 383.1 },
-    { label: 'May', runKm: 273.2, bikeKm: 168.9 },
-    { label: 'Jun', runKm: 196.6, bikeKm:  48.1 },
-    { label: 'Jul', runKm: 364.2, bikeKm: 232.3 },
-    { label: 'Aug', runKm: 398.9, bikeKm: 262.5 },
-    { label: 'Sep*',runKm:  22.0, bikeKm: 179.4 },
-  ],
-};
-
 function escapeHtml(str){
   if(!str && str!==0) return '';
   return String(str)
