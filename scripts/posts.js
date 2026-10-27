@@ -1,5 +1,141 @@
 const BLOG_POSTS = [
   {
+    id: '24ds-2026',
+    date: '2026-10-04',
+    category: 'Running',
+    stravaUrl: 'https://www.strava.com/activities/20443296331',
+    title: {
+      en: '24DS: 132 km, 7,400 m and 5th Place — Nine Laps Up Dlouhé Stráně',
+      cs: '24DS: 132 km, 7 400 m a 5. místo — devět kol na Dlouhé stráně',
+      es: '24DS: 132 km, 7.400 m y 5.º puesto — nueve vueltas a Dlouhé Stráně'
+    },
+    excerpt: {
+      en: 'My longest run ever: nine laps of the Dlouhé Stráně loop in 24 hours, 21 km further than my previous record. Fifth of 52 solo runners — and a lap ten that was lost at the base, not on the trail.',
+      cs: 'Nejdelší běh v životě: devět kol okruhu na Dlouhých stráních za 24 hodin, o 21 km dál než můj dosavadní rekord. Pátý z 52 jednotlivců — a desáté kolo, které se ztratilo na základně, ne na trati.',
+      es: 'Mi carrera más larga: nueve vueltas al circuito de Dlouhé Stráně en 24 horas, 21 km más que mi récord anterior. Quinto de 52 corredores individuales, y una décima vuelta que se perdió en la base, no en el sendero.'
+    },
+    body: {
+      en: `<p>24DS is a 24-hour race on a single 14.7 km loop in the Jeseníky mountains: out of the base at Kouty nad Desnou, up to the upper reservoir of Dlouhé Stráně at 1,354 m, and back down — <strong>820 m of climbing per lap</strong>. Most laps you do, the better you rank. The goal on the register was ten laps. I did <strong>nine: 132.3 km and about 7,400 m of climbing</strong> — the longest run of my life, beating my previous record of 110.5 km (Ještěd 24h) by 21 km.</p>
+<p>The result: <strong>5th of 52 solo runners</strong>, 5th of 36 men and <strong>3rd in my category</strong> (men 18–35). Only six solo runners finished nine laps or more. I was the first of the nine-lap runners to finish them, at 08:31 on Sunday morning.</p>
+<p>On the loop itself I was <strong>33 minutes faster than my plan</strong> — 19:57 for nine laps against the planned 20:30. Eighty percent of the race was in heart-rate Zone 1. After a first lap that was too hard (climb at 146 bpm against a cap of 140), the second lap was the correction, and the second half of the distance was only 13 % slower than the first.</p>
+<p>Lap ten was lost somewhere else: at the base. I planned 40 minutes of stops in total and spent <strong>1 h 32 min</strong>. The five-minute rule held for two laps, and then the stops crept from 11 to 16 to 18 to 20 minutes. I came back from lap nine six minutes after the last planned departure. It would have fitted on the clock — barely — but I did not go. Compared to Ještěd it is still a big step: stops halved (1:32 instead of 3:19), no stop longer than 20 minutes.</p>
+<p>The low point was lap seven, between 00:48 and 03:30: 2:41 against 2:15 for the lap before, with the heart rate falling together with the speed — sleepiness or an empty tank, not a cardiac ceiling. The same window collapsed at Ještěd, so it is now the first thing I plan for. And the best proof that there was more in the legs: lap nine, at dawn, after 19 hours, took 2:09 and was the fourth-fastest lap of the whole race.</p>
+<p><strong>For the next 24-hour race:</strong> a stop has a departure time, not a feeling; the first climb at heart rate 140 even if it costs ten minutes; a plan for the hours 00:30–04:00; and write the food down — I have no record of what I ate, so I cannot judge the fuelling plan.</p>`,
+      cs: `<p>24DS je 24hodinový závod na jediném 14,7km okruhu v Jeseníkách: ze základny v Koutech nad Desnou nahoru k horní nádrži Dlouhých strání ve 1 354 m a zase dolů — <strong>820 m převýšení na kolo</strong>. Čím víc kol, tím lepší pořadí. Cíl v registru bylo deset kol. Zvládl jsem <strong>devět: 132,3 km a zhruba 7 400 m převýšení</strong> — nejdelší běh v životě, o 21 km víc než můj dosavadní rekord 110,5 km z Ještěd 24h.</p>
+<p>Výsledek: <strong>5. z 52 jednotlivců</strong>, 5. z 36 mužů a <strong>3. v kategorii</strong> (muži 18–35). Devět a více kol dokončilo jen šest jednotlivců. Ze všech devítikolových jsem je dokončil jako první, v neděli v 08:31.</p>
+<p>Na samotném okruhu jsem byl o <strong>33 minut rychlejší než plán</strong> — 19:57 za devět kol místo plánovaných 20:30. Osmdesát procent závodu jsem strávil v tepové zóně 1. Po příliš tvrdém prvním kole (výstup s tepem 146 při stropu 140) bylo druhé kolo korekcí a druhá polovina vzdálenosti byla jen o 13 % pomalejší než první.</p>
+<p>Desáté kolo se ztratilo jinde: na základně. Plánoval jsem celkem 40 minut zastávek a strávil jsem <strong>1 h 32 min</strong>. Pravidlo pěti minut vydrželo dvě kola a pak zastávky rostly z 11 na 16, 18 a 20 minut. Z devátého kola jsem se vrátil šest minut po posledním plánovaném odchodu. Na hodinách by se desáté kolo ještě vešlo — těsně — ale nešel jsem. Proti Ještědu je to přesto velký krok: zastávky poloviční (1:32 místo 3:19), žádná delší než 20 minut.</p>
+<p>Nejhorší bylo sedmé kolo, mezi 00:48 a 03:30: 2:41 proti 2:15 v kole předtím, s tepem, který klesal spolu s rychlostí — ospalost nebo prázdná nádrž, ne srdeční strop. Stejné okno se propadlo i na Ještědu, takže je to teď první věc, na kterou plánuju. A nejlepší důkaz, že v nohách ještě něco zbylo: deváté kolo za svítání, po 19 hodinách, trvalo 2:09 a bylo čtvrté nejrychlejší kolo celého závodu.</p>
+<p><strong>Pro příští čtyřiadvacetihodinovku:</strong> zastávka má čas odchodu, ne pocit; první výstup s tepem 140, i kdyby to stálo deset minut; plán na hodiny 00:30–04:00; a zapisovat jídlo — nemám záznam, co jsem snědl, takže výživový plán nemůžu vyhodnotit.</p>`,
+      es: `<p>24DS es una carrera de 24 horas en un único circuito de 14,7 km en los Jeseníky: desde la base en Kouty nad Desnou hasta el embalse superior de Dlouhé Stráně, a 1.354 m, y de vuelta — <strong>820 m de desnivel por vuelta</strong>. Cuantas más vueltas, mejor la clasificación. El objetivo en mi registro eran diez vueltas. Hice <strong>nueve: 132,3 km y unos 7.400 m de desnivel</strong> — la carrera más larga de mi vida, 21 km más que mi récord anterior de 110,5 km (Ještěd 24h).</p>
+<p>El resultado: <strong>5.º de 52 corredores individuales</strong>, 5.º de 36 hombres y <strong>3.º en mi categoría</strong> (hombres 18–35). Solo seis individuales completaron nueve vueltas o más. Fui el primero de los de nueve vueltas en terminarlas, a las 08:31 del domingo.</p>
+<p>En el propio circuito fui <strong>33 minutos más rápido que mi plan</strong>: 19:57 por nueve vueltas frente a las 20:30 previstas. El ochenta por ciento de la carrera estuvo en la zona 1 de pulsaciones. Tras una primera vuelta demasiado dura (subida a 146 ppm con un límite de 140), la segunda fue la corrección, y la segunda mitad de la distancia fue solo un 13 % más lenta que la primera.</p>
+<p>La décima vuelta se perdió en otro sitio: en la base. Había planeado 40 minutos de paradas en total y gasté <strong>1 h 32 min</strong>. La regla de los cinco minutos aguantó dos vueltas y luego las paradas fueron creciendo: 11, 16, 18 y 20 minutos. Volví de la novena vuelta seis minutos después de la última salida prevista. En el reloj habría cabido — por poco — pero no salí. Frente a Ještěd sigue siendo un gran paso: paradas a la mitad (1:32 en vez de 3:19), ninguna de más de 20 minutos.</p>
+<p>El peor momento fue la séptima vuelta, entre las 00:48 y las 03:30: 2:41 frente a 2:15 en la anterior, con el pulso bajando junto con la velocidad — sueño o depósito vacío, no un techo cardíaco. La misma franja se hundió en Ještěd, así que ahora es lo primero que planifico. Y la mejor prueba de que quedaba algo en las piernas: la novena vuelta, al amanecer, tras 19 horas, duró 2:09 y fue la cuarta más rápida de toda la carrera.</p>
+<p><strong>Para la próxima carrera de 24 horas:</strong> una parada tiene hora de salida, no una sensación; la primera subida a 140 ppm aunque cueste diez minutos; un plan para las horas 00:30–04:00; y anotar la comida — no tengo registro de lo que comí, así que no puedo evaluar el plan de nutrición.</p>`
+    }
+  },
+  {
+    id: 'ai-changed-my-work',
+    date: '2026-09-14',
+    category: 'Tech',
+    title: {
+      en: 'AI Changed How I Work — and I Am All In',
+      cs: 'AI změnila, jak pracuju — a jsem v tom naplno',
+      es: 'La IA cambió mi forma de trabajar — y estoy totalmente dentro'
+    },
+    excerpt: {
+      en: 'Writing code is no longer the slow part. What changed, what I do now instead, and why I enjoy it more than I expected.',
+      cs: 'Psaní kódu už není to pomalé. Co se změnilo, co dělám místo toho a proč mě to baví víc, než jsem čekal.',
+      es: 'Escribir código ya no es la parte lenta. Qué cambió, qué hago ahora en su lugar y por qué lo disfruto más de lo que esperaba.'
+    },
+    body: {
+      en: `<p>My work as a developer has changed, and I enjoy it. That is the short version. I started with a GitHub Copilot course, and today I work daily with <strong>Claude Code and Codex</strong> — agents that read the repository, plan, write code, run the tests and come back with a result.</p>
+<p>The slow part used to be typing the code. Now the slow part is <strong>knowing exactly what I want</strong>. So I spend more of my time on the things I always liked best: thinking about the design, the abstractions, the dependencies, how the thing will be tested. I write a specification first — I work with <strong>OpenSpec</strong>, a proposal, a design and a list of tasks — and only then let the agent build it.</p>
+<p>My favourite habit is what I call <em>grill-me mode</em>: before anything is built, I ask the agent to interview me about the task until the gaps are gone. It finds the questions I had not asked myself. A vague idea turns into a scoped change in ten minutes, and the code that follows is better for it.</p>
+<p>What did not change: I still read what is written, I still insist on tests, and I am still responsible for the result. A fast tool makes good engineering more important, not less. And one more thing it gave me — because I can start working in a new technology almost immediately, I am open to trying things I would have postponed before.</p>
+<p>I am definitely in this. It is not a trend I am watching; it is how I work now.</p>`,
+      cs: `<p>Moje práce vývojáře se změnila a baví mě to. To je ta krátká verze. Začal jsem kurzem GitHub Copilot a dnes denně pracuju s <strong>Claude Code a Codexem</strong> — agenty, kteří čtou repozitář, plánují, píšou kód, spouští testy a vrací výsledek.</p>
+<p>Dřív bylo pomalé psaní kódu. Dnes je pomalé <strong>vědět přesně, co chci</strong>. Takže víc času trávím tím, co mě vždycky bavilo nejvíc: přemýšlením o návrhu, abstrakcích, závislostech a o tom, jak se to bude testovat. Nejdřív napíšu specifikaci — pracuju s <strong>OpenSpec</strong>, tedy návrh, design a seznam úkolů — a teprve potom to nechám agentovi postavit.</p>
+<p>Můj oblíbený zvyk je to, čemu říkám <em>grill-me mode</em>: než se cokoli postaví, požádám agenta, ať mě o úkolu vyslýchá, dokud nezmizí všechny mezery. Najde otázky, které jsem si nepoložil. Z vágního nápadu se za deset minut stane ohraničená změna a kód, který následuje, je díky tomu lepší.</p>
+<p>Co se nezměnilo: pořád čtu, co je napsáno, pořád trvám na testech a pořád za výsledek zodpovídám já. Rychlý nástroj dělá dobré inženýrství důležitější, ne méně důležité. A ještě jedno mi to dalo — protože můžu začít pracovat v nové technologii téměř okamžitě, jsem otevřený věcem, které bych dřív odložil.</p>
+<p>Jsem v tom rozhodně naplno. Není to trend, který sleduju; je to způsob, jakým teď pracuju.</p>`,
+      es: `<p>Mi trabajo como desarrollador ha cambiado y lo disfruto. Esa es la versión corta. Empecé con un curso de GitHub Copilot y hoy trabajo a diario con <strong>Claude Code y Codex</strong>: agentes que leen el repositorio, planifican, escriben código, ejecutan las pruebas y vuelven con un resultado.</p>
+<p>Antes la parte lenta era escribir el código. Ahora la parte lenta es <strong>saber exactamente qué quiero</strong>. Así que dedico más tiempo a lo que siempre me gustó más: pensar en el diseño, las abstracciones, las dependencias y cómo se va a probar. Primero escribo una especificación — trabajo con <strong>OpenSpec</strong>: propuesta, diseño y lista de tareas — y solo después dejo que el agente lo construya.</p>
+<p>Mi costumbre favorita es lo que llamo <em>grill-me mode</em>: antes de construir nada, le pido al agente que me entreviste sobre la tarea hasta que desaparezcan los huecos. Encuentra las preguntas que yo no me había hecho. Una idea vaga se convierte en un cambio acotado en diez minutos, y el código que sigue es mejor por ello.</p>
+<p>Lo que no cambió: sigo leyendo lo que se escribe, sigo insistiendo en las pruebas y sigo siendo responsable del resultado. Una herramienta rápida hace que la buena ingeniería sea más importante, no menos. Y algo más me dio: como puedo empezar a trabajar en una tecnología nueva casi de inmediato, estoy abierto a probar cosas que antes habría aplazado.</p>
+<p>Estoy definitivamente dentro. No es una tendencia que observo; es cómo trabajo ahora.</p>`
+    }
+  },
+  {
+    id: 'ai-a-week-later',
+    date: '2026-10-20',
+    category: 'Tech',
+    title: {
+      en: 'Five Weeks In: Getting Better at Work With AI',
+      cs: 'Po pěti týdnech: s AI jsem v práci lepší',
+      es: 'Cinco semanas después: mejorando en el trabajo con IA'
+    },
+    excerpt: {
+      en: 'Five weeks after going all in, the habits that stuck — specs first, tests as the contract, small reviewable changes — and what I am still learning.',
+      cs: 'Pět týdnů po tom, co jsem do toho šel naplno: zvyky, které zůstaly — specifikace první, testy jako smlouva, malé reviewovatelné změny — a co se ještě učím.',
+      es: 'Cinco semanas después de lanzarme de lleno: los hábitos que se quedaron — especificación primero, pruebas como contrato, cambios pequeños y revisables — y lo que sigo aprendiendo.'
+    },
+    body: {
+      en: `<p>Five weeks ago I wrote that AI changed how I work. That is long enough to see which habits are real and which were just enthusiasm. Three of them stuck.</p>
+<p><strong>Spec first, always.</strong> Every time I skipped it and went straight to "just build it", I paid for it in rework. Every time I wrote the proposal and answered the agent's questions first, the result was close to what I meant. The specification is not paperwork — it is the cheapest place to change my mind.</p>
+<p><strong>Tests are the contract.</strong> Testing is one of my strengths, and it has become more valuable, not less. When an agent writes the code, the tests — unit, integration with Testcontainers, end-to-end — are what let me trust it quickly. I now ask for the test first and read it more carefully than the implementation.</p>
+<p><strong>Small changes I can review.</strong> A huge diff is a diff nobody understands, including me. I get better results when I split the work into small steps, each one reviewable on its own.</p>
+<p>What I am still learning: how to describe architectural intent precisely enough that the agent keeps to it over many changes, and when to stop prompting and simply write the code myself. I want to get better at the layer above the syntax — architecture, paradigms, programming style — and AI is turning out to be a good sparring partner for exactly that.</p>
+<p>Five weeks in, I am better at my job than I was before. That is the whole point.</p>`,
+      cs: `<p>Před pěti týdny jsem psal, že AI změnila, jak pracuju. To stačí na to, abych poznal, které zvyky jsou skutečné a které byly jen nadšení. Tři z nich zůstaly.</p>
+<p><strong>Specifikace vždycky první.</strong> Pokaždé, když jsem ji přeskočil a šel rovnou na „prostě to postav“, zaplatil jsem za to předělávkami. Pokaždé, když jsem nejdřív napsal návrh a odpověděl na otázky agenta, byl výsledek blízko tomu, co jsem myslel. Specifikace není papírování — je to nejlevnější místo, kde si můžu rozmyslet názor.</p>
+<p><strong>Testy jsou smlouva.</strong> Testování je jedna z mých silných stránek a má teď větší hodnotu, ne menší. Když kód píše agent, testy — unit, integrační s Testcontainers, end-to-end — jsou to, co mi dovolí mu rychle důvěřovat. Dnes žádám nejdřív test a čtu ho pozorněji než implementaci.</p>
+<p><strong>Malé změny, které zvládnu zreviewovat.</strong> Obří diff je diff, kterému nikdo nerozumí, včetně mě. Dostávám lepší výsledky, když práci rozdělím na malé kroky, z nichž každý jde posoudit zvlášť.</p>
+<p>Co se ještě učím: jak popsat architektonický záměr dost přesně, aby se ho agent držel přes mnoho změn, a kdy přestat zadávat prompty a prostě napsat kód sám. Chci se zlepšovat ve vrstvě nad syntaxí — architektura, paradigmata, styl programování — a AI se ukazuje jako dobrý sparingpartner právě v tomhle.</p>
+<p>Po pěti týdnech jsem v práci lepší než předtím. A o to jde.</p>`,
+      es: `<p>Hace cinco semanas escribí que la IA cambió mi forma de trabajar. Es tiempo suficiente para ver qué hábitos son reales y cuáles eran solo entusiasmo. Tres se quedaron.</p>
+<p><strong>Especificación primero, siempre.</strong> Cada vez que me la salté y fui directo a «simplemente constrúyelo», lo pagué en retrabajo. Cada vez que escribí primero la propuesta y respondí a las preguntas del agente, el resultado se parecía a lo que quería. La especificación no es papeleo: es el lugar más barato para cambiar de opinión.</p>
+<p><strong>Las pruebas son el contrato.</strong> Las pruebas son una de mis fortalezas y ahora valen más, no menos. Cuando el código lo escribe un agente, las pruebas — unitarias, de integración con Testcontainers, de extremo a extremo — son lo que me permite confiar rápido. Ahora pido primero la prueba y la leo con más atención que la implementación.</p>
+<p><strong>Cambios pequeños que pueda revisar.</strong> Un diff enorme es un diff que nadie entiende, yo incluido. Obtengo mejores resultados cuando divido el trabajo en pasos pequeños, cada uno revisable por sí solo.</p>
+<p>Lo que sigo aprendiendo: cómo describir la intención arquitectónica con la precisión suficiente para que el agente la mantenga a lo largo de muchos cambios, y cuándo dejar de pedir y simplemente escribir el código yo mismo. Quiero mejorar en la capa por encima de la sintaxis — arquitectura, paradigmas, estilo de programación — y la IA resulta ser un buen compañero de sparring justo para eso.</p>
+<p>Cinco semanas después soy mejor en mi trabajo que antes. De eso se trata.</p>`
+    }
+  },
+  {
+    id: 'road-classics-2026',
+    date: '2026-07-18',
+    category: 'Cycling',
+    stravaUrl: 'https://www.strava.com/activities/19362663020',
+    title: {
+      en: 'Road Classics Vysočina: My First Gran Fondo, and the Wall at Km 65',
+      cs: 'Road Classics Vysočina: můj první gran fondo a zeď na 65. km',
+      es: 'Road Classics Vysočina: mi primera gran fondo y el muro del km 65'
+    },
+    excerpt: {
+      en: '104 km and 1,912 m through the Vysočina hills in 3:41:27. Forty kilometres of attacking, three dropped chains, one wall — and a Christmas present that became one of the best days of the year.',
+      cs: '104 km a 1 912 m přes kopce Vysočiny za 3:41:27. Čtyřicet kilometrů útočení, třikrát spadlý řetěz, jedna zeď — a vánoční dárek, ze kterého se stal jeden z nejlepších dnů roku.',
+      es: '104 km y 1.912 m por las colinas de Vysočina en 3:41:27. Cuarenta kilómetros atacando, tres cadenas caídas, un muro — y un regalo de Navidad que se convirtió en uno de los mejores días del año.'
+    },
+    body: {
+      en: `<p>The race was a Christmas present from Alžbeta — and what a present. <strong>Road Classics Vysočina</strong> was my first road gran fondo: <strong>104 km and 1,912 m of climbing</strong> through the Vysočina hills. I rode it in <strong>3:41:27 at 28.2 km/h</strong>, average heart rate 151, on my Lapierre.</p>
+<p>The morning started nervously. Wet roads and a tight peloton made the first kilometres feel sketchy, and I rode them carefully. As the tarmac dried I found my rhythm, and from <strong>km 20 to km 60</strong> I was flying — attacking, chasing down groups, taking every descent at full speed. The only frustration: the chain dropped <strong>three times</strong> in that stretch, each time costing me a group or a gap I had worked hard for.</p>
+<p>At <strong>km 65 the wall arrived</strong>. The legs simply stopped. The aggressive first half took its toll, and the last 40 km were a grind through the hills — suffering, but never stopping. I crossed the line exhausted and buzzing.</p>
+<p><strong>Lessons:</strong> three dropped chains in one race is a mechanical problem, not bad luck, so the chain and derailleur get checked before the next event. Going full gas in the first half of a 100 km+ race makes a very hard second half — manage the peloton phase and save something. And bonking at km 65 says I fuelled too little, too late during the attacking phase: eat on the bike even while chasing.</p>
+<p>Definitely not my last gran fondo.</p>`,
+      cs: `<p>Závod byl vánoční dárek od Alžbety — a jaký to byl dárek. <strong>Road Classics Vysočina</strong> byl můj první silniční gran fondo: <strong>104 km a 1 912 m převýšení</strong> přes kopce Vysočiny. Odjel jsem ho za <strong>3:41:27 s průměrem 28,2 km/h</strong>, průměrný tep 151, na Lapierru.</p>
+<p>Ráno jsem byl nervózní. Mokré silnice a kompaktní balík dělaly první kilometry nejistými, jel jsem je opatrně. Jak asfalt osychal, chytil jsem rytmus a od <strong>20. do 60. km</strong> jsem letěl — útočil jsem, dojížděl skupinky a každý sjezd bral naplno. Jediná frustrace: v té pasáži mi <strong>třikrát spadl řetěz</strong>, pokaždé mě to stálo skupinu nebo náskok, který jsem si těžce vybudoval.</p>
+<p>Na <strong>65. km přišla zeď</strong>. Nohy prostě přestaly. Agresivní první polovina si vybrala daň a posledních 40 km byla dřina přes kopce — trápení, ale bez zastavení. Do cíle jsem dojel vyčerpaný a nabuzený.</p>
+<p><strong>Poučení:</strong> třikrát spadlý řetěz v jednom závodě je mechanický problém, ne smůla, takže řetěz a přehazovačku před dalším závodem zkontroluju. Jet na plný plyn v první polovině závodu přes 100 km znamená velmi těžkou druhou polovinu — v balíku hospodařit a něco si nechat. A krize na 65. km říká, že jsem v útočné fázi jedl málo a pozdě: jíst na kole i při honění.</p>
+<p>Rozhodně to nebyl můj poslední gran fondo.</p>`,
+      es: `<p>La carrera fue un regalo de Navidad de Alžbeta, y qué regalo. <strong>Road Classics Vysočina</strong> fue mi primera gran fondo en carretera: <strong>104 km y 1.912 m de desnivel</strong> por las colinas de Vysočina. La hice en <strong>3:41:27 a 28,2 km/h</strong>, con una frecuencia cardíaca media de 151, sobre mi Lapierre.</p>
+<p>La mañana empezó con nervios. Las carreteras mojadas y un pelotón compacto hicieron inseguros los primeros kilómetros, y los rodé con cuidado. Al secarse el asfalto encontré mi ritmo y del <strong>km 20 al km 60</strong> volé: atacando, cazando grupos, bajando cada descenso a tope. La única frustración: en ese tramo se me salió la cadena <strong>tres veces</strong>, y cada una me costó un grupo o una ventaja que me había costado conseguir.</p>
+<p>En el <strong>km 65 llegó el muro</strong>. Las piernas simplemente se pararon. La primera mitad agresiva pasó factura y los últimos 40 km fueron pura brega por las colinas — sufriendo, pero sin parar. Crucé la meta agotado y eufórico.</p>
+<p><strong>Lecciones:</strong> tres cadenas caídas en una carrera es un problema mecánico, no mala suerte, así que revisaré la cadena y el cambio antes del próximo evento. Ir a tope en la primera mitad de una carrera de más de 100 km da una segunda mitad muy dura: gestionar la fase de pelotón y guardar algo. Y la pájara del km 65 dice que comí poco y tarde en la fase de ataques: comer sobre la bici incluso persiguiendo.</p>
+<p>Desde luego no será mi última gran fondo.</p>`
+    }
+  },
+  {
     id: 'b7-2026',
     date: '2026-08-28',
     category: 'Running',
@@ -312,7 +448,8 @@ const CATEGORY_MAP = {
   'Life': { en: 'Life', cs: 'Život', es: 'Vida' },
   'Academic': { en: 'Academic', cs: 'Akademické', es: 'Académico' },
   'Running': { en: 'Running', cs: 'Běh', es: 'Carrera' },
-  'Tech': { en: 'Tech', cs: 'Technologie', es: 'Tecnología' }
+  'Tech': { en: 'Tech', cs: 'Technologie', es: 'Tecnología' },
+  'Cycling': { en: 'Cycling', cs: 'Cyklistika', es: 'Ciclismo' }
 };
 
 function cardHTML(post, lang) {

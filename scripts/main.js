@@ -8,6 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer-text': 'Built with consistency, one block at a time.',
             'nav-logo': 'Jiří Mlčoušek',
             'nav-about': 'About',
+            'nav-projects': 'My Projects',
+            'nav-cv': 'CV',
+            // ── Projects page ──
+            'projects-eyebrow': '.NET · Web · Automation · Data',
+            'projects-title': 'My Projects',
+            'projects-lead': 'Things I have built — a cycling app, a master thesis that won a student competition, a personal knowledge system that runs itself, and small tools I wrote because I needed them.',
+            'projects-academic-heading': 'Featured projects',
+            'projects-vault-heading': 'Jirka\'s World — my Obsidian vault',
+            'vault-intro-p1': 'Everything in my life ends up in one place: an Obsidian vault I have been building since 2025. Training and racing, books, podcasts, money, work, trips — over 3 000 activities and thousands of notes, all linked together.',
+            'vault-intro-p2': 'The rule is simple: data should arrive by itself. Scheduled Node.js scripts pull everything in, interactive DataviewJS dashboards turn it into answers, and a custom TypeScript plugin handles what Markdown can\'t — maps, charts and analysis, tested by thousands of regression checks.',
+            'vault-stat-activities': 'activities',
+            'vault-stat-scripts': 'sync scripts',
+            'vault-stat-plugin': 'lines of TypeScript',
+            'vault-stat-tests': 'regression checks',
+            'vault-plugins-heading': 'Custom plugin: Jirka\'s World Maps',
+            'vault-automations-heading': 'Automations',
+            'projects-tools-heading': 'More projects',
             'nav-books': 'Read Books',
             'nav-media': 'Media Hub',
             'nav-podcasts': 'Podcast Log',
@@ -130,6 +147,23 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer-text': 'Budováno konzistentně, kostku po kostce.',
             'nav-logo': 'Jiří Mlčoušek',
             'nav-about': 'O mně',
+            'nav-projects': 'Moje projekty',
+            'nav-cv': 'Životopis',
+            // ── Projects page ──
+            'projects-eyebrow': '.NET · Web · Automatizace · Data',
+            'projects-title': 'Moje projekty',
+            'projects-lead': 'Věci, které jsem postavil — cyklistickou aplikaci, diplomovou práci oceněnou ve studentské soutěži, osobní znalostní systém, který se stará sám o sebe, a malé nástroje, které jsem napsal, protože jsem je potřeboval.',
+            'projects-academic-heading': 'Hlavní projekty',
+            'projects-vault-heading': 'Jirka\'s World — můj Obsidian vault',
+            'vault-intro-p1': 'Všechno z mého života končí na jednom místě: v Obsidian vaultu, který stavím od roku 2025. Trénink a závody, knihy, podcasty, peníze, práce, cesty — přes 3 000 aktivit a tisíce poznámek, všechno navzájem propojené.',
+            'vault-intro-p2': 'Pravidlo je jednoduché: data mají přicházet sama. Plánované Node.js skripty vše stáhnou, interaktivní DataviewJS dashboardy z toho udělají odpovědi a vlastní TypeScript plugin řeší to, co Markdown nezvládne — mapy, grafy a analýzy, hlídané tisíci regresních kontrol.',
+            'vault-stat-activities': 'aktivit',
+            'vault-stat-scripts': 'synchronizačních skriptů',
+            'vault-stat-plugin': 'řádků TypeScriptu',
+            'vault-stat-tests': 'regresních kontrol',
+            'vault-plugins-heading': 'Vlastní plugin: Jirka\'s World Maps',
+            'vault-automations-heading': 'Automatizace',
+            'projects-tools-heading': 'Další projekty',
             'nav-books': 'Přečtené knihy',
             'nav-media': 'Mediální hub',
             'nav-podcasts': 'Podcasty',
@@ -252,6 +286,23 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer-text': 'Construido con consistencia, un bloque a la vez.',
             'nav-logo': 'Jiří Mlčoušek',
             'nav-about': 'Sobre mí',
+            'nav-projects': 'Mis proyectos',
+            'nav-cv': 'Currículum',
+            // ── Projects page ──
+            'projects-eyebrow': '.NET · Web · Automatización · Datos',
+            'projects-title': 'Mis proyectos',
+            'projects-lead': 'Cosas que he construido: una app de ciclismo, un trabajo de máster premiado en un concurso estudiantil, un sistema personal de conocimiento que funciona solo y pequeñas herramientas que escribí porque las necesitaba.',
+            'projects-academic-heading': 'Proyectos destacados',
+            'projects-vault-heading': 'Jirka\'s World — mi vault de Obsidian',
+            'vault-intro-p1': 'Todo lo de mi vida acaba en un mismo lugar: un vault de Obsidian que construyo desde 2025. Entrenamiento y carreras, libros, pódcasts, dinero, trabajo, viajes: más de 3 000 actividades y miles de notas, todo enlazado entre sí.',
+            'vault-intro-p2': 'La regla es sencilla: los datos deben llegar solos. Scripts de Node.js programados lo traen todo, paneles interactivos de DataviewJS lo convierten en respuestas y un plugin propio en TypeScript se encarga de lo que Markdown no puede: mapas, gráficos y análisis, vigilados por miles de comprobaciones de regresión.',
+            'vault-stat-activities': 'actividades',
+            'vault-stat-scripts': 'scripts de sincronización',
+            'vault-stat-plugin': 'líneas de TypeScript',
+            'vault-stat-tests': 'comprobaciones de regresión',
+            'vault-plugins-heading': 'Plugin propio: Jirka\'s World Maps',
+            'vault-automations-heading': 'Automatizaciones',
+            'projects-tools-heading': 'Más proyectos',
             'nav-books': 'Libros leídos',
             'nav-media': 'Centro multimedia',
             'nav-podcasts': 'Podcasts',
@@ -469,6 +520,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const path = window.location.pathname;
         const map = [
             { id: 'nav-about', key: 'about.html' },
+            { id: 'nav-projects', key: 'projects.html' },
+            { id: 'nav-cv', key: 'cv.html' },
             { id: 'nav-books', key: 'books.html' },
             { id: 'nav-podcasts', key: 'podcasts.html' },
             { id: 'nav-videos', key: 'videos.html' },
@@ -559,6 +612,8 @@ function normalizeNavbarLinks() {
     const linkConfig = [
         { selector: '#nav-logo', file: 'index.html' },
         { selector: '#nav-about', file: 'about.html' },
+        { selector: '#nav-projects', file: 'projects.html' },
+        { selector: '#nav-cv', file: 'cv.html' },
         { selector: '#nav-books', file: 'books.html' },
         { selector: '#nav-podcasts', file: 'podcasts.html' },
         { selector: '#nav-videos', file: 'videos.html' },
@@ -632,6 +687,8 @@ function buildInlineNavbar(prefix) {
     <div class="nav-panel" id="nav-panel">
         <ul class="nav-links">
             <li class="nav-item"><a href="${page('about.html')}" id="nav-about">About</a></li>
+            <li class="nav-item"><a href="${page('projects.html')}" id="nav-projects">My Projects</a></li>
+            <li class="nav-item"><a href="${page('cv.html')}" id="nav-cv">CV</a></li>
             <li class="nav-item dropdown">
                 <button class="nav-dropdown-toggle" id="nav-media" type="button" aria-haspopup="true" aria-expanded="false">Media Hub</button>
                 <ul class="dropdown-menu" aria-label="Media pages">

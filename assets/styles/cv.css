@@ -1,0 +1,89 @@
+/* CV page — editorial two-column layout: sticky identity rail + hairline-separated sections.
+   Consumes main.css tokens only; no new colours. */
+
+.cv-wrapper { max-width: 1120px; margin: 0 auto; padding-left: 24px; padding-right: 24px; padding-bottom: 96px; }
+
+.cv-layout { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 64px; align-items: start; }
+
+/* ── Identity rail ── */
+.cv-header { position: sticky; top: calc(var(--nav-height) + 32px); }
+.cv-eyebrow { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-text); margin: 0 0 12px; }
+.cv-name { font-size: clamp(2rem, 4vw, 2.75rem); letter-spacing: -0.03em; line-height: 1.05; color: var(--ink); margin: 0 0 8px; text-wrap: balance; }
+.cv-location { color: var(--muted); margin: 0 0 28px; }
+
+.cv-links, .cv-langs { list-style: none; margin: 0 0 28px; padding: 0; display: grid; gap: 10px; }
+.cv-links li { display: grid; gap: 2px; }
+.cv-link-label, .cv-meta { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.04em; color: var(--muted); }
+.cv-links a { color: var(--ink); text-decoration: none; overflow-wrap: anywhere; border-bottom: 1px solid var(--border-strong); width: fit-content; }
+.cv-links a:focus-visible, .cv-cert a:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 3px; }
+.cv-side-heading { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; font-weight: 500; }
+.cv-langs li { display: flex; justify-content: space-between; gap: 12px; color: var(--ink); border-bottom: 1px solid var(--border); padding-bottom: 8px; }
+
+.cv-print {
+  font: inherit; font-size: 0.875rem; color: var(--ink); background: transparent; cursor: pointer;
+  border: 1px solid var(--border-strong); border-radius: var(--radius-pill); padding: 10px 18px;
+  transition: transform 140ms var(--ease-out), border-color 140ms var(--ease-out);
+}
+.cv-print:active { transform: scale(0.97); }
+.cv-print:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) { .cv-print:hover { border-color: var(--accent); } }
+
+/* ── Content ── */
+.cv-section { padding: 0 0 48px; margin: 0 0 48px; border-bottom: 1px solid var(--border); }
+.cv-section:last-child { border-bottom: 0; margin-bottom: 0; }
+.cv-section > .section-heading {
+  font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent-text); margin: 0 0 28px;
+}
+.cv-summary { font-size: 1.15rem; line-height: 1.7; color: var(--ink); max-width: 62ch; margin: 0; text-wrap: pretty; }
+
+.cv-entry { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 24px; padding: 0 0 28px; }
+.cv-entry:last-of-type { padding-bottom: 0; }
+.cv-period { font-family: var(--font-mono); font-size: 0.8rem; color: var(--muted); padding-top: 4px; font-variant-numeric: tabular-nums; }
+.cv-entry__title { font-size: 1.2rem; color: var(--ink); margin: 0 0 4px; letter-spacing: -0.01em; }
+.cv-company { color: var(--muted); font-weight: 400; }
+.cv-school { margin: 0 0 10px; color: var(--text); }
+.cv-thesis { margin: 0 0 6px; color: var(--text); }
+.cv-thesis .cv-meta { display: block; margin-bottom: 2px; }
+.cv-award { margin: 8px 0 0; color: var(--accent-text); font-weight: 500; }
+.cv-earlier { margin: 28px 0 0; color: var(--muted); font-size: 0.9rem; max-width: 70ch; }
+.cv-earlier .cv-meta { display: block; margin-bottom: 4px; }
+
+.cv-steps { list-style: none; margin: 12px 0 0; padding: 0 0 0 16px; border-left: 1px solid var(--border-strong); display: grid; gap: 10px; }
+.cv-steps li { display: grid; grid-template-columns: 150px 1fr; gap: 12px; color: var(--ink); }
+
+/* ── Skills ── */
+.cv-mindset { margin-bottom: 32px; font-size: 1rem; color: var(--text); }
+.cv-skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 32px; }
+.cv-skill-group__title { font-size: 0.95rem; color: var(--ink); margin: 0 0 12px; font-weight: 600; }
+.cv-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.cv-chips li { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text); border: 1px solid var(--border-strong); border-radius: var(--radius-pill); padding: 5px 12px; }
+
+/* ── Certifications ── */
+.cv-certs { list-style: none; margin: 0; padding: 0; }
+.cv-cert { border-bottom: 1px solid var(--border); }
+.cv-cert:first-child { border-top: 1px solid var(--border); }
+.cv-cert a, .cv-cert > div { display: grid; grid-template-columns: 150px 1fr auto; gap: 12px; align-items: baseline; padding: 14px 0; color: var(--ink); text-decoration: none; }
+.cv-cert__cta { font-size: 0.85rem; color: var(--accent-text); }
+
+@media (max-width: 900px) {
+  .cv-layout { grid-template-columns: 1fr; gap: 40px; }
+  .cv-header { position: static; }
+}
+@media (max-width: 640px) {
+  .cv-entry, .cv-steps li, .cv-cert a, .cv-cert > div { grid-template-columns: 1fr; gap: 4px; }
+  .cv-skills { grid-template-columns: 1fr; }
+}
+
+/* ── Print: plain, light, one flow ── */
+@media print {
+  .navbar, #navbar-placeholder, #footer-placeholder, .bg-scene, .cv-print, .skip-link { display: none !important; }
+  body, body::before, body::after { background: #fff !important; }
+  .cv-wrapper { padding: 0; max-width: none; }
+  .cv-layout { grid-template-columns: 220px 1fr; gap: 32px; }
+  .cv-header { position: static; }
+  .cv-page * { color: #111 !important; border-color: #ccc !important; }
+  .cv-section { break-inside: avoid; }
+  .cv-entry { break-inside: avoid; }
+  .reveal { opacity: 1 !important; transform: none !important; filter: none !important; }
+}

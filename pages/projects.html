@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects – Jiří Mlčoušek</title>
+    <meta name="description" content="Software projects by Jiří Mlčoušek — bachelor and master thesis, a self-built Obsidian vault with custom plugins and automations, a Windows tray app and an iOS food tracker.">
+    <link rel="canonical" href="https://mlcousek.github.io/Personal-page/pages/projects.html">
+    <link rel="alternate" hreflang="en" href="https://mlcousek.github.io/Personal-page/pages/projects.html?lang=en">
+    <link rel="alternate" hreflang="cs" href="https://mlcousek.github.io/Personal-page/pages/projects.html?lang=cs">
+    <link rel="alternate" hreflang="es" href="https://mlcousek.github.io/Personal-page/pages/projects.html?lang=es">
+    <link rel="alternate" hreflang="x-default" href="https://mlcousek.github.io/Personal-page/pages/projects.html">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#0a0b0d">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Jiří Mlčoušek">
+    <meta property="og:title" content="My Projects – Jiří Mlčoušek">
+    <meta property="og:description" content="Software projects by Jiří Mlčoušek — theses, Obsidian vault tooling, a Windows tray app and an iOS food tracker.">
+    <meta property="og:url" content="https://mlcousek.github.io/Personal-page/pages/projects.html">
+    <meta property="og:image" content="https://mlcousek.github.io/Personal-page/images/og-cover.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Jiří Mlčoušek running a mountain race">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="projects-page" data-root="..">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div id="navbar-placeholder"></div>
+    <main class="projects-shell" id="main-content" tabindex="-1">
+
+        <header class="projects-header">
+            <span class="projects-eyebrow" id="projects-eyebrow">.NET · Web · Automation · Data</span>
+            <h1 id="projects-title">My Projects</h1>
+            <p class="projects-lead" id="projects-lead">Things I have built — two university theses, a personal knowledge system that runs itself, and small tools I wrote because I needed them.</p>
+        </header>
+
+        <section class="projects-section" aria-labelledby="projects-academic-heading">
+            <h2 class="projects-heading" id="projects-academic-heading">Featured projects</h2>
+            <div class="projects-grid projects-grid--featured" id="featured-grid"></div>
+        </section>
+
+        <section class="projects-section" aria-labelledby="projects-tools-heading">
+            <h2 class="projects-heading" id="projects-tools-heading">More projects</h2>
+            <div class="projects-grid" id="more-grid"></div>
+        </section>
+
+        <section class="projects-section" aria-labelledby="projects-vault-heading">
+            <h2 class="projects-heading" id="projects-vault-heading">Jirka's World — my Obsidian vault</h2>
+
+            <div class="vault-intro">
+                <div class="vault-intro__text">
+                    <p id="vault-intro-p1">Everything in my life ends up in one place: an Obsidian vault I have been building since 2025. Training and racing, books, podcasts, money, work, trips — over 3 000 activities and thousands of notes, all linked together.</p>
+                    <p id="vault-intro-p2">The rule is simple: data should arrive by itself. Scheduled Node.js scripts pull everything in, interactive DataviewJS dashboards turn it into answers, and a custom TypeScript plugin handles what Markdown can't — maps, charts and analysis, tested by thousands of regression checks.</p>
+                    <span class="project-private" id="vault-private"></span>
+                </div>
+                <dl class="vault-stats">
+                    <div><dt id="vault-stat-activities">activities</dt><dd>3 000+</dd></div>
+                    <div><dt id="vault-stat-scripts">sync scripts</dt><dd>40+</dd></div>
+                    <div><dt id="vault-stat-plugin">lines of TypeScript</dt><dd>26k</dd></div>
+                    <div><dt id="vault-stat-tests">regression checks</dt><dd>2 400+</dd></div>
+                </dl>
+            </div>
+
+            <h3 class="projects-subheading" id="vault-plugins-heading">Custom plugin: Jirka's World Maps</h3>
+            <div class="plugin-grid" id="vault-plugins"></div>
+
+            <h3 class="projects-subheading" id="vault-automations-heading">Automations</h3>
+            <ul class="automation-list" id="vault-automations"></ul>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/projects.js"></script>
+    <script src="../scripts/effects.js"></script>
+</body>
+</html>
