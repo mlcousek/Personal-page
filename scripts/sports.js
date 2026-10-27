@@ -1,5 +1,24 @@
 const RACES = [
   {
+    id: '24ds-2026',
+    name: '24DS – 24h na Dlouhých Stráních 2026',
+    date: '2026-10-03',
+    category: '24h',
+    distance: '132.3 km · 7,380 m+',
+    time: '21:31:23',
+    placement: '5th / 52 solo · 3rd in category',
+    badge: '24H',
+    badgeClass: 'race-badge--ultra',
+    highlight: true,
+    story: {
+      en: 'Nine laps of the 14.7 km Dlouhé Stráně loop — 132.3 km and about 7,400 m of climbing, the longest run of my life and 21 km beyond my previous record. 5th of 52 solo runners and 3rd in men 18–35. I was 33 minutes faster than plan on the loop, but spent 1 h 32 min at the base instead of 40 minutes, and lap ten was lost there. The low point was lap seven in the small hours; lap nine at dawn was the fourth-fastest lap of the race.',
+      cs: 'Devět kol 14,7km okruhu na Dlouhých stráních — 132,3 km a zhruba 7 400 m převýšení, nejdelší běh v životě a o 21 km víc než můj předchozí rekord. 5. z 52 jednotlivců a 3. v kategorii mužů 18–35. Na okruhu jsem byl o 33 minut rychlejší než plán, ale na základně jsem strávil 1 h 32 min místo 40 minut a desáté kolo se ztratilo tam. Dno přišlo v sedmém kole nad ránem; deváté kolo za svítání bylo čtvrté nejrychlejší kolo závodu.',
+      es: 'Nueve vueltas al circuito de 14,7 km de Dlouhé Stráně: 132,3 km y unos 7.400 m de desnivel, la carrera más larga de mi vida y 21 km más que mi récord anterior. 5.º de 52 individuales y 3.º en hombres 18–35. En el circuito fui 33 minutos más rápido que el plan, pero pasé 1 h 32 min en la base en vez de 40 minutos, y allí se perdió la décima vuelta. El peor momento fue la séptima vuelta de madrugada; la novena, al amanecer, fue la cuarta más rápida de la carrera.'
+    },
+    stravaUrl: 'https://www.strava.com/activities/20443296331',
+    photos: []
+  },
+  {
     id: 'b7-2026',
     name: 'B7 – IMOS Beskydská Sedmička 2026',
     date: '2026-08-28',
@@ -261,8 +280,7 @@ const RACES = [
 ];
 
 const FUTURE_RACES = [
-  { name: '24DS (24 hod. na Dlouhých stráních)', date: '3.10.2026', distance: '24h', link: 'https://moravaflow.cz/dlouhe-strane/24ds/', badge: '24H', badgeClass: 'race-badge--ultra' },
-  { name: 'Ladermon Trail', date: '10.10.2026', distance: '30 km / 940m+', link: 'https://ladermontrail.cz/', badge: 'Trail', badgeClass: 'race-badge--trail' }
+  { name: '24DS (24 hod. na Dlouhých stráních)', date: '2.10.2027', distance: '24h', link: 'https://moravaflow.cz/dlouhe-strane/24ds/', badge: '24H', badgeClass: 'race-badge--ultra' }
 ];
 
 // --- Training overview data ---
@@ -321,76 +339,6 @@ function escapeHtml(str){
     .replace(/'/g, '&#39;');
 }
 
-function renderTrainingStats() {
-  const container = document.getElementById('training-stats-container');
-  if (!container) return;
-
-  const lang = localStorage.getItem('lang') || 'en';
-
-  const i18n = {
-    lastMonth:   { en: 'Last 30 days',          cs: 'Posledních 30 dní',      es: 'Últimos 30 días' },
-    yearToDate:  { en: 'Year to Date',           cs: 'Letos celkem',           es: 'Acumulado del año' },
-    weeklyTitle: { en: 'Weekly running km',      cs: 'Týdenní uběhnuté km',   es: 'Km de carrera semanal' },
-    monthlyTitle:{ en: 'Monthly km (run + bike)',cs: 'Měsíční km (běh + kolo)',es: 'Km mensuales (carrera + bici)' },
-    run:         { en: 'Run',                    cs: 'Běh',                    es: 'Carrera' },
-    bike:        { en: 'Bike',                   cs: 'Kolo',                   es: 'Bici' },
-  };
-  const t = k => i18n[k][lang] || i18n[k].en;
-
-  const cardHtml = c => `
-    <div class="training-stat-card">
-      <span class="training-icon">${c.icon}</span>
-      <span class="training-value">${c.value}</span>
-      <span class="training-label">${typeof c.label === 'object' ? (c.label[lang] || c.label.en) : c.label}</span>
-    </div>`;
-
-  const maxWeekKm = Math.max(...TRAINING_STATS.weekly.map(w => w.km));
-  const weekBarsHtml = TRAINING_STATS.weekly.map(w => {
-    const pct = Math.round((w.km / maxWeekKm) * 100);
-    return `<div class="chart-col">
-      <span class="chart-km">${w.km}</span>
-      <div class="chart-bar" style="height:${pct}%"></div>
-      <span class="chart-week">${w.label}</span>
-    </div>`;
-  }).join('');
-
-  const maxMonthVal = Math.max(...TRAINING_STATS.monthly.map(m => m.runKm + m.bikeKm));
-  const monthBarsHtml = TRAINING_STATS.monthly.map(m => {
-    const runPct  = Math.round((m.runKm  / maxMonthVal) * 100);
-    const bikePct = Math.round((m.bikeKm / maxMonthVal) * 100);
-    return `<div class="chart-col monthly-col">
-      <div class="monthly-bars">
-        ${m.runKm  > 0 ? `<div class="monthly-bar monthly-bar--run"  style="height:${runPct}%"  title="${m.runKm} km run"></div>`  : '<div class="monthly-bar monthly-bar--empty"></div>'}
-        ${m.bikeKm > 0 ? `<div class="monthly-bar monthly-bar--bike" style="height:${bikePct}%" title="${m.bikeKm} km bike"></div>` : '<div class="monthly-bar monthly-bar--empty"></div>'}
-      </div>
-      <span class="chart-week">${m.label}</span>
-    </div>`;
-  }).join('');
-
-  const yearCardsHtml = TRAINING_STATS.yearCards
-    ? TRAINING_STATS.yearCards.map(cardHtml).join('')
-    : '';
-
-  container.innerHTML = `
-    <div class="training-section-title">${t('lastMonth')}</div>
-    <div class="training-stats">${TRAINING_STATS.cards.map(cardHtml).join('')}</div>
-    <div class="weekly-chart-wrap">
-      <p class="weekly-chart-title">${t('weeklyTitle')}</p>
-      <div class="weekly-chart">${weekBarsHtml}</div>
-    </div>
-    ${yearCardsHtml ? `
-    <div class="training-section-title training-section-title--ytd">${t('yearToDate')}</div>
-    <div class="training-stats training-stats--year">${yearCardsHtml}</div>
-    <div class="weekly-chart-wrap">
-      <p class="weekly-chart-title">${t('monthlyTitle')}</p>
-      <div class="monthly-legend">
-        <span class="legend-dot legend-dot--run"></span>${t('run')}
-        <span class="legend-dot legend-dot--bike"></span>${t('bike')}
-      </div>
-      <div class="weekly-chart monthly-chart">${monthBarsHtml}</div>
-    </div>` : ''}`;
-}
-
 function renderRaceTable() {
   const tbody = document.getElementById('races-tbody');
   if (!tbody) return;
@@ -424,6 +372,8 @@ function renderRaceTable() {
 function renderFutureRaceTable() {
   const tbody = document.getElementById('future-races-tbody');
   if (!tbody) return;
+  const section = tbody.closest('section');
+  if (section) section.hidden = FUTURE_RACES.length === 0;
   const lang = localStorage.getItem('lang') || 'en';
   const websiteTxt = { en: 'Website', cs: 'Web', es: 'Sitio web' };
   
@@ -533,7 +483,6 @@ function closeModal() {
 document.addEventListener('DOMContentLoaded', () => {
   renderRaceTable();
   renderFutureRaceTable();
-  renderTrainingStats();
 
   document.querySelectorAll('.stat-card--link:not(a)').forEach(card => {
     card.addEventListener('click', () => window.open(card.dataset.stravaUrl, '_blank', 'noopener,noreferrer'));
@@ -556,5 +505,4 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('languageChanged', () => {
   renderRaceTable();
   renderFutureRaceTable();
-  renderTrainingStats();
 });

@@ -22,7 +22,10 @@
     '.about-hero-text', '.about-hero-photo', '.story-body p',
     '.table-wrap', '.football-card', '.weekly-chart-wrap',
     '.blog-header', '.sports-header', '.page-hero', '.media-page-header',
-    '.all-posts-list li', '.home-blog-header', '.filter-bar', '.media-controls'
+    '.all-posts-list li', '.home-blog-header', '.filter-bar', '.media-controls',
+    '.projects-header', '.projects-heading', '.project-card', '.vault-intro',
+    '.plugin-card', '.automation-item',
+    '.cv-header', '.cv-section > .section-heading', '.cv-entry', '.cv-skill-group', '.cv-cert'
   ].join(',');
 
   let io = null;

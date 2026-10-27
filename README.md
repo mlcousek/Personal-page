@@ -5,6 +5,7 @@ Source code for my personal website: a hub for projects, reading highlights, spo
 ## ✨ Features
 
 - **Landing page:** Hero content, social links, and quick navigation.
+- **My Projects:** Bachelor and master thesis, the Obsidian vault with its custom plugin and automations, and side tools — data-driven cards in `pages/projects.html` + `scripts/projects.js`.
 - **Sports:** Race history, future races, clickable PB stat cards linking to Strava activities, and a live Training Overview powered by the Strava API — last-30-days stats (pace, time, elevation, calories…), weekly bar chart, year-to-date stats (9 cards), and a monthly run vs. bike dual-bar chart.
 - **Books log:** Curated reading list with completion dates, currently-reading entries, and cover images. Lives in `pages/books.html`.
 - **Blog / Podcasts / Videos:** Dedicated pages with filterable, data-driven card layouts.
@@ -27,6 +28,7 @@ npx live-server . --open=index.html
 | Races / future races | `RACES` / `FUTURE_RACES` arrays in `scripts/sports.js` |
 | Training stats (manual) | `TRAINING_STATS` block in `scripts/sports.js` |
 | Training stats (auto) | `node scripts/update-strava.mjs` — fetches last 30 days + YTD from Strava API and patches `sports.js` |
+| Projects | `PROJECTS`, `VAULT_PLUGINS`, `VAULT_AUTOMATIONS` arrays in `scripts/projects.js` (screenshots in `images/projects/`) |
 | Books | `pages/books.html` |
 | Blog posts | `BLOG_POSTS` array in `scripts/posts.js` |
 | Podcasts | `PODCAST_EPISODES` array in `scripts/podcasts.js` |
