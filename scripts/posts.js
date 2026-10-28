@@ -68,6 +68,53 @@ const BLOG_POSTS = [
     }
   },
   {
+    id: 'graphify',
+    date: '2026-07-15',
+    category: 'Tech',
+    title: {
+      en: 'Graphify: Giving My AI Agent a Map of the Codebase',
+      cs: 'Graphify: mapa kódu pro mého AI agenta',
+      es: 'Graphify: un mapa del código para mi agente de IA'
+    },
+    excerpt: {
+      en: 'A tool I picked up this summer and now use on every project: it turns a repository into a knowledge graph that both I and my AI agent can query.',
+      cs: 'Nástroj, který jsem objevil letos v létě a dnes ho používám na každém projektu: promění repozitář ve znalostní graf, na který se můžu ptát já i můj AI agent.',
+      es: 'Una herramienta que descubrí este verano y que ahora uso en cada proyecto: convierte un repositorio en un grafo de conocimiento que puedo consultar yo y mi agente de IA.'
+    },
+    body: {
+      en: `<p>When an AI coding agent opens an unfamiliar repository, it starts by searching. It greps, opens files, guesses, and opens more files. It works, but it is slow, and it burns a lot of context before any real work starts. <strong>Graphify</strong> attacks exactly that problem.</p>
+<p>Graphify reads a project — code, docs, even papers and images — and builds a <em>knowledge graph</em> from it: which things exist, how they connect, which are the central ones (the "god nodes"), and which clusters belong together. The result lands in a <code>graphify-out/</code> folder as a short report, an interactive graph you can open in the browser, and a queryable data file.</p>
+<p>What I like in practice:</p>
+<ul>
+<li><strong>Orientation first, search second.</strong> Before touching code I can ask the graph how two parts relate or what a module is connected to, instead of reading half the repo.</li>
+<li><strong>It keeps itself current.</strong> Git hooks rebuild the graph after commits and branch switches, so the map does not go stale.</li>
+<li><strong>It helps me too.</strong> The report and the visual graph are a quick way to get my own head around a project I have not touched for a while.</li>
+</ul>
+<p>It fits the way I like to work with AI: give the agent good context, keep iterations small, and review what comes back. A graph of the codebase is simply better context than a pile of search results.</p>
+<p>I am still learning where it helps most, but it has earned a permanent place in my setup, and it is one of the reasons I want to keep improving how my team works with AI agents.</p>`,
+      cs: `<p>Když AI programovací agent otevře neznámý repozitář, začne hledáním. Grepuje, otevírá soubory, hádá a otevírá další. Funguje to, ale je to pomalé a spotřebuje to spoustu kontextu dřív, než začne skutečná práce. <strong>Graphify</strong> řeší přesně tenhle problém.</p>
+<p>Graphify přečte projekt — kód, dokumentaci, klidně i články a obrázky — a vytvoří z něj <em>znalostní graf</em>: co existuje, jak to spolu souvisí, které části jsou centrální („god nodes“) a které shluky patří k sobě. Výsledek skončí ve složce <code>graphify-out/</code> jako krátký report, interaktivní graf k otevření v prohlížeči a datový soubor, na který se dá ptát.</p>
+<p>Co se mi na tom v praxi líbí:</p>
+<ul>
+<li><strong>Nejdřív orientace, potom hledání.</strong> Než sáhnu na kód, můžu se grafu zeptat, jak spolu dvě části souvisí nebo s čím je modul propojený, místo čtení půlky repozitáře.</li>
+<li><strong>Udržuje se aktuální.</strong> Git hooky graf přestaví po commitech a přepnutí větve, takže mapa nezastarává.</li>
+<li><strong>Pomáhá i mně.</strong> Report a vizuální graf jsou rychlý způsob, jak se zorientovat v projektu, na který jsem dlouho nesáhl.</li>
+</ul>
+<p>Zapadá to do způsobu, jakým rád s AI pracuji: dát agentovi dobrý kontext, držet iterace malé a zkontrolovat, co přinese. Graf kódu je prostě lepší kontext než hromada výsledků hledání.</p>
+<p>Pořád ještě zjišťuji, kde pomáhá nejvíc, ale získal si trvalé místo v mém nastavení a je jedním z důvodů, proč chci dál zlepšovat, jak náš tým s AI agenty pracuje.</p>`,
+      es: `<p>Cuando un agente de programación con IA abre un repositorio desconocido, empieza buscando. Hace grep, abre archivos, adivina y abre más archivos. Funciona, pero es lento y consume mucho contexto antes de que empiece el trabajo real. <strong>Graphify</strong> ataca justo ese problema.</p>
+<p>Graphify lee un proyecto —código, documentación, incluso artículos e imágenes— y construye un <em>grafo de conocimiento</em>: qué cosas existen, cómo se conectan, cuáles son las centrales (los «god nodes») y qué grupos van juntos. El resultado queda en una carpeta <code>graphify-out/</code> como un informe breve, un grafo interactivo que se abre en el navegador y un archivo de datos consultable.</p>
+<p>Lo que me gusta en la práctica:</p>
+<ul>
+<li><strong>Primero orientación, luego búsqueda.</strong> Antes de tocar código puedo preguntarle al grafo cómo se relacionan dos partes o con qué está conectado un módulo, en lugar de leer medio repositorio.</li>
+<li><strong>Se mantiene al día.</strong> Los git hooks reconstruyen el grafo tras los commits y los cambios de rama, así que el mapa no se queda viejo.</li>
+<li><strong>También me ayuda a mí.</strong> El informe y el grafo visual son una forma rápida de situarme en un proyecto que llevo tiempo sin tocar.</li>
+</ul>
+<p>Encaja con mi forma de trabajar con IA: darle al agente buen contexto, mantener iteraciones pequeñas y revisar lo que devuelve. Un grafo del código es simplemente mejor contexto que un montón de resultados de búsqueda.</p>
+<p>Todavía estoy aprendiendo dónde ayuda más, pero ya tiene un lugar permanente en mi configuración y es una de las razones por las que quiero seguir mejorando cómo trabaja mi equipo con agentes de IA.</p>`
+    }
+  },
+  {
     id: 'iteration-driver',
     date: '2026-09-01',
     category: 'Career',

@@ -102,6 +102,14 @@
 .stat-card--link { cursor: pointer; text-decoration: none; color: inherit; }
 .stat-card--link:active { transform: scale(0.97); }
 
+.stat-sub {
+  margin: 6px 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.stat-sub__value { color: var(--ink); font-weight: 500; }
+
 .stat-strava-hint {
   display: block;
   font-family: var(--font-mono);

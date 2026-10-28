@@ -6,53 +6,66 @@
 
 const CV_UI = {
   en: {
-    role: '.NET Developer · Monet+',
+    role: 'Software developer (mainly in .NET) · Monet+',
     location: 'Olomouc, Czechia',
-    print: 'Print / save as PDF',
+    savePdf: 'Save as PDF (clickable links)', printPaper: 'Print (links written out)',
     summary: 'Profile', experience: 'Experience', education: 'Education',
     skills: 'Technical skills', certs: 'Certifications', languages: 'Languages', interests: 'Beyond code',
     viewCred: 'View credential →', now: 'now', earlier: 'Earlier jobs'
   },
   cs: {
-    role: '.NET vývojář · Monet+',
+    role: 'Softwarový vývojář (hlavně v .NET) · Monet+',
     location: 'Olomouc, Česko',
-    print: 'Vytisknout / uložit jako PDF',
+    savePdf: 'Uložit jako PDF (klikací odkazy)', printPaper: 'Vytisknout (odkazy vypsané)',
     summary: 'Profil', experience: 'Praxe', education: 'Vzdělání',
     skills: 'Technické dovednosti', certs: 'Certifikace', languages: 'Jazyky', interests: 'Mimo kód',
     viewCred: 'Zobrazit certifikát →', now: 'dosud', earlier: 'Dřívější zaměstnání'
   },
   es: {
-    role: 'Desarrollador .NET · Monet+',
+    role: 'Desarrollador de software (principalmente en .NET) · Monet+',
     location: 'Olomouc, Chequia',
-    print: 'Imprimir / guardar como PDF',
+    savePdf: 'Guardar como PDF (enlaces clicables)', printPaper: 'Imprimir (enlaces escritos)',
     summary: 'Perfil', experience: 'Experiencia', education: 'Formación',
     skills: 'Habilidades técnicas', certs: 'Certificaciones', languages: 'Idiomas', interests: 'Más allá del código',
     viewCred: 'Ver credencial →', now: 'actualidad', earlier: 'Empleos anteriores'
   }
 };
 
-const CV_LINKS = [
+const CV_CONTACT = [
   { label: 'Tel', href: 'tel:+420731280205', text: '+420 731 280 205' },
-  { label: 'Email', href: 'mailto:jirka.mlcousek@seznam.cz', text: 'jirka.mlcousek@seznam.cz' },
-  { label: 'LinkedIn', href: 'https://linkedin.com/in/jiří-mlčoušek', text: 'linkedin.com/in/jiří-mlčoušek' },
-  { label: 'GitHub', href: 'https://github.com/mlcousek', text: 'github.com/mlcousek' },
-  { label: 'Strava', href: 'https://www.strava.com/athletes/72382004', text: 'strava.com/athletes/72382004' }
+  { label: 'Email', href: 'mailto:jirka.mlcousek@seznam.cz', text: 'jirka.mlcousek@seznam.cz' }
 ];
 
-const CV_PHOTO = { src: '../images/cv-portrait.jpg', width: 1050, height: 1400 };
+// Social profiles render as icon links; the readable URL is only shown in the "print" version.
+const CV_SOCIAL = [
+  {
+    label: 'LinkedIn', href: 'https://linkedin.com/in/jiří-mlčoušek', text: 'linkedin.com/in/jiří-mlčoušek',
+    icon: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>'
+  },
+  {
+    label: 'GitHub', href: 'https://github.com/mlcousek', text: 'github.com/mlcousek',
+    icon: '<svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 014 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>'
+  },
+  {
+    label: 'Strava', href: 'https://www.strava.com/athletes/72382004', text: 'strava.com/athletes/72382004',
+    icon: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg>'
+  }
+];
+
+const CV_PHOTO = { src: '../images/cv-portrait.jpg', width: 900, height: 1200 };
 
 // Paragraph arrays: each entry renders as its own <p>.
 const CV_SUMMARY = {
   en: [
-    'Software developer with an AI & .NET/C# focus — REST APIs, data-heavy backends and the infrastructure around them. I work with AI coding agents every day and build good habits around them: spec-driven development, small reviewed iterations, tests as the safety net, and automation of anything repetitive. I like improving myself and my team, and I want everything we do to be done effectively.',
+    'Software developer with an AI & .NET/C# focus. I work with AI coding agents every day and build good habits around them: spec-driven development, small reviewed iterations, tests as the safety net, and automation of anything repetitive. I like improving myself and my team, and I want everything we do to be done effectively.',
     'I grew from intern to full-time at Monet+ while finishing a master\'s degree. Outside of work I am a sports person, mainly focused on long-distance running and road cycling.'
   ],
   cs: [
-    'Softwarový vývojář se zaměřením na AI a .NET/C# — REST API, datově náročné backendy a infrastruktura kolem nich. S AI programovacími agenty pracuji každý den a vytvářím kolem nich dobré návyky: spec-driven vývoj, malé zrevidované iterace, testy jako záchranná síť a automatizace všeho opakujícího se. Rád zlepšuji sebe i svůj tým a chci, aby vše, co děláme, bylo děláno efektivně.',
+    'Softwarový vývojář se zaměřením na AI a .NET/C#. S AI programovacími agenty pracuji každý den a vytvářím kolem nich dobré návyky: spec-driven vývoj, malé zrevidované iterace, testy jako záchranná síť a automatizace všeho opakujícího se. Rád zlepšuji sebe i svůj tým a chci, aby vše, co děláme, bylo děláno efektivně.',
     'V Monet+ jsem vyrostl ze stážisty na plný úvazek při dokončování magisterského studia. Mimo práci jsem sportovní typ, především se věnuji dlouhým běhům a silniční cyklistice.'
   ],
   es: [
-    'Desarrollador de software con foco en IA y .NET/C#: APIs REST, backends con muchos datos y la infraestructura que los rodea. Trabajo con agentes de programación con IA cada día y construyo buenos hábitos a su alrededor: desarrollo guiado por specs, iteraciones pequeñas y revisadas, pruebas como red de seguridad y automatización de todo lo repetitivo. Me gusta mejorar yo y mi equipo, y quiero que todo lo que hacemos se haga de forma efectiva.',
+    'Desarrollador de software con foco en IA y .NET/C#. Trabajo con agentes de programación con IA cada día y construyo buenos hábitos a su alrededor: desarrollo guiado por specs, iteraciones pequeñas y revisadas, pruebas como red de seguridad y automatización de todo lo repetitivo. Me gusta mejorar yo y mi equipo, y quiero que todo lo que hacemos se haga de forma efectiva.',
     'En Monet+ pasé de becario a jornada completa mientras terminaba el máster. Fuera del trabajo soy una persona deportista, centrada sobre todo en carreras de larga distancia y ciclismo de carretera.'
   ]
 };
@@ -62,7 +75,11 @@ const CV_EXPERIENCE = [
   {
     company: 'Monet+',
     period: { en: 'Feb 2025 – present', cs: 'únor 2025 – dosud', es: 'feb 2025 – actualidad' },
-    title: { en: '.NET Developer', cs: '.NET vývojář', es: 'Desarrollador .NET' },
+    title: {
+      en: 'Software developer (mainly in .NET)',
+      cs: 'Softwarový vývojář (hlavně v .NET)',
+      es: 'Desarrollador de software (principalmente en .NET)'
+    },
     note: {
       en: 'Iteration driver for two months in summer 2026 — a team-lead role I loved and can see myself in.',
       cs: 'Dva měsíce v létě 2026 jsem dělal iteration drivera — roli týmového lídra, která mě bavila a vidím se v ní.',
@@ -125,8 +142,16 @@ const CV_SKILLS = [
     }
   },
   {
+    group: { en: 'C# & .NET', cs: 'C# a .NET', es: 'C# y .NET' },
+    items: ['C#', '.NET', 'ASP.NET Core', '.NET Aspire']
+  },
+  {
     group: { en: 'APIs', cs: 'API', es: 'APIs' },
-    items: ['C# / .NET', 'ASP.NET Core', 'Web API', 'REST', 'Controllers & endpoints', 'Swagger / OpenAPI', 'gRPC', '.NET Aspire']
+    items: {
+      en: ['Web API', 'REST', 'Controllers & endpoints', 'Swagger / OpenAPI'],
+      cs: ['Web API', 'REST', 'Controllery a endpointy', 'Swagger / OpenAPI'],
+      es: ['Web API', 'REST', 'Controllers y endpoints', 'Swagger / OpenAPI']
+    }
   },
   {
     group: { en: 'Authentication & authorization', cs: 'Autentizace a autorizace', es: 'Autenticación y autorización' },
@@ -161,11 +186,19 @@ const CV_SKILLS = [
     }
   },
   {
-    group: { en: 'Messaging & data', cs: 'Messaging a data', es: 'Mensajería y datos' },
+    group: { en: 'Messaging & service communication', cs: 'Messaging a komunikace mezi službami', es: 'Mensajería y comunicación entre servicios' },
     items: {
-      en: ['Message queues', 'Message brokers', 'SQL Server', 'PostgreSQL', 'EF Core', 'Auditing'],
-      cs: ['Fronty zpráv', 'Message brokery', 'SQL Server', 'PostgreSQL', 'EF Core', 'Auditing'],
-      es: ['Colas de mensajes', 'Message brokers', 'SQL Server', 'PostgreSQL', 'EF Core', 'Auditoría']
+      en: ['gRPC', 'Message queues', 'Message brokers'],
+      cs: ['gRPC', 'Fronty zpráv', 'Message brokery'],
+      es: ['gRPC', 'Colas de mensajes', 'Message brokers']
+    }
+  },
+  {
+    group: { en: 'Data', cs: 'Data', es: 'Datos' },
+    items: {
+      en: ['SQL Server', 'PostgreSQL', 'EF Core', 'Auditing'],
+      cs: ['SQL Server', 'PostgreSQL', 'EF Core', 'Auditing'],
+      es: ['SQL Server', 'PostgreSQL', 'EF Core', 'Auditoría']
     }
   },
   {
@@ -175,13 +208,13 @@ const CV_SKILLS = [
   {
     group: { en: 'Security', cs: 'Bezpečnost', es: 'Seguridad' },
     items: {
-      en: ['Cryptography & PKI', 'Postquantum cryptography'],
+      en: ['Cryptography & PKI', 'Post-quantum cryptography'],
       cs: ['Kryptografie a PKI', 'Postkvantová kryptografie'],
       es: ['Criptografía y PKI', 'Criptografía poscuántica']
     }
   },
   {
-    group: { en: 'Other languages', cs: 'Další jazyky', es: 'Otros lenguajes' },
+    group: { en: 'Other programming languages', cs: 'Další programovací jazyky', es: 'Otros lenguajes de programación' },
     items: ['Python', 'C / C++', 'TypeScript', 'JavaScript', 'HTML / CSS', 'Swift']
   }
 ];
@@ -209,15 +242,15 @@ const CV_LANGUAGES = [
 const CV_INTERESTS = {
   en: [
     'I have been a sports person since I was young, and I like hard challenges: ultra-trail races, 24-hour races, the B7 and similar. Alongside running I enjoy road cycling and the gym, and in the past I played football.',
-    'I like reading and improving myself in everything I do. I like data and statistics, and I log everything in a self-built Obsidian vault. My favourite quality time is walking in the mountains with my fiancée.'
+    'I read a lot and try to get a little better at everything I do. I love data and statistics, so I track my training, reading and much more in a self-built Obsidian vault. My favourite way to recharge is a long walk in the mountains with my fiancée.'
   ],
   cs: [
     'Sportuji od mládí a mám rád těžké výzvy: ultratrailové závody, 24hodinovky, B7 a podobně. Vedle běhání mě baví silniční kolo a posilovna a v minulosti jsem hrál fotbal.',
-    'Rád čtu a zlepšuji se ve všem, co dělám. Mám rád data a statistiky a všechno si zapisuji do vlastnoručně postaveného Obsidian vaultu. Nejraději trávím kvalitní čas s přítelkyní při procházkách po horách.'
+    'Hodně čtu a snažím se být ve všem, co dělám, o kousek lepší. Miluji data a statistiky, a tak si trénink, čtení a mnoho dalšího zapisuji do vlastnoručně postaveného Obsidian vaultu. Nejlépe si odpočinu na dlouhé procházce po horách s přítelkyní.'
   ],
   es: [
     'Hago deporte desde joven y me gustan los retos duros: ultra-trails, carreras de 24 horas, la B7 y similares. Además de correr, disfruto del ciclismo de carretera y del gimnasio, y en el pasado jugué al fútbol.',
-    'Me gusta leer y mejorar en todo lo que hago. Me gustan los datos y las estadísticas, y lo registro todo en un vault de Obsidian construido por mí. Mi mejor tiempo de calidad es caminar por la montaña con mi prometida.'
+    'Leo mucho e intento mejorar un poco en todo lo que hago. Me encantan los datos y las estadísticas, así que registro mi entrenamiento, mis lecturas y mucho más en un vault de Obsidian construido por mí. Mi forma favorita de desconectar es una larga caminata por la montaña con mi prometida.'
   ]
 };
 
@@ -240,10 +273,12 @@ function cvParagraphs(field, lang, cls) {
 
 // Links render as full-row targets: a visible arrow in the browser, a printed URL in the PDF.
 function renderCvHeader(lang, ui) {
-  const links = CV_LINKS.map(l => {
-    const external = l.href.startsWith('http');
-    return `<li><a class="cv-link" href="${l.href}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}><span class="cv-link-label">${l.label}</span><span class="cv-link-text">${l.text}</span>${external ? '<span class="cv-link-arrow" aria-hidden="true">↗</span>' : ''}</a></li>`;
-  }).join('');
+  const links = CV_CONTACT.map(l =>
+    `<li><a class="cv-link" href="${l.href}"><span class="cv-link-label">${l.label}</span><span class="cv-link-text">${l.text}</span></a></li>`
+  ).join('');
+  const social = CV_SOCIAL.map(s =>
+    `<li><a class="cv-social__link" href="${s.href}" target="_blank" rel="noopener noreferrer" aria-label="${s.label}">${s.icon}<span class="cv-social__name">${s.label}</span><span class="cv-social__url">${s.text}</span></a></li>`
+  ).join('');
   const langs = CV_LANGUAGES.map(l =>
     `<li><span>${cvPick(l.name, lang)}</span><span class="cv-meta">${cvPick(l.level, lang)}</span></li>`
   ).join('');
@@ -253,9 +288,13 @@ function renderCvHeader(lang, ui) {
     <h1 class="cv-name">Jiří Mlčoušek</h1>
     <p class="cv-location">${ui.location}</p>
     <ul class="cv-links">${links}</ul>
+    <ul class="cv-social">${social}</ul>
     <h2 class="cv-side-heading">${ui.languages}</h2>
     <ul class="cv-langs">${langs}</ul>
-    <button type="button" class="cv-print" id="cv-print">${ui.print}</button>`;
+    <div class="cv-downloads">
+      <button type="button" class="cv-print" data-print-mode="pdf">${ui.savePdf}</button>
+      <button type="button" class="cv-print" data-print-mode="paper">${ui.printPaper}</button>
+    </div>`;
 }
 
 function renderCvExperience(lang) {
@@ -316,10 +355,15 @@ function renderCv() {
     <section class="cv-section"><h2 class="section-heading">${ui.certs}</h2>${renderCvCerts(ui)}</section>
     <section class="cv-section"><h2 class="section-heading">${ui.interests}</h2>${cvParagraphs(CV_INTERESTS, lang, 'cv-summary')}</section>`;
 
-  const print = document.getElementById('cv-print');
-  if (print) print.addEventListener('click', () => window.print());
+  // "pdf" keeps the social icons as clickable links; "paper" also writes the URLs out as text.
+  document.querySelectorAll('.cv-print').forEach(btn => btn.addEventListener('click', () => {
+    document.documentElement.dataset.cvPrint = btn.dataset.printMode;
+    window.print();
+  }));
   document.title = `CV – Jiří Mlčoušek`;
 }
+
+window.addEventListener('afterprint', () => { delete document.documentElement.dataset.cvPrint; });
 
 document.addEventListener('DOMContentLoaded', renderCv);
 document.addEventListener('languageChanged', renderCv);
