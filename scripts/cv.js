@@ -6,7 +6,7 @@
 
 const CV_UI = {
   en: {
-    role: 'Software developer (mainly in .NET) · Monet+',
+    role: 'Software developer · Monet+',
     location: 'Olomouc, Czechia',
     savePdf: 'Save as PDF (clickable links)', printPaper: 'Print (links written out)',
     summary: 'Profile', experience: 'Experience', education: 'Education',
@@ -14,7 +14,7 @@ const CV_UI = {
     viewCred: 'View credential →', now: 'now', earlier: 'Earlier jobs'
   },
   cs: {
-    role: 'Softwarový vývojář (hlavně v .NET) · Monet+',
+    role: 'Softwarový vývojář · Monet+',
     location: 'Olomouc, Česko',
     savePdf: 'Uložit jako PDF (klikací odkazy)', printPaper: 'Vytisknout (odkazy vypsané)',
     summary: 'Profil', experience: 'Praxe', education: 'Vzdělání',
@@ -22,7 +22,7 @@ const CV_UI = {
     viewCred: 'Zobrazit certifikát →', now: 'dosud', earlier: 'Dřívější zaměstnání'
   },
   es: {
-    role: 'Desarrollador de software (principalmente en .NET) · Monet+',
+    role: 'Desarrollador de software · Monet+',
     location: 'Olomouc, Chequia',
     savePdf: 'Guardar como PDF (enlaces clicables)', printPaper: 'Imprimir (enlaces escritos)',
     summary: 'Perfil', experience: 'Experiencia', education: 'Formación',

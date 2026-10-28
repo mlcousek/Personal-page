@@ -103,11 +103,15 @@
 
 /* ── Print / PDF: light page, tinted identity rail with portrait, accent headings ──
    print-color-adjust keeps the backgrounds when the browser's "Background graphics" box is off. */
-@page { size: A4; margin: 0; }
+/* page 1 starts flush at the top; continuation pages get breathing room top and bottom.
+   The tinted rail is painted on the root so it also fills those margins. */
+@page { size: A4; margin: 14mm 0; }
+@page :first { margin: 0 0 14mm; }
 @media print {
   .navbar, #navbar-placeholder, #footer-placeholder, .bg-scene, .cv-print, .cv-downloads, .skip-link { display: none !important; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  html, body, body::before, body::after { background: #fff !important; }
+  html { background: linear-gradient(90deg, #f3efea 0, #f3efea 62mm, #fff 62mm) !important; }
+  body, body::before, body::after { background: transparent !important; }
   body { font-size: 10pt; }
   .cv-page * { color: #1b1b1f !important; border-color: #d9d5d0 !important; box-shadow: none !important; }
 

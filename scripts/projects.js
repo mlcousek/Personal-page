@@ -172,6 +172,7 @@ const PROJECTS = [
 const VAULT_PLUGINS = [
   {
     icon: '🌍',
+    images: ['../images/projects/vault-heatmap-1.jpg', '../images/projects/vault-heatmap-2.jpg', '../images/projects/vault-heatmap-3.jpg'],
     title: { en: 'World Heatmap', cs: 'Heatmapa světa', es: 'Mapa de calor mundial' },
     text: {
       en: 'A filterable 3D globe heatmap of every GPS track I have ever recorded — 3 000+ activities, drawn by an additive WebGL renderer, filterable by sport and year, with seven colour ramps and nine basemaps. Runs on the phone too.',
@@ -181,6 +182,7 @@ const VAULT_PLUGINS = [
   },
   {
     icon: '📈',
+    image: '../images/projects/vault-activity.jpg',
     title: { en: 'Activity Detail', cs: 'Detail aktivity', es: 'Detalle de actividad' },
     text: {
       en: 'Every channel of a single workout in one view: a route coloured by pace or heart rate, synced charts, activity replay, automatic insights, computed personal bests and comparison against published benchmarks. Embedded in every activity note.',
@@ -190,6 +192,7 @@ const VAULT_PLUGINS = [
   },
   {
     icon: '📊',
+    image: '../images/projects/vault-dashboard.jpg',
     title: { en: 'Training Dashboard', cs: 'Tréninkový dashboard', es: 'Panel de entrenamiento' },
     text: {
       en: 'Volume, training load and consistency over time — weeks, months and years side by side, so trends that would slip by in a single workout become visible.',
@@ -199,6 +202,7 @@ const VAULT_PLUGINS = [
   },
   {
     icon: '🏔️',
+    image: '../images/projects/vault-utmb.jpg',
     title: { en: 'UTMB Runner Index', cs: 'UTMB index běžců', es: 'Índice UTMB de corredores' },
     text: {
       en: 'Tracks UTMB and ITRA performance indexes for me and a roster of runners I follow, with race tables and index history. Deliberately not a leaderboard: the chart opens on my own trajectory and every comparison is opt-in.',
@@ -406,14 +410,19 @@ function renderProjects() {
       .map(p => renderProjectCard(p, lang)).join('');
   }
   if (plugins) {
-    plugins.innerHTML = VAULT_PLUGINS.map(p => `
-      <article class="plugin-card${p.image ? ' plugin-card--has-media' : ''}">
-        ${p.image
-          ? `<figure class="plugin-card__media"><img src="${p.image}" alt="${pick(p.title, lang)}" loading="lazy" decoding="async"></figure>`
-          : `<span class="plugin-card__icon" aria-hidden="true">${p.icon}</span>`}
+    plugins.innerHTML = VAULT_PLUGINS.map(p => {
+      const shots = p.images || (p.image ? [p.image] : []);
+      const media = shots.length
+        ? `<div class="plugin-card__shots plugin-card__shots--${Math.min(shots.length, 3)}">${shots.map(src =>
+            `<figure class="plugin-card__media"><img src="${src}" alt="${pick(p.title, lang)}" loading="lazy" decoding="async"></figure>`).join('')}</div>`
+        : `<span class="plugin-card__icon" aria-hidden="true">${p.icon}</span>`;
+      return `
+      <article class="plugin-card${shots.length ? ' plugin-card--has-media' : ''}">
+        ${media}
         <h4 class="plugin-card__title">${pick(p.title, lang)}</h4>
         <p class="plugin-card__text">${pick(p.text, lang)}</p>
-      </article>`).join('');
+      </article>`;
+    }).join('');
   }
   if (automations) {
     automations.innerHTML = VAULT_AUTOMATIONS.map(a => `
