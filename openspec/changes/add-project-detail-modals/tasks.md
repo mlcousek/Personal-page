@@ -6,6 +6,13 @@
 - [x] 1.3 Native `<dialog>` modal (Esc, backdrop click, focus return, body scroll lock)
 - [x] 1.4 Modal and status styles in `projects.css`
 
+## 1b. Structure and image viewer (second round)
+- [x] 1b.1 Page order: Featured → Jirka's World vault → More projects
+- [x] 1b.2 Vault intro gains a paragraph on the training plan and its link to Jirka's Arc; *Training Planner* plugin card; weekly planning automation entry
+- [x] 1b.3 Jirka's Arc text rewritten from the app and vault docs (product level only; no health details, no implementation)
+- [x] 1b.4 Lightbox: every project/plugin image opens full screen, ← → paging inside a group, Esc/backdrop/close button, focus return, keyboard-operable
+- [x] 1b.5 Scroll lock derived from open dialogs (a dialog's `close` event can arrive late)
+
 ## 2. Content
 - [x] 2.1 NARUZU: latest in-game and progress screenshots
 - [x] 2.2 Claude & Codex Usage Tray text, both repos, "in use across the team"

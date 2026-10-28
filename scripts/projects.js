@@ -71,22 +71,28 @@ const PROJECTS = [
     group: 'more',
     year: '2026',
     status: 'in-use',
+    repos: [{ url: 'https://github.com/mlcousek/JirkasArc' }],
     kind: { en: 'iOS app · version 2.0', cs: 'iOS aplikace · verze 2.0', es: 'App iOS · versión 2.0' },
     title: 'Jirka\'s Arc',
     subtitle: {
-      en: 'Food and training tracking with Garmin Connect as the source of truth',
-      cs: 'Sledování jídla a tréninku s Garmin Connect jako zdrojem pravdy',
-      es: 'Registro de comida y entrenamiento con Garmin Connect como fuente de verdad'
+      en: 'My food and training hub, connected to Garmin and my Obsidian vault',
+      cs: 'Moje centrum pro jídlo a trénink, propojené s Garminem a mým Obsidian vaultem',
+      es: 'Mi centro de comida y entrenamiento, conectado con Garmin y mi vault de Obsidian'
     },
     summary: {
-      en: 'A personal iOS app for fast food logging, streaks, levels and challenges — and, through a connection to my Obsidian vault, a training hub with a plan, morning check-ins and race prep. Food goes straight into Garmin Connect, so there is one place for everything. Formerly called GarminFood.',
-      cs: 'Osobní iOS aplikace pro rychlé zapisování jídla, série, levely a výzvy — a přes propojení s mým Obsidian vaultem také tréninkové centrum s plánem, ranními check-iny a přípravou na závody. Jídlo jde rovnou do Garmin Connect, takže je vše na jednom místě. Dříve se jmenovala GarminFood.',
-      es: 'Una app iOS personal para registrar comidas rápido, con rachas, niveles y retos — y, mediante una conexión con mi vault de Obsidian, un centro de entrenamiento con plan, chequeos matutinos y preparación de carreras. La comida va directa a Garmin Connect, así que todo queda en un solo lugar. Antes se llamaba GarminFood.'
+      en: 'A personal iPhone app that started as a fast food logger for Garmin Connect and grew into my training hub. Food, weight and water go straight into Garmin, and streaks, 150 levels and challenges keep logging fun. Since version 2.0 it also shows my training plan from the Obsidian vault — a Plan tab and a training-first Today screen with a morning check-in, plan edits, race prep and results — and writes back what really happened. Formerly called GarminFood.',
+      cs: 'Osobní iPhone aplikace, která začala jako rychlý zapisovač jídla do Garmin Connect a vyrostla v moje tréninkové centrum. Jídlo, váha a voda jdou rovnou do Garminu a série, 150 levelů a výzvy udržují zapisování zábavné. Od verze 2.0 ukazuje i můj tréninkový plán z Obsidian vaultu — záložku Plán a obrazovku Dnes zaměřenou na trénink s ranním check-inem, úpravami plánu, přípravou na závod a výsledky — a zapisuje zpět, co se skutečně stalo. Dříve se jmenovala GarminFood.',
+      es: 'Una app de iPhone personal que empezó como un registro rápido de comidas para Garmin Connect y creció hasta ser mi centro de entrenamiento. La comida, el peso y el agua van directos a Garmin, y las rachas, 150 niveles y retos hacen el registro más divertido. Desde la versión 2.0 muestra también mi plan de entrenamiento del vault de Obsidian —una pestaña Plan y una pantalla Hoy centrada en el entrenamiento con chequeo matutino, ediciones del plan, preparación de carreras y resultados— y escribe de vuelta lo que realmente pasó. Antes se llamaba GarminFood.'
+    },
+    details: {
+      en: 'Built step by step with spec-driven development: 52 changes shipped so far. In daily use, in English and Czech.',
+      cs: 'Postavená krok za krokem spec-driven vývojem: zatím je hotových 52 změn. Denně ji používám, v angličtině a češtině.',
+      es: 'Construida paso a paso con desarrollo guiado por specs: ya van 52 cambios entregados. Se usa a diario, en inglés y checo.'
     },
     highlights: {
-      en: ['Works offline and syncs with Garmin when connected', 'Czech-aware food search with barcode scanning', 'Streak, 150 levels, challenges, bingo and drawn badges', 'Five alternate app icons'],
-      cs: ['Funguje offline a po připojení se synchronizuje s Garminem', 'České vyhledávání potravin se skenováním čárových kódů', 'Série, 150 levelů, výzvy, bingo a nakreslené odznaky', 'Pět alternativních ikon aplikace'],
-      es: ['Funciona sin conexión y se sincroniza con Garmin al conectarse', 'Búsqueda de alimentos adaptada al checo, con escáner de códigos de barras', 'Racha, 150 niveles, retos, bingo e insignias dibujadas', 'Cinco iconos alternativos de la app']
+      en: ['Training plan from my vault: Plan tab, Today screen, morning check-in', 'Food logged straight to Garmin Connect, offline-first with sync', 'Czech-aware food search with barcode scanning', 'Streak, 150 levels, challenges, bingo and drawn badges'],
+      cs: ['Tréninkový plán z mého vaultu: záložka Plán, obrazovka Dnes, ranní check-in', 'Jídlo rovnou do Garmin Connect, nejdřív offline a pak synchronizace', 'České vyhledávání potravin se skenováním čárových kódů', 'Série, 150 levelů, výzvy, bingo a nakreslené odznaky'],
+      es: ['Plan de entrenamiento de mi vault: pestaña Plan, pantalla Hoy, chequeo matutino', 'Comida directa a Garmin Connect, primero sin conexión y luego sincronización', 'Búsqueda de alimentos adaptada al checo, con escáner de códigos de barras', 'Racha, 150 niveles, retos, bingo e insignias dibujadas']
     },
     image: { src: '../images/projects/garminfood-icons.jpg', alt: { en: 'The five alternate app icons: Streak, Midnight, Mint, Macro and Pastel', cs: 'Pět alternativních ikon aplikace: Streak, Midnight, Mint, Macro a Pastel', es: 'Los cinco iconos alternativos de la app: Streak, Midnight, Mint, Macro y Pastel' } }
   },
@@ -171,6 +177,15 @@ const PROJECTS = [
 // emoji icon with a 16:9 screenshot.
 const VAULT_PLUGINS = [
   {
+    icon: '🗓️',
+    title: { en: 'Training Planner', cs: 'Tréninkový plánovač', es: 'Planificador de entrenamiento' },
+    text: {
+      en: 'The desk view of my training plan: a week agenda and month calendar, the season as one timeline of phases and races, a phase view with the weekly ramp and habit ladder, race prep and plan-relative statistics. It reads the same plan as Jirka\'s Arc, so the phone and the desk never disagree.',
+      cs: 'Pracovní pohled na můj tréninkový plán: týdenní agenda a měsíční kalendář, sezóna jako jedna časová osa fází a závodů, pohled na fázi s týdenním nárůstem a žebříčkem návyků, příprava na závod a statistiky vůči plánu. Čte stejný plán jako Jirka\'s Arc, takže se telefon a plocha nikdy nerozejdou.',
+      es: 'La vista de escritorio de mi plan de entrenamiento: agenda semanal y calendario mensual, la temporada como una sola línea de tiempo de fases y carreras, una vista de fase con la rampa semanal y la escalera de hábitos, preparación de carreras y estadísticas frente al plan. Lee el mismo plan que Jirka\'s Arc, así que el móvil y el escritorio nunca se contradicen.'
+    }
+  },
+  {
     icon: '🌍',
     images: ['../images/projects/vault-heatmap-1.jpg', '../images/projects/vault-heatmap-2.jpg', '../images/projects/vault-heatmap-3.jpg'],
     title: { en: 'World Heatmap', cs: 'Heatmapa světa', es: 'Mapa de calor mundial' },
@@ -238,6 +253,14 @@ const VAULT_AUTOMATIONS = [
     }
   },
   {
+    when: { en: 'Weekly', cs: 'Týdně', es: 'Semanal' },
+    text: {
+      en: 'Training plan — a Sunday planning loop with Claude writes the next week from my data, a guard script checks it against planning rules, and once I approve it the plan is published to the phone app and can be pushed to my watch.',
+      cs: 'Tréninkový plán — nedělní plánovací smyčka s Claude napíše další týden z mých dat, kontrolní skript ho ověří podle pravidel plánování a po mém schválení se plán zveřejní v mobilní aplikaci a lze ho poslat do hodinek.',
+      es: 'Plan de entrenamiento: un bucle de planificación de los domingos con Claude escribe la semana siguiente a partir de mis datos, un script la comprueba con reglas de planificación y, cuando la apruebo, el plan se publica en la app del móvil y puede enviarse al reloj.'
+    }
+  },
+  {
     when: { en: 'On demand', cs: 'Na vyžádání', es: 'Bajo demanda' },
     text: {
       en: 'AI agents — Claude Code skills write bilingual race reports from FIT data, build pre-race dossiers and import bank statements into a double-entry ledger.',
@@ -259,16 +282,19 @@ const PROJECTS_UI = {
   en: {
     vaultPrivate: 'Private vault — it holds personal data',
     details: 'Details', close: 'Close', repo: 'View on GitHub', highlights: 'Highlights', screenshots: 'Screenshots',
+    viewer: 'Image viewer', prev: 'Previous image', next: 'Next image',
     status: { 'in-progress': 'In development', 'in-use': 'In use', done: 'Finished' }
   },
   cs: {
     vaultPrivate: 'Soukromý vault — obsahuje osobní data',
     details: 'Podrobnosti', close: 'Zavřít', repo: 'Zobrazit na GitHubu', highlights: 'Hlavní body', screenshots: 'Snímky obrazovky',
+    viewer: 'Prohlížeč obrázků', prev: 'Předchozí obrázek', next: 'Další obrázek',
     status: { 'in-progress': 'Ve vývoji', 'in-use': 'V používání', done: 'Dokončeno' }
   },
   es: {
     vaultPrivate: 'Vault privado: contiene datos personales',
     details: 'Detalles', close: 'Cerrar', repo: 'Ver en GitHub', highlights: 'Puntos clave', screenshots: 'Capturas',
+    viewer: 'Visor de imágenes', prev: 'Imagen anterior', next: 'Imagen siguiente',
     status: { 'in-progress': 'En desarrollo', 'in-use': 'En uso', done: 'Terminado' }
   }
 };
@@ -331,6 +357,12 @@ function renderProjectCard(project, lang) {
     </article>`;
 }
 
+// The page behind is locked exactly while some dialog is open. Derived from the DOM rather than
+// toggled per event, because a dialog's `close` event can arrive late.
+function syncScrollLock() {
+  document.body.classList.toggle('modal-open', !!document.querySelector('dialog[open]'));
+}
+
 // ── Detail modal: one native <dialog>, filled on open (focus trap + Esc come for free) ──
 let projectDialog = null;
 let projectOpener = null;
@@ -339,9 +371,13 @@ function ensureProjectDialog() {
   if (projectDialog) return projectDialog;
   projectDialog = document.createElement('dialog');
   projectDialog.className = 'project-modal';
-  projectDialog.addEventListener('click', e => { if (e.target === projectDialog) projectDialog.close(); });
+  projectDialog.addEventListener('click', e => {
+    if (e.target !== projectDialog) return;
+    projectDialog.close();
+    syncScrollLock();
+  });
   projectDialog.addEventListener('close', () => {
-    document.body.classList.remove('modal-open');
+    syncScrollLock();
     if (projectOpener) projectOpener.focus();
   });
   document.body.appendChild(projectDialog);
@@ -379,9 +415,13 @@ function openProject(id) {
       ${project.repos ? `<div class="project-modal__repos">${project.repos.map(r =>
         `<a class="project-modal__repo" href="${r.url}" target="_blank" rel="noopener noreferrer">${GITHUB_ICON}${r.label || ui.repo} ↗</a>`).join('')}</div>` : ''}
     </div>`;
-  dialog.querySelector('.project-modal__close').addEventListener('click', () => dialog.close());
-  document.body.classList.add('modal-open');
+  dialog.querySelector('.project-modal__close').addEventListener('click', () => {
+    dialog.close();
+    syncScrollLock();
+  });
+  markZoomable(dialog);
   dialog.showModal();
+  syncScrollLock();
 }
 
 document.addEventListener('click', e => {
@@ -389,6 +429,93 @@ document.addEventListener('click', e => {
   if (!btn) return;
   projectOpener = btn;
   openProject(btn.dataset.project);
+});
+
+// ── Lightbox: every project/plugin image opens full screen ──
+// Images sitting together (a gallery, a plugin's shots, a modal's screenshots) can be paged with ← →.
+const ZOOM_SELECTOR = '.project-card__media img, .plugin-card__media img, .project-modal__shots img';
+const ZOOM_GROUPS = '.project-card__gallery, .plugin-card__shots, .project-modal__shots';
+let lightbox = null;
+let lightboxGroup = [];
+let lightboxIndex = 0;
+let lightboxOpener = null;
+
+function markZoomable(root) {
+  (root || document).querySelectorAll(ZOOM_SELECTOR).forEach(img => {
+    img.tabIndex = 0;
+    img.setAttribute('role', 'button');
+    img.setAttribute('aria-haspopup', 'dialog');
+    img.classList.add('is-zoomable');
+  });
+}
+
+function ensureLightbox() {
+  if (lightbox) return lightbox;
+  const ui = PROJECTS_UI[projectsLang()];
+  lightbox = document.createElement('dialog');
+  lightbox.className = 'lightbox';
+  lightbox.setAttribute('aria-label', ui.viewer);
+  lightbox.innerHTML = `
+    <button type="button" class="lightbox__close" aria-label="${ui.close}">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" aria-label="${ui.prev}">‹</button>
+    <figure class="lightbox__figure"><img class="lightbox__img" alt=""><figcaption class="lightbox__caption"></figcaption></figure>
+    <button type="button" class="lightbox__nav lightbox__nav--next" aria-label="${ui.next}">›</button>`;
+  lightbox.addEventListener('click', e => {
+    if (e.target.closest('.lightbox__nav--prev')) return stepLightbox(-1);
+    if (e.target.closest('.lightbox__nav--next')) return stepLightbox(1);
+    if (e.target.classList.contains('lightbox__img')) return;
+    lightbox.close(); // the backdrop, the close button or any empty area
+    syncScrollLock();
+  });
+  lightbox.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') stepLightbox(-1);
+    if (e.key === 'ArrowRight') stepLightbox(1);
+  });
+  lightbox.addEventListener('close', () => {
+    syncScrollLock();
+    if (lightboxOpener && lightboxOpener.isConnected) lightboxOpener.focus();
+  });
+  document.body.appendChild(lightbox);
+  return lightbox;
+}
+
+function showLightboxImage() {
+  const src = lightboxGroup[lightboxIndex];
+  const img = lightbox.querySelector('.lightbox__img');
+  img.src = src.currentSrc || src.src;
+  img.alt = src.alt;
+  const many = lightboxGroup.length > 1;
+  lightbox.querySelector('.lightbox__caption').textContent = many
+    ? `${src.alt} — ${lightboxIndex + 1} / ${lightboxGroup.length}` : src.alt;
+  lightbox.querySelectorAll('.lightbox__nav').forEach(b => { b.hidden = !many; });
+}
+
+function stepLightbox(delta) {
+  if (lightboxGroup.length < 2) return;
+  lightboxIndex = (lightboxIndex + delta + lightboxGroup.length) % lightboxGroup.length;
+  showLightboxImage();
+}
+
+function openLightbox(img) {
+  const box = ensureLightbox();
+  const container = img.closest(ZOOM_GROUPS);
+  lightboxGroup = container ? [...container.querySelectorAll(ZOOM_SELECTOR)] : [img];
+  lightboxIndex = Math.max(0, lightboxGroup.indexOf(img));
+  lightboxOpener = img;
+  showLightboxImage();
+  box.showModal();
+  syncScrollLock();
+}
+
+document.addEventListener('click', e => {
+  const img = e.target.closest(ZOOM_SELECTOR);
+  if (img) openLightbox(img);
+});
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches(ZOOM_SELECTOR)) {
+    e.preventDefault();
+    openLightbox(e.target);
+  }
 });
 
 function renderProjects() {
@@ -433,6 +560,12 @@ function renderProjects() {
   }
   if (vaultBadge) {
     vaultBadge.innerHTML = `${LOCK_ICON}${ui.vaultPrivate}`;
+  }
+  markZoomable();
+  if (lightbox) {
+    // rebuilt on the next open so its labels follow the language
+    lightbox.remove();
+    lightbox = null;
   }
 }
 

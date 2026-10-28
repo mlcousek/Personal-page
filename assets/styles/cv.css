@@ -152,10 +152,14 @@
   .cv-mindset { font-size: 9.5pt; }
   .cv-entry { grid-template-columns: 30mm 1fr; gap: 4mm; padding-bottom: 4mm; break-inside: avoid; }
   .cv-entry__title { font-size: 11pt; }
-  .cv-skills { gap: 4mm 6mm; }
+  /* a grid is not fragmented across pages (the whole block jumps to the next one, leaving a blank page);
+     columns flow group by group, so the skills fill the space after the intro. */
+  .cv-skills { display: block; column-count: 2; column-gap: 6mm; }
+  .cv-skill-group { margin-bottom: 4mm; }
   .cv-chips li { font-size: 7.5pt; padding: 1mm 2.5mm; background: #fff; }
   .cv-cert a, .cv-cert > div { padding: 2mm 0; grid-template-columns: 30mm 1fr auto; }
   .cv-cert__cta { display: none; }
-  .cv-section, .cv-skill-group, .cv-cert { break-inside: avoid; }
+  .cv-section:not(:has(.cv-skills)), .cv-skill-group, .cv-cert { break-inside: avoid; }
+  .cv-section > .section-heading, .cv-mindset { break-after: avoid; }
   .reveal { opacity: 1 !important; transform: none !important; filter: none !important; }
 }
