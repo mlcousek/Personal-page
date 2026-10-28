@@ -68,6 +68,35 @@ const BLOG_POSTS = [
     }
   },
   {
+    id: 'iteration-driver',
+    date: '2026-09-01',
+    category: 'Career',
+    title: {
+      en: 'Two Months as Iteration Driver — and I Loved It',
+      cs: 'Dva měsíce jako iteration driver — a moc mě to bavilo',
+      es: 'Dos meses como iteration driver — y me encantó'
+    },
+    excerpt: {
+      en: 'This summer, right after going full-time, I tried the iteration driver role. What I learned about leading a team, and why I can see myself there.',
+      cs: 'Letos v létě, hned po přechodu na plný úvazek, jsem si vyzkoušel roli iteration drivera. Co jsem se naučil o vedení týmu a proč se v ní vidím.',
+      es: 'Este verano, justo después de pasar a jornada completa, probé el rol de iteration driver. Lo que aprendí sobre liderar un equipo y por qué me veo ahí.'
+    },
+    body: {
+      en: `<p>This summer, right after I moved to full-time at Monet+, I tried something new: for two months I was the <strong>iteration driver</strong> of our team. It is the role that keeps an iteration moving — the plan, the communication, the blockers, and making sure the team can do its best work.</p>
+<p>I expected to like it. I did not expect to like it <em>this much</em>. What I enjoyed most was the part that has nothing to do with code: working with the people in the team, understanding what each of them needs, and removing whatever gets in their way. A good iteration is not a lucky one, it is one somebody cared about.</p>
+<p>It also pulled together things I already love. I like improving a process the same way I like improving a training plan — look at the data, change one thing, see what happens. And I like helping a team get better, not just getting better myself.</p>
+<p>Two months is not a career, and I know how much I still have to learn. But I can see myself in this kind of work in the future: improving the team, improving the way we work, and doing it together with the people around me.</p>`,
+      cs: `<p>Letos v létě, hned poté, co jsem v Monet+ přešel na plný úvazek, jsem zkusil něco nového: dva měsíce jsem byl <strong>iteration driverem</strong> našeho týmu. Je to role, která udržuje iteraci v pohybu — plán, komunikace, překážky a péče o to, aby tým mohl odvádět svou nejlepší práci.</p>
+<p>Čekal jsem, že mě to bude bavit. Nečekal jsem, že <em>takhle moc</em>. Nejvíc mě bavila část, která s kódem nemá nic společného: práce s lidmi v týmu, pochopení toho, co každý potřebuje, a odstraňování všeho, co jim stojí v cestě. Dobrá iterace není šťastná náhoda, je to iterace, na které někomu záleželo.</p>
+<p>Spojilo to také věci, které mám rád. Zlepšování procesu mě baví stejně jako zlepšování tréninkového plánu — podívat se na data, změnit jednu věc, vidět, co se stane. A baví mě pomáhat zlepšovat tým, ne jen sám sebe.</p>
+<p>Dva měsíce nejsou kariéra a vím, kolik se toho ještě musím naučit. Ale vidím se v téhle práci i v budoucnu: zlepšovat tým, zlepšovat způsob, jakým pracujeme, a dělat to společně s lidmi kolem sebe.</p>`,
+      es: `<p>Este verano, justo después de pasar a jornada completa en Monet+, probé algo nuevo: durante dos meses fui el <strong>iteration driver</strong> de nuestro equipo. Es el rol que mantiene en marcha una iteración: el plan, la comunicación, los bloqueos y asegurarse de que el equipo pueda hacer su mejor trabajo.</p>
+<p>Esperaba que me gustara. No esperaba que me gustara <em>tanto</em>. Lo que más disfruté fue la parte que no tiene nada que ver con el código: trabajar con las personas del equipo, entender lo que necesita cada una y quitar lo que se interpone en su camino. Una buena iteración no es una iteración con suerte, es una de la que alguien se ocupó.</p>
+<p>También juntó cosas que ya me gustan. Me gusta mejorar un proceso igual que mejorar un plan de entrenamiento: mirar los datos, cambiar una cosa, ver qué pasa. Y me gusta ayudar a mejorar a un equipo, no solo mejorar yo.</p>
+<p>Dos meses no son una carrera y sé cuánto me queda por aprender. Pero me veo en este tipo de trabajo en el futuro: mejorando el equipo, mejorando nuestra forma de trabajar y haciéndolo junto a las personas que me rodean.</p>`
+    }
+  },
+  {
     id: 'ai-a-week-later',
     date: '2026-10-20',
     category: 'Tech',
@@ -449,6 +478,7 @@ const CATEGORY_MAP = {
   'Academic': { en: 'Academic', cs: 'Akademické', es: 'Académico' },
   'Running': { en: 'Running', cs: 'Běh', es: 'Carrera' },
   'Tech': { en: 'Tech', cs: 'Technologie', es: 'Tecnología' },
+  'Career': { en: 'Career', cs: 'Kariéra', es: 'Carrera' },
   'Cycling': { en: 'Cycling', cs: 'Cyklistika', es: 'Ciclismo' }
 };
 

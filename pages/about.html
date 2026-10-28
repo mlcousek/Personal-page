@@ -24,6 +24,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="../assets/styles/main.css">
     <link rel="stylesheet" href="../assets/styles/about.css">
+    <link rel="stylesheet" href="../assets/styles/cv.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -93,6 +94,8 @@
                     <span class="trait" id="trait-competitive">Competitive</span>
                     <span class="trait" id="trait-team">Team Player</span>
                     <span class="trait" id="trait-detail">Detail-oriented</span>
+                    <span class="trait" id="trait-leader">Leader</span>
+                    <span class="trait" id="trait-ai">AI enthusiast</span>
                 </div>
             </div>
             <div class="about-hero-photo">
@@ -183,32 +186,8 @@
         <!-- ── Skills ── -->
         <section class="about-section about-skills-section">
             <h2 class="section-heading" id="about-skills-heading">Skills</h2>
-            <div class="skills-grid">
-                <div class="skills-col">
-                    <h3 id="skills-col-technical">Technical</h3>
-                    <ul class="skills-list">
-                        <li>.NET / C#</li>
-                        <li>REST APIs</li>
-                        <li id="skill-sql">SQL &amp; Databases</li>
-                        <li id="skill-git">Git &amp; Version Control</li>
-                        <li id="skill-crypto-pki">Cryptography &amp; PKI</li>
-                        <li id="skill-pqc">Postquantum Cryptography</li>
-                        <li id="skill-data">Data &amp; Statistics</li>
-                    </ul>
-                </div>
-                <div class="skills-col">
-                    <h3 id="skills-col-personal">Personal</h3>
-                    <ul class="skills-list">
-                        <li id="skill-analytical">Analytical thinking</li>
-                        <li id="skill-disciplined">Disciplined &amp; consistent</li>
-                        <li id="skill-goal">Goal tracking &amp; planning</li>
-                        <li id="skill-learning">Continuous learning</li>
-                        <li id="skill-problem">Problem solving</li>
-                        <li id="skill-team">Team collaboration</li>
-                        <li id="skill-drive">Competitive drive</li>
-                    </ul>
-                </div>
-            </div>
+            <p class="cv-summary cv-mindset" id="about-skills-mindset"></p>
+            <div id="about-skills"></div>
         </section>
 
         <!-- ── Certifications ── -->
@@ -239,6 +218,8 @@
 
     <div id="footer-placeholder"></div>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/cv.js"></script>
+    <script src="../scripts/about.js"></script>
     <script src="../scripts/effects.js"></script>
 </body>
 </html>

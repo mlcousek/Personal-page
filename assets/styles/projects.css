@@ -465,3 +465,62 @@
   .vault-intro { padding: 22px 20px; }
   .automation-item { grid-template-columns: 1fr; gap: 6px; padding: 14px 18px; }
 }
+
+/* ═══ Card footer: status + details button ═══ */
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+body.modal-open { overflow: hidden; }
+
+.project-card__foot { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 18px; }
+.project-status {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted);
+}
+.project-status::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--muted); }
+.project-status--in-use { color: var(--ink); }
+.project-status--in-use::before { background: #3ecf8e; }
+.project-status--in-progress { color: var(--accent-text); }
+.project-status--in-progress::before { background: var(--accent); }
+.project-status--done::before { background: var(--text); }
+
+.project-card__open {
+  font: inherit; font-size: 0.875rem; color: var(--ink); background: transparent; cursor: pointer;
+  border: 1px solid var(--border-strong); border-radius: var(--radius-pill); padding: 8px 16px;
+  transition: transform 140ms var(--ease-out), border-color 140ms var(--ease-out);
+}
+.project-card__open:active { transform: scale(0.97); }
+.project-card__open:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) { .project-card__open:hover { border-color: var(--accent); } }
+
+/* ═══ Detail modal ═══ */
+.project-modal {
+  width: min(880px, calc(100vw - 32px)); max-height: calc(100dvh - 48px); padding: 0; margin: auto;
+  color: var(--text); background: var(--bg); border: 1px solid var(--border-strong); border-radius: var(--radius-md);
+  box-shadow: var(--shadow-pop);
+}
+.project-modal::backdrop { background: rgba(5, 6, 8, 0.78); backdrop-filter: blur(4px); }
+.project-modal[open] { animation: project-modal-in 200ms var(--ease-out); }
+@keyframes project-modal-in { from { opacity: 0; transform: translateY(8px) scale(0.985); } }
+@media (prefers-reduced-motion: reduce) { .project-modal[open] { animation: none; } }
+
+.project-modal__panel { position: relative; padding: 32px; max-height: calc(100dvh - 50px); overflow-y: auto; overscroll-behavior: contain; }
+.project-modal__close {
+  position: absolute; top: 14px; right: 14px; width: 40px; height: 40px; display: grid; place-items: center;
+  font-size: 1.5rem; line-height: 1; color: var(--ink); background: var(--surface); cursor: pointer;
+  border: 1px solid var(--border-strong); border-radius: 50%;
+}
+.project-modal__close:focus-visible, .project-modal__repo:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) { .project-modal__close:hover { border-color: var(--accent); } }
+.project-modal__head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 0 48px 12px 0; }
+.project-modal__title { font-size: clamp(1.6rem, 4vw, 2.2rem); letter-spacing: -0.02em; color: var(--ink); margin: 0 0 6px; }
+.project-modal__text { max-width: 66ch; line-height: 1.7; margin: 14px 0 0; }
+.project-modal__sub { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent-text); margin: 28px 0 12px; font-weight: 500; }
+.project-modal__shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.project-modal__shots figure { margin: 0; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; background: var(--surface-2); }
+.project-modal__shots img { display: block; width: 100%; height: auto; }
+.project-modal__repos { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.project-modal__repo {
+  display: inline-flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none;
+  border: 1px solid var(--border-strong); border-radius: var(--radius-pill); padding: 10px 18px;
+}
+@media (hover: hover) and (pointer: fine) { .project-modal__repo:hover { border-color: var(--accent); } }
+@media (max-width: 640px) { .project-modal__panel { padding: 22px 18px; } }

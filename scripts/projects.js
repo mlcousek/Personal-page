@@ -9,7 +9,13 @@ const PROJECTS = [
     id: 'naruzu',
     group: 'featured',
     year: '2026',
-    kind: { en: 'Indoor cycling app · in progress', cs: 'Aplikace pro indoor cycling · ve vývoji', es: 'App de ciclismo indoor · en desarrollo' },
+    status: 'in-progress',
+    kind: { en: 'Indoor cycling app', cs: 'Aplikace pro indoor cycling', es: 'App de ciclismo indoor' },
+    details: {
+      en: 'NARUZU is still in active development: the core ride loop, Bluetooth, GPX riding, structured workouts and the customisable HUD work today, and the iPhone version comes later. It is a private project, so there is no public repository; the screenshots show the current state of the Windows build.',
+      cs: 'NARUZU je stále v aktivním vývoji: základní jízda, Bluetooth, jízda po GPX, strukturované tréninky a nastavitelné HUD už fungují, verze pro iPhone přijde později. Je to soukromý projekt, takže veřejný repozitář neexistuje; snímky ukazují aktuální stav verze pro Windows.',
+      es: 'NARUZU sigue en desarrollo activo: el bucle de salida, Bluetooth, rodaje con GPX, entrenamientos estructurados y el HUD personalizable ya funcionan; la versión para iPhone llegará más adelante. Es un proyecto privado, así que no hay repositorio público; las capturas muestran el estado actual de la versión de Windows.'
+    },
     title: 'NARUZU',
     subtitle: {
       en: 'A home-trainer cycling app, in the spirit of Zwift',
@@ -27,14 +33,17 @@ const PROJECTS = [
       es: ['Rodillo inteligente y sensores de pulso, con potencia, cadencia y zonas de pulso en vivo', 'Ascensos famosos como Alpe d\'Huez, rodaje libre con tus rutas GPX y entrenamientos estructurados', 'HUD personalizable, ciclistas cercanos, ghosts personales y segmentos locales', 'XP, niveles, retos y un globo de los países recorridos']
     },
     images: [
-      { src: '../images/projects/naruzu-ride-hud.png', alt: { en: 'NARUZU ride view: a 3D climb with live power, heart rate, nearby riders and the workout panel', cs: 'Jízda v NARUZU: 3D stoupání s živým výkonem, tepem, jezdci kolem a panelem tréninku', es: 'Vista de salida en NARUZU: un ascenso en 3D con potencia, pulso, ciclistas cercanos y panel de entrenamiento' } },
-      { src: '../images/projects/naruzu-home.png', alt: { en: 'NARUZU home screen with the featured Alpe d\'Huez route', cs: 'Úvodní obrazovka NARUZU s doporučenou trasou Alpe d\'Huez', es: 'Pantalla de inicio de NARUZU con la ruta destacada de Alpe d\'Huez' } }
+      // TODO(owner): a newer menu screenshot is coming; it replaces the progress shot below.
+      { src: '../images/projects/naruzu-ride.jpg', alt: { en: 'NARUZU ride view: a road with live speed, power, cadence and heart-rate HUD, a minimap and ride controls', cs: 'Jízda v NARUZU: silnice s živým HUD (rychlost, výkon, kadence, tep), minimapou a ovládáním jízdy', es: 'Vista de salida en NARUZU: una carretera con HUD en vivo (velocidad, potencia, cadencia, pulso), minimapa y controles' } },
+      { src: '../images/projects/naruzu-progress.jpg', alt: { en: 'NARUZU Progress screen: level, XP and recent rides next to the main menu', cs: 'Obrazovka Progress v NARUZU: level, XP a poslední jízdy vedle hlavního menu', es: 'Pantalla Progress de NARUZU: nivel, XP y salidas recientes junto al menú principal' } }
     ]
   },
   {
     id: 'finite-automatons',
     group: 'featured',
     year: '2026',
+    status: 'done',
+    repos: [{ url: 'https://github.com/mlcousek/FiniteAutomatons' }],
     kind: { en: 'Master thesis · SVOČ 2nd place', cs: 'Diplomová práce · SVOČ 2. místo', es: 'Trabajo de máster · 2.º puesto SVOČ' },
     title: 'Automata Simulator',
     subtitle: {
@@ -61,7 +70,8 @@ const PROJECTS = [
     id: 'garmin-food',
     group: 'more',
     year: '2026',
-    kind: { en: 'iOS app · version 2.0, in daily use', cs: 'iOS aplikace · verze 2.0, denně používaná', es: 'App iOS · versión 2.0, en uso diario' },
+    status: 'in-use',
+    kind: { en: 'iOS app · version 2.0', cs: 'iOS aplikace · verze 2.0', es: 'App iOS · versión 2.0' },
     title: 'Jirka\'s Arc',
     subtitle: {
       en: 'Food and training tracking with Garmin Connect as the source of truth',
@@ -84,6 +94,7 @@ const PROJECTS = [
     id: 'closet',
     group: 'more',
     year: '2026',
+    status: 'in-progress',
     kind: { en: 'iOS app', cs: 'iOS aplikace', es: 'App iOS' },
     title: 'Closet',
     subtitle: {
@@ -106,22 +117,27 @@ const PROJECTS = [
     id: 'claude-tray',
     group: 'more',
     year: '2026',
-    kind: { en: 'Windows app', cs: 'Aplikace pro Windows', es: 'App de Windows' },
-    title: 'Claude Usage Tray',
+    status: 'in-use',
+    repos: [
+      { label: 'Claude Usage Tray', url: 'https://github.com/mlcousek/claude_trayapp' },
+      { label: 'Codex Usage Tray', url: 'https://github.com/mlcousek/codex_trayapp' }
+    ],
+    kind: { en: 'Windows apps · used across our team', cs: 'Aplikace pro Windows · používá je celý náš tým', es: 'Apps de Windows · las usa todo nuestro equipo' },
+    title: 'Claude & Codex Usage Tray',
     subtitle: {
-      en: 'Claude usage at a glance, right in the taskbar',
-      cs: 'Využití Claude na první pohled, přímo v liště',
-      es: 'El uso de Claude de un vistazo, en la barra de tareas'
+      en: 'AI usage at a glance, right in the taskbar',
+      cs: 'Využití AI na první pohled, přímo v liště',
+      es: 'El uso de la IA de un vistazo, en la barra de tareas'
     },
     summary: {
-      en: 'A minimalist Windows 11 system-tray app. The tray icon shows a live percentage ring; one click opens a dark flyout with every usage window, reset countdowns, burn rate, a projection of when the limit lands, history charts and token/cost analytics.',
-      cs: 'Minimalistická aplikace do systémové lišty Windows 11. Ikona ukazuje živý procentuální prstenec; po kliknutí se otevře tmavý panel se všemi limity, odpočtem resetu, tempem spotřeby, odhadem, kdy limit dojde, grafy historie a analýzou tokenů a nákladů.',
-      es: 'Una app minimalista para la bandeja del sistema de Windows 11. El icono muestra un anillo de porcentaje en vivo; con un clic se abre un panel oscuro con cada ventana de uso, cuentas atrás de reinicio, ritmo de consumo, una proyección de cuándo se alcanzará el límite, gráficos históricos y análisis de tokens y coste.'
+      en: 'Minimalist Windows 11 system-tray apps that show how much of your AI quota is left. First I built Claude Usage Tray, then a Codex Usage Tray alongside it. The tray icon shows a live percentage ring; one click opens a dark flyout with every usage window, reset countdowns, burn rate, a projection of when the limit lands, history charts and token/cost analytics. Both are in daily use, through our whole team.',
+      cs: 'Minimalistické aplikace do systémové lišty Windows 11, které ukazují, kolik z AI kvóty vám zbývá. Nejdřív jsem postavil Claude Usage Tray a vedle něj i Codex Usage Tray. Ikona ukazuje živý procentuální prstenec; po kliknutí se otevře tmavý panel se všemi limity, odpočtem resetu, tempem spotřeby, odhadem, kdy limit dojde, grafy historie a analýzou tokenů a nákladů. Obě aplikace denně používá celý náš tým.',
+      es: 'Apps minimalistas para la bandeja del sistema de Windows 11 que muestran cuánta cuota de IA te queda. Primero hice Claude Usage Tray y después, a su lado, Codex Usage Tray. El icono muestra un anillo de porcentaje en vivo; con un clic se abre un panel oscuro con cada ventana de uso, cuentas atrás de reinicio, ritmo de consumo, una proyección de cuándo se alcanzará el límite, gráficos históricos y análisis de tokens y coste. Ambas se usan a diario en todo nuestro equipo.'
     },
     highlights: {
-      en: ['Tray icon legible at 16 px on light and dark taskbars', 'Optional threshold notifications, starts with Windows', 'Runs on x64 and Arm64'],
-      cs: ['Ikona čitelná i v 16 px na světlé i tmavé liště', 'Volitelné notifikace při překročení prahu, spuštění s Windows', 'Běží na x64 i Arm64'],
-      es: ['Icono legible a 16 px en barras claras y oscuras', 'Notificaciones opcionales por umbral, inicio con Windows', 'Funciona en x64 y Arm64']
+      en: ['Two apps, one idea: Claude Usage Tray and Codex Usage Tray', 'In daily use by the whole team', 'Tray icon legible at 16 px on light and dark taskbars', 'Optional threshold notifications, starts with Windows; runs on x64 and Arm64'],
+      cs: ['Dvě aplikace, jedna myšlenka: Claude Usage Tray a Codex Usage Tray', 'Denně je používá celý tým', 'Ikona čitelná i v 16 px na světlé i tmavé liště', 'Volitelné notifikace při překročení prahu, spuštění s Windows; běží na x64 i Arm64'],
+      es: ['Dos apps, una idea: Claude Usage Tray y Codex Usage Tray', 'Las usa a diario todo el equipo', 'Icono legible a 16 px en barras claras y oscuras', 'Notificaciones opcionales por umbral, inicio con Windows; funciona en x64 y Arm64']
     },
     image: { src: '../images/projects/claude-tray-flyout.jpg', alt: { en: 'Claude Usage Tray flyout showing a usage ring and limits', cs: 'Panel Claude Usage Tray s prstencem využití a limity', es: 'Panel de Claude Usage Tray con el anillo de uso y los límites' }, portrait: true }
   },
@@ -129,6 +145,7 @@ const PROJECTS = [
     id: 'fitness-web-app',
     group: 'more',
     year: '2024',
+    status: 'done',
     kind: { en: 'Bachelor thesis', cs: 'Bakalářská práce', es: 'Trabajo de grado' },
     title: 'FitnessWebApp',
     subtitle: {
@@ -235,12 +252,25 @@ const VAULT_AUTOMATIONS = [
 ];
 
 const PROJECTS_UI = {
-  en: { vaultPrivate: 'Private vault — it holds personal data' },
-  cs: { vaultPrivate: 'Soukromý vault — obsahuje osobní data' },
-  es: { vaultPrivate: 'Vault privado: contiene datos personales' }
+  en: {
+    vaultPrivate: 'Private vault — it holds personal data',
+    details: 'Details', close: 'Close', repo: 'View on GitHub', highlights: 'Highlights', screenshots: 'Screenshots',
+    status: { 'in-progress': 'In development', 'in-use': 'In use', done: 'Finished' }
+  },
+  cs: {
+    vaultPrivate: 'Soukromý vault — obsahuje osobní data',
+    details: 'Podrobnosti', close: 'Zavřít', repo: 'Zobrazit na GitHubu', highlights: 'Hlavní body', screenshots: 'Snímky obrazovky',
+    status: { 'in-progress': 'Ve vývoji', 'in-use': 'V používání', done: 'Dokončeno' }
+  },
+  es: {
+    vaultPrivate: 'Vault privado: contiene datos personales',
+    details: 'Detalles', close: 'Cerrar', repo: 'Ver en GitHub', highlights: 'Puntos clave', screenshots: 'Capturas',
+    status: { 'in-progress': 'En desarrollo', 'in-use': 'En uso', done: 'Terminado' }
+  }
 };
 
-const LOCK_ICON = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="10" height="7" rx="1.5"/><path d="M5 7V5a3 3 0 016 0v2"/></svg>';
+const GITHUB_ICON = '<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 014 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>';
+const LOCK_ICON ='<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="10" height="7" rx="1.5"/><path d="M5 7V5a3 3 0 016 0v2"/></svg>';
 
 function projectsLang() {
   const lang = localStorage.getItem('lang');
@@ -251,10 +281,22 @@ function pick(field, lang) {
   return (field && (field[lang] || field.en)) || '';
 }
 
+function projectImages(project) {
+  return project.images || (project.image ? [project.image] : []);
+}
+
+function statusPill(project, ui) {
+  return project.status
+    ? `<span class="project-status project-status--${project.status}">${ui.status[project.status]}</span>`
+    : '';
+}
+
 function renderProjectCard(project, lang) {
+  const ui = PROJECTS_UI[lang];
   let media = '';
   if (project.images) {
-    media = `<div class="project-card__gallery">${project.images.map(img =>
+    // the card preview shows at most two shots; the full set opens in the modal
+    media = `<div class="project-card__gallery">${project.images.slice(0, 2).map(img =>
       `<figure class="project-card__media"><img src="${img.src}" alt="${pick(img.alt, lang)}" loading="lazy" decoding="async"></figure>`
     ).join('')}</div>`;
   } else if (project.image) {
@@ -277,9 +319,73 @@ function renderProjectCard(project, lang) {
         <p class="project-card__subtitle">${pick(project.subtitle, lang)}</p>
         <p class="project-card__summary">${pick(project.summary, lang)}</p>
         <ul class="project-card__highlights">${highlights}</ul>
+        <div class="project-card__foot">
+          ${statusPill(project, ui)}
+          <button type="button" class="project-card__open" data-project="${project.id}">${ui.details} <span aria-hidden="true">→</span><span class="visually-hidden"> — ${project.title}</span></button>
+        </div>
       </div>
     </article>`;
 }
+
+// ── Detail modal: one native <dialog>, filled on open (focus trap + Esc come for free) ──
+let projectDialog = null;
+let projectOpener = null;
+
+function ensureProjectDialog() {
+  if (projectDialog) return projectDialog;
+  projectDialog = document.createElement('dialog');
+  projectDialog.className = 'project-modal';
+  projectDialog.addEventListener('click', e => { if (e.target === projectDialog) projectDialog.close(); });
+  projectDialog.addEventListener('close', () => {
+    document.body.classList.remove('modal-open');
+    if (projectOpener) projectOpener.focus();
+  });
+  document.body.appendChild(projectDialog);
+  return projectDialog;
+}
+
+function openProject(id) {
+  const project = PROJECTS.find(p => p.id === id);
+  if (!project) return;
+  const lang = projectsLang();
+  const ui = PROJECTS_UI[lang];
+  const dialog = ensureProjectDialog();
+  const shots = projectImages(project);
+  const details = pick(project.details, lang);
+  const highlights = (project.highlights[lang] || project.highlights.en).map(h => `<li>${h}</li>`).join('');
+
+  dialog.setAttribute('aria-labelledby', 'project-modal-title');
+  dialog.innerHTML = `
+    <div class="project-modal__panel">
+      <button type="button" class="project-modal__close" aria-label="${ui.close}">×</button>
+      <div class="project-modal__head">
+        ${statusPill(project, ui)}
+        <span class="project-kind">${pick(project.kind, lang)}</span>
+        <span class="project-year">${project.year}</span>
+      </div>
+      <h2 class="project-modal__title" id="project-modal-title">${project.title}</h2>
+      <p class="project-card__subtitle">${pick(project.subtitle, lang)}</p>
+      <p class="project-modal__text">${pick(project.summary, lang)}</p>
+      ${details ? `<p class="project-modal__text">${details}</p>` : ''}
+      <h3 class="project-modal__sub">${ui.highlights}</h3>
+      <ul class="project-card__highlights">${highlights}</ul>
+      ${shots.length ? `<h3 class="project-modal__sub">${ui.screenshots}</h3>
+        <div class="project-modal__shots">${shots.map(s =>
+          `<figure><img src="${s.src}" alt="${pick(s.alt, lang)}" loading="lazy" decoding="async"></figure>`).join('')}</div>` : ''}
+      ${project.repos ? `<div class="project-modal__repos">${project.repos.map(r =>
+        `<a class="project-modal__repo" href="${r.url}" target="_blank" rel="noopener noreferrer">${GITHUB_ICON}${r.label || ui.repo} ↗</a>`).join('')}</div>` : ''}
+    </div>`;
+  dialog.querySelector('.project-modal__close').addEventListener('click', () => dialog.close());
+  document.body.classList.add('modal-open');
+  dialog.showModal();
+}
+
+document.addEventListener('click', e => {
+  const btn = e.target.closest('.project-card__open');
+  if (!btn) return;
+  projectOpener = btn;
+  openProject(btn.dataset.project);
+});
 
 function renderProjects() {
   const lang = projectsLang();

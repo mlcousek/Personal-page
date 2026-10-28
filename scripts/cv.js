@@ -1,7 +1,7 @@
 /**
  * CV — data + rendering.
  * Everything on the page lives here as { en, cs, es } and re-renders on `languageChanged`.
- * Phone number and birth year from the PDF résumé are deliberately not published.
+ * Birth year from the PDF résumé is deliberately not published (the phone number is, at the owner's request).
  */
 
 const CV_UI = {
@@ -39,10 +39,22 @@ const CV_LINKS = [
   { label: 'Strava', href: 'https://www.strava.com/athletes/72382004', text: 'strava.com/athletes/72382004' }
 ];
 
+const CV_PHOTO = { src: '../images/cv-portrait.jpg', width: 1050, height: 1400 };
+
+// Paragraph arrays: each entry renders as its own <p>.
 const CV_SUMMARY = {
-  en: 'Software developer with a .NET/C# focus — REST APIs, data-heavy backends and the infrastructure around them. I grew from intern to full-time at Monet+ while finishing a master\'s degree, and I keep a record of everything I build and everything I run.',
-  cs: 'Softwarový vývojář se zaměřením na .NET/C# — REST API, datově náročné backendy a infrastruktura kolem nich. V Monet+ jsem vyrostl ze stážisty na plný úvazek při dokončování magisterského studia a vedu si záznam o všem, co postavím i naběhám.',
-  es: 'Desarrollador de software centrado en .NET/C#: APIs REST, backends con muchos datos y la infraestructura que los rodea. En Monet+ pasé de becario a jornada completa mientras terminaba el máster, y llevo un registro de todo lo que construyo y de todo lo que corro.'
+  en: [
+    'Software developer with an AI & .NET/C# focus — REST APIs, data-heavy backends and the infrastructure around them. I work with AI coding agents every day and build good habits around them: spec-driven development, small reviewed iterations, tests as the safety net, and automation of anything repetitive. I like improving myself and my team, and I want everything we do to be done effectively.',
+    'I grew from intern to full-time at Monet+ while finishing a master\'s degree. Outside of work I am a sports person, mainly focused on long-distance running and road cycling.'
+  ],
+  cs: [
+    'Softwarový vývojář se zaměřením na AI a .NET/C# — REST API, datově náročné backendy a infrastruktura kolem nich. S AI programovacími agenty pracuji každý den a vytvářím kolem nich dobré návyky: spec-driven vývoj, malé zrevidované iterace, testy jako záchranná síť a automatizace všeho opakujícího se. Rád zlepšuji sebe i svůj tým a chci, aby vše, co děláme, bylo děláno efektivně.',
+    'V Monet+ jsem vyrostl ze stážisty na plný úvazek při dokončování magisterského studia. Mimo práci jsem sportovní typ, především se věnuji dlouhým běhům a silniční cyklistice.'
+  ],
+  es: [
+    'Desarrollador de software con foco en IA y .NET/C#: APIs REST, backends con muchos datos y la infraestructura que los rodea. Trabajo con agentes de programación con IA cada día y construyo buenos hábitos a su alrededor: desarrollo guiado por specs, iteraciones pequeñas y revisadas, pruebas como red de seguridad y automatización de todo lo repetitivo. Me gusta mejorar yo y mi equipo, y quiero que todo lo que hacemos se haga de forma efectiva.',
+    'En Monet+ pasé de becario a jornada completa mientras terminaba el máster. Fuera del trabajo soy una persona deportista, centrada sobre todo en carreras de larga distancia y ciclismo de carretera.'
+  ]
 };
 
 // Roles at Monet+ are shown as one company with a stepped timeline.
@@ -51,6 +63,11 @@ const CV_EXPERIENCE = [
     company: 'Monet+',
     period: { en: 'Feb 2025 – present', cs: 'únor 2025 – dosud', es: 'feb 2025 – actualidad' },
     title: { en: '.NET Developer', cs: '.NET vývojář', es: 'Desarrollador .NET' },
+    note: {
+      en: 'Iteration driver for two months in summer 2026 — a team-lead role I loved and can see myself in.',
+      cs: 'Dva měsíce v létě 2026 jsem dělal iteration drivera — roli týmového lídra, která mě bavila a vidím se v ní.',
+      es: 'Iteration driver durante dos meses en el verano de 2026: un rol de líder de equipo que me encantó y en el que me veo.'
+    },
     steps: [
       { when: { en: 'Jul 2026 →', cs: 'čvc 2026 →', es: 'jul 2026 →' }, what: { en: 'Full-time', cs: 'Plný úvazek', es: 'Jornada completa' } },
       { when: { en: 'Nov 2025 – Jul 2026', cs: 'lis 2025 – čvc 2026', es: 'nov 2025 – jul 2026' }, what: { en: '¾ time', cs: '¾ úvazek', es: '¾ de jornada' } },
@@ -170,9 +187,9 @@ const CV_SKILLS = [
 ];
 
 const CV_MINDSET = {
-  en: 'I think like a programmer first and a technology specialist second. What I want to get better at is the layer above the syntax — architecture, paradigms and programming style. I can pick up any new technology, and with AI I can start working in it almost immediately.',
-  cs: 'Přemýšlím nejdřív jako programátor a teprve potom jako specialista na konkrétní technologii. Chci se zlepšovat ve vrstvě nad syntaxí — architektura, paradigmata a styl programování. Zvládnu se naučit jakoukoli novou technologii a s AI v ní mohu začít pracovat téměř okamžitě.',
-  es: 'Pienso primero como programador y después como especialista en una tecnología. Quiero mejorar en la capa que está por encima de la sintaxis: arquitectura, paradigmas y estilo de programación. Puedo aprender cualquier tecnología nueva y, con IA, empezar a trabajar en ella casi de inmediato.'
+  en: 'I think like a programmer first and a technology specialist second. What I want to get better at is the layer above the syntax — architecture, paradigms and programming style. I am firmly into AI and use it to work efficiently: I can pick up any new technology and start working in it almost immediately.',
+  cs: 'Přemýšlím nejdřív jako programátor a teprve potom jako specialista na konkrétní technologii. Chci se zlepšovat ve vrstvě nad syntaxí — architektura, paradigmata a styl programování. S AI to myslím vážně a využívám ji k efektivní práci: zvládnu se naučit jakoukoli novou technologii a začít v ní pracovat téměř okamžitě.',
+  es: 'Pienso primero como programador y después como especialista en una tecnología. Quiero mejorar en la capa que está por encima de la sintaxis: arquitectura, paradigmas y estilo de programación. Me tomo la IA muy en serio y la uso para trabajar con eficiencia: puedo aprender cualquier tecnología nueva y empezar a trabajar en ella casi de inmediato.'
 };
 
 const CV_CERTS = [
@@ -190,9 +207,18 @@ const CV_LANGUAGES = [
 ];
 
 const CV_INTERESTS = {
-  en: 'Ultra-trail and road running, cycling, strength training and football. Reading, and logging everything in a self-built Obsidian vault.',
-  cs: 'Ultratrail a silniční běh, cyklistika, silový trénink a fotbal. Čtení a zapisování všeho do vlastnoručně postaveného Obsidian vaultu.',
-  es: 'Ultra-trail y carreras de asfalto, ciclismo, entrenamiento de fuerza y fútbol. Lectura, y registrar todo en un vault de Obsidian construido por mí.'
+  en: [
+    'I have been a sports person since I was young, and I like hard challenges: ultra-trail races, 24-hour races, the B7 and similar. Alongside running I enjoy road cycling and the gym, and in the past I played football.',
+    'I like reading and improving myself in everything I do. I like data and statistics, and I log everything in a self-built Obsidian vault. My favourite quality time is walking in the mountains with my fiancée.'
+  ],
+  cs: [
+    'Sportuji od mládí a mám rád těžké výzvy: ultratrailové závody, 24hodinovky, B7 a podobně. Vedle běhání mě baví silniční kolo a posilovna a v minulosti jsem hrál fotbal.',
+    'Rád čtu a zlepšuji se ve všem, co dělám. Mám rád data a statistiky a všechno si zapisuji do vlastnoručně postaveného Obsidian vaultu. Nejraději trávím kvalitní čas s přítelkyní při procházkách po horách.'
+  ],
+  es: [
+    'Hago deporte desde joven y me gustan los retos duros: ultra-trails, carreras de 24 horas, la B7 y similares. Además de correr, disfruto del ciclismo de carretera y del gimnasio, y en el pasado jugué al fútbol.',
+    'Me gusta leer y mejorar en todo lo que hago. Me gustan los datos y las estadísticas, y lo registro todo en un vault de Obsidian construido por mí. Mi mejor tiempo de calidad es caminar por la montaña con mi prometida.'
+  ]
 };
 
 function cvLang() {
@@ -208,14 +234,21 @@ function cvList(items, lang) {
   return Array.isArray(items) ? items : (items[lang] || items.en);
 }
 
+function cvParagraphs(field, lang, cls) {
+  return (field[lang] || field.en).map(p => `<p class="${cls}">${p}</p>`).join('');
+}
+
+// Links render as full-row targets: a visible arrow in the browser, a printed URL in the PDF.
 function renderCvHeader(lang, ui) {
-  const links = CV_LINKS.map(l =>
-    `<li><span class="cv-link-label">${l.label}</span><a href="${l.href}"${l.href.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : ''}>${l.text}</a></li>`
-  ).join('');
+  const links = CV_LINKS.map(l => {
+    const external = l.href.startsWith('http');
+    return `<li><a class="cv-link" href="${l.href}"${external ? ' target="_blank" rel="noopener noreferrer"' : ''}><span class="cv-link-label">${l.label}</span><span class="cv-link-text">${l.text}</span>${external ? '<span class="cv-link-arrow" aria-hidden="true">↗</span>' : ''}</a></li>`;
+  }).join('');
   const langs = CV_LANGUAGES.map(l =>
     `<li><span>${cvPick(l.name, lang)}</span><span class="cv-meta">${cvPick(l.level, lang)}</span></li>`
   ).join('');
   return `
+    <img class="cv-photo" src="${CV_PHOTO.src}" alt="Jiří Mlčoušek" width="${CV_PHOTO.width}" height="${CV_PHOTO.height}" decoding="async">
     <p class="cv-eyebrow">${ui.role}</p>
     <h1 class="cv-name">Jiří Mlčoušek</h1>
     <p class="cv-location">${ui.location}</p>
@@ -232,6 +265,7 @@ function renderCvExperience(lang) {
       <div class="cv-entry__body">
         <h3 class="cv-entry__title">${cvPick(e.title, lang)} <span class="cv-company">· ${e.company}</span></h3>
         <ol class="cv-steps">${e.steps.map(s => `<li><span class="cv-meta">${cvPick(s.when, lang)}</span><span>${cvPick(s.what, lang)}</span></li>`).join('')}</ol>
+        ${e.note ? `<p class="cv-note">${cvPick(e.note, lang)}</p>` : ''}
       </div>
     </article>`).join('');
 }
@@ -275,12 +309,12 @@ function renderCv() {
 
   header.innerHTML = renderCvHeader(lang, ui);
   content.innerHTML = `
-    <section class="cv-section"><h2 class="section-heading">${ui.summary}</h2><p class="cv-summary">${CV_SUMMARY[lang]}</p></section>
+    <section class="cv-section"><h2 class="section-heading">${ui.summary}</h2>${cvParagraphs(CV_SUMMARY, lang, 'cv-summary')}</section>
     <section class="cv-section"><h2 class="section-heading">${ui.experience}</h2>${renderCvExperience(lang)}<p class="cv-earlier"><span class="cv-meta">${ui.earlier}</span> ${CV_EARLIER_JOBS[lang]}</p></section>
     <section class="cv-section"><h2 class="section-heading">${ui.education}</h2>${renderCvEducation(lang)}</section>
     <section class="cv-section"><h2 class="section-heading">${ui.skills}</h2><p class="cv-summary cv-mindset">${CV_MINDSET[lang]}</p>${renderCvSkills(lang)}</section>
     <section class="cv-section"><h2 class="section-heading">${ui.certs}</h2>${renderCvCerts(ui)}</section>
-    <section class="cv-section"><h2 class="section-heading">${ui.interests}</h2><p class="cv-summary">${CV_INTERESTS[lang]}</p></section>`;
+    <section class="cv-section"><h2 class="section-heading">${ui.interests}</h2>${cvParagraphs(CV_INTERESTS, lang, 'cv-summary')}</section>`;
 
   const print = document.getElementById('cv-print');
   if (print) print.addEventListener('click', () => window.print());
