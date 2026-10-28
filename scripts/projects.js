@@ -12,9 +12,9 @@ const PROJECTS = [
     status: 'in-progress',
     kind: { en: 'Indoor cycling app', cs: 'Aplikace pro indoor cycling', es: 'App de ciclismo indoor' },
     details: {
-      en: 'NARUZU is still in active development: the core ride loop, Bluetooth, GPX riding, structured workouts and the customisable HUD work today, and the iPhone version comes later. It is a private project, so there is no public repository; the screenshots show the current state of the Windows build.',
-      cs: 'NARUZU je stále v aktivním vývoji: základní jízda, Bluetooth, jízda po GPX, strukturované tréninky a nastavitelné HUD už fungují, verze pro iPhone přijde později. Je to soukromý projekt, takže veřejný repozitář neexistuje; snímky ukazují aktuální stav verze pro Windows.',
-      es: 'NARUZU sigue en desarrollo activo: el bucle de salida, Bluetooth, rodaje con GPX, entrenamientos estructurados y el HUD personalizable ya funcionan; la versión para iPhone llegará más adelante. Es un proyecto privado, así que no hay repositorio público; las capturas muestran el estado actual de la versión de Windows.'
+      en: 'NARUZU is still in active development, and it is a private project, so there is no public repository. The core ride loop, Bluetooth trainer and heart-rate pairing, GPX riding, structured workouts and the customisable HUD work today; the iPhone version comes later. The home screen opens on a featured climb such as Praděd, the garage lets you dress the rider and pick the bike, a loading screen shows the climb profile while the world is prepared, and then you ride. Progress keeps levels, XP, challenges and the globe of countries you have ridden. The gallery below shows the current state of the Windows build, and the video is a short tour.',
+      cs: 'NARUZU je stále v aktivním vývoji a je to soukromý projekt, takže veřejný repozitář neexistuje. Základní jízda, párování Bluetooth trenažéru a hrudního pásu, jízda po GPX, strukturované tréninky a nastavitelné HUD už fungují; verze pro iPhone přijde později. Domovská obrazovka se otevře vybraným stoupáním, třeba Pradědem, v garáži oblečete jezdce a vyberete kolo, načítací obrazovka ukáže profil stoupání, zatímco se připravuje svět, a pak se jede. Progress drží levely, XP, výzvy a glóbus projetých zemí. Galerie níže ukazuje aktuální stav verze pro Windows a video je krátká prohlídka.',
+      es: 'NARUZU sigue en desarrollo activo y es un proyecto privado, así que no hay repositorio público. El bucle de salida, el emparejamiento del rodillo Bluetooth y la banda de pulso, el rodaje con GPX, los entrenamientos estructurados y el HUD personalizable ya funcionan; la versión para iPhone llegará más adelante. La pantalla de inicio se abre con un ascenso destacado, como Praděd, en el garaje vistes al ciclista y eliges la bici, una pantalla de carga muestra el perfil del ascenso mientras se prepara el mundo, y después se rueda. Progress guarda niveles, XP, retos y el globo de países recorridos. La galería de abajo muestra el estado actual de la versión de Windows y el vídeo es un recorrido corto.'
     },
     title: 'NARUZU',
     subtitle: {
@@ -32,10 +32,16 @@ const PROJECTS = [
       cs: ['Chytrý trenažér a tepové senzory, živý výkon, kadence a tepové zóny', 'Slavná stoupání jako Alpe d\'Huez, volná jízda po vlastních GPX trasách a strukturované tréninky', 'Nastavitelné HUD, jezdci kolem, osobní ghosti a lokální segmenty', 'XP, levely, výzvy a glóbus projetých zemí'],
       es: ['Rodillo inteligente y sensores de pulso, con potencia, cadencia y zonas de pulso en vivo', 'Ascensos famosos como Alpe d\'Huez, rodaje libre con tus rutas GPX y entrenamientos estructurados', 'HUD personalizable, ciclistas cercanos, ghosts personales y segmentos locales', 'XP, niveles, retos y un globo de los países recorridos']
     },
+    video: { id: '_H9zhEoG7vc', url: 'https://youtu.be/_H9zhEoG7vc', poster: '../images/projects/naruzu-video.jpg' },
     images: [
-      // TODO(owner): a newer menu screenshot is coming; it replaces the progress shot below.
-      { src: '../images/projects/naruzu-ride.jpg', alt: { en: 'NARUZU ride view: a road with live speed, power, cadence and heart-rate HUD, a minimap and ride controls', cs: 'Jízda v NARUZU: silnice s živým HUD (rychlost, výkon, kadence, tep), minimapou a ovládáním jízdy', es: 'Vista de salida en NARUZU: una carretera con HUD en vivo (velocidad, potencia, cadencia, pulso), minimapa y controles' } },
-      { src: '../images/projects/naruzu-progress.jpg', alt: { en: 'NARUZU Progress screen: level, XP and recent rides next to the main menu', cs: 'Obrazovka Progress v NARUZU: level, XP a poslední jízdy vedle hlavního menu', es: 'Pantalla Progress de NARUZU: nivel, XP y salidas recientes junto al menú principal' } }
+      { src: '../images/projects/naruzu-menu.jpg', alt: { en: 'NARUZU main menu with the featured Praděd climb', cs: 'Hlavní menu NARUZU s vybraným stoupáním na Praděd', es: 'Menú principal de NARUZU con el ascenso destacado a Praděd' } },
+      { src: '../images/projects/naruzu-garage.jpg', alt: { en: 'NARUZU garage with the rider on the bike', cs: 'Garáž v NARUZU s jezdcem na kole', es: 'Garaje de NARUZU con el ciclista en la bici' } },
+      { src: '../images/projects/naruzu-loading.jpg', alt: { en: 'NARUZU loading screen with the climb profile', cs: 'Načítací obrazovka NARUZU s profilem stoupání', es: 'Pantalla de carga de NARUZU con el perfil del ascenso' } },
+      { src: '../images/projects/naruzu-ride-1.jpg', alt: { en: 'Riding in NARUZU', cs: 'Jízda v NARUZU', es: 'Rodando en NARUZU' } },
+      { src: '../images/projects/naruzu-preview.jpg', alt: { en: 'NARUZU rider and bike preview', cs: 'Náhled jezdce a kola v NARUZU', es: 'Vista previa del ciclista y la bici en NARUZU' } },
+      { src: '../images/projects/naruzu-ride-2.jpg', alt: { en: 'Riding in NARUZU, second view', cs: 'Jízda v NARUZU, druhý záběr', es: 'Rodando en NARUZU, segunda vista' } },
+      { src: '../images/projects/naruzu-ride-3.jpg', alt: { en: 'Riding in NARUZU, third view', cs: 'Jízda v NARUZU, třetí záběr', es: 'Rodando en NARUZU, tercera vista' } },
+      { src: '../images/projects/naruzu-ride-4.jpg', alt: { en: 'Riding in NARUZU, fourth view', cs: 'Jízda v NARUZU, čtvrtý záběr', es: 'Rodando en NARUZU, cuarta vista' } }
     ]
   },
   {
@@ -293,19 +299,19 @@ const VAULT_AUTOMATIONS = [
 const PROJECTS_UI = {
   en: {
     vaultPrivate: 'Private vault — it holds personal data',
-    details: 'Details', close: 'Close', repo: 'View on GitHub', highlights: 'Highlights', screenshots: 'Screenshots', dragHint: 'Drag or scroll to see the whole day',
+    details: 'Details', close: 'Close', repo: 'View on GitHub', highlights: 'Highlights', screenshots: 'Screenshots', dragHint: 'Drag or scroll to see the whole day', watch: 'Watch the video',
     viewer: 'Image viewer', prev: 'Previous image', next: 'Next image',
     status: { 'in-progress': 'In development', 'in-use': 'In use', done: 'Finished' }
   },
   cs: {
     vaultPrivate: 'Soukromý vault — obsahuje osobní data',
-    details: 'Podrobnosti', close: 'Zavřít', repo: 'Zobrazit na GitHubu', highlights: 'Hlavní body', screenshots: 'Snímky obrazovky', dragHint: 'Tažením nebo rolováním projdete celý den',
+    details: 'Podrobnosti', close: 'Zavřít', repo: 'Zobrazit na GitHubu', highlights: 'Hlavní body', screenshots: 'Snímky obrazovky', dragHint: 'Tažením nebo rolováním projdete celý den', watch: 'Přehrát video',
     viewer: 'Prohlížeč obrázků', prev: 'Předchozí obrázek', next: 'Další obrázek',
     status: { 'in-progress': 'Ve vývoji', 'in-use': 'V používání', done: 'Dokončeno' }
   },
   es: {
     vaultPrivate: 'Vault privado: contiene datos personales',
-    details: 'Detalles', close: 'Cerrar', repo: 'Ver en GitHub', highlights: 'Puntos clave', screenshots: 'Capturas', dragHint: 'Arrastra o desplaza para ver todo el día',
+    details: 'Detalles', close: 'Cerrar', repo: 'Ver en GitHub', highlights: 'Puntos clave', screenshots: 'Capturas', dragHint: 'Arrastra o desplaza para ver todo el día', watch: 'Ver el vídeo',
     viewer: 'Visor de imágenes', prev: 'Imagen anterior', next: 'Imagen siguiente',
     status: { 'in-progress': 'En desarrollo', 'in-use': 'En uso', done: 'Terminado' }
   }
@@ -327,6 +333,13 @@ function projectImages(project) {
   return project.images || (project.image ? [project.image] : []);
 }
 
+// A video is shown as its YouTube poster with a play badge; the click opens YouTube in a new tab.
+function videoPoster(video, title, ui) {
+  return `<a class="video-poster" href="${video.url}" target="_blank" rel="noopener noreferrer" aria-label="${ui.watch} — ${title}">
+    <img src="${video.poster}" alt="" loading="lazy" decoding="async"><span class="video-poster__play" aria-hidden="true">▶</span>
+    <span class="video-poster__label">${ui.watch} ↗</span></a>`;
+}
+
 function statusPill(project, ui) {
   return project.status
     ? `<span class="project-status project-status--${project.status}">${ui.status[project.status]}</span>`
@@ -337,8 +350,9 @@ function renderProjectCard(project, lang) {
   const ui = PROJECTS_UI[lang];
   let media = '';
   if (project.images) {
-    // the card preview shows at most two shots; the full set opens in the modal
-    media = `<div class="project-card__gallery">${project.images.slice(0, 2).map(img =>
+    // the card preview shows at most two items (the video first, when there is one); the full set opens in the modal
+    const lead = project.video ? `<figure class="project-card__media project-card__media--video">${videoPoster(project.video, project.title, ui)}</figure>` : '';
+    media = `<div class="project-card__gallery">${lead}${project.images.slice(0, project.video ? 1 : 2).map(img =>
       `<figure class="project-card__media"><img src="${img.src}" alt="${pick(img.alt, lang)}" loading="lazy" decoding="async"></figure>`
     ).join('')}</div>`;
   } else if (project.image) {
@@ -426,6 +440,7 @@ function openProject(id) {
           <img src="${project.scroll.src}" alt="" draggable="false" loading="lazy" decoding="async">
         </div>
         <p class="scroll-shot__hint">${ui.dragHint}</p>` : ''}
+      ${project.video ? `<div class="project-modal__video">${videoPoster(project.video, project.title, ui)}</div>` : ''}
       ${shots.length ? `<h3 class="project-modal__sub">${ui.screenshots}</h3>
         <div class="project-modal__shots">${shots.map(s =>
           `<figure><img src="${s.src}" alt="${pick(s.alt, lang)}" loading="lazy" decoding="async"></figure>`).join('')}</div>` : ''}

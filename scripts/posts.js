@@ -4,6 +4,9 @@ const BLOG_POSTS = [
     date: '2026-10-04',
     category: 'Running',
     stravaUrl: 'https://www.strava.com/activities/20443296331',
+    youtubeUrl: 'https://youtu.be/yvaRQWrZOGo',
+    coverPhoto: '../images/events/24DS2026/DSC_5353.jpg',
+    photos: ['../images/events/24DS2026/DSC_5353.jpg', '../images/events/24DS2026/DSC_5345.jpg', '../images/events/24DS2026/DSC_4080.jpg', '../images/events/24DS2026/DSC_4083.jpg'],
     title: {
       en: '24DS: 132 km, 7,400 m and 5th Place — Nine Laps Up Dlouhé Stráně',
       cs: '24DS: 132 km, 7 400 m a 5. místo — devět kol na Dlouhé stráně',
@@ -566,10 +569,14 @@ function openPost(id) {
     ? `<a class="post-modal-strava-btn" href="${escapeHtml(post.stravaUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml({ en: 'View on Strava →', cs: 'Zobrazit na Stravě →', es: 'Ver en Strava →' }[lang] || 'View on Strava →')}</a>`
     : '';
 
+  const youtubeHtml = post.youtubeUrl
+    ? `<a class="post-modal-strava-btn" href="${escapeHtml(post.youtubeUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml({ en: 'Watch the video →', cs: 'Přehrát video →', es: 'Ver el vídeo →' }[lang] || 'Watch the video →')}</a>`
+    : '';
+
   const catText = CATEGORY_MAP[post.category] ? (CATEGORY_MAP[post.category][lang] || CATEGORY_MAP[post.category].en) : post.category;
   document.getElementById('post-modal-title').textContent = post.title[lang] || post.title.en;
   document.getElementById('post-modal-meta').textContent = `${post.date} · ${catText}`;
-  document.getElementById('post-modal-body').innerHTML = photosHtml + (post.body[lang] || post.body.en) + stravaHtml;
+  document.getElementById('post-modal-body').innerHTML = photosHtml + (post.body[lang] || post.body.en) + stravaHtml + youtubeHtml;
 
   backdrop.classList.add('open');
   document.body.classList.add('modal-open');

@@ -95,17 +95,17 @@ const CV_EXPERIENCE = [
       en: [
         'Developer in a team of 5–7 people, working mainly in .NET.',
         'Introduced Keycloak into our solutions.',
-        `Main point of contact between Monet+ and Palacký University (UPOL) — <a href="${UPOL_COOPERATION_URL}" target="_blank" rel="noopener noreferrer">university cooperation</a>.`
+        `Main point of contact between Monet+ and Palacký University (UPOL) — <a href="${UPOL_COOPERATION_URL}" target="_blank" rel="noopener noreferrer">university cooperation</a><span class="cv-print-url"> (${UPOL_COOPERATION_URL})</span>.`
       ],
       cs: [
         'Vývojář v týmu o 5–7 lidech, převážně v .NET.',
         'Zavedl jsem do našich řešení Keycloak.',
-        `Hlavní kontaktní osoba mezi Monet+ a Univerzitou Palackého (UPOL) — <a href="${UPOL_COOPERATION_URL}" target="_blank" rel="noopener noreferrer">spolupráce s univerzitami</a>.`
+        `Hlavní kontaktní osoba mezi Monet+ a Univerzitou Palackého (UPOL) — <a href="${UPOL_COOPERATION_URL}" target="_blank" rel="noopener noreferrer">spolupráce s univerzitami</a><span class="cv-print-url"> (${UPOL_COOPERATION_URL})</span>.`
       ],
       es: [
         'Desarrollador en un equipo de 5–7 personas, principalmente en .NET.',
         'Introduje Keycloak en nuestras soluciones.',
-        `Persona de contacto principal entre Monet+ y la Universidad Palacký (UPOL) — <a href="${UPOL_COOPERATION_URL}" target="_blank" rel="noopener noreferrer">cooperación con universidades</a>.`
+        `Persona de contacto principal entre Monet+ y la Universidad Palacký (UPOL) — <a href="${UPOL_COOPERATION_URL}" target="_blank" rel="noopener noreferrer">cooperación con universidades</a><span class="cv-print-url"> (${UPOL_COOPERATION_URL})</span>.`
       ]
     },
     note: {

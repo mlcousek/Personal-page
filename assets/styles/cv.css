@@ -113,6 +113,7 @@
    The tinted rail is painted on the root so it also fills those margins. */
 @page { size: A4; margin: 14mm 0; }
 @page :first { margin: 0 0 14mm; }
+.cv-print-url { display: none; }
 @media print {
   .navbar, #navbar-placeholder, #footer-placeholder, .bg-scene, .cv-print, .cv-downloads, .skip-link, .footer { display: none !important; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -166,6 +167,7 @@
   .cv-cert a, .cv-cert > div { padding: 2mm 0; grid-template-columns: 30mm 1fr auto; }
   .cv-cert__cta { display: none; }
   .cv-bullets { max-width: none; font-size: 9.5pt; }
+  .cv-print-url { display: inline; }
   .cv-bullets a, .cv-projects__link { text-decoration: underline; }
   .cv-projects__link { margin-top: 3mm; }
   [data-cv-print="paper"] .cv-projects__link::after { content: " " attr(href); }

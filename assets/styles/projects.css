@@ -582,3 +582,21 @@ body.modal-open { overflow: hidden; }
   .lightbox__nav--prev { grid-column: 1; justify-self: start; margin: 0 0 16px 16px; }
   .lightbox__nav--next { grid-column: 1; justify-self: end; margin: 0 16px 16px 0; }
 }
+
+/* video poster: the YouTube thumbnail with a play badge, opens YouTube in a new tab */
+.video-poster { position: relative; display: block; width: 100%; height: 100%; color: #fff; text-decoration: none; }
+.video-poster img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.video-poster__play {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  display: grid; place-items: center; width: 64px; height: 64px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-size: 1.4rem; padding-left: 4px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, .5); transition: transform .2s var(--ease-out);
+}
+.video-poster:hover .video-poster__play { transform: translate(-50%, -50%) scale(1.08); }
+.video-poster:focus-visible { outline: 2px solid var(--accent-text); outline-offset: -2px; }
+.video-poster__label {
+  position: absolute; left: 10px; bottom: 10px; padding: 4px 10px; border-radius: 999px;
+  background: rgba(0, 0, 0, .65); font-size: .8rem;
+}
+.project-card__media--video { position: relative; }
+.project-modal__video { aspect-ratio: 16 / 9; margin: 18px 0 4px; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; background: var(--surface-2); }
