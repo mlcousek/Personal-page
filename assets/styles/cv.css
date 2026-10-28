@@ -108,7 +108,7 @@
 @page { size: A4; margin: 14mm 0; }
 @page :first { margin: 0 0 14mm; }
 @media print {
-  .navbar, #navbar-placeholder, #footer-placeholder, .bg-scene, .cv-print, .cv-downloads, .skip-link { display: none !important; }
+  .navbar, #navbar-placeholder, #footer-placeholder, .bg-scene, .cv-print, .cv-downloads, .skip-link, .footer { display: none !important; }
   * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   html { background: linear-gradient(90deg, #f3efea 0, #f3efea 62mm, #fff 62mm) !important; }
   body, body::before, body::after { background: transparent !important; }
