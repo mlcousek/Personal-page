@@ -9,7 +9,7 @@ const CV_UI = {
     role: 'Software developer · Monet+',
     location: 'Olomouc, Czechia',
     savePdf: 'Save as PDF (clickable links)', printPaper: 'Print (links written out)',
-    summary: 'Profile', experience: 'Experience', education: 'Education', projects: 'Projects',
+    summary: 'Profile', experience: 'Experience', education: 'Education', projects: 'My projects',
     skills: 'Skills & technologies', certs: 'Certifications', languages: 'Languages', interests: 'Beyond code',
     viewCred: 'View credential →', now: 'now', earlier: 'Earlier jobs',
     progression: 'Progression — intern to full-time in 17 months', allProjects: 'All projects →'
@@ -18,7 +18,7 @@ const CV_UI = {
     role: 'Softwarový vývojář · Monet+',
     location: 'Olomouc, Česko',
     savePdf: 'Uložit jako PDF (klikací odkazy)', printPaper: 'Vytisknout (odkazy vypsané)',
-    summary: 'Profil', experience: 'Praxe', education: 'Vzdělání', projects: 'Projekty',
+    summary: 'Profil', experience: 'Praxe', education: 'Vzdělání', projects: 'Moje projekty',
     skills: 'Dovednosti a technologie', certs: 'Certifikace', languages: 'Jazyky', interests: 'Mimo kód',
     viewCred: 'Zobrazit certifikát →', now: 'dosud', earlier: 'Dřívější zaměstnání',
     progression: 'Postup — od stážisty na plný úvazek za 17 měsíců', allProjects: 'Všechny projekty →'
@@ -27,7 +27,7 @@ const CV_UI = {
     role: 'Desarrollador de software · Monet+',
     location: 'Olomouc, Chequia',
     savePdf: 'Guardar como PDF (enlaces clicables)', printPaper: 'Imprimir (enlaces escritos)',
-    summary: 'Perfil', experience: 'Experiencia', education: 'Formación', projects: 'Proyectos',
+    summary: 'Perfil', experience: 'Experiencia', education: 'Formación', projects: 'Mis proyectos',
     skills: 'Habilidades y tecnologías', certs: 'Certificaciones', languages: 'Idiomas', interests: 'Más allá del código',
     viewCred: 'Ver credencial →', now: 'actualidad', earlier: 'Empleos anteriores',
     progression: 'Progresión — de becario a jornada completa en 17 meses', allProjects: 'Todos los proyectos →'
@@ -123,9 +123,9 @@ const CV_EXPERIENCE = [
 ];
 
 const CV_EARLIER_JOBS = {
-  en: 'Administrative work at Cetin (2022–23) · production operator (2021, 2022) · remote data entry at STEM/MARK (2020–21) · seasonal forestry work (2019)',
-  cs: 'Administrativa v Cetin (2022–23) · operátor výroby (2021, 2022) · práce z domova pro STEM/MARK (2020–21) · sezónní práce v lese (2019)',
-  es: 'Trabajo administrativo en Cetin (2022–23) · operario de producción (2021, 2022) · introducción de datos remota en STEM/MARK (2020–21) · trabajo forestal de temporada (2019)'
+  en: 'Administrative work at Cetin (2022–25) · gym receptionist (2023–25) · seasonal production operator (2021, 2022) · remote data entry at STEM/MARK (2020–21) · seasonal forestry work (2019)',
+  cs: 'Administrativa v Cetin (2022–25) · recepční v posilovně (2023–25) · sezónní operátor výroby (2021, 2022) · práce z domova pro STEM/MARK (2020–21) · sezónní práce v lese (2019)',
+  es: 'Trabajo administrativo en Cetin (2022–25) · recepcionista de gimnasio (2023–25) · operario de producción de temporada (2021, 2022) · introducción de datos remota en STEM/MARK (2020–21) · trabajo forestal de temporada (2019)'
 };
 
 const CV_EDUCATION = [
@@ -221,7 +221,7 @@ const CV_SKILLS = [
 ];
 
 // Names only, on purpose: the projects page carries the detail. Order follows pages/projects.html.
-const CV_PROJECTS = ['NARUZU', 'Automata Simulator', 'Jirka\'s Arc', 'Closet', 'Claude & Codex Usage Tray', 'FitnessWebApp'];
+const CV_PROJECTS = ['Jirka\'s World (Obsidian vault)', 'NARUZU', 'Automata Simulator', 'Jirka\'s Arc', 'Closet', 'Claude & Codex Usage Tray', 'FitnessWebApp'];
 const CV_PROJECTS_URL = `${SITE_URL}pages/projects.html`;
 
 const CV_MINDSET = {

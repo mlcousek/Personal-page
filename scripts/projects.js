@@ -189,6 +189,7 @@ const PROJECTS = [
 const VAULT_PLUGINS = [
   {
     icon: '🗓️',
+    image: '../images/projects/vault-training-planner.png',
     title: { en: 'Training Planner', cs: 'Tréninkový plánovač', es: 'Planificador de entrenamiento' },
     text: {
       en: 'The desk view of my training plan: a week agenda and month calendar, the season as one timeline of phases and races, a phase view with the weekly ramp and habit ladder, race prep and plan-relative statistics. It reads the same plan as Jirka\'s Arc, so the phone and the desk never disagree.',
