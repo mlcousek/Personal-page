@@ -62,6 +62,12 @@
 .cv-summary { font-size: 1.15rem; line-height: 1.7; color: var(--ink); max-width: 62ch; margin: 0 0 16px; text-wrap: pretty; }
 .cv-summary:last-child { margin-bottom: 0; }
 .cv-note { margin: 14px 0 0; color: var(--text); max-width: 62ch; }
+.cv-bullets { margin: 10px 0 0; padding: 0 0 0 18px; display: grid; gap: 6px; color: var(--text); max-width: 62ch; }
+.cv-bullets a, .cv-projects__link { color: var(--accent-text); text-underline-offset: 2px; }
+.cv-progress { margin: 18px 0 0; }
+.cv-status { margin: 0 0 6px; color: var(--text); }
+.cv-projects__link { display: inline-block; margin-top: 18px; }
+.cv-projects__link:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 3px; }
 
 .cv-entry { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 24px; padding: 0 0 28px; }
 .cv-entry:last-of-type { padding-bottom: 0; }
@@ -159,6 +165,10 @@
   .cv-chips li { font-size: 7.5pt; padding: 1mm 2.5mm; background: #fff; }
   .cv-cert a, .cv-cert > div { padding: 2mm 0; grid-template-columns: 30mm 1fr auto; }
   .cv-cert__cta { display: none; }
+  .cv-bullets { max-width: none; font-size: 9.5pt; }
+  .cv-bullets a, .cv-projects__link { text-decoration: underline; }
+  .cv-projects__link { margin-top: 3mm; }
+  [data-cv-print="paper"] .cv-projects__link::after { content: " " attr(href); }
   .cv-section:not(:has(.cv-skills)), .cv-skill-group, .cv-cert { break-inside: avoid; }
   .cv-section > .section-heading, .cv-mindset { break-after: avoid; }
   .reveal { opacity: 1 !important; transform: none !important; filter: none !important; }

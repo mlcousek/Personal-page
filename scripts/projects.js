@@ -85,10 +85,11 @@ const PROJECTS = [
       es: 'Una app de iPhone personal que empezó como un registro rápido de comidas para Garmin Connect y creció hasta ser mi centro de entrenamiento. La comida, el peso y el agua van directos a Garmin, y las rachas, 150 niveles y retos hacen el registro más divertido. Desde la versión 2.0 muestra también mi plan de entrenamiento del vault de Obsidian —una pestaña Plan y una pantalla Hoy centrada en el entrenamiento con chequeo matutino, ediciones del plan, preparación de carreras y resultados— y escribe de vuelta lo que realmente pasó. Antes se llamaba GarminFood.'
     },
     details: {
-      en: 'Built step by step with spec-driven development: 52 changes shipped so far. In daily use, in English and Czech.',
-      cs: 'Postavená krok za krokem spec-driven vývojem: zatím je hotových 52 změn. Denně ji používám, v angličtině a češtině.',
-      es: 'Construida paso a paso con desarrollo guiado por specs: ya van 52 cambios entregados. Se usa a diario, en inglés y checo.'
+      en: 'Native Swift and SwiftUI, split into six small packages (Garmin client, food log, gamification, vault sync, training, appearance), with home and lock screen widgets. Built step by step with spec-driven development: 52 changes shipped so far, all on Windows with CI as the compiler. In daily use, in English and Czech. Scroll the screenshot below to see a full day in the app.',
+      cs: 'Nativní Swift a SwiftUI rozdělené do šesti malých balíčků (Garmin klient, jídelníček, gamifikace, synchronizace s vaultem, trénink, vzhled), s widgety na plochu i zamčenou obrazovku. Postavená krok za krokem spec-driven vývojem: zatím je hotových 52 změn, vše na Windows a CI místo kompilátoru. Denně ji používám, v angličtině a češtině. Snímek níže si můžete posouvat a projít celý den v aplikaci.',
+      es: 'Swift y SwiftUI nativos, divididos en seis paquetes pequeños (cliente de Garmin, registro de comidas, gamificación, sincronización con el vault, entrenamiento, apariencia), con widgets para la pantalla de inicio y de bloqueo. Construida paso a paso con desarrollo guiado por specs: ya van 52 cambios entregados, todo en Windows con CI como compilador. Se usa a diario, en inglés y checo. Desplaza la captura de abajo para ver un día completo en la app.'
     },
+    scroll: { src: '../images/projects/jirkas-arc-scroll.jpg', alt: { en: 'A full day in Jirka\'s Arc, top to bottom: training plan, calories, meals, supplements, habits, weight and water, seasonal boss', cs: 'Celý den v Jirkově Arcu shora dolů: tréninkový plán, kalorie, jídla, doplňky, návyky, váha a voda, sezónní boss', es: 'Un día completo en Jirka\'s Arc, de arriba abajo: plan de entrenamiento, calorías, comidas, suplementos, hábitos, peso y agua, jefe de temporada' } },
     highlights: {
       en: ['Training plan from my vault: Plan tab, Today screen, morning check-in', 'Food logged straight to Garmin Connect, offline-first with sync', 'Czech-aware food search with barcode scanning', 'Streak, 150 levels, challenges, bingo and drawn badges'],
       cs: ['Tréninkový plán z mého vaultu: záložka Plán, obrazovka Dnes, ranní check-in', 'Jídlo rovnou do Garmin Connect, nejdřív offline a pak synchronizace', 'České vyhledávání potravin se skenováním čárových kódů', 'Série, 150 levelů, výzvy, bingo a nakreslené odznaky'],
@@ -100,7 +101,7 @@ const PROJECTS = [
     id: 'closet',
     group: 'more',
     year: '2026',
-    status: 'in-progress',
+    status: 'in-use',
     repos: [{ url: 'https://github.com/mlcousek/Closet' }],
     kind: { en: 'iOS app', cs: 'iOS aplikace', es: 'App iOS' },
     title: 'Closet',
@@ -291,19 +292,19 @@ const VAULT_AUTOMATIONS = [
 const PROJECTS_UI = {
   en: {
     vaultPrivate: 'Private vault — it holds personal data',
-    details: 'Details', close: 'Close', repo: 'View on GitHub', highlights: 'Highlights', screenshots: 'Screenshots',
+    details: 'Details', close: 'Close', repo: 'View on GitHub', highlights: 'Highlights', screenshots: 'Screenshots', dragHint: 'Drag or scroll to see the whole day',
     viewer: 'Image viewer', prev: 'Previous image', next: 'Next image',
     status: { 'in-progress': 'In development', 'in-use': 'In use', done: 'Finished' }
   },
   cs: {
     vaultPrivate: 'Soukromý vault — obsahuje osobní data',
-    details: 'Podrobnosti', close: 'Zavřít', repo: 'Zobrazit na GitHubu', highlights: 'Hlavní body', screenshots: 'Snímky obrazovky',
+    details: 'Podrobnosti', close: 'Zavřít', repo: 'Zobrazit na GitHubu', highlights: 'Hlavní body', screenshots: 'Snímky obrazovky', dragHint: 'Tažením nebo rolováním projdete celý den',
     viewer: 'Prohlížeč obrázků', prev: 'Předchozí obrázek', next: 'Další obrázek',
     status: { 'in-progress': 'Ve vývoji', 'in-use': 'V používání', done: 'Dokončeno' }
   },
   es: {
     vaultPrivate: 'Vault privado: contiene datos personales',
-    details: 'Detalles', close: 'Cerrar', repo: 'Ver en GitHub', highlights: 'Puntos clave', screenshots: 'Capturas',
+    details: 'Detalles', close: 'Cerrar', repo: 'Ver en GitHub', highlights: 'Puntos clave', screenshots: 'Capturas', dragHint: 'Arrastra o desplaza para ver todo el día',
     viewer: 'Visor de imágenes', prev: 'Imagen anterior', next: 'Imagen siguiente',
     status: { 'in-progress': 'En desarrollo', 'in-use': 'En uso', done: 'Terminado' }
   }
@@ -419,6 +420,11 @@ function openProject(id) {
       ${details ? `<p class="project-modal__text">${details}</p>` : ''}
       <h3 class="project-modal__sub">${ui.highlights}</h3>
       <ul class="project-card__highlights">${highlights}</ul>
+      ${project.scroll ? `<h3 class="project-modal__sub">${ui.screenshots}</h3>
+        <div class="scroll-shot" tabindex="0" role="img" aria-label="${pick(project.scroll.alt, lang)}">
+          <img src="${project.scroll.src}" alt="" draggable="false" loading="lazy" decoding="async">
+        </div>
+        <p class="scroll-shot__hint">${ui.dragHint}</p>` : ''}
       ${shots.length ? `<h3 class="project-modal__sub">${ui.screenshots}</h3>
         <div class="project-modal__shots">${shots.map(s =>
           `<figure><img src="${s.src}" alt="${pick(s.alt, lang)}" loading="lazy" decoding="async"></figure>`).join('')}</div>` : ''}
@@ -430,8 +436,31 @@ function openProject(id) {
     syncScrollLock();
   });
   markZoomable(dialog);
+  enableDragScroll(dialog.querySelector('.scroll-shot'));
   dialog.showModal();
   syncScrollLock();
+}
+
+// A tall screenshot in a fixed-height frame: grab it with the mouse or finger and drag down the page.
+function enableDragScroll(el) {
+  if (!el) return;
+  let startY = 0;
+  let startTop = 0;
+  let dragging = false;
+  el.addEventListener('pointerdown', e => {
+    if (e.pointerType === 'touch') return; // touch already pans natively
+    dragging = true;
+    startY = e.clientY;
+    startTop = el.scrollTop;
+    el.classList.add('is-dragging');
+    el.setPointerCapture(e.pointerId);
+  });
+  el.addEventListener('pointermove', e => {
+    if (dragging) el.scrollTop = startTop - (e.clientY - startY);
+  });
+  const stop = () => { dragging = false; el.classList.remove('is-dragging'); };
+  el.addEventListener('pointerup', stop);
+  el.addEventListener('pointercancel', stop);
 }
 
 document.addEventListener('click', e => {

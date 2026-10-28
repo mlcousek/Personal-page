@@ -9,25 +9,28 @@ const CV_UI = {
     role: 'Software developer · Monet+',
     location: 'Olomouc, Czechia',
     savePdf: 'Save as PDF (clickable links)', printPaper: 'Print (links written out)',
-    summary: 'Profile', experience: 'Experience', education: 'Education',
-    skills: 'Technical skills', certs: 'Certifications', languages: 'Languages', interests: 'Beyond code',
-    viewCred: 'View credential →', now: 'now', earlier: 'Earlier jobs'
+    summary: 'Profile', experience: 'Experience', education: 'Education', projects: 'Projects',
+    skills: 'Skills & technologies', certs: 'Certifications', languages: 'Languages', interests: 'Beyond code',
+    viewCred: 'View credential →', now: 'now', earlier: 'Earlier jobs',
+    progression: 'Progression — intern to full-time in 17 months', allProjects: 'All projects →'
   },
   cs: {
     role: 'Softwarový vývojář · Monet+',
     location: 'Olomouc, Česko',
     savePdf: 'Uložit jako PDF (klikací odkazy)', printPaper: 'Vytisknout (odkazy vypsané)',
-    summary: 'Profil', experience: 'Praxe', education: 'Vzdělání',
-    skills: 'Technické dovednosti', certs: 'Certifikace', languages: 'Jazyky', interests: 'Mimo kód',
-    viewCred: 'Zobrazit certifikát →', now: 'dosud', earlier: 'Dřívější zaměstnání'
+    summary: 'Profil', experience: 'Praxe', education: 'Vzdělání', projects: 'Projekty',
+    skills: 'Dovednosti a technologie', certs: 'Certifikace', languages: 'Jazyky', interests: 'Mimo kód',
+    viewCred: 'Zobrazit certifikát →', now: 'dosud', earlier: 'Dřívější zaměstnání',
+    progression: 'Postup — od stážisty na plný úvazek za 17 měsíců', allProjects: 'Všechny projekty →'
   },
   es: {
     role: 'Desarrollador de software · Monet+',
     location: 'Olomouc, Chequia',
     savePdf: 'Guardar como PDF (enlaces clicables)', printPaper: 'Imprimir (enlaces escritos)',
-    summary: 'Perfil', experience: 'Experiencia', education: 'Formación',
-    skills: 'Habilidades técnicas', certs: 'Certificaciones', languages: 'Idiomas', interests: 'Más allá del código',
-    viewCred: 'Ver credencial →', now: 'actualidad', earlier: 'Empleos anteriores'
+    summary: 'Perfil', experience: 'Experiencia', education: 'Formación', projects: 'Proyectos',
+    skills: 'Habilidades y tecnologías', certs: 'Certificaciones', languages: 'Idiomas', interests: 'Más allá del código',
+    viewCred: 'Ver credencial →', now: 'actualidad', earlier: 'Empleos anteriores',
+    progression: 'Progresión — de becario a jornada completa en 17 meses', allProjects: 'Todos los proyectos →'
   }
 };
 
@@ -35,6 +38,10 @@ const CV_CONTACT = [
   { label: 'Tel', href: 'tel:+420731280205', text: '+420 731 280 205' },
   { label: 'Email', href: 'mailto:jirka.mlcousek@seznam.cz', text: 'jirka.mlcousek@seznam.cz' }
 ];
+
+// Absolute on purpose: the URL must still work in a saved PDF and be readable on paper.
+const SITE_URL = 'https://mlcousek.github.io/Personal-page/';
+const UPOL_COOPERATION_URL = 'https://monetplus.cz/spoluprace-s-univerzitami/';
 
 // Social profiles render as icon links; the readable URL is only shown in the "print" version.
 const CV_SOCIAL = [
@@ -47,6 +54,10 @@ const CV_SOCIAL = [
     icon: '<svg viewBox="0 0 16 16" aria-hidden="true" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 014 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>'
   },
   {
+    label: 'Portfolio', href: SITE_URL, text: 'mlcousek.github.io/Personal-page',
+    icon: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c2.6 2.7 4 6 4 9.5s-1.4 6.8-4 9.5c-2.6-2.7-4-6-4-9.5s1.4-6.8 4-9.5z"/></svg>'
+  },
+  {
     label: 'Strava', href: 'https://www.strava.com/athletes/72382004', text: 'strava.com/athletes/72382004',
     icon: '<svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg>'
   }
@@ -57,16 +68,16 @@ const CV_PHOTO = { src: '../images/cv-portrait.jpg', width: 900, height: 1200 };
 // Paragraph arrays: each entry renders as its own <p>.
 const CV_SUMMARY = {
   en: [
-    'Software developer with an AI & .NET/C# focus. I work with AI coding agents every day and build good habits around them: spec-driven development, small reviewed iterations, tests as the safety net, and automation of anything repetitive. I like improving myself and my team, and I want everything we do to be done effectively.',
-    'I grew from intern to full-time at Monet+ while finishing a master\'s degree. Outside of work I am a sports person, mainly focused on long-distance running and road cycling.'
+    'Software developer with an AI and .NET/C# focus who went from intern to full-time at Monet+ in 17 months, finishing a master\'s degree along the way. I use AI coding agents every day inside a disciplined process: spec-driven development, small reviewed iterations, tests as the safety net and automation of anything repetitive.',
+    'I build .NET solutions, introduced Keycloak, and act as the company\'s link to Palacký University. As iteration driver I led the team to results above plan while improving how we develop and deploy.'
   ],
   cs: [
-    'Softwarový vývojář se zaměřením na AI a .NET/C#. S AI programovacími agenty pracuji každý den a vytvářím kolem nich dobré návyky: spec-driven vývoj, malé zrevidované iterace, testy jako záchranná síť a automatizace všeho opakujícího se. Rád zlepšuji sebe i svůj tým a chci, aby vše, co děláme, bylo děláno efektivně.',
-    'V Monet+ jsem vyrostl ze stážisty na plný úvazek při dokončování magisterského studia. Mimo práci jsem sportovní typ, především se věnuji dlouhým běhům a silniční cyklistice.'
+    'Softwarový vývojář se zaměřením na AI a .NET/C#, který se v Monet+ za 17 měsíců posunul ze stážisty na plný úvazek a mezitím dokončil magisterské studium. S AI programovacími agenty pracuji každý den v disciplinovaném procesu: spec-driven vývoj, malé zrevidované iterace, testy jako záchranná síť a automatizace všeho opakujícího se.',
+    'Vyvíjím .NET řešení, zavedl jsem Keycloak a jsem spojkou firmy s Univerzitou Palackého. Jako iteration driver jsem vedl tým k výsledkům nad plán a zároveň zlepšil náš vývoj i nasazování.'
   ],
   es: [
-    'Desarrollador de software con foco en IA y .NET/C#. Trabajo con agentes de programación con IA cada día y construyo buenos hábitos a su alrededor: desarrollo guiado por specs, iteraciones pequeñas y revisadas, pruebas como red de seguridad y automatización de todo lo repetitivo. Me gusta mejorar yo y mi equipo, y quiero que todo lo que hacemos se haga de forma efectiva.',
-    'En Monet+ pasé de becario a jornada completa mientras terminaba el máster. Fuera del trabajo soy una persona deportista, centrada sobre todo en carreras de larga distancia y ciclismo de carretera.'
+    'Desarrollador de software con foco en IA y .NET/C# que pasó de becario a jornada completa en Monet+ en 17 meses, terminando un máster por el camino. Uso agentes de programación con IA cada día dentro de un proceso disciplinado: desarrollo guiado por specs, iteraciones pequeñas y revisadas, pruebas como red de seguridad y automatización de todo lo repetitivo.',
+    'Desarrollo soluciones .NET, introduje Keycloak y soy el enlace de la empresa con la Universidad Palacký. Como iteration driver llevé al equipo a resultados por encima del plan y mejoré cómo desarrollamos y desplegamos.'
   ]
 };
 
@@ -80,10 +91,27 @@ const CV_EXPERIENCE = [
       cs: 'Softwarový vývojář (hlavně v .NET)',
       es: 'Desarrollador de software (principalmente en .NET)'
     },
+    bullets: {
+      en: [
+        'Developer in a team of 5–7 people, working mainly in .NET.',
+        'Introduced Keycloak into our solutions.',
+        `Main point of contact between Monet+ and Palacký University (UPOL) — <a href="${UPOL_COOPERATION_URL}" target="_blank" rel="noopener noreferrer">university cooperation</a>.`
+      ],
+      cs: [
+        'Vývojář v týmu o 5–7 lidech, převážně v .NET.',
+        'Zavedl jsem do našich řešení Keycloak.',
+        `Hlavní kontaktní osoba mezi Monet+ a Univerzitou Palackého (UPOL) — <a href="${UPOL_COOPERATION_URL}" target="_blank" rel="noopener noreferrer">spolupráce s univerzitami</a>.`
+      ],
+      es: [
+        'Desarrollador en un equipo de 5–7 personas, principalmente en .NET.',
+        'Introduje Keycloak en nuestras soluciones.',
+        `Persona de contacto principal entre Monet+ y la Universidad Palacký (UPOL) — <a href="${UPOL_COOPERATION_URL}" target="_blank" rel="noopener noreferrer">cooperación con universidades</a>.`
+      ]
+    },
     note: {
-      en: 'Iteration driver for two months in summer 2026 — a team-lead role I loved and can see myself in.',
-      cs: 'Dva měsíce v létě 2026 jsem dělal iteration drivera — roli týmového lídra, která mě bavila a vidím se v ní.',
-      es: 'Iteration driver durante dos meses en el verano de 2026: un rol de líder de equipo que me encantó y en el que me veo.'
+      en: 'Iteration driver (two months, summer 2026), a team-lead role. The iterations went unusually well: we delivered everything planned and more, the whole team grew, and we shipped new features plus improvements to our development and deployment process. I really enjoyed the role.',
+      cs: 'Iteration driver (dva měsíce, léto 2026), role týmového lídra. Iterace dopadly nezvykle dobře: zvládli jsme vše, co bylo v plánu, a ještě něco navíc, celý tým se posunul a dodali jsme nové funkce i zlepšení našeho vývoje a nasazování. Role mě opravdu bavila.',
+      es: 'Iteration driver (dos meses, verano de 2026), un rol de líder de equipo. Las iteraciones salieron inusualmente bien: entregamos todo lo planeado y más, todo el equipo creció y lanzamos nuevas funciones y mejoras en nuestro desarrollo y despliegue. Disfruté mucho el rol.'
     },
     steps: [
       { when: { en: 'Jul 2026 →', cs: 'čvc 2026 →', es: 'jul 2026 →' }, what: { en: 'Full-time', cs: 'Plný úvazek', es: 'Jornada completa' } },
@@ -107,6 +135,11 @@ const CV_EDUCATION = [
     school: 'Palacký University Olomouc',
     thesisLabel: { en: 'Master thesis', cs: 'Diplomová práce', es: 'Trabajo de máster' },
     thesis: { en: 'Finite Automata Simulator', cs: 'Simulátor konečných automatů', es: 'Simulador de autómatas finitos' },
+    status: {
+      en: 'Final exams and thesis defence completed in June 2026',
+      cs: 'Státnice a obhajoba diplomové práce dokončeny v červnu 2026',
+      es: 'Exámenes finales y defensa del trabajo completados en junio de 2026'
+    },
     award: {
       en: '2nd place — SVOČ, Didactics of Natural Sciences section (2026)',
       cs: '2. místo — SVOČ, sekce Didaktika přírodovědných oborů (2026)',
@@ -134,90 +167,62 @@ const CV_EDUCATION = [
 // Grouped, not levelled: a percentage bar claims precision nobody has.
 const CV_SKILLS = [
   {
-    group: { en: 'AI & agents', cs: 'AI a agenti', es: 'IA y agentes' },
+    group: { en: 'AI-assisted development', cs: 'Vývoj s podporou AI', es: 'Desarrollo asistido por IA' },
     items: {
-      en: ['Claude Code', 'Codex', 'GitHub Copilot', 'Agentic workflows', 'Spec-driven development (OpenSpec)', '"Grill me" mode', 'Open to new tech'],
-      cs: ['Claude Code', 'Codex', 'GitHub Copilot', 'Agentní workflow', 'Spec-driven vývoj (OpenSpec)', 'Režim „grill me“', 'Otevřenost novým technologiím'],
-      es: ['Claude Code', 'Codex', 'GitHub Copilot', 'Flujos agénticos', 'Desarrollo guiado por specs (OpenSpec)', 'Modo «grill me»', 'Abierto a nuevas tecnologías']
+      en: ['Claude Code', 'Codex', 'GitHub Copilot', 'Agentic workflows', 'Spec-driven development (OpenSpec)'],
+      cs: ['Claude Code', 'Codex', 'GitHub Copilot', 'Agentní workflow', 'Spec-driven vývoj (OpenSpec)'],
+      es: ['Claude Code', 'Codex', 'GitHub Copilot', 'Flujos agénticos', 'Desarrollo guiado por specs (OpenSpec)']
     }
   },
   {
-    group: { en: 'C# & .NET', cs: 'C# a .NET', es: 'C# y .NET' },
-    items: ['C#', '.NET', 'ASP.NET Core', '.NET Aspire']
+    group: { en: 'Backend & APIs', cs: 'Backend a API', es: 'Backend y APIs' },
+    items: ['C#', '.NET', 'ASP.NET Core', '.NET Aspire', 'EF Core', 'REST / Web API', 'OpenAPI (Swagger)', 'gRPC']
   },
   {
-    group: { en: 'APIs', cs: 'API', es: 'APIs' },
+    group: { en: 'Identity & security', cs: 'Identita a bezpečnost', es: 'Identidad y seguridad' },
     items: {
-      en: ['Web API', 'REST', 'Controllers & endpoints', 'Swagger / OpenAPI'],
-      cs: ['Web API', 'REST', 'Controllery a endpointy', 'Swagger / OpenAPI'],
-      es: ['Web API', 'REST', 'Controllers y endpoints', 'Swagger / OpenAPI']
-    }
-  },
-  {
-    group: { en: 'Authentication & authorization', cs: 'Autentizace a autorizace', es: 'Autenticación y autorización' },
-    items: {
-      en: ['ASP.NET Core Identity', 'JWT Bearer', 'Roles', 'Policies'],
-      cs: ['ASP.NET Core Identity', 'JWT Bearer', 'Role', 'Policies'],
-      es: ['ASP.NET Core Identity', 'JWT Bearer', 'Roles', 'Policies']
+      en: ['Keycloak', 'ASP.NET Core Identity', 'JWT Bearer', 'Roles & policies', 'Cryptography & PKI', 'Post-quantum cryptography'],
+      cs: ['Keycloak', 'ASP.NET Core Identity', 'JWT Bearer', 'Role a policies', 'Kryptografie a PKI', 'Postkvantová kryptografie'],
+      es: ['Keycloak', 'ASP.NET Core Identity', 'JWT Bearer', 'Roles y policies', 'Criptografía y PKI', 'Criptografía poscuántica']
     }
   },
   {
     group: { en: 'Testing — a speciality', cs: 'Testování — moje specialita', es: 'Testing — mi especialidad' },
     items: {
-      en: ['Unit tests', 'Integration tests', 'Testcontainers', 'E2E tests', 'xUnit', 'Modern Software Engineering mindset'],
-      cs: ['Unit testy', 'Integrační testy', 'Testcontainers', 'E2E testy', 'xUnit', 'Přístup z Modern Software Engineering'],
-      es: ['Pruebas unitarias', 'Pruebas de integración', 'Testcontainers', 'Pruebas E2E', 'xUnit', 'Enfoque de Modern Software Engineering']
+      en: ['Unit tests', 'Integration tests', 'E2E tests', 'xUnit', 'Testcontainers'],
+      cs: ['Unit testy', 'Integrační testy', 'E2E testy', 'xUnit', 'Testcontainers'],
+      es: ['Pruebas unitarias', 'Pruebas de integración', 'Pruebas E2E', 'xUnit', 'Testcontainers']
     }
   },
   {
-    group: { en: 'Architecture & clean code', cs: 'Architektura a čistý kód', es: 'Arquitectura y código limpio' },
+    group: { en: 'Data & messaging', cs: 'Data a messaging', es: 'Datos y mensajería' },
     items: {
-      en: ['Architecture', 'Abstraction', 'Dependencies', 'Dependency injection', 'Paradigms & styles of programming'],
-      cs: ['Architektura', 'Abstrakce', 'Závislosti', 'Dependency injection', 'Paradigmata a styly programování'],
-      es: ['Arquitectura', 'Abstracción', 'Dependencias', 'Inyección de dependencias', 'Paradigmas y estilos de programación']
+      en: ['SQL Server', 'PostgreSQL', 'Redis', 'Message queues & brokers'],
+      cs: ['SQL Server', 'PostgreSQL', 'Redis', 'Fronty zpráv a message brokery'],
+      es: ['SQL Server', 'PostgreSQL', 'Redis', 'Colas de mensajes y brokers']
     }
   },
   {
-    group: { en: 'Caching, logging & observability', cs: 'Caching, logování a observabilita', es: 'Caché, logging y observabilidad' },
+    group: { en: 'Architecture & design', cs: 'Architektura a návrh', es: 'Arquitectura y diseño' },
     items: {
-      en: ['Redis', 'Shared cache', 'Logging', 'Observability', 'OpenTelemetry'],
-      cs: ['Redis', 'Sdílená cache', 'Logování', 'Observabilita', 'OpenTelemetry'],
-      es: ['Redis', 'Caché compartida', 'Logging', 'Observabilidad', 'OpenTelemetry']
+      en: ['Software architecture', 'Dependency injection', 'Programming paradigms & styles'],
+      cs: ['Softwarová architektura', 'Dependency injection', 'Paradigmata a styly programování'],
+      es: ['Arquitectura de software', 'Inyección de dependencias', 'Paradigmas y estilos de programación']
     }
   },
   {
-    group: { en: 'Messaging & service communication', cs: 'Messaging a komunikace mezi službami', es: 'Mensajería y comunicación entre servicios' },
-    items: {
-      en: ['gRPC', 'Message queues', 'Message brokers'],
-      cs: ['gRPC', 'Fronty zpráv', 'Message brokery'],
-      es: ['gRPC', 'Colas de mensajes', 'Message brokers']
-    }
+    group: { en: 'DevOps & observability', cs: 'DevOps a observabilita', es: 'DevOps y observabilidad' },
+    items: ['Git', 'CI/CD', 'GitHub Actions', 'Docker', 'Kubernetes', 'OpenTelemetry', 'Logging']
   },
   {
-    group: { en: 'Data', cs: 'Data', es: 'Datos' },
-    items: {
-      en: ['SQL Server', 'PostgreSQL', 'EF Core', 'Auditing'],
-      cs: ['SQL Server', 'PostgreSQL', 'EF Core', 'Auditing'],
-      es: ['SQL Server', 'PostgreSQL', 'EF Core', 'Auditoría']
-    }
-  },
-  {
-    group: { en: 'Cloud & DevOps', cs: 'Cloud a DevOps', es: 'Cloud y DevOps' },
-    items: ['Cloud', 'Git', 'CI/CD', 'GitHub Actions', 'Docker', 'Docker Desktop', 'Kubernetes', 'Freelens']
-  },
-  {
-    group: { en: 'Security', cs: 'Bezpečnost', es: 'Seguridad' },
-    items: {
-      en: ['Cryptography & PKI', 'Post-quantum cryptography'],
-      cs: ['Kryptografie a PKI', 'Postkvantová kryptografie'],
-      es: ['Criptografía y PKI', 'Criptografía poscuántica']
-    }
-  },
-  {
-    group: { en: 'Other programming languages', cs: 'Další programovací jazyky', es: 'Otros lenguajes de programación' },
-    items: ['Python', 'C / C++', 'TypeScript', 'JavaScript', 'HTML / CSS', 'Swift']
+    group: { en: 'Other languages', cs: 'Další jazyky', es: 'Otros lenguajes' },
+    items: ['Python', 'TypeScript', 'JavaScript', 'C / C++', 'Swift', 'HTML / CSS']
   }
 ];
+
+// Names only, on purpose: the projects page carries the detail. Order follows pages/projects.html.
+const CV_PROJECTS = ['NARUZU', 'Automata Simulator', 'Jirka\'s Arc', 'Closet', 'Claude & Codex Usage Tray', 'FitnessWebApp'];
+const CV_PROJECTS_URL = `${SITE_URL}pages/projects.html`;
 
 const CV_MINDSET = {
   en: 'I think like a programmer first and a technology specialist second. What I want to get better at is the layer above the syntax — architecture, paradigms and programming style. I am firmly into AI and use it to work efficiently: I can pick up any new technology and start working in it almost immediately.',
@@ -226,10 +231,10 @@ const CV_MINDSET = {
 };
 
 const CV_CERTS = [
-  { issuer: 'Microsoft Learn', name: 'GitHub Copilot', url: 'https://learn.microsoft.com/en-us/users/jirimlcousek-6170/credentials/e7eee83913415126' },
-  { issuer: 'Dometrain', name: 'Deep Dive: C#' },
-  { issuer: 'Dometrain', name: 'From Zero to Hero: REST APIs in .NET' },
-  { issuer: 'freeCodeCamp', name: 'Foundational C# with Microsoft' }
+  { issuer: 'Microsoft Learn', year: 2025, name: 'GitHub Copilot', url: 'https://learn.microsoft.com/en-us/users/jirimlcousek-6170/credentials/e7eee83913415126' },
+  { issuer: 'Dometrain', year: 2025, name: 'Deep Dive: C#' },
+  { issuer: 'Dometrain', year: 2025, name: 'From Zero to Hero: REST APIs in .NET' },
+  { issuer: 'freeCodeCamp', year: 2024, name: 'Foundational C# with Microsoft' }
 ];
 
 const CV_LANGUAGES = [
@@ -241,15 +246,15 @@ const CV_LANGUAGES = [
 
 const CV_INTERESTS = {
   en: [
-    'I have been a sports person since I was young, and I like hard challenges: ultra-trail races, 24-hour races, the B7 and similar. Alongside running I enjoy road cycling and the gym, and in the past I played football.',
+    'I have been a sports person since I was young, and I like hard challenges. Ultra trail: B7 — 2nd in category. 24-hour trail races: 24DS — 3rd in category. Alongside running I enjoy road cycling and the gym.',
     'I read a lot and try to get a little better at everything I do. I love data and statistics, so I track my training, reading and much more in a self-built Obsidian vault. My favourite way to recharge is a long walk in the mountains with my fiancée.'
   ],
   cs: [
-    'Sportuji od mládí a mám rád těžké výzvy: ultratrailové závody, 24hodinovky, B7 a podobně. Vedle běhání mě baví silniční kolo a posilovna a v minulosti jsem hrál fotbal.',
+    'Sportuji od mládí a mám rád těžké výzvy. Ultratrail: B7 — 2. místo v kategorii. 24hodinové trailové závody: 24DS — 3. místo v kategorii. Vedle běhání mě baví silniční kolo a posilovna.',
     'Hodně čtu a snažím se být ve všem, co dělám, o kousek lepší. Miluji data a statistiky, a tak si trénink, čtení a mnoho dalšího zapisuji do vlastnoručně postaveného Obsidian vaultu. Nejlépe si odpočinu na dlouhé procházce po horách s přítelkyní.'
   ],
   es: [
-    'Hago deporte desde joven y me gustan los retos duros: ultra-trails, carreras de 24 horas, la B7 y similares. Además de correr, disfruto del ciclismo de carretera y del gimnasio, y en el pasado jugué al fútbol.',
+    'Hago deporte desde joven y me gustan los retos duros. Ultra trail: B7 — 2.º en su categoría. Carreras trail de 24 horas: 24DS — 3.º en su categoría. Además de correr, disfruto del ciclismo de carretera y del gimnasio.',
     'Leo mucho e intento mejorar un poco en todo lo que hago. Me encantan los datos y las estadísticas, así que registro mi entrenamiento, mis lecturas y mucho más en un vault de Obsidian construido por mí. Mi forma favorita de desconectar es una larga caminata por la montaña con mi prometida.'
   ]
 };
@@ -297,12 +302,14 @@ function renderCvHeader(lang, ui) {
     </div>`;
 }
 
-function renderCvExperience(lang) {
+function renderCvExperience(lang, ui) {
   return CV_EXPERIENCE.map(e => `
     <article class="cv-entry">
       <span class="cv-period">${cvPick(e.period, lang)}</span>
       <div class="cv-entry__body">
         <h3 class="cv-entry__title">${cvPick(e.title, lang)} <span class="cv-company">· ${e.company}</span></h3>
+        <ul class="cv-bullets">${cvList(e.bullets, lang).map(b => `<li>${b}</li>`).join('')}</ul>
+        <p class="cv-progress cv-meta">${ui.progression}</p>
         <ol class="cv-steps">${e.steps.map(s => `<li><span class="cv-meta">${cvPick(s.when, lang)}</span><span>${cvPick(s.what, lang)}</span></li>`).join('')}</ol>
         ${e.note ? `<p class="cv-note">${cvPick(e.note, lang)}</p>` : ''}
       </div>
@@ -317,6 +324,7 @@ function renderCvEducation(lang) {
         <h3 class="cv-entry__title">${cvPick(e.title, lang)}</h3>
         <p class="cv-school">${e.school}</p>
         ${e.thesis ? `<p class="cv-thesis"><span class="cv-meta">${cvPick(e.thesisLabel, lang)}</span> ${cvPick(e.thesis, lang)}</p>` : ''}
+        ${e.status ? `<p class="cv-status">${cvPick(e.status, lang)}</p>` : ''}
         ${e.award ? `<p class="cv-award">${cvPick(e.award, lang)}</p>` : ''}
       </div>
     </article>`).join('');
@@ -332,11 +340,17 @@ function renderCvSkills(lang) {
 
 function renderCvCerts(ui) {
   return `<ul class="cv-certs">${CV_CERTS.map(c => {
-    const inner = `<span class="cv-meta">${c.issuer}</span><span class="cv-cert__name">${c.name}</span>${c.url ? `<span class="cv-cert__cta">${ui.viewCred}</span>` : ''}`;
+    const inner = `<span class="cv-meta">${c.issuer} · ${c.year}</span><span class="cv-cert__name">${c.name}</span>${c.url ? `<span class="cv-cert__cta">${ui.viewCred}</span>` : ''}`;
     return c.url
       ? `<li class="cv-cert"><a href="${c.url}" target="_blank" rel="noopener noreferrer">${inner}</a></li>`
       : `<li class="cv-cert"><div>${inner}</div></li>`;
   }).join('')}</ul>`;
+}
+
+// Names as plain chips; one link to the projects page (written out as a URL in the "paper" print mode).
+function renderCvProjects(ui) {
+  return `<ul class="cv-chips cv-projects">${CV_PROJECTS.map(p => `<li>${p}</li>`).join('')}</ul>
+    <a class="cv-projects__link" href="${CV_PROJECTS_URL}" target="_blank" rel="noopener noreferrer">${ui.allProjects}</a>`;
 }
 
 function renderCv() {
@@ -349,7 +363,8 @@ function renderCv() {
   header.innerHTML = renderCvHeader(lang, ui);
   content.innerHTML = `
     <section class="cv-section"><h2 class="section-heading">${ui.summary}</h2>${cvParagraphs(CV_SUMMARY, lang, 'cv-summary')}</section>
-    <section class="cv-section"><h2 class="section-heading">${ui.experience}</h2>${renderCvExperience(lang)}<p class="cv-earlier"><span class="cv-meta">${ui.earlier}</span> ${CV_EARLIER_JOBS[lang]}</p></section>
+    <section class="cv-section"><h2 class="section-heading">${ui.experience}</h2>${renderCvExperience(lang, ui)}<p class="cv-earlier"><span class="cv-meta">${ui.earlier}</span> ${CV_EARLIER_JOBS[lang]}</p></section>
+    <section class="cv-section"><h2 class="section-heading">${ui.projects}</h2>${renderCvProjects(ui)}</section>
     <section class="cv-section"><h2 class="section-heading">${ui.education}</h2>${renderCvEducation(lang)}</section>
     <section class="cv-section"><h2 class="section-heading">${ui.skills}</h2><p class="cv-summary cv-mindset">${CV_MINDSET[lang]}</p>${renderCvSkills(lang)}</section>
     <section class="cv-section"><h2 class="section-heading">${ui.certs}</h2>${renderCvCerts(ui)}</section>

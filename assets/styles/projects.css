@@ -527,6 +527,15 @@ body.modal-open { overflow: hidden; }
 .project-modal__shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
 .project-modal__shots figure { margin: 0; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; background: var(--surface-2); }
 .project-modal__shots img { display: block; width: 100%; height: auto; }
+.scroll-shot {
+  max-width: 340px; height: min(70vh, 640px); margin: 0 auto; overflow-y: auto; overscroll-behavior: contain;
+  border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface-2);
+  cursor: grab; user-select: none; scrollbar-width: thin;
+}
+.scroll-shot.is-dragging { cursor: grabbing; }
+.scroll-shot img { display: block; width: 100%; height: auto; pointer-events: none; }
+.scroll-shot:focus-visible { outline: 2px solid var(--accent-text); outline-offset: 2px; }
+.scroll-shot__hint { text-align: center; color: var(--ink-muted, inherit); font-size: .85rem; margin: 10px 0 0; }
 .project-modal__repos { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .project-modal__repo {
   display: inline-flex; align-items: center; gap: 8px; color: var(--ink); text-decoration: none;
