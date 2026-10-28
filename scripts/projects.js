@@ -101,6 +101,7 @@ const PROJECTS = [
     group: 'more',
     year: '2026',
     status: 'in-progress',
+    repos: [{ url: 'https://github.com/mlcousek/Closet' }],
     kind: { en: 'iOS app', cs: 'iOS aplikace', es: 'App iOS' },
     title: 'Closet',
     subtitle: {
@@ -113,11 +114,20 @@ const PROJECTS = [
       cs: 'Šatník pro iPhone: vyfotíte oblečení, poskládáte vrstvené outfity, naplánujete, co si vzít, a uvidíte, které kousky opravdu nosíte. Vše zůstává v telefonu; AI funkce jsou volitelné.',
       es: 'Un armario para iPhone: fotografía tu ropa, crea outfits por capas, planifica qué ponerte y comprueba qué prendas usas de verdad. Todo se queda en el móvil; las funciones de IA son opcionales.'
     },
+    details: {
+      en: 'Built especially for my fiancée and future wife, and she uses it now. Made with React Native and Expo: everything lives in a local SQLite database on the phone, background removal runs on the device through a small native Swift module (Apple Vision), weather comes from Open-Meteo, and AI tagging and try-on are optional with your own key kept in the keychain.',
+      cs: 'Vytvořená speciálně pro mou snoubenku a budoucí manželku, která ji už používá. Napsaná v React Native a Expo: vše je v lokální SQLite databázi v telefonu, odstranění pozadí běží přímo v zařízení přes malý nativní modul ve Swiftu (Apple Vision), počasí je z Open-Meteo a AI tagování i zkoušení outfitů jsou volitelné s vlastním klíčem uloženým v klíčence.',
+      es: 'Creada especialmente para mi prometida y futura esposa, que ya la usa. Hecha con React Native y Expo: todo vive en una base de datos SQLite local en el móvil, la eliminación de fondo se ejecuta en el dispositivo con un pequeño módulo nativo en Swift (Apple Vision), el tiempo viene de Open-Meteo y el etiquetado con IA y el probador son opcionales con tu propia clave guardada en el llavero.'
+    },
     highlights: {
-      en: ['Background removal and optional AI tagging', 'Layered outfit builder, lookbooks and an outfit calendar', 'Weather suggestions, cost per wear and trip packing', 'Backup and restore, English and Czech'],
-      cs: ['Odstranění pozadí a volitelné AI tagování', 'Skládání vrstvených outfitů, lookbooky a kalendář outfitů', 'Návrhy podle počasí, cena za nošení a balení na cestu', 'Záloha a obnova, angličtina a čeština'],
-      es: ['Eliminación de fondo y etiquetado con IA opcional', 'Creador de outfits por capas, lookbooks y calendario de outfits', 'Sugerencias según el clima, coste por uso y maleta de viaje', 'Copia de seguridad y restauración, inglés y checo']
-    }
+      en: ['Made for my fiancée and future wife', 'Background removal on the device and optional AI tagging', 'Layered outfit builder, lookbooks and an outfit calendar', 'Weather suggestions, cost per wear and trip packing', 'Local-first, backup and restore, English and Czech'],
+      cs: ['Pro mou snoubenku a budoucí manželku', 'Odstranění pozadí v zařízení a volitelné AI tagování', 'Skládání vrstvených outfitů, lookbooky a kalendář outfitů', 'Návrhy podle počasí, cena za nošení a balení na cestu', 'Data jen v telefonu, záloha a obnova, angličtina a čeština'],
+      es: ['Hecha para mi prometida y futura esposa', 'Eliminación de fondo en el dispositivo y etiquetado con IA opcional', 'Creador de outfits por capas, lookbooks y calendario de outfits', 'Sugerencias según el clima, coste por uso y maleta de viaje', 'Datos solo en el móvil, copia de seguridad, inglés y checo']
+    },
+    images: [
+      { src: '../images/projects/closet-home.jpg', alt: { en: 'Closet home screen with today\'s weather and an outfit suggestion', cs: 'Domovská obrazovka Closetu s dnešním počasím a návrhem outfitu', es: 'Pantalla de inicio de Closet con el tiempo de hoy y una sugerencia de outfit' } },
+      { src: '../images/projects/closet-outfits.jpg', alt: { en: 'The outfits tab with lookbooks and categories', cs: 'Záložka Outfity s lookbooky a kategoriemi', es: 'La pestaña de outfits con lookbooks y categorías' } }
+    ]
   },
   {
     id: 'claude-tray',
