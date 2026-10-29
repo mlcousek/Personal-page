@@ -42,6 +42,9 @@ const CV_CONTACT = [
 // Absolute on purpose: the URL must still work in a saved PDF and be readable on paper.
 const SITE_URL = 'https://mlcousek.github.io/Personal-page/';
 const UPOL_COOPERATION_URL = 'https://monetplus.cz/spoluprace-s-univerzitami/';
+const ITERATION_POST_URL = `${SITE_URL}pages/blog.html#iteration-driver`;
+// Clickable online and in the saved PDF; hidden in the paper print, where a link is useless.
+const iterationPostLink = label => ` <a class="cv-noprint-paper" href="${ITERATION_POST_URL}" target="_blank" rel="noopener noreferrer">${label}</a>`;
 
 // Social profiles render as icon links; the readable URL is only shown in the "print" version.
 const CV_SOCIAL = [
@@ -109,9 +112,9 @@ const CV_EXPERIENCE = [
       ]
     },
     note: {
-      en: 'Iteration driver (two months, summer 2026), a team-lead role. The iterations went unusually well: we delivered everything planned and more, the whole team grew, and we shipped new features plus improvements to our development and deployment process. I really enjoyed the role.',
-      cs: 'Iteration driver (dva měsíce, léto 2026), role týmového lídra. Iterace dopadly nezvykle dobře: zvládli jsme vše, co bylo v plánu, a ještě něco navíc, celý tým se posunul a dodali jsme nové funkce i zlepšení našeho vývoje a nasazování. Role mě opravdu bavila.',
-      es: 'Iteration driver (dos meses, verano de 2026), un rol de líder de equipo. Las iteraciones salieron inusualmente bien: entregamos todo lo planeado y más, todo el equipo creció y lanzamos nuevas funciones y mejoras en nuestro desarrollo y despliegue. Disfruté mucho el rol.'
+      en: `Iteration driver (two months, summer 2026), a team-lead role. The iterations went unusually well: we delivered everything planned and more, the whole team grew, and we shipped new features plus improvements to our development and deployment process. I really enjoyed the role.${iterationPostLink('Read about it on the blog →')}`,
+      cs: `Iteration driver (dva měsíce, léto 2026), role týmového lídra. Iterace dopadly nezvykle dobře: zvládli jsme vše, co bylo v plánu, a ještě něco navíc, celý tým se posunul a dodali jsme nové funkce i zlepšení našeho vývoje a nasazování. Role mě opravdu bavila.${iterationPostLink('Přečtěte si o ní na blogu →')}`,
+      es: `Iteration driver (dos meses, verano de 2026), un rol de líder de equipo. Las iteraciones salieron inusualmente bien: entregamos todo lo planeado y más, todo el equipo creció y lanzamos nuevas funciones y mejoras en nuestro desarrollo y despliegue. Disfruté mucho el rol.${iterationPostLink('Léelo en el blog →')}`
     },
     steps: [
       { when: { en: 'Jul 2026 →', cs: 'čvc 2026 →', es: 'jul 2026 →' }, what: { en: 'Full-time', cs: 'Plný úvazek', es: 'Jornada completa' } },

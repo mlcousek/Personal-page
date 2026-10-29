@@ -600,3 +600,13 @@ body.modal-open { overflow: hidden; }
 }
 .project-card__media--video { position: relative; }
 .project-modal__video { aspect-ratio: 16 / 9; margin: 18px 0 4px; border: 1px solid var(--border); border-radius: var(--radius-sm); overflow: hidden; background: var(--surface-2); }
+
+.vault-graph { margin: 28px 0 0; }
+.vault-graph img {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+.vault-graph figcaption { margin-top: 8px; font-size: 0.8rem; color: var(--text-muted, var(--text)); text-align: center; }
+.vault-brain { margin: 18px 0 0; font-size: 0.95rem; line-height: 1.75; color: var(--text); max-width: 70ch; }

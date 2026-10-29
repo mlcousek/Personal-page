@@ -101,7 +101,7 @@ const PROJECTS = [
       cs: ['Tréninkový plán z mého vaultu: záložka Plán, obrazovka Dnes, ranní check-in', 'Jídlo rovnou do Garmin Connect, nejdřív offline a pak synchronizace', 'České vyhledávání potravin se skenováním čárových kódů', 'Série, 150 levelů, výzvy, bingo a nakreslené odznaky'],
       es: ['Plan de entrenamiento de mi vault: pestaña Plan, pantalla Hoy, chequeo matutino', 'Comida directa a Garmin Connect, primero sin conexión y luego sincronización', 'Búsqueda de alimentos adaptada al checo, con escáner de códigos de barras', 'Racha, 150 niveles, retos, bingo e insignias dibujadas']
     },
-    image: { src: '../images/projects/garminfood-icons.jpg', alt: { en: 'The five alternate app icons: Streak, Midnight, Mint, Macro and Pastel', cs: 'Pět alternativních ikon aplikace: Streak, Midnight, Mint, Macro a Pastel', es: 'Los cinco iconos alternativos de la app: Streak, Midnight, Mint, Macro y Pastel' } }
+    hero: { src: '../images/projects/jirkas-arc-hero.png', alt: { en: 'Jirka\'s Arc: training, calories, water, supplements and habits cards around the app logo', cs: 'Jirka\'s Arc: karty tréninku, kalorií, vody, doplňků a návyků kolem loga aplikace', es: 'Jirka\'s Arc: tarjetas de entrenamiento, calorías, agua, suplementos y hábitos alrededor del logo de la app' } }
   },
   {
     id: 'closet',
@@ -131,6 +131,7 @@ const PROJECTS = [
       cs: ['Pro mou snoubenku a budoucí manželku', 'Odstranění pozadí v zařízení a volitelné AI tagování', 'Skládání vrstvených outfitů, lookbooky a kalendář outfitů', 'Návrhy podle počasí, cena za nošení a balení na cestu', 'Data jen v telefonu, záloha a obnova, angličtina a čeština'],
       es: ['Hecha para mi prometida y futura esposa', 'Eliminación de fondo en el dispositivo y etiquetado con IA opcional', 'Creador de outfits por capas, lookbooks y calendario de outfits', 'Sugerencias según el clima, coste por uso y maleta de viaje', 'Datos solo en el móvil, copia de seguridad, inglés y checo']
     },
+    hero: { src: '../images/projects/closet-hero.png', alt: { en: 'Closet: weather greeting, lookbooks, favourites and an outfit card around the app logo', cs: 'Closet: pozdrav s počasím, lookbooky, oblíbené a karta outfitu kolem loga aplikace', es: 'Closet: saludo con el clima, lookbooks, favoritos y una tarjeta de outfit alrededor del logo de la app' } },
     images: [
       { src: '../images/projects/closet-home.jpg', alt: { en: 'Closet home screen with today\'s weather and an outfit suggestion', cs: 'Domovská obrazovka Closetu s dnešním počasím a návrhem outfitu', es: 'Pantalla de inicio de Closet con el tiempo de hoy y una sugerencia de outfit' } },
       { src: '../images/projects/closet-outfits.jpg', alt: { en: 'The outfits tab with lookbooks and categories', cs: 'Záložka Outfity s lookbooky a kategoriemi', es: 'La pestaña de outfits con lookbooks y categorías' } }
@@ -349,7 +350,10 @@ function statusPill(project, ui) {
 function renderProjectCard(project, lang) {
   const ui = PROJECTS_UI[lang];
   let media = '';
-  if (project.images) {
+  if (project.hero) {
+    // a single wide hero for the card; the modal still shows the project's own screenshots
+    media = `<figure class="project-card__media"><img src="${project.hero.src}" alt="${pick(project.hero.alt, lang)}" loading="lazy" decoding="async"></figure>`;
+  } else if (project.images) {
     // the card preview shows at most two items (the video first, when there is one); the full set opens in the modal
     const lead = project.video ? `<figure class="project-card__media project-card__media--video">${videoPoster(project.video, project.title, ui)}</figure>` : '';
     media = `<div class="project-card__gallery">${lead}${project.images.slice(0, project.video ? 1 : 2).map(img =>
@@ -364,7 +368,7 @@ function renderProjectCard(project, lang) {
     .map(h => `<li>${h}</li>`).join('');
 
   return `
-    <article class="project-card${project.group === 'featured' ? ' project-card--featured' : ''}${project.image || project.images ? ' project-card--has-media' : ''}" id="project-${project.id}">
+    <article class="project-card${project.group === 'featured' ? ' project-card--featured' : ''}${project.hero || project.image || project.images ? ' project-card--has-media' : ''}" id="project-${project.id}">
       ${media}
       <div class="project-card__body">
         <div class="project-card__top">
