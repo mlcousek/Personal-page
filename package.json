@@ -6,7 +6,8 @@
   "scripts": {
     "start": "live-server . --open=index.html",
     "optimize:images": "node scripts/optimize-images.mjs",
-    "check": "node scripts/check-links.mjs"
+    "check": "node scripts/check-links.mjs",
+    "og": "node scripts/make-og-image.mjs"
   },
   "keywords": [
     "personal",
