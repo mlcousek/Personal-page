@@ -1,5 +1,6 @@
 const TAGS_I18N = {
   ".NET": { en: ".NET", cs: ".NET", es: ".NET" },
+  "Adventure": { en: "Adventure", cs: "Dobrodružství", es: "Aventura" },
   "AI": { en: "AI", cs: "AI", es: "AI" },
   "Algorithms": { en: "Algorithms", cs: "Algoritmy", es: "Algoritmos" },
   "Apple": { en: "Apple", cs: "Apple", es: "Apple" },
