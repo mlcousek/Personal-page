@@ -7,7 +7,8 @@
  * Chat apps (Teams, Slack, WhatsApp...) cache previews per image URL, so
  * overwriting og-cover.jpg alone keeps showing the old photo. The script also
  * stamps ?v=<date> on every og:image / twitter:image URL, which forces a refetch.
- * Optional second arg is the sharp crop focus: top | centre (default) | bottom.
+ * Optional second arg is the crop: top | centre | bottom | attention (default),
+ * or an explicit region in source pixels as left,top,width,height.
  */
 
 import { readdir, readFile, writeFile } from 'node:fs/promises';
@@ -20,13 +21,20 @@ const OUT = path.join(ROOT, 'images', 'og-cover.jpg');
 
 const [source, focus = 'attention'] = process.argv.slice(2);
 if (!source) {
-  console.error('usage: npm run og -- <source-image> [top|centre|bottom|attention]');
+  console.error('usage: npm run og -- <source-image> [top|centre|bottom|attention|left,top,width,height]');
   process.exit(1);
 }
 
-await sharp(path.resolve(source))
-  .rotate()
-  .resize(1200, 630, { fit: 'cover', position: focus === 'attention' ? sharp.strategy.attention : focus })
+const positions = { top: 'top', centre: 'centre', bottom: 'bottom' };
+let img = sharp(path.resolve(source)).rotate();
+const region = focus.split(',').map(Number);
+if (region.length === 4 && region.every(Number.isFinite)) {
+  // .rotate() bakes EXIF orientation in, so extract from the rotated buffer
+  img = sharp(await img.toBuffer()).extract({ left: region[0], top: region[1], width: region[2], height: region[3] });
+}
+
+await img
+  .resize(1200, 630, { fit: 'cover', position: positions[focus] ?? sharp.strategy.attention })
   .jpeg({ quality: 82, mozjpeg: true })
   .toFile(OUT);
 
