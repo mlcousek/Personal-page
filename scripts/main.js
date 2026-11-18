@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-about': 'About',
             'nav-projects': 'My Projects',
             'nav-cv': 'CV',
+            'hero-chip-role': '.NET Developer / AI Developer',
             // ── Projects page ──
             'projects-eyebrow': '.NET · Web · Automation · Data',
             'projects-title': 'My Projects',
@@ -140,6 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-about': 'O mně',
             'nav-projects': 'Moje projekty',
             'nav-cv': 'Životopis',
+            'hero-chip-role': 'Vývojář .NET / AI',
             // ── Projects page ──
             'projects-eyebrow': '.NET · Web · Automatizace · Data',
             'projects-title': 'Moje projekty',
@@ -270,6 +272,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'nav-about': 'Sobre mí',
             'nav-projects': 'Mis proyectos',
             'nav-cv': 'Currículum',
+            'hero-chip-role': 'Desarrollador .NET / IA',
             // ── Projects page ──
             'projects-eyebrow': '.NET · Web · Automatización · Datos',
             'projects-title': 'Mis proyectos',
